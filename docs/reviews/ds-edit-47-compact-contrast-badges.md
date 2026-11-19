@@ -1,0 +1,7 @@
+# DS-EDIT-47 — Ratio et badges compacts
+
+1 novembre 2026 — application, base 1ccdc23, branche codex/compact-contrast-badges. En revue, qualification technique acquise, acceptation humaine différée. [Fiche](../work-items/ds-edit-47-compact-contrast-badges.md). Ratio seul, seuil propre à chaque badge dans title, texte blanc 11 px, fond color-mix du thème à 50 % vers transparent. Pas d’opacité sur le texte ; états neutres inchangés.
+
+ESLint et Prettier ciblés conformes. Six parcours dev desktop/mobile réussis ([résultats](ds-edit-47/development.json)) : ratio simplifié, seuils title, blanc CSS, réactions taille/graisse, navigation clavier et sauvegarde sans acquittement. Captures [desktop](ds-edit-47/compact-desktop.png)/[mobile](ds-edit-47/compact-mobile.png). Modification de présentation réversible, aucun nouveau test unitaire ni campagne de types ; compilation Storybook conforme. Revues design/technique/sécurité séquentielles même agent, non indépendantes : demande appliquée, calculs et protections conservés, aucune surface d’accès ajoutée. La lisibilité du blanc sur fond atténué dépend du thème ; pas de revendication de conformité WCAG des badges eux-mêmes.
+
+Aperçu 54137 redémarré après constat brouillon vide, [valeurs inchangées](ds-edit-47/preview-update.json). Doc updated. Préexistants et modèles app/J5 conservés ; aucune publication. Autres navigateurs et recette humaine non vérifiés. Reprise : recette visuelle des badges.

@@ -1,0 +1,35 @@
+schemaVersion: 1
+terms:
+  - id: authority
+    preferred: autorité
+    definition: Décision durable, versionnée dans Git et validée par le schéma du fichier qui la porte.
+  - id: primitive
+    preferred: primitive visuelle
+    definition: Valeur brute sans intention d’usage produit, référencée par un token sémantique ou de composant ; famille technique distincte du type.
+  - id: semantic-token
+    preferred: token sémantique
+    definition: Nom stable exprimant une intention d’usage et résolu vers une primitive ou un token sémantique compatible.
+  - id: component-contract
+    preferred: contrat de composant
+    definition: Définition validable des fondations, états, exigences et tokens employés par un composant adopté.
+  - id: available
+    preferred: disponible
+    definition: Composant Base UI présent et expérimentable, mais non adopté par le design system.
+  - id: adopted
+    preferred: adopté
+    definition: Composant Base UI ayant fait l’objet d’une décision humaine explicite et relié à un contrat du design system.
+  - id: reference-value
+    preferred: valeur de référence
+    definition: Valeur conservée depuis le laboratoire après validation humaine, sans constituer une identité visuelle produit.
+  - id: direct-value
+    preferred: valeur directe
+    definition: Valeur visuelle écrite dans une implémentation sans passer par la chaîne d’autorité applicable.
+  - id: figma-reference
+    preferred: référence Figma
+    definition: Source facultative pouvant informer une décision, mais jamais requise pour valider l’autorité.
+  - id: silent-arbitration
+    preferred: arbitrage silencieux
+    definition: Résolution non documentée d’un conflit ou d’une absence d’autorité par un outil ou une personne.
+  - id: component-token
+    preferred: token de composant
+    definition: Réglage identifié par son tuple ; référence effective vers un style ou une primitive, attribution sémantique conservée pour le rétablissement.

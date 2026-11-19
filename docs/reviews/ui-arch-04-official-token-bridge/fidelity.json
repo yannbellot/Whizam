@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "views": 24,
+  "computed_styles_equal": true,
+  "png_bytes_equal": 24,
+  "engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "formats": [
+    1280,
+    390
+  ],
+  "schemes": [
+    "light",
+    "dark"
+  ],
+  "after_saved_roundtrips": true
+}

@@ -1,0 +1,9 @@
+target: semantic-tokens
+expectedCode: unknown-reference
+document:
+  schemaVersion: 1
+  tokens:
+    - id: semantic.color.example.invalid
+      type: color
+      value:
+        reference: primitive.color.does-not-exist

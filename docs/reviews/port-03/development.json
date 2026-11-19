@@ -1,0 +1,15 @@
+{
+  "version": "3e6ba795f862c84597c6f78a351987aa024b23a1",
+  "directory": "moved area/delivered product",
+  "command": "npm run dev -- --port <owned-loopback-port>",
+  "health": 200,
+  "uiLabSSR": 200,
+  "database": "explicitly empty; no database used",
+  "ancestorCompatibilityPackageExcluded": true,
+  "cleanup": "only owned process group terminated",
+  "hydration": {
+    "switch": true,
+    "dialog": true,
+    "pageAndConsoleErrors": 0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "scope": "UI-FINAL-01 D: Codex only, explicitly authorized; Claude unavailable; E/F excluded",
+  "baseCommit": "57641cd",
+  "platform": {
+    "os": "macOS 26.6",
+    "arch": "arm64",
+    "node": "24.22.0",
+    "codex": "0.167.0",
+    "sdk": "26.5"
+  },
+  "reviewMode": "sequential, same agent, not independent",
+  "checks": {
+    "native": {
+      "status": "passed",
+      "cases": 8,
+      "report": "native-e2e.json",
+      "driver": "actual AppKit/WKWebView; real managed personal account and inference"
+    },
+    "realBrowser": {
+      "status": "passed",
+      "cases": 3,
+      "report": "real-browser.json"
+    },
+    "realResume": {
+      "status": "passed",
+      "report": "real-resume.json"
+    },
+    "providerPolicy": {
+      "status": "passed",
+      "cases": 9,
+      "report": "provider-policy.json",
+      "account": "fresh disconnected private state; no inference claimed"
+    },
+    "brokerSessionHTTP": {
+      "status": "passed",
+      "tests": 13,
+      "provider": "explicitly simulated transport"
+    },
+    "simulatedUI": {
+      "status": "passed",
+      "cases": 5,
+      "report": "simulated-ui.json"
+    },
+    "regression": {
+      "status": "passed",
+      "unitTests": 149,
+      "projectSupervisorTests": 21,
+      "generation": true,
+      "lint": true,
+      "types": true,
+      "format": true,
+      "designDocs": true,
+      "agentKit": {
+        "skills": 21,
+        "roles": 4
+      },
+      "serverBoundaries": true
+    },
+    "extraction": {
+      "status": "passed",
+      "cases": 3,
+      "report": "extraction.json",
+      "selectedFilesAtExecution": 984,
+      "source": "inactive QA synchronized from the closed release selection",
+      "authCopied": false
+    }
+  },
+  "approvalReview": {
+    "rejectedAction": "enable code_mode_host",
+    "executed": false,
+    "resolution": "native tools/code engines stay disabled; strict structured responses interpreted by the bounded host broker; real qualification passed"
+  },
+  "limitations": [
+    "Claude unavailable by explicit partial-scope decision",
+    "Node/npm not embedded; exports and final distributions not implemented",
+    "macOS arm64 only",
+    "human acceptance and exhaustive physical keyboard/VoiceOver not performed",
+    "real credential expiry/refresh and all network-failure variants not exercised",
+    "old normal B window preserved; final Dock route not requalified"
+  ],
+  "docUpdated": true,
+  "implementationFiles": {
+    "application/macos/Loomata.swift": "d3027ec9ca2d44e87d27cd5f2394ecbe28303daa8d21f55b9a9da40879253e22",
+    "application/macos/tests/LoomataChatE2E.swift": "60cf3c791dfb18c02412695adf7a273ebc3d11f1fa59365503b5e534052d7289",
+    "application/package.json": "d96413b5a36b001cb93614d1a57f67d4d5b6c65f24bb9ac6e2d37ec5f19f887a",
+    "application/scripts/agent-chat/broker.mjs": "b746e3d945e646f70997884318fb5fb87519b7af2252bf6a356ce022fb252546",
+    "application/scripts/agent-chat/codex-package-lock.json": "11f081086ddc04f2cc0659954271c1cb2de9ba3211b9e62ee1039ccc7c0bf028",
+    "application/scripts/agent-chat/daemon.mjs": "c2db1c4cb47ad1c789f9ed803d84334aa448f3bde592d7fcd983c9ff4312ff13",
+    "application/scripts/agent-chat/http.mjs": "85a17ebb77c8a2c8e4d8c766cc1b9488140871363ac8ab0739fcd08d94461f60",
+    "application/scripts/agent-chat/install.mjs": "a1c61c629fc82811c2e3039afba6cd02c59000315cce32d23a96021e53a1bc47",
+    "application/scripts/agent-chat/manager.mjs": "ab9aa8074678b70a76ecfbc73e02617a2a504d6ef3d92908de8bdc757635eee6",
+    "application/scripts/agent-chat/private.mjs": "e53e47261d311b708285b22c76059941785b934dac5d943b5e05695d40b68750",
+    "application/scripts/agent-chat/provider.mjs": "c7c1b1648330a1977a8b8a9ba4dcbae40310f3bb0c76c5e7a236ebb64464ef8a",
+    "application/scripts/agent-chat/response.mjs": "502c6e77c46f4d9f984a1afed08dc5cf5c7015d4e0b473b60117edfb544194b0",
+    "application/scripts/build-agent-chat.mjs": "14f6cc418c9faab8e759cd98b2cd8a9c7680c252e6b12d8ac4e401a4807a5871",
+    "application/scripts/core/agent-chat.mjs": "3154a1ed43413a6e0bbcaca8068bc524b3342116804c3595bbf770e308bfa7cd",
+    "application/scripts/core/local-service.mjs": "07bcf60a19440176d6d1340f6e3f787ebf12c6b0d0645646dac50b5459218c58",
+    "application/scripts/project-files.json": "ab2b738660b2bf62c665bc9752280868c8158dc2d007d7e55ba2f69b5345af20",
+    "application/scripts/test-agent-chat-provider.mjs": "5ae5e2158f3efe559af6d4c0cd9997cf291a4709dc92488ae6976fa4d8eaa85e",
+    "application/scripts/test-agent-chat-ui.mjs": "3852afce61b13c56ee6c7d888e834416bada3f56f9336100dc5305ffcaf1e203",
+    "application/scripts/test-loomata-chat.mjs": "177a6e80628872a8195c35f43870ecfea08a66eeadf52ebd90abe92cc98d453f",
+    "application/src/assistant/Chat.module.css": "3683426b2d2efcc40dbe18d9a1ff81ce77b6bb4be00d06f69d7891e7c00205a2",
+    "application/src/assistant/Chat.tsx": "994959af839460301cc2fda67a66896409b7d69320a1164bd43a8f54c6e61245",
+    "application/src/assistant/index.html": "ae502890f6193b4087a4e702ff4152c7e053814314596352135d02c01cd82ebd",
+    "application/src/assistant/main.tsx": "7f4a2ec924d11308684a426b1105af2d9a2f9d2fcc2c510f42f3eef4f7805102",
+    "application/tests/agent-chat.test.mjs": "186fc1ec78ccf96c6ef047787553cdcdbaceeecf3cd2dc914ca47c1adf3c1c3d"
+  },
+  "privateEvidenceSHA256": {
+    "contracts-release.log": "54e493702d43fc74992b86febb8aba3203360455e701e811a51b6f904ba9393c",
+    "supervision-qualified.log": "1dba1ab68e9d2c8d2c5586c1998ffba62ef1b83ca433290e509fda4b80df0a03",
+    "unit-final-13.log": "8be053b5516266d13d95b735ca0d5ab23195ea14c833eda23a0d50f85daeb0e4",
+    "units-qualified.log": "c2c1f5ffc25222bdd2ab854ea1cc3040e9771b96ec428f2eabd1114a00af01d0",
+    "lint-qualified.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "types-qualified.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "format-qualified.log": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+    "docs-release.log": "bfe82914e6d57a22bd3ee2c6c71c65e2eb0f90a735b29792a5654104ebee8721",
+    "boundaries-release.log": "1b1078aa668dd9b8c21bd7e46ea60dc6da29c8245baa1057659bc7003e1fc1c5",
+    "native-qualified.log": "62d55073850f18170bc98bfadf5fa4065cf44bc11972a81005f61ce7d70270e1",
+    "real-resume-final.log": "28a64be1383aafc67e6cb79be2c8759eb55defda315bb2fbf6ee3611756e2cfe",
+    "extraction-second.log": "b947a1f3a8127de458564fd907efb398767919c91a9493d090ec64924d994404",
+    "unit-final-reviewed.log": "1c2fbdf10b081c2e4596554f6bd70706fe1a2dadf7f91701d36fa8bec27ee404"
+  }
+}

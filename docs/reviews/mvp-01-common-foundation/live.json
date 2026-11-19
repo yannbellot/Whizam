@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "cases": [
+    "dedicated official account connected; private test history isolated",
+    "real contextual proposal approved through common draft; main preserved",
+    "real turn interrupted without pending approval or duplicate write",
+    "same official thread resumed after interruption"
+  ],
+  "status": "passed"
+}

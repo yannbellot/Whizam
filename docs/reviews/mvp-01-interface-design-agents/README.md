@@ -1,0 +1,68 @@
+# MVP-01-T1 — Preuves de réalisation
+
+**13 novembre 2026 — En revue : qualification technique acquise, acceptation humaine différée.** [Bilan final, critères, revues et recette](qualification.md). L’accès fourni a permis la connexion propre au produit, l’import réel de 109 nœuds/18 variantes, quatre décisions, leurs effets sur deux pages, le réimport identique et la reconstruction sans état privé. [Preuve Figma réelle](figma-live.json), [vue 1280](figma-live-1280.png), [vue 1440](figma-live-1440.png). Déconnexion et retrait du fichier de connexion vérifiés. T2/T3 hors mandat, aucune publication.
+
+## État intermédiaire conservé avant l’essai authentifié
+
+Les constats ci-dessous sont historiques et précèdent la qualification ci-dessus. Leurs mentions de prérequis manquants ou de revue bloquante décrivent ce point antérieur ; le bilan final est l’autorité de conclusion.
+
+**13 novembre 2026 — En cours, non qualifié.** La reprise explicite a levé l’arrêt du 12 novembre. Les parcours locaux, Codex réel et macOS sont vérifiés ; l’import et le réimport par la connexion Figma propre au produit restent obligatoires et non exécutés. Cible application, statut consolidé dans le lab. [Mandat et historique](../../work-items/mvp-01-interface-design-agents.md).
+
+Sources : A/B `7a91103`, raccordements C/D/E `cf329be`, correction d’initialisation native `27bbe41`, puis diff T1 conservé avec ce dossier (formulaire par lien, affichage des états et scénarios complémentaires). Les preuves concernent ces sources sur copie isolée, sans les copies non suivies préexistantes. Elles ne constituent pas l’acceptation humaine ni une qualification complète de T1.
+
+### Résultats observés
+
+- [Parcours Chromium](desktop.json), 1280 × 800 et 1440 × 900 : deux routes React Router réelles, sélection d’occurrence et de sous-élément, fil d’Ariane, définition partagée, variante locale réutilisée puis retirée indépendamment. Duplication ambiguë refusée, actions du projet suspendues pendant la sélection, clavier/focus et absence de débordement horizontal vérifiés. [Pages](desktop-1280.png), [micro-chat](micro-chat-1280.png). Le transport chat de ce parcours est simulé ; conservation, qualification et démarrage des demandes utilisent réellement le noyau HTTP et Git. Les états appliqué/en vérification/contrôlé, puis leur invalidation après nouvelle demande sont éprouvés.
+- [Codex réel dédié](codex-live.json) : proposition approuvée vers le brouillon, principale préservée, même conversation après renommage, question/réponse sans mutation, interruption et reprise du thread officiel. Historique de test isolé, authentification référencée sans copie. [Passerelle HTTP réelle](http-live-bridge.json) : compte connecté et arbre physique sélectionné ; origine étrangère et commande générique refusées, sans nouvelle inférence pour ce contrôle de passerelle.
+- [Création réelle via Codex](codex-creation.json) : cinq propositions de contenus de qualification prescrits, contrôlées et approuvées individuellement ; nouvelle page, composant, story, route et déclaration d’identités. [Rendu et fil d’Ariane](codex-created-page.png) réellement chargés ; Storybook reconstruit avec la nouvelle story et les documents existants. Liens de tâches conservés, version principale inchangée. Ce scénario qualifie le chemin d’écriture et de création pris en charge, sans prétendre mesurer une conception autonome par le modèle.
+- [Parcours macOS complet](macos.json) : seize scénarios AppKit/WKWebView, dont T1 sur deux routes, sous-élément, focus et formats 1280/1440, formulaire privé Figma et retour DS ; sauvegarde, refus de navigation, arrêt et reprise existants conservés. [Vue Pages native](macos-pages-1280.png). Racine physique sélectionnée et refus des chemins privés vérifiés. SDK local 26.5, sans modification de préférence globale ; fenêtre personnelle préservée.
+- [Dix-sept contrôles du candidat](checks.json) réussis : types, lint, format, unités, DS, workspace, variantes, contextes T1/Figma synthétique, chat, frontières, deux builds, documents DS, kit, exports, hôte commun et cycle de vie. Les quatre [retests de reprise](checks-resume.json) — types, lint, format et build — réussissent sur le dernier affichage des états. Les suites complémentaires comptent notamment 66 cas serveur DS/HTTP et les interruptions réelles du publisher. Aucune nouvelle intégration PostgreSQL n’est revendiquée : cette tranche ne touche pas les données métier.
+- Quatre arbitrages Figma, historique de source immuable, renommage, réimport identique, sélection incomplète et concurrence sont vérifiés avec données synthétiques. Le clone Git reconstruit références et décisions sans connexion Figma ni historique privé. Six exports sont conformes, dont la conservation des seuls fichiers partageables de `loomata/`.
+
+### Critères et limites
+
+| Critères       | État démontré et limite                                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| T1-01 à T1-03  | Parcours réels et tests des variantes réussis. La couverture porte sur les occurrences enregistrées ; aucune analyse exhaustive de React n’est promise.                   |
+| T1-04          | Moteur commun, annulation, péremption, interruption et reprise vérifiés ; affichage des états lié à la version, invalidation testée.                                      |
+| T1-05          | Échanges Codex réels dédiés, question, accord, interruption/reprise et identité contextuelle vérifiés ; parcours UI complémentaire avec transport simulé déclaré.         |
+| T1-06          | Conserver et qualifier sans exécution, puis démarrer explicitement le même chantier isolé : vérifiés avec le modèle commun.                                               |
+| T1-07          | **Non exécuté : connexion puis import réel du pilote dans Loomata nécessaires.** La lecture par le connecteur de fabrication ne satisfait pas ce critère.                 |
+| T1-08 et T1-09 | Scénarios synthétiques réussis ; arbitrages et réimport du pilote réel à compléter après T1-07. Aucun renommage ni changement externe de Figma pour fabriquer une preuve. |
+| T1-10          | Création par cinq propositions Codex réelles, rendu et build Storybook réussis dans les conventions prises en charge.                                                     |
+| T1-11          | Reconstruction après clone sans état privé vérifiée ; modes d’intégration du SOCLE conservés. Intégration locale de T1 différée jusqu’à sa qualification complète.        |
+| T1-12          | Desktop web et macOS, reprise, refus d’accès et exports vérifiés dans les périmètres ci-dessus.                                                                           |
+
+Le pilote fourni vise la page Cover. Hypothèse de témoin minimale, réversible et non acceptée comme choix visuel : [Buttons, ensemble de composants](https://www.figma.com/design/4WhUYCRygZqy0xXs7KOFoX/Exemples---Design-System?node-id=4185-3778), après lecture de l’inventaire de fabrication. Cette référence n’est pas une maquette de l’interface Loomata ; aucune fidélité visuelle de Loomata à ces boutons n’est affirmée.
+
+La couverture Figma prévue est bornée : structure, propriétés/variantes et layout observés ; alias de variables, références d’images et nombre de réactions. Ni définitions complètes des variables, ni images binaires, ni exécution de prototype. L’effet déterministe initial adopte ou combine une couleur unie choisie vers un token de composant, par le moteur commun ; les besoins structurels passent par Codex. Ces limites sont affichées dans le produit et restent à confirmer sur la réponse réelle du pilote.
+
+### Revues séquentielles
+
+Procédures `review-design`, `technical-review` et `security-review` du catalogue app, lues à périmètre inchangé ; rôles exercés successivement par le même agent, **non indépendants**. Revue du checkpoint et de son diff, sans correction implicite par les reviewers.
+
+- **Design Reviewer — avec réserves.** Lecture de fidélité : conventions du UI Lab conservées, référence Figma de test identifiée ; l’essai d’import réel manque, aucune acceptation visuelle déduite. Lecture UX : portées globale/locale, usages connus, sélection et fil d’Ariane observés ; libellés et étapes de demandes explicites, micro-chat compact, focus desktop testé. Comparaison de référence/produit/proposition et quatre décisions à confirmer avec l’import réel. Les captures ne remplacent pas ces interactions ni une recette humaine.
+- **Technical Reviewer / QA — bloquant pour la qualification complète.** Entrées finies, schémas fermés, identités, moteur partagé, journal/reprise, refus périmés, Git/clone et consommateurs réels couverts par les tests cités. Le diff final sépare consultation du contexte et choix du workspace ; le parseur de lien conserve seulement fichier/sélection, avec refus des destinations étrangères ou ambiguës. T1-07 et la partie réelle de T1-08/09 restent non démontrés ; aucune fusion locale autorisée par cette revue partielle.
+- **Security Reviewer — avec réserves sur le périmètre local.** Refus Host/Origin/capacité, commandes et chemins fermés, données externes rendues comme texte, requête Figma vers un hôte fixe sans redirection et budgets de lecture examinés. État privé exclu des routes et exports ; seul le modèle partageable accompagne un clone. Aucun secret fournisseur dans les preuves sélectionnées. Connexion Figma réelle encore absente : son stockage et son cycle réel restent à vérifier lors de l’essai. Aucun scan externe, audit indépendant ni garantie de production revendiqué.
+
+### Corrections et historique des échecs
+
+Les échecs de sélection pendant navigation ont conduit à désactiver l’iframe non reconnue et attendre son identité de version. Les recettes modifient effectivement deux participants, YAML et CSS ; leurs tests de crash ne comptent plus des publications fictives du snapshot inchangé. La resérialisation DTCG pour une recette seule a été supprimée. L’annulation de métadonnées conserve un inverse explicite et l’historique des modifications.
+
+Les lectures concurrentes attendent le verrou pendant une durée bornée ; aucune écriture rejouée ni verrou supprimé. L’actualisation ne remplace plus une saisie sur version inchangée. Le runner chat respecte le navigateur déjà fourni. L’export conserve seulement `loomata/workspace.json` et les checkpoints nommés, sans états privés.
+
+Trois essais natifs avaient bloqué sur l’aperçu DS initial. Une copie diagnostique a établi : module chargé, contexte valide et effet exécuté, mais callback `requestAnimationFrame` non exécuté. Le bootstrap sans besoin de mesure utilise désormais `setTimeout`, annulé au démontage (`27bbe41`) ; le parcours natif complet réussit ensuite. Les échecs et logs antérieurs restent conservés, sans les présenter comme blocage courant. Régression chat réussie avec fournisseur simulé : progression, refus/accord, écriture réelle, échappement, interruption et rechargement sans renvoi ; le scénario mobile historique du runner n’étend pas la cible desktop.
+
+### Retest du partage public — 13 novembre 2026
+
+À la demande du porteur après ouverture du fichier en lecture publique, le lien fourni (`node-id=3-5`) est retesté. Le navigateur charge le fichier « Exemples - Design System » et propose de s’inscrire pour commenter/modifier/inspecter : lecture publique constatée. Le lecteur web de recherche ne peut pas ouvrir ce lien ; cette limite de l’outil n’est pas assimilée à un refus du fichier.
+
+Appel réel séparé sans authentification : `GET https://api.figma.com/v1/files/4WhUYCRygZqy0xXs7KOFoX/nodes?ids=3%3A5&depth=8`, sans redirection, délai de 30 secondes. Résultat : HTTP **403**, réponse JSON **« Invalid token »**. Aucun import ni résultat partiel publié, aucun jeton envoyé. La [documentation officielle d’authentification](https://developers.figma.com/docs/rest-api/authentication/), consultée ce jour, exige l’authentification des requêtes REST et cite `file_content:read` pour lire le contenu des fichiers.
+
+Conclusion : le partage public permet la consultation du lien, mais ne satisfait pas la connexion de l’adaptateur REST de Loomata. T1-07 et la qualification globale restent ouverts. Aucun changement applicatif ou de protection ; compte et fichiers privés conservés. Reprise nécessaire : jeton limité saisi dans le formulaire local, puis import/arbitrages/réimport réels.
+
+### Reprise et traçabilité
+
+Preuves brutes locales ignorées : `.local/mvp-01-t1/checks-final/report.json`, `checks-resume-2026-11-13/report.json`, `variants/test-results/exploration-ui/run-MFbRUu`, `variants/test-results/loomata/run-Z4kSyP`, `t1-creation-live/run-tbLcxj`, `t1-context-question-live.log`, `t1-figma-clone.log`. Les JSON/captures ci-dessus sont la sélection partageable ; les historiques privés et journaux fournisseur n’en font pas partie.
+
+La recette courante est préparée avec le formulaire par lien, sans copier de connexion. Accès local et reprise détaillés dans la [fiche](../../work-items/mvp-01-interface-design-agents.md#reprise-du-13-novembre-2026). Après connexion privée : import réel, décisions, réimport identique, vérification des effets et de l’état privé, puis clôture des revues et qualification avant intégration locale. Jusqu’à ces preuves, T1 reste en cours. SOCLE conservé, T2/T3 hors mandat ; aucune publication. Doc updated ; acceptation humaine différée au dossier P5-05/P5-08.

@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "rows": 1,
+      "ratio": 0.5,
+      "height": 33.5,
+      "multilinePreserved": true
+    },
+    {
+      "width": 390,
+      "rows": 1,
+      "ratio": 0.5,
+      "height": 33.5,
+      "multilinePreserved": true
+    }
+  ],
+  "code": [
+    {
+      "file": ".storybook/editor/ScopeControls.tsx",
+      "sha256": "74075c3f95c87a43b5affefcba8d6db858eec4e5563e2bd9f81135c445be076e"
+    },
+    {
+      "file": ".storybook/editor/panel.module.css",
+      "sha256": "507d8e79b1a3936cd4b41c18978533c75cc54e23e9b96e7e5074d1df1c8da05b"
+    }
+  ]
+}

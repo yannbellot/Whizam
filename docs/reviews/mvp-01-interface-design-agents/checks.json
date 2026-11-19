@@ -1,0 +1,121 @@
+[
+  {
+    "script": "typecheck",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "typecheck.log"
+  },
+  {
+    "script": "lint",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "lint.log"
+  },
+  {
+    "script": "format:check",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "format-check.log"
+  },
+  {
+    "script": "test",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test.log"
+  },
+  {
+    "script": "test:design-system",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-design-system.log"
+  },
+  {
+    "script": "test:workspace",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-workspace.log"
+  },
+  {
+    "script": "test:variants",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-variants.log"
+  },
+  {
+    "script": "test:t1-context",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-t1-context.log"
+  },
+  {
+    "script": "test:agent-chat",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-agent-chat.log"
+  },
+  {
+    "script": "test:boundaries",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-boundaries.log"
+  },
+  {
+    "script": "build",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "build.log"
+  },
+  {
+    "script": "build-storybook",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "build-storybook.log"
+  },
+  {
+    "script": "docs:design-system:check",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "docs-design-system-check.log"
+  },
+  {
+    "script": "validate:agent-kit",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "validate-agent-kit.log"
+  },
+  {
+    "script": "test:exports",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-exports.log"
+  },
+  {
+    "script": "test:core-host",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-core-host.log"
+  },
+  {
+    "script": "test:project-lifecycle",
+    "code": 0,
+    "signal": null,
+    "timedOut": false,
+    "file": "test-project-lifecycle.log"
+  }
+]

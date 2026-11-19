@@ -1,0 +1,5 @@
+# DS-EDIT-48 — Fonds des badges à 30 %
+
+1 novembre 2026 — application, base 198f707. Mandat : remplacer 50 % par 30 % sur les deux fonds mesurés AA/AAA ; texte blanc opaque et états neutres inchangés. Procédures applicatives implement-feature/review-design déjà consultées ; revue séquentielle non indépendante. CSS et guide concernés, ajustement réversible sans nouvelle logique ; formatage/diff prévus, aucun nouveau test nécessaire. Préexistants conservés, aucune publication.
+
+En revue — qualification technique acquise, acceptation humaine différée. Prettier ciblé et git diff --check conformes ; diff limité aux deux pourcentages CSS. Revue design/technique/sécurité séquentielle même agent, non indépendante : pas de changement de calcul, de nom accessible ou d’accès. Aperçu 54137 actualisé, [valeurs préservées](../reviews/ds-edit-48/preview-update.json). Doc updated. Aucune campagne de types/tests supplémentaire pour ces constantes CSS. Reprise : recette visuelle ; contraste du blanc sur fond atténué non certifié. Modèles app/J5 conservés, aucune publication.

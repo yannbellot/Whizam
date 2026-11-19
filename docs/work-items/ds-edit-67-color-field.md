@@ -1,0 +1,17 @@
+# DS-EDIT-67 — Zone interactive du champ couleur
+
+Application, base 4eccabb, branche codex/ds-edit-67-color-field. Mandat : rendre uniquement le bloc couleur interactif et retirer le carré redondant du groupe Couleur visuelle/Valeur précise. Procédures applicatives implement-feature/test-user-flow ; exécution et revues séquentielles, même agent, non indépendantes. Choix localisé : texte non interactif relié à input type=color par aria-labelledby, au lieu d’un label HTML dont l’activation est transmise au contrôle. Le champ natif reste nommé et synchronisé ; supprimer seulement l’échantillon à côté de Valeur précise, conserver les échantillons de valeurs de l’attribution. Réutiliser les tokens existants pour la grille du champ. Manifeste v19, aucune modification du modèle, protocole ou service.
+
+Critères : cliquer le titre ne déclenche aucun clic sur l’input ; nom accessible conservé, champ natif fonctionnel et synchronisé, aucun petit échantillon dans le groupe de saisie, attribution conservée, desktop/mobile et conservation du brouillon. Contrôles dans une copie isolée ; ne pas mettre à jour en place une recette privée ni abandonner un brouillon. Nouvelle recette distincte si l’état de l’onglet courant ne peut être établi. Aucune modification du Storybook conservé, de compte ou de dépendance.
+
+## Résultat et qualification
+
+En revue — qualification technique acquise, acceptation humaine différée. Vingt parcours compilés Chromium desktop/mobile réussis (22.6 s), dont clic sur le texte sans événement click transmis à l’input, nom accessible Couleur visuelle conservé, absence d’échantillon dans le groupe de saisie et changement de couleur synchronisé. Types/lint et 82 tests DS réussis ; logs sous `.local/ds-edit-67/`. Génération dans des racines inactives uniquement, dérivés du dossier de travail issus de cette génération. Aucune autorité de valeurs modifiée. Manifeste v19.
+
+Revues séquentielles, même agent, non indépendantes : design — rendu mobile examiné, texte séparé du contrôle, échantillon redondant retiré et échantillon d’attribution conservé ; technique — comportement natif du label identifié, remplacé par aria-labelledby sans modifier le callback de saisie ni le contrôle natif ; sécurité proportionnée — aucun endpoint, accès, secret ou stockage nouveau, pas de dépendance ou de modification du service. Pas de nouvelle campagne serveur/persistance ou audit exhaustif : surfaces inchangées ; contrôles concernés exécutés, recette humaine attendue.
+
+## Recette
+
+Ancien onglet inspecté puis revérifié juste avant remplacement : aucune modification en brouillon. Sources enregistrées lues sous la barrière compatible de UI Lab 66, ancienne racine et reçus conservés ; nouveau dossier `.local/ds-edit-67/recipe` sans journaux/comptes importés, modèle généré strictement identique (188 bindings/18 styles). Ancien processus identifié par son dossier courant puis arrêté proprement ; nouveau lanceur 13222 sur le même port **54140**. Pas de purge ni de génération sous writer actif. Métadonnées dans `.local/ds-edit-67/processes.json`, log `recipe.log`. Storybook conservé inchangé.
+
+Navigateur intégré rechargé et laissé sur Réglages : #0050c9 éditable, nom Couleur visuelle présent, carré redondant absent, aucune modification en brouillon ; aucune saisie/sauvegarde humaine déclenchée par l’agent. [UI Lab corrigé](http://127.0.0.1:54140/ui-lab). Préexistants non suivis conservés ; Doc updated. Reprise : vérification humaine des deux corrections, aucune publication ou acceptation J4/J5 implicite.

@@ -1,0 +1,18 @@
+{
+  "base": "b0eb58ec6abcafc5e770bf8bfe7f2ccc9f2b6628",
+  "previewCodeIdentical": true,
+  "files": [
+    {
+      "file": ".storybook/editor/Panel.tsx",
+      "sha256": "638d0712cfedfe1874d56acc761551cb17f461bfb295118bf93cf8d3dbd71757"
+    },
+    {
+      "file": ".storybook/editor/panel.module.css",
+      "sha256": "6fd6239acb187d715487afeb977574ef30a317fe08e377979e4d458b15f271d7"
+    },
+    {
+      "file": "tests/unit/editor-panel-render.test.ts",
+      "sha256": "1fe18cbd3436434cfac4ac86a53e94881ba5b4e33f4612ae11051bcc4d3238a7"
+    }
+  ]
+}

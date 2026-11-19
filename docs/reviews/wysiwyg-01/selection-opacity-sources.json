@@ -1,0 +1,14 @@
+{
+  "base": "134f8b1205d58e682bf1da0505324ffc93748d16",
+  "files": {
+    "scripts/test-visual-inspector-ui.mjs": "c33c81a208ebc98094f6ce1d001fcc6e1fdbd251f1be7abe13ae1e3c1bf43edf",
+    "src/ui-lab/editor/DesignVisualInspector.tsx": "4e5b449af8509d6deb9da63db33908979a14d9faea88159585f4d43f3d874d4e",
+    "src/ui-lab/editor/PreviewPage.tsx": "a600a43d21ea07aca217236c544f799b96e2e918813f1281b819e9964e1e9a3c",
+    "src/ui-lab/editor/VisualInspector.tsx": "573e376103687c55305f136889d0d601fddfd88d0fa1fd638634b0b3f34e31bd",
+    "src/ui-lab/editor/Workspace.tsx": "d5ad185cf333aaf28123d93dcb9c8e5e8f5e6b0599e3e5fa4d05d2b1f3307fde",
+    "src/ui-lab/editor/scenes.tsx": "1cabd27c75b32974bcf5db8c32f4561e68b43c855502e0abd77230bbfbaa714f",
+    "src/ui-lab/editor/visual-context.ts": "292ec1551893c9e77f81282da26b2479ac2559f10101b72221d531b51491df8a",
+    "src/ui-lab/editor/visual-inspector.module.css": "9709f9684595b87dc9940ef08cbbe85ce8151073ec4a5ae1932cfbbd58ac42ca",
+    "src/ui-lab/editor/workspace.module.css": "438aa89322215be5f82484f77db67d03500717165745a8150ee55cba1b4ec522"
+  }
+}

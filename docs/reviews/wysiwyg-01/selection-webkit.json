@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "engine": "WebKit",
+  "provider": "explicitly simulated; no real account or inference",
+  "cases": [
+    "Visible selection and DS panel typography/contrast/control sizes, light/dark 1280",
+    "Selection after real tree navigation and iframe-only reload 1280",
+    "DS parity: gallery/individual/disabled variant/composition/catalog, exact inner and unmarked selection, undo/redo/reset/offline receipts/reload and modes 1280",
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1280",
+    "Visible selection and DS panel typography/contrast/control sizes, light/dark 1440",
+    "Selection after real tree navigation and iframe-only reload 1440",
+    "DS parity: gallery/individual/disabled variant/composition/catalog, exact inner and unmarked selection, undo/redo/reset/offline receipts/reload and modes 1440",
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1440",
+    "CSSOM responsive observation/centered narrow preview/shorthands/conditional cleanup/concurrent app style preserved/shared-family conflict dirty until confirmed reload/component intent/two pages/normal action restored/source diff empty",
+    "browser receipt -> explicit application -> typed simulated provider context -> real approval UI -> real isolated source transaction -> rendered 18px after reload; main unchanged"
+  ],
+  "browserVersion": "27.2",
+  "sourceHashes": {
+    "src/core/visual-intent.ts": "62cb8aa79c54e243b1516587dbe2f20efb854afd22bbdfe5a9835c72ca1fefa0",
+    "src/ui-lab/editor/VisualInspector.tsx": "c07c19a9630bdfce921ba4243cdb783c8a72e513ee8f42c12470a58ade0cdc11",
+    "src/ui-lab/editor/visual-inspector.module.css": "54490fcc6b712a5a38ae3139f2533440ad2483d2258262fd07ab0f3c1bd69aa0",
+    "src/ui-lab/editor/visual-context.ts": "3e5850a3e9a78672daf3779a92948e3b47b0e1480073123b33c3e933a9e2f8f0",
+    "src/ui-lab/editor/visual-projection.ts": "68fd649eaad8ff486bb61c8b02a5b88f2b8e900788d6a70974bfaae8a1c071fc",
+    "scripts/agent-chat/visual-intents.mjs": "661a717e041230c76574644d44ca3e0d401e0ef22c7f32aebba45b757acaad60",
+    "scripts/editor-application-preview.ts": "2416ba4bdb6f16af27852e04b2c2205673dbdc39a88633d002539f50d29963a4"
+  },
+  "navigationAborts": [
+    "/127.0.0.1:65450/__design-system/editor/version due to access control checks."
+  ],
+  "beforeDesignSend": "Retouches à transmettre\nBords arrondis : 8px → 20px",
+  "run": "run-GgtWyd"
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-10",
+  "status": "slice-c-technically-qualified-awaiting-human-review",
+  "codeCandidate": "73fc5b7ae94cbd319e94ff46e120d9e13200bd99",
+  "nativeScenarios": 22,
+  "sameBundleRelaunchScenarios": 1,
+  "contractAndSupervisorTests": 21,
+  "unitTests": 149,
+  "source": "application/",
+  "nativeFixture": "test-results/loomata-projects/run-lZX5Ij",
+  "readerGuards": [
+    {
+      "bootstrap": false,
+      "writeStatus": 403
+    },
+    {
+      "bootstrap": false,
+      "writeStatus": 404
+    }
+  ],
+  "cleanup": "passed; only owned fixture processes stopped",
+  "checks": [
+    {
+      "command": "node --test tests/local-service.test.mjs tests/project-lifecycle.test.mjs tests/local-app.test.mjs",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/contracts-final.log",
+      "sha256": "5db9bb8e55cb9ca7c58fd10d525075d25e5c8c935844954a8f7cde0184e537e4"
+    },
+    {
+      "command": "node scripts/test-loomata-projects.mjs",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/native-retest.log",
+      "sha256": "e32e6335d0e2251d1196ade6ffc26026284e07bf7cdc727b0a1bd2dff4778d5e"
+    },
+    {
+      "command": "format:check",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/format-final.log",
+      "sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20"
+    },
+    {
+      "command": "lint",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/lint-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "react-router typegen && tsc -b",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "vitest run --config config/testing/vitest.config.ts",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/unit.log",
+      "sha256": "e01c96a4db69342b1abe56ed6cdad5d2187092d1d0bc384aec8fb580cec47dfd"
+    },
+    {
+      "command": "shared core project.prepare on final extracted sources",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/folder-prepare.log",
+      "sha256": "4c5a19138d801c9d50133994ba44394e058dc3a8019a16347b6e625b7ff8098d"
+    },
+    {
+      "command": "validate-agent-kit on prepared extracted sources",
+      "result": "passed",
+      "privateLog": ".local/ui-final-01-c/folder-agent-kit-prepared.log",
+      "sha256": "90c756610ad5ea97c3278dc8d1a3fd7fe4dfe2f9d0ab3bfdd3df0c195f6d93d8"
+    }
+  ],
+  "reviews": "sequential, same agent, not independent",
+  "platform": {
+    "macOS": "26.6",
+    "architecture": "arm64",
+    "node": "24.22.0",
+    "swift": "6.3.3",
+    "sdk": "26.5"
+  },
+  "sourceDSAuthoritiesUnchanged": true,
+  "gitAtRuntimeRequired": false,
+  "publications": false,
+  "retainedFailures": [
+    "NSSavePanel ok: unsupported in pilot; actual AX button used on successful retest",
+    "test preselection overwritten by default name; corrected and its own Mon projet services stopped",
+    "HTTP reader checks initially targeted stopped previous project; corrected to selected supervisor",
+    "one UI Lab hydration timeout; retained, diagnostic artifacts added, full retest and same-bundle relaunch passed",
+    "agent-kit validator attempted before dependencies were prepared and resolved an incompatible parent YAML; after project.prepare the 21 skills and 4 roles pass with the project dependencies"
+  ],
+  "limitations": [
+    "Production B window preserved; source launcher refuses live replacement. Close the saved old workspace before relaunching the new native version.",
+    "Npm installation fallback was not exercised; matching installed dependencies cloned in qualification.",
+    "No automatic Docker, business DB or seed orchestration: new project has neutral preview and tools; future business scope requires its preparation.",
+    "Node/npm embedding, IA, ZIP and final distributions remain D–F.",
+    "Physical keyboard, VoiceOver and final human acceptance remain distinct."
+  ],
+  "folderDelivery": {
+    "creation": "passed without Git or private state",
+    "preparation": "passed with shared CLI core",
+    "agentKit": "passed: 21 skills and 4 roles after dependencies prepared",
+    "privateArtifacts": ".local/ui-final-01-c/folder-delivery-check"
+  }
+}

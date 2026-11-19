@@ -1,0 +1,15 @@
+{
+  "port": 54137,
+  "beforeFix": {
+    "linkInAccessibilityTree": true,
+    "visibleAtCenter": false,
+    "clippingAncestor": "overflow-y: hidden"
+  },
+  "afterFix": {
+    "visibleAtCenter": true,
+    "connectionLinkDisplayed": true,
+    "realLoginStartPerformed": true,
+    "authenticationCompletedByAgent": false
+  },
+  "temporaryOAuthUrlSaved": false
+}

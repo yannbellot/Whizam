@@ -1,0 +1,5 @@
+# DS-EDIT-21 — Types dans les pages de tokens de composants
+
+Cible application, mandat explicite du 31 octobre 2026. Base 762dd79, branche codex/ds-edit-21-component-token-types. Arbre suivi propre, 85 non suivis préservés. Procédure implement-feature à cette base ; choix localisé, recommandation GPT-6.1 Sol · Moyenne, aucun réglage client vérifié.
+
+Regrouper chaque page Button, Field, etc. par famille visuelle anglaise : color, space, radius, stroke, size et type / sous-type, uniquement si peuplée. Réutiliser primitiveFamily et les propriétés du contrat, sans reclassement sémantique ni modification des valeurs. All garde ses catégories par composant. Types, format/lint ciblés et parcours desktop/mobile ; recette copiée avec modèle identique et ancienne racine conservée. Revues design, technique et sécurité séquentielles, même agent, non indépendantes. Pas de contrat/writer/CSS de composant affecté ; pas de campagne serveur ou distribution prévue. En revue — qualification technique acquise, acceptation humaine différée. Doc updated. [Bilan](../reviews/ds-edit-21-component-token-types.md).

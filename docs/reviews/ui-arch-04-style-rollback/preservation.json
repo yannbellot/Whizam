@@ -1,0 +1,20 @@
+{
+  "old-project": {
+    "records": 8,
+    "recordsUnchanged": true,
+    "authorityUnchanged": true,
+    "sourcesMatchTarget": true
+  },
+  "new-project": {
+    "records": 0,
+    "recordsUnchanged": true,
+    "authorityUnchanged": true,
+    "sourcesMatchTarget": true
+  },
+  "new-tool": {
+    "records": 0,
+    "recordsUnchanged": true,
+    "authorityUnchanged": true,
+    "sourcesMatchTarget": true
+  }
+}

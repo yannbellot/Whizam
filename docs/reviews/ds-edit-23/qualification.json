@@ -1,0 +1,25 @@
+{
+  "status": "technically-qualified-human-acceptance-deferred",
+  "candidateManifestSHA256": "0dbe58c2a7453db7a269ba558d3761c32c5d73792e99db94aac0fa3ed5ffbc25",
+  "unit": 116,
+  "designSystem": 74,
+  "serverDistinctAcrossCampaigns": 84,
+  "agentSynthetic": 12,
+  "documentation": 5,
+  "development": {
+    "passed": 42,
+    "conditionalSkips": 2
+  },
+  "static": {
+    "passedAcrossCampaignAndRetest": 40,
+    "conditionalSkips": 4
+  },
+  "persistent": 12,
+  "browserRecovery": 4,
+  "realModelAndBrowser": true,
+  "recipe": "http://127.0.0.1:54123/",
+  "oldRecipePreserved": "http://127.0.0.1:54118/",
+  "reviewMode": "sequential-same-agent-not-independent",
+  "publication": false,
+  "liveApplicationUpdate": true
+}

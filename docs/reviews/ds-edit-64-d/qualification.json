@@ -1,0 +1,14 @@
+{
+  "base": "becc9924e224dd5c9d1abe56f69decf354ea2216",
+  "manifest": 15,
+  "persistentBrowserTestsPassed": 14,
+  "compiledBrowserTestsPassed": 8,
+  "serverTestsPassed": 85,
+  "assistanceTestsPassed": 13,
+  "unitTestsPassed": 152,
+  "designSystemTestsPassed": 82,
+  "providerConnectionTested": false,
+  "providerInferenceExecuted": false,
+  "oldInstancesUpdated": false,
+  "humanAcceptance": "pending"
+}

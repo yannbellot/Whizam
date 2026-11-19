@@ -1,0 +1,180 @@
+{
+  "trackedEntries": 893,
+  "symlinks": [
+    {
+      "path": ".agents/skills/analyze-brief",
+      "target": "../../skills/analyze-brief"
+    },
+    {
+      "path": ".agents/skills/analyze-design-references",
+      "target": "../../skills/analyze-design-references"
+    },
+    {
+      "path": ".agents/skills/backup-and-rollback",
+      "target": "../../skills/backup-and-rollback"
+    },
+    {
+      "path": ".agents/skills/brief-to-specs",
+      "target": "../../skills/brief-to-specs"
+    },
+    {
+      "path": ".agents/skills/data-permissions-migrations",
+      "target": "../../skills/data-permissions-migrations"
+    },
+    {
+      "path": ".agents/skills/deploy-docker-compose",
+      "target": "../../skills/deploy-docker-compose"
+    },
+    {
+      "path": ".agents/skills/design-interactions",
+      "target": "../../skills/design-interactions"
+    },
+    {
+      "path": ".agents/skills/diagnose-incident",
+      "target": "../../skills/diagnose-incident"
+    },
+    {
+      "path": ".agents/skills/implement-feature",
+      "target": "../../skills/implement-feature"
+    },
+    {
+      "path": ".agents/skills/initialize-project",
+      "target": "../../skills/initialize-project"
+    },
+    {
+      "path": ".agents/skills/map-figma-to-components",
+      "target": "../../skills/map-figma-to-components"
+    },
+    {
+      "path": ".agents/skills/normalize-design-system",
+      "target": "../../skills/normalize-design-system"
+    },
+    {
+      "path": ".agents/skills/plan-feature",
+      "target": "../../skills/plan-feature"
+    },
+    {
+      "path": ".agents/skills/prepare-handoff",
+      "target": "../../skills/prepare-handoff"
+    },
+    {
+      "path": ".agents/skills/prepare-release",
+      "target": "../../skills/prepare-release"
+    },
+    {
+      "path": ".agents/skills/propose-architecture",
+      "target": "../../skills/propose-architecture"
+    },
+    {
+      "path": ".agents/skills/review-design",
+      "target": "../../skills/review-design"
+    },
+    {
+      "path": ".agents/skills/security-review",
+      "target": "../../skills/security-review"
+    },
+    {
+      "path": ".agents/skills/technical-review",
+      "target": "../../skills/technical-review"
+    },
+    {
+      "path": ".agents/skills/test-user-flow",
+      "target": "../../skills/test-user-flow"
+    },
+    {
+      "path": ".agents/skills/update-project-docs",
+      "target": "../../skills/update-project-docs"
+    },
+    {
+      "path": ".claude/skills/analyze-brief",
+      "target": "../../skills/analyze-brief"
+    },
+    {
+      "path": ".claude/skills/analyze-design-references",
+      "target": "../../skills/analyze-design-references"
+    },
+    {
+      "path": ".claude/skills/backup-and-rollback",
+      "target": "../../skills/backup-and-rollback"
+    },
+    {
+      "path": ".claude/skills/brief-to-specs",
+      "target": "../../skills/brief-to-specs"
+    },
+    {
+      "path": ".claude/skills/data-permissions-migrations",
+      "target": "../../skills/data-permissions-migrations"
+    },
+    {
+      "path": ".claude/skills/deploy-docker-compose",
+      "target": "../../skills/deploy-docker-compose"
+    },
+    {
+      "path": ".claude/skills/design-interactions",
+      "target": "../../skills/design-interactions"
+    },
+    {
+      "path": ".claude/skills/diagnose-incident",
+      "target": "../../skills/diagnose-incident"
+    },
+    {
+      "path": ".claude/skills/implement-feature",
+      "target": "../../skills/implement-feature"
+    },
+    {
+      "path": ".claude/skills/initialize-project",
+      "target": "../../skills/initialize-project"
+    },
+    {
+      "path": ".claude/skills/map-figma-to-components",
+      "target": "../../skills/map-figma-to-components"
+    },
+    {
+      "path": ".claude/skills/normalize-design-system",
+      "target": "../../skills/normalize-design-system"
+    },
+    {
+      "path": ".claude/skills/plan-feature",
+      "target": "../../skills/plan-feature"
+    },
+    {
+      "path": ".claude/skills/prepare-handoff",
+      "target": "../../skills/prepare-handoff"
+    },
+    {
+      "path": ".claude/skills/prepare-release",
+      "target": "../../skills/prepare-release"
+    },
+    {
+      "path": ".claude/skills/propose-architecture",
+      "target": "../../skills/propose-architecture"
+    },
+    {
+      "path": ".claude/skills/review-design",
+      "target": "../../skills/review-design"
+    },
+    {
+      "path": ".claude/skills/security-review",
+      "target": "../../skills/security-review"
+    },
+    {
+      "path": ".claude/skills/technical-review",
+      "target": "../../skills/technical-review"
+    },
+    {
+      "path": ".claude/skills/test-user-flow",
+      "target": "../../skills/test-user-flow"
+    },
+    {
+      "path": ".claude/skills/update-project-docs",
+      "target": "../../skills/update-project-docs"
+    }
+  ],
+  "privateStatePresent": false,
+  "gitPresent": false,
+  "dockerBuildImage": "sha256:68df65193b4b12a810fc929e3c55f3cf41b7adb3b52c884ddbbf57265e4c7757",
+  "dockerRuntimeImage": "sha256:a8e1dae69184c9efc5bd383b65711329dd3b33c479cf87034ba3ce314bc08d30",
+  "architecture": "arm64",
+  "network": "none",
+  "mounts": []
+}

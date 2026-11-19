@@ -1,0 +1,107 @@
+# Présentation uniquement ; tokens de composants dans tokens.tokens.json.
+schemaVersion: 4
+target: button
+presentation:
+  label: Bouton
+  parts:
+    root: Ensemble
+  variants:
+    default: Standard
+  states:
+    default: Par défaut
+    hover: Survol
+    focus-visible: Focus clavier
+    disabled: Désactivé
+    loading: Chargement
+  consumerFiles:
+    - src/design-system/components/Button/Button.tsx
+  contrastParts:
+    - root
+  semanticGuidance:
+    purpose: Déclencher une action explicite ; distinguer son importance et sa disponibilité.
+    recommendations:
+      - variants:
+          - default
+        part: root
+        properties:
+          - background
+        states:
+          - default
+          - hover
+          - loading
+        intentions:
+          - actions.primary
+          - actions.secondary
+        reason: Respecter le rôle Ensemble et le ton Standard du composant.
+      - variants:
+          - default
+        part: root
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - actions.primary
+          - actions.secondary
+        reason: Respecter le rôle Ensemble et le ton Standard du composant.
+      - variants:
+          - default
+        part: root
+        properties:
+          - background
+        states:
+          - disabled
+        intentions:
+          - availability-capacity.unavailable
+        reason: Exprimer l’indisponibilité de ce contexte.
+      - variants:
+          - default
+        part: root
+        properties:
+          - ringColor
+        states:
+          - focus-visible
+        intentions:
+          - actions.primary
+          - actions.secondary
+        reason: Respecter le rôle Ensemble et le ton Standard du composant.
+      - variants:
+          - default
+        part: root
+        properties:
+          - borderRadius
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-shape
+        reason: Politique d’arrondi des contrôles interactifs ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - default
+        part: root
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-family
+        reason: Famille des libellés et saisies des contrôles.
+      - variants:
+          - default
+        part: root
+        properties:
+          - paddingBlock
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-block-space
+        reason: Espace intérieur des contrôles sur l’axe block, valeur initiale 0.7rem conservée.
+      - variants:
+          - default
+        part: root
+        properties:
+          - paddingInline
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-inline-space
+        reason: Espace intérieur des contrôles sur l’axe inline, valeur initiale 1rem conservée.

@@ -1,0 +1,145 @@
+{
+  "base": "5bc6792b13637d1161ce0e50a193bddc7de03ba4",
+  "status": "routing-plan-not-applied",
+  "preserveStoryIds": true,
+  "order": [
+    "01 — Primitives",
+    "02 — Semantic Tokens",
+    "03 — Component Tokens",
+    "04 — Components",
+    "05 — Patterns",
+    "06 — Templates"
+  ],
+  "reservedEmptySections": [
+    "05 — Patterns",
+    "06 — Templates"
+  ],
+  "files": [
+    {
+      "file": "application/.storybook/principles.mdx",
+      "titleBefore": "Design system/Principes",
+      "titleAfter": "04 — Components/Principles",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/.storybook/semantic-catalog.mdx",
+      "titleBefore": "Design system/Catalogue des intentions",
+      "titleAfter": "02 — Semantic Tokens/Intentions",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/.storybook/style-inventory.mdx",
+      "titleBefore": "Design system/Inventaire des styles",
+      "titleAfter": "03 — Component Tokens/Style inventory",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/app/features/projects/ProjectSummary.stories.tsx",
+      "titleBefore": "Projects/Résumé",
+      "titleAfter": "04 — Components/ProjectSummary",
+      "explicitMetaId": "projects-summary",
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/Foundations.stories.tsx",
+      "titleBefore": "Design system/Foundations",
+      "titleAfter": "01 — Primitives/Compatibility",
+      "explicitMetaId": null,
+      "note": "Scinder Overview/Rules selon leur responsabilité ; anciens Primitives/Tokens restent masqués et accessibles, document Foundations/Docs garde son ID de compatibilité."
+    },
+    {
+      "file": "application/src/design-system/MigrationFixtures.stories.tsx",
+      "titleBefore": "Design system/Migration",
+      "titleAfter": "04 — Components/Reference fixtures",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Component-tokens.stories.tsx",
+      "titleBefore": "Design system/Component tokens",
+      "titleAfter": "03 — Component Tokens",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Primitives-color.stories.tsx",
+      "titleBefore": "Design system/Primitives/color",
+      "titleAfter": "01 — Primitives/color",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Primitives-type.stories.tsx",
+      "titleBefore": "Design system/Primitives/type",
+      "titleAfter": "01 — Primitives/type",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Primitives.stories.tsx",
+      "titleBefore": "Design system/Primitives",
+      "titleAfter": "01 — Primitives",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Semantic-tokens-color.stories.tsx",
+      "titleBefore": "Design system/Semantic tokens/color",
+      "titleAfter": "02 — Semantic Tokens/color",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent. Retirer les feuilles devenues vides après migration, sans conserver de faux style."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Semantic-tokens-size.stories.tsx",
+      "titleBefore": "Design system/Semantic tokens/size",
+      "titleAfter": "02 — Semantic Tokens/size",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent. Retirer les feuilles devenues vides après migration, sans conserver de faux style."
+    },
+    {
+      "file": "application/src/design-system/catalog-stories/Semantic-tokens.stories.tsx",
+      "titleBefore": "Design system/Semantic tokens",
+      "titleAfter": "02 — Semantic Tokens",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent. Retirer les feuilles devenues vides après migration, sans conserver de faux style."
+    },
+    {
+      "file": "application/src/design-system/components/Button/Button.stories.tsx",
+      "titleBefore": "Components/Button",
+      "titleAfter": "04 — Components/Button",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/components/Field.stories.tsx",
+      "titleBefore": "Components/Field",
+      "titleAfter": "04 — Components/Field",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/components/Notice.stories.tsx",
+      "titleBefore": "Components/Notice",
+      "titleAfter": "04 — Components/Notice",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/design-system/components/Panel.stories.tsx",
+      "titleBefore": "Components/Panel",
+      "titleAfter": "04 — Components/Panel",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    },
+    {
+      "file": "application/src/ui-lab/ControlStates.stories.tsx",
+      "titleBefore": "Patterns/États",
+      "titleAfter": "04 — Components/States",
+      "explicitMetaId": null,
+      "note": "Conserver les IDs existants explicitement ; titre visible et ordre seuls évoluent."
+    }
+  ]
+}

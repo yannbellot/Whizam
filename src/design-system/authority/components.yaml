@@ -1,0 +1,134 @@
+schemaVersion: 5
+designSystemComponents:
+  - id: Button
+    implementation: src/design-system/components/Button/Button.tsx
+    foundation:
+      kind: native-element
+      reference: button
+    accessibility:
+      accessibleName: required
+      keyboardBehavior: native
+      focusVisible: required
+    documentation:
+      status: provisional
+      note: Contrat adjacent migré en B sans changement visuel ; décision 006 du kit.
+    family: ui
+    examples: src/design-system/components/Button/Button.examples.tsx
+    story: src/design-system/components/Button/Button.generated.stories.tsx
+    storyId: components-button
+    title: 02 — Components/UI Components/Button
+    requiredExamples:
+      - Default
+      - Disabled
+      - Loading
+      - Tokens
+      - HTMLForm
+    target: button
+    variantExamples:
+      default: Default
+  - id: Field
+    implementation: src/design-system/components/Field.tsx
+    foundation:
+      kind: native-element
+      reference: input
+    accessibility:
+      accessibleName: required
+      keyboardBehavior: native
+      focusVisible: required
+    documentation:
+      status: provisional
+      note: Contrat adjacent migré en B sans changement visuel ; décision 006 du kit.
+    family: ui
+    examples: src/design-system/components/Field.examples.tsx
+    story: src/design-system/components/Field.generated.stories.tsx
+    storyId: components-field
+    title: 02 — Components/UI Components/Field
+    requiredExamples:
+      - Default
+      - Invalid
+      - Disabled
+      - Multiline
+      - Selection
+      - MultilineInvalid
+      - MultilineDisabled
+      - SelectionDisabled
+      - Tokens
+    target: field
+    variantExamples:
+      multiline: Multiline
+      single-line: Default
+  - id: SelectField
+    implementation: src/design-system/components/Field.tsx
+    foundation:
+      kind: native-element
+      reference: select
+    accessibility:
+      accessibleName: required
+      keyboardBehavior: native
+      focusVisible: required
+    documentation:
+      status: provisional
+      note: Contrat adjacent migré en B sans changement visuel ; décision 006 du kit.
+    family: ui
+    examples: src/design-system/components/SelectField.examples.tsx
+    story: src/design-system/components/SelectField.generated.stories.tsx
+    storyId: components-select-field
+    title: 02 — Components/UI Components/SelectField
+    requiredExamples:
+      - Default
+      - Disabled
+      - Tokens
+    target: select-field
+    variantExamples:
+      default: Default
+  - id: Notice
+    implementation: src/design-system/components/Notice.tsx
+    foundation:
+      kind: native-element
+      reference: div
+    accessibility:
+      accessibleName: required
+      keyboardBehavior: native
+      focusVisible: required
+    documentation:
+      status: provisional
+      note: Contrat adjacent migré en B sans changement visuel ; décision 006 du kit.
+    family: ui
+    examples: src/design-system/components/Notice.examples.tsx
+    story: src/design-system/components/Notice.generated.stories.tsx
+    storyId: components-notice
+    title: 02 — Components/UI Components/Notice
+    requiredExamples:
+      - Empty
+      - Success
+      - Error
+      - Tokens
+    target: notice
+    variantExamples:
+      error: Error
+      info: Empty
+      success: Success
+  - id: Panel
+    implementation: src/design-system/components/Notice.tsx
+    foundation:
+      kind: native-element
+      reference: div
+    accessibility:
+      accessibleName: required
+      keyboardBehavior: native
+      focusVisible: required
+    documentation:
+      status: provisional
+      note: Contrat adjacent migré en B sans changement visuel ; décision 006 du kit.
+    family: layout
+    examples: src/design-system/components/Panel.examples.tsx
+    story: src/design-system/components/Panel.generated.stories.tsx
+    storyId: components-panel
+    title: 02 — Components/Layout Components/Panel
+    requiredExamples:
+      - Default
+      - Tokens
+    target: panel
+    variantExamples:
+      default: Default
+tokenFormat: dtcg-2025.10

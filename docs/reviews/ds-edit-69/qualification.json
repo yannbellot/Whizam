@@ -1,0 +1,29 @@
+{
+  "mode": "sequential, same agent, not independent",
+  "survivedStorm": true,
+  "noMetadataRestart": true,
+  "serialReplacement": true,
+  "saved": true,
+  "realConfigurationEditSurvived": true,
+  "reread": true,
+  "unexpectedFailureNotLooped": true,
+  "exit": {
+    "code": 1,
+    "signal": null
+  },
+  "task": "DS-EDIT-69",
+  "base": "dd084cd",
+  "typecheck": "pass",
+  "lint": "pass",
+  "persistent": {
+    "initialPass": 13,
+    "initialFailed": 1,
+    "isolatedMobileRetest": "pass"
+  },
+  "recipeModelPreserved": true,
+  "recipeBindings": 188,
+  "recipeStyles": 18,
+  "baselineNative": "snapshot 503 after storm/configuration change",
+  "pollingOnly": "ENOTEMPTY",
+  "humanAcceptance": false
+}

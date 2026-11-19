@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/policy.schema.json",
+  "title": "Politiques du design system",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceHierarchy",
+    "arbitration",
+    "baseUi",
+    "directValues",
+    "accessibility",
+    "documentation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sourceHierarchy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conflictBehavior", "levels"],
+      "properties": {
+        "conflictBehavior": {
+          "const": "stop-and-request-human-decision"
+        },
+        "levels": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["rank", "source", "role"],
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "source": {
+                "enum": [
+                  "brief",
+                  "specifications",
+                  "figma-references",
+                  "documented-design-system",
+                  "architecture",
+                  "implementation-and-migrations",
+                  "tests"
+                ]
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "arbitration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["silentArbitration", "missingDecision", "conflictingDecision"],
+      "properties": {
+        "silentArbitration": {
+          "const": "forbidden"
+        },
+        "missingDecision": {
+          "const": "documented-reversible-assumption-or-human-decision"
+        },
+        "conflictingDecision": {
+          "const": "stop-and-request-human-decision"
+        }
+      }
+    },
+    "baseUi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorityRole",
+        "availableMeaning",
+        "adoptionRequirement",
+        "automaticAdoption",
+        "figmaRequired"
+      ],
+      "properties": {
+        "authorityRole": {
+          "const": "accessible-behavior-foundation-only"
+        },
+        "availableMeaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adoptionRequirement": {
+          "const": "explicit-human-decision-and-design-system-contract"
+        },
+        "automaticAdoption": {
+          "const": "forbidden"
+        },
+        "figmaRequired": {
+          "const": false
+        }
+      }
+    },
+    "directValues": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorityFiles",
+        "componentContracts",
+        "generatedArtifacts",
+        "existingLaboratoryStyles",
+        "newReusableStyles"
+      ],
+      "properties": {
+        "authorityFiles": {
+          "const": "forbidden-outside-primitives"
+        },
+        "componentContracts": {
+          "const": "forbidden"
+        },
+        "generatedArtifacts": {
+          "enum": ["derived-from-authority-in-j2", "derived-from-authority"]
+        },
+        "existingLaboratoryStyles": {
+          "const": "require-authority-first"
+        },
+        "newReusableStyles": {
+          "const": "require-authority-first"
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimum", "exceptions"],
+      "properties": {
+        "minimum": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "accessible-name-for-interactive-controls",
+              "keyboard-operation",
+              "visible-focus",
+              "semantic-html-or-documented-equivalent",
+              "documented-states"
+            ]
+          }
+        },
+        "exceptions": {
+          "const": "explicit-human-decision-with-rationale"
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language", "requiredForChange", "duplicateDecision", "crossFileReferences"],
+      "properties": {
+        "language": {
+          "const": "fr"
+        },
+        "requiredForChange": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "owner-file",
+              "rationale-or-provenance",
+              "validation-command",
+              "unresolved-decisions"
+            ]
+          }
+        },
+        "duplicateDecision": {
+          "const": "forbidden"
+        },
+        "crossFileReferences": {
+          "const": "must-be-machine-verifiable"
+        }
+      }
+    }
+  }
+}

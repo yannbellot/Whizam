@@ -1,0 +1,5 @@
+# Explicit complement for Node/npm development on the host.
+services:
+  postgres:
+    ports:
+      - '127.0.0.1:${DB_PORT:?Database host port required}:5432'

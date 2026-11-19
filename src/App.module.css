@@ -1,0 +1,10 @@
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--adl-slot-app-page-padding-1);
+}
+
+.page p {
+  max-width: var(--adl-slot-app-page-p-max-width-2);
+}

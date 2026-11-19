@@ -1,0 +1,31 @@
+{
+  "source": {
+    "tree": "3da0c3088aed971d9b2f48a6042ab15fc9fc184d",
+    "applicationTree": "39ce6ea491dca463dfea954321e710493d1293b4",
+    "base": "710f5bba1861e0e4e5b20eaaa86f76f5ab1d6a79",
+    "version": "3e6ba795f862c84597c6f78a351987aa024b23a1"
+  },
+  "preexistingUntrackedFiles": 39,
+  "untrackedHashesUnchanged": true,
+  "archives": {
+    "AGENTS.supervised.md": "ef0fe19a5180ed8f9e919bd1c726a85673fac41ef159225cc5e64cbe13041439",
+    "docs/project-state-history-through-j3.md": "e0b0fe1ce8ba71dcd06b1b8cbad47ff1fcc2188c5e698edf1758a355cdfc6064"
+  },
+  "archiveHashesUnchanged": true,
+  "labSkillAliasesResolved": 20,
+  "singleCanonicalLibrary": true,
+  "labClaudeGeminiEntriesAbsent": true,
+  "webModulesMigrationsComposeDockerfileAndLockfileUnchanged": {
+    "application/app": true,
+    "application/src": true,
+    "application/drizzle": true,
+    "application/package-lock.json": true,
+    "application/compose.yaml": true,
+    "application/compose.host.yaml": true,
+    "application/Dockerfile": true
+  },
+  "preexistingContainersUnchanged": 40,
+  "ownedComposeProjectsCleaned": 2,
+  "nativeAssistantCompatibility": "not newly verified",
+  "publication": "none"
+}

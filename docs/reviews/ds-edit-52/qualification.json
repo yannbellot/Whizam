@@ -1,0 +1,38 @@
+{
+  "designSystem": {
+    "passed": 76,
+    "failed": 0
+  },
+  "unit": {
+    "passed": 38,
+    "failed": 0
+  },
+  "server": {
+    "passed": 85,
+    "failed": 0
+  },
+  "documentation": {
+    "passed": 5,
+    "failed": 0
+  },
+  "storybook": {
+    "passed": 8,
+    "failed": 0
+  },
+  "catalogue": {
+    "passed": 2,
+    "failed": 0
+  },
+  "editorDevelopment": {
+    "passed": 4,
+    "failed": 0
+  },
+  "typecheck": "passed in isolated preview without pre-existing untracked files",
+  "eslint": "passed for changed source/test files",
+  "prettier": "passed for changed source/test files",
+  "agentKit": "21 skills and 4 roles valid",
+  "docsCurrent": true,
+  "independentReview": false,
+  "base": "0862d5b",
+  "sourceFingerprintSha256": "4dac1202914527efad1da5014f117c63c83ca749d68c8caf6fa79f49fc4a6595"
+}

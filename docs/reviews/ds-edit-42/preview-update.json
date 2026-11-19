@@ -1,0 +1,14 @@
+{
+  "port": 54137,
+  "files": [
+    ".storybook/editor/Panel.tsx",
+    ".storybook/editor/Preview.tsx",
+    ".storybook/editor/session.ts",
+    ".storybook/editor/HeaderTools.tsx",
+    ".storybook/editor/server/manifest.mjs",
+    "src/design-system/editor/snapshot.ts"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "draftBefore": "Génération chargée, Enregistrer disabled"
+}

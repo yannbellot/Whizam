@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "task": "DS-ARCH-01",
+  "status": "En revue — qualification technique acquise, acceptation humaine différée",
+  "baseCommit": "bdaf3473c09773e72feba9cd9209e657ecfd48c2",
+  "candidate": {
+    "sourceFiles": 796,
+    "sourceMapSHA256": "91abf457d4903ee5bde0fd630cda937327ed58c50d6e01660dfcdf9950e58a0d",
+    "description": "Empreinte du relevé de sources extrait avant ajout des preuves finales ; pas une empreinte auto-référentielle du rapport.",
+    "manifestVersion": 27,
+    "editorModelVersion": 4,
+    "snapshotVersion": 4,
+    "writeProtocolVersion": 4
+  },
+  "runtime": {
+    "node": "24.22.0",
+    "npm": "11.8.0",
+    "host": "macOS arm64",
+    "playwright": "1.64.1",
+    "docker": "29.8.2",
+    "postgres": "18.6"
+  },
+  "canonical": {
+    "editorModelExact": true,
+    "legacyAliasesExact": true,
+    "catalogueExact": true,
+    "identities": 463,
+    "byKind": {
+      "primitive": 109,
+      "decision": 17,
+      "component": 313,
+      "alias": 24
+    },
+    "byCollection": {
+      "editor": 230,
+      "composition": 167,
+      "compatibility": 24,
+      "sample": 9,
+      "parameter": 33
+    },
+    "canonicalTokenHash": "42874cdea230c69fd631456758a82dae6ca21471a10988856dc35410c1ce49be"
+  },
+  "savedRecipe": {
+    "oldInstanceUntouched": true,
+    "oldPrivateStateCopied": false,
+    "receiptsConverted": false,
+    "savedModelExact": true,
+    "bindings": 188,
+    "decisions": 18,
+    "primitives": 28
+  },
+  "portable": {
+    "physicalDependencies": true,
+    "physicalRuntime": true,
+    "parentSourcesRequired": false,
+    "tokenHash": "0181e4825504d6d0d70125705e57f4d5ed444993156edbc4c3ae13909cb2eb96",
+    "stages": [
+      {
+        "stage": "renamed",
+        "root": "renamed kit with spaces",
+        "tokensUnchanged": true,
+        "checks": [
+          "validate:agent-kit",
+          "tokens:generate",
+          "typecheck",
+          "build-storybook"
+        ]
+      },
+      {
+        "stage": "moved",
+        "root": "relocated area/delivered kit",
+        "tokensUnchanged": true,
+        "checks": [
+          "validate:agent-kit",
+          "tokens:generate",
+          "typecheck",
+          "build-storybook"
+        ]
+      }
+    ]
+  },
+  "browserRecipe": {
+    "savedButton": "#0050c9",
+    "stages": [
+      {
+        "width": 1280,
+        "workshopAndStorybookSavedValue": "rgb(0, 80, 201)",
+        "architecture": true,
+        "pattern": true
+      },
+      {
+        "width": 390,
+        "workshopAndStorybookSavedValue": "rgb(0, 80, 201)",
+        "architecture": true,
+        "pattern": true
+      }
+    ],
+    "externalRequests": [],
+    "previousStoryIdsPreserved": 64
+  },
+  "quality": [
+    {
+      "command": "typecheck",
+      "exitCode": 0,
+      "seconds": 4.0
+    },
+    {
+      "command": "lint",
+      "exitCode": 0,
+      "seconds": 2.3
+    },
+    {
+      "command": "format:check",
+      "exitCode": 0,
+      "seconds": 1.4
+    },
+    {
+      "command": "test:boundaries",
+      "exitCode": 0,
+      "seconds": 2.8
+    },
+    {
+      "command": "test:storybook",
+      "exitCode": 0,
+      "seconds": 13.6
+    },
+    {
+      "command": "test:design-editor:server",
+      "exitCode": 0,
+      "seconds": 216.6
+    }
+  ],
+  "checks": {
+    "designSystem": 103,
+    "dtcgSubset": 20,
+    "documentation": 5,
+    "unit": 149,
+    "editorServer": 65,
+    "assistanceSimulated": 13,
+    "workshop": 32,
+    "workshopNavigationRetest": 10,
+    "persistence": 14,
+    "recoveryActualCases": 4,
+    "storybook": 16,
+    "postgresIntegration": 14,
+    "lab": 6,
+    "visualPairsIdentical": 14,
+    "preparedCellsWired": 188
+  },
+  "dataConservation": {
+    "stages": [
+      {
+        "stage": "initial",
+        "main": {
+          "project": "adl-ff4fb58b20f0",
+          "volume": "adl-ff4fb58b20f0_database",
+          "rows": 3,
+          "dataHash": "d7f57b7d0ff656d3adb9aef1e443cfa0cc7f40d9479c4f7aed000377a2b56ed2",
+          "configHash": "f8d4ffbb8a0879c6aff159ca858c507f097fb30c1aae883ff09b7e0692e890fe",
+          "started": "2026-11-05T17:40:30.856853758Z"
+        },
+        "witness": {
+          "project": "adl-d1a410e53619",
+          "volume": "adl-d1a410e53619_database",
+          "rows": 3,
+          "dataHash": "9db75c3f004bef1829a3e09de81fdace0ad00c534a7bf396f6fd2451b94cf083",
+          "configHash": "fb2a7f9eae2da8048c5f8791b2b722bba2267231de08b7b0348397ee8fab12ba",
+          "started": "2026-11-05T17:40:36.91456172Z"
+        }
+      },
+      {
+        "stage": "renamed",
+        "main": {
+          "project": "adl-ff4fb58b20f0",
+          "volume": "adl-ff4fb58b20f0_database",
+          "rows": 3,
+          "dataHash": "d7f57b7d0ff656d3adb9aef1e443cfa0cc7f40d9479c4f7aed000377a2b56ed2",
+          "configHash": "f8d4ffbb8a0879c6aff159ca858c507f097fb30c1aae883ff09b7e0692e890fe",
+          "started": "2026-11-05T17:40:43.503082583Z"
+        },
+        "witness": {
+          "project": "adl-d1a410e53619",
+          "volume": "adl-d1a410e53619_database",
+          "rows": 3,
+          "dataHash": "9db75c3f004bef1829a3e09de81fdace0ad00c534a7bf396f6fd2451b94cf083",
+          "configHash": "fb2a7f9eae2da8048c5f8791b2b722bba2267231de08b7b0348397ee8fab12ba",
+          "started": "2026-11-05T17:40:36.91456172Z"
+        }
+      },
+      {
+        "stage": "moved",
+        "main": {
+          "project": "adl-ff4fb58b20f0",
+          "volume": "adl-ff4fb58b20f0_database",
+          "rows": 3,
+          "dataHash": "d7f57b7d0ff656d3adb9aef1e443cfa0cc7f40d9479c4f7aed000377a2b56ed2",
+          "configHash": "f8d4ffbb8a0879c6aff159ca858c507f097fb30c1aae883ff09b7e0692e890fe",
+          "started": "2026-11-05T17:40:50.047035795Z"
+        },
+        "witness": {
+          "project": "adl-d1a410e53619",
+          "volume": "adl-d1a410e53619_database",
+          "rows": 3,
+          "dataHash": "9db75c3f004bef1829a3e09de81fdace0ad00c534a7bf396f6fd2451b94cf083",
+          "configHash": "fb2a7f9eae2da8048c5f8791b2b722bba2267231de08b7b0348397ee8fab12ba",
+          "started": "2026-11-05T17:40:36.91456172Z"
+        }
+      }
+    ],
+    "cleaned": true
+  },
+  "dockerInventoryComparison": {
+    "containers": {
+      "missing": [
+        "7901624a22160c1b6f93dcc53c67548bb3cea890ca38a1ca01e7f7efdff2221e"
+      ],
+      "added": []
+    },
+    "volumes": {
+      "missing": [],
+      "added": []
+    },
+    "networks": {
+      "missing": [
+        "90abe9815626c1793296045550cf588963601e69e5ed0b1b2851293c3bc60d26"
+      ],
+      "added": []
+    },
+    "images": {
+      "missing": [],
+      "added": []
+    }
+  },
+  "reviewMode": "séquentiel, même agent, non indépendant",
+  "notExecuted": [
+    "acceptation visuelle humaine",
+    "reprise par un tiers",
+    "autres moteurs et hôtes",
+    "nouvel essai natif des assistants",
+    "inférence fournisseur réelle",
+    "audit connecté actuel des dépendances",
+    "push/CI distante/publication/déploiement"
+  ],
+  "logs": {
+    "core-final.log": "f9052a2e2e5d15d41320a877222fe6ceeffb60e4956404c407471e67b823b9f7",
+    "final-test-design-system.log": "7da6140fe280a6c0dc86f2db78e44a9109bb86a1be599b2b67013a9655104013",
+    "qualification-test-design-system-docs.log": "a7dfe12b4ae818458d5e227a416eb1dfcd6596227216a7ca072437b4395fa2f0",
+    "qualification-test-retry.log": "394a172fd0890e722448aa0e83b570927ef9b59654902372ebd438aecf117b39",
+    "final2-test-design-editor-server.log": "137cfa6c6f143b871196f18ea9fad09392255cf73659788f97dd5d7656070c57",
+    "final-test-design-agent.log": "50ff55ad821fa5d0ef516bfca2e20395b12b17370db313e7287cb5e347f29b7c",
+    "final2-test-boundaries.log": "e604e59203b24d20f4392e1bb69c18c5ec7b5fa248cccb405b7abd35be4727b2",
+    "storybook-final-16.log": "0b559c7f3f47694b871dd54606f70ea5612e4f1f0e5632e93c7612452391bc77",
+    "final-test-design-editor.log": "62a8b29c4222afe6cd13be068bec200df5c2140db79294162dab34295c3d209e",
+    "navigation-final.log": "7d0132206bee79819ffc5817290eeae31ba3a3873f0ff2ad247e5de62681aaea",
+    "final-test-design-editor-persistence.log": "c7e58035d93633a6bf74654ae8165d66b07fafa3dd3fdf323a3b808c9e71d0e7",
+    "final-test-design-editor-recovery.log": "bc0d7af031e0a7835687c976b39a73192903176bf2917349b82b16231b90a16b",
+    "qualification-integration.log": "aaa2efd1331a59e4c09733d948224453d72513002591318de75090254e7d17e1",
+    "visual-after.log": "e468a9acfd158dea24a4e27d378f2abe612889e7e1f25cd5bcccfbefa008d145",
+    "preview-proof-final.log": "d40968ea925e51f0949412271d92e78b9f21ede61d657e9ef0e5166908231bc9",
+    "portable-renamed.log": "7e60c49f3671469fe4c50d623c0831dfc27bb55c6d0e6d205a0230a572ce6794",
+    "portable-moved.log": "a7769e773cec66c9470471fbd11179aff5602e2032b51cb96345556bf2f96c01",
+    "final-docker-build.log": "b5751e4c18206e73ca8d06468ecbb89b05e7e252ffded84153028ca1a0cb72b2",
+    "docker-runtime-final.log": "0de8b6787218c97d5b8419b4b3fd1c579c889a00c0ec9dcc3c159d80afd4c00d",
+    "data.log": "98bd2fa1c95c9e56c4a6ec30f976a765c535038758b035834b296a66576d2ac6",
+    "lab-tests.log": "d80370b7ff41cfe06ebc5190fa5d3f0b6eed3c1bfb264847fa491caf48d1884f"
+  },
+  "implementationCommit": "623a11246e18a123781f077b6d33d848f83f05a7",
+  "finalQuality": {
+    "typecheck": 0,
+    "lint": 0,
+    "format:check": 0,
+    "docs:design-system:check": 0,
+    "validate:agent-kit": 0,
+    "validate-lab-kit": 0,
+    "lab-kit-tests": 0
+  }
+}

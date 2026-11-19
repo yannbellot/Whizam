@@ -1,0 +1,104 @@
+{
+  "reference": "DS-EDIT-64 E immutable executable candidate 055fbbc",
+  "candidate": "DS-EDIT-64 F working runtime fingerprint in qualification.json",
+  "comparisons": [
+    {
+      "file": "desktop-button-focus-hover",
+      "pngSha256": "ebafb4e57a30df8247c2a92659f4655adaba6eb002c81c0f2677fbff5a6dd62f",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-button-hover",
+      "pngSha256": "62a58356e4dc122442a995fb8d842fda41b6d9ec0be24f9ed65e11aab23da424",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-default",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-disabled-hover",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-field-error-focus",
+      "pngSha256": "89ab4e01d76a0baaa741357c1aa6690a849a87a55deb677ee108ec15f25689c5",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-loading-hover",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "desktop-multiline-error-focus",
+      "pngSha256": "8c4b7921b25a5c019b1b72a2b1ec52250e3a7f2baece779ab1ea907bb9459d78",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-button-focus-hover",
+      "pngSha256": "d34658210a8d6d7060936c9797b6cb4251e584ded9547a7e47f14d96b3d222f3",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-button-hover",
+      "pngSha256": "3723b00b30cddc3c073fefe71d9c8d96e4ec3533826287dbfae40f206caf21ad",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-default",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-disabled-hover",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-field-error-focus",
+      "pngSha256": "4a8147818e6bfcff0db40250470521dca98a1d6fde971bee5f4b9982fa78b8d4",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-loading-hover",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    },
+    {
+      "file": "mobile-multiline-error-focus",
+      "pngSha256": "8bd159964750cefd251e25f87d6c4ef3a4b9f4544c17176f7802f52eae633f71",
+      "pngIdentical": true,
+      "preservedElementsComputedStylesAndGeometryIdentical": true,
+      "removedAddonWrapperNodes": 1
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "task": "DS-EDIT-15",
+  "status": "En revue",
+  "qualification": "technique acquise, acceptation humaine différée",
+  "sourceCommit": "665b61e453e4bf05549cbbdd6724bcdf3b4c7cb6",
+  "runtimeCommit": "813a0457280260dcbcb261be1eb80d1a833433c3",
+  "applicationTree": "4a0160e6e3685170499a3f27402825c87d241eab",
+  "platform": "macOS arm64",
+  "node": "24.22.1",
+  "chromium": "156.0.8078.4",
+  "contracts": 55,
+  "unitTests": 122,
+  "serverTests": 74,
+  "assistanceTestsSimulated": 10,
+  "documentationTests": 5,
+  "recoveryBrowserTests": 4,
+  "applicationBrowserTests": 12,
+  "distribution": {
+    "offlineInstallPackages": 451,
+    "ownDependencies": true,
+    "sourceEntriesCompared": 373,
+    "sourcesIdentical": true,
+    "renamedAndMoved": true,
+    "applicationBuild": true,
+    "storybookBuild": true
+  },
+  "preserved": {
+    "preexistingFiles": 61,
+    "oldRecipeSources": 8,
+    "savedValues": {
+      "bindings": 188,
+      "styles": 41,
+      "aliases": 24,
+      "button": {
+        "id": "component.button.default.root.background.default",
+        "reference": "primitive.color.hex-b51a00",
+        "value": "#b51a00"
+      },
+      "equivalent": true
+    }
+  },
+  "wiring": {
+    "browser": "156.0.8078.4",
+    "node": "v24.22.1",
+    "arch": "arm64",
+    "wired": 188,
+    "isolation": {
+      "before": [
+        "rgb(255, 255, 255)",
+        "rgb(255, 255, 255)",
+        "rgb(241, 245, 249)",
+        "rgb(255, 255, 255)"
+      ],
+      "local": ["rgb(18, 52, 86)", "rgb(255, 255, 255)", "rgb(35, 69, 103)", "rgb(255, 255, 255)"],
+      "shared": ["rgb(18, 52, 86)", "rgb(52, 86, 120)", "rgb(35, 69, 103)", "rgb(52, 86, 120)"],
+      "restored": ["rgb(52, 86, 120)", "rgb(52, 86, 120)", "rgb(241, 245, 249)", "rgb(52, 86, 120)"]
+    }
+  },
+  "render": {
+    "method": "Explicit pointer reset and keyboard modality; byte-for-byte PNG and computed-style/layout comparison; paired browser check covers all computed CSS properties except custom properties.",
+    "tolerance": 0,
+    "cases": [
+      {
+        "name": "desktop-button-focus-hover",
+        "pngSha256": "ebafb4e57a30df8247c2a92659f4655adaba6eb002c81c0f2677fbff5a6dd62f",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-button-hover",
+        "pngSha256": "62a58356e4dc122442a995fb8d842fda41b6d9ec0be24f9ed65e11aab23da424",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-default",
+        "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-disabled-hover",
+        "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-field-error-focus",
+        "pngSha256": "d1beb40b418033e1d6734aa7a56885fafbcc0892797f4fb65cf886d3c15fed9a",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-loading-hover",
+        "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "desktop-multiline-error-focus",
+        "pngSha256": "8c4b7921b25a5c019b1b72a2b1ec52250e3a7f2baece779ab1ea907bb9459d78",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-button-focus-hover",
+        "pngSha256": "d34658210a8d6d7060936c9797b6cb4251e584ded9547a7e47f14d96b3d222f3",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-button-hover",
+        "pngSha256": "3723b00b30cddc3c073fefe71d9c8d96e4ec3533826287dbfae40f206caf21ad",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-default",
+        "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-disabled-hover",
+        "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-field-error-focus",
+        "pngSha256": "4a8147818e6bfcff0db40250470521dca98a1d6fde971bee5f4b9982fa78b8d4",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-loading-hover",
+        "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      },
+      {
+        "name": "mobile-multiline-error-focus",
+        "pngSha256": "8bd159964750cefd251e25f87d6c4ef3a4b9f4544c17176f7802f52eae633f71",
+        "computedStylesAndGeometryIdentical": true,
+        "allComputedCssPairedIdentical": true
+      }
+    ]
+  },
+  "reviewMode": "séquentiel, même agent, non indépendant",
+  "limits": [
+    "Acceptation humaine et reprise par un tiers différées",
+    "Découverte native et efficacité des instructions non nouvellement vérifiées",
+    "Aucune inférence fournisseur réelle",
+    "Windows/Linux et installation réseau non nouvellement vérifiés",
+    "Aucune nouvelle campagne SQL, publication ou connexion de compte"
+  ]
+}

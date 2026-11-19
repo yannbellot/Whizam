@@ -1,0 +1,13 @@
+[
+  "app/components/ImportedComponents.stories.tsx",
+  "app/features/projects/ProjectSummary.stories.tsx",
+  "src/design-system/Catalog.stories.tsx",
+  "src/design-system/MigrationFixtures.stories.tsx",
+  "src/design-system/components/Button/Button.generated.stories.tsx",
+  "src/design-system/components/Field.generated.stories.tsx",
+  "src/design-system/components/Notice.generated.stories.tsx",
+  "src/design-system/components/Panel.generated.stories.tsx",
+  "src/design-system/components/SelectField.generated.stories.tsx",
+  "src/design-system/examples/ControlStates.stories.tsx",
+  "src/design-system/patterns/FormFeedback.stories.tsx"
+]

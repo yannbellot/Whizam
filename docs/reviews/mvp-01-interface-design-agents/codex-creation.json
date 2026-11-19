@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "cases": [
+    "five real Codex proposals approved individually through the common work-item engine; source registration, shared Button and task links preserved; main unchanged",
+    "actual generated page and reusable component render in React Router, with nested occurrence selection and consistent breadcrumbs",
+    "Storybook builds the generated component story; existing documentation retained"
+  ],
+  "writes": [
+    "app/routes/t1-generated-component.tsx",
+    "app/routes/t1-generated-component.stories.tsx",
+    "app/routes/t1-generated.tsx",
+    "app/routes.ts",
+    "app/loomata-interface.json"
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/naming.schema.json",
+  "title": "Conventions de nommage du design system",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "conventions",
+    "language",
+    "tokenNaming"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "conventions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorityId",
+        "reference",
+        "reactComponent",
+        "typescriptIdentifier",
+        "cssModuleClass",
+        "technicalFile"
+      ],
+      "properties": {
+        "authorityId": {
+          "$ref": "#/$defs/convention"
+        },
+        "reference": {
+          "$ref": "#/$defs/convention"
+        },
+        "reactComponent": {
+          "$ref": "#/$defs/convention"
+        },
+        "typescriptIdentifier": {
+          "$ref": "#/$defs/convention"
+        },
+        "cssModuleClass": {
+          "$ref": "#/$defs/convention"
+        },
+        "technicalFile": {
+          "$ref": "#/$defs/convention"
+        },
+        "componentDesignFile": {
+          "$ref": "#/$defs/convention"
+        }
+      }
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "humanContent",
+        "technicalIdentifiers"
+      ],
+      "properties": {
+        "humanContent": {
+          "const": "fr"
+        },
+        "technicalIdentifiers": {
+          "const": "en"
+        }
+      }
+    },
+    "tokenNaming": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "excludedContextSegments",
+        "primitive",
+        "semantic",
+        "component"
+      ],
+      "properties": {
+        "excludedContextSegments": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "theme",
+              "viewport",
+              "language",
+              "provenance"
+            ]
+          },
+          "minItems": 4
+        },
+        "primitive": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "template",
+            "maxLength",
+            "dimensionFamilies",
+            "typeFamilies",
+            "valuePrefixes"
+          ],
+          "properties": {
+            "template": {
+              "type": "string",
+              "pattern": "^primitive\\.\\{family\\}\\.\\{value\\}$"
+            },
+            "maxLength": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "dimensionFamilies": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "typeFamilies": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "valuePrefixes": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "color",
+                "fontStack",
+                "fontWeight",
+                "ratio"
+              ],
+              "properties": {
+                "color": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fontStack": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fontWeight": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "ratio": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "semantic": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "template",
+            "domains",
+            "roleNames",
+            "categoryNames",
+            "usageTemplate",
+            "categoryUsageTemplates"
+          ],
+          "properties": {
+            "template": {
+              "type": "string",
+              "pattern": "^semantic\\.\\{domain\\}\\.\\{usage\\}\\.\\{state\\}$"
+            },
+            "domains": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "color",
+                "typography",
+                "geometry"
+              ],
+              "properties": {
+                "color": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "typography": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "geometry": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "roleNames": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "categoryNames": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "usageTemplate": {
+              "const": "{category}.{intention}.{role}"
+            },
+            "categoryUsageTemplates": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "default",
+                  "type"
+                ],
+                "properties": {
+                  "default": {
+                    "const": "{intention}.{role}"
+                  },
+                  "type": {
+                    "const": "hierarchy.{intention}.{role}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "template",
+            "propertyCase"
+          ],
+          "properties": {
+            "template": {
+              "const": "component.{component}.{variant}.{part}.{property}.{state}"
+            },
+            "propertyCase": {
+              "const": "kebab-case"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "convention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "format",
+        "pattern"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "format": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pattern": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

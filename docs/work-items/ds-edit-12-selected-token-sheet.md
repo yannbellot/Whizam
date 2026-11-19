@@ -1,0 +1,15 @@
+# DS-EDIT-12 — Fiche du token sélectionné
+
+30 octobre 2026 — cible application, **En revue : qualification technique acquise, acceptation humaine différée**. Mandat : fiche Styles sans bibliothèque répétée, token distingué dans Tokens, action Réutiliser un style compatible. Tests techniques sans E2E, Storybook courant actualisé. Base `55cf462`, branche `codex/selected-token-sheet`, racine canonique vérifiée, aucun diff suivi ; 50 entrées non suivies préexistantes conservées.
+
+Catalogue applicatif consulté ; implement-feature/design-interactions à cette version. Revues successives du même agent, non indépendantes, sans délégation. Solution minimale : conserver les commandes de création dans la fiche, retirer liste/recherche/retour Apparence, afficher nom et identité ; sélection transmise par canal validé génération/style connu ou null, sans écriture. Repère de ligne et mention Sélectionné accessibles. Hypothèse réversible : commandes de création conservées pour préserver la capacité existante ; recette humaine différée.
+
+Critères : pas de liste/recherche Styles ; fiche exacte ou invitation à sélectionner ; sélection visible au clic, depuis raccourci et après remontage ; brouillon conservé ; styles compatibles filtrés comme auparavant. Aucun changement des opérations, autorités YAML ou primitives. Contrôles de rendu/canal/session, types/lint/formatage, contrats, documentation et builds. Sources des parcours adaptées sans exécution. Modèles app non initialisés, aucune publication. Sol Élevée : synchronisation inter-frame ; réglage client non vérifié. Doc updated.
+
+## Qualification technique
+
+94 tests unitaires conformes, dont fiche sans bibliothèque, identité visible, sélection unique et validation des messages ; demande de sélection au montage et nettoyage au démontage testés. 47 contractuels conformes. Types/lint/formatage et builds application/Storybook conformes. Contrôle documentaire conforme ; tests documentaires consignés dans le bilan. Aucun E2E. Premiers échecs : adaptations omises dans la copie de tests, puis erreur de syntaxe pendant extraction du listener ; corrigés et campagnes rejouées.
+
+Relectures séquentielles non indépendantes : technique (contrat version/génération/identité, synchronisation à la sélection et au remontage, absence de mutation), design (repère textuel et visuel, fiche sur toute la largeur ; recette humaine non exécutée), sécurité (schéma fermé, React échappé, canal de sélection sans opération d’écriture). La demande de resynchronisation ne publie que l’identité sélectionnée, aucune donnée privée ni capacité. Aucun serveur ou protocole d’écriture modifié. Préparation de livraison : huit sources enregistrées copiées et comparées, ancienne instance intacte. Brouillon courant détecté : arbitrage d’abandon demandé avant bascule.
+
+Livraison effectuée après abandon autorisé du brouillon : Storybook 54086/UI Lab 54085 actualisés, huit sources enregistrées et anciennes racines préservées. Source `bd15932`, [bilan et revues](../reviews/ds-edit-12-selected-token-sheet.md). 146 tests distincts conformes, aucun E2E. Reprise : vérification humaine de la fiche et du repère de sélection.

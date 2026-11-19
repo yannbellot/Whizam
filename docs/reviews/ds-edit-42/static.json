@@ -1,0 +1,11 @@
+{
+  "stats": {
+    "startTime": "2026-11-01T15:37:03.395Z",
+    "duration": 24411.556,
+    "expected": 18,
+    "skipped": 2,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "base": "1cb74f80ae4a9c7bbff0a23c59be744f1fcb6c09",
+  "sourceHashes": {
+    "scripts/agent-chat/context-control.mjs": "1a4bf86a235d6e47500f7bf22c995ccdf87f35769dabb7f8655eb48b487ff717",
+    "scripts/agent-chat/design.mjs": "3b3fee18bed02d0c2e7f54f984850303400959fca7369ff84c8355ea97ee74e9",
+    "scripts/agent-chat/visual-intents.mjs": "661a717e041230c76574644d44ca3e0d401e0ef22c7f32aebba45b757acaad60",
+    "scripts/project-files.json": "ddf379ce5ec171e7c797d856e96c87235d3b3b43570364602ca6f233a8cfb1a6",
+    "scripts/test-visual-inspector-ui.mjs": "465085399b6849ce56e666ee755717927696d19320f892079870b1b5a4c53437",
+    "src/core/visual-intent.ts": "62cb8aa79c54e243b1516587dbe2f20efb854afd22bbdfe5a9835c72ca1fefa0",
+    "src/design-system/editor/Preview.tsx": "36f92cac49a6bed7bf6bf8c439f5cc5b086868594278731d9983e0d9f73aa117",
+    "src/ui-lab/editor/VisualInspector.tsx": "437e4ea8ae97b5aa23bc069d5700b8c5eeed35080aa6aee07b1859b3837bddbd",
+    "src/ui-lab/editor/Workspace.tsx": "ecc38619738a38fab64fb62577f6699bbac5cf410c3e85ae1ec83254e6a04a53",
+    "tests/visual-intents.test.mjs": "78794ce3645a4c7c6d5910fb48a801998f51032d18a3feeb0b249c558c0e38c0",
+    "src/ui-lab/editor/DesignVisualInspector.tsx": "fd201a6ac05c8f65e4ab0bfa85b5bd4d12b8dcda99e9c777ee8640df5bb7afce",
+    "src/ui-lab/editor/visual-context.ts": "1a63a09e655fa5bda5813fbf54f14d231aaf7b6f277f81bfa070a56b9dcb5566"
+  }
+}

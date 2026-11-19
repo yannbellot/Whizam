@@ -1,0 +1,14 @@
+{
+  "base": "db4609e66e1a8be260d367d12140e72afcb2c46a",
+  "files": {
+    "scripts/test-visual-inspector-ui.mjs": "0c38d53c3d8aeab20dbb471c982436df388f93e6a80202fa361936303995a414",
+    "src/loomata-ui/Controls.tsx": "39dbca37309a013153cf4a22a7896c32b5870d17a9ef88069c9ac0643323f30a",
+    "src/ui-lab/editor/DesignVisualInspector.tsx": "2497c61ec6fc54a69db4ddc7050e3cfb0b075a450ea849ded29629ff7790f071",
+    "src/ui-lab/editor/PageWorkspace.tsx": "db2e9af553e8cbcfd769031160fc9452c794a72f039d1793f3aa81b2df087d12",
+    "src/ui-lab/editor/TokenInspector.tsx": "e2b6e206e8e0debfef34a857288059e7228080f38b299fa00e498822cd7beafd",
+    "src/ui-lab/editor/VisualInspector.tsx": "d29a3afe61ac76a23767c46665084e869fc2bd0d0c104c1b4e8c404ce194a99c",
+    "src/ui-lab/editor/Workspace.tsx": "21d577a7927c92cd8f75b86768e4faf347ec935104fb226162865ee23cbbc7af",
+    "src/ui-lab/editor/visual-inspector.module.css": "3b3073741b8187d4ed0c662a6acce9e39fe8246317fd6af1da37c9f794036914",
+    "src/ui-lab/editor/workspace.module.css": "5b773b7130af398aa827921c657050538299c3dd267f9f73ee86cae68e059a2a"
+  }
+}

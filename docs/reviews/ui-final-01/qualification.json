@@ -1,0 +1,306 @@
+{
+  "status": "supporting-campaign-only-loomata-product-not-qualified",
+  "date": "2026-11-10",
+  "kitCandidate": "1936250d610500110da175f74117baa0da4cfce3",
+  "initialQAExport": "44e97da88e4c97720b9177a6e0e63b7cbe0e45c0",
+  "witnessKitBase": "638b95efcc453d84880bc007b1c0e6ac13c1c816",
+  "witnessCommit": "5e6363a1363be1e7216f677f8d3b8fdaeb7cab09",
+  "versions": {
+    "node": "24.22.0",
+    "npm": "11.19.1",
+    "docker": "29.8.2",
+    "postgresImage": "postgres:18.6-bookworm",
+    "chromium": "156.0.8078.4"
+  },
+  "recommendedModel": "GPT-6.1 Sol · Élevée",
+  "effectiveClientSelection": "not verified",
+  "counts": {
+    "unit": 149,
+    "designSystem": 113,
+    "editorServer": 66,
+    "workshop": 34,
+    "persistent": 18,
+    "storybook": 18,
+    "genericE2E": 12,
+    "loansFlows": 6,
+    "loansRestart": 2
+  },
+  "baselineChecks": [
+    {
+      "command": "npm run tokens:generate",
+      "code": 0,
+      "seconds": 1.31,
+      "log": "check-0.log"
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "code": 0,
+      "seconds": 0.18,
+      "log": "check-1.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "code": 0,
+      "seconds": 5.59,
+      "log": "check-2.log"
+    },
+    {
+      "command": "npm run lint",
+      "code": 0,
+      "seconds": 3.14,
+      "log": "check-3.log"
+    },
+    {
+      "command": "npm test",
+      "code": 0,
+      "seconds": 6.93,
+      "log": "check-4.log"
+    },
+    {
+      "command": "npm run test:design-system",
+      "code": 1,
+      "seconds": 12.79,
+      "log": "check-5.log"
+    },
+    {
+      "command": "npm run test:design-system",
+      "code": 0,
+      "seconds": 12.35,
+      "log": "retest-0.log"
+    },
+    {
+      "command": "npm run test:design-editor:server",
+      "code": 0,
+      "seconds": 223.18,
+      "log": "retest-1.log"
+    },
+    {
+      "command": "npm run test:design-editor",
+      "code": 0,
+      "seconds": 34.32,
+      "log": "retest-2.log"
+    },
+    {
+      "command": "npm run test:design-editor:persistence",
+      "code": 0,
+      "seconds": 133.77,
+      "log": "retest-3.log"
+    },
+    {
+      "command": "npm run test:storybook",
+      "code": 0,
+      "seconds": 14.21,
+      "log": "retest-4.log"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "command": "npm run validate:agent-kit",
+      "code": 0,
+      "log": "final-source-0.log",
+      "sha256": "6a37f563122d86dbc2a84acd1d6d322b3e9033b22536a2693f83bb1b16514006"
+    },
+    {
+      "command": "npm run format:check",
+      "code": 0,
+      "log": "final-source-1.log",
+      "sha256": "f88efb73624d37b5dc8c5e849ad1123e191522b5080bc041436db7ee238ee541"
+    },
+    {
+      "command": "npm run typecheck",
+      "code": 0,
+      "log": "final-source-2.log",
+      "sha256": "af1bba6f31647aee459025194bed48c41253debe3ab011a95d9a370a650e9ac5"
+    },
+    {
+      "command": "npm run lint",
+      "code": 0,
+      "log": "final-source-3.log",
+      "sha256": "53c9447cd56a7a8ddb235e960827f273ed65f5fef4421f12010cfe9ff00aa4fb"
+    },
+    {
+      "command": "npm run test:boundaries",
+      "code": 0,
+      "log": "final-source-4.log",
+      "sha256": "0f27a18a3295ce4d4af57f87d348234de7784d415fcd53cb032c2e39b8ccf0da"
+    },
+    {
+      "command": "npm run test",
+      "code": 0,
+      "log": "final-source-5.log",
+      "sha256": "2ed529cd1f2c3558ff4ed0f91771ac11fed9eb780d81aa62ccc553de6a731fbe"
+    },
+    {
+      "command": "npm run test:design-system",
+      "code": 0,
+      "log": "final-source-6.log",
+      "sha256": "6b4d29d1c2928fed86d10c42523d3d44af02551635b81579e5d0211a488ad9fe"
+    },
+    {
+      "command": "npm run test:design-editor:server",
+      "code": 0,
+      "log": "final-source-7.log",
+      "sha256": "1aaea93cfd9f8d6a4435994be0682a5a7cfe78c6122ff838b9d034daea39c46d"
+    },
+    {
+      "command": "npm run build",
+      "code": 0,
+      "log": "final-source-8.log",
+      "sha256": "c67e7a8bf7319871d71d88c178a4cc320cc864882fb99e016a87638c6edc61d4"
+    },
+    {
+      "command": "npm run build-storybook",
+      "code": 0,
+      "log": "final-source-9.log",
+      "sha256": "badf83b5b9e0a6cdab95e175d0d1d02c5282674e41057873c0a2acbab9de4eae"
+    },
+    {
+      "command": "npm run test:loans",
+      "code": 0,
+      "log": "final-source-10.log",
+      "sha256": "f9c1695a98795501827757402409c1b77ddce3c0516777b4b0477439ac4e500d"
+    }
+  ],
+  "exactFinalChecks": [
+    {
+      "command": "npm run format:check",
+      "code": 0,
+      "log": "exact-final-0.log",
+      "sha256": "f88efb73624d37b5dc8c5e849ad1123e191522b5080bc041436db7ee238ee541"
+    },
+    {
+      "command": "npm run test:design-editor:server",
+      "code": 0,
+      "log": "exact-final-1.log",
+      "sha256": "202845cb4c3ddbde00ec43b85afc3d6c6cc9b433bce07a8fd9211f855b2af692"
+    }
+  ],
+  "sourceCopy": {
+    "withoutGit": true,
+    "parentGitBlocked": true,
+    "privateStateCopied": false,
+    "prerequisitesReused": true,
+    "freshNpmCi": false,
+    "exactReplay": true,
+    "sourceFiles": 916
+  },
+  "authorities": {
+    "format": "DTCG 2025.10",
+    "savedColor": "#456789",
+    "sha256": "1cdf91861930679766504eabbfdb082ccb0f098ef75129b931c3e74a1fd65f38"
+  },
+  "privateWorkspace": ".local/ui-final-01/run-e952831d/loans project renamed",
+  "privateState": ".local/ui-final-01/current.json",
+  "resources": {
+    "label": "org.loomata.ui-final-01",
+    "run": "run-e952831d",
+    "container": "227382d21bfe2268aa9c5e4b8781beb64347b7034613f14031b052d029b6e829",
+    "volume": "uifinal-e952831d-data",
+    "network": "9b8c912fe06252dae3ce16205a37b96ad0e9c5afed086060b6388f1e9574ae04",
+    "database": "loans_e952831d"
+  },
+  "restart": {
+    "directoryActuallyRenamed": true,
+    "sameRows": true,
+    "objects": 4,
+    "loans": 3,
+    "noGETReplay": true,
+    "sameDSHash": true
+  },
+  "reviews": {
+    "execution": "sequential same agent, not independent",
+    "humanAccepted": false,
+    "thirdPartyHandoffVerified": false,
+    "physicalMobileVerified": false
+  },
+  "retainedFailures": [
+    {
+      "failure": "URL pathname did not decode spaces in two tests",
+      "resolution": "fileURLToPath; 113 DS retest passed"
+    },
+    {
+      "failure": "generic E2E expected a retired YAML token",
+      "resolution": "read DTCG; 12 E2E passed"
+    },
+    {
+      "failure": "derived writer referenced deleted example files",
+      "resolution": "closed manifest updated before first DS save; guide corrected"
+    },
+    {
+      "failure": "business driver label and foreign-origin status assumptions",
+      "resolution": "exact required label; layered 400/403 denial; real business campaign passed"
+    },
+    {
+      "failure": "two shared-impact driver expectations",
+      "resolution": "include explicitly reattached target and compare actual changed values against prior graph"
+    },
+    {
+      "failure": "standalone loan test reloaded before POST completed",
+      "resolution": "wait for confirmed loan state; six flows plus two restart tests passed"
+    },
+    {
+      "failure": "DTCG helper had no TypeScript declaration",
+      "resolution": "typed contract; typecheck passed on QA and derived source"
+    },
+    {
+      "failure": "negative boundary test injected into retired home route",
+      "resolution": "inject mandatory root route; real rejection asserted on starter and derived"
+    },
+    {
+      "failure": "unit/DS tests assumed the original blue after authorized DS edit",
+      "resolution": "current authority or original historical migration input; 149+113 passed"
+    },
+    {
+      "failure": "first replay used QA export before two already-applied test fixes",
+      "resolution": "pin exact witness base 638b95e; 916 sources/links replayed identically"
+    },
+    {
+      "failure": "test-only declaration added to closed manifest blocked previous receipts",
+      "resolution": "restore exact manifest; preserve all private records; ordinary supervised restart and final browser passed"
+    }
+  ],
+  "publication": false,
+  "historicalAssistedCycleSlices": {
+    "A": "qualified",
+    "B": "qualified",
+    "C": "qualified",
+    "D": "qualified",
+    "E": "qualified",
+    "F": "qualified"
+  },
+  "scopeCorrection": {
+    "date": "2026-11-10",
+    "requestedProduct": "Loomata local application integrating UI Lab, Storybook and project tools",
+    "previousCompletionClaimWithdrawn": true,
+    "currentProductSlices": {
+      "A": "scope corrected, documentation only",
+      "B": "not implemented",
+      "C": "not implemented",
+      "D": "not implemented",
+      "E": "not implemented",
+      "F": "not verified"
+    }
+  },
+  "historicalReviewAccess": {
+    "application": "http://127.0.0.1:53086",
+    "storybookProject": "http://127.0.0.1:56794/?path=/story/prêts-d-objets-carte-objet--disponible",
+    "uiLab": "http://127.0.0.1:56793/ui-lab"
+  },
+  "historicalCampaignExclusions": [
+    "integrated general chat",
+    "project.create",
+    "project.export",
+    "tool.export",
+    "GitHub access",
+    "final macOS packaging",
+    "bundled Node/npm",
+    "remote hosting",
+    "global J4/J5 acceptance"
+  ],
+  "historicalCampaignRuntime": {
+    "state": "stopped after scope correction",
+    "sourcesPreserved": true,
+    "databaseVolumePreserved": true,
+    "otherRecipesUntouched": true
+  }
+}

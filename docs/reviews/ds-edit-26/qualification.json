@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "saved": "#e32400",
+      "base": "#1d4ed8",
+      "removedActionsAbsent": true,
+      "restoreWorks": true,
+      "restoreRequiresSaving": true
+    },
+    {
+      "width": 390,
+      "saved": "#e32400",
+      "base": "#1d4ed8",
+      "removedActionsAbsent": true,
+      "restoreWorks": true,
+      "restoreRequiresSaving": true
+    }
+  ],
+  "codeSha256": "5c794c2a13af9d938910719c107f59fb87ceefd2fe25bc249257cc1f7741bd42"
+}

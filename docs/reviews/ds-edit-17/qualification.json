@@ -1,0 +1,13 @@
+{
+  "candidate": "ff1738dac69c6ae5d7be273dac8c93c6587b2606",
+  "port": 54118,
+  "formats": [
+    1280,
+    390
+  ],
+  "componentRows": 15,
+  "semanticRows": 41,
+  "actionRows": 4,
+  "savedButton": "#b51a00",
+  "pageErrors": []
+}

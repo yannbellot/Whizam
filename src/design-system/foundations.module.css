@@ -1,0 +1,55 @@
+.wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table {
+  border-collapse: var(--adl-recipe-foundations-table-border-collapse-1);
+  width: 100%;
+  font-size: var(--adl-component-foundations-default-table-font-size-default);
+}
+.table th,
+.table td {
+  text-align: left;
+  border-bottom: var(
+      --adl-component-composition-foundations-table-th-table-td-border-bottom-detail-2
+    )
+    solid var(--adl-component-foundations-default-table-border-color-default);
+  padding: var(--adl-component-foundations-default-table-padding-block-default)
+    var(--adl-component-foundations-default-table-padding-inline-default);
+  overflow-wrap: anywhere;
+}
+.table th {
+  font-weight: var(--adl-component-composition-foundations-table-heading-font-weight-default);
+}
+
+.table tr.selected > th {
+  border-inline-start: var(--adl-recipe-foundations-table-tr-selected-th-border-inline-start-3);
+  font-weight: var(--adl-component-composition-foundations-table-tr-selected-th-font-weight-4);
+}
+.table tr.selected > td {
+  font-weight: var(--adl-component-composition-foundations-table-tr-selected-td-font-weight-5);
+}
+
+.table tr.selected {
+  background: var(--adl-component-foundations-alias-color-action-background-default);
+  color: var(--adl-component-foundations-alias-color-action-foreground-default);
+}
+.table tr.selected button {
+  background: inherit;
+  color: inherit;
+  border: var(--adl-recipe-foundations-table-tr-selected-button-border-6);
+}
+
+.swatch {
+  display: inline-block;
+  width: var(--adl-component-composition-catalog-swatch-width-default);
+  height: var(--adl-component-composition-catalog-swatch-height-default);
+  margin-right: var(--adl-component-composition-catalog-swatch-margin-right-default);
+  border: var(--adl-recipe-catalog-swatch-border-default);
+}
+
+.table {
+  overflow-wrap: anywhere;
+  table-layout: fixed;
+  width: 100%;
+}

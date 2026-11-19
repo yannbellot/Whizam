@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/editor-contract.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "properties", "fontFamilies", "targets"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "properties": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 40,
+      "propertyNames": {
+        "pattern": "^[a-z][A-Za-z0-9]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "role"],
+        "properties": {
+          "type": {
+            "enum": ["color", "dimension", "font-weight", "line-height", "font-family"]
+          },
+          "role": {
+            "enum": [
+              "surface",
+              "text",
+              "border",
+              "icon",
+              "focus",
+              "spacing",
+              "radius",
+              "border-width",
+              "font-size",
+              "font-weight",
+              "line-height",
+              "font-family",
+              "content-width"
+            ]
+          },
+          "min": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "enum": ["px", "rem"]
+            },
+            "uniqueItems": true
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "cssProperty": {
+            "type": "string",
+            "pattern": "^[a-z][a-z-]*$"
+          }
+        }
+      }
+    },
+    "fontFamilies": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 400
+      },
+      "uniqueItems": true
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "component", "sheet", "variants", "states", "cells"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "maxLength": 80
+          },
+          "component": {
+            "enum": ["Button", "Field", "SelectField", "Notice", "Panel", "Foundations"]
+          },
+          "sheet": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 10,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+              "maxLength": 80
+            },
+            "uniqueItems": true
+          },
+          "states": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 6,
+            "items": {
+              "enum": ["default", "hover", "focus-visible", "disabled", "loading", "error"]
+            },
+            "uniqueItems": true
+          },
+          "cells": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["part", "properties", "states"],
+              "properties": {
+                "part": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+                  "maxLength": 80
+                },
+                "properties": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 30,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][A-Za-z0-9]*$"
+                  },
+                  "uniqueItems": true
+                },
+                "states": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 6,
+                  "items": {
+                    "enum": ["default", "hover", "focus-visible", "disabled", "loading", "error"]
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "propertyGroups": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "properties"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "maxLength": 80
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "properties": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 40,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][A-Za-z0-9]*$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

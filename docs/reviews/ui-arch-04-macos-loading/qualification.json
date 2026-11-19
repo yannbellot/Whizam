@@ -1,0 +1,48 @@
+{
+  "status": "qualified-with-diagnostic-reservation",
+  "native": "real macOS WKWebView; CUA accessibility interactions; no sub-agent",
+  "source_base": "6e065a8",
+  "source_preservation": {
+    "files": 312,
+    "all_identical": true,
+    "token_authority_sha256": "ef5014790cb694dcec09ce1c2f9553ebefb1f99d87bd32630677f49b2f5edad3"
+  },
+  "local_app_tests": {
+    "passed": 9,
+    "failed": 0,
+    "initial_sandbox_attempt": "8 EPERM loopback failures, retested with authorized local network access"
+  },
+  "native_checks": [
+    "initial workshop reaches loaded generation with editable precise value",
+    "invalid literal rejected, save disabled",
+    "valid OKLCH draft, shared scope and save enabled",
+    "reload requests confirmation; preserve draft retains precise value",
+    "cancel draft restores original OKLCH; no save made",
+    "reloadFromOrigin after cancellation reaches loaded generation and original value",
+    "older UI ARCH 04 window kept and restored to its original preview view",
+    "only current diagnostic window closed, normal loading-test window left open"
+  ],
+  "not_verified": [
+    "causal proof that persisted WebKit cache produced the old failure",
+    "recovery of the old loaded document without rebuilding its native bundle",
+    "new native relaunch across a second complete process termination",
+    "VoiceOver and other operating systems"
+  ],
+  "web_builds": "not rerun: all 312 workshop/project/Storybook revision files byte-identical; native code change only",
+  "publication": false,
+  "electron_started": false,
+  "stalled_diagnostic_after_restart": {
+    "ready": "complete",
+    "firstFrame": true,
+    "modules": 1,
+    "pending": 0,
+    "editable": false,
+    "errors": []
+  },
+  "native_source_sha256": "4ebf54fa0a0222fc8302faa107ea76ff4cf9cb9437c809d6197f967e291fe050",
+  "native_binary_sha256": "7ca64c2513c520b55711f24e6d601a48384eaf63ffe50caa56e2258b14e95cc1",
+  "private_records": {
+    "old_preserved": 8,
+    "new": 0
+  }
+}

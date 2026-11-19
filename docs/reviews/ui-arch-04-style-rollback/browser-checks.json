@@ -1,0 +1,13 @@
+{
+  "nativeWorkshopLoaded": true,
+  "nativeCodexLoaded": true,
+  "nativeReturnToWorkshopLoaded": true,
+  "nativeDraftAbsent": true,
+  "appEmptyRefused": true,
+  "appCorrectionSucceeded": true,
+  "storybookEmptyRefused": true,
+  "storybookCorrectionSucceeded": true,
+  "storyReset": true,
+  "viewportReset": true,
+  "noProviderMessageSent": true
+}

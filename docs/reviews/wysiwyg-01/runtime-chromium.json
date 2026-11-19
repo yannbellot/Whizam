@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "engine": "Chromium",
+  "provider": "explicitly simulated; no real account or inference",
+  "cases": [
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1280",
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1440",
+    "CSSOM responsive observation/centered narrow preview/shorthands/conditional cleanup/concurrent app style preserved/shared-family conflict dirty until confirmed reload/component intent/two pages/normal action restored/source diff empty",
+    "browser receipt -> explicit application -> typed simulated provider context -> real approval UI -> real isolated source transaction -> rendered 18px after reload; main unchanged"
+  ],
+  "browserVersion": "156.0.8078.4",
+  "sourceHashes": {
+    "src/core/visual-intent.ts": "a2bab78bc3dd44a71b358e9844ceaa5a4f4e729302e940f79b8f8ae9685625f4",
+    "src/ui-lab/editor/VisualInspector.tsx": "58f15a0de69f053b5d3c471d82be84471067fd9b7d50f402c7a7e9beb3c0cba2",
+    "src/ui-lab/editor/visual-projection.ts": "68fd649eaad8ff486bb61c8b02a5b88f2b8e900788d6a70974bfaae8a1c071fc",
+    "scripts/agent-chat/visual-intents.mjs": "b4479e458cdbeaa73b16632d573c5bb062a05abb53b4bab4915f2e4ada3adacf",
+    "scripts/editor-application-preview.ts": "2416ba4bdb6f16af27852e04b2c2205673dbdc39a88633d002539f50d29963a4"
+  },
+  "beforeDesignSend": "Retouches à transmettre\nBords arrondis : 8px → 20px"
+}

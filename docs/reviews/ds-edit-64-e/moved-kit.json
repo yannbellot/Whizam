@@ -1,0 +1,31 @@
+{
+  "viewports": [
+    {
+      "width": 1280,
+      "color": "#2468ac",
+      "enabled": true
+    },
+    {
+      "width": 390,
+      "color": "#2468ac",
+      "enabled": true
+    }
+  ],
+  "storybook": [
+    {
+      "width": 1280,
+      "color": "#2468ac",
+      "props": true,
+      "reactExample": true,
+      "writeAPI": 405
+    },
+    {
+      "width": 390,
+      "color": "#2468ac",
+      "props": true,
+      "reactExample": true,
+      "writeAPI": 405
+    }
+  ],
+  "storyRequests": 0
+}

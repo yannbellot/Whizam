@@ -1,0 +1,11 @@
+{
+  "port": 54137,
+  "files": [
+    "Panel.tsx",
+    "ScopeControls.tsx",
+    "panel.module.css"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "observedDraft": "Génération chargée, Enregistrer disabled"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "realCodex": true,
+  "intercepted": false,
+  "saved": true,
+  "reloaded": true,
+  "privateStateCopied": false,
+  "transportRootInjectedForSameInstallation": true
+}

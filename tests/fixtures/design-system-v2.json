@@ -1,0 +1,3914 @@
+{
+  "primitives": {
+    "schemaVersion": 2,
+    "primitives": [
+      {
+        "id": "primitive.color.button-background",
+        "type": "color",
+        "value": "#1d4ed8",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.color.button-background-hover",
+        "type": "color",
+        "value": "#1e40af",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.color.button-foreground",
+        "type": "color",
+        "value": "#ffffff",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.color.focus-ring",
+        "type": "color",
+        "value": "#1d4ed8",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.radius.button",
+        "type": "dimension",
+        "value": "0.5rem",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.space.button-block",
+        "type": "dimension",
+        "value": "0.7rem",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.space.button-inline",
+        "type": "dimension",
+        "value": "1rem",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.font-weight.button",
+        "type": "font-weight",
+        "value": 650,
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.dimension.focus-ring-width",
+        "type": "dimension",
+        "value": "3px",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.dimension.focus-ring-offset",
+        "type": "dimension",
+        "value": "3px",
+        "status": "reference",
+        "source": "phase-1-button"
+      },
+      {
+        "id": "primitive.color.surface.default",
+        "type": "color",
+        "value": "#ffffff",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.surface.muted",
+        "type": "color",
+        "value": "#f1f5f9",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.text.default",
+        "type": "color",
+        "value": "#0f172a",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.text.muted",
+        "type": "color",
+        "value": "#475569",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.border.default",
+        "type": "color",
+        "value": "#64748b",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.feedback.error",
+        "type": "color",
+        "value": "#b91c1c",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.feedback.success",
+        "type": "color",
+        "value": "#166534",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.color.action.disabled",
+        "type": "color",
+        "value": "#64748b",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.space.layout.small",
+        "type": "dimension",
+        "value": "0.5rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.space.layout.medium",
+        "type": "dimension",
+        "value": "1rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.space.layout.large",
+        "type": "dimension",
+        "value": "1.5rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.space.layout.page",
+        "type": "dimension",
+        "value": "2rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.dimension.text.small",
+        "type": "dimension",
+        "value": "0.875rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.dimension.layout.max",
+        "type": "dimension",
+        "value": "70rem",
+        "status": "reference",
+        "source": "j2-provisional"
+      },
+      {
+        "id": "primitive.font-weight.text-default",
+        "type": "font-weight",
+        "value": 400,
+        "provenance": {
+          "kind": "agent-migration",
+          "status": "proposed",
+          "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+        }
+      },
+      {
+        "id": "primitive.line-height.text-default",
+        "type": "line-height",
+        "value": 1.5,
+        "provenance": {
+          "kind": "agent-migration",
+          "status": "proposed",
+          "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+        }
+      },
+      {
+        "id": "primitive.font-family.text-default",
+        "type": "font-family",
+        "value": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "provenance": {
+          "kind": "agent-migration",
+          "status": "proposed",
+          "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+        }
+      },
+      {
+        "id": "primitive.dimension.border-default",
+        "type": "dimension",
+        "value": "1px",
+        "provenance": {
+          "kind": "agent-migration",
+          "status": "proposed",
+          "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+        }
+      }
+    ],
+    "sources": {
+      "phase-1-button": {
+        "kind": "validated-laboratory-reference",
+        "path": "src/design-system/components/Button/Button.module.css",
+        "decision": "Valeurs du Button de Phase 1 explicitement conservées comme références provisoires le 2026-08-12.",
+        "identityClaim": "none"
+      },
+      "j2-provisional": {
+        "kind": "proposed-laboratory-reference",
+        "path": "src/design-system/components/controls.module.css",
+        "decision": "Proposition réversible J2 selon décision 006, acceptation humaine différée ; focus bleu renforcé pour contraste.",
+        "identityClaim": "none"
+      }
+    }
+  },
+  "semantic": {
+    "schemaVersion": 2,
+    "tokens": [
+      {
+        "id": "semantic.color.action.background.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.actions.primary.surface.default"
+        }
+      },
+      {
+        "id": "semantic.color.action.background.hover",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.actions.primary.surface.hover"
+        }
+      },
+      {
+        "id": "semantic.color.action.foreground.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.actions.primary.text.default"
+        }
+      },
+      {
+        "id": "semantic.color.focus.ring",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.actions.primary.focus.focus-visible"
+        }
+      },
+      {
+        "id": "semantic.radius.control.default",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.neutral.radius.default"
+        }
+      },
+      {
+        "id": "semantic.space.control.block",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.space.control.inline",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.secondary.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.font-weight.action",
+        "type": "font-weight",
+        "value": {
+          "reference": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default"
+        }
+      },
+      {
+        "id": "semantic.dimension.focus.ring-width",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible"
+        }
+      },
+      {
+        "id": "semantic.dimension.focus.ring-offset",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible"
+        }
+      },
+      {
+        "id": "semantic.color.surface.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral-hierarchy.neutral.surface.default"
+        }
+      },
+      {
+        "id": "semantic.color.surface.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral-hierarchy.secondary.surface.default"
+        }
+      },
+      {
+        "id": "semantic.color.text.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral-hierarchy.neutral.text.default"
+        }
+      },
+      {
+        "id": "semantic.color.text.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral-hierarchy.secondary.text.default"
+        }
+      },
+      {
+        "id": "semantic.color.border.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral-hierarchy.neutral.border.default"
+        }
+      },
+      {
+        "id": "semantic.color.feedback.error",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.information-result.error.text.default"
+        }
+      },
+      {
+        "id": "semantic.color.feedback.success",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.information-result.success.text.default"
+        }
+      },
+      {
+        "id": "semantic.color.action.disabled",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.availability-capacity.unavailable.surface.disabled"
+        }
+      },
+      {
+        "id": "semantic.space.layout.small",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.space.layout.medium",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.secondary.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.space.layout.large",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.primary.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.space.layout.page",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.context.spacing.default"
+        }
+      },
+      {
+        "id": "semantic.dimension.text.small",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.secondary.font-size.default"
+        }
+      },
+      {
+        "id": "semantic.dimension.layout.max",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.dimension.neutral-hierarchy.neutral.content-width.default"
+        }
+      }
+    ],
+    "styles": [
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "surface",
+        "state": "default",
+        "reference": "primitive.color.surface.default",
+        "id": "semantic.color.neutral-hierarchy.neutral.surface.default"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "surface",
+        "state": "default",
+        "reference": "primitive.color.surface.muted",
+        "id": "semantic.color.neutral-hierarchy.secondary.surface.default"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "text",
+        "state": "default",
+        "reference": "primitive.color.text.default",
+        "id": "semantic.color.neutral-hierarchy.neutral.text.default"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "text",
+        "state": "default",
+        "reference": "primitive.color.text.muted",
+        "id": "semantic.color.neutral-hierarchy.secondary.text.default"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "border",
+        "state": "default",
+        "reference": "primitive.color.border.default",
+        "id": "semantic.color.neutral-hierarchy.neutral.border.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "border-width",
+        "state": "default",
+        "reference": "primitive.dimension.border-default",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.border-width.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "radius",
+        "state": "default",
+        "reference": "primitive.radius.button",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.radius.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.auxiliary",
+        "role": "spacing",
+        "state": "default",
+        "reference": "primitive.space.button-block",
+        "id": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "spacing",
+        "state": "default",
+        "reference": "primitive.space.button-inline",
+        "id": "semantic.dimension.neutral-hierarchy.secondary.spacing.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.primary",
+        "role": "spacing",
+        "state": "default",
+        "reference": "primitive.space.layout.large",
+        "id": "semantic.dimension.neutral-hierarchy.primary.spacing.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.tertiary",
+        "role": "spacing",
+        "state": "default",
+        "reference": "primitive.space.layout.small",
+        "id": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.context",
+        "role": "spacing",
+        "state": "default",
+        "reference": "primitive.space.layout.page",
+        "id": "semantic.dimension.neutral-hierarchy.context.spacing.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-size",
+        "state": "default",
+        "reference": "primitive.space.button-inline",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.font-size.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "font-size",
+        "state": "default",
+        "reference": "primitive.dimension.text.small",
+        "id": "semantic.dimension.neutral-hierarchy.secondary.font-size.default"
+      },
+      {
+        "type": "font-weight",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-weight",
+        "state": "default",
+        "reference": "primitive.font-weight.text-default",
+        "id": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default"
+      },
+      {
+        "type": "font-weight",
+        "intention": "neutral-hierarchy.primary",
+        "role": "font-weight",
+        "state": "default",
+        "reference": "primitive.font-weight.button",
+        "id": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default"
+      },
+      {
+        "type": "line-height",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "line-height",
+        "state": "default",
+        "reference": "primitive.line-height.text-default",
+        "id": "semantic.line-height.neutral-hierarchy.neutral.line-height.default"
+      },
+      {
+        "type": "font-family",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-family",
+        "state": "default",
+        "reference": "primitive.font-family.text-default",
+        "id": "semantic.font-family.neutral-hierarchy.neutral.font-family.default"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "content-width",
+        "state": "default",
+        "reference": "primitive.dimension.layout.max",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.content-width.default"
+      },
+      {
+        "type": "color",
+        "intention": "actions.primary",
+        "role": "surface",
+        "state": "default",
+        "reference": "primitive.color.button-background",
+        "id": "semantic.color.actions.primary.surface.default"
+      },
+      {
+        "type": "color",
+        "intention": "actions.primary",
+        "role": "surface",
+        "state": "hover",
+        "reference": "primitive.color.button-background-hover",
+        "id": "semantic.color.actions.primary.surface.hover"
+      },
+      {
+        "type": "color",
+        "intention": "actions.primary",
+        "role": "text",
+        "state": "default",
+        "reference": "primitive.color.button-foreground",
+        "id": "semantic.color.actions.primary.text.default"
+      },
+      {
+        "type": "color",
+        "intention": "availability-capacity.unavailable",
+        "role": "surface",
+        "state": "disabled",
+        "reference": "primitive.color.action.disabled",
+        "id": "semantic.color.availability-capacity.unavailable.surface.disabled"
+      },
+      {
+        "type": "color",
+        "intention": "information-result.error",
+        "role": "text",
+        "state": "default",
+        "reference": "primitive.color.feedback.error",
+        "id": "semantic.color.information-result.error.text.default"
+      },
+      {
+        "type": "color",
+        "intention": "information-result.error",
+        "role": "border",
+        "state": "error",
+        "reference": "primitive.color.feedback.error",
+        "id": "semantic.color.information-result.error.border.error"
+      },
+      {
+        "type": "color",
+        "intention": "information-result.success",
+        "role": "text",
+        "state": "default",
+        "reference": "primitive.color.feedback.success",
+        "id": "semantic.color.information-result.success.text.default"
+      },
+      {
+        "type": "color",
+        "intention": "actions.primary",
+        "role": "focus",
+        "state": "focus-visible",
+        "reference": "primitive.color.focus-ring",
+        "id": "semantic.color.actions.primary.focus.focus-visible"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.primary",
+        "role": "border-width",
+        "state": "focus-visible",
+        "reference": "primitive.dimension.focus-ring-width",
+        "id": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "spacing",
+        "state": "focus-visible",
+        "reference": "primitive.dimension.focus-ring-offset",
+        "id": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible"
+      },
+      {
+        "type": "color",
+        "intention": "actions.primary",
+        "role": "surface",
+        "state": "loading",
+        "reference": "semantic.color.actions.primary.surface.default",
+        "id": "semantic.color.actions.primary.surface.loading"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "surface",
+        "state": "disabled",
+        "reference": "semantic.color.neutral-hierarchy.secondary.surface.default",
+        "id": "semantic.color.neutral-hierarchy.secondary.surface.disabled"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "text",
+        "state": "disabled",
+        "reference": "semantic.color.neutral-hierarchy.neutral.text.default",
+        "id": "semantic.color.neutral-hierarchy.neutral.text.disabled"
+      },
+      {
+        "type": "color",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "border",
+        "state": "disabled",
+        "reference": "semantic.color.neutral-hierarchy.neutral.border.default",
+        "id": "semantic.color.neutral-hierarchy.neutral.border.disabled"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "border-width",
+        "state": "disabled",
+        "reference": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.border-width.disabled"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "radius",
+        "state": "disabled",
+        "reference": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.radius.disabled"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.auxiliary",
+        "role": "spacing",
+        "state": "disabled",
+        "reference": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+        "id": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.disabled"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.secondary",
+        "role": "spacing",
+        "state": "disabled",
+        "reference": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+        "id": "semantic.dimension.neutral-hierarchy.secondary.spacing.disabled"
+      },
+      {
+        "type": "dimension",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-size",
+        "state": "disabled",
+        "reference": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+        "id": "semantic.dimension.neutral-hierarchy.neutral.font-size.disabled"
+      },
+      {
+        "type": "font-weight",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-weight",
+        "state": "disabled",
+        "reference": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+        "id": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.disabled"
+      },
+      {
+        "type": "line-height",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "line-height",
+        "state": "disabled",
+        "reference": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+        "id": "semantic.line-height.neutral-hierarchy.neutral.line-height.disabled"
+      },
+      {
+        "type": "font-family",
+        "intention": "neutral-hierarchy.neutral",
+        "role": "font-family",
+        "state": "disabled",
+        "reference": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+        "id": "semantic.font-family.neutral-hierarchy.neutral.font-family.disabled"
+      }
+    ]
+  },
+  "sheets": [
+    {
+      "schemaVersion": 2,
+      "target": "button",
+      "bindings": [
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.actions.primary.surface.default",
+          "id": "component.button.default.root.background.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.actions.primary.text.default",
+          "id": "component.button.default.root.foreground.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.button.default.root.border-radius.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+          "id": "component.button.default.root.padding-block.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.button.default.root.padding-inline.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.button.default.root.font-size.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default",
+          "id": "component.button.default.root.font-weight.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.button.default.root.line-height.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.button.default.root.font-family.default"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "background",
+          "state": "hover",
+          "style": "semantic.color.actions.primary.surface.hover",
+          "id": "component.button.default.root.background.hover"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "background",
+          "state": "disabled",
+          "style": "semantic.color.availability-capacity.unavailable.surface.disabled",
+          "id": "component.button.default.root.background.disabled"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "background",
+          "state": "loading",
+          "style": "semantic.color.actions.primary.surface.loading",
+          "id": "component.button.default.root.background.loading"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "style": "semantic.color.actions.primary.focus.focus-visible",
+          "id": "component.button.default.root.ring-color.focus-visible"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible",
+          "id": "component.button.default.root.ring-width.focus-visible"
+        },
+        {
+          "target": "button",
+          "variant": "default",
+          "part": "root",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible",
+          "id": "component.button.default.root.ring-offset.focus-visible"
+        }
+      ],
+      "presentation": {
+        "label": "Bouton",
+        "parts": {
+          "root": "Ensemble"
+        },
+        "variants": {
+          "default": "Standard"
+        },
+        "states": {
+          "default": "Par défaut",
+          "hover": "Survol",
+          "focus-visible": "Focus clavier",
+          "disabled": "Désactivé",
+          "loading": "Chargement"
+        },
+        "consumerFiles": ["src/design-system/components/Button/Button.module.css"],
+        "contrastParts": ["root"],
+        "semanticGuidance": {
+          "purpose": "Déclencher une action explicite ; distinguer son importance et sa disponibilité.",
+          "recommendations": [
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["default", "hover", "loading"],
+              "intentions": ["actions.primary", "actions.secondary"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["actions.primary", "actions.secondary"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["borderRadius"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.auxiliary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["disabled"],
+              "intentions": ["availability-capacity.unavailable"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["ringColor"],
+              "states": ["focus-visible"],
+              "intentions": ["actions.primary", "actions.secondary"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["ringWidth"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["ringOffset"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "target": "field",
+      "bindings": [
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.field.single-line.root.gap.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.field.single-line.label.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.field.single-line.label.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default",
+          "id": "component.field.single-line.label.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.single-line.label.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.single-line.label.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.surface.default",
+          "id": "component.field.single-line.control.background.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.disabled",
+          "id": "component.field.single-line.control.background.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.field.single-line.control.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.disabled",
+          "id": "component.field.single-line.control.foreground.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.field.single-line.control.border-color.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.disabled",
+          "id": "component.field.single-line.control.border-color.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.field.single-line.control.border-width.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.disabled",
+          "id": "component.field.single-line.control.border-width.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.field.single-line.control.border-radius.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.disabled",
+          "id": "component.field.single-line.control.border-radius.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+          "id": "component.field.single-line.control.padding-block.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.disabled",
+          "id": "component.field.single-line.control.padding-block.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.field.single-line.control.padding-inline.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.disabled",
+          "id": "component.field.single-line.control.padding-inline.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.field.single-line.control.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.disabled",
+          "id": "component.field.single-line.control.font-size.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.single-line.control.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.disabled",
+          "id": "component.field.single-line.control.font-weight.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.single-line.control.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "disabled",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.disabled",
+          "id": "component.field.single-line.control.line-height.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.single-line.control.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.disabled",
+          "id": "component.field.single-line.control.font-family.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "style": "semantic.color.actions.primary.focus.focus-visible",
+          "id": "component.field.single-line.control.ring-color.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible",
+          "id": "component.field.single-line.control.ring-width.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible",
+          "id": "component.field.single-line.control.ring-offset.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "control",
+          "property": "borderColor",
+          "state": "error",
+          "style": "semantic.color.information-result.error.border.error",
+          "id": "component.field.single-line.control.border-color.error"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "hint",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.text.default",
+          "id": "component.field.single-line.hint.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "hint",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.field.single-line.hint.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "hint",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.single-line.hint.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "hint",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.single-line.hint.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "hint",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.single-line.hint.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "error",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.information-result.error.text.default",
+          "id": "component.field.single-line.error.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "error",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.field.single-line.error.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "error",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.single-line.error.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "error",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.single-line.error.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "single-line",
+          "part": "error",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.single-line.error.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.field.multiline.root.gap.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.field.multiline.label.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.field.multiline.label.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default",
+          "id": "component.field.multiline.label.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.multiline.label.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.multiline.label.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.surface.default",
+          "id": "component.field.multiline.control.background.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.disabled",
+          "id": "component.field.multiline.control.background.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.field.multiline.control.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.disabled",
+          "id": "component.field.multiline.control.foreground.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.field.multiline.control.border-color.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.disabled",
+          "id": "component.field.multiline.control.border-color.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.field.multiline.control.border-width.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.disabled",
+          "id": "component.field.multiline.control.border-width.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.field.multiline.control.border-radius.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.disabled",
+          "id": "component.field.multiline.control.border-radius.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+          "id": "component.field.multiline.control.padding-block.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.disabled",
+          "id": "component.field.multiline.control.padding-block.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.field.multiline.control.padding-inline.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.disabled",
+          "id": "component.field.multiline.control.padding-inline.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.field.multiline.control.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.disabled",
+          "id": "component.field.multiline.control.font-size.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.multiline.control.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.disabled",
+          "id": "component.field.multiline.control.font-weight.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.multiline.control.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "disabled",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.disabled",
+          "id": "component.field.multiline.control.line-height.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.multiline.control.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.disabled",
+          "id": "component.field.multiline.control.font-family.disabled"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "style": "semantic.color.actions.primary.focus.focus-visible",
+          "id": "component.field.multiline.control.ring-color.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible",
+          "id": "component.field.multiline.control.ring-width.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible",
+          "id": "component.field.multiline.control.ring-offset.focus-visible"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "control",
+          "property": "borderColor",
+          "state": "error",
+          "style": "semantic.color.information-result.error.border.error",
+          "id": "component.field.multiline.control.border-color.error"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "hint",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.text.default",
+          "id": "component.field.multiline.hint.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "hint",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.field.multiline.hint.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "hint",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.multiline.hint.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "hint",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.multiline.hint.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "hint",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.multiline.hint.font-family.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "error",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.information-result.error.text.default",
+          "id": "component.field.multiline.error.foreground.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "error",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.field.multiline.error.font-size.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "error",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.field.multiline.error.font-weight.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "error",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.field.multiline.error.line-height.default"
+        },
+        {
+          "target": "field",
+          "variant": "multiline",
+          "part": "error",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.field.multiline.error.font-family.default"
+        }
+      ],
+      "presentation": {
+        "label": "Champ texte",
+        "parts": {
+          "root": "Ensemble",
+          "label": "Libellé",
+          "control": "Contrôle",
+          "hint": "Aide",
+          "error": "Erreur"
+        },
+        "variants": {
+          "single-line": "Une ligne",
+          "multiline": "Plusieurs lignes"
+        },
+        "states": {
+          "default": "Par défaut",
+          "focus-visible": "Focus clavier",
+          "disabled": "Désactivé",
+          "error": "Erreur"
+        },
+        "consumerFiles": ["src/design-system/components/controls.module.css"],
+        "contrastParts": ["label", "control", "hint", "error"],
+        "semanticGuidance": {
+          "purpose": "Saisir une donnée et comprendre son libellé, son aide et ses erreurs.",
+          "recommendations": [
+            {
+              "variants": ["single-line"],
+              "part": "root",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "label",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Libellé et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "label",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "label",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "label",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "label",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["borderWidth"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["borderRadius"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["paddingBlock"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.auxiliary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["paddingInline"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["fontSize"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["fontWeight"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["lineHeight"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["fontFamily"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["ringColor"],
+              "states": ["focus-visible"],
+              "intentions": ["actions.primary"],
+              "reason": "Respecter le rôle Contrôle et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["ringWidth"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["ringOffset"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["error"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Contrôle et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "hint",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Respecter le rôle Aide et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "hint",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "hint",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "hint",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "hint",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "error",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Erreur et le ton Une ligne du composant."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "error",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "error",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "error",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["single-line"],
+              "part": "error",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "root",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "label",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Libellé et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "label",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "label",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "label",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "label",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["borderWidth"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["borderRadius"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["paddingBlock"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.auxiliary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["paddingInline"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["fontSize"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["fontWeight"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["lineHeight"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["fontFamily"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["ringColor"],
+              "states": ["focus-visible"],
+              "intentions": ["actions.primary"],
+              "reason": "Respecter le rôle Contrôle et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["ringWidth"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["ringOffset"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["error"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Contrôle et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "hint",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Respecter le rôle Aide et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "hint",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "hint",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "hint",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "hint",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "error",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Erreur et le ton Plusieurs lignes du composant."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "error",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "error",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "error",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["multiline"],
+              "part": "error",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "target": "select-field",
+      "bindings": [
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.select-field.default.root.gap.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.select-field.default.label.foreground.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.select-field.default.label.font-size.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default",
+          "id": "component.select-field.default.label.font-weight.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.select-field.default.label.line-height.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.select-field.default.label.font-family.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.surface.default",
+          "id": "component.select-field.default.control.background.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.disabled",
+          "id": "component.select-field.default.control.background.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.select-field.default.control.foreground.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.disabled",
+          "id": "component.select-field.default.control.foreground.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.select-field.default.control.border-color.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.disabled",
+          "id": "component.select-field.default.control.border-color.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.select-field.default.control.border-width.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.disabled",
+          "id": "component.select-field.default.control.border-width.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.select-field.default.control.border-radius.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.disabled",
+          "id": "component.select-field.default.control.border-radius.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+          "id": "component.select-field.default.control.padding-block.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.disabled",
+          "id": "component.select-field.default.control.padding-block.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.select-field.default.control.padding-inline.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.disabled",
+          "id": "component.select-field.default.control.padding-inline.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.select-field.default.control.font-size.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.disabled",
+          "id": "component.select-field.default.control.font-size.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.select-field.default.control.font-weight.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.disabled",
+          "id": "component.select-field.default.control.font-weight.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.select-field.default.control.font-family.default"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.disabled",
+          "id": "component.select-field.default.control.font-family.disabled"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "style": "semantic.color.actions.primary.focus.focus-visible",
+          "id": "component.select-field.default.control.ring-color.focus-visible"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible",
+          "id": "component.select-field.default.control.ring-width.focus-visible"
+        },
+        {
+          "target": "select-field",
+          "variant": "default",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible",
+          "id": "component.select-field.default.control.ring-offset.focus-visible"
+        }
+      ],
+      "presentation": {
+        "label": "Liste déroulante",
+        "parts": {
+          "root": "Ensemble",
+          "label": "Libellé",
+          "control": "Contrôle"
+        },
+        "variants": {
+          "default": "Standard"
+        },
+        "states": {
+          "default": "Par défaut",
+          "focus-visible": "Focus clavier",
+          "disabled": "Désactivé"
+        },
+        "consumerFiles": ["src/design-system/components/controls.module.css"],
+        "contrastParts": ["label", "control"],
+        "semanticGuidance": {
+          "purpose": "Choisir une valeur dans une liste de possibilités préparées.",
+          "recommendations": [
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "label",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Libellé et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "label",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "label",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "label",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "label",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["background"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["foreground"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Contrôle et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["borderColor"],
+              "states": ["disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Exprimer l’indisponibilité de ce contexte."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["borderWidth"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["borderRadius"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["paddingBlock"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.auxiliary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["paddingInline"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["fontSize"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["fontWeight"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["fontFamily"],
+              "states": ["default", "disabled"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["ringColor"],
+              "states": ["focus-visible"],
+              "intentions": ["actions.primary"],
+              "reason": "Respecter le rôle Contrôle et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["ringWidth"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "control",
+              "properties": ["ringOffset"],
+              "states": ["focus-visible"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "target": "notice",
+      "bindings": [
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.default",
+          "id": "component.notice.info.root.background.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.notice.info.root.foreground.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.notice.info.root.border-color.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.notice.info.root.border-width.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.notice.info.root.border-radius.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.info.root.padding-block.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.info.root.padding-inline.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.notice.info.root.font-size.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.notice.info.root.font-weight.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.notice.info.root.line-height.default"
+        },
+        {
+          "target": "notice",
+          "variant": "info",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.notice.info.root.font-family.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.default",
+          "id": "component.notice.success.root.background.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.information-result.success.text.default",
+          "id": "component.notice.success.root.foreground.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.notice.success.root.border-color.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.notice.success.root.border-width.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.notice.success.root.border-radius.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.success.root.padding-block.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.success.root.padding-inline.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.notice.success.root.font-size.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.notice.success.root.font-weight.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.notice.success.root.line-height.default"
+        },
+        {
+          "target": "notice",
+          "variant": "success",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.notice.success.root.font-family.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.default",
+          "id": "component.notice.error.root.background.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.information-result.error.text.default",
+          "id": "component.notice.error.root.foreground.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.notice.error.root.border-color.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.notice.error.root.border-width.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.notice.error.root.border-radius.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.error.root.padding-block.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.notice.error.root.padding-inline.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.notice.error.root.font-size.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.notice.error.root.font-weight.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.notice.error.root.line-height.default"
+        },
+        {
+          "target": "notice",
+          "variant": "error",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.notice.error.root.font-family.default"
+        }
+      ],
+      "presentation": {
+        "label": "Message",
+        "parts": {
+          "root": "Ensemble"
+        },
+        "variants": {
+          "info": "Information",
+          "success": "Succès",
+          "error": "Erreur"
+        },
+        "states": {
+          "default": "Par défaut"
+        },
+        "consumerFiles": ["src/design-system/components/controls.module.css"],
+        "contrastParts": ["root"],
+        "semanticGuidance": {
+          "purpose": "Communiquer une information ou un résultat selon le ton du message.",
+          "recommendations": [
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["information-result.information"],
+              "reason": "Respecter le rôle Ensemble et le ton Information du composant."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["information-result.information"],
+              "reason": "Respecter le rôle Ensemble et le ton Information du composant."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["information-result.information"],
+              "reason": "Respecter le rôle Ensemble et le ton Information du composant."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["borderWidth"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["borderRadius"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["info"],
+              "part": "root",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["information-result.success"],
+              "reason": "Respecter le rôle Ensemble et le ton Succès du composant."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["information-result.success"],
+              "reason": "Respecter le rôle Ensemble et le ton Succès du composant."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["information-result.success"],
+              "reason": "Respecter le rôle Ensemble et le ton Succès du composant."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["borderWidth"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["borderRadius"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["success"],
+              "part": "root",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Ensemble et le ton Erreur du composant."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Ensemble et le ton Erreur du composant."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["information-result.error"],
+              "reason": "Respecter le rôle Ensemble et le ton Erreur du composant."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["borderWidth"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["borderRadius"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["error"],
+              "part": "root",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "target": "panel",
+      "bindings": [
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.surface.default",
+          "id": "component.panel.default.root.background.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.panel.default.root.foreground.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.panel.default.root.border-color.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+          "id": "component.panel.default.root.border-width.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+          "id": "component.panel.default.root.border-radius.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.panel.default.root.padding-block.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.panel.default.root.padding-inline.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.panel.default.root.font-size.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.panel.default.root.font-weight.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.panel.default.root.line-height.default"
+        },
+        {
+          "target": "panel",
+          "variant": "default",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.panel.default.root.font-family.default"
+        }
+      ],
+      "presentation": {
+        "label": "Panneau",
+        "parts": {
+          "root": "Ensemble"
+        },
+        "variants": {
+          "default": "Standard"
+        },
+        "states": {
+          "default": "Par défaut"
+        },
+        "consumerFiles": ["src/design-system/components/controls.module.css"],
+        "contrastParts": ["root"],
+        "semanticGuidance": {
+          "purpose": "Regrouper un contenu dans une surface structurelle, sans signal métier implicite.",
+          "recommendations": [
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Ensemble et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["borderWidth"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["borderRadius"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "root",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "target": "foundations",
+      "bindings": [
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "background",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.secondary.surface.default",
+          "id": "component.foundations.default.document.background.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "foreground",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.text.default",
+          "id": "component.foundations.default.document.foreground.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+          "id": "component.foundations.default.document.font-size.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "fontWeight",
+          "state": "default",
+          "style": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+          "id": "component.foundations.default.document.font-weight.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "lineHeight",
+          "state": "default",
+          "style": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+          "id": "component.foundations.default.document.line-height.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "document",
+          "property": "fontFamily",
+          "state": "default",
+          "style": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+          "id": "component.foundations.default.document.font-family.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "page",
+          "property": "maxWidth",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.neutral.content-width.default",
+          "id": "component.foundations.default.page.max-width.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "page",
+          "property": "pageMargin",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.context.spacing.default",
+          "id": "component.foundations.default.page.page-margin.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "page-mobile",
+          "property": "pageMargin",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.foundations.default.page-mobile.page-margin.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "layout-small",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.foundations.default.layout-small.gap.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "layout-medium",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+          "id": "component.foundations.default.layout-medium.gap.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "layout-large",
+          "property": "gap",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+          "id": "component.foundations.default.layout-large.gap.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "table",
+          "property": "fontSize",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+          "id": "component.foundations.default.table.font-size.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "table",
+          "property": "borderColor",
+          "state": "default",
+          "style": "semantic.color.neutral-hierarchy.neutral.border.default",
+          "id": "component.foundations.default.table.border-color.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "table",
+          "property": "paddingBlock",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.foundations.default.table.padding-block.default"
+        },
+        {
+          "target": "foundations",
+          "variant": "default",
+          "part": "table",
+          "property": "paddingInline",
+          "state": "default",
+          "style": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+          "id": "component.foundations.default.table.padding-inline.default"
+        }
+      ],
+      "presentation": {
+        "label": "Fondations",
+        "parts": {
+          "document": "Document",
+          "page": "Page",
+          "page-mobile": "Page sur mobile",
+          "layout-small": "Petits écarts",
+          "layout-medium": "Écarts moyens",
+          "layout-large": "Grands écarts",
+          "table": "Tableau"
+        },
+        "variants": {
+          "default": "Standard"
+        },
+        "states": {
+          "default": "Par défaut"
+        },
+        "consumerFiles": [
+          "src/styles/global.css",
+          "src/design-system/foundations.module.css",
+          "app/features/projects/projects.module.css"
+        ],
+        "contrastParts": ["document"],
+        "dynamicConsumers": [
+          {
+            "file": "src/design-system/Foundations.tsx",
+            "group": "legacy-tokens"
+          }
+        ],
+        "semanticGuidance": {
+          "purpose": "Organiser les surfaces, la typographie et les repères communs du projet.",
+          "recommendations": [
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["background"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Respecter le rôle Document et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["foreground"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Document et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["fontWeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["lineHeight"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "document",
+              "properties": ["fontFamily"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "page",
+              "properties": ["maxWidth"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "page",
+              "properties": ["pageMargin"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.context"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "page-mobile",
+              "properties": ["pageMargin"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "layout-small",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "layout-medium",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "layout-large",
+              "properties": ["gap"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.primary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "table",
+              "properties": ["fontSize"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.secondary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "table",
+              "properties": ["borderColor"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.neutral"],
+              "reason": "Respecter le rôle Tableau et le ton Standard du composant."
+            },
+            {
+              "variants": ["default"],
+              "part": "table",
+              "properties": ["paddingBlock"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            },
+            {
+              "variants": ["default"],
+              "part": "table",
+              "properties": ["paddingInline"],
+              "states": ["default"],
+              "intentions": ["neutral-hierarchy.tertiary"],
+              "reason": "Organiser la hiérarchie visuelle sans ajouter de signification métier."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

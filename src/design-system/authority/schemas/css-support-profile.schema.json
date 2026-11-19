@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "date",
+    "standard",
+    "defaultAvailability",
+    "extensions",
+    "excluded",
+    "update",
+    "coverage"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "standard": {
+      "type": "string",
+      "minLength": 1
+    },
+    "defaultAvailability": {
+      "const": "widely"
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "excluded": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "update": {
+      "const": "explicit-versioned-review"
+    },
+    "coverage": {
+      "const": "curated-properties-extensible-types"
+    }
+  }
+}

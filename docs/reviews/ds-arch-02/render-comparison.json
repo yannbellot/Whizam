@@ -1,0 +1,104 @@
+{
+  "reference": "32102be canonical source",
+  "candidate": "83b2978; final unchanged CSS and token values",
+  "comparisons": [
+    {
+      "scenario": "desktop-button-focus-hover",
+      "beforeSha256": "1fb427b47b2f9fedc4ae5a7b2fa5a94556892776caf2514a8bdba9399e67d51a",
+      "afterSha256": "1fb427b47b2f9fedc4ae5a7b2fa5a94556892776caf2514a8bdba9399e67d51a",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-button-hover",
+      "beforeSha256": "093356b60bd9443641ebe9453ace9f0c43286ab1f7cc986bd514c1476f549550",
+      "afterSha256": "093356b60bd9443641ebe9453ace9f0c43286ab1f7cc986bd514c1476f549550",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-default",
+      "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-disabled-hover",
+      "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-field-error-focus",
+      "beforeSha256": "fc3e4da769a0005e091e6695f9014a2c82d1a9db3fa027345f64dbab17ef6945",
+      "afterSha256": "fc3e4da769a0005e091e6695f9014a2c82d1a9db3fa027345f64dbab17ef6945",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-loading-hover",
+      "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "desktop-multiline-error-focus",
+      "beforeSha256": "c8cf82e1cb4df1b885486fa5124d77f07f64ce149b8607dcfaf2451f5a3234ec",
+      "afterSha256": "c8cf82e1cb4df1b885486fa5124d77f07f64ce149b8607dcfaf2451f5a3234ec",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-button-focus-hover",
+      "beforeSha256": "8c8dbedbbcaed676892ea915e5fa5d63c9dd762d6542720bce6346fe63d137b1",
+      "afterSha256": "8c8dbedbbcaed676892ea915e5fa5d63c9dd762d6542720bce6346fe63d137b1",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-button-hover",
+      "beforeSha256": "605e4f7f6c6ea2eded5daa9137464df67af384084064a10c52cfc7eb9f377b9f",
+      "afterSha256": "605e4f7f6c6ea2eded5daa9137464df67af384084064a10c52cfc7eb9f377b9f",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-default",
+      "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-disabled-hover",
+      "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-field-error-focus",
+      "beforeSha256": "a72ebaa5506402e8f4edd46a012ef6012336ca1a24b0956308fb29570c2690b9",
+      "afterSha256": "a72ebaa5506402e8f4edd46a012ef6012336ca1a24b0956308fb29570c2690b9",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-loading-hover",
+      "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    },
+    {
+      "scenario": "mobile-multiline-error-focus",
+      "beforeSha256": "4562fa5d3c5b54137f05cbab118267fa95e1600f3b9c6fe77504a22a772bd5a9",
+      "afterSha256": "4562fa5d3c5b54137f05cbab118267fa95e1600f3b9c6fe77504a22a772bd5a9",
+      "pixelsIdentical": true,
+      "computedStylesAndLayoutIdentical": true
+    }
+  ]
+}

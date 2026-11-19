@@ -1,0 +1,64 @@
+{
+  'schemaVersion': 1,
+  'types':
+    {
+      'number':
+        {
+          'description': 'Nombre décimal signé ; bornes par propriété.',
+          'validation': 'property-specific',
+        },
+      'integer':
+        {
+          'description': 'Entier signé ; domaine par propriété.',
+          'validation': 'property-specific',
+        },
+      'length':
+        {
+          'description': 'Longueur absolue ou contextuelle ; signe par propriété.',
+          'validation': 'property-specific',
+        },
+      'percentage':
+        {
+          'description': 'Pourcentage contextuel, sans plafond global à 100 %.',
+          'validation': 'property-specific',
+        },
+      'angle': { 'description': 'Angle et unité.', 'validation': 'property-specific' },
+      'time':
+        { 'description': 'Durée ou délai selon propriété.', 'validation': 'property-specific' },
+      'resolution': { 'description': 'Résolution et unité.', 'validation': 'property-specific' },
+      'ratio': { 'description': 'Rapport de deux nombres.', 'validation': 'property-specific' },
+      'flex': { 'description': 'Fraction de piste de grille.', 'validation': 'property-specific' },
+      'color': { 'description': 'Couleur, canaux et alpha.', 'validation': 'property-specific' },
+      'keyword':
+        { 'description': 'Mot-clé propre à la propriété.', 'validation': 'property-specific' },
+      'string': { 'description': 'Chaîne échappée.', 'validation': 'property-specific' },
+      'identifier':
+        { 'description': 'Identifiant ou référence nommée.', 'validation': 'property-specific' },
+      'image':
+        {
+          'description': 'Image, gradient ou ressource ; aucune lecture par validation.',
+          'validation': 'property-specific',
+        },
+      'position': { 'description': 'Coordonnées et origine.', 'validation': 'property-specific' },
+      'shape': { 'description': 'Forme ou chemin.', 'validation': 'property-specific' },
+      'list':
+        {
+          'description': 'Éléments, séparateurs et cardinalité.',
+          'validation': 'property-specific',
+        },
+      'composite':
+        {
+          'description': 'Composition de types, raccourcis et couches.',
+          'validation': 'property-specific',
+        },
+      'calculation':
+        {
+          'description': 'Expression typée dépendant éventuellement du contexte.',
+          'validation': 'property-specific',
+        },
+      'variable':
+        { 'description': 'Substitution, repli et cycles.', 'validation': 'property-specific' },
+      'cascade':
+        { 'description': 'Mots-clés globaux et cascade.', 'validation': 'property-specific' },
+    },
+}

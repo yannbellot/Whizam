@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "cases": [
+    "new domain and empty inventory, no Projects navigation",
+    "server validates blank title and preserves category; real object created",
+    "loan persisted; second active loan refused by server and PostgreSQL",
+    "return closes loan and stale return is refused",
+    "foreign origin, unknown field, invalid/missing identity and application DS write endpoint refused",
+    "inventory filters use persisted loan state",
+    "cancel creation writes nothing",
+    "two concurrent real HTTP requests produce one loan and one conflict",
+    "owned PostgreSQL outage preserves form; explicit retry after recovery creates exactly one object"
+  ],
+  "viewportCases": [
+    "1280x800 desktop; 390x844 mobile without horizontal overflow; labelled fields and keyboard entry"
+  ],
+  "source": "loans witness",
+  "base": "44e97da88e4c97720b9177a6e0e63b7cbe0e45c0",
+  "chromium": "156.0.8078.4"
+}

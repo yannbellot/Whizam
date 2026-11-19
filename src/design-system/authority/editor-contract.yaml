@@ -1,0 +1,423 @@
+schemaVersion: 1
+propertyGroups:
+  - id: typography
+    label: Typographie
+    properties:
+      - fontFamily
+      - fontSize
+      - fontWeight
+      - lineHeight
+      - foreground
+  - id: colors
+    label: Couleurs
+    properties:
+      - background
+      - iconColor
+  - id: borders
+    label: Bordures
+    properties:
+      - borderColor
+      - borderWidth
+      - borderRadius
+  - id: spacing
+    label: Espacements
+    properties:
+      - paddingBlock
+      - paddingInline
+      - gap
+      - pageMargin
+  - id: dimensions
+    label: Dimensions
+    properties:
+      - maxWidth
+  - id: focus
+    label: Contour de focus
+    properties:
+      - ringColor
+      - ringWidth
+      - ringOffset
+properties:
+  background:
+    cssProperty: background-color
+    type: color
+    role: surface
+    label: Arrière-plan
+  foreground:
+    cssProperty: color
+    type: color
+    role: text
+    label: Couleur
+  borderColor:
+    cssProperty: border-color
+    type: color
+    role: border
+    label: Couleur
+  iconColor:
+    cssProperty: color
+    type: color
+    role: icon
+    label: Icônes
+  ringColor:
+    cssProperty: outline-color
+    type: color
+    role: focus
+    label: Couleur
+  borderRadius:
+    cssProperty: border-radius
+    type: dimension
+    role: radius
+    units:
+      - px
+      - rem
+    label: Bords arrondis
+  borderWidth:
+    cssProperty: border-width
+    type: dimension
+    role: border-width
+    units:
+      - px
+      - rem
+    label: Épaisseur
+  paddingBlock:
+    cssProperty: padding-block
+    type: dimension
+    role: spacing
+    units:
+      - px
+      - rem
+    label: Intérieur — axe de bloc
+  paddingInline:
+    cssProperty: padding-inline
+    type: dimension
+    role: spacing
+    units:
+      - px
+      - rem
+    label: Intérieur — axe en ligne
+  gap:
+    cssProperty: gap
+    type: dimension
+    role: spacing
+    units:
+      - px
+      - rem
+    label: Entre éléments
+  fontSize:
+    cssProperty: font-size
+    type: dimension
+    role: font-size
+    units:
+      - px
+      - rem
+    label: Taille
+  fontWeight:
+    cssProperty: font-weight
+    type: font-weight
+    role: font-weight
+    label: Graisse
+  lineHeight:
+    cssProperty: line-height
+    type: line-height
+    role: line-height
+    label: Interligne
+  fontFamily:
+    cssProperty: font-family
+    type: font-family
+    role: font-family
+    label: Famille
+  ringWidth:
+    cssProperty: outline-width
+    type: dimension
+    role: border-width
+    units:
+      - px
+      - rem
+    label: Épaisseur
+  ringOffset:
+    cssProperty: outline-offset
+    type: dimension
+    role: spacing
+    units:
+      - px
+      - rem
+    label: Décalage
+  maxWidth:
+    cssProperty: max-width
+    type: dimension
+    role: content-width
+    units:
+      - px
+      - rem
+    label: Largeur maximale
+  pageMargin:
+    cssProperty: padding
+    type: dimension
+    role: spacing
+    units:
+      - px
+      - rem
+    label: Intérieur de la page
+fontFamilies:
+  - ADL Inter, sans-serif
+  - ADL Roboto, sans-serif
+  - ADL Montserrat, sans-serif
+  - ADL Lora, serif
+  - Inter, ui-sans-serif, system-ui, sans-serif
+targets:
+  - id: button
+    component: Button
+    sheet: src/design-system/components/Button/Button.design.yaml
+    variants:
+      - default
+    states:
+      - default
+      - hover
+      - focus-visible
+      - disabled
+      - loading
+    cells:
+      - part: root
+        properties:
+          - background
+          - foreground
+          - borderRadius
+          - paddingBlock
+          - paddingInline
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+      - part: root
+        properties:
+          - background
+        states:
+          - hover
+          - disabled
+          - loading
+      - part: root
+        properties:
+          - ringColor
+          - ringWidth
+          - ringOffset
+        states:
+          - focus-visible
+  - id: field
+    component: Field
+    sheet: src/design-system/components/Field.design.yaml
+    variants:
+      - single-line
+      - multiline
+    states:
+      - default
+      - focus-visible
+      - disabled
+      - error
+    cells:
+      - part: root
+        properties:
+          - gap
+        states:
+          - default
+      - part: label
+        properties:
+          - foreground
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+      - part: control
+        properties:
+          - background
+          - foreground
+          - borderColor
+          - borderWidth
+          - borderRadius
+          - paddingBlock
+          - paddingInline
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+          - disabled
+      - part: control
+        properties:
+          - ringColor
+          - ringWidth
+          - ringOffset
+        states:
+          - focus-visible
+      - part: control
+        properties:
+          - borderColor
+        states:
+          - error
+      - part: hint
+        properties:
+          - foreground
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+      - part: error
+        properties:
+          - foreground
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+  - id: select-field
+    component: SelectField
+    sheet: src/design-system/components/SelectField.design.yaml
+    variants:
+      - default
+    states:
+      - default
+      - focus-visible
+      - disabled
+    cells:
+      - part: root
+        properties:
+          - gap
+        states:
+          - default
+      - part: label
+        properties:
+          - foreground
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+      - part: control
+        properties:
+          - background
+          - foreground
+          - borderColor
+          - borderWidth
+          - borderRadius
+          - paddingBlock
+          - paddingInline
+          - fontSize
+          - fontWeight
+          - fontFamily
+        states:
+          - default
+          - disabled
+      - part: control
+        properties:
+          - ringColor
+          - ringWidth
+          - ringOffset
+        states:
+          - focus-visible
+  - id: notice
+    component: Notice
+    sheet: src/design-system/components/Notice.design.yaml
+    variants:
+      - info
+      - success
+      - error
+    states:
+      - default
+    cells:
+      - part: root
+        properties:
+          - background
+          - foreground
+          - borderColor
+          - borderWidth
+          - borderRadius
+          - paddingBlock
+          - paddingInline
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+  - id: panel
+    component: Panel
+    sheet: src/design-system/components/Panel.design.yaml
+    variants:
+      - default
+    states:
+      - default
+    cells:
+      - part: root
+        properties:
+          - background
+          - foreground
+          - borderColor
+          - borderWidth
+          - borderRadius
+          - paddingBlock
+          - paddingInline
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+  - id: foundations
+    component: Foundations
+    sheet: src/design-system/Foundations.design.yaml
+    variants:
+      - default
+    states:
+      - default
+    cells:
+      - part: document
+        properties:
+          - background
+          - foreground
+          - fontSize
+          - fontWeight
+          - lineHeight
+          - fontFamily
+        states:
+          - default
+      - part: page
+        properties:
+          - maxWidth
+          - pageMargin
+        states:
+          - default
+      - part: page-mobile
+        properties:
+          - pageMargin
+        states:
+          - default
+      - part: layout-small
+        properties:
+          - gap
+        states:
+          - default
+      - part: layout-medium
+        properties:
+          - gap
+        states:
+          - default
+      - part: layout-large
+        properties:
+          - gap
+        states:
+          - default
+      - part: table
+        properties:
+          - fontSize
+          - borderColor
+          - paddingBlock
+          - paddingInline
+        states:
+          - default

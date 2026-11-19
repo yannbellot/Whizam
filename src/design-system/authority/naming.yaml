@@ -1,0 +1,74 @@
+schemaVersion: 1
+conventions:
+  authorityId:
+    description: Identifiant stable d’une entrée d’autorité.
+    format: kebab-case
+    pattern: '^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$'
+  reference:
+    description: Référence qualifiée à points ; structures détaillées dans tokenNaming, consommées par editor/naming.ts et vérifiées par le graphe courant.
+    format: dot-separated-kebab-case
+    pattern: '^[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*)+$'
+  reactComponent:
+    description: Nom public d’un composant React adopté par le projet.
+    format: PascalCase
+    pattern: '^[A-Z][A-Za-z0-9]*$'
+  typescriptIdentifier:
+    description: Identifiant TypeScript autre qu’un composant React.
+    format: camelCase
+    pattern: '^[a-z][A-Za-z0-9]*$'
+  cssModuleClass:
+    description: Classe locale d’un CSS Module.
+    format: camelCase
+    pattern: '^[a-z][A-Za-z0-9]*$'
+  technicalFile:
+    description: Nom de fichier technique hors convention imposée par un outil.
+    format: kebab-case
+    pattern: '^[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:\.[a-z0-9]+)+$'
+  componentDesignFile:
+    description: Exception pour les fiches de composants adjacentes, nommées comme leur composant public.
+    format: PascalCase.design.yaml
+    pattern: '^[A-Z][A-Za-z0-9]*\.design\.yaml$'
+language:
+  humanContent: fr
+  technicalIdentifiers: en
+# Structures courantes ; les alias historiques ne sont pas renommés.
+tokenNaming:
+  excludedContextSegments: [theme, viewport, language, provenance]
+  primitive:
+    template: 'primitive.{family}.{value}'
+    maxLength: 240
+    dimensionFamilies:
+      spacing: space
+      radius: radius
+      border-width: stroke
+      content-width: size
+      font-size: type.font-size
+    typeFamilies:
+      color: color
+      font-family: type.font-family
+      font-weight: type.font-weight
+      line-height: type.line-height
+    valuePrefixes:
+      color: hex
+      fontStack: stack
+      fontWeight: value
+      ratio: ratio
+  semantic:
+    template: 'semantic.{domain}.{usage}.{state}'
+    domains:
+      color: color
+      typography: type
+      geometry: layout
+    roleNames:
+      surface: background
+    categoryNames:
+      actions: action
+      information-result: feedback
+    usageTemplate: '{category}.{intention}.{role}'
+    categoryUsageTemplates:
+      neutral-hierarchy:
+        default: '{intention}.{role}'
+        type: 'hierarchy.{intention}.{role}'
+  component:
+    template: 'component.{component}.{variant}.{part}.{property}.{state}'
+    propertyCase: kebab-case

@@ -1,0 +1,4 @@
+target: policy
+expectedCode: schema-invalid
+document:
+  schemaVersion: 1

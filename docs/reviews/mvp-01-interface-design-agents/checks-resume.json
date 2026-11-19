@@ -1,0 +1,26 @@
+[
+  {
+    "script": "typecheck",
+    "code": 0,
+    "signal": null,
+    "file": "typecheck.log"
+  },
+  {
+    "script": "lint",
+    "code": 0,
+    "signal": null,
+    "file": "lint.log"
+  },
+  {
+    "script": "format:check",
+    "code": 0,
+    "signal": null,
+    "file": "format-check.log"
+  },
+  {
+    "script": "build",
+    "code": 0,
+    "signal": null,
+    "file": "build.log"
+  }
+]

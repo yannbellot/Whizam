@@ -1,0 +1,10 @@
+{
+  "port": 54137,
+  "files": [
+    "Panel.tsx",
+    "session.ts"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "draftBefore": "Génération chargée, Enregistrer disabled"
+}

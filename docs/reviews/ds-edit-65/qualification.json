@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "sourceBase": "5cabb45",
+  "task": "DS-EDIT-65",
+  "reference": "Storybook Apparence 34e0aec",
+  "mode": "sequential, same agent, not independent",
+  "checks": {
+    "isolatedTypecheck": "pass",
+    "lint": "pass",
+    "unit": 148,
+    "designSystem": 82,
+    "documentation": 5,
+    "compiledWorkshop": {
+      "qualified": 20,
+      "initial18Pass": true,
+      "additionalNumericCases": 2,
+      "finalTargetedRetest": "2 pass, correct contract bounds and compound-label selector"
+    },
+    "persistentWorkshop": 14,
+    "storybookBuild": "pass",
+    "serverBoundaries": "pass",
+    "server": {
+      "initial": {
+        "tests": 85,
+        "pass": 79,
+        "fail": 6,
+        "reason": "fixtures copied from root concurrently mutated by persistence tests"
+      },
+      "stableRetest5": 5,
+      "stableFile15Retest": 3,
+      "allSixInitialFailuresReplayedSuccessfully": true,
+      "fullClean85Rerun": false
+    }
+  },
+  "conservation": {
+    "productYAMLChanged": false,
+    "compositionExistingEntriesUnchanged": true,
+    "addedCompositionTokens": 11,
+    "addedCompositionPrimitives": 11,
+    "recipeBindings": 188,
+    "recipeStyles": 18,
+    "recipeModelEqualsOldSavedModel": true,
+    "oldStorybookUntouched": true
+  },
+  "runtimeManifest": "v17",
+  "limits": [
+    "human acceptance pending",
+    "Chromium desktop/mobile only",
+    "assistance simulated, no real provider inference",
+    "no new Linux/distribution/SQL qualification",
+    "initial root typecheck blocked by unrelated untracked duplicate files; isolated typecheck passes"
+  ]
+}

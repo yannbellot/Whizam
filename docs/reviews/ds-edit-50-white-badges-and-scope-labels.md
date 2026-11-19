@@ -1,0 +1,9 @@
+# DS-EDIT-50 — Blanc, diagonale et choix renommés
+
+2 novembre 2026 — application, base 9a2b014, branche codex/white-contrast-badges-and-labels. En revue, qualification technique acquise, acceptation humaine différée. [Fiche](../work-items/ds-edit-50-white-badges-and-scope-labels.md). Contours/labels blancs pour tous états, fond transparent ; non atteint à 0,7 avec trait diagonal CSS. Les trois libellés sont modifiés sans changer les valeurs d’action ni le flux. Tests directement affectés synchronisés, y compris helpers de persistance.
+
+ESLint/Prettier ciblés et diff conformes. Six parcours dev desktop/mobile réussis (console de campagne) : six transitions de portée sans perte de valeur, origine partagée absente, seuils taille/graisse AA/AAA, blanc et transparence CSS, opacité 0,7 et pseudo-élément diagonal. Trois tests unitaires de rendu réussis avec config explicite. Première invocation plus large : 73 réussis/deux échecs d’assertions de libellés devenues obsolètes, corrigés puis trois retestés ; avertissements EMFILE de watchers conservés comme limite de cette invocation. Pas de campagne complète de persistance ni nouvelle campagne de types pour ce changement de présentation.
+
+Revues design/technique/sécurité séquentielles même agent, non indépendantes : présentation demandée, distinctions accessibles conservées, aucune nouvelle requête ou permission ; blanc fixe peu lisible sur thème clair, pas de certification WCAG du panneau. Non mesuré reste inconnu sans barre. Aperçu 54137 actualisé après constat brouillon vide ; [valeurs et privé conservés](ds-edit-50/preview-update.json). Doc updated ; préexistants/modèles app/J5 conservés, aucune publication. Autres navigateurs et recette humaine non vérifiés. Reprise : recette visuelle des badges et libellés.
+
+Deux parcours de badges rejoués avec préférence sombre : [résultats](ds-edit-50/development.json), captures [desktop](ds-edit-50/white-desktop.png)/[mobile](ds-edit-50/white-mobile.png).

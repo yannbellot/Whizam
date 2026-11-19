@@ -1,0 +1,15 @@
+✔ prepare does not mutate product; cancellation is targeted; acceptance uses specialized writer and survives restart (9110.8475ms)
+✔ interruption after the specialized save is recovered into one coherent common receipt (4816.464791ms)
+✔ ordinary code writers cannot alter the imported authority or bypass the specialized path (961.5665ms)
+✔ variant sets import shared nested components once, and structural replacement requires explicit acknowledgement (9873.162666ms)
+✔ occurrence and variant replacements retain shared source and reuse an already imported target (26591.839542ms)
+✔ source file identities prevent collisions and invalid graphs cannot be published (13.871084ms)
+✔ unsupported imports can be planned with raw source context without applying or starting Codex (4418.18275ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 55963.89

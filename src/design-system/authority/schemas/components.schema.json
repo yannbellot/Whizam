@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/components.schema.json",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "designSystemComponents", "baseUiComponents"],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "designSystemComponents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/designSystemComponent"
+          }
+        },
+        "baseUiComponents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/baseUiComponent"
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "designSystemComponents",
+        "baseUiComponents",
+        "foundationsSheet"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 4
+        },
+        "designSystemComponents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/preparedComponent"
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "baseUiComponents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/baseUiComponent"
+          }
+        },
+        "foundationsSheet": {
+          "const": "src/design-system/Foundations.design.yaml"
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "semanticReference": {
+      "type": "string",
+      "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$"
+    },
+    "tokenMap": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z][A-Za-z0-9]*$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/semanticReference"
+      }
+    },
+    "designSystemComponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "implementation",
+        "foundation",
+        "slots",
+        "states",
+        "accessibility",
+        "documentation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Za-z0-9]*$"
+        },
+        "implementation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "foundation": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "reference"],
+              "properties": {
+                "kind": {
+                  "const": "native-element"
+                },
+                "reference": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]*$"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "reference"],
+              "properties": {
+                "kind": {
+                  "const": "base-ui"
+                },
+                "reference": {
+                  "type": "string",
+                  "pattern": "^base-ui\\.[a-z][a-z0-9-]*$"
+                }
+              }
+            }
+          ]
+        },
+        "slots": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][A-Za-z0-9]*$"
+          }
+        },
+        "states": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["tokens"],
+            "properties": {
+              "tokens": {
+                "$ref": "#/$defs/tokenMap"
+              }
+            }
+          }
+        },
+        "accessibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["accessibleName", "keyboardBehavior", "focusVisible"],
+          "properties": {
+            "accessibleName": {
+              "const": "required"
+            },
+            "keyboardBehavior": {
+              "enum": ["native", "documented-custom"]
+            },
+            "focusVisible": {
+              "const": "required"
+            }
+          }
+        },
+        "documentation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "note"],
+          "properties": {
+            "status": {
+              "enum": ["provisional", "stable"]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "baseUiComponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "package", "status", "evidence"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^base-ui\\.[a-z][a-z0-9-]*$"
+        },
+        "package": {
+          "type": "string",
+          "pattern": "^@base-ui/react/[a-z][a-z0-9-]*$"
+        },
+        "status": {
+          "enum": ["available", "adopted"]
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adoptedBy": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Za-z0-9]*$"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "adopted"
+              }
+            },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "adoptedBy": true
+            },
+            "required": ["adoptedBy"]
+          },
+          "else": {
+            "not": {
+              "properties": {
+                "adoptedBy": true
+              },
+              "required": ["adoptedBy"]
+            }
+          }
+        }
+      ]
+    },
+    "preparedComponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "implementation",
+        "foundation",
+        "accessibility",
+        "documentation",
+        "designSheet"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Za-z0-9]*$"
+        },
+        "implementation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "foundation": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "reference"],
+              "properties": {
+                "kind": {
+                  "const": "native-element"
+                },
+                "reference": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]*$"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "reference"],
+              "properties": {
+                "kind": {
+                  "const": "base-ui"
+                },
+                "reference": {
+                  "type": "string",
+                  "pattern": "^base-ui\\.[a-z][a-z0-9-]*$"
+                }
+              }
+            }
+          ]
+        },
+        "accessibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["accessibleName", "keyboardBehavior", "focusVisible"],
+          "properties": {
+            "accessibleName": {
+              "const": "required"
+            },
+            "keyboardBehavior": {
+              "enum": ["native", "documented-custom"]
+            },
+            "focusVisible": {
+              "const": "required"
+            }
+          }
+        },
+        "documentation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "note"],
+          "properties": {
+            "status": {
+              "enum": ["provisional", "stable"]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "designSheet": {
+          "type": "string",
+          "pattern": "^src/design-system/components/(?:Button/Button|Field|SelectField|Notice|Panel)\\.design\\.yaml$"
+        },
+        "family": {
+          "enum": ["ui", "layout"]
+        }
+      }
+    }
+  }
+}

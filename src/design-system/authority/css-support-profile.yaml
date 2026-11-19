@@ -1,0 +1,11 @@
+{
+  'schemaVersion': 1,
+  'id': 'css-web-2026-11-02',
+  'date': '2026-11-02',
+  'standard': 'https://www.w3.org/TR/css-2026/',
+  'defaultAvailability': 'widely',
+  'extensions': [],
+  'excluded': ['experimental', 'vendor', 'obsolete'],
+  'update': 'explicit-versioned-review',
+  'coverage': 'curated-properties-extensible-types',
+}

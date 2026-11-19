@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "previewStyleMutationsDuringTyping": 0,
+      "iframeReloadsDuringTyping": 0,
+      "comparisonWorks": true
+    },
+    {
+      "width": 390,
+      "previewStyleMutationsDuringTyping": 0,
+      "iframeReloadsDuringTyping": 0,
+      "comparisonWorks": true
+    }
+  ],
+  "file": ".storybook/editor/Panel.tsx",
+  "sha256": "b35da264efb1eb827990a97d9339133f2ff9535db9183e5924d37ea81ab43f2c"
+}

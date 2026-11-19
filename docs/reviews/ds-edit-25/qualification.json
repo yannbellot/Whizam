@@ -1,0 +1,69 @@
+{
+  "base": "3c040f65fc62d43f13fe7dcb65cf92ed8c53fe77",
+  "sourceValuesUnchanged": true,
+  "previewCodeIdentical": true,
+  "results": [
+    {
+      "width": 1280,
+      "colorScheme": "light",
+      "status": "passed",
+      "savedValue": "#b51a00",
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "errors": [],
+      "writes": []
+    },
+    {
+      "width": 1280,
+      "colorScheme": "dark",
+      "status": "passed",
+      "savedValue": "#b51a00",
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "errors": [],
+      "writes": []
+    },
+    {
+      "width": 390,
+      "colorScheme": "light",
+      "status": "passed",
+      "savedValue": "#b51a00",
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "errors": [],
+      "writes": []
+    },
+    {
+      "width": 390,
+      "colorScheme": "dark",
+      "status": "passed",
+      "savedValue": "#b51a00",
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "errors": [],
+      "writes": []
+    }
+  ],
+  "code": [
+    {
+      "file": ".storybook/editor/Panel.tsx",
+      "sha256": "2506302a55be7333fbefa0ae36884b131012ed9bb8bcce0836126f382ef9243d"
+    },
+    {
+      "file": ".storybook/editor/ScopeControls.tsx",
+      "sha256": "a03365ffb3842403389534b92ce9e9a267193ab8db14e6029816ccf24cc559fc"
+    },
+    {
+      "file": ".storybook/editor/panel.module.css",
+      "sha256": "e69d18c2b7091b0a49bc2089c0599a90d576ffd3bca9a06f2f881060762c223e"
+    }
+  ]
+}

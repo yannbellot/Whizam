@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "provider": "real Codex 0.167.0 with personally authorized managed ChatGPT account",
+  "cases": [
+    "real model proposal displayed in React and refused; witness remains byte-identical",
+    "second real model proposal approved in React; actual file contains the approved witness",
+    "browser reload retains the real conversation and does not resubmit the user message"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "version": "0.167.0",
+  "cases": [
+    "pinned real app-server initializes in a fresh disconnected private account",
+    "outside read denied by actual provider filesystem policy",
+    "secret read denied by actual provider filesystem policy",
+    "native project read denied by actual provider filesystem policy",
+    "outside write denied by actual provider filesystem policy",
+    "native project write denied by actual provider filesystem policy",
+    "linked read denied by actual provider filesystem policy",
+    "multiply linked read denied by actual provider filesystem policy",
+    "broker reads and writes the allowed project witness while private, external and linked witnesses are refused"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "file": "src/ui-lab/editor/workspace.module.css",
+  "beforeSha256": "68f9496d561255dbc1b7b9f59c1fc6fdc1bcf52da09841f972a0c11647109bb5",
+  "afterSha256": "3e59eb2620358c377b4e5802610ae4b9241b8084698e7144c403867e43882162",
+  "canonicalCssRulesSha256": "b845dbd6639b49a21aa4fd895ca2edf34386bca164ca0980f28f4b6405701862",
+  "rulesIdentical": true,
+  "normalization": "Whitespace around selector-list commas only; declaration values and all other selector spacing preserved.",
+  "reason": "Pre-existing one-line formatting reported by full format:check; rules preserved, application rebuilt and compiled workshop rerun."
+}

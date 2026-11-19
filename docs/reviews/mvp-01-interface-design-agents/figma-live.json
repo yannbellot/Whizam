@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "date": "2026-11-13",
+  "sourceCandidate": "a415f53",
+  "pilot": {
+    "fileKey": "4WhUYCRygZqy0xXs7KOFoX",
+    "nodeId": "4185:3778",
+    "version": "2355309114502534469",
+    "contentHash": "c27e56aaa52e57b130f84a62821fbd9954cf8c9e3b76bff1fc52729ef9d714c0",
+    "coverage": {
+      "structure": "bounded-selection",
+      "variables": "aliases-only",
+      "assets": "references-only",
+      "prototype": "observed-only"
+    }
+  },
+  "nodeCount": 109,
+  "types": {
+    "COMPONENT_SET": 1,
+    "COMPONENT": 18,
+    "INSTANCE": 36,
+    "TEXT": 18,
+    "VECTOR": 36
+  },
+  "observedAliases": 24,
+  "propertiesRead": 8,
+  "privateStorage": {
+    "connectionMode": "0o600",
+    "directoryMode": "0o700",
+    "disconnectRemovedConnection": true
+  },
+  "importDidNotChangeDtcg": true,
+  "keepAndDeferDidNotChangeDtcg": true,
+  "decisions": [
+    {
+      "outcome": "keep",
+      "sourceNodeId": "4185:3779",
+      "sourceVersion": "2355309114502534469",
+      "sourceColor": "#2c2c2c",
+      "productValueBefore": "#1d4ed8",
+      "rationale": "Qualification T1 sur projet isolé : conserver les couleurs du produit pour les fonds par défaut et chargement ; correspondance multiple de référence sans adoption visuelle."
+    },
+    {
+      "outcome": "defer",
+      "sourceNodeId": "4185:3787",
+      "sourceVersion": "2355309114502534469",
+      "sourceColor": "#d9d9d9",
+      "productValueBefore": "#1d4ed8",
+      "rationale": "Qualification T1 : reporter le rapprochement de l’état désactivé ; préserver les valeurs du projet et mémoriser la référence réelle."
+    },
+    {
+      "outcome": "adopt",
+      "sourceNodeId": "4185:3783",
+      "sourceVersion": "2355309114502534469",
+      "sourceColor": "#1e1e1e",
+      "productValueBefore": "#1d4ed8",
+      "rationale": "Qualification T1 : adopter explicitement la couleur de cette variante sur le fond du bouton du projet isolé, via le moteur commun ; aucune adoption dans la source Loomata."
+    },
+    {
+      "outcome": "combine",
+      "sourceNodeId": "4185:3815",
+      "sourceVersion": "2355309114502534469",
+      "sourceColor": "#2c2c2c",
+      "productValueBefore": "#1e1e1e",
+      "rationale": "Qualification T1 : combiner la couleur Figma du bouton Small avec la structure et les dimensions du bouton produit ; effet limité au fond sélectionné, sans modification structurelle."
+    }
+  ],
+  "mappingCount": 4,
+  "multipleTargetsVerified": true,
+  "structureUnchanged": true,
+  "rendering": [
+    {
+      "status": "passed",
+      "stage": "adopt",
+      "samples": [
+        {
+          "route": "/",
+          "background": "rgb(30, 30, 30)",
+          "text": "Bouton du pilote"
+        },
+        {
+          "route": "/pilot-two",
+          "background": "rgb(30, 30, 30)",
+          "text": "Bouton du pilote"
+        }
+      ]
+    },
+    {
+      "status": "passed",
+      "stage": "combine",
+      "samples": [
+        {
+          "route": "/",
+          "background": "rgb(44, 44, 44)",
+          "text": "Bouton du pilote"
+        },
+        {
+          "route": "/pilot-two",
+          "background": "rgb(44, 44, 44)",
+          "text": "Bouton du pilote"
+        }
+      ]
+    }
+  ],
+  "identicalReimportUnchanged": true,
+  "reopenedConnectionAndDecisions": true,
+  "desktopWidths": [1280, 1440],
+  "horizontalOverflow": false,
+  "reconstructionAndPrivacy": {
+    "status": "passed",
+    "sourceCandidate": "a415f53",
+    "privatePaths": [
+      {
+        "route": "/.runtime.local/figma/connection.json",
+        "status": 403
+      },
+      {
+        "route": "/@fs/<project>/.runtime.local/figma/connection.json",
+        "status": 403
+      }
+    ],
+    "commit": "042976d9e46520a2bbac08f4f62a4b1c3455e1b3",
+    "mainUnchanged": true,
+    "clone": {
+      "referenceNodes": 109,
+      "decisions": 4,
+      "mappings": 4,
+      "sourceVersion": "2355309114502534469",
+      "privateConnectionAbsent": true,
+      "privateConversationsAbsent": true
+    },
+    "export": {
+      "phase": "exported",
+      "privateStateAbsent": true,
+      "credentialValueAbsent": true,
+      "shareableModelPresent": true
+    }
+  },
+  "negativeCoverage": {
+    "anonymousRealApi": "403 Invalid token",
+    "absentSelectionAfterCommit": "not submitted: committed tree import disabled as designed",
+    "partialFailureAndConcurrency": "isolated synthetic contract tests; no external Figma mutation"
+  }
+}

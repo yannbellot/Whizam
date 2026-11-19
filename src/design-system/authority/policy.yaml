@@ -1,0 +1,58 @@
+schemaVersion: 1
+sourceHierarchy:
+  conflictBehavior: stop-and-request-human-decision
+  levels:
+    - rank: 1
+      source: brief
+      role: Intention, objectifs et périmètre.
+    - rank: 2
+      source: specifications
+      role: Comportements, règles métier et critères d’acceptation.
+    - rank: 3
+      source: figma-references
+      role: Composition, variantes et états représentés ; source facultative qui ne conditionne pas la validation.
+    - rank: 4
+      source: documented-design-system
+      role: Règles UI et conventions réutilisables, portées notamment par les fichiers de cette autorité.
+    - rank: 5
+      source: architecture
+      role: Organisation et contraintes techniques.
+    - rank: 6
+      source: implementation-and-migrations
+      role: Implémentation effective dans le code et les migrations.
+    - rank: 7
+      source: tests
+      role: Preuves du comportement obtenu.
+arbitration:
+  silentArbitration: forbidden
+  missingDecision: documented-reversible-assumption-or-human-decision
+  conflictingDecision: stop-and-request-human-decision
+baseUi:
+  authorityRole: accessible-behavior-foundation-only
+  availableMeaning: Présent ou expérimentable, sans adoption par le design system.
+  adoptionRequirement: explicit-human-decision-and-design-system-contract
+  automaticAdoption: forbidden
+  figmaRequired: false
+directValues:
+  authorityFiles: forbidden-outside-primitives
+  componentContracts: forbidden
+  generatedArtifacts: derived-from-authority
+  existingLaboratoryStyles: require-authority-first
+  newReusableStyles: require-authority-first
+accessibility:
+  minimum:
+    - accessible-name-for-interactive-controls
+    - keyboard-operation
+    - visible-focus
+    - semantic-html-or-documented-equivalent
+    - documented-states
+  exceptions: explicit-human-decision-with-rationale
+documentation:
+  language: fr
+  requiredForChange:
+    - owner-file
+    - rationale-or-provenance
+    - validation-command
+    - unresolved-decisions
+  duplicateDecision: forbidden
+  crossFileReferences: must-be-machine-verifiable

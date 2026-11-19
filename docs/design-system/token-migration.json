@@ -1,0 +1,1251 @@
+{
+  "version": 1,
+  "from": 2,
+  "to": 3,
+  "primitives": [
+    {
+      "from": "primitive.color.surface.default",
+      "to": ["primitive.color.hex-ffffff"]
+    },
+    {
+      "from": "primitive.color.surface.muted",
+      "to": ["primitive.color.hex-f1f5f9"]
+    },
+    {
+      "from": "primitive.color.text.default",
+      "to": ["primitive.color.hex-0f172a"]
+    },
+    {
+      "from": "primitive.color.text.muted",
+      "to": ["primitive.color.hex-475569"]
+    },
+    {
+      "from": "primitive.color.border.default",
+      "to": ["primitive.color.hex-64748b"]
+    },
+    {
+      "from": "primitive.dimension.border-default",
+      "to": ["primitive.stroke.px-1"]
+    },
+    {
+      "from": "primitive.radius.button",
+      "to": ["primitive.radius.rem-0-5"]
+    },
+    {
+      "from": "primitive.space.button-block",
+      "to": ["primitive.space.rem-0-7"]
+    },
+    {
+      "from": "primitive.space.button-inline",
+      "to": ["primitive.space.rem-1", "primitive.type.font-size.rem-1"]
+    },
+    {
+      "from": "primitive.space.layout.large",
+      "to": ["primitive.space.rem-1-5"]
+    },
+    {
+      "from": "primitive.space.layout.small",
+      "to": ["primitive.space.rem-0-5"]
+    },
+    {
+      "from": "primitive.space.layout.page",
+      "to": ["primitive.space.rem-2"]
+    },
+    {
+      "from": "primitive.dimension.text.small",
+      "to": ["primitive.type.font-size.rem-0-875"]
+    },
+    {
+      "from": "primitive.font-weight.text-default",
+      "to": ["primitive.type.font-weight.value-400"]
+    },
+    {
+      "from": "primitive.font-weight.button",
+      "to": ["primitive.type.font-weight.value-650"]
+    },
+    {
+      "from": "primitive.line-height.text-default",
+      "to": ["primitive.type.line-height.ratio-1-5"]
+    },
+    {
+      "from": "primitive.font-family.text-default",
+      "to": [
+        "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      ]
+    },
+    {
+      "from": "primitive.dimension.layout.max",
+      "to": ["primitive.size.rem-70"]
+    },
+    {
+      "from": "primitive.color.button-background",
+      "to": ["primitive.color.hex-1d4ed8"]
+    },
+    {
+      "from": "primitive.color.button-background-hover",
+      "to": ["primitive.color.hex-1e40af"]
+    },
+    {
+      "from": "primitive.color.button-foreground",
+      "to": ["primitive.color.hex-ffffff"]
+    },
+    {
+      "from": "primitive.color.action.disabled",
+      "to": ["primitive.color.hex-64748b"]
+    },
+    {
+      "from": "primitive.color.feedback.error",
+      "to": ["primitive.color.hex-b91c1c"]
+    },
+    {
+      "from": "primitive.color.feedback.success",
+      "to": ["primitive.color.hex-166534"]
+    },
+    {
+      "from": "primitive.color.focus-ring",
+      "to": ["primitive.color.hex-1d4ed8"]
+    },
+    {
+      "from": "primitive.dimension.focus-ring-width",
+      "to": ["primitive.stroke.px-3"]
+    },
+    {
+      "from": "primitive.dimension.focus-ring-offset",
+      "to": ["primitive.space.px-3"]
+    },
+    {
+      "from": "primitive.space.layout.medium",
+      "to": ["primitive.space.rem-1"]
+    }
+  ],
+  "styles": [
+    {
+      "from": "semantic.color.neutral-hierarchy.neutral.surface.default",
+      "to": "semantic.color.neutral.background.default"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.secondary.surface.default",
+      "to": "semantic.color.secondary.background.default"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.neutral.text.default",
+      "to": "semantic.color.neutral.text.default"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.secondary.text.default",
+      "to": "semantic.color.secondary.text.default"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.neutral.border.default",
+      "to": "semantic.color.neutral.border.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.border-width.default",
+      "to": "semantic.layout.neutral.border-width.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.radius.default",
+      "to": "semantic.layout.neutral.radius.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.default",
+      "to": "semantic.layout.auxiliary.spacing.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.secondary.spacing.default",
+      "to": "semantic.layout.secondary.spacing.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.primary.spacing.default",
+      "to": "semantic.layout.primary.spacing.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.tertiary.spacing.default",
+      "to": "semantic.layout.tertiary.spacing.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.context.spacing.default",
+      "to": "semantic.layout.context.spacing.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.font-size.default",
+      "to": "semantic.type.hierarchy.neutral.font-size.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.secondary.font-size.default",
+      "to": "semantic.type.hierarchy.secondary.font-size.default"
+    },
+    {
+      "from": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.default",
+      "to": "semantic.type.hierarchy.neutral.font-weight.default"
+    },
+    {
+      "from": "semantic.font-weight.neutral-hierarchy.primary.font-weight.default",
+      "to": "semantic.type.hierarchy.primary.font-weight.default"
+    },
+    {
+      "from": "semantic.line-height.neutral-hierarchy.neutral.line-height.default",
+      "to": "semantic.type.hierarchy.neutral.line-height.default"
+    },
+    {
+      "from": "semantic.font-family.neutral-hierarchy.neutral.font-family.default",
+      "to": "semantic.type.hierarchy.neutral.font-family.default"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.content-width.default",
+      "to": "semantic.layout.neutral.content-width.default"
+    },
+    {
+      "from": "semantic.color.actions.primary.surface.default",
+      "to": "semantic.color.action.primary.background.default"
+    },
+    {
+      "from": "semantic.color.actions.primary.surface.hover",
+      "to": "semantic.color.action.primary.background.hover"
+    },
+    {
+      "from": "semantic.color.actions.primary.text.default",
+      "to": "semantic.color.action.primary.text.default"
+    },
+    {
+      "from": "semantic.color.availability-capacity.unavailable.surface.disabled",
+      "to": "semantic.color.availability-capacity.unavailable.background.disabled"
+    },
+    {
+      "from": "semantic.color.information-result.error.text.default",
+      "to": "semantic.color.feedback.error.text.default"
+    },
+    {
+      "from": "semantic.color.information-result.error.border.error",
+      "to": "semantic.color.feedback.error.border.error"
+    },
+    {
+      "from": "semantic.color.information-result.success.text.default",
+      "to": "semantic.color.feedback.success.text.default"
+    },
+    {
+      "from": "semantic.color.actions.primary.focus.focus-visible",
+      "to": "semantic.color.action.primary.focus.focus-visible"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.primary.border-width.focus-visible",
+      "to": "semantic.layout.primary.border-width.focus-visible"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.secondary.spacing.focus-visible",
+      "to": "semantic.layout.secondary.spacing.focus-visible"
+    },
+    {
+      "from": "semantic.color.actions.primary.surface.loading",
+      "to": "semantic.color.action.primary.background.loading"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.secondary.surface.disabled",
+      "to": "semantic.color.secondary.background.disabled"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.neutral.text.disabled",
+      "to": "semantic.color.neutral.text.disabled"
+    },
+    {
+      "from": "semantic.color.neutral-hierarchy.neutral.border.disabled",
+      "to": "semantic.color.neutral.border.disabled"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.border-width.disabled",
+      "to": "semantic.layout.neutral.border-width.disabled"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.radius.disabled",
+      "to": "semantic.layout.neutral.radius.disabled"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.auxiliary.spacing.disabled",
+      "to": "semantic.layout.auxiliary.spacing.disabled"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.secondary.spacing.disabled",
+      "to": "semantic.layout.secondary.spacing.disabled"
+    },
+    {
+      "from": "semantic.dimension.neutral-hierarchy.neutral.font-size.disabled",
+      "to": "semantic.type.hierarchy.neutral.font-size.disabled"
+    },
+    {
+      "from": "semantic.font-weight.neutral-hierarchy.neutral.font-weight.disabled",
+      "to": "semantic.type.hierarchy.neutral.font-weight.disabled"
+    },
+    {
+      "from": "semantic.line-height.neutral-hierarchy.neutral.line-height.disabled",
+      "to": "semantic.type.hierarchy.neutral.line-height.disabled"
+    },
+    {
+      "from": "semantic.font-family.neutral-hierarchy.neutral.font-family.disabled",
+      "to": "semantic.type.hierarchy.neutral.font-family.disabled"
+    }
+  ],
+  "bindings": [
+    {
+      "from": "component.button.default.root.background.default",
+      "to": "component.button.default.root.background.default"
+    },
+    {
+      "from": "component.button.default.root.foreground.default",
+      "to": "component.button.default.root.foreground.default"
+    },
+    {
+      "from": "component.button.default.root.border-radius.default",
+      "to": "component.button.default.root.border-radius.default"
+    },
+    {
+      "from": "component.button.default.root.padding-block.default",
+      "to": "component.button.default.root.padding-block.default"
+    },
+    {
+      "from": "component.button.default.root.padding-inline.default",
+      "to": "component.button.default.root.padding-inline.default"
+    },
+    {
+      "from": "component.button.default.root.font-size.default",
+      "to": "component.button.default.root.font-size.default"
+    },
+    {
+      "from": "component.button.default.root.font-weight.default",
+      "to": "component.button.default.root.font-weight.default"
+    },
+    {
+      "from": "component.button.default.root.line-height.default",
+      "to": "component.button.default.root.line-height.default"
+    },
+    {
+      "from": "component.button.default.root.font-family.default",
+      "to": "component.button.default.root.font-family.default"
+    },
+    {
+      "from": "component.button.default.root.background.hover",
+      "to": "component.button.default.root.background.hover"
+    },
+    {
+      "from": "component.button.default.root.background.disabled",
+      "to": "component.button.default.root.background.disabled"
+    },
+    {
+      "from": "component.button.default.root.background.loading",
+      "to": "component.button.default.root.background.loading"
+    },
+    {
+      "from": "component.button.default.root.ring-color.focus-visible",
+      "to": "component.button.default.root.ring-color.focus-visible"
+    },
+    {
+      "from": "component.button.default.root.ring-width.focus-visible",
+      "to": "component.button.default.root.ring-width.focus-visible"
+    },
+    {
+      "from": "component.button.default.root.ring-offset.focus-visible",
+      "to": "component.button.default.root.ring-offset.focus-visible"
+    },
+    {
+      "from": "component.field.single-line.root.gap.default",
+      "to": "component.field.single-line.root.gap.default"
+    },
+    {
+      "from": "component.field.single-line.label.foreground.default",
+      "to": "component.field.single-line.label.foreground.default"
+    },
+    {
+      "from": "component.field.single-line.label.font-size.default",
+      "to": "component.field.single-line.label.font-size.default"
+    },
+    {
+      "from": "component.field.single-line.label.font-weight.default",
+      "to": "component.field.single-line.label.font-weight.default"
+    },
+    {
+      "from": "component.field.single-line.label.line-height.default",
+      "to": "component.field.single-line.label.line-height.default"
+    },
+    {
+      "from": "component.field.single-line.label.font-family.default",
+      "to": "component.field.single-line.label.font-family.default"
+    },
+    {
+      "from": "component.field.single-line.control.background.default",
+      "to": "component.field.single-line.control.background.default"
+    },
+    {
+      "from": "component.field.single-line.control.background.disabled",
+      "to": "component.field.single-line.control.background.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.foreground.default",
+      "to": "component.field.single-line.control.foreground.default"
+    },
+    {
+      "from": "component.field.single-line.control.foreground.disabled",
+      "to": "component.field.single-line.control.foreground.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.border-color.default",
+      "to": "component.field.single-line.control.border-color.default"
+    },
+    {
+      "from": "component.field.single-line.control.border-color.disabled",
+      "to": "component.field.single-line.control.border-color.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.border-width.default",
+      "to": "component.field.single-line.control.border-width.default"
+    },
+    {
+      "from": "component.field.single-line.control.border-width.disabled",
+      "to": "component.field.single-line.control.border-width.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.border-radius.default",
+      "to": "component.field.single-line.control.border-radius.default"
+    },
+    {
+      "from": "component.field.single-line.control.border-radius.disabled",
+      "to": "component.field.single-line.control.border-radius.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.padding-block.default",
+      "to": "component.field.single-line.control.padding-block.default"
+    },
+    {
+      "from": "component.field.single-line.control.padding-block.disabled",
+      "to": "component.field.single-line.control.padding-block.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.padding-inline.default",
+      "to": "component.field.single-line.control.padding-inline.default"
+    },
+    {
+      "from": "component.field.single-line.control.padding-inline.disabled",
+      "to": "component.field.single-line.control.padding-inline.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.font-size.default",
+      "to": "component.field.single-line.control.font-size.default"
+    },
+    {
+      "from": "component.field.single-line.control.font-size.disabled",
+      "to": "component.field.single-line.control.font-size.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.font-weight.default",
+      "to": "component.field.single-line.control.font-weight.default"
+    },
+    {
+      "from": "component.field.single-line.control.font-weight.disabled",
+      "to": "component.field.single-line.control.font-weight.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.line-height.default",
+      "to": "component.field.single-line.control.line-height.default"
+    },
+    {
+      "from": "component.field.single-line.control.line-height.disabled",
+      "to": "component.field.single-line.control.line-height.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.font-family.default",
+      "to": "component.field.single-line.control.font-family.default"
+    },
+    {
+      "from": "component.field.single-line.control.font-family.disabled",
+      "to": "component.field.single-line.control.font-family.disabled"
+    },
+    {
+      "from": "component.field.single-line.control.ring-color.focus-visible",
+      "to": "component.field.single-line.control.ring-color.focus-visible"
+    },
+    {
+      "from": "component.field.single-line.control.ring-width.focus-visible",
+      "to": "component.field.single-line.control.ring-width.focus-visible"
+    },
+    {
+      "from": "component.field.single-line.control.ring-offset.focus-visible",
+      "to": "component.field.single-line.control.ring-offset.focus-visible"
+    },
+    {
+      "from": "component.field.single-line.control.border-color.error",
+      "to": "component.field.single-line.control.border-color.error"
+    },
+    {
+      "from": "component.field.single-line.hint.foreground.default",
+      "to": "component.field.single-line.hint.foreground.default"
+    },
+    {
+      "from": "component.field.single-line.hint.font-size.default",
+      "to": "component.field.single-line.hint.font-size.default"
+    },
+    {
+      "from": "component.field.single-line.hint.font-weight.default",
+      "to": "component.field.single-line.hint.font-weight.default"
+    },
+    {
+      "from": "component.field.single-line.hint.line-height.default",
+      "to": "component.field.single-line.hint.line-height.default"
+    },
+    {
+      "from": "component.field.single-line.hint.font-family.default",
+      "to": "component.field.single-line.hint.font-family.default"
+    },
+    {
+      "from": "component.field.single-line.error.foreground.default",
+      "to": "component.field.single-line.error.foreground.default"
+    },
+    {
+      "from": "component.field.single-line.error.font-size.default",
+      "to": "component.field.single-line.error.font-size.default"
+    },
+    {
+      "from": "component.field.single-line.error.font-weight.default",
+      "to": "component.field.single-line.error.font-weight.default"
+    },
+    {
+      "from": "component.field.single-line.error.line-height.default",
+      "to": "component.field.single-line.error.line-height.default"
+    },
+    {
+      "from": "component.field.single-line.error.font-family.default",
+      "to": "component.field.single-line.error.font-family.default"
+    },
+    {
+      "from": "component.field.multiline.root.gap.default",
+      "to": "component.field.multiline.root.gap.default"
+    },
+    {
+      "from": "component.field.multiline.label.foreground.default",
+      "to": "component.field.multiline.label.foreground.default"
+    },
+    {
+      "from": "component.field.multiline.label.font-size.default",
+      "to": "component.field.multiline.label.font-size.default"
+    },
+    {
+      "from": "component.field.multiline.label.font-weight.default",
+      "to": "component.field.multiline.label.font-weight.default"
+    },
+    {
+      "from": "component.field.multiline.label.line-height.default",
+      "to": "component.field.multiline.label.line-height.default"
+    },
+    {
+      "from": "component.field.multiline.label.font-family.default",
+      "to": "component.field.multiline.label.font-family.default"
+    },
+    {
+      "from": "component.field.multiline.control.background.default",
+      "to": "component.field.multiline.control.background.default"
+    },
+    {
+      "from": "component.field.multiline.control.background.disabled",
+      "to": "component.field.multiline.control.background.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.foreground.default",
+      "to": "component.field.multiline.control.foreground.default"
+    },
+    {
+      "from": "component.field.multiline.control.foreground.disabled",
+      "to": "component.field.multiline.control.foreground.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.border-color.default",
+      "to": "component.field.multiline.control.border-color.default"
+    },
+    {
+      "from": "component.field.multiline.control.border-color.disabled",
+      "to": "component.field.multiline.control.border-color.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.border-width.default",
+      "to": "component.field.multiline.control.border-width.default"
+    },
+    {
+      "from": "component.field.multiline.control.border-width.disabled",
+      "to": "component.field.multiline.control.border-width.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.border-radius.default",
+      "to": "component.field.multiline.control.border-radius.default"
+    },
+    {
+      "from": "component.field.multiline.control.border-radius.disabled",
+      "to": "component.field.multiline.control.border-radius.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.padding-block.default",
+      "to": "component.field.multiline.control.padding-block.default"
+    },
+    {
+      "from": "component.field.multiline.control.padding-block.disabled",
+      "to": "component.field.multiline.control.padding-block.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.padding-inline.default",
+      "to": "component.field.multiline.control.padding-inline.default"
+    },
+    {
+      "from": "component.field.multiline.control.padding-inline.disabled",
+      "to": "component.field.multiline.control.padding-inline.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.font-size.default",
+      "to": "component.field.multiline.control.font-size.default"
+    },
+    {
+      "from": "component.field.multiline.control.font-size.disabled",
+      "to": "component.field.multiline.control.font-size.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.font-weight.default",
+      "to": "component.field.multiline.control.font-weight.default"
+    },
+    {
+      "from": "component.field.multiline.control.font-weight.disabled",
+      "to": "component.field.multiline.control.font-weight.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.line-height.default",
+      "to": "component.field.multiline.control.line-height.default"
+    },
+    {
+      "from": "component.field.multiline.control.line-height.disabled",
+      "to": "component.field.multiline.control.line-height.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.font-family.default",
+      "to": "component.field.multiline.control.font-family.default"
+    },
+    {
+      "from": "component.field.multiline.control.font-family.disabled",
+      "to": "component.field.multiline.control.font-family.disabled"
+    },
+    {
+      "from": "component.field.multiline.control.ring-color.focus-visible",
+      "to": "component.field.multiline.control.ring-color.focus-visible"
+    },
+    {
+      "from": "component.field.multiline.control.ring-width.focus-visible",
+      "to": "component.field.multiline.control.ring-width.focus-visible"
+    },
+    {
+      "from": "component.field.multiline.control.ring-offset.focus-visible",
+      "to": "component.field.multiline.control.ring-offset.focus-visible"
+    },
+    {
+      "from": "component.field.multiline.control.border-color.error",
+      "to": "component.field.multiline.control.border-color.error"
+    },
+    {
+      "from": "component.field.multiline.hint.foreground.default",
+      "to": "component.field.multiline.hint.foreground.default"
+    },
+    {
+      "from": "component.field.multiline.hint.font-size.default",
+      "to": "component.field.multiline.hint.font-size.default"
+    },
+    {
+      "from": "component.field.multiline.hint.font-weight.default",
+      "to": "component.field.multiline.hint.font-weight.default"
+    },
+    {
+      "from": "component.field.multiline.hint.line-height.default",
+      "to": "component.field.multiline.hint.line-height.default"
+    },
+    {
+      "from": "component.field.multiline.hint.font-family.default",
+      "to": "component.field.multiline.hint.font-family.default"
+    },
+    {
+      "from": "component.field.multiline.error.foreground.default",
+      "to": "component.field.multiline.error.foreground.default"
+    },
+    {
+      "from": "component.field.multiline.error.font-size.default",
+      "to": "component.field.multiline.error.font-size.default"
+    },
+    {
+      "from": "component.field.multiline.error.font-weight.default",
+      "to": "component.field.multiline.error.font-weight.default"
+    },
+    {
+      "from": "component.field.multiline.error.line-height.default",
+      "to": "component.field.multiline.error.line-height.default"
+    },
+    {
+      "from": "component.field.multiline.error.font-family.default",
+      "to": "component.field.multiline.error.font-family.default"
+    },
+    {
+      "from": "component.select-field.default.root.gap.default",
+      "to": "component.select-field.default.root.gap.default"
+    },
+    {
+      "from": "component.select-field.default.label.foreground.default",
+      "to": "component.select-field.default.label.foreground.default"
+    },
+    {
+      "from": "component.select-field.default.label.font-size.default",
+      "to": "component.select-field.default.label.font-size.default"
+    },
+    {
+      "from": "component.select-field.default.label.font-weight.default",
+      "to": "component.select-field.default.label.font-weight.default"
+    },
+    {
+      "from": "component.select-field.default.label.line-height.default",
+      "to": "component.select-field.default.label.line-height.default"
+    },
+    {
+      "from": "component.select-field.default.label.font-family.default",
+      "to": "component.select-field.default.label.font-family.default"
+    },
+    {
+      "from": "component.select-field.default.control.background.default",
+      "to": "component.select-field.default.control.background.default"
+    },
+    {
+      "from": "component.select-field.default.control.background.disabled",
+      "to": "component.select-field.default.control.background.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.foreground.default",
+      "to": "component.select-field.default.control.foreground.default"
+    },
+    {
+      "from": "component.select-field.default.control.foreground.disabled",
+      "to": "component.select-field.default.control.foreground.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.border-color.default",
+      "to": "component.select-field.default.control.border-color.default"
+    },
+    {
+      "from": "component.select-field.default.control.border-color.disabled",
+      "to": "component.select-field.default.control.border-color.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.border-width.default",
+      "to": "component.select-field.default.control.border-width.default"
+    },
+    {
+      "from": "component.select-field.default.control.border-width.disabled",
+      "to": "component.select-field.default.control.border-width.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.border-radius.default",
+      "to": "component.select-field.default.control.border-radius.default"
+    },
+    {
+      "from": "component.select-field.default.control.border-radius.disabled",
+      "to": "component.select-field.default.control.border-radius.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.padding-block.default",
+      "to": "component.select-field.default.control.padding-block.default"
+    },
+    {
+      "from": "component.select-field.default.control.padding-block.disabled",
+      "to": "component.select-field.default.control.padding-block.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.padding-inline.default",
+      "to": "component.select-field.default.control.padding-inline.default"
+    },
+    {
+      "from": "component.select-field.default.control.padding-inline.disabled",
+      "to": "component.select-field.default.control.padding-inline.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.font-size.default",
+      "to": "component.select-field.default.control.font-size.default"
+    },
+    {
+      "from": "component.select-field.default.control.font-size.disabled",
+      "to": "component.select-field.default.control.font-size.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.font-weight.default",
+      "to": "component.select-field.default.control.font-weight.default"
+    },
+    {
+      "from": "component.select-field.default.control.font-weight.disabled",
+      "to": "component.select-field.default.control.font-weight.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.font-family.default",
+      "to": "component.select-field.default.control.font-family.default"
+    },
+    {
+      "from": "component.select-field.default.control.font-family.disabled",
+      "to": "component.select-field.default.control.font-family.disabled"
+    },
+    {
+      "from": "component.select-field.default.control.ring-color.focus-visible",
+      "to": "component.select-field.default.control.ring-color.focus-visible"
+    },
+    {
+      "from": "component.select-field.default.control.ring-width.focus-visible",
+      "to": "component.select-field.default.control.ring-width.focus-visible"
+    },
+    {
+      "from": "component.select-field.default.control.ring-offset.focus-visible",
+      "to": "component.select-field.default.control.ring-offset.focus-visible"
+    },
+    {
+      "from": "component.notice.info.root.background.default",
+      "to": "component.notice.info.root.background.default"
+    },
+    {
+      "from": "component.notice.info.root.foreground.default",
+      "to": "component.notice.info.root.foreground.default"
+    },
+    {
+      "from": "component.notice.info.root.border-color.default",
+      "to": "component.notice.info.root.border-color.default"
+    },
+    {
+      "from": "component.notice.info.root.border-width.default",
+      "to": "component.notice.info.root.border-width.default"
+    },
+    {
+      "from": "component.notice.info.root.border-radius.default",
+      "to": "component.notice.info.root.border-radius.default"
+    },
+    {
+      "from": "component.notice.info.root.padding-block.default",
+      "to": "component.notice.info.root.padding-block.default"
+    },
+    {
+      "from": "component.notice.info.root.padding-inline.default",
+      "to": "component.notice.info.root.padding-inline.default"
+    },
+    {
+      "from": "component.notice.info.root.font-size.default",
+      "to": "component.notice.info.root.font-size.default"
+    },
+    {
+      "from": "component.notice.info.root.font-weight.default",
+      "to": "component.notice.info.root.font-weight.default"
+    },
+    {
+      "from": "component.notice.info.root.line-height.default",
+      "to": "component.notice.info.root.line-height.default"
+    },
+    {
+      "from": "component.notice.info.root.font-family.default",
+      "to": "component.notice.info.root.font-family.default"
+    },
+    {
+      "from": "component.notice.success.root.background.default",
+      "to": "component.notice.success.root.background.default"
+    },
+    {
+      "from": "component.notice.success.root.foreground.default",
+      "to": "component.notice.success.root.foreground.default"
+    },
+    {
+      "from": "component.notice.success.root.border-color.default",
+      "to": "component.notice.success.root.border-color.default"
+    },
+    {
+      "from": "component.notice.success.root.border-width.default",
+      "to": "component.notice.success.root.border-width.default"
+    },
+    {
+      "from": "component.notice.success.root.border-radius.default",
+      "to": "component.notice.success.root.border-radius.default"
+    },
+    {
+      "from": "component.notice.success.root.padding-block.default",
+      "to": "component.notice.success.root.padding-block.default"
+    },
+    {
+      "from": "component.notice.success.root.padding-inline.default",
+      "to": "component.notice.success.root.padding-inline.default"
+    },
+    {
+      "from": "component.notice.success.root.font-size.default",
+      "to": "component.notice.success.root.font-size.default"
+    },
+    {
+      "from": "component.notice.success.root.font-weight.default",
+      "to": "component.notice.success.root.font-weight.default"
+    },
+    {
+      "from": "component.notice.success.root.line-height.default",
+      "to": "component.notice.success.root.line-height.default"
+    },
+    {
+      "from": "component.notice.success.root.font-family.default",
+      "to": "component.notice.success.root.font-family.default"
+    },
+    {
+      "from": "component.notice.error.root.background.default",
+      "to": "component.notice.error.root.background.default"
+    },
+    {
+      "from": "component.notice.error.root.foreground.default",
+      "to": "component.notice.error.root.foreground.default"
+    },
+    {
+      "from": "component.notice.error.root.border-color.default",
+      "to": "component.notice.error.root.border-color.default"
+    },
+    {
+      "from": "component.notice.error.root.border-width.default",
+      "to": "component.notice.error.root.border-width.default"
+    },
+    {
+      "from": "component.notice.error.root.border-radius.default",
+      "to": "component.notice.error.root.border-radius.default"
+    },
+    {
+      "from": "component.notice.error.root.padding-block.default",
+      "to": "component.notice.error.root.padding-block.default"
+    },
+    {
+      "from": "component.notice.error.root.padding-inline.default",
+      "to": "component.notice.error.root.padding-inline.default"
+    },
+    {
+      "from": "component.notice.error.root.font-size.default",
+      "to": "component.notice.error.root.font-size.default"
+    },
+    {
+      "from": "component.notice.error.root.font-weight.default",
+      "to": "component.notice.error.root.font-weight.default"
+    },
+    {
+      "from": "component.notice.error.root.line-height.default",
+      "to": "component.notice.error.root.line-height.default"
+    },
+    {
+      "from": "component.notice.error.root.font-family.default",
+      "to": "component.notice.error.root.font-family.default"
+    },
+    {
+      "from": "component.panel.default.root.background.default",
+      "to": "component.panel.default.root.background.default"
+    },
+    {
+      "from": "component.panel.default.root.foreground.default",
+      "to": "component.panel.default.root.foreground.default"
+    },
+    {
+      "from": "component.panel.default.root.border-color.default",
+      "to": "component.panel.default.root.border-color.default"
+    },
+    {
+      "from": "component.panel.default.root.border-width.default",
+      "to": "component.panel.default.root.border-width.default"
+    },
+    {
+      "from": "component.panel.default.root.border-radius.default",
+      "to": "component.panel.default.root.border-radius.default"
+    },
+    {
+      "from": "component.panel.default.root.padding-block.default",
+      "to": "component.panel.default.root.padding-block.default"
+    },
+    {
+      "from": "component.panel.default.root.padding-inline.default",
+      "to": "component.panel.default.root.padding-inline.default"
+    },
+    {
+      "from": "component.panel.default.root.font-size.default",
+      "to": "component.panel.default.root.font-size.default"
+    },
+    {
+      "from": "component.panel.default.root.font-weight.default",
+      "to": "component.panel.default.root.font-weight.default"
+    },
+    {
+      "from": "component.panel.default.root.line-height.default",
+      "to": "component.panel.default.root.line-height.default"
+    },
+    {
+      "from": "component.panel.default.root.font-family.default",
+      "to": "component.panel.default.root.font-family.default"
+    },
+    {
+      "from": "component.foundations.default.document.background.default",
+      "to": "component.foundations.default.document.background.default"
+    },
+    {
+      "from": "component.foundations.default.document.foreground.default",
+      "to": "component.foundations.default.document.foreground.default"
+    },
+    {
+      "from": "component.foundations.default.document.font-size.default",
+      "to": "component.foundations.default.document.font-size.default"
+    },
+    {
+      "from": "component.foundations.default.document.font-weight.default",
+      "to": "component.foundations.default.document.font-weight.default"
+    },
+    {
+      "from": "component.foundations.default.document.line-height.default",
+      "to": "component.foundations.default.document.line-height.default"
+    },
+    {
+      "from": "component.foundations.default.document.font-family.default",
+      "to": "component.foundations.default.document.font-family.default"
+    },
+    {
+      "from": "component.foundations.default.page.max-width.default",
+      "to": "component.foundations.default.page.max-width.default"
+    },
+    {
+      "from": "component.foundations.default.page.page-margin.default",
+      "to": "component.foundations.default.page.page-margin.default"
+    },
+    {
+      "from": "component.foundations.default.page-mobile.page-margin.default",
+      "to": "component.foundations.default.page-mobile.page-margin.default"
+    },
+    {
+      "from": "component.foundations.default.layout-small.gap.default",
+      "to": "component.foundations.default.layout-small.gap.default"
+    },
+    {
+      "from": "component.foundations.default.layout-medium.gap.default",
+      "to": "component.foundations.default.layout-medium.gap.default"
+    },
+    {
+      "from": "component.foundations.default.layout-large.gap.default",
+      "to": "component.foundations.default.layout-large.gap.default"
+    },
+    {
+      "from": "component.foundations.default.table.font-size.default",
+      "to": "component.foundations.default.table.font-size.default"
+    },
+    {
+      "from": "component.foundations.default.table.border-color.default",
+      "to": "component.foundations.default.table.border-color.default"
+    },
+    {
+      "from": "component.foundations.default.table.padding-block.default",
+      "to": "component.foundations.default.table.padding-block.default"
+    },
+    {
+      "from": "component.foundations.default.table.padding-inline.default",
+      "to": "component.foundations.default.table.padding-inline.default"
+    }
+  ],
+  "legacyPrimitives": [
+    {
+      "id": "primitive.color.button-background",
+      "type": "color",
+      "value": "#1d4ed8",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.color.button-background-hover",
+      "type": "color",
+      "value": "#1e40af",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.color.button-foreground",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.color.focus-ring",
+      "type": "color",
+      "value": "#1d4ed8",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.radius.button",
+      "type": "dimension",
+      "value": "0.5rem",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.space.button-block",
+      "type": "dimension",
+      "value": "0.7rem",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.space.button-inline",
+      "type": "dimension",
+      "value": "1rem",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.font-weight.button",
+      "type": "font-weight",
+      "value": 650,
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.dimension.focus-ring-width",
+      "type": "dimension",
+      "value": "3px",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.dimension.focus-ring-offset",
+      "type": "dimension",
+      "value": "3px",
+      "status": "reference",
+      "source": "phase-1-button"
+    },
+    {
+      "id": "primitive.color.surface.default",
+      "type": "color",
+      "value": "#ffffff",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.surface.muted",
+      "type": "color",
+      "value": "#f1f5f9",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.text.default",
+      "type": "color",
+      "value": "#0f172a",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.text.muted",
+      "type": "color",
+      "value": "#475569",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.border.default",
+      "type": "color",
+      "value": "#64748b",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.feedback.error",
+      "type": "color",
+      "value": "#b91c1c",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.feedback.success",
+      "type": "color",
+      "value": "#166534",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.color.action.disabled",
+      "type": "color",
+      "value": "#64748b",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.space.layout.small",
+      "type": "dimension",
+      "value": "0.5rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.space.layout.medium",
+      "type": "dimension",
+      "value": "1rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.space.layout.large",
+      "type": "dimension",
+      "value": "1.5rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.space.layout.page",
+      "type": "dimension",
+      "value": "2rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.dimension.text.small",
+      "type": "dimension",
+      "value": "0.875rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.dimension.layout.max",
+      "type": "dimension",
+      "value": "70rem",
+      "status": "reference",
+      "source": "j2-provisional"
+    },
+    {
+      "id": "primitive.font-weight.text-default",
+      "type": "font-weight",
+      "value": 400,
+      "provenance": {
+        "kind": "agent-migration",
+        "status": "proposed",
+        "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+      }
+    },
+    {
+      "id": "primitive.line-height.text-default",
+      "type": "line-height",
+      "value": 1.5,
+      "provenance": {
+        "kind": "agent-migration",
+        "status": "proposed",
+        "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+      }
+    },
+    {
+      "id": "primitive.font-family.text-default",
+      "type": "font-family",
+      "value": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "provenance": {
+        "kind": "agent-migration",
+        "status": "proposed",
+        "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+      }
+    },
+    {
+      "id": "primitive.dimension.border-default",
+      "type": "dimension",
+      "value": "1px",
+      "provenance": {
+        "kind": "agent-migration",
+        "status": "proposed",
+        "reason": "Migration B à rendu constant ; décision 006 du kit. Les provenances historiques restent conservées dans sources."
+      }
+    }
+  ]
+}

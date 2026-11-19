@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "version": "0.2.0",
+  "integrity": "sha512-ohhsfXD4qN0j6cMQd56aaVJBPDF3kUdviF/Od1Eak/rEIXQ3svQ4gjkwTfuTZwTBnxHRL16p9JqdlVQO5nUHqA==",
+  "dependencies": {
+    "bippy": "^0.6.1",
+    "@react-grab/cli": "0.2.0"
+  },
+  "bytes": 27756,
+  "gzipBytes": 10337,
+  "inputs": [
+    ".runtime.local/wysiwyg-qualification/package/dist/freeze-updates-dBIOHHh-.js",
+    ".runtime.local/wysiwyg-qualification/package/dist/open-file-BYqKjxo7.js",
+    ".runtime.local/wysiwyg-qualification/package/dist/primitives.js",
+    "<stdin>"
+  ],
+  "cases": [
+    {
+      "engine": "chromium",
+      "mode": "production",
+      "status": "passed",
+      "first": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 0,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "last": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 1,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "externalRequests": [],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "mode": "development",
+      "status": "passed",
+      "first": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 0,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "last": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 1,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "externalRequests": [],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "mode": "production",
+      "status": "passed",
+      "first": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 0,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "last": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 1,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "externalRequests": [],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "mode": "development",
+      "status": "passed",
+      "first": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 0,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "last": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 1,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      },
+      "externalRequests": [],
+      "errors": []
+    },
+    {
+      "engine": "AppKit/WKWebView",
+      "mode": "production",
+      "status": "passed",
+      "result": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 6,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      }
+    },
+    {
+      "engine": "AppKit/WKWebView",
+      "mode": "development",
+      "status": "passed",
+      "result": {
+        "found": "probe",
+        "stack": [
+          "probe"
+        ],
+        "bounds": {
+          "borderRadius": "0px",
+          "height": 50,
+          "width": 180,
+          "x": 100,
+          "y": 90
+        },
+        "tick": 5,
+        "injected": 0,
+        "bodyChildren": [
+          "IFRAME",
+          "SCRIPT"
+        ],
+        "styleCount": 0
+      }
+    }
+  ],
+  "requests": [
+    "/",
+    "/probe.js",
+    "/child",
+    "/react.js",
+    "/favicon.ico",
+    "/?development",
+    "/probe.js",
+    "/child?development",
+    "/react.js?development",
+    "/favicon.ico",
+    "/",
+    "/probe.js",
+    "/child",
+    "/react.js",
+    "/?development",
+    "/probe.js",
+    "/child?development",
+    "/react.js?development",
+    "/",
+    "/probe.js",
+    "/child",
+    "/react.js",
+    "/?development",
+    "/probe.js",
+    "/child?development",
+    "/react.js?development"
+  ],
+  "runtime": {
+    "node": "24.22.0",
+    "react": "19.2.8",
+    "playwright": "1.64.1",
+    "esbuild": "0.28.2"
+  },
+  "scope": "Isolated named-import probe; not Loomata integration"
+}

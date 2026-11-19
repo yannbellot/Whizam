@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-09",
+  "sourceCommit": "4eb361d",
+  "status": "passed",
+  "scope": "native folder-picker selection on the uninstrumented corrected prototype",
+  "driver": "existing macOS Accessibility permission; actual NSOpenPanel selection and Open action; no forced modal response or injected root",
+  "fixtureCorrection": {
+    "hiddenBefore": true,
+    "hiddenAfter": false,
+    "change": "clear UF_HIDDEN on the isolated extracted kit directory only"
+  },
+  "cases": [
+    {
+      "id": "incompatible-folder",
+      "selectedLabel": "Dossier sélectionné : core-01",
+      "result": "native start refused; missing package.json in the selected incompatible folder"
+    },
+    {
+      "id": "valid-folder",
+      "selectedLabel": "Dossier sélectionné : extracted kit",
+      "result": "État : ready"
+    },
+    {
+      "id": "workshop-hydration",
+      "previewButton": "Enregistrer le projet",
+      "previewButtonEnabled": true,
+      "valueField": "Valeur précise",
+      "value": "#1d4ed8",
+      "valueFieldEnabled": true
+    },
+    {
+      "id": "existing-services-preserved",
+      "uiURL": "http://127.0.0.1:53196/ui-lab",
+      "storybookURL": "http://127.0.0.1:53197/",
+      "phase": "ready",
+      "sameServicePidsAsBefore": true
+    }
+  ],
+  "prototypeSourceSha256": "82534bed6d70df2652a743d3f9726fa9b2f94361b52940e34661362ebf8f4d39",
+  "humanAcceptance": "deferred",
+  "selectorReservation": "lifted"
+}

@@ -1,0 +1,15 @@
+# Valeurs dans tokens.tokens.json ; règles de provenance uniquement.
+schemaVersion: 4
+sources:
+  phase-1-button:
+    kind: validated-laboratory-reference
+    path: src/design-system/components/Button/Button.module.css
+    decision: Valeurs du Button de Phase 1 explicitement conservées comme références
+      provisoires le 2026-08-12.
+    identityClaim: none
+  j2-provisional:
+    kind: proposed-laboratory-reference
+    path: src/design-system/components/controls.module.css
+    decision: Proposition réversible J2 selon décision 006, acceptation humaine
+      différée ; focus bleu renforcé pour contraste.
+    identityClaim: none

@@ -1,0 +1,52 @@
+{
+  "task": "UI-ARCH-04-style-rollback",
+  "date": "2026-11-15",
+  "status": "En revue, annulation visuelle réalisée, qualification technique acquise",
+  "base": "ba1d2d41d18ab15f921a6281137de652a3eae9d5",
+  "visualReference": "ec4ab75 plus saved original fictive files",
+  "choice": "cancel visual changes; retain loading fixes",
+  "canonicalFunctionalCodeChanged": false,
+  "sourcesRestored": 42,
+  "normalizationFilesArchived": 112,
+  "archives": ".local/ui-arch-04/style-rollback/backup and archived",
+  "privateReceipts": {
+    "oldProject": 8,
+    "newProject": 0,
+    "bytesUnchanged": true
+  },
+  "tokenAuthorities": "unchanged byte-for-byte in both projects; all 675 nodes retained, including 34 theme additions for compatibility",
+  "compatibility": "existing readers, manifest and dormant OfficialTheme sources retained to read original receipts; no conversion or identity guard bypass",
+  "checks": {
+    "isolatedRestoredTypes": "passed",
+    "isolatedAppBuild": "passed",
+    "isolatedStorybookBuild": "passed",
+    "liveNewProjectTypes": "passed",
+    "chatBuild": "passed",
+    "uiCompositionAndChatTests": {
+      "pass": 18,
+      "fail": 0
+    },
+    "liveWriterSnapshots": "passed in original roots; 63 styles, 198 bindings",
+    "nativeWorkshopAndCodex": "loaded and observed",
+    "nativeReturnToWorkshop": "loaded, editable, no draft",
+    "appAndStorybookForm": "empty refused, correction succeeded, reset",
+    "selectedSourceHashes": "matched final target"
+  },
+  "preservedLoadingFixes": [
+    "native nonpersistent UI Lab web store",
+    "reloadFromOrigin / cache policy",
+    "tool generated derivatives / prepared chat assets"
+  ],
+  "retainedServices": {
+    "oldUi": 51147,
+    "oldStorybook": 51148,
+    "newUi": 59550,
+    "newStorybook": 59551
+  },
+  "review": "design, technical/QA and security; sequential same agent, not independent",
+  "electronStarted": false,
+  "publication": false,
+  "preexistingUntrackedEntries": 75,
+  "docImpact": "Doc updated",
+  "next": "human visual check; no implicit additional work"
+}

@@ -1,0 +1,2858 @@
+{
+  "base": "5bc6792b13637d1161ce0e50a193bddc7de03ba4",
+  "status": "inventory-only-not-migrated",
+  "rule": "Meaning and scope, never CSS type or equal value alone.",
+  "totals": {
+    "stylesBefore": 41,
+    "retainedSemantic": 17,
+    "retiredStyles": 24,
+    "bindingsUnchanged": 188,
+    "autonomousBindings": 137,
+    "legacyAliases": 24
+  },
+  "styles": [
+    {
+      "id": "semantic.color.neutral.background.default",
+      "type": "color",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "surface",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Surface neutre de saisie ou de contenu ; Field, SelectField et Panel.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-ffffff",
+      "primitive": "primitive.color.hex-ffffff",
+      "resolvedValue": "#ffffff",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.background.default",
+          "target": "field",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.background.default",
+          "referenceAfter": "semantic.color.neutral.background.default",
+          "attributionAfter": "semantic.color.neutral.background.default",
+          "baseReferenceAfter": "primitive.color.hex-ffffff"
+        },
+        {
+          "id": "component.field.multiline.control.background.default",
+          "target": "field",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.background.default",
+          "referenceAfter": "semantic.color.neutral.background.default",
+          "attributionAfter": "semantic.color.neutral.background.default",
+          "baseReferenceAfter": "primitive.color.hex-ffffff"
+        },
+        {
+          "id": "component.select-field.default.control.background.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.background.default",
+          "referenceAfter": "semantic.color.neutral.background.default",
+          "attributionAfter": "semantic.color.neutral.background.default",
+          "baseReferenceAfter": "primitive.color.hex-ffffff"
+        },
+        {
+          "id": "component.panel.default.root.background.default",
+          "target": "panel",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.background.default",
+          "referenceAfter": "semantic.color.neutral.background.default",
+          "attributionAfter": "semantic.color.neutral.background.default",
+          "baseReferenceAfter": "primitive.color.hex-ffffff"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.surface.default",
+          "referenceAfter": "semantic.color.neutral.background.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.secondary.background.default",
+      "type": "color",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "surface",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Surface secondaire distinguée du fond neutre ; Notice et document.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-f1f5f9",
+      "primitive": "primitive.color.hex-f1f5f9",
+      "resolvedValue": "#f1f5f9",
+      "consumers": [
+        {
+          "id": "component.notice.info.root.background.default",
+          "target": "notice",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.background.default",
+          "referenceAfter": "semantic.color.secondary.background.default",
+          "attributionAfter": "semantic.color.secondary.background.default",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        },
+        {
+          "id": "component.notice.success.root.background.default",
+          "target": "notice",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.background.default",
+          "referenceAfter": "semantic.color.secondary.background.default",
+          "attributionAfter": "semantic.color.secondary.background.default",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        },
+        {
+          "id": "component.notice.error.root.background.default",
+          "target": "notice",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.background.default",
+          "referenceAfter": "semantic.color.secondary.background.default",
+          "attributionAfter": "semantic.color.secondary.background.default",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        },
+        {
+          "id": "component.foundations.default.document.background.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.background.default",
+          "referenceAfter": "semantic.color.secondary.background.default",
+          "attributionAfter": "semantic.color.secondary.background.default",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.surface.muted",
+          "referenceAfter": "semantic.color.secondary.background.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.neutral.text.default",
+      "type": "color",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "text",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Texte de lecture principal sans accent ; champs, labels, panneau et document.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-0f172a",
+      "primitive": "primitive.color.hex-0f172a",
+      "resolvedValue": "#0f172a",
+      "consumers": [
+        {
+          "id": "component.field.single-line.label.foreground.default",
+          "target": "field",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.field.single-line.control.foreground.default",
+          "target": "field",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.field.multiline.label.foreground.default",
+          "target": "field",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.field.multiline.control.foreground.default",
+          "target": "field",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.select-field.default.label.foreground.default",
+          "target": "select-field",
+          "part": "label",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.select-field.default.control.foreground.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.notice.info.root.foreground.default",
+          "target": "notice",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.panel.default.root.foreground.default",
+          "target": "panel",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.foundations.default.document.foreground.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default",
+          "attributionAfter": "semantic.color.neutral.text.default",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.text.default",
+          "referenceAfter": "semantic.color.neutral.text.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.secondary.text.default",
+      "type": "color",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "text",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Texte secondaire d’aide à la saisie ; Field/hint.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-475569",
+      "primitive": "primitive.color.hex-475569",
+      "resolvedValue": "#475569",
+      "consumers": [
+        {
+          "id": "component.field.single-line.hint.foreground.default",
+          "target": "field",
+          "part": "hint",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.text.default",
+          "referenceAfter": "semantic.color.secondary.text.default",
+          "attributionAfter": "semantic.color.secondary.text.default",
+          "baseReferenceAfter": "primitive.color.hex-475569"
+        },
+        {
+          "id": "component.field.multiline.hint.foreground.default",
+          "target": "field",
+          "part": "hint",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.secondary.text.default",
+          "referenceAfter": "semantic.color.secondary.text.default",
+          "attributionAfter": "semantic.color.secondary.text.default",
+          "baseReferenceAfter": "primitive.color.hex-475569"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.text.muted",
+          "referenceAfter": "semantic.color.secondary.text.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.neutral.border.default",
+      "type": "color",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Délimitation neutre des contrôles et conteneurs ; champs, notices et panneau.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-64748b",
+      "primitive": "primitive.color.hex-64748b",
+      "resolvedValue": "#64748b",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-color.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.field.multiline.control.border-color.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.select-field.default.control.border-color.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.notice.info.root.border-color.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.notice.success.root.border-color.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.notice.error.root.border-color.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.panel.default.root.border-color.default",
+          "target": "panel",
+          "part": "root",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.foundations.default.table.border-color.default",
+          "target": "foundations",
+          "part": "table",
+          "property": "borderColor",
+          "state": "default",
+          "referenceBefore": "semantic.color.neutral.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default",
+          "attributionAfter": "semantic.color.neutral.border.default",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.border.default",
+          "referenceAfter": "semantic.color.neutral.border.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.neutral.border-width.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border-width",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Épaisseur de contour ou d’anneau ; importance/état ne démontre pas une intention propre à cette épaisseur.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.stroke.px-1",
+      "primitive": "primitive.stroke.px-1",
+      "resolvedValue": "1px",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-width.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.field.multiline.control.border-width.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.select-field.default.control.border-width.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.notice.info.root.border-width.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.notice.success.root.border-width.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.notice.error.root.border-width.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.panel.default.root.border-width.default",
+          "target": "panel",
+          "part": "root",
+          "property": "borderWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.border-width.default",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.neutral.radius.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "radius",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Arrondi neutre de contrôle/conteneur ; aucune signification établie au-delà de la forme.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.radius.rem-0-5",
+      "primitive": "primitive.radius.rem-0-5",
+      "resolvedValue": "0.5rem",
+      "consumers": [
+        {
+          "id": "component.button.default.root.border-radius.default",
+          "target": "button",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.field.single-line.control.border-radius.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.field.multiline.control.border-radius.default",
+          "target": "field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.select-field.default.control.border-radius.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.notice.info.root.border-radius.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.notice.success.root.border-radius.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.notice.error.root.border-radius.default",
+          "target": "notice",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.panel.default.root.border-radius.default",
+          "target": "panel",
+          "part": "root",
+          "property": "borderRadius",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.radius.default",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.radius.control.default",
+          "referenceAfter": "primitive.radius.rem-0-5"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.auxiliary.spacing.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.auxiliary",
+      "role": "spacing",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.rem-0-7",
+      "primitive": "primitive.space.rem-0-7",
+      "resolvedValue": "0.7rem",
+      "consumers": [
+        {
+          "id": "component.button.default.root.padding-block.default",
+          "target": "button",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        },
+        {
+          "id": "component.field.single-line.control.padding-block.default",
+          "target": "field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        },
+        {
+          "id": "component.field.multiline.control.padding-block.default",
+          "target": "field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        },
+        {
+          "id": "component.select-field.default.control.padding-block.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.space.control.block",
+          "referenceAfter": "primitive.space.rem-0-7"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.secondary.spacing.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.rem-1",
+      "primitive": "primitive.space.rem-1",
+      "resolvedValue": "1rem",
+      "consumers": [
+        {
+          "id": "component.button.default.root.padding-inline.default",
+          "target": "button",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.field.single-line.control.padding-inline.default",
+          "target": "field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.field.multiline.control.padding-inline.default",
+          "target": "field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.select-field.default.control.padding-inline.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.foundations.default.page-mobile.page-margin.default",
+          "target": "foundations",
+          "part": "page-mobile",
+          "property": "pageMargin",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.foundations.default.layout-medium.gap.default",
+          "target": "foundations",
+          "part": "layout-medium",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.secondary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.space.control.inline",
+          "referenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "semantic.space.layout.medium",
+          "referenceAfter": "primitive.space.rem-1"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.primary.spacing.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.primary",
+      "role": "spacing",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.rem-1-5",
+      "primitive": "primitive.space.rem-1-5",
+      "resolvedValue": "1.5rem",
+      "consumers": [
+        {
+          "id": "component.notice.info.root.padding-block.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.notice.info.root.padding-inline.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.notice.success.root.padding-block.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.notice.success.root.padding-inline.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.notice.error.root.padding-block.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.notice.error.root.padding-inline.default",
+          "target": "notice",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.panel.default.root.padding-block.default",
+          "target": "panel",
+          "part": "root",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.panel.default.root.padding-inline.default",
+          "target": "panel",
+          "part": "root",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        },
+        {
+          "id": "component.foundations.default.layout-large.gap.default",
+          "target": "foundations",
+          "part": "layout-large",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.primary.spacing.default",
+          "referenceAfter": "primitive.space.rem-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1-5"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.space.layout.large",
+          "referenceAfter": "primitive.space.rem-1-5"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.tertiary.spacing.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.tertiary",
+      "role": "spacing",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.rem-0-5",
+      "primitive": "primitive.space.rem-0-5",
+      "resolvedValue": "0.5rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.root.gap.default",
+          "target": "field",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        },
+        {
+          "id": "component.field.multiline.root.gap.default",
+          "target": "field",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        },
+        {
+          "id": "component.select-field.default.root.gap.default",
+          "target": "select-field",
+          "part": "root",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        },
+        {
+          "id": "component.foundations.default.layout-small.gap.default",
+          "target": "foundations",
+          "part": "layout-small",
+          "property": "gap",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        },
+        {
+          "id": "component.foundations.default.table.padding-block.default",
+          "target": "foundations",
+          "part": "table",
+          "property": "paddingBlock",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        },
+        {
+          "id": "component.foundations.default.table.padding-inline.default",
+          "target": "foundations",
+          "part": "table",
+          "property": "paddingInline",
+          "state": "default",
+          "referenceBefore": "semantic.layout.tertiary.spacing.default",
+          "referenceAfter": "primitive.space.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-5"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.space.layout.small",
+          "referenceAfter": "primitive.space.rem-0-5"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.context.spacing.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.context",
+      "role": "spacing",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.rem-2",
+      "primitive": "primitive.space.rem-2",
+      "resolvedValue": "2rem",
+      "consumers": [
+        {
+          "id": "component.foundations.default.page.page-margin.default",
+          "target": "foundations",
+          "part": "page",
+          "property": "pageMargin",
+          "state": "default",
+          "referenceBefore": "semantic.layout.context.spacing.default",
+          "referenceAfter": "primitive.space.rem-2",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-2"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.space.layout.page",
+          "referenceAfter": "primitive.space.rem-2"
+        }
+      ]
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-size.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-size",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Le corps associe des usages différents (label, saisie, aide, erreur, notice, tableau) ; pas de rôle typographique transverse établi pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.font-size.rem-1",
+      "primitive": "primitive.type.font-size.rem-1",
+      "resolvedValue": "1rem",
+      "consumers": [
+        {
+          "id": "component.button.default.root.font-size.default",
+          "target": "button",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.field.single-line.label.font-size.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.field.single-line.control.font-size.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.field.multiline.label.font-size.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.field.multiline.control.font-size.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.select-field.default.label.font-size.default",
+          "target": "select-field",
+          "part": "label",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.select-field.default.control.font-size.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.notice.info.root.font-size.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.notice.success.root.font-size.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.panel.default.root.font-size.default",
+          "target": "panel",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.foundations.default.document.font-size.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.secondary.font-size.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "font-size",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Le corps associe des usages différents (label, saisie, aide, erreur, notice, tableau) ; pas de rôle typographique transverse établi pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.font-size.rem-0-875",
+      "primitive": "primitive.type.font-size.rem-0-875",
+      "resolvedValue": "0.875rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.hint.font-size.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        },
+        {
+          "id": "component.field.single-line.error.font-size.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        },
+        {
+          "id": "component.field.multiline.hint.font-size.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        },
+        {
+          "id": "component.field.multiline.error.font-size.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        },
+        {
+          "id": "component.notice.error.root.font-size.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        },
+        {
+          "id": "component.foundations.default.table.font-size.default",
+          "target": "foundations",
+          "part": "table",
+          "property": "fontSize",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.secondary.font-size.default",
+          "referenceAfter": "primitive.type.font-size.rem-0-875",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-0-875"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.dimension.text.small",
+          "referenceAfter": "primitive.type.font-size.rem-0-875"
+        }
+      ]
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-weight.default",
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-weight",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Graisse partagée pour des parties différentes ; la priorité du nom n’établit pas un rôle de lecture commun.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.font-weight.value-400",
+      "primitive": "primitive.type.font-weight.value-400",
+      "resolvedValue": 400,
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.font-weight.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.single-line.hint.font-weight.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.single-line.error.font-weight.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.multiline.control.font-weight.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.multiline.hint.font-weight.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.multiline.error.font-weight.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.select-field.default.control.font-weight.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.notice.info.root.font-weight.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.notice.success.root.font-weight.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.notice.error.root.font-weight.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.panel.default.root.font-weight.default",
+          "target": "panel",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.foundations.default.document.font-weight.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.primary.font-weight.default",
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.primary",
+      "role": "font-weight",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Graisse partagée pour des parties différentes ; la priorité du nom n’établit pas un rôle de lecture commun.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.font-weight.value-650",
+      "primitive": "primitive.type.font-weight.value-650",
+      "resolvedValue": 650,
+      "consumers": [
+        {
+          "id": "component.button.default.root.font-weight.default",
+          "target": "button",
+          "part": "root",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.primary.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-650",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-650"
+        },
+        {
+          "id": "component.field.single-line.label.font-weight.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.primary.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-650",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-650"
+        },
+        {
+          "id": "component.field.multiline.label.font-weight.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.primary.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-650",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-650"
+        },
+        {
+          "id": "component.select-field.default.label.font-weight.default",
+          "target": "select-field",
+          "part": "label",
+          "property": "fontWeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.primary.font-weight.default",
+          "referenceAfter": "primitive.type.font-weight.value-650",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-650"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.font-weight.action",
+          "referenceAfter": "primitive.type.font-weight.value-650"
+        }
+      ]
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.line-height.default",
+      "type": "line-height",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "line-height",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Interligne générique partagé ; aucune fonction sémantique spécifique démontrée.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.line-height.ratio-1-5",
+      "primitive": "primitive.type.line-height.ratio-1-5",
+      "resolvedValue": 1.5,
+      "consumers": [
+        {
+          "id": "component.button.default.root.line-height.default",
+          "target": "button",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.single-line.label.line-height.default",
+          "target": "field",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.single-line.control.line-height.default",
+          "target": "field",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.single-line.hint.line-height.default",
+          "target": "field",
+          "part": "hint",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.single-line.error.line-height.default",
+          "target": "field",
+          "part": "error",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.multiline.label.line-height.default",
+          "target": "field",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.multiline.control.line-height.default",
+          "target": "field",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.multiline.hint.line-height.default",
+          "target": "field",
+          "part": "hint",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.multiline.error.line-height.default",
+          "target": "field",
+          "part": "error",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.select-field.default.label.line-height.default",
+          "target": "select-field",
+          "part": "label",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.notice.info.root.line-height.default",
+          "target": "notice",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.notice.success.root.line-height.default",
+          "target": "notice",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.notice.error.root.line-height.default",
+          "target": "notice",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.panel.default.root.line-height.default",
+          "target": "panel",
+          "part": "root",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.foundations.default.document.line-height.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "lineHeight",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-family.default",
+      "type": "font-family",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-family",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Pile de police générale ; aucune distinction sémantique établie pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+      "primitive": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+      "resolvedValue": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "consumers": [
+        {
+          "id": "component.button.default.root.font-family.default",
+          "target": "button",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.single-line.label.font-family.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.single-line.control.font-family.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.single-line.hint.font-family.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.single-line.error.font-family.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.multiline.label.font-family.default",
+          "target": "field",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.multiline.control.font-family.default",
+          "target": "field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.multiline.hint.font-family.default",
+          "target": "field",
+          "part": "hint",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.multiline.error.font-family.default",
+          "target": "field",
+          "part": "error",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.select-field.default.label.font-family.default",
+          "target": "select-field",
+          "part": "label",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.select-field.default.control.font-family.default",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.notice.info.root.font-family.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.notice.success.root.font-family.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.notice.error.root.font-family.default",
+          "target": "notice",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.panel.default.root.font-family.default",
+          "target": "panel",
+          "part": "root",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.foundations.default.document.font-family.default",
+          "target": "foundations",
+          "part": "document",
+          "property": "fontFamily",
+          "state": "default",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.neutral.content-width.default",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "content-width",
+      "state": "default",
+      "decision": "component-local",
+      "reason": "Largeur maximale de la page de référence Foundations ; aucune règle transversale de contenu documentée au-delà du réglage géométrique.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.size.rem-70",
+      "primitive": "primitive.size.rem-70",
+      "resolvedValue": "70rem",
+      "consumers": [
+        {
+          "id": "component.foundations.default.page.max-width.default",
+          "target": "foundations",
+          "part": "page",
+          "property": "maxWidth",
+          "state": "default",
+          "referenceBefore": "semantic.layout.neutral.content-width.default",
+          "referenceAfter": "primitive.size.rem-70",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.size.rem-70"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.dimension.layout.max",
+          "referenceAfter": "primitive.size.rem-70"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.action.primary.background.default",
+      "type": "color",
+      "intention": "actions.primary",
+      "role": "surface",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Fond de l’action principale, décliné pour hover/loading sans changer son intention.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-1d4ed8",
+      "primitive": "primitive.color.hex-1d4ed8",
+      "resolvedValue": "#1d4ed8",
+      "consumers": [
+        {
+          "id": "component.button.default.root.background.default",
+          "target": "button",
+          "part": "root",
+          "property": "background",
+          "state": "default",
+          "referenceBefore": "semantic.color.action.primary.background.default",
+          "referenceAfter": "semantic.color.action.primary.background.default",
+          "attributionAfter": "semantic.color.action.primary.background.default",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.action.background.default",
+          "referenceAfter": "semantic.color.action.primary.background.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.action.primary.background.hover",
+      "type": "color",
+      "intention": "actions.primary",
+      "role": "surface",
+      "state": "hover",
+      "decision": "retain-semantic",
+      "reason": "Fond de l’action principale, décliné pour hover/loading sans changer son intention.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-1e40af",
+      "primitive": "primitive.color.hex-1e40af",
+      "resolvedValue": "#1e40af",
+      "consumers": [
+        {
+          "id": "component.button.default.root.background.hover",
+          "target": "button",
+          "part": "root",
+          "property": "background",
+          "state": "hover",
+          "referenceBefore": "semantic.color.action.primary.background.hover",
+          "referenceAfter": "semantic.color.action.primary.background.hover",
+          "attributionAfter": "semantic.color.action.primary.background.hover",
+          "baseReferenceAfter": "primitive.color.hex-1e40af"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.action.background.hover",
+          "referenceAfter": "semantic.color.action.primary.background.hover"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.action.primary.text.default",
+      "type": "color",
+      "intention": "actions.primary",
+      "role": "text",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Texte associé à l’action principale.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-ffffff",
+      "primitive": "primitive.color.hex-ffffff",
+      "resolvedValue": "#ffffff",
+      "consumers": [
+        {
+          "id": "component.button.default.root.foreground.default",
+          "target": "button",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.action.primary.text.default",
+          "referenceAfter": "semantic.color.action.primary.text.default",
+          "attributionAfter": "semantic.color.action.primary.text.default",
+          "baseReferenceAfter": "primitive.color.hex-ffffff"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.action.foreground.default",
+          "referenceAfter": "semantic.color.action.primary.text.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.availability-capacity.unavailable.background.disabled",
+      "type": "color",
+      "intention": "availability-capacity.unavailable",
+      "role": "surface",
+      "state": "disabled",
+      "decision": "retain-semantic",
+      "reason": "Signal de non-disponibilité du contrôle désactivé.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-64748b",
+      "primitive": "primitive.color.hex-64748b",
+      "resolvedValue": "#64748b",
+      "consumers": [
+        {
+          "id": "component.button.default.root.background.disabled",
+          "target": "button",
+          "part": "root",
+          "property": "background",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.availability-capacity.unavailable.background.disabled",
+          "referenceAfter": "semantic.color.availability-capacity.unavailable.background.disabled",
+          "attributionAfter": "semantic.color.availability-capacity.unavailable.background.disabled",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.action.disabled",
+          "referenceAfter": "semantic.color.availability-capacity.unavailable.background.disabled"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.feedback.error.text.default",
+      "type": "color",
+      "intention": "information-result.error",
+      "role": "text",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Retour d’erreur textuel ; Field/error et Notice/error.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-b91c1c",
+      "primitive": "primitive.color.hex-b91c1c",
+      "resolvedValue": "#b91c1c",
+      "consumers": [
+        {
+          "id": "component.field.single-line.error.foreground.default",
+          "target": "field",
+          "part": "error",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.feedback.error.text.default",
+          "referenceAfter": "semantic.color.feedback.error.text.default",
+          "attributionAfter": "semantic.color.feedback.error.text.default",
+          "baseReferenceAfter": "primitive.color.hex-b91c1c"
+        },
+        {
+          "id": "component.field.multiline.error.foreground.default",
+          "target": "field",
+          "part": "error",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.feedback.error.text.default",
+          "referenceAfter": "semantic.color.feedback.error.text.default",
+          "attributionAfter": "semantic.color.feedback.error.text.default",
+          "baseReferenceAfter": "primitive.color.hex-b91c1c"
+        },
+        {
+          "id": "component.notice.error.root.foreground.default",
+          "target": "notice",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.feedback.error.text.default",
+          "referenceAfter": "semantic.color.feedback.error.text.default",
+          "attributionAfter": "semantic.color.feedback.error.text.default",
+          "baseReferenceAfter": "primitive.color.hex-b91c1c"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.feedback.error",
+          "referenceAfter": "semantic.color.feedback.error.text.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.feedback.error.border.error",
+      "type": "color",
+      "intention": "information-result.error",
+      "role": "border",
+      "state": "error",
+      "decision": "retain-semantic",
+      "reason": "Retour d’erreur sur le contour du champ invalide.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-b91c1c",
+      "primitive": "primitive.color.hex-b91c1c",
+      "resolvedValue": "#b91c1c",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-color.error",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "error",
+          "referenceBefore": "semantic.color.feedback.error.border.error",
+          "referenceAfter": "semantic.color.feedback.error.border.error",
+          "attributionAfter": "semantic.color.feedback.error.border.error",
+          "baseReferenceAfter": "primitive.color.hex-b91c1c"
+        },
+        {
+          "id": "component.field.multiline.control.border-color.error",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "error",
+          "referenceBefore": "semantic.color.feedback.error.border.error",
+          "referenceAfter": "semantic.color.feedback.error.border.error",
+          "attributionAfter": "semantic.color.feedback.error.border.error",
+          "baseReferenceAfter": "primitive.color.hex-b91c1c"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.color.feedback.success.text.default",
+      "type": "color",
+      "intention": "information-result.success",
+      "role": "text",
+      "state": "default",
+      "decision": "retain-semantic",
+      "reason": "Confirmation de résultat atteint ; Notice/success.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-166534",
+      "primitive": "primitive.color.hex-166534",
+      "resolvedValue": "#166534",
+      "consumers": [
+        {
+          "id": "component.notice.success.root.foreground.default",
+          "target": "notice",
+          "part": "root",
+          "property": "foreground",
+          "state": "default",
+          "referenceBefore": "semantic.color.feedback.success.text.default",
+          "referenceAfter": "semantic.color.feedback.success.text.default",
+          "attributionAfter": "semantic.color.feedback.success.text.default",
+          "baseReferenceAfter": "primitive.color.hex-166534"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.feedback.success",
+          "referenceAfter": "semantic.color.feedback.success.text.default"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.action.primary.focus.focus-visible",
+      "type": "color",
+      "intention": "actions.primary",
+      "role": "focus",
+      "state": "focus-visible",
+      "decision": "retain-semantic",
+      "reason": "Repère de focus clavier sur les contrôles interactifs Button, Field et SelectField.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.color.hex-1d4ed8",
+      "primitive": "primitive.color.hex-1d4ed8",
+      "resolvedValue": "#1d4ed8",
+      "consumers": [
+        {
+          "id": "component.button.default.root.ring-color.focus-visible",
+          "target": "button",
+          "part": "root",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.color.action.primary.focus.focus-visible",
+          "referenceAfter": "semantic.color.action.primary.focus.focus-visible",
+          "attributionAfter": "semantic.color.action.primary.focus.focus-visible",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        },
+        {
+          "id": "component.field.single-line.control.ring-color.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.color.action.primary.focus.focus-visible",
+          "referenceAfter": "semantic.color.action.primary.focus.focus-visible",
+          "attributionAfter": "semantic.color.action.primary.focus.focus-visible",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        },
+        {
+          "id": "component.field.multiline.control.ring-color.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.color.action.primary.focus.focus-visible",
+          "referenceAfter": "semantic.color.action.primary.focus.focus-visible",
+          "attributionAfter": "semantic.color.action.primary.focus.focus-visible",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        },
+        {
+          "id": "component.select-field.default.control.ring-color.focus-visible",
+          "target": "select-field",
+          "part": "control",
+          "property": "ringColor",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.color.action.primary.focus.focus-visible",
+          "referenceAfter": "semantic.color.action.primary.focus.focus-visible",
+          "attributionAfter": "semantic.color.action.primary.focus.focus-visible",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.color.focus.ring",
+          "referenceAfter": "semantic.color.action.primary.focus.focus-visible"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.primary.border-width.focus-visible",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.primary",
+      "role": "border-width",
+      "state": "focus-visible",
+      "decision": "component-local",
+      "reason": "Épaisseur de contour ou d’anneau ; importance/état ne démontre pas une intention propre à cette épaisseur.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.stroke.px-3",
+      "primitive": "primitive.stroke.px-3",
+      "resolvedValue": "3px",
+      "consumers": [
+        {
+          "id": "component.button.default.root.ring-width.focus-visible",
+          "target": "button",
+          "part": "root",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.primary.border-width.focus-visible",
+          "referenceAfter": "primitive.stroke.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-3"
+        },
+        {
+          "id": "component.field.single-line.control.ring-width.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.primary.border-width.focus-visible",
+          "referenceAfter": "primitive.stroke.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-3"
+        },
+        {
+          "id": "component.field.multiline.control.ring-width.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.primary.border-width.focus-visible",
+          "referenceAfter": "primitive.stroke.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-3"
+        },
+        {
+          "id": "component.select-field.default.control.ring-width.focus-visible",
+          "target": "select-field",
+          "part": "control",
+          "property": "ringWidth",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.primary.border-width.focus-visible",
+          "referenceAfter": "primitive.stroke.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-3"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.dimension.focus.ring-width",
+          "referenceAfter": "primitive.stroke.px-3"
+        }
+      ]
+    },
+    {
+      "id": "semantic.layout.secondary.spacing.focus-visible",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "focus-visible",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "primitive.space.px-3",
+      "primitive": "primitive.space.px-3",
+      "resolvedValue": "3px",
+      "consumers": [
+        {
+          "id": "component.button.default.root.ring-offset.focus-visible",
+          "target": "button",
+          "part": "root",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.secondary.spacing.focus-visible",
+          "referenceAfter": "primitive.space.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.px-3"
+        },
+        {
+          "id": "component.field.single-line.control.ring-offset.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.secondary.spacing.focus-visible",
+          "referenceAfter": "primitive.space.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.px-3"
+        },
+        {
+          "id": "component.field.multiline.control.ring-offset.focus-visible",
+          "target": "field",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.secondary.spacing.focus-visible",
+          "referenceAfter": "primitive.space.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.px-3"
+        },
+        {
+          "id": "component.select-field.default.control.ring-offset.focus-visible",
+          "target": "select-field",
+          "part": "control",
+          "property": "ringOffset",
+          "state": "focus-visible",
+          "referenceBefore": "semantic.layout.secondary.spacing.focus-visible",
+          "referenceAfter": "primitive.space.px-3",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.px-3"
+        }
+      ],
+      "legacyAliases": [
+        {
+          "id": "semantic.dimension.focus.ring-offset",
+          "referenceAfter": "primitive.space.px-3"
+        }
+      ]
+    },
+    {
+      "id": "semantic.color.action.primary.background.loading",
+      "type": "color",
+      "intention": "actions.primary",
+      "role": "surface",
+      "state": "loading",
+      "decision": "retain-semantic",
+      "reason": "Fond de l’action principale, décliné pour hover/loading sans changer son intention.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.color.action.primary.background.default",
+      "primitive": "primitive.color.hex-1d4ed8",
+      "resolvedValue": "#1d4ed8",
+      "consumers": [
+        {
+          "id": "component.button.default.root.background.loading",
+          "target": "button",
+          "part": "root",
+          "property": "background",
+          "state": "loading",
+          "referenceBefore": "semantic.color.action.primary.background.loading",
+          "referenceAfter": "semantic.color.action.primary.background.loading",
+          "attributionAfter": "semantic.color.action.primary.background.loading",
+          "baseReferenceAfter": "primitive.color.hex-1d4ed8"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.color.secondary.background.disabled",
+      "type": "color",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "surface",
+      "state": "disabled",
+      "decision": "retain-semantic",
+      "reason": "Surface secondaire distinguée du fond neutre ; Notice et document.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.color.secondary.background.default",
+      "primitive": "primitive.color.hex-f1f5f9",
+      "resolvedValue": "#f1f5f9",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.background.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.secondary.background.disabled",
+          "referenceAfter": "semantic.color.secondary.background.disabled",
+          "attributionAfter": "semantic.color.secondary.background.disabled",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        },
+        {
+          "id": "component.field.multiline.control.background.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.secondary.background.disabled",
+          "referenceAfter": "semantic.color.secondary.background.disabled",
+          "attributionAfter": "semantic.color.secondary.background.disabled",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        },
+        {
+          "id": "component.select-field.default.control.background.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "background",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.secondary.background.disabled",
+          "referenceAfter": "semantic.color.secondary.background.disabled",
+          "attributionAfter": "semantic.color.secondary.background.disabled",
+          "baseReferenceAfter": "primitive.color.hex-f1f5f9"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.color.neutral.text.disabled",
+      "type": "color",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "text",
+      "state": "disabled",
+      "decision": "retain-semantic",
+      "reason": "Texte de lecture principal sans accent ; champs, labels, panneau et document.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.color.neutral.text.default",
+      "primitive": "primitive.color.hex-0f172a",
+      "resolvedValue": "#0f172a",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.foreground.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.text.disabled",
+          "referenceAfter": "semantic.color.neutral.text.disabled",
+          "attributionAfter": "semantic.color.neutral.text.disabled",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.field.multiline.control.foreground.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.text.disabled",
+          "referenceAfter": "semantic.color.neutral.text.disabled",
+          "attributionAfter": "semantic.color.neutral.text.disabled",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        },
+        {
+          "id": "component.select-field.default.control.foreground.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "foreground",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.text.disabled",
+          "referenceAfter": "semantic.color.neutral.text.disabled",
+          "attributionAfter": "semantic.color.neutral.text.disabled",
+          "baseReferenceAfter": "primitive.color.hex-0f172a"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.color.neutral.border.disabled",
+      "type": "color",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border",
+      "state": "disabled",
+      "decision": "retain-semantic",
+      "reason": "Délimitation neutre des contrôles et conteneurs ; champs, notices et panneau.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.color.neutral.border.default",
+      "primitive": "primitive.color.hex-64748b",
+      "resolvedValue": "#64748b",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-color.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.border.disabled",
+          "referenceAfter": "semantic.color.neutral.border.disabled",
+          "attributionAfter": "semantic.color.neutral.border.disabled",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.field.multiline.control.border-color.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.border.disabled",
+          "referenceAfter": "semantic.color.neutral.border.disabled",
+          "attributionAfter": "semantic.color.neutral.border.disabled",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        },
+        {
+          "id": "component.select-field.default.control.border-color.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderColor",
+          "state": "disabled",
+          "referenceBefore": "semantic.color.neutral.border.disabled",
+          "referenceAfter": "semantic.color.neutral.border.disabled",
+          "attributionAfter": "semantic.color.neutral.border.disabled",
+          "baseReferenceAfter": "primitive.color.hex-64748b"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.neutral.border-width.disabled",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border-width",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Épaisseur de contour ou d’anneau ; importance/état ne démontre pas une intention propre à cette épaisseur.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.layout.neutral.border-width.default",
+      "primitive": "primitive.stroke.px-1",
+      "resolvedValue": "1px",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-width.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.border-width.disabled",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.field.multiline.control.border-width.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.border-width.disabled",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        },
+        {
+          "id": "component.select-field.default.control.border-width.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderWidth",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.border-width.disabled",
+          "referenceAfter": "primitive.stroke.px-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.stroke.px-1"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.neutral.radius.disabled",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "radius",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Arrondi neutre de contrôle/conteneur ; aucune signification établie au-delà de la forme.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.layout.neutral.radius.default",
+      "primitive": "primitive.radius.rem-0-5",
+      "resolvedValue": "0.5rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.border-radius.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.radius.disabled",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.field.multiline.control.border-radius.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.radius.disabled",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        },
+        {
+          "id": "component.select-field.default.control.border-radius.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "borderRadius",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.neutral.radius.disabled",
+          "referenceAfter": "primitive.radius.rem-0-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.radius.rem-0-5"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.auxiliary.spacing.disabled",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.auxiliary",
+      "role": "spacing",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.layout.auxiliary.spacing.default",
+      "primitive": "primitive.space.rem-0-7",
+      "resolvedValue": "0.7rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.padding-block.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        },
+        {
+          "id": "component.field.multiline.control.padding-block.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        },
+        {
+          "id": "component.select-field.default.control.padding-block.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "paddingBlock",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.auxiliary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-0-7",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-0-7"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.layout.secondary.spacing.disabled",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Même repère utilisé pour padding, gap, marge ou décalage de focus ; aucune relation sémantique indépendante documentée pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.layout.secondary.spacing.default",
+      "primitive": "primitive.space.rem-1",
+      "resolvedValue": "1rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.padding-inline.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.secondary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.field.multiline.control.padding-inline.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.secondary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        },
+        {
+          "id": "component.select-field.default.control.padding-inline.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "paddingInline",
+          "state": "disabled",
+          "referenceBefore": "semantic.layout.secondary.spacing.disabled",
+          "referenceAfter": "primitive.space.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.space.rem-1"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-size.disabled",
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-size",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Le corps associe des usages différents (label, saisie, aide, erreur, notice, tableau) ; pas de rôle typographique transverse établi pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.type.hierarchy.neutral.font-size.default",
+      "primitive": "primitive.type.font-size.rem-1",
+      "resolvedValue": "1rem",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.font-size.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.disabled",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.field.multiline.control.font-size.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.disabled",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        },
+        {
+          "id": "component.select-field.default.control.font-size.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontSize",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-size.disabled",
+          "referenceAfter": "primitive.type.font-size.rem-1",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-size.rem-1"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-weight.disabled",
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-weight",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Graisse partagée pour des parties différentes ; la priorité du nom n’établit pas un rôle de lecture commun.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.default",
+      "primitive": "primitive.type.font-weight.value-400",
+      "resolvedValue": 400,
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.font-weight.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.disabled",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.field.multiline.control.font-weight.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.disabled",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        },
+        {
+          "id": "component.select-field.default.control.font-weight.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontWeight",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-weight.disabled",
+          "referenceAfter": "primitive.type.font-weight.value-400",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-weight.value-400"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.line-height.disabled",
+      "type": "line-height",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "line-height",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Interligne générique partagé ; aucune fonction sémantique spécifique démontrée.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.type.hierarchy.neutral.line-height.default",
+      "primitive": "primitive.type.line-height.ratio-1-5",
+      "resolvedValue": 1.5,
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.line-height.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.disabled",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        },
+        {
+          "id": "component.field.multiline.control.line-height.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "lineHeight",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.line-height.disabled",
+          "referenceAfter": "primitive.type.line-height.ratio-1-5",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.line-height.ratio-1-5"
+        }
+      ],
+      "legacyAliases": []
+    },
+    {
+      "id": "semantic.type.hierarchy.neutral.font-family.disabled",
+      "type": "font-family",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-family",
+      "state": "disabled",
+      "decision": "component-local",
+      "reason": "Pile de police générale ; aucune distinction sémantique établie pour ce style.",
+      "source": "authority/semantic-catalog.yaml + editor-contract.yaml + fiches des consommateurs",
+      "referenceBefore": "semantic.type.hierarchy.neutral.font-family.default",
+      "primitive": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+      "resolvedValue": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "consumers": [
+        {
+          "id": "component.field.single-line.control.font-family.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.disabled",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.field.multiline.control.font-family.disabled",
+          "target": "field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.disabled",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        },
+        {
+          "id": "component.select-field.default.control.font-family.disabled",
+          "target": "select-field",
+          "part": "control",
+          "property": "fontFamily",
+          "state": "disabled",
+          "referenceBefore": "semantic.type.hierarchy.neutral.font-family.disabled",
+          "referenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+          "attributionAfter": null,
+          "baseReferenceAfter": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+        }
+      ],
+      "legacyAliases": []
+    }
+  ]
+}

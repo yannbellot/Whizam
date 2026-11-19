@@ -1,0 +1,15 @@
+# UI-01 — Expliciter la page de démonstration
+
+**25 octobre 2026 — En revue : qualification technique acquise, acceptation humaine différée.** Cible : application. Mandat explicite : renommer la page « Projets » en « Exemple de projet test » et expliquer qu’elle démontre le starter sans créer de nouvelles applications. Base `a7f5897`, branche `codex/clarify-project-example`, aucun changement suivi préexistant. Quarante fichiers non suivis préexistants à préserver ; aucune reprise des modèles ROADMAP/état courant du futur projet.
+
+## Périmètre et critères
+
+Renommer le titre visible et la métadonnée de /projects, le lien principal et le lien d’entrée de l’accueil. Ajouter une explication visible sur la liste : les fiches fictives servent à tester formulaires et enregistrement, elles ne créent pas d’applications. Les intitulés métier de création/modification des fiches peuvent rester ceux de l’exemple. Routes, contrats, données, schéma, styles et dépendances inchangés. Synchroniser le brief, la spécification, le README et le parcours navigateur directement affecté ; aucune story ne présente la page de liste, donc pas de story à modifier.
+
+Procédures choisies dans le catalogue de l’application : implement-feature et update-project-docs, base qualifiée `5f02643` (sources inchangées à la base de ce mandat), test-user-flow et revue design ciblée pour les preuves. Elles ne deviennent pas des outils actifs du lab. Contrôles prévus : types, lint, formatage, parcours projets livrés desktop/mobile sur base jetable, build exécuté par ce parcours, captures de la liste et vérification du débordement avec le nouveau libellé. Mise à jour d’un scénario existant pour vérifier l’entrée par l’accueil, le titre et l’explication, sans ajouter de cas miroir.
+
+Revue séquentielle, même agent, non indépendante : conformité à la demande et lisibilité responsive, puis diff/contrôles ciblés. Pas de nouvelle revue sécurité complète : aucune surface d’accès, de saisie ou de stockage modifiée. Les preuves P5 et l’instance de recette sur `5f02643` restent attachées à cette version ; ne pas reconstruire silencieusement cette instance ou son paquet de tiers. Une prévisualisation distincte pourra montrer le nouveau libellé. Statut consolidé dans la roadmap du lab selon la règle de propriété ; fiche et preuves utiles accompagnent le kit.
+
+## Résultat et point de reprise
+
+Titre de page/onglet, navigation et accueil renommés ; explication visible conforme, documents synchronisés. [Bilan et sources exécutées](../reviews/ui-01-project-example-label.md). Types/lint/formatage réussis et 10 E2E projets réussis aux deux formats, build exécuté par le runner. Captures de la liste inspectées, aucun débordement. Revues ciblées séquentielles, même agent, non indépendantes : satisfaisantes ; aucune nouvelle revue sécurité complète justifiée par ce diff rédactionnel. Sources métier et ressources préexistantes préservées. La prévisualisation est séparée de la recette P5 figée. Prochaine action : vérifier humainement le nouveau libellé et l’explication ; tiers et portabilité IA gardent leurs réserves propres. **Doc updated.**

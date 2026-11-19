@@ -1,0 +1,859 @@
+{
+  "primitive": {
+    "opacity-slider-width": { "$type": "dimension", "$value": { "value": 125, "unit": "px" } },
+    "opacity-track-height": { "$type": "dimension", "$value": { "value": 3, "unit": "px" } },
+    "opacity-thumb-diameter": { "$type": "dimension", "$value": { "value": 10, "unit": "px" } },
+    "opacity-track-gray": {
+      "$type": "color",
+      "$value": { "colorSpace": "srgb", "components": [0.47, 0.47, 0.47], "alpha": 1 }
+    },
+    "dark-panel": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.06666666666666667, 0.06666666666666667, 0.06666666666666667],
+        "alpha": 1
+      }
+    },
+    "dark-main": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.09019607843137255, 0.09019607843137255, 0.09019607843137255],
+        "alpha": 1
+      }
+    },
+    "chevron": { "$type": "dimension", "$value": { "value": 8, "unit": "px" } },
+    "surface": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1.0, 1.0, 1.0],
+        "alpha": 1
+      }
+    },
+    "ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.2, 0.2, 0.2],
+        "alpha": 1
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.8509803921568627, 0.8509803921568627, 0.8509803921568627],
+        "alpha": 1
+      }
+    },
+    "selection": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.9019607843137255, 0.9411764705882353, 1.0],
+        "alpha": 1
+      }
+    },
+    "accent": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.09411764705882353, 0.403921568627451, 0.7529411764705882],
+        "alpha": 1
+      }
+    },
+    "muted": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.4, 0.4, 0.4],
+        "alpha": 1
+      }
+    },
+    "dark-surface": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.12156862745098039, 0.12156862745098039, 0.12156862745098039],
+        "alpha": 1
+      }
+    },
+    "dark-ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.9333333333333333, 0.9333333333333333, 0.9333333333333333],
+        "alpha": 1
+      }
+    },
+    "dark-border": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.3333333333333333, 0.3333333333333333, 0.3333333333333333],
+        "alpha": 1
+      }
+    },
+    "dark-selection": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.23137254901960785, 0.23137254901960785, 0.23137254901960785],
+        "alpha": 1
+      }
+    },
+    "space": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "row": {
+      "$type": "dimension",
+      "$value": {
+        "value": 28,
+        "unit": "px"
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "dialog": {
+      "$type": "dimension",
+      "$value": {
+        "value": 440,
+        "unit": "px"
+      }
+    },
+    "outline": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "body": {
+      "$type": "dimension",
+      "$value": {
+        "value": 13,
+        "unit": "px"
+      }
+    },
+    "sans": {
+      "$type": "fontFamily",
+      "$value": ["system-ui", "sans-serif"]
+    },
+    "indent-two": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    "indent-three": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "indent-four": {
+      "$type": "dimension",
+      "$value": {
+        "value": 36,
+        "unit": "px"
+      }
+    },
+    "indent-five": {
+      "$type": "dimension",
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "line": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    "icon": {
+      "$type": "dimension",
+      "$value": {
+        "value": 14,
+        "unit": "px"
+      }
+    },
+    "icon-folder": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0.2784313725490196, 0.5215686274509804],
+        "alpha": 1
+      }
+    },
+    "icon-component": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.11764705882352941, 0.6549019607843137, 0.9921568627450981],
+        "alpha": 1
+      }
+    },
+    "icon-story": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.6509803921568628, 0.6509803921568628],
+        "alpha": 1
+      }
+    },
+    "icon-document": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.8509803921568627, 0.5725490196078431, 0],
+        "alpha": 1
+      }
+    },
+    "inspector-row": {
+      "$type": "dimension",
+      "$value": {
+        "value": 30,
+        "unit": "px"
+      }
+    },
+    "inspector-radius": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "inspector-section": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "inspector-gap": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "inspector-label": {
+      "$type": "dimension",
+      "$value": {
+        "value": 80,
+        "unit": "px"
+      }
+    },
+    "inspector-small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 11,
+        "unit": "px"
+      }
+    },
+    "inspector-swatch": {
+      "$type": "dimension",
+      "$value": {
+        "value": 30,
+        "unit": "px"
+      }
+    },
+    "inspector-divider": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.14901960784313725, 0.14901960784313725, 0.14901960784313725],
+        "alpha": 1
+      }
+    },
+    "inspector-muted": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.6, 0.6, 0.6],
+        "alpha": 1
+      }
+    }
+  },
+  "decision": {
+    "opacity-slider-width": {
+      "$type": "dimension",
+      "$value": "{primitive.opacity-slider-width}",
+      "$description": "Largeur du curseur d’opacité mesurée sur la référence",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Largeur de la piste et de sa poignée à droite du champ d’opacité"
+        }
+      }
+    },
+    "opacity-track-height": {
+      "$type": "dimension",
+      "$value": "{primitive.opacity-track-height}",
+      "$description": "Épaisseur de la piste du curseur d’opacité",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Épaisseur de la piste du curseur d’opacité"
+        }
+      }
+    },
+    "opacity-track": {
+      "$type": "color",
+      "$value": "{primitive.opacity-track-gray}",
+      "$description": "Piste grise du curseur d’opacité",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Piste grise du curseur d’opacité"
+        }
+      }
+    },
+    "opacity-thumb-size": {
+      "$type": "dimension",
+      "$value": "{primitive.opacity-thumb-diameter}",
+      "$description": "Diamètre de la poignée d’opacité",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Diamètre de la poignée d’opacité"
+        }
+      }
+    },
+    "opacity-thumb": {
+      "$type": "color",
+      "$value": "{primitive.surface}",
+      "$description": "Poignée blanche du curseur d’opacité dans les deux thèmes",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Poignée blanche du curseur d’opacité dans les deux thèmes"
+        }
+      }
+    },
+    "dark-panel": {
+      "$type": "color",
+      "$value": "{primitive.dark-panel}",
+      "$description": "Fond dark-panel de l’atelier Loomata",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Surface dark-panel du contenant outil"
+        }
+      }
+    },
+    "dark-main": {
+      "$type": "color",
+      "$value": "{primitive.dark-main}",
+      "$description": "Fond dark-main de l’atelier Loomata",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Surface dark-main du contenant outil"
+        }
+      }
+    },
+    "panel": {
+      "$type": "color",
+      "$value": "{primitive.surface}",
+      "$description": "Fond panel de l’atelier Loomata",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Surface panel du contenant outil"
+        }
+      }
+    },
+    "main": {
+      "$type": "color",
+      "$value": "{primitive.surface}",
+      "$description": "Fond main de l’atelier Loomata",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Surface main du contenant outil"
+        }
+      }
+    },
+    "chevron": {
+      "$type": "dimension",
+      "$value": "{primitive.chevron}",
+      "$description": "Taille du chevron de dépliage Storybook installé",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Dépliage des groupes de navigation"
+        }
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{primitive.surface}",
+      "$description": "Fond des contr\u00f4les et dialogues",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Fond des contr\u00f4les et dialogues"
+        }
+      }
+    },
+    "ink": {
+      "$type": "color",
+      "$value": "{primitive.ink}",
+      "$description": "Texte des contr\u00f4les",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Texte des contr\u00f4les"
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{primitive.border}",
+      "$description": "Contour des contr\u00f4les",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Contour des contr\u00f4les"
+        }
+      }
+    },
+    "selection": {
+      "$type": "color",
+      "$value": "{primitive.selection}",
+      "$description": "S\u00e9lection de navigation",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "S\u00e9lection de navigation"
+        }
+      }
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "{primitive.accent}",
+      "$description": "Focus visible",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Focus visible"
+        }
+      }
+    },
+    "muted": {
+      "$type": "color",
+      "$value": "{primitive.muted}",
+      "$description": "Texte secondaire",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Texte secondaire"
+        }
+      }
+    },
+    "dark-surface": {
+      "$type": "color",
+      "$value": "{primitive.dark-surface}",
+      "$description": "Convention de chrome dark-surface",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome dark-surface"
+        }
+      }
+    },
+    "dark-ink": {
+      "$type": "color",
+      "$value": "{primitive.dark-ink}",
+      "$description": "Convention de chrome dark-ink",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome dark-ink"
+        }
+      }
+    },
+    "dark-border": {
+      "$type": "color",
+      "$value": "{primitive.dark-border}",
+      "$description": "Convention de chrome dark-border",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome dark-border"
+        }
+      }
+    },
+    "dark-selection": {
+      "$type": "color",
+      "$value": "{primitive.dark-selection}",
+      "$description": "Convention de chrome dark-selection",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome dark-selection"
+        }
+      }
+    },
+    "space": {
+      "$type": "dimension",
+      "$value": "{primitive.space}",
+      "$description": "Convention de chrome space",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome space"
+        }
+      }
+    },
+    "row": {
+      "$type": "dimension",
+      "$value": "{primitive.row}",
+      "$description": "Convention de chrome row",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome row"
+        }
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{primitive.radius}",
+      "$description": "Convention de chrome radius",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome radius"
+        }
+      }
+    },
+    "dialog": {
+      "$type": "dimension",
+      "$value": "{primitive.dialog}",
+      "$description": "Convention de chrome dialog",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome dialog"
+        }
+      }
+    },
+    "outline": {
+      "$type": "dimension",
+      "$value": "{primitive.outline}",
+      "$description": "Convention de chrome outline",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome outline"
+        }
+      }
+    },
+    "body": {
+      "$type": "dimension",
+      "$value": "{primitive.body}",
+      "$description": "Convention de chrome body",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Convention de chrome body"
+        }
+      }
+    },
+    "sans": {
+      "$type": "fontFamily",
+      "$value": "{primitive.sans}",
+      "$description": "Police du chrome ind\u00e9pendante du projet",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Police du chrome ind\u00e9pendante du projet"
+        }
+      }
+    },
+    "indent-two": {
+      "$type": "dimension",
+      "$value": "{primitive.indent-two}",
+      "$description": "Retrait hi\u00e9rarchique du chrome indent-two",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Retrait hi\u00e9rarchique du chrome indent-two"
+        }
+      }
+    },
+    "indent-three": {
+      "$type": "dimension",
+      "$value": "{primitive.indent-three}",
+      "$description": "Retrait hi\u00e9rarchique du chrome indent-three",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Retrait hi\u00e9rarchique du chrome indent-three"
+        }
+      }
+    },
+    "indent-four": {
+      "$type": "dimension",
+      "$value": "{primitive.indent-four}",
+      "$description": "Retrait hi\u00e9rarchique du chrome indent-four",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Retrait hi\u00e9rarchique du chrome indent-four"
+        }
+      }
+    },
+    "indent-five": {
+      "$type": "dimension",
+      "$value": "{primitive.indent-five}",
+      "$description": "Retrait hi\u00e9rarchique du chrome indent-five",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Retrait hi\u00e9rarchique du chrome indent-five"
+        }
+      }
+    },
+    "line": {
+      "$type": "dimension",
+      "$value": "{primitive.line}",
+      "$description": "\u00c9paisseur des contours du chrome",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Contour des contr\u00f4les outil"
+        }
+      }
+    },
+    "icon": {
+      "$type": "dimension",
+      "$value": "{primitive.icon}",
+      "$description": "Taille des pictogrammes de navigation",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Taille des pictogrammes de navigation"
+        }
+      }
+    },
+    "icon-folder": {
+      "$type": "color",
+      "$value": "{primitive.icon-folder}",
+      "$description": "Repère visuel de navigation folder",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Repère visuel de navigation folder"
+        }
+      }
+    },
+    "icon-component": {
+      "$type": "color",
+      "$value": "{primitive.icon-component}",
+      "$description": "Repère visuel de navigation component",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Repère visuel de navigation component"
+        }
+      }
+    },
+    "icon-story": {
+      "$type": "color",
+      "$value": "{primitive.icon-story}",
+      "$description": "Repère visuel de navigation story",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Repère visuel de navigation story"
+        }
+      }
+    },
+    "icon-document": {
+      "$type": "color",
+      "$value": "{primitive.icon-document}",
+      "$description": "Repère visuel de navigation document",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Repère visuel de navigation document"
+        }
+      }
+    },
+    "inspector-row": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-row}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-row",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-radius": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-radius}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-radius",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-section": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-section}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-section",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-gap": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-gap}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-gap",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-label": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-label}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-label",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-small": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-small}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-small",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-swatch": {
+      "$type": "dimension",
+      "$value": "{primitive.inspector-swatch}",
+      "$description": "Géométrie du chrome compact inspiré de Framer : inspector-swatch",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Inspecteur et outils de navigation ; DS-UI-03, hors calques"
+        }
+      }
+    },
+    "inspector-divider": {
+      "$type": "color",
+      "$value": "{primitive.inspector-divider}",
+      "$description": "Chrome sombre Framer : inspector-divider",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Séparation ou texte secondaire de l’inspecteur sombre, sans modifier les calques"
+        }
+      }
+    },
+    "inspector-muted": {
+      "$type": "color",
+      "$value": "{primitive.inspector-muted}",
+      "$description": "Chrome sombre Framer : inspector-muted",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "semantic",
+          "owner": "loomata-ui",
+          "usage": "Séparation ou texte secondaire de l’inspecteur sombre, sans modifier les calques"
+        }
+      }
+    },
+    "label": {
+      "$type": "dimension",
+      "$value": "{primitive.indent-two}",
+      "$description": "Taille des titres de section et libellés des panneaux : 12 px",
+      "$extensions": {
+        "org.loomata.ui": {
+          "classification": "non-semantic",
+          "owner": "loomata-ui",
+          "usage": "Libellés des champs, titres de groupe et calques ; valeur primitive 12 px existante réutilisée"
+        }
+      }
+    }
+  }
+}

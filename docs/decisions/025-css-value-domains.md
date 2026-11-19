@@ -1,0 +1,13 @@
+# 025 — Domaines CSS et capacités d’édition distincts
+
+2 novembre 2026 — DS-EDIT-53, réalisation dans le mandat utilisateur.
+
+Les plafonds de rayon, taille de texte, interligne et largeur sont des restrictions esthétiques supprimées. Les minima de lisibilité et de focus deviennent des conseils, sans bloquer la sauvegarde. Les contraintes de CSS restent bloquantes : rayon/padding négatifs, graisse hors 1–1000, syntaxe ou unité incompatible. La graisse accepte les décimales et le décalage du contour accepte les valeurs signées.
+
+Trois autorités locales versionnées décrivent profil de support, familles de valeurs et propriétés. Le contrat d’édition référence la propriété CSS et conserve seulement ses formats exécutables. Le chargeur serveur valide les sources fermées puis dérive les bornes ; snapshots et décisions IA utilisent le même contrat résolu. Les nouvelles sources et leur chargeur participent au manifeste de révision, sans ouverture d’écriture HTTP vers ces fichiers.
+
+Choix minimal : catalogue local explicitement partiel de propriétés et complet par familles identifiées, sans nouveau parser ni dépendance. MDN data apporte des grammaires, WebDX apporte la disponibilité ; aucun des deux ne fournit seul une validation des valeurs calculées ni de tous les contextes. Leur import massif n’est pas nécessaire pour les formats actuels. Une adoption future doit figer versions/licences et qualifier le moteur. Les expressions, composites, mots-clés et unités nouveaux restent catalogués et non éditables jusqu’à preuve ; le catalogue ne prétend pas être une grammaire CSS complète.
+
+Le socle vise Baseline Widely available, profil daté du 2 novembre 2026 ; les propriétés futures sont marquées de disponibilité non vérifiée. Aucune mise à jour distante automatique, aucune activation de fonctionnalité expérimentale. Les valeurs actuelles et leurs identités restent constantes ; seul le domaine des nouvelles éditions est élargi. Les contrats historiques de migration gardent leurs anciennes bornes et leur comparaison rem à 16px ; les tests historiques utilisent une fixture figée. Les bornes actuelles de signe ne nécessitent plus cette conversion.
+
+Limites techniques conservées : formats canoniques, six décimales dans les dimensions/interlignes, nombres finis et longueur d’identifiant. Ce sont des capacités du moteur, pas des limites CSS. Les fonctions et références non résolues ne sont pas enregistrables par les contrôles actuels. L’assistance ne peut pas élargir ce périmètre. Une reconstruction Storybook est nécessaire pour actualiser le contrat compilé de confiance ; les anciennes instances et reçus ne sont pas modifiés implicitement.

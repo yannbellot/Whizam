@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "cases": [
+    "Figma file overlay at 1280/1440: 24px margins, modal focus/Escape, component selection, provisional real control, targeted cancellation, specialized acceptance/reload and hard functional refusal; no external provider calls",
+    "Frame import explicitly proposes a destination and renders a real registered page through the application route, with no inferred business logic"
+  ]
+}

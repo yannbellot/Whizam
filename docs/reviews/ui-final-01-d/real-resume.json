@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "nativeStatus": "completed",
+  "accountConnected": true,
+  "sameNativeThread": true,
+  "restoredWithoutReplay": true,
+  "witnessUnchanged": true,
+  "error": null
+}

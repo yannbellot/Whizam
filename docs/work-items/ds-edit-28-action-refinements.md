@@ -1,0 +1,7 @@
+# DS-EDIT-28 — Actions et messages d’Apparence
+
+31 octobre 2026 — cible application, **En revue : qualification technique acquise, acceptation humaine différée**. Base `90c5646`, branche dédiée `codex/appearance-action-refinements`, main initialement propre pour les fichiers suivis, racine canonique vérifiée ; copies non suivies préservées. Mandat : rétablissement à gauche d’Enregistrer, retrait des récits de préparation et de la consigne de résolution d’analyse, intention active uniquement après changement de valeur.
+
+Périmètre : Panel, ScopeControls, tests affectés, guide et suivi lab. Procédures applicatives implement-feature/test-user-flow/review-design/technical-review déjà lues à cette base ; séquentiel, même agent, non indépendant. Sol · Moyenne, présentation et prérequis locaux. Conserver le blocage réel de sauvegarde pendant une analyse, ses erreurs utiles, le moteur, les valeurs et les autres choix. Contrôles : types, unitaires, qualité et parcours dev/statique ordinateur/mobile. Nouvel aperçu isolé pour préserver les anciens brouillons. Aucune inférence réelle, écriture des valeurs de recette, publication ou modification des modèles app. Doc updated.
+
+[Bilan](../reviews/ds-edit-28-action-refinements.md) : types, 15 unitaires, qualité ciblée, huit parcours dev et six statiques réussis (deux exclusions IA statiques prévues), deux contrôles de recette conformes. Revues séquentielles satisfaisantes ; aperçu isolé 54131 avec valeurs et 188 identités conservées. Prochaine action : recette visuelle humaine. Doc updated. Aucun push/publication.

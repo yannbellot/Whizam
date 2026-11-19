@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/token-metadata.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "collection"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z0-9][a-z0-9-]*)+$",
+      "maxLength": 240
+    },
+    "kind": {
+      "enum": [
+        "primitive",
+        "decision",
+        "component",
+        "alias"
+      ]
+    },
+    "collection": {
+      "enum": [
+        "editor",
+        "composition",
+        "compatibility",
+        "sample",
+        "parameter",
+        "visual"
+      ]
+    },
+    "editor": {
+      "type": "object",
+      "maxProperties": 12
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    },
+    "classification": {
+      "enum": [
+        "semantic",
+        "non-semantic"
+      ]
+    },
+    "justification": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 400
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8192
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "generated": {
+      "type": "boolean"
+    },
+    "consumer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "selector",
+        "property",
+        "usage"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "selector": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "property": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "usage": {
+          "type": "string",
+          "maxLength": 800
+        }
+      }
+    },
+    "domain": {
+      "enum": [
+        "color",
+        "type",
+        "space",
+        "radius",
+        "size",
+        "stroke",
+        "elevation",
+        "motion",
+        "opacity"
+      ]
+    }
+  }
+}

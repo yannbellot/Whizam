@@ -1,0 +1,13 @@
+# WYSIWYG-01 — Habillage du curseur d’opacité
+
+Cible application, base c47adc9 et 75 entrées non suivies préexistantes. Le mandat reprend la piste grise à bouts arrondis et la poignée ronde blanche de la capture. Le curseur doit rester à droite du champ et le glissement, le clavier et l’annulation doivent rester utilisables.
+
+Périmètre limité aux styles de l’inspecteur, à leurs tokens et au raccordement de l’input existant. La décision de couleur et les dimensions reprennent la référence à 6 px et 24 px. Un fin contour en thème clair assure la lisibilité de la poignée blanche.
+
+Procédures applicatives implement-feature, review-design et technical-review. Revues séquentielles par le même agent. GPT-6.1 Sol · Moyenne pour l’habillage local. Contrôles prévus avec les deux moteurs locaux, capture de rendu et contrôle des tokens. **En revue. Qualification technique acquise, acceptation visuelle différée.** Piste de 6 px et poignée de 24 px vérifiées sous Chromium 156 et WebKit 27.2 en clair et sombre à 1440×1000. Le contrôle navigateur a vérifié l’alignement, la saisie, les deux extrémités au clavier, le glissement et son annulation. [Capture sombre](../reviews/wysiwyg-01/opacity-slider-dark.png).
+
+Types sur copie isolée, génération des tokens applicatifs et outil, validation de leurs dérivés, documentation DS et trois tests de composition réussis. Le premier contrôle a signalé un calcul d’alignement dans une marge et l’absence de régénération des tokens de l’outil. Le centrage a été corrigé à partir des dimensions des tokens et les dérivés ont été régénérés par leur commande dédiée. Revue design et technique séquentielle, même agent, non indépendante. La tranche touche uniquement le rendu de l’input existant. Le parcours natif macOS n’a pas été exécuté. Journaux locaux opacity-style-*. Doc updated. Reprise visuelle sur la [recette locale isolée](http://127.0.0.1:63079/ui-lab?scene=components%2FOverview).
+
+## Ajustement de largeur
+
+Cible application, base `0614eff`. Le libellé Opacité reprend la colonne commune et le champ commence au même axe que les réglages voisins. Le curseur occupe au plus 125 px et se réduit au plus à la moitié de la zone de saisie si le panneau est étroit. La piste mesure 3 px et la poignée 10 px. Sur Bouton, Chromium et WebKit confirment à 1440 et 980 px l’axe commun avec Ombre, le centrage vertical, la saisie numérique de 71 px et le curseur de 79 px dans le panneau courant. Le clic sur le curseur et l’annulation ont été vérifiés. Génération des tokens et contrôle du diff réussis. En revue, qualification technique du correctif d’alignement acquise, acceptation visuelle différée. Doc updated. [Aperçu local](http://127.0.0.1:57203/ui-lab?scene=button%2FDefault).

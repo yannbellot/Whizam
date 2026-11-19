@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "engine": "Chromium",
+  "provider": "explicitly simulated; no real account or inference",
+  "cases": [
+    "Real direct text in Button/Notice/Panel selects independently; CSS stays on child, parent selection and temporary receipt 1280",
+    "Visible selection and DS panel typography/contrast/control sizes, light/dark 1280",
+    "Selection after real tree navigation and iframe-only reload 1280",
+    "DS parity: gallery/individual/disabled variant/composition/catalog, exact inner and unmarked selection, undo/redo/reset/offline receipts/reload and modes 1280",
+    "Pages real Button direct text and mixed fragment content: independent projection, preserved strong element, no test-added text wrapper 1280",
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1280",
+    "Real direct text in Button/Notice/Panel selects independently; CSS stays on child, parent selection and temporary receipt 1440",
+    "Visible selection and DS panel typography/contrast/control sizes, light/dark 1440",
+    "Selection after real tree navigation and iframe-only reload 1440",
+    "DS parity: gallery/individual/disabled variant/composition/catalog, exact inner and unmarked selection, undo/redo/reset/offline receipts/reload and modes 1440",
+    "Pages real Button direct text and mixed fragment content: independent projection, preserved strong element, no test-added text wrapper 1440",
+    "select/multiple properties/undo/redo/reset/real offline admission/reload 1440",
+    "CSSOM responsive observation/centered narrow preview/shorthands/conditional cleanup/concurrent app style preserved/shared-family conflict dirty until confirmed reload/component intent/two pages/normal action restored/source diff empty",
+    "browser receipt -> explicit application -> typed simulated provider context -> real approval UI -> real isolated source transaction -> rendered 18px after reload; main unchanged"
+  ],
+  "browserVersion": "156.0.8078.4",
+  "sourceHashes": {
+    "src/core/visual-intent.ts": "62cb8aa79c54e243b1516587dbe2f20efb854afd22bbdfe5a9835c72ca1fefa0",
+    "src/ui-lab/editor/VisualInspector.tsx": "d29a3afe61ac76a23767c46665084e869fc2bd0d0c104c1b4e8c404ce194a99c",
+    "src/ui-lab/editor/visual-inspector.module.css": "3b3073741b8187d4ed0c662a6acce9e39fe8246317fd6af1da37c9f794036914",
+    "src/ui-lab/editor/visual-context.ts": "3e5850a3e9a78672daf3779a92948e3b47b0e1480073123b33c3e933a9e2f8f0",
+    "src/design-system/components/text-content.tsx": "a9d317e28bb0d8e6e681a1c4bd41e5bf11bfcfc1049a99ff7e97e865f6d0d3b4",
+    "src/design-system/components/Button/Button.tsx": "d5a330e46e0c2ab53ab495fc72d096987d8ff6fffe6eba8458c5af608621b5b2",
+    "src/design-system/components/Notice.tsx": "eba7645708ba8c66f2b1043c5d0d46473f48776e6f679db3e8fe624a8dfe8a88",
+    "src/ui-lab/editor/visual-projection.ts": "68fd649eaad8ff486bb61c8b02a5b88f2b8e900788d6a70974bfaae8a1c071fc",
+    "scripts/agent-chat/visual-intents.mjs": "661a717e041230c76574644d44ca3e0d401e0ef22c7f32aebba45b757acaad60",
+    "scripts/editor-application-preview.ts": "2416ba4bdb6f16af27852e04b2c2205673dbdc39a88633d002539f50d29963a4"
+  },
+  "beforeDesignSend": "Retouches à transmettre\nArrondi : 8px → 20px"
+}

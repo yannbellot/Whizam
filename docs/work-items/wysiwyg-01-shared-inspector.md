@@ -1,0 +1,83 @@
+# WYSIWYG-01 — Inspecteur complet partagé Pages / Design system
+
+## Correction des libellés internes — 16 novembre 2026
+
+**En revue : qualification technique acquise, acceptation humaine différée.** Retour utilisateur : le libellé du bouton reste impossible à sélectionner séparément, contrairement à Pages. Base `6544f4e`, version réalisée `40ac52e`, branche `codex/wysiwyg-01-text-selection`, racine Git canonique et état suivi propre vérifiés ; préexistants non suivis exclus. Même périmètre WYSIWYG-01 et procédures app implement-feature/test-user-flow/review-design/technical-review/security-review, version de référence `6544f4e`, rôles séquentiels, même agent, non indépendants.
+
+Diagnostic : Button rend ses children texte directement dans button, sans élément interne. Le scénario Pages plaçait artificiellement son libellé dans un span enregistré : il prouvait la sélection d’un enfant existant, pas celle du vrai libellé du composant. Notice et Panel ont aussi des contenus texte directs. La sélection et le projecteur manipulent des éléments DOM ; un nœud texte seul n’est pas une cible CSS distincte.
+
+Choix technique délégué : rendre les segments de texte directs dans des spans stables du composant, en conservant les éléments enfants existants, les fragments, les espaces et les noms accessibles. Même rendu dans Pages, toutes les scènes DS et Storybook ; aucune injection de wrapper par l’inspecteur, aucune modification de DOM étrangère à React. Aucun nouveau token/binding/partie d’autorité : ces spans restent des éléments internes temporaires à identifier dans le contrat existant. Les tokens de racine continuent à se transmettre par héritage.
+
+Critères : libellé du vrai Button sélectionné indépendamment dans galerie/exemple/Disabled/Loading/composition et Pages sans span de test ajouté ; taille/couleur projetées seulement sur ce libellé, racine intacte, parent sélectionnable, undo/reset et modes interactifs conservés. Couvrir également le texte direct Notice/Panel et les contenus mixtes/fragments. Comparaison du rendu initial, noms accessibles et activation native ; Chromium/WebKit desktop, types/builds/génération et revues ciblées. Ne pas modifier les styles du panneau de droite ni les autorités DS. Doc updated ; aucune publication.
+
+Résultat : critères démontrés dans les parcours Chromium `run-TfqfAA` et WebKit `run-fVUBs4`, aux deux formats desktop ; texte du bouton ciblé en galerie, Default/Disabled/Loading, composition et Pages, contenu mixte conservé. Types/builds app/Storybook, génération/docs, huit contrôles ciblés et création/export réels conformes ; helper inclus au manifeste. Essai CUA direct : texte 24 px, racine 16 px, puis reset. [Bilan, captures, réserve consultative de la recette et rapports](../reviews/wysiwyg-01/text-selection.md). 86 empreintes de préexistants comparées, aucune différence. Reprise : recette humaine sur 50436, sans modification des modèles app, de J4/J5 ou des permissions d’application. Doc updated ; intégration locale uniquement.
+
+## Correctif après retour de recette — 16 novembre 2026
+
+**En revue : qualification technique acquise, acceptation humaine différée.** Mandat : corriger sélection impossible et régression du panneau droit. Base `86bb173`, version réalisée `c923ba4`, branche `codex/wysiwyg-01-selection-regression`, racine Git canonique vérifiée ; aucun changement suivi, 75 entrées non suivies préexistantes exclues. Procédures implement-feature/test-user-flow/review-design/technical-review/security-review du catalogue app à cette base ; revues séquentielles, même agent, non indépendantes. Pas de délégation.
+
+Constat visuel sur l’aperçu 63453 : le fond de contrôle #1f1f1f est appliqué à l’ensemble du panneau interne, supprimant le contraste champs/panneau #111111. Les informations de provenance et commandes occupent plusieurs lignes par propriété. Premier clic de galerie fonctionnel dans Chromium et WebKit ; test renforcé WebKit ensuite échoué sur le contour de sélection, remplacé par le dernier survol du conteneur. La qualification précédente ne couvrait donc pas correctement la recette signalée par le designer.
+
+Périmètre : cycle d’attachement de la sélection au document rendu, contrôles/contraste/compacité du panneau partagé, tests des transitions réellement utilisées. Conserver sept sections fixes, unités séparées, projection immédiate et outils natifs DS. Aucune autorité de tokens, permission d’écriture ou admission de lot à modifier. Critères : clic exact racine/enfant après navigation et rechargement, modes on/off/on, champs contrastés et alignés sur le panneau DS de référence aux deux formats desktop en clair/sombre, régression Pages. Captures avant/après, parcours Chromium/WebKit, génération/qualité/types/builds ciblés et diff final. L’accès CUA Safari a expiré ; aucun succès natif déduit.
+
+Résultat : sélection sur appui primaire exact, contour continu distinct du survol pointillé, événements rattachés au document/rendu courant, état natif pris en charge conservé. Fond interne retiré, champs et groupes remis aux métriques/palette DS, actions espacées et rétablissement affiché pour les seules retouches. Deux parcours finaux réussis (Chromium `run-eQwXIF`, WebKit `run-GgtWyd`), avec vraie navigation d’arbre et recharge d’iframe, modes et application Pages réelle en source isolée avec fournisseur simulé. 16 contrats/contrôles de composition, génération/docs, types/builds app/Storybook et lint ciblé conformes (avertissement préexistant conservé). [Bilan, captures et limites](../reviews/wysiwyg-01/selection-regression.md). Doc updated ; aucun push/publication. Reprise : recette visuelle humaine sur la nouvelle copie corrigée, sans clôture J4/J5 ni modification des modèles de suivi app.
+
+16 novembre 2026. Cible application. **En revue : qualification technique acquise, acceptation humaine différée.** Les bilans de préparation ci-dessous sont historiques. Base `9193c6b113ba730f863339ab8b0b66db587b7c91`, branche `codex/wysiwyg-01-shared-inspector`. Préflight : racine Git canonique vérifiée, aucun changement suivi ; inventaire et empreintes des fichiers non suivis conservés localement dans .local/wysiwyg-01-shared-inspector/preflight.json, hors sélection.
+
+## Mandat et résultat attendu
+
+La demande étend le résultat précédent : retrouver **tous les outils Pages** dans Design system pour chaque élément sélectionné, y compris les éléments internes. Couvrir toutes les pages de Loomata Design system qui rendent des composants : galerie, exemples individuels, variantes, compositions et autres scènes concernées ; ne pas limiter le branchement au chemin Components ou au seul Overview. Sélectionner l’élément exact, sans le promouvoir silencieusement en partie ou composant parent. Une cible non reliée reste une cible temporaire avec identification à confirmer.
+
+Sept sections fixes, sans accordéons : Apparence, Typographie, Dimensions, Espacements, Disposition, Responsive et Design system. Réemploi effectif du même panneau, du registre CSS, des contrôles, de la projection et de l’historique ; pas de copie divergente. Conserver modifications immédiates, nombre/unité séparés, expressions, undo/redo, reset par propriété, retrait inline, conflits, lot périmé consultable et transmission structurée. Conserver Édition on par défaut et le seul switch dans le panneau off, avec restitution des interactions sur toutes les scènes. Le contexte natif DS et les liens de tokens restent accessibles ; la décision 038 et le writer protégé ne sont pas supprimés implicitement.
+
+## Diagnostic vérifié dans le code
+
+| Surface | Constat | Conséquence |
+| --- | --- | --- |
+| Workspace.tsx, panneau DS | TokenInspector est encore le panneau de modification ; sélection dirigée vers les parties ayant un binding. | La parité des outils CSS avec Pages n’est pas réalisée, malgré la sélection interne déjà livrée. |
+| VisualInspector.tsx, props et send | Workspace, pageId et occurrence ; vérifie page.kind=page, chemin et méta de révision de page. | Impossible de brancher une scène DS en lui inventant un pageId ou en contournant les gardes. |
+| visual-intent.ts | Schéma fermé avec pageId, pagePath ; cible occurrence enregistrée ou session rattachée à cette page. | Un contexte de scène DS réel doit être distingué et validé ; une cible interne non reliée ne devient pas un binding inventé. |
+| agent-chat/visual-intents.mjs | Historique privé durable ; validation de page/occurrence ; conversation de l’occurrence ou de la page ; reprise/déduplication. | L’extension touche admission, historique/reçus et rattachement conversationnel, pas seulement le rendu du panneau. |
+| PreviewPage/scenes/Preview et session DS | Scènes/variantes/parties, génération DS et pont préparé, projection de brouillon avec forçage éventuel d’état. | Découpler la couverture CSS locale, la correspondance DS et la sauvegarde canonique ; préserver le mode interactif sans empiler deux propriétaires de styles. |
+
+## Solution minimale proposée pour la reprise
+
+1. Extraire un noyau partagé de sélection exacte/projection/contrôles/historique de VisualInspector. Deux adaptateurs de contexte fournissent disponibilité du document, révisions, identité, correspondances, intentions autorisées et transmission. Une scène DS ne dépend pas d’une fausse page du registre workspace.
+2. Définir une forme de demande DS explicite dans le contrat partagé. Projet/arbre/révision commune et révision DS réels ; scène et session de rendu ; cible/variante/partie déclarées lorsqu’elles correspondent exactement, ou cible interne temporaire à identifier. Aucun HTML/Fiber/chemin privé ni sélecteur exécutable. Les portées partagées exigent un binding vérifié pour chaque propriété ; aucune égalité de valeur ne vaut token ou droit.
+3. Étendre l’admission et la projection des reçus sans rendre illisibles les payloads Pages déjà persistés. Maintenir UUID/empreinte et accusé après persistance ; pas de rejeu après starting/unknown/submitted. Le rattachement au contexte de conversation doit utiliser une entité réellement présente ou le contexte projet existant, jamais un identifiant fabriqué. Les permissions d’application restent celles du moteur existant.
+4. Brancher le même panneau dans toutes les scènes concernées. La section Design system expose les correspondances réelles et conserve les opérations canoniques existantes dans leur périmètre. Rendre explicites projection temporaire, modification de token et source effectivement appliquée ; éviter deux historiques ou surcharges concurrentes sur le même style.
+5. Qualifier la parité UI, l’historique/concurrence et les limites de contexte. Documenter la décision technique finale avant le code dépendant. Aucune nouvelle technologie, backend ou publication nécessaire.
+
+Les noms exacts d’adaptateurs et la forme versionnée de la demande DS restent des choix techniques délégués. Leur description ci-dessus est une proposition, pas une implémentation ni une décision produit supplémentaire requise de l’utilisateur.
+
+## Ordre et critères de qualification
+
+- Contrats : compatibilité des anciens reçus Pages, schéma DS borné, révisions projet/DS périmées, cible/variante/partie usurpées, propriété sans binding, session temporaire, budgets et persistance échouée ; aucun thread à la simple réception, aucun double lancement après interruption.
+- Noyau partagé : un composant panneau et une logique de projection, même registre de propriétés, valeurs calculées/inline/règles/bindings distinguées ; garde du document courant et restauration des seules déclarations possédées.
+- Parcours DS : galerie, exemple individuel, variante et composition ; sélection de racine et de plusieurs enfants, dont un enfant non marqué ; mêmes sept sections et contrôles Pages. Réglage immédiat de taille/unité, couleur, espacement, disposition ; gestes, reset, concurrence et changement de scène ; passage on/off/on avec panneau off limité au switch et interactions réellement restituées.
+- Admission/application : reçu durable du contexte DS après recharge, transmission refusée si périmée ; lancement explicite, fournisseur simulé, accord de source existant et écriture réelle isolée ; rendu relu. Aucun fournisseur réel implicite.
+- Régression : parcours Pages complet et reçus existants, brouillon/enregistrement DS, types/builds application et Storybook sur les sources sélectionnées, lint et garde de tokens. Chromium/WebKit, formats desktop 1280×900 et 1440×1000. Native complet et acceptation visuelle humaine restent distincts et ne sont pas déduits des moteurs Playwright.
+
+Procédures app explicitement sélectionnées depuis le catalogue : plan-feature et update-project-docs pour ce point ; implement-feature/test-user-flow puis review-design/technical-review/security-review pour la réalisation. Version qualifiée des sources : base 9193c6b. Rôles séquentiels, même agent, non indépendants, aucun sous-agent. Les modèles ROADMAP et project-state de l’app restent non initialisés ; suivi consolidé dans le lab.
+
+## Configuration et point d’arrêt
+
+**GPT-6.1 Sol · Très élevée (xhigh)** pour l’unification et son raccordement persistant. Motif observé : même demande UI traversant deux modèles d’identité incompatibles, propriétaire de projection DS existant et contrat de reçu durable déjà distribué. Une substitution directe du panneau ferait soit disparaître la transmission, soit fabriquer une page, soit confondre une cible DOM interne et un binding. L’incertitude concerne la compatibilité du contrat et la séparation des propriétaires de styles, pas un échec de test ordinaire ni un choix visuel.
+
+La règle Configuration de l’AGENTS.md racine impose : « conserver un point de reprise » puis « Attendre la sélection manuelle et une demande explicite de reprise. » Réglage du client non vérifiable et non modifié. Aucun recours à Ultra ou à une délégation. Arrêt avant la partie de réalisation concernée ; si ce niveau est déjà sélectionné, une reprise explicite suffit, sans prétendre avoir vérifié la configuration.
+
+## Bilan de cette passe
+
+Diagnostic et préparation documentaires uniquement : présente fiche, ROADMAP et état racine. Sources runtime, schémas, dépendances, données DS, reçus, aperçus et services existants conservés. Aucun test produit, nouveau serveur, installation ou appel fournisseur exécuté. Contrôles documentaires : liens locaux, diff, sélection exacte et inventaire préexistant. Les preuves des versions précédentes ne qualifient pas cette parité encore absente. **Doc updated.** Reprise : décision technique d’adaptateurs/contexte et compatibilité des reçus, puis réalisation des tranches ci-dessus dans le mandat déjà donné ; pas de nouvelle autorisation produit demandée.
+
+## Reprise de réalisation
+
+Demande explicite reçue après recommandation Très élevée, sans prétendre vérifier le réglage du client. Base `1cb74f8`, branche `codex/wysiwyg-01-shared-runtime` ; état suivi initial propre, inventaire préexistant local conservé. Procédures app implement-feature/test-user-flow/update-project-docs et revues design/technique/sécurité à cette version, séquentielles et non indépendantes. [Décision technique 040](../decisions/040-shared-visual-inspector.md) : même VisualInspector, deux contextes réels, demande DS discriminée compatible avec les anciens reçus ; contrôle mutuel des tampons CSS/tokens. Aucun sous-agent, fournisseur réel ou publication. Bilan final à consigner dans la preuve de réalisation.
+
+## Bilan de réalisation
+
+Inspecteur partagé livré : mêmes sept sections/outils dans Pages et toutes les scènes DS en iframe, sélection exacte des enfants non marqués sans parent inventé, contexte design-visual-intent distinct et historique Pages conservé. Modes communs et writer canonique maintenus ; protection mutuelle des tampons. [Bilan, captures, contrôles et réserves](../reviews/wysiwyg-01/shared-inspector.md), [sources](../reviews/wysiwyg-01/shared-sources.json). 35 contrats, parcours Chromium/WebKit aux deux formats, régression Pages, vraie sauvegarde canonique et relecture, types/builds isolés et manifeste/export réussis. Fournisseur simulé ; application canonique par agent sur writer occupé non qualifiée.
+
+Doc updated. Fichiers : schémas/contrôle agentique, snapshot DS, Preview, VisualInspector et adaptateurs, Workspace, manifeste, tests, contrat/guide/décision/preuves et suivi racine. Revues séquentielles non indépendantes. Pas de migration destructive d’historique, règle de garde retirée, nouvelle technologie, fournisseur réel ou publication. Recette 63453 ; prochaine action : acceptation visuelle humaine, sans poursuite de T2/T3 ni clôture J4/J5.
+
+Version réalisée `b2fe416`, intégration locale après qualification ; aucun push.

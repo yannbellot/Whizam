@@ -1,0 +1,17 @@
+{
+  "extractedRenamedMoved": true,
+  "sourcePrivateStateCopied": false,
+  "externalNetworkBlocked": true,
+  "externalRequests": 0,
+  "app": {
+    "family": "\"ADL Montserrat\", sans-serif",
+    "radius": "32px",
+    "fontLoaded": true
+  },
+  "storybook": {
+    "family": "\"ADL Montserrat\", sans-serif",
+    "radius": "32px",
+    "fontLoaded": true
+  },
+  "nonSemanticCatalog": true
+}

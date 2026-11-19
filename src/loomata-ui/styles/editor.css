@@ -1,0 +1,436 @@
+/* Tool-owned chrome. Tree rows and project previews are deliberately outside this scope. */
+.loomata-navigation-tools {
+  display: flex;
+  gap: var(--loomata-ui-inspector-gap);
+  padding-bottom: var(--loomata-ui-inspector-section);
+  margin-bottom: var(--loomata-ui-inspector-section);
+  border-bottom: var(--loomata-ui-line) solid var(--loomata-ui-border);
+}
+.loomata-navigation-tools button {
+  flex: 1;
+  margin: 0 !important;
+  min-height: var(--loomata-ui-inspector-row);
+  border-color: transparent !important;
+  border-radius: var(--loomata-ui-inspector-radius) !important;
+}
+.loomata-navigation-tools + .loomata-ui input[type='search'] {
+  min-height: var(--loomata-ui-inspector-row);
+  border-color: transparent !important;
+  border-radius: var(--loomata-ui-inspector-radius) !important;
+  padding-inline: var(--loomata-ui-inspector-gap) !important;
+  margin-bottom: var(--loomata-ui-inspector-section);
+}
+.loomata-inspector {
+  font-family: var(--loomata-ui-sans);
+  font-size: var(--loomata-ui-body);
+}
+.loomata-inspector > header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--loomata-ui-space);
+  padding-bottom: var(--loomata-ui-inspector-section);
+  border-bottom: var(--loomata-ui-line) solid var(--loomata-ui-border);
+}
+.loomata-inspector h2,
+.loomata-inspector h3,
+.loomata-inspector summary {
+  font-size: var(--loomata-ui-body);
+  color: var(--loomata-ui-ink);
+}
+.loomata-inspector h3 {
+  margin: 0 0 var(--loomata-ui-inspector-gap);
+}
+.loomata-inspector > header > span {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: var(--loomata-ui-inspector-small);
+  color: var(--loomata-ui-muted);
+}
+.loomata-inspector > p:empty {
+  display: none;
+}
+.loomata-inspector [data-inspector-context],
+.loomata-inspector fieldset,
+.loomata-inspector details {
+  padding: var(--loomata-ui-inspector-section) 0;
+  margin: 0;
+  border: 0;
+  border-bottom: var(--loomata-ui-line) solid var(--loomata-ui-border);
+  border-radius: 0;
+  background: transparent;
+}
+.loomata-inspector label {
+  margin: 0 !important;
+  color: var(--loomata-ui-muted) !important;
+  gap: var(--loomata-ui-inspector-gap) !important;
+}
+.loomata-inspector [data-inspector-context],
+.loomata-inspector fieldset {
+  gap: var(--loomata-ui-inspector-gap);
+}
+.loomata-inspector [data-inspector-context] label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.loomata-inspector [data-inspector-context] label > span:not(.loomata-select-control) {
+  width: var(--loomata-ui-inspector-label);
+  flex-shrink: 0;
+}
+.loomata-inspector [data-inspector-context] .loomata-select-control {
+  flex: 1;
+  width: 0;
+}
+.loomata-inspector [data-inspector-context] small {
+  display: none;
+}
+.loomata-inspector input,
+.loomata-inspector select,
+.loomata-inspector textarea,
+.loomata-inspector button {
+  min-height: var(--loomata-ui-inspector-row);
+  font-family: var(--loomata-ui-sans) !important;
+  font-size: var(--loomata-ui-body) !important;
+  border-color: transparent !important;
+  border-radius: var(--loomata-ui-inspector-radius) !important;
+  padding: var(--loomata-ui-space) var(--loomata-ui-inspector-gap) !important;
+  color: var(--loomata-ui-ink) !important;
+  background: var(--loomata-ui-surface) !important;
+  margin: 0;
+}
+.loomata-inspector button:hover:enabled,
+.loomata-navigation-tools button:hover:enabled {
+  background: var(--loomata-ui-selection) !important;
+}
+.loomata-inspector button[aria-pressed='true'] {
+  background: var(--loomata-ui-selection) !important;
+}
+.loomata-inspector :is(button, input, select, textarea):focus-visible,
+.loomata-navigation-tools button:focus-visible {
+  outline: var(--loomata-ui-outline) solid var(--loomata-ui-accent);
+  outline-offset: var(--loomata-ui-outline);
+}
+.loomata-inspector details > summary {
+  cursor: pointer;
+}
+.loomata-inspector details[open] > summary {
+  margin-bottom: var(--loomata-ui-inspector-gap);
+}
+.loomata-inspector details p,
+.loomata-inspector > p,
+.loomata-inspector footer > span {
+  color: var(--loomata-ui-muted);
+  font-size: var(--loomata-ui-inspector-small);
+}
+.loomata-inspector [aria-label='Réglage en brouillon'] > div {
+  margin: 0;
+}
+.loomata-inspector input {
+  height: var(--loomata-ui-inspector-row) !important;
+}
+.loomata-inspector input[type='color'] {
+  width: 100%;
+  height: var(--loomata-ui-inspector-swatch) !important;
+  min-height: var(--loomata-ui-inspector-swatch) !important;
+  padding: var(--loomata-ui-space) !important;
+}
+.loomata-inspector input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.loomata-inspector input[type='color']::-webkit-color-swatch {
+  border: 0;
+  border-radius: inherit;
+}
+.loomata-inspector input[type='color']::-moz-color-swatch {
+  border: 0;
+  border-radius: inherit;
+}
+@layer utilities {
+  .loomata-inspector input[type='color'] {
+    padding: 0 !important;
+    overflow: hidden;
+  }
+}
+.loomata-inspector footer {
+  display: flex;
+  padding-top: var(--loomata-ui-inspector-gap);
+}
+.loomata-inspector footer > button {
+  flex: 1;
+}
+.loomata-inspector footer > span {
+  width: 100%;
+}
+@media (prefers-color-scheme: dark) {
+  .loomata-inspector,
+  .loomata-inspector .loomata-ui,
+  .loomata-navigation-tools {
+    --loomata-ui-border: var(--loomata-ui-inspector-divider) !important;
+    --loomata-ui-muted: var(--loomata-ui-inspector-muted) !important;
+  }
+  .loomata-navigation-tools + .loomata-ui input[type='search'] {
+    border-color: transparent !important;
+  }
+}
+
+/* Match important Tailwind utility precedence without moving the structural rules
+   below legacy unlayered CSS. Only these control surfaces enter the utility layer. */
+@layer utilities {
+  .loomata-inspector input,
+  .loomata-inspector select,
+  .loomata-inspector textarea,
+  .loomata-inspector button,
+  .loomata-navigation-tools button,
+  .loomata-navigation-tools + .loomata-ui input[type='search'] {
+    border-color: transparent !important;
+    border-radius: var(--loomata-ui-inspector-radius) !important;
+  }
+  .loomata-inspector input,
+  .loomata-inspector select,
+  .loomata-inspector textarea,
+  .loomata-inspector button {
+    padding: var(--loomata-ui-space) var(--loomata-ui-inspector-gap) !important;
+  }
+  .loomata-inspector button:hover:enabled,
+  .loomata-inspector button[aria-pressed='true'] {
+    background: var(--loomata-ui-selection) !important;
+  }
+  .loomata-navigation-tools + .loomata-ui input[type='search'] {
+    padding-inline: var(--loomata-ui-inspector-gap) !important;
+  }
+}
+
+/* Native select interaction, with the existing Storybook chevron as decoration. */
+.loomata-inspector .loomata-select-control {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.loomata-inspector .loomata-select-chevron {
+  position: absolute;
+  inset-block: 0;
+  right: var(--loomata-ui-inspector-gap);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: var(--loomata-ui-muted);
+}
+@layer utilities {
+  .loomata-inspector .loomata-select-control > select {
+    appearance: none;
+    height: var(--loomata-ui-inspector-row);
+    width: 100%;
+    padding-right: var(--loomata-ui-indent-three) !important;
+  }
+}
+
+.loomata-inspector [data-inspector-context] .loomata-select-control {
+  flex: 1;
+  width: 0;
+}
+
+.loomata-inspector [data-inspector-font-type] {
+  display: flex;
+  align-items: center;
+}
+.loomata-inspector [data-inspector-font-type] > span:not(.loomata-select-control) {
+  width: var(--loomata-ui-inspector-label);
+  flex-shrink: 0;
+}
+.loomata-inspector [data-inspector-font-type] .loomata-select-control {
+  flex: 1;
+  width: 0;
+}
+
+/* Complete inspector: the same compact rows as DS-UI-03, one divider per group. */
+.loomata-inspector [data-inspector-value] {
+  padding: 0;
+  border: 0;
+  margin: var(--loomata-ui-inspector-gap) 0;
+}
+.loomata-inspector [data-inspector-row],
+.loomata-inspector [data-inspector-control] {
+  display: flex;
+  align-items: center;
+  gap: var(--loomata-ui-inspector-gap);
+  min-width: 0;
+}
+.loomata-inspector [data-inspector-row] > label {
+  width: var(--loomata-ui-inspector-label);
+  flex-shrink: 0;
+  font-size: var(--loomata-ui-body);
+  line-height: var(--loomata-ui-body);
+}
+.loomata-inspector [data-inspector-control] {
+  flex: 1;
+}
+.loomata-inspector [data-inspector-control] > input {
+  flex: 1;
+  width: 0;
+}
+.loomata-inspector [data-inspector-control] > input[type='color'] {
+  flex: 0 0 var(--loomata-ui-inspector-swatch);
+  width: var(--loomata-ui-inspector-swatch);
+}
+.loomata-inspector [data-inspector-unit] {
+  flex: 0 0 calc(var(--loomata-ui-indent-five) + var(--loomata-ui-inspector-gap));
+}
+.loomata-inspector [data-inspector-precise] {
+  flex: 1;
+  min-width: 0;
+}
+.loomata-inspector .loomata-visually-hidden,
+.loomata-inspector [data-inspector-precise] label {
+  position: absolute;
+  clip-path: inset(50%);
+  width: var(--loomata-ui-line);
+  height: var(--loomata-ui-line);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.loomata-inspector [data-inspector-value] details,
+.loomata-inspector [data-inspector-attribution] {
+  padding: var(--loomata-ui-space) 0 0;
+  border: 0;
+  font-size: var(--loomata-ui-inspector-small);
+  color: var(--loomata-ui-muted);
+}
+.loomata-inspector [data-inspector-attribution] > summary,
+.loomata-inspector [data-inspector-value] details > summary {
+  font-size: inherit;
+  color: inherit;
+}
+.loomata-inspector [data-inspector-binding-info] + [data-inspector-binding-info] {
+  margin-top: var(--loomata-ui-inspector-section);
+}
+.loomata-inspector [data-inspector-binding-info] h4 {
+  margin: 0;
+  color: var(--loomata-ui-ink);
+  font-size: var(--loomata-ui-body);
+}
+.loomata-inspector [data-inspector-group] {
+  padding: var(--loomata-ui-inspector-section) 0;
+  border-bottom: var(--loomata-ui-line) solid var(--loomata-ui-border);
+}
+.loomata-inspector [data-inspector-group] > h3 {
+  font-weight: inherit;
+}
+.loomata-inspector [data-inspector-group] > h3,
+.loomata-inspector label,
+.loomata-inspector [data-inspector-row] > label,
+.loomata-ui [data-navigation-label] {
+  font-size: var(--loomata-ui-label);
+}
+.loomata-inspector [data-inspector-attribution],
+.loomata-inspector [data-inspector-font-catalog] {
+  margin-top: var(--loomata-ui-inspector-gap);
+  font-size: var(--loomata-ui-inspector-small);
+  color: var(--loomata-ui-muted);
+}
+.loomata-inspector [data-inspector-attribution] > h4,
+.loomata-inspector [data-inspector-font-catalog] > h4 {
+  margin: var(--loomata-ui-inspector-gap) 0;
+  font-size: inherit;
+}
+
+/* The existing light palette uses the same white for panels and controls. */
+@layer utilities {
+  @media (prefers-color-scheme: light) {
+    .loomata-inspector input,
+    .loomata-inspector select,
+    .loomata-inspector button,
+    .loomata-navigation-tools button,
+    .loomata-navigation-tools + .loomata-ui input[type='search'] {
+      border-color: var(--loomata-ui-border) !important;
+    }
+  }
+}
+
+.loomata-ui [data-edit-toggle] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--loomata-ui-inspector-gap);
+}
+[data-edit-track] {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--loomata-ui-space);
+  width: var(--loomata-ui-indent-four);
+  height: var(--loomata-ui-indent-three);
+  box-sizing: border-box;
+  border-radius: var(--loomata-ui-inspector-row);
+  background: var(--loomata-ui-border);
+}
+[data-edit-toggle][aria-checked='true'] [data-edit-track] {
+  background: var(--loomata-ui-accent);
+  justify-content: flex-end;
+}
+[data-edit-track] > span {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--loomata-ui-surface);
+}
+
+.loomata-inspector [data-inspector-control] > input[data-opacity-slider] {
+  flex: none;
+  width: var(--loomata-ui-opacity-slider-width);
+  max-width: 50%;
+}
+
+@layer utilities {
+  .loomata-inspector input[data-opacity-slider][type='range'] {
+    appearance: none;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.loomata-inspector input[data-opacity-slider]::-webkit-slider-runnable-track {
+  height: var(--loomata-ui-opacity-track-height);
+  border-radius: var(--loomata-ui-opacity-track-height);
+  background: var(--loomata-ui-opacity-track);
+}
+
+.loomata-inspector input[data-opacity-slider]::-moz-range-track {
+  height: var(--loomata-ui-opacity-track-height);
+  border-radius: var(--loomata-ui-opacity-track-height);
+  background: var(--loomata-ui-opacity-track);
+}
+
+.loomata-inspector input[data-opacity-slider]::-webkit-slider-thumb {
+  appearance: none;
+  box-sizing: border-box;
+  width: var(--loomata-ui-opacity-thumb-size);
+  height: var(--loomata-ui-opacity-thumb-size);
+  translate: 0
+    calc((var(--loomata-ui-opacity-track-height) - var(--loomata-ui-opacity-thumb-size)) / 2);
+  border-radius: 50%;
+  border: var(--loomata-ui-line) solid var(--loomata-ui-opacity-track);
+  background: var(--loomata-ui-opacity-thumb);
+}
+
+.loomata-inspector input[data-opacity-slider]::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--loomata-ui-opacity-thumb-size);
+  height: var(--loomata-ui-opacity-thumb-size);
+  border-radius: 50%;
+  border: var(--loomata-ui-line) solid var(--loomata-ui-opacity-track);
+  background: var(--loomata-ui-opacity-thumb);
+}
+
+@media (prefers-color-scheme: dark) {
+  .loomata-inspector input[data-opacity-slider]::-webkit-slider-thumb {
+    border-color: transparent;
+  }
+
+  .loomata-inspector input[data-opacity-slider]::-moz-range-thumb {
+    border-color: transparent;
+  }
+}

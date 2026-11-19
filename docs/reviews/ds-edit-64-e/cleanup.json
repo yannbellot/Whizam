@@ -1,0 +1,31 @@
+{
+  "containers": [
+    {
+      "name": "adl-ds-edit-64-e-isolation",
+      "id": "5d872cdb2c49ca61a860b1966ed3f45e4ea2e4c36b5a822258b37167b631251c",
+      "image": "sha256:68df65193b4b12a810fc929e3c55f3cf41b7adb3b52c884ddbbf57265e4c7757",
+      "mounts": [],
+      "network": "none",
+      "removed": true
+    },
+    {
+      "name": "adl-ds-edit-64-e-kit",
+      "id": "7c32cfe17d2b5e70cc9ae259754ba7b9a220638ac549ba4f201d50f6d18cf4c0",
+      "image": "sha256:68df65193b4b12a810fc929e3c55f3cf41b7adb3b52c884ddbbf57265e4c7757",
+      "mounts": [],
+      "network": "none",
+      "removed": true
+    },
+    {
+      "name": "adl-ds-edit-64-e-runtime",
+      "id": "4342c0b5629853b0d87146c2adc08b9cfddaacb2de4db8470b8ed1ca7bb8f4d2",
+      "image": "sha256:a8e1dae69184c9efc5bd383b65711329dd3b33c479cf87034ba3ce314bc08d30",
+      "mounts": [],
+      "network": "none",
+      "removed": true
+    }
+  ],
+  "taskImageTagsRemoved": true,
+  "sqlInstancesCleaned": true,
+  "existingResourcesTargeted": false
+}

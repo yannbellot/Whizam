@@ -1,0 +1,12 @@
+{
+  "port": 54137,
+  "files": [
+    ".storybook/editor/Panel.tsx",
+    ".storybook/editor/Preview.tsx",
+    ".storybook/editor/panel.module.css",
+    "src/design-system/editor/protocol.ts"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "draftBefore": "Génération chargée, Enregistrer disabled"
+}

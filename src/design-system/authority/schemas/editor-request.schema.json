@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/editor-request.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocolVersion",
+    "requestId",
+    "baseRevision",
+    "operations"
+  ],
+  "properties": {
+    "protocolVersion": {
+      "const": 4
+    },
+    "requestId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "baseRevision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "operations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "style"
+            ],
+            "properties": {
+              "kind": {
+                "const": "assign"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "style": {
+                "type": "string",
+                "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "intention",
+              "value"
+            ],
+            "properties": {
+              "kind": {
+                "const": "create-and-assign"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "intention": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9-]*$",
+                "maxLength": 160
+              },
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "intention",
+              "value"
+            ],
+            "properties": {
+              "kind": {
+                "const": "create-style"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "intention": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9-]*$",
+                "maxLength": 160
+              },
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "style",
+              "value"
+            ],
+            "properties": {
+              "kind": {
+                "const": "update-shared"
+              },
+              "style": {
+                "type": "string",
+                "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "value"
+            ],
+            "properties": {
+              "kind": {
+                "const": "set-component-token"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target"
+            ],
+            "properties": {
+              "kind": {
+                "const": "restore"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "definition",
+              "value"
+            ],
+            "properties": {
+              "kind": {
+                "const": "define-and-assign"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "definition": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "category",
+                  "id",
+                  "label",
+                  "definition",
+                  "examples",
+                  "synonyms"
+                ],
+                "properties": {
+                  "category": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+                    "maxLength": 80
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+                    "maxLength": 80
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  },
+                  "definition": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  },
+                  "examples": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 400
+                    }
+                  },
+                  "synonyms": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 400
+                    }
+                  }
+                }
+              },
+              "classification": {
+                "enum": [
+                  "semantic",
+                  "non-semantic"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target",
+              "reference",
+              "style"
+            ],
+            "properties": {
+              "kind": {
+                "const": "restore-binding"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "reference": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              "style": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "provenance": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "status",
+                  "reason"
+                ],
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "designer-edit",
+                      "agent-migration"
+                    ]
+                  },
+                  "status": {
+                    "const": "proposed"
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

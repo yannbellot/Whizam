@@ -1,0 +1,21 @@
+# UI-MAC-05 — Connexion Codex directe
+
+13 novembre 2026 — En revue, qualification technique acquise, acceptation humaine différée. Cible application, fabrication suivie dans le lab. Mandat : menu Compte Codex… vers le navigateur habituel, sans écran intermédiaire, puis app recompilée pour test. Base `adeeb9a`, branche `codex/ui-mac-05-direct-codex-login` ; racine Git vérifiée, aucun changement suivi préalable, 75 entrées non suivies préexistantes exclues.
+
+Procédures du catalogue app : implement-feature, test-user-flow et update-project-docs ; revues Design/Technical/Security séquentielles, même agent, non indépendantes. Versions de procédures à la base ci-dessus. Effort recommandé Élevée : frontière native/contrôle privé, compte et rappel OAuth ; pas de changement de fournisseur ou d’autorité DS.
+
+Périmètre : menu natif, opération privée finie ai.connect, début de connexion du gestionnaire existant, tests directement affectés, documentation et nouveau bundle local. Même compte Codex dédié ; aucune copie d’identifiants, déconnexion imposée, inférence, installation globale ou publication. Les modèles de suivi app restent non initialisés.
+
+Choix délégués : lien OAuth généré par Codex, validé avant ouverture par macOS dans le navigateur habituel. Aucun lien statique choose-an-account, aucun écran de compte Loomata préalable. Connexion explicite même si un compte est déjà enregistré, sans effacer ce compte avant succès ; refuser pendant une inférence. Double clic borné et réponse retardée après changement de projet ignorée. Le navigateur gère lui-même comptes et remplissage automatique ; aucune disponibilité d’un mot de passe garantie par Loomata.
+
+Critères : clic natif depuis la vue courante, ouverture du lien officiel sans changement de vue/dialogue intermédiaire ; projet et brouillon conservés ; refus des liens étrangers, erreurs et concurrence explicites ; contrôle privé authentifié, aucune capacité navigateur nouvelle ; compilation/signature locale et ouverture du bundle de test. Essai de démarrage OAuth réel sans journaliser son URL privée ; validation utilisateur de connexion si nécessaire, sans déconnecter son compte pour fabriquer une preuve.
+
+Fichiers prévus : macos/Loomata.swift et son harness, scripts/core/local-service.mjs, scripts/core/agent-chat.mjs, scripts/agent-chat/{daemon,manager,context-control}.mjs, tests concernés, fermeture de manifeste si nécessaire, cette fiche et suivi lab. Contrôles : tests chat/contrôle/service, parcours natif isolé et compilation du lanceur ; retests ciblés selon le diff. Résultats non exécutés à ce stade. Doc updated.
+
+## Résultat et recette
+
+[Revue et preuves](../reviews/ui-mac-05-direct-codex-login.md) : 26 tests de contrôle/chat et 114 DS réussis, lint conforme, quinze scénarios natifs et clic réel dans Safari avec retour de connexion confirmés. Ancien refus réel conservé et retest réussi ; correctif supplémentaire de lecture des erreurs de snapshot expliqué dans le bilan. Les limites de simulation et d’auto-remplissage restent explicites. Aucun réglage Codex de ce chat vérifié ou modifié.
+
+Bundle de test recompilé et ouvert : `.local/ui-mac-05/user-test/Loomata Codex Test.app`, métadonnées `user-test.json` adjacentes. SHA natif `511359665ba1ab96c9e628737da52210de824db74a8200df157a1d71eca6fc5f`, SDK 26.5, signature ad hoc strictement vérifiée. Même brouillon éditable que la recette T1, préférences de dernier projet isolées ; les anciennes fenêtres ne sont pas remplacées. Utiliser cette nouvelle app pour la recette. Manifeste v34 conservé avec le nouvel outillage ; aucun reçu ancien converti ni source d’ancienne recette remplacée.
+
+Critères techniques satisfaits, revues satisfaisantes dans leur périmètre et mode non indépendant déclaré. Doc updated : spécification app, fiche, bilan, manifeste et suivi de fabrication. Intégration locale après contrôle final ; prochaine action : recette humaine du clic dans le navigateur habituel. Publication absente, risque résiduel : propositions de comptes/mots de passe et éventuels écrans imposés par OpenAI dépendants du navigateur/profil. Le choix de supprimer l’écran Loomata intermédiaire est l’instruction explicite du porteur ; aucune nouvelle technologie ajoutée.

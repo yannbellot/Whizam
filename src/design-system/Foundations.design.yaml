@@ -1,0 +1,79 @@
+# Présentation uniquement ; tokens de composants dans tokens.tokens.json.
+schemaVersion: 4
+target: foundations
+presentation:
+  label: Fondations
+  parts:
+    document: Document
+    page: Page
+    page-mobile: Page sur mobile
+    layout-small: Petits écarts
+    layout-medium: Écarts moyens
+    layout-large: Grands écarts
+    table: Tableau
+  variants:
+    default: Standard
+  states:
+    default: Par défaut
+  consumerFiles:
+    - src/styles/global.css
+    - src/design-system/foundations.module.css
+    - app/features/projects/projects.module.css
+  contrastParts:
+    - document
+  dynamicConsumers:
+    - file: src/design-system/Foundations.tsx
+      group: legacy-tokens
+  semanticGuidance:
+    purpose: Organiser les surfaces, la typographie et les repères communs du projet.
+    recommendations:
+      - variants:
+          - default
+        part: document
+        properties:
+          - background
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.secondary
+        reason: Respecter le rôle Document et le ton Standard du composant.
+      - variants:
+          - default
+        part: document
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Document et le ton Standard du composant.
+      - variants:
+          - default
+        part: table
+        properties:
+          - borderColor
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Tableau et le ton Standard du composant.
+      - variants:
+          - default
+        part: document
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.body-family
+        reason: Famille de lecture des contenus et messages.
+      - variants:
+          - default
+        part: page
+        properties:
+          - maxWidth
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.reading-width
+        reason: Largeur maximale du contenu de lecture ; distincte des minimums techniques de l’atelier.

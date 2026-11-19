@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-15",
+  "target": "application",
+  "codeCommit": "dca5fdb80f50ff5969a305307518e0545389d915",
+  "sha256": {
+    "src/ui-lab/editor/TokenInspector.tsx": "9b32a1e5598e189f1d6233f624e93e06c7fc904176c45713606271920e96bf7d",
+    "src/loomata-ui/styles/editor.css": "278a734cb4d2deda8aa02b0cdc270c37c64e876ecadae8ec5b21e3fe484bf285",
+    "tests/helpers/ds-ui-06.ts": "83af2a4babb286343b3a9d471823d2554899ed5481647da5631b0e826d365f40",
+    "tests/workshop/appearance.spec.ts": "9bda0d128c42c66759b21cc6e0ad0ab4601f27f8634eb9d785f36fe1a1638cf9",
+    "tests/workshop/tools.spec.ts": "782f85ee0a6b08425fd5dd87c6001a260377c70e97e35e42596f62609bcef50a",
+    "tests/workshop-persistence/decisions.spec.ts": "4bef92d1d0a3684fe942636d6898f917e548988daae12985a40bf107d1083211"
+  },
+  "compiledDesktopTests": 16,
+  "persistentDesktopTests": 9,
+  "types": "passed",
+  "lintAndFormat": "passed",
+  "build": "passed",
+  "storybookBuild": "passed",
+  "geometry": "geometry.json",
+  "native": "native.json",
+  "reviewMode": "sequential, same agent, not independent",
+  "humanAcceptance": "deferred"
+}

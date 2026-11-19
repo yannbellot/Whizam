@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "OKLCH shared edit saved and read in UI Lab, app and Storybook",
+    "Radius edit saved and read in app and Storybook",
+    "Initial values restored via writer; invalid OKLCH refused; clean state",
+    "Official high-density adaptation preserved"
+  ]
+}

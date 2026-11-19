@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/terminology.schema.json",
+  "title": "Terminologie du design system",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "terms"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "preferred", "definition"],
+        "properties": {
+          "id": { "$ref": "#/$defs/authorityId" },
+          "preferred": { "type": "string", "minLength": 1 },
+          "definition": { "type": "string", "minLength": 1 },
+          "allowedSynonyms": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "prohibitedSynonyms": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "authorityId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    }
+  }
+}

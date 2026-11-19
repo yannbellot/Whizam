@@ -1,0 +1,11 @@
+# DS-EDIT-39 — Actualisation automatique et statuts du header
+
+1 novembre 2026 — application, base 81577d3. En cours. Mandat : observation des références de l’instance servie, actualisation validée sans perte de saisie, conflits explicites, états verts Données à jour et Codex connecté à droite dans le header ; lancer l’aperçu. Connexion réelle uniquement si son statut le confirme, sans connexion simulée présentée comme réelle.
+
+Procédures applicatives implement-feature, review-design, technical-review déjà lues à la base ; Builder puis revues séquentielles, même agent, non indépendantes. Périmètre : service local protégé, session, header/panneau, Vite, tests et guides. Préexistants non suivis dont SemanticStyles conservés. Aucun changement des autorités, compte, sécurité d’accès ou synchronisation de copies. Le watcher ne régénère pas dans les autorités : snapshot existant valide/génère dans son espace privé ; l’aperçu reçoit la génération validée. Polling léger d’un compteur protégé, watcher sur liste fermée de références et regroupement de rafales. Données invalides : dernier état conservé, reprise automatique ; code de l’éditeur : redémarrage reste distinct.
+
+Conflits : comparer les réglages/valeurs partagés réellement concernés entre ancienne et nouvelle base, réappliquer les gestes indépendants, isoler les gestes conflictuels et bloquer la sauvegarde jusqu’au choix Garder mon réglage/Utiliser la valeur du fichier. Suppression : Retirer cette modification du brouillon. Ne jamais enregistrer à la résolution. Réponse IA périmée invalidée. Contrôles prévus : types isolés, unités watcher/rebase, HTTP, parcours dev desktop/mobile, statique et rendu des statuts/connecté simulé explicite. Aucun push/publication ; modèles app non initialisés.
+
+## Bilan
+
+En revue, qualification technique acquise, acceptation humaine différée. [Bilan, diagnostics et revues](../reviews/ds-edit-39-automatic-refresh.md) : types isolés/qualité conformes, 40 unitaires, huit HTTP, watcher retesté, 10 parcours dev ciblés, deux sur vrais fichiers, 20 statiques/huit exclusions attendues, retests header et erreur desktop/mobile. Statuts thématiques et conflits livrés, compte réel conservé. Doc updated ; aucun push/publication. Aperçu 54137 démarré et ouvert. Reprise : recette humaine ; modèles app non initialisés, préexistants préservés.

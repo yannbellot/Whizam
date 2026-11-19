@@ -1,0 +1,9 @@
+# WYSIWYG-01 — Nom de la sélection et icône d’arrondi
+
+Cible application, base `6f33330`. Afficher le nom de la cible exacte en tête du panneau droit et représenter les rayons indépendants par quatre coins arrondis séparés. Périmètre : VisualInspector, visual-context, FourValueField, leurs styles et les assertions de navigateur. Les retouches de largeur du curseur préexistantes restent isolées.
+
+Procédures applicatives de réalisation et de revue reconduites. GPT-6.1 Sol · Moyenne pour cette modification localisée. Vérifier le titre du composant, de son texte et l’absence de titre après désélection. Vérifier le pictogramme et l’ouverture des quatre champs d’arrondi en navigateur.
+
+Le titre reprend le libellé de la partie enregistrée, de l’occurrence de page ou le nom déduit de l’élément exact. En l’absence de nom exploitable, un libellé de type sert de repli. Le pictogramme reprend les quatre coins du modèle en SVG local à la taille d’icône du panneau.
+
+**En revue après qualification technique, acceptation humaine différée.** Parcours ciblé Chromium 156 et WebKit 27.2 sur la galerie en thème sombre. Titre du bouton, du texte et du libellé d’un champ, désélection sur le fond, visibilité du titre après défilement et ouverture des quatre champs vérifiés. Les assertions de régression sont intégrées au script de navigateur partagé. Types conformes sur copie isolée et lint ciblé sans erreur, avec un avertissement préexistant sur un effet React. Treize contrats d’intention réussis, dont le contrat HTTP rejoué seul avec accès à la boucle locale après le refus du bac à sable. Le parcours navigateur complet et les occurrences de Pages restent à vérifier en recette. Revue séquentielle par le même agent. Doc updated. Reprise sur l’[aperçu local](http://127.0.0.1:49350/ui-lab?scene=components%2FOverview).

@@ -1,0 +1,193 @@
+# Présentation uniquement ; tokens de composants dans tokens.tokens.json.
+schemaVersion: 4
+target: select-field
+presentation:
+  label: Liste déroulante
+  parts:
+    root: Ensemble
+    label: Libellé
+    control: Contrôle
+  variants:
+    default: Standard
+  states:
+    default: Par défaut
+    focus-visible: Focus clavier
+    disabled: Désactivé
+  consumerFiles:
+    - src/design-system/components/controls.module.css
+  contrastParts:
+    - label
+    - control
+  semanticGuidance:
+    purpose: Choisir une valeur dans une liste de possibilités préparées.
+    recommendations:
+      - variants:
+          - default
+        part: label
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Libellé et le ton Standard du composant.
+      - variants:
+          - default
+        part: control
+        properties:
+          - background
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Contrôle et le ton Standard du composant.
+      - variants:
+          - default
+        part: control
+        properties:
+          - background
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.secondary
+        reason: Exprimer l’indisponibilité de ce contexte.
+      - variants:
+          - default
+        part: control
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Contrôle et le ton Standard du composant.
+      - variants:
+          - default
+        part: control
+        properties:
+          - foreground
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Exprimer l’indisponibilité de ce contexte.
+      - variants:
+          - default
+        part: control
+        properties:
+          - borderColor
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Respecter le rôle Contrôle et le ton Standard du composant.
+      - variants:
+          - default
+        part: control
+        properties:
+          - borderColor
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.neutral
+        reason: Exprimer l’indisponibilité de ce contexte.
+      - variants:
+          - default
+        part: control
+        properties:
+          - ringColor
+        states:
+          - focus-visible
+        intentions:
+          - actions.primary
+        reason: Respecter le rôle Contrôle et le ton Standard du composant.
+      - variants:
+          - default
+        part: control
+        properties:
+          - borderRadius
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-shape
+        reason: Politique d’arrondi des contrôles interactifs ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - default
+        part: control
+        properties:
+          - borderRadius
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.control-shape
+        reason: Politique d’arrondi des contrôles interactifs ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - default
+        part: control
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-family
+        reason: Famille des libellés et saisies des contrôles.
+      - variants:
+          - default
+        part: control
+        properties:
+          - fontFamily
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.control-family
+        reason: Famille des libellés et saisies des contrôles.
+      - variants:
+          - default
+        part: control
+        properties:
+          - paddingBlock
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-block-space
+        reason: Espace intérieur des contrôles sur l’axe block, valeur initiale 0.7rem conservée.
+      - variants:
+          - default
+        part: control
+        properties:
+          - paddingBlock
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.control-block-space
+        reason: Espace intérieur des contrôles sur l’axe block, valeur initiale 0.7rem conservée.
+      - variants:
+          - default
+        part: control
+        properties:
+          - paddingInline
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-inline-space
+        reason: Espace intérieur des contrôles sur l’axe inline, valeur initiale 1rem conservée.
+      - variants:
+          - default
+        part: control
+        properties:
+          - paddingInline
+        states:
+          - disabled
+        intentions:
+          - neutral-hierarchy.control-inline-space
+        reason: Espace intérieur des contrôles sur l’axe inline, valeur initiale 1rem conservée.
+      - variants:
+          - default
+        part: label
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.control-family
+        reason: Famille des libellés et saisies des contrôles.

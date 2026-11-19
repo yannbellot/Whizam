@@ -1,0 +1,170 @@
+# Présentation uniquement ; tokens de composants dans tokens.tokens.json.
+schemaVersion: 4
+target: notice
+presentation:
+  label: Message
+  parts:
+    root: Ensemble
+  variants:
+    info: Information
+    success: Succès
+    error: Erreur
+  states:
+    default: Par défaut
+  consumerFiles:
+    - src/design-system/components/controls.module.css
+  contrastParts:
+    - root
+  semanticGuidance:
+    purpose: Communiquer une information ou un résultat selon le ton du message.
+    recommendations:
+      - variants:
+          - info
+        part: root
+        properties:
+          - background
+        states:
+          - default
+        intentions:
+          - information-result.information
+        reason: Respecter le rôle Ensemble et le ton Information du composant.
+      - variants:
+          - info
+        part: root
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - information-result.information
+        reason: Respecter le rôle Ensemble et le ton Information du composant.
+      - variants:
+          - info
+        part: root
+        properties:
+          - borderColor
+        states:
+          - default
+        intentions:
+          - information-result.information
+        reason: Respecter le rôle Ensemble et le ton Information du composant.
+      - variants:
+          - success
+        part: root
+        properties:
+          - background
+        states:
+          - default
+        intentions:
+          - information-result.success
+        reason: Respecter le rôle Ensemble et le ton Succès du composant.
+      - variants:
+          - success
+        part: root
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - information-result.success
+        reason: Respecter le rôle Ensemble et le ton Succès du composant.
+      - variants:
+          - success
+        part: root
+        properties:
+          - borderColor
+        states:
+          - default
+        intentions:
+          - information-result.success
+        reason: Respecter le rôle Ensemble et le ton Succès du composant.
+      - variants:
+          - error
+        part: root
+        properties:
+          - background
+        states:
+          - default
+        intentions:
+          - information-result.error
+        reason: Respecter le rôle Ensemble et le ton Erreur du composant.
+      - variants:
+          - error
+        part: root
+        properties:
+          - foreground
+        states:
+          - default
+        intentions:
+          - information-result.error
+        reason: Respecter le rôle Ensemble et le ton Erreur du composant.
+      - variants:
+          - error
+        part: root
+        properties:
+          - borderColor
+        states:
+          - default
+        intentions:
+          - information-result.error
+        reason: Respecter le rôle Ensemble et le ton Erreur du composant.
+      - variants:
+          - error
+        part: root
+        properties:
+          - borderRadius
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.feedback-shape
+        reason: Politique d’arrondi des messages de retour ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - error
+        part: root
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.body-family
+        reason: Famille de lecture des contenus et messages.
+      - variants:
+          - info
+        part: root
+        properties:
+          - borderRadius
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.feedback-shape
+        reason: Politique d’arrondi des messages de retour ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - info
+        part: root
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.body-family
+        reason: Famille de lecture des contenus et messages.
+      - variants:
+          - success
+        part: root
+        properties:
+          - borderRadius
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.feedback-shape
+        reason: Politique d’arrondi des messages de retour ; indépendante des autres familles malgré la valeur initiale commune.
+      - variants:
+          - success
+        part: root
+        properties:
+          - fontFamily
+        states:
+          - default
+        intentions:
+          - neutral-hierarchy.body-family
+        reason: Famille de lecture des contenus et messages.

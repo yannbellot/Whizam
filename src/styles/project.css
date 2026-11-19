@@ -1,0 +1,6 @@
+@layer theme, utilities;
+@import 'tailwindcss/theme.css' layer(theme) prefix(project);
+@import 'tailwindcss/utilities.css' layer(utilities) prefix(project) source(none) important;
+@import './project-theme.generated.css';
+@source '../design-system/components/Button/Button.tsx';
+@source '../design-system/components/Field.tsx';

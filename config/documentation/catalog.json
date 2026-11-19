@@ -1,0 +1,2319 @@
+{
+  "version": 1,
+  "image": "zensical/zensical:0.0.62@sha256:162b7e191224f57b8c584debe51b157b9802efd25d3a8948e4e0f64c1baaaee6",
+  "archives": {
+    "docs/architecture.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/codex/chantier-model-routing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/distribution/qualification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/agents/practice-history.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/project-data-contract.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/local-deliveries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/loomata-workspace.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/starter-kit.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/agent-chat.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/first-handoff-exercise.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/project-lifecycle.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/037-project-ui-foundation-adoption.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/013-appearance-and-styles-panels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/007-storybook-memory-preview.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/022-semantic-meaning-and-component-baseline.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/021-token-categories-and-common-rules.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/002-dedicated-project-initialization.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/006-component-token-migration.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/011-visible-semantic-alternatives.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/035-ui-architecture-boundaries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/025-independent-design-editor.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/017-assisted-style-decisions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/005-design-system-editor-authority.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/019-token-naming-by-family-and-usage.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/005-assisted-environment-installation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/020-component-token-reference-model.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/034-figma-component-import.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/004-guided-project-start.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/014-token-catalog-style-entry.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/027-dtcg-authority-and-css-recipes.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/038-foundations-inspector-chat.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/001-self-contained-instructions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/003-qualitative-model-routing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/010-sheet-first-intention-selection.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/039-visual-intent-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/018-complete-token-coverage.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/026-contextual-unit-and-contrast-tools.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/033-loomata-mvp-scope-and-sequence.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/031-shared-core-two-deliveries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/029-local-dock-launcher.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/008-protected-editor-read-methods.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/024-tokenized-ui-composition.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/032-desktop-only-interface.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/023-explicit-style-intent.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/012-component-and-semantic-style-workspaces.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/030-reusable-decision-policy.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/028-local-google-fonts.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/009-contextual-semantic-guidance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/025-css-value-domains.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/040-shared-visual-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/decisions/036-first-ui-slice-adoption.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/operations/local-app.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/visual-inspector-study.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/ui-architecture-study.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/visual-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/shared-core.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/workspace-contract.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/page-exploration.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/ui-architecture-boundaries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/project-ui-foundation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/architecture/visual-intent-contract.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/editor-assistance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/visual-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/css-value-domains.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/token-taxonomy.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/editor-preview.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/editor-persistence.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/design-system/ui-token-consumption.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-22-declarative-naming.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/port-03-autonomous-agent-kit.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-18-native-sidebar.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-26-restore-only.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-50-white-badges-and-scope-labels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-60-attribution-count.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-32-growing-codex-field.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-74-workshop-columns.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/agent-chat-01-personal-agent-chat.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-02-common-framing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-figma-01-arbitration-save.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-02-quiet-workspace.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-55-comparison-and-property-labels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-39-automatic-refresh.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-14-assisted-appearance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-final-01-complete-assisted-cycle.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-05-direct-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-28-action-refinements.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-44-remove-contrast-list.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-03-first-ui-slice.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-46-contrast-level-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-21-component-token-types.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-52-tokenize-ui-composition.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-61-contrast-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-02-dark-palette.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-23-explicit-style-intent.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/core-01-shared-deliveries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-official-token-bridge.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-37-appearance-actions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-69-stable-workshop-watch.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-visual-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-72-workshop-navigation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/mvp-01-three-stage-development.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-24-storybook-panel-theme.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-41-empty-comparison.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/figma-recon-01-design-reconciliation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-63-component-badge-contrast.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-06-framer-regression.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-four-value-controls.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-56-spacing-and-property-groups.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/mvp-01-interface-design-agents.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-42-quiet-transitions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/init-03-designer-communication.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-17-hierarchical-navigation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-desktop-01-desktop-only.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-opacity-slider-style.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-01-header-cleanup.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-66-native-property-select.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-06-fixed-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-34-codex-placeholder.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-project-foundation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-53-css-value-domains.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-64-ui-lab-migration.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-01-project-example-label.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/mvp-01-common-foundation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-31-compact-codex-field.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-45-remove-contrast-acknowledgment.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-04-row-disclosure.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-figma-read.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-35-visible-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-06-codex-account-menu.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/gov-03-self-contained-instructions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-11-token-style-catalog.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-official-chat-styles.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-lab-03-snapshot-recovery.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-75-google-fonts.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-27-visible-scope-options.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-71-remove-catalog-notice.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-04-navigation-labels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-13-catalog-create.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-lab-01-column-scroll.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-09-native-style-panels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-19-storybook-structure-and-token-meaning.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-inspector-focus.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-02-contextual-editing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-49-outlined-contrast-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/init-01-project-initialization.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-58-grouped-properties.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-47-compact-contrast-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-macos-loading.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-08-component-semantic-style-separation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-65-workshop-appearance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-10-foundation-catalogs.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-33-stable-codex-typing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-54-neutral-unshared-message.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-opacity-slider-dimensions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-62-appearance-actions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-01-ui-architecture-study.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-15-component-tokens.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-57-unit-and-contrast-tools.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-29-contrast-layout.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-final-01-assisted-cycle-history.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-38-switchable-scope.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-official-example-styles.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-edit-mode.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/local-app-01-dock-launch.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/init-02-dedicated-initialization-skill.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-51-theme-contrast-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-68-workshop-actions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-59-attribution-links.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-single-property-editor.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-20-all-category-headings.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-43-precise-value-label.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-36-direct-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-06-foundations-inspector-chat.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-mac-03-authorization-prompts.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-lab-02-storybook-style.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-01-floating-panels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-25-appearance-layout.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-arch-01-design-system-framing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-shared-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-selection-opacity.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-67-color-field.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-48-contrast-badge-opacity.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-inspector-state-header.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-40-component-appearance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-style-rollback.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/figma-import-02-component-workflow.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-03-framer-panels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ui-arch-04-chat-preparation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-selection-title-radius-icon.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-simplify-token-panel.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-four-value-toggle.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-inspector-simplification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-arch-02-decision-tokens.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-30-header-tools.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-inspector-color-alpha.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-16-token-categories.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-73-storybook-tree.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-70-contextual-contrast.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/wysiwyg-01-ui-refinements.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-edit-12-selected-token-sheet.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-ui-05-font-type-row.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-22-declarative-naming.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-18-native-sidebar.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-26-restore-only.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-50-white-badges-and-scope-labels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/mvp-01-scope-and-roadmap.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-32-growing-codex-field.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-02-common-framing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-f.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-39-automatic-refresh.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01-study-architecture.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-mac-05-direct-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-28-action-refinements.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-44-remove-contrast-list.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-03-first-ui-slice.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-46-contrast-level-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-21-component-token-types.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-52-tokenize-ui-composition.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-ab.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-23-explicit-style-intent.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/core-01-shared-deliveries.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/core-01-native-e2e.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-37-appearance-actions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-23-clarification-feedback.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-c.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-24-storybook-panel-theme.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-41-empty-comparison.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-ui-06-framer-regression.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-42-quiet-transitions.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/init-03-designer-communication.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-17-hierarchical-navigation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-34-codex-placeholder.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-project-foundation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-53-css-value-domains.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-01-project-example-label.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-31-compact-codex-field.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-45-remove-contrast-acknowledgment.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-35-visible-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-11-token-style-catalog.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-27-visible-scope-options.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/local-app-01.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-13-catalog-create.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-09-native-style-panels.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-19-storybook-structure-and-token-meaning.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/init-01-project-initialization.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-58-grouped-properties.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-47-compact-contrast-badges.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-08-component-semantic-style-separation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-recipe.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-14-assistance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-33-stable-codex-typing.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-15-component-tokens.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-65.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-29-contrast-layout.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-38-switchable-scope.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-15-token-naming.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/init-02-dedicated-initialization-skill.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-d.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-59-attribution-links.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-20-all-category-headings.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-43-precise-value-label.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-36-direct-codex-login.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-ui-06-foundations-inspector-chat.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-25-appearance-layout.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-40-component-appearance.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-72-navigation.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-64-e.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-30-header-tools.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-16-token-categories.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-73-storybook-tree.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-12-selected-token-sheet.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/product/features/design-system-editor.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-arch-01/framing-v1.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/work-items/ds-arch-02/checkpoint.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-arch-01/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-style-rollback/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/mvp-01-interface-design-agents/qualification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/mvp-01-interface-design-agents/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/port-03/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01-grapesjs-ui/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-macos-loading/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-official-ui-styles/inventory.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-official-ui-styles/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/mvp-01-common-foundation/qualification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/mvp-01-common-foundation/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/figma-import-02/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-arch-02/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-arch-01-a/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-final-01/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-final-01-d/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-final-01-c/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-official-token-bridge/guide.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-arch-04-chat-preparation/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-final-01-b/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ui-final-01-e/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-75/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-19/execution-checkpoint.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/ds-edit-19/token-classification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/inspector-simplification.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/selection-regression.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/edit-mode.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/README.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/shared-inspector.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/text-selection.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/runtime.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/ui-refinements.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "docs/reviews/wysiwyg-01/selection-opacity.md": "Héritage du starter, distinct de la documentation courante du projet.",
+    "design-qa.md": "Rapport historique du socle.",
+    "config/README.md": "Documentation historique du socle, à revoir avant promotion.",
+    "README.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "ROADMAP.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "TECHNICAL-GUIDE.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "GEMINI.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "AGENTS.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "CLAUDE.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/project-state.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/operations.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/backup-and-restore.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/conventions.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/compatibility.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/documentation.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/handoff.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/security.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/distribution/ds-auto-01.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/distribution/README.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/agents/skill-contract.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/agents/adapters.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/product/project-start.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/product/replacing-project-example.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/product/brief.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/decisions/039-automated-design-system.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/principles.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/style-inventory.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/architecture.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/semantic-catalog.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/token-migration.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/token-organization.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/token-naming.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/design-system/policy.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/product/features/projects.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "agents/security-reviewer.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "agents/builder.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "agents/design-reviewer.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "agents/technical-reviewer.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/README.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/analyze-brief/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/analyze-design-references/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/brief-to-specs/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/update-project-docs/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/data-permissions-migrations/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/test-user-flow/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/plan-feature/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/implement-feature/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/propose-architecture/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/diagnose-incident/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/map-figma-to-components/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/review-design/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/design-interactions/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/initialize-project/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/deploy-docker-compose/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/normalize-design-system/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/prepare-release/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/backup-and-rollback/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/technical-review/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/prepare-handoff/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/security-review/SKILL.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "skills/initialize-project/references/environment-setup.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "src/design-system/authority/README.md": "Ressource interne du kit conservée ; exclue du portail initial vierge.",
+    "docs/decisions/041-request-validation.md": "Politique interne du kit, conservée hors du portail initial du projet.",
+    "docs/claude/chantier-model-routing.md": "Politique interne du kit, conservée hors du portail initial du projet.",
+    "docs/decisions/042-assistant-choice-and-claude-routing.md": "Politique interne du kit, conservée hors du portail initial du projet.",
+    "docs/agents/user-decisions.md": "Politique interne du kit, conservée hors du portail initial du projet.",
+    "docs/decisions/043-user-decision-protocol.md": "Politique interne du kit, conservée hors du portail initial du projet."
+  },
+  "publishDocs": true,
+  "organization": {
+    "version": 1,
+    "stages": [],
+    "documents": {
+      "AGENTS.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "CLAUDE.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "GEMINI.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Entrée des sources conservée ; accueil du portail généré depuis les guides actifs."
+      },
+      "ROADMAP.md": {
+        "kind": "project",
+        "section": ["Documentation designer", "Suivi de projet"],
+        "reason": "Modèle canonique du suivi du projet utilisateur, à conserver non initialisé."
+      },
+      "TECHNICAL-GUIDE.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "agents/builder.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "agents/design-reviewer.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "agents/security-reviewer.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "agents/technical-reviewer.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "config/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "design-qa.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/agents/adapters.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/agents/practice-history.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/agents/private-configuration.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Sécurité et configuration privée"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/agents/skill-contract.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/agents/user-decisions.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/architecture/page-exploration.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/project-ui-foundation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/shared-core.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/ui-architecture-boundaries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/ui-architecture-study.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/visual-inspector-study.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/visual-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/visual-intent-contract.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture/workspace-contract.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/architecture.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/backup-and-restore.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/claude/chantier-model-routing.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/codex/chantier-model-routing.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/compatibility.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/conventions.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/decisions/001-self-contained-instructions.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/002-dedicated-project-initialization.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/003-qualitative-model-routing.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/004-guided-project-start.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/005-assisted-environment-installation.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/005-design-system-editor-authority.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/006-component-token-migration.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/007-storybook-memory-preview.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/008-protected-editor-read-methods.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/009-contextual-semantic-guidance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/010-sheet-first-intention-selection.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/011-visible-semantic-alternatives.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/012-component-and-semantic-style-workspaces.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/013-appearance-and-styles-panels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/014-token-catalog-style-entry.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/017-assisted-style-decisions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/018-complete-token-coverage.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/019-token-naming-by-family-and-usage.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/020-component-token-reference-model.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/021-token-categories-and-common-rules.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/022-semantic-meaning-and-component-baseline.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/023-explicit-style-intent.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/024-tokenized-ui-composition.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/025-css-value-domains.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/025-independent-design-editor.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/026-contextual-unit-and-contrast-tools.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/027-dtcg-authority-and-css-recipes.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/028-local-google-fonts.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/029-local-dock-launcher.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/030-reusable-decision-policy.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/031-shared-core-two-deliveries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/032-desktop-only-interface.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/033-loomata-mvp-scope-and-sequence.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/034-figma-component-import.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/035-ui-architecture-boundaries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/036-first-ui-slice-adoption.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/037-project-ui-foundation-adoption.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/038-foundations-inspector-chat.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/039-automated-design-system.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/039-visual-intent-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/040-shared-visual-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/decisions/041-request-validation.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/042-assistant-choice-and-claude-routing.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/decisions/043-user-decision-protocol.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/architecture.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/css-value-domains.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/design-system/editor-assistance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/design-system/editor-persistence.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/design-system/editor-preview.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/design-system/policy.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/principles.md": {
+        "kind": "guide",
+        "section": ["Documentation designer", "Design system — principes et usages"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/semantic-catalog.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/style-inventory.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/token-migration.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/token-naming.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/token-organization.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/token-taxonomy.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/design-system/ui-token-consumption.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/design-system/visual-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/distribution/README.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/distribution/ds-auto-01.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/distribution/qualification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/documentation.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Maintenance de la documentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/handoff.md": {
+        "kind": "guide",
+        "section": ["Documentation designer", "Livraison et transmission"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/operations/local-app.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/operations.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/product/agent-chat.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/brief.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/features/design-system-editor.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/features/projects.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/first-handoff-exercise.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/local-deliveries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/loomata-workspace.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/project-data-contract.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/project-lifecycle.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/product/project-start.md": {
+        "kind": "guide",
+        "section": ["Documentation designer", "Prendre en main le projet"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/product/replacing-project-example.md": {
+        "kind": "guide",
+        "section": ["Documentation designer", "Prendre en main le projet"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/product/starter-kit.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/project-state.md": {
+        "kind": "project",
+        "section": ["Documentation designer", "Suivi de projet"],
+        "reason": "Modèle canonique du suivi du projet utilisateur, à conserver non initialisé."
+      },
+      "docs/reviews/core-01-native-e2e.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/core-01-shared-deliveries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-arch-01/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-arch-01-a/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-arch-02/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-08-component-semantic-style-separation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-09-native-style-panels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-11-token-style-catalog.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-12-selected-token-sheet.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-13-catalog-create.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-14-assistance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-15-component-tokens.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-15-token-naming.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-16-token-categories.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-17-hierarchical-navigation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-18-native-sidebar.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-19/execution-checkpoint.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-19/token-classification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-19-storybook-structure-and-token-meaning.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-20-all-category-headings.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-21-component-token-types.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-22-declarative-naming.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-23-clarification-feedback.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-23-explicit-style-intent.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-24-storybook-panel-theme.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-25-appearance-layout.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-26-restore-only.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-27-visible-scope-options.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-28-action-refinements.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-29-contrast-layout.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-30-header-tools.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-31-compact-codex-field.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-32-growing-codex-field.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-33-stable-codex-typing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-34-codex-placeholder.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-35-visible-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-36-direct-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-37-appearance-actions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-38-switchable-scope.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-39-automatic-refresh.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-40-component-appearance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-41-empty-comparison.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-42-quiet-transitions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-43-precise-value-label.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-44-remove-contrast-list.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-45-remove-contrast-acknowledgment.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-46-contrast-level-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-47-compact-contrast-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-50-white-badges-and-scope-labels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-52-tokenize-ui-composition.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-53-css-value-domains.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-58-grouped-properties.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-59-attribution-links.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-ab.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-c.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-d.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-e.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-f.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-64-recipe.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-65.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-72-navigation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-73-storybook-tree.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-edit-75/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-ui-06-foundations-inspector-chat.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ds-ui-06-framer-regression.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/figma-import-02/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/init-01-project-initialization.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/init-02-dedicated-initialization-skill.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/init-03-designer-communication.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/local-app-01.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/mvp-01-common-foundation/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/mvp-01-common-foundation/qualification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/mvp-01-interface-design-agents/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/mvp-01-interface-design-agents/qualification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/mvp-01-scope-and-roadmap.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/port-03/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-01-project-example-label.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-02-common-framing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-03-first-ui-slice.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-chat-preparation/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-macos-loading/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-official-token-bridge/guide.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-official-ui-styles/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-official-ui-styles/inventory.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-project-foundation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-arch-04-style-rollback/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-final-01/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-final-01-b/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-final-01-c/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-final-01-d/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-final-01-e/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/ui-mac-05-direct-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/edit-mode.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/inspector-simplification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/runtime.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/selection-opacity.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/selection-regression.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/shared-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/text-selection.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01/ui-refinements.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01-grapesjs-ui/README.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/reviews/wysiwyg-01-study-architecture.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/security.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Sécurité et configuration privée"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+      },
+      "docs/work-items/agent-chat-01-personal-agent-chat.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/core-01-shared-deliveries.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-arch-01/framing-v1.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-arch-01-design-system-framing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-arch-02/checkpoint.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-arch-02-decision-tokens.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-08-component-semantic-style-separation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-09-native-style-panels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-10-foundation-catalogs.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-11-token-style-catalog.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-12-selected-token-sheet.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-13-catalog-create.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-14-assisted-appearance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-15-component-tokens.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-16-token-categories.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-17-hierarchical-navigation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-18-native-sidebar.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-19-storybook-structure-and-token-meaning.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-20-all-category-headings.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-21-component-token-types.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-22-declarative-naming.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-23-explicit-style-intent.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-24-storybook-panel-theme.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-25-appearance-layout.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-26-restore-only.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-27-visible-scope-options.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-28-action-refinements.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-29-contrast-layout.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-30-header-tools.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-31-compact-codex-field.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-32-growing-codex-field.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-33-stable-codex-typing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-34-codex-placeholder.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-35-visible-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-36-direct-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-37-appearance-actions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-38-switchable-scope.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-39-automatic-refresh.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-40-component-appearance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-41-empty-comparison.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-42-quiet-transitions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-43-precise-value-label.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-44-remove-contrast-list.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-45-remove-contrast-acknowledgment.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-46-contrast-level-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-47-compact-contrast-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-48-contrast-badge-opacity.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-49-outlined-contrast-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-50-white-badges-and-scope-labels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-51-theme-contrast-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-52-tokenize-ui-composition.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-53-css-value-domains.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-54-neutral-unshared-message.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-55-comparison-and-property-labels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-56-spacing-and-property-groups.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-57-unit-and-contrast-tools.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-58-grouped-properties.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-59-attribution-links.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-60-attribution-count.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-61-contrast-badges.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-62-appearance-actions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-63-component-badge-contrast.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-64-ui-lab-migration.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-65-workshop-appearance.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-66-native-property-select.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-67-color-field.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-68-workshop-actions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-69-stable-workshop-watch.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-70-contextual-contrast.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-71-remove-catalog-notice.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-72-workshop-navigation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-73-storybook-tree.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-74-workshop-columns.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-edit-75-google-fonts.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-01-floating-panels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-02-dark-palette.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-03-framer-panels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-04-row-disclosure.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-05-font-type-row.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-06-fixed-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-06-foundations-inspector-chat.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ds-ui-06-framer-regression.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/figma-import-02-component-workflow.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/figma-recon-01-design-reconciliation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/gov-03-self-contained-instructions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/init-01-project-initialization.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/init-02-dedicated-initialization-skill.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/init-03-designer-communication.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/local-app-01-dock-launch.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/mvp-01-common-foundation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/mvp-01-interface-design-agents.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/mvp-01-three-stage-development.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/port-03-autonomous-agent-kit.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-01-project-example-label.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-01-ui-architecture-study.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-02-common-framing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-03-first-ui-slice.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-chat-preparation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-figma-read.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-macos-loading.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-official-chat-styles.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-official-example-styles.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-official-token-bridge.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-project-foundation.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-arch-04-style-rollback.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-desktop-01-desktop-only.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-figma-01-arbitration-save.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-final-01-assisted-cycle-history.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-final-01-complete-assisted-cycle.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-lab-01-column-scroll.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-lab-02-storybook-style.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-lab-03-snapshot-recovery.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-01-header-cleanup.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-02-quiet-workspace.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-03-authorization-prompts.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-04-navigation-labels.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-05-direct-codex-login.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/ui-mac-06-codex-account-menu.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-edit-mode.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-four-value-controls.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-four-value-toggle.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-inspector-color-alpha.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-inspector-focus.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-inspector-simplification.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-inspector-state-header.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-opacity-slider-dimensions.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-opacity-slider-style.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-selection-opacity.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-selection-title-radius-icon.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-shared-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-simplify-token-panel.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-single-property-editor.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-ui-refinements.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-01-visual-inspector.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "docs/work-items/wysiwyg-02-contextual-editing.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+      },
+      "skills/README.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/analyze-brief/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/analyze-design-references/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/backup-and-rollback/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/brief-to-specs/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/data-permissions-migrations/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/deploy-docker-compose/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/design-interactions/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/diagnose-incident/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/implement-feature/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/initialize-project/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/initialize-project/references/environment-setup.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/map-figma-to-components/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/normalize-design-system/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/plan-feature/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/prepare-handoff/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/prepare-release/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/propose-architecture/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/review-design/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/security-review/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/technical-review/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/test-user-flow/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "skills/update-project-docs/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "src/design-system/authority/README.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+      },
+      "docs/guide-whizam/index.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Découvrir Whizam",
+        "order": 0,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/preparer-kit.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Bien démarrer"],
+        "label": "Préparer son kit",
+        "order": 1,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/premier-projet.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Bien démarrer"],
+        "label": "Créer son premier projet",
+        "order": 2,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/assistant.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Travailler avec l’assistant",
+        "order": 3,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/cadrer-version.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Concevoir et faire évoluer son projet"],
+        "label": "Cadrer une première version",
+        "order": 4,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/demander-evolution.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Concevoir et faire évoluer son projet"],
+        "label": "Demander une évolution",
+        "order": 5,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/verifier-decider.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Vérifier et décider",
+        "order": 6,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/reprendre-transmettre.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Reprendre et transmettre",
+        "order": 7,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/questions-frequentes.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Questions fréquentes",
+        "order": 8,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "candidate": "1c807da",
+  "modelVersion": 4,
+  "snapshotVersion": 3,
+  "semanticStyles": 17,
+  "componentTokens": 188,
+  "autonomousComponents": 137,
+  "legacyAliases": 24,
+  "visibleCategoryPages": 26,
+  "rootOrder": [
+    "01 — Primitives",
+    "02 — Semantic Tokens",
+    "03 — Component Tokens",
+    "04 — Components"
+  ],
+  "reserved": [
+    "05 — Patterns",
+    "06 — Templates"
+  ],
+  "savedButton": "#b51a00",
+  "viewports": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

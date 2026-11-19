@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "cases": [
+    "1280x800: two real pages, temporary color preview and durable offline receipt without source write, visual/tree selection, suspended action, ambiguous duplicate refused, keyboard, shared micro-chat/Agents display with simulated transport, real planned request conservation/qualification/explicit isolated start, private direct-Figma form, and no horizontal overflow",
+    "1440x900: two real pages, temporary color preview and durable offline receipt without source write, visual/tree selection, suspended action, ambiguous duplicate refused, keyboard, shared micro-chat/Agents display with simulated transport, real planned request conservation/qualification/explicit isolated start, private direct-Figma form, and no horizontal overflow"
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "apiErrors": [
+    {
+      "status": 503
+    }
+  ]
+}

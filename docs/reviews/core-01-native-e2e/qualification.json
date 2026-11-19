@@ -1,0 +1,35 @@
+{
+  "status": "passed-with-reserves",
+  "driver": "AppKit/WKWebView instrumented E2E; real services; no AX or physical clicks",
+  "cases": [
+    "native toolbar, missing selection and real open-panel cancel",
+    "native direct-open refuses incompatible directory",
+    "already-open Storybook automatically updates after the real WKWebView save",
+    "native start and duplicate click; WKWebView hydrated",
+    "WKWebView draft preview and cancellation via real native confirmation sheet",
+    "WKWebView save confirmed after durable reread",
+    "native stop/restart preserves recorded value",
+    "native NSAlert cancellation preserves window and draft",
+    "native final close notification",
+    "native process exits after final close while services remain ready",
+    "Storybook independently renders the value saved in WKWebView, not the canceled draft",
+    "final common-service stop closes both test ports"
+  ],
+  "reserves": [
+    "Native folder-picker acceptance requires manual verification; valid and incompatible folders are tested through the production direct-open path."
+  ],
+  "date": "2026-11-09",
+  "sourceBase": "4c3e834",
+  "run": "run-xwK2MH",
+  "nodeVersion": "v24.22.0",
+  "humanAcceptance": "deferred",
+  "contractTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "sourceHashes": {
+    "macos/Prototype.swift": "82534bed6d70df2652a743d3f9726fa9b2f94361b52940e34661362ebf8f4d39",
+    "macos/tests/PrototypeE2E.swift": "5d7ae74e995ca1760546430e55c2c810b15fd40f9838c98b5c0b165eb3641115",
+    "scripts/test-macos-prototype.mjs": "2d39458c2d8bc4b73fe7d510200650715e81bcddb6e65f3c2aadcf42713f5944"
+  }
+}

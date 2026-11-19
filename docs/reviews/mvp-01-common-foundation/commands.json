@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-12",
+  "candidate": "7ff7f8c",
+  "campaigns": [
+    {
+      "version": "a98a0e5 + 5a9e2b6 test natif",
+      "checks": [
+        {
+          "command": "npm run typecheck",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run lint",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run format:check",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm test",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:boundaries",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run build",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run build-storybook",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:integration",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:workspace",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 19
+        },
+        {
+          "command": "npm run test:design-system",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 114
+        },
+        {
+          "command": "npm run test:design-editor:server",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 66
+        },
+        {
+          "command": "npm run docs:design-system:check",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run validate:agent-kit",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:loomata",
+          "exitCode": 1,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:workspace:ui",
+          "exitCode": 0,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "version": "4ee6dc2",
+      "checks": [
+        {
+          "command": "npm run typecheck",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run lint",
+          "exitCode": 1,
+          "timedOut": false
+        },
+        {
+          "command": "npm run format:check",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run build",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run build-storybook",
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "command": "npm run test:workspace",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 21
+        },
+        {
+          "command": "npm run test:core-host",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 4
+        },
+        {
+          "command": "npm run test:agent-chat",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 13
+        },
+        {
+          "command": "npm run test:project-lifecycle",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 8
+        },
+        {
+          "command": "npm run test:exports",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 6
+        },
+        {
+          "command": "npm run test:design-editor:server",
+          "exitCode": 0,
+          "timedOut": false,
+          "tests": 66
+        },
+        {
+          "command": "npm run validate:agent-kit",
+          "exitCode": 0,
+          "timedOut": false
+        }
+      ]
+    }
+  ],
+  "scopedRetests": [
+    {
+      "command": "npm run lint",
+      "version": "ec219c0",
+      "exitCode": 0
+    },
+    {
+      "command": "LOOMATA_SDK=<installed SDK 26.5> LOOMATA_WORKSPACE_TEST=1 npm run test:loomata",
+      "version": "7ff7f8c",
+      "exitCode": 0,
+      "nativeCases": 15,
+      "workspacePreviewVerified": true,
+      "privatePathsDenied": true
+    }
+  ],
+  "applicationTree": "a302ed7a4bf43089d2ced9492514d8e62d78f53a",
+  "status": "technically-qualified",
+  "humanAcceptance": "deferred"
+}

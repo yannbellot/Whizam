@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "cases": [
+    "dedicated official account connected; private test history isolated",
+    "real contextual proposal approved through the finite shared control; main preserved",
+    "same element conversation returned by micro-chat and Agents after an inspector rename",
+    "real contextual question and explicit user answer preserved in the same thread without source mutation",
+    "real turn interrupted without pending approval or duplicate write",
+    "same official thread resumed after interruption"
+  ],
+  "status": "passed"
+}

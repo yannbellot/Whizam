@@ -1,0 +1,122 @@
+{
+  "status": "slice-b-technically-qualified-awaiting-human-review",
+  "date": "2026-11-10",
+  "candidate": "8ec0562670d3b5f19ea682637421974a380ad116",
+  "sourceBase": "application/",
+  "scope": "Loomata itself, native integrated navigation",
+  "nativeScenarios": 12,
+  "browserScenarios": 34,
+  "unitTests": 149,
+  "coreAndSupervisorTests": 13,
+  "checks": [
+    {
+      "command": "format:check",
+      "result": "passed",
+      "log": "regression-0.log",
+      "sha256": "d892ea456647858508624d9d1cf674cedc057aaeed3bbbf98483762f3cb181e1"
+    },
+    {
+      "command": "lint",
+      "result": "passed",
+      "log": "regression-1.log",
+      "sha256": "d62b0fdf29bfa687a8685555b114efca1cea2ce4a2c916292dcceb02c16eef50"
+    },
+    {
+      "command": "typecheck",
+      "result": "passed",
+      "log": "final-typecheck.log",
+      "sha256": "2aa50ff94ccc322e1f6673e15ba50c7226844457bdcc73f09f160589b4b9283a"
+    },
+    {
+      "command": "test (149)",
+      "result": "passed",
+      "log": "regression-2.log",
+      "sha256": "83fb436853818e42528ca1b666209ced0ec3659ed1220a249ba523a39a74d247"
+    },
+    {
+      "command": "test:design-editor (34)",
+      "result": "passed",
+      "log": "workshop-final.log",
+      "sha256": "20b82d562247a6efc708c5e91f5d0ff75136f29d9ccf6cc2d27a8299601e4efb"
+    },
+    {
+      "command": "test:core-host (4)",
+      "result": "passed",
+      "log": "check-3.log",
+      "sha256": "968ec0bbccbf226a89f4368319186c79fb385f27e1f07246e198727373b3fec3"
+    },
+    {
+      "command": "test:local-app (9)",
+      "result": "passed",
+      "log": "check-4.log",
+      "sha256": "bf1c858b87a3f2c1b2959914a3b3635237173bdb4b57059453a9f8a69853dc06"
+    }
+  ],
+  "native": {
+    "cases": [
+      "opening Loomata starts owned services and displays UI Lab for the application source kit",
+      "idempotent start reuses the same native editor document",
+      "Storybook opens inside Loomata and does not render the unsaved draft",
+      "project preview loads the real source home in the same window, without writer bootstrap",
+      "UI Lab → Storybook → preview → UI Lab retains the exact editor, reader and draft",
+      "native document reload asks before discarding the draft and preserves it on cancellation",
+      "JavaScript draft confirmation is relayed to native sheet and preserves by default",
+      "real UI Lab save propagates to already-open integrated Storybook",
+      "remote and cross-service navigation are denied before leaving the local reader",
+      "stop and close confirmations retain the workspace and draft when cancelled",
+      "native Quit menu cancellation preserves the same unsaved workspace",
+      "confirmed stop releases the views; restart creates a fresh editor with the saved value"
+    ],
+    "driver": "Native AppKit actions and real WKWebView; no physical clicks",
+    "status": "passed"
+  },
+  "sourceReview": {
+    "root": "application",
+    "interactive": true,
+    "loadErrors": [],
+    "nativeTabsPressed": [
+      "UI Lab",
+      "Storybook",
+      "Aperçu du projet",
+      "UI Lab"
+    ],
+    "sameBundleReused": true,
+    "bundleRelative": "application/.runtime.local/loomata/build-SRk01W/Loomata.app",
+    "nativeSHA256": "818aad7333a801cfff958c37ed1db25843d8ef474e10b3bbb9bd93b765c56560",
+    "permissions": "Documents access manually authorized by user for tests and review"
+  },
+  "versions": {
+    "node": "24.22.0",
+    "swift": "6.3.3",
+    "sdk": "MacOSX26.5",
+    "macOS": "26.6",
+    "architecture": "arm64"
+  },
+  "guards": {
+    "singleWriter": true,
+    "previewBootstrap": false,
+    "storybookBootstrap": false,
+    "previewUnauthenticatedWriteStatus": 403,
+    "storybookWriteStatus": 404,
+    "remoteAndCrossServiceNavigationDenied": true,
+    "DSAuthoritiesUnchanged": true,
+    "closedManifestPathsUnchanged": true
+  },
+  "reviews": "sequential same agent, not independent",
+  "remaining": [
+    "project creation and business database orchestration (C)",
+    "integrated general assistant and native sign-in qualification (D)",
+    "ZIP and bundled runtime/distribution (E)",
+    "physical keyboard and VoiceOver exhaustive review",
+    "final human acceptance"
+  ],
+  "retainedFailures": [
+    "pilot Swift async autoclosure: corrected before successful native run",
+    "default SDK 27 incompatible with compiler: bounded retry on installed 26.5, no global setting change",
+    "first native start blocked by macOS Documents permission: user authorized",
+    "test and review identity initially shared: separate test identifiers and stable reused production bundle",
+    "browser cache empty in QA runner: existing cache cloned, 34 tests then passed",
+    "source read-only probe label expectation and later capture timeout: retained as failed attempts; final authorized production bundle verified interactive and captured"
+  ],
+  "publication": false
+}

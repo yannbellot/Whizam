@@ -1,0 +1,7 @@
+{
+  "cases": [
+    "same native bundle relaunch restores last selected project and its saved DS without rebuilding or recreating it"
+  ],
+  "driver": "Native AppKit actions and real WKWebView; no physical clicks",
+  "status": "passed"
+}

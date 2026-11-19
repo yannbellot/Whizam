@@ -1,0 +1,7 @@
+{
+  "reason": "The deleted EditorPreview returned one outer div around Story and footer. F removes only that host wrapper.",
+  "removedNodesPerSnapshot": 1,
+  "originalReference": "Témoin E 055fbbc ; données brutes conservées dans les journaux locaux du fabricant, sous .local/ds-edit-64-f/renders/original-before",
+  "productPropertiesAndGeometryIgnored": false,
+  "pngNormalization": false
+}

@@ -1,0 +1,216 @@
+diff --git a/src/ui-lab/editor/AppearancePanel.tsx b/src/ui-lab/editor/AppearancePanel.tsx
+--- a/src/ui-lab/editor/AppearancePanel.tsx
++++ b/src/ui-lab/editor/AppearancePanel.tsx
+@@ -701,22 +701,12 @@
+                 <div className={styles.colorRow}>
+                   <div className={styles.colorField}>
+                     <span id={colorLabel}>Couleur visuelle</span>
+-                    {visualColor.startsWith('oklch(') ? (
+-                      <span
+-                        aria-labelledby={colorLabel}
+-                        title={visualColor}
+-                        style={{ color: visualColor }}
+-                      >
+-                        ■
+-                      </span>
+-                    ) : (
+-                      <input
+-                        aria-labelledby={colorLabel}
+-                        type="color"
+-                        value={visualColor}
+-                        onChange={(event) => enter(event.target.value)}
+-                      />
+-                    )}
++                    <input
++                      aria-labelledby={colorLabel}
++                      type="color"
++                      value={visualColor}
++                      onChange={(event) => enter(event.target.value)}
++                    />
+                   </div>
+                   <PreciseValue
+                     value={value}
+diff --git a/src/ui-lab/editor/scenes.tsx b/src/ui-lab/editor/scenes.tsx
+--- a/src/ui-lab/editor/scenes.tsx
++++ b/src/ui-lab/editor/scenes.tsx
+@@ -1,4 +1,3 @@
+-import OfficialFixture from '../../App'
+ import { createElement, type ComponentType } from 'react'
+ import button, * as buttons from '../../design-system/components/Button/Button.examples'
+ import field, * as fields from '../../design-system/components/Field.examples'
+@@ -71,13 +70,6 @@
+     })
+ }
+ export const scenes: Scene[] = [
+-  {
+-    id: 'official-theme/Fixture',
+-    label: 'Projet fictif · Thème officiel React Aria',
+-    path: ['Projet fictif', 'Thème officiel React Aria'],
+-    targets: ['official-theme'],
+-    render: () => <OfficialFixture />,
+-  },
+   ...group(button, buttons, 'button', 'Button'),
+   ...group(field, fields, 'field', 'Field'),
+   ...group(notice, notices, 'notice', 'Notice'),
+diff --git a/app/root.tsx b/app/root.tsx
+--- a/app/root.tsx
++++ b/app/root.tsx
+@@ -1,4 +1,3 @@
+-import officialPageURL from '../src/react-aria-examples/page.css?url'
+ import { useEffect, type ReactNode } from 'react'
+ import {
+   isRouteErrorResponse,
+@@ -8,13 +7,12 @@
+   Scripts,
+   ScrollRestoration,
+   useRouteError,
+-  useLocation,
+   useRouteLoaderData,
+   type LoaderFunctionArgs,
+ } from 'react-router'
+-import tokensURL from '../src/styles/tokens.generated.css?url'
+-import globalURL from '../src/styles/global.css?url'
+-import projectURL from '../src/styles/project.css?url'
++import '../src/styles/tokens.generated.css'
++import '../src/styles/global.css'
++import '../src/styles/project.css'
+ import { bindInterface } from '../src/core/interface-binding'
+ 
+ export const meta = () => [
+@@ -34,7 +32,6 @@
+ export const shouldRevalidate = () => true
+ export function Layout({ children }: { children: ReactNode }) {
+   const data = useRouteLoaderData<typeof loader>('root')
+-  const { pathname } = useLocation()
+   return (
+     <html lang="fr">
+       <head>
+@@ -50,11 +47,6 @@
+             <meta name="adl-design-editor-session" content={data.editor.token} />
+           </>
+         )}
+-        {pathname === '/' && <link rel="stylesheet" href={officialPageURL} />}
+-        {pathname !== '/' &&
+-          [tokensURL, globalURL, projectURL].map((href) => (
+-            <link key={href} rel="stylesheet" href={href} />
+-          ))}
+         <Meta />
+         <Links />
+       </head>
+diff --git a/.storybook/main.ts b/.storybook/main.ts
+--- a/.storybook/main.ts
++++ b/.storybook/main.ts
+@@ -1,7 +1,7 @@
+ import type { StorybookConfig } from '@storybook/react-vite'
+ 
+ const config: StorybookConfig = {
+-  stories: ['../src/App.stories.tsx', '../src/react-aria-examples/*.stories.tsx'],
++  stories: ['../src/**/*.stories.tsx', '../app/**/*.stories.tsx', './*.mdx'],
+   addons: ['@storybook/addon-docs'],
+   features: { sidebarOnboardingChecklist: false, menuOnboardingChecklist: false },
+   staticDirs: ['../public'],
+diff --git a/.storybook/preview.tsx b/.storybook/preview.tsx
+--- a/.storybook/preview.tsx
++++ b/.storybook/preview.tsx
+@@ -1,21 +1,27 @@
+-import { OfficialTheme } from '../src/design-system/components/OfficialTheme'
+ import type { Preview } from '@storybook/react-vite'
+-import { themes } from 'storybook/theming'
+-import '../src/react-aria-examples/page.css'
++import { version } from '../package.json'
++import '../src/styles/tokens.generated.css'
++import '../src/styles/global.css'
++import '../src/styles/project.css'
+ 
+ const preview: Preview = {
++  parameters: {
++    layout: 'padded',
++    options: {
++      storySort: {
++        order: ['01 — Foundations', '02 — Components', '03 — Patterns'],
++      },
++    },
++  },
+   decorators: [
+     (Story) => (
+-      <OfficialTheme>
++      <>
+         <Story />
+-      </OfficialTheme>
++        <footer style={{ marginTop: '2rem', fontSize: '0.875rem' }}>
++          Agentic Design Lab — {version} — démonstration locale provisoire
++        </footer>
++      </>
+     ),
+   ],
+-  parameters: {
+-    controls: { matchers: { color: /(background|color)$/i } },
+-    docs: {
+-      theme: window.matchMedia('(prefers-color-scheme: dark)').matches ? themes.dark : themes.light,
+-    },
+-  },
+ }
+ export default preview
+diff --git a/src/App.tsx b/src/App.tsx
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -1,36 +1,10 @@
+-import { OfficialTheme } from './design-system/components/OfficialTheme'
+-import { useState } from 'react'
+-import { Button } from './react-aria-examples/Button'
+-import { Form } from './react-aria-examples/Form'
+-import { TextField } from './react-aria-examples/TextField'
+-
++import definition from './design-system/patterns/FormFeedback.examples'
++import styles from './App.module.css'
++const FormFeedback = definition.component
+ export default function App() {
+-  const [submitted, setSubmitted] = useState(false)
+-  return (
+-    <OfficialTheme>
+-      <main aria-label="Projet fictif — UI-ARCH-04">
+-        <Form
+-          onSubmit={(event) => {
+-            event.preventDefault()
+-            setSubmitted(true)
+-          }}
+-        >
+-          <TextField
+-            name="document-name"
+-            label="Nom du document"
+-            placeholder="Saisissez un nom fictif"
+-            isRequired
+-            errorMessage="Indiquez un nom pour continuer."
+-            onChange={() => setSubmitted(false)}
+-          />
+-          <Button type="submit">Valider l’exemple</Button>
+-          {submitted && (
+-            <output className="react-aria-Label" aria-live="polite">
+-              Exemple validé. Aucune donnée enregistrée.
+-            </output>
+-          )}
+-        </Form>
+-      </main>
+-    </OfficialTheme>
+-  )
++  return <main className={styles.page}><section>
++    <h1>Projet fictif — UI-ARCH-04</h1>
++    <p>Copie de recette : Button, Field et validation du socle. Aucune donnée métier enregistrée.</p>
++    <FormFeedback />
++  </section></main>
+ }
+diff --git a/src/App.stories.tsx b/src/App.stories.tsx
+--- a/src/App.stories.tsx
++++ b/src/App.stories.tsx
+@@ -1,10 +1,5 @@
+ import type { Meta, StoryObj } from '@storybook/react-vite'
+ import App from './App'
+-const meta = {
+-  id: 'ui-arch-04-fixture',
+-  title: 'Projet fictif/Recette UI-ARCH-04',
+-  component: App,
+-  parameters: { layout: 'fullscreen' },
+-} satisfies Meta<typeof App>
++const meta = { id: 'ui-arch-04-fixture', title: 'Projet fictif/Recette UI-ARCH-04', component: App, parameters: { layout: 'fullscreen' } } satisfies Meta<typeof App>
+ export default meta
+ export const Preview: StoryObj<typeof meta> = {}

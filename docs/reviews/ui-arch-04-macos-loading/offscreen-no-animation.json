@@ -1,0 +1,15 @@
+[
+  {
+    "errors" : [
+
+    ],
+    "firstFrame" : false,
+    "height" : 900,
+    "hydrated" : true,
+    "ready" : "complete",
+    "references" : true,
+    "transfer" : "undefined",
+    "ua" : "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/605.1.15 (KHTML, like Gecko)",
+    "width" : 1280
+  }
+]

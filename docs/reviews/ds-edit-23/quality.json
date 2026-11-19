@@ -1,0 +1,22 @@
+[
+  {
+    "script": "typecheck",
+    "status": 0
+  },
+  {
+    "script": "lint",
+    "status": 0
+  },
+  {
+    "script": "format:check",
+    "status": 0
+  },
+  {
+    "script": "docs:design-system:check",
+    "status": 0
+  },
+  {
+    "script": "validate:agent-kit",
+    "status": 0
+  }
+]

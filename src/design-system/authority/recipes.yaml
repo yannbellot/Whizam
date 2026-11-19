@@ -1,0 +1,528 @@
+schemaVersion: 3
+recipes:
+  - id: primitive.composition.value-0f308cfb7ef3
+    order: 0
+    parts:
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " auto"
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-93bc5d02dc2a
+    order: 2
+    parts:
+      - collapse
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-91d06f966b2f
+    order: 3
+    parts:
+      - reference: primitive.composition.parameter-a69226318c312be7fedd
+      - " solid currentColor"
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-71d3b10ed342
+    order: 5
+    parts:
+      - reference: primitive.composition.parameter-44b0f3e6aacf7ce29f2b
+      - " solid currentColor"
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-1ff96226851b
+    order: 7
+    parts:
+      - min(
+      - reference: primitive.composition.parameter-9ac4e8751fdc358a6f3a
+        unit: "%"
+      - " - "
+      - reference: primitive.composition.parameter-cad7fe80859942c41eae
+      - ", "
+      - reference: primitive.composition.parameter-eabb73b562f1e6e19da5
+      - )
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-5fb29ff18bea
+    order: 8
+    parts:
+      - reference: primitive.composition.parameter-d34e35a75f21e8e77a43
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-c0819ab76973
+    order: 11
+    parts:
+      - clamp(
+      - reference: primitive.composition.parameter-198d8eaa1276add80a83
+      - ", "
+      - reference: primitive.composition.parameter-f62a26f937b77c2c8bdc
+        unit: vw
+      - ", "
+      - reference: primitive.composition.parameter-d34e35a75f21e8e77a43
+      - )
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-67623b31560f
+    order: 12
+    parts:
+      - reference: primitive.composition.parameter-05340de5e6ca7300b362
+        unit: em
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-b6ea60f7e2b0
+    order: 13
+    parts:
+      - reference: primitive.composition.parameter-252cd0153b7582ecee27
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-0857fa0bac33
+    order: 15
+    parts:
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-d01e8cb8634c58891151
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-52ab8565252e
+    order: 17
+    parts:
+      - reference: primitive.composition.parameter-4195a36ac5cdc03a2a0c
+        unit: em
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-ab14b3e03d96
+    order: 20
+    parts:
+      - reference: primitive.composition.parameter-d01e8cb8634c58891151
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-c6f676ac85b6af568afb
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-cbb01c396fd7
+    order: 22
+    parts:
+      - reference: primitive.composition.parameter-c6f676ac85b6af568afb
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-112b25847020
+    order: 25
+    parts:
+      - repeat(auto-fit, minmax(
+      - reference: primitive.composition.parameter-48301e40b2a009a5a902
+      - ", "
+      - reference: primitive.composition.parameter-57df7e17fbd3739f95d3
+        unit: fr
+      - ))
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-e56bde070d03
+    order: 27
+    parts:
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-252cd0153b7582ecee27
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-0a28863d28e3
+    order: 33
+    parts:
+      - "background "
+      - reference: primitive.composition.parameter-8ccd5f7abacf65d688a4
+      - " "
+      - reference: primitive.composition.parameter-7e7ff85b654e5452081a
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-a8ef04e19604
+    order: 37
+    parts:
+      - "transform "
+      - reference: primitive.composition.parameter-8ccd5f7abacf65d688a4
+      - " "
+      - reference: primitive.composition.parameter-7e7ff85b654e5452081a
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-93f58d120ba0
+    order: 38
+    parts:
+      - translateX(
+      - reference: primitive.composition.parameter-c6f676ac85b6af568afb
+      - )
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-9414386e91ac
+    order: 41
+    parts:
+      - reference: primitive.composition.parameter-d01a6e78d1a5b7c9da18
+      - " "
+      - reference: primitive.composition.parameter-f5b9763ab0e4ff101afd
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-ebda99bde133
+    order: 43
+    parts:
+      - min(
+      - reference: primitive.composition.parameter-a6d218ab81bca88cf18f
+      - ", calc("
+      - reference: primitive.composition.parameter-9ac4e8751fdc358a6f3a
+        unit: vw
+      - " - "
+      - reference: primitive.composition.parameter-cad7fe80859942c41eae
+      - ))
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-569bd25dce87
+    order: 44
+    parts:
+      - translate(
+      - reference: primitive.composition.parameter-98a0822dd87fab47b9be
+        unit: "%"
+      - ", "
+      - reference: primitive.composition.parameter-98a0822dd87fab47b9be
+        unit: "%"
+      - )
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-b875e5d71c07
+    order: 46
+    parts:
+      - reference: primitive.composition.parameter-252cd0153b7582ecee27
+      - " "
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - " "
+      - reference: primitive.composition.parameter-c6f676ac85b6af568afb
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.value-d2cf63c704ae
+    order: 48
+    parts:
+      - uppercase
+    provenance:
+      kind: ui-composition-migration
+      status: proposed
+      reason: Valeur CSS existante conservée sans changement visuel ; DS-EDIT-52.
+  - id: primitive.composition.editor-workspace-4
+    order: 52
+    parts:
+      - reference: primitive.composition.workbench-weight
+      - " "
+      - reference: primitive.composition.workbench-type
+      - /
+      - reference: primitive.composition.workbench-line-height
+      - " "
+      - reference: primitive.composition.workbench-font-family
+    provenance:
+      kind: designer-edit
+      status: proposed
+      reason: Colonnes fixes et typographie compacte propres au UI Lab, rapprochées de
+        Storybook ; UI-LAB-02.
+  - id: primitive.composition.editor-workspace-6
+    order: 54
+    parts:
+      - reference: primitive.composition.workbench-side-width
+      - " minmax("
+      - reference: primitive.composition.workbench-zero
+      - ", "
+      - reference: primitive.composition.parameter-57df7e17fbd3739f95d3
+        unit: fr
+      - ") "
+      - reference: primitive.composition.workbench-side-width
+    provenance:
+      kind: designer-edit
+      status: proposed
+      reason: Colonnes fixes et typographie compacte propres au UI Lab, rapprochées de
+        Storybook ; UI-LAB-02.
+  - id: primitive.composition.editor-canvas-gutter
+    order: 180
+    parts:
+      - calc(
+      - reference: primitive.composition.workbench-side-width
+      - " + "
+      - reference: primitive.composition.editor-preview-inset
+      - )
+    provenance:
+      kind: designer-edit
+      status: proposed
+      reason: Zone de contenu dégagée entre les panneaux flottants ; DS-UI-01.
+  - id: primitive.composition.editor-workspace-24
+    order: 66
+    parts:
+      - reference: primitive.composition.parameter-24a3392e10ee7aec4817
+        unit: "%"
+    provenance:
+      kind: designer-edit
+      status: proposed
+      reason: Habillage stable propre à l’atelier ; hors projection du produit,
+        DS-EDIT-64 C.
+  - id: primitive.composition.editor-appearance-contrast-fail
+    order: 75
+    parts:
+      - linear-gradient(to top right, transparent calc(
+      - reference: primitive.composition.parameter-dbde0f225cc1149de3df
+        unit: "%"
+      - " - "
+      - reference: primitive.composition.parameter-8968b7e734341da14ea9
+      - ), currentColor calc(
+      - reference: primitive.composition.parameter-dbde0f225cc1149de3df
+        unit: "%"
+      - " - "
+      - reference: primitive.composition.parameter-8968b7e734341da14ea9
+      - ), currentColor calc(
+      - reference: primitive.composition.parameter-dbde0f225cc1149de3df
+        unit: "%"
+      - " + "
+      - reference: primitive.composition.parameter-8968b7e734341da14ea9
+      - ), transparent calc(
+      - reference: primitive.composition.parameter-dbde0f225cc1149de3df
+        unit: "%"
+      - " + "
+      - reference: primitive.composition.parameter-8968b7e734341da14ea9
+      - ))
+  - id: primitive.composition.editor-color-row-columns
+    order: 76
+    parts:
+      - minmax(
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - ", "
+      - reference: primitive.composition.parameter-57df7e17fbd3739f95d3
+        unit: fr
+      - ) minmax(
+      - reference: primitive.composition.parameter-9bb76d8cfd8354020e3c
+      - ", "
+      - reference: primitive.composition.parameter-57df7e17fbd3739f95d3
+        unit: fr
+      - )
+outputs:
+  - id: recipe.projects.page.margin.1
+    reference: primitive.composition.value-0f308cfb7ef3
+    usage: margin de .page ; réglage de composition sans rôle sémantique partagé
+      établi.
+    file: app/features/projects/projects.module.css
+    selector: .page
+    property: margin
+    order: 0
+  - id: recipe.foundations.table.border-collapse.1
+    reference: primitive.composition.value-93bc5d02dc2a
+    usage: border-collapse de .table ; réglage de composition sans rôle sémantique
+      partagé établi.
+    file: src/design-system/foundations.module.css
+    selector: .table
+    property: border-collapse
+    order: 4
+  - id: recipe.foundations.table-tr-selected-th.border-inline-start.3
+    reference: primitive.composition.value-91d06f966b2f
+    usage: border-inline-start de .table tr.selected > th ; réglage de composition
+      sans rôle sémantique partagé établi.
+    file: src/design-system/foundations.module.css
+    selector: .table tr.selected > th
+    property: border-inline-start
+    order: 6
+  - id: recipe.foundations.table-tr-selected-button.border.6
+    reference: primitive.composition.value-71d3b10ed342
+    usage: border de .table tr.selected button ; réglage de composition sans rôle
+      sémantique partagé établi.
+    file: src/design-system/foundations.module.css
+    selector: .table tr.selected button
+    property: border
+    order: 9
+  - id: recipe.base-ui-demos.demos.grid-template-columns.2
+    reference: primitive.composition.value-112b25847020
+    usage: grid-template-columns de .demos ; réglage de composition sans rôle
+      sémantique partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .demos
+    property: grid-template-columns
+    order: 45
+  - id: recipe.base-ui-demos.label.margin.6
+    reference: primitive.composition.value-e56bde070d03
+    usage: margin de .label ; réglage de composition sans rôle sémantique partagé
+      établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .label
+    property: margin
+    order: 49
+  - id: recipe.base-ui-demos.switch.transition.15
+    reference: primitive.composition.value-0a28863d28e3
+    usage: transition de .switch ; réglage de composition sans rôle sémantique
+      partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .switch
+    property: transition
+    order: 58
+  - id: recipe.base-ui-demos.thumb.transition.22
+    reference: primitive.composition.value-a8ef04e19604
+    usage: transition de .thumb ; réglage de composition sans rôle sémantique
+      partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .thumb
+    property: transition
+    order: 65
+  - id: recipe.base-ui-demos.switch-data-checked-thumb.transform.23
+    reference: primitive.composition.value-93f58d120ba0
+    usage: transform de .switch[data-checked] .thumb ; réglage de composition sans
+      rôle sémantique partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .switch[data-checked] .thumb
+    property: transform
+    order: 66
+  - id: recipe.base-ui-demos.trigger-close.padding.28
+    reference: primitive.composition.value-9414386e91ac
+    usage: |-
+      padding de .trigger,
+      .close ; réglage de composition sans rôle sémantique partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: |-
+      .trigger,
+      .close
+    property: padding
+    order: 71
+  - id: recipe.base-ui-demos.dialog.width.30
+    reference: primitive.composition.value-ebda99bde133
+    usage: width de .dialog ; réglage de composition sans rôle sémantique partagé
+      établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .dialog
+    property: width
+    order: 73
+  - id: recipe.base-ui-demos.dialog.transform.31
+    reference: primitive.composition.value-569bd25dce87
+    usage: transform de .dialog ; réglage de composition sans rôle sémantique
+      partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .dialog
+    property: transform
+    order: 74
+  - id: recipe.base-ui-demos.dialogdescription.margin.37
+    reference: primitive.composition.value-b875e5d71c07
+    usage: margin de .dialogDescription ; réglage de composition sans rôle
+      sémantique partagé établi.
+    file: src/ui-lab/demos/BaseUiDemos.module.css
+    selector: .dialogDescription
+    property: margin
+    order: 80
+  - id: recipe.catalog.swatch.border.default
+    reference: primitive.composition.value-71d3b10ed342
+    usage: Géométrie de l’échantillon couleur commun aux catalogues ; border.
+    file: src/design-system/foundations.module.css
+    selector: .swatch
+    property: border
+    order: 97
+  - id: recipe.editor.workspace.4
+    reference: primitive.composition.editor-workspace-4
+    usage: font de .workshop ; habillage de l’atelier indépendant des réglages du
+      produit.
+    file: src/ui-lab/editor/workspace.module.css
+    selector: .workshop
+    property: font
+    order: 101
+  - id: recipe.editor.workspace.6
+    reference: primitive.composition.editor-workspace-6
+    usage: grid-template-columns de .layout ; habillage de l’atelier indépendant des
+      réglages du produit.
+    file: src/ui-lab/editor/workspace.module.css
+    selector: .layout
+    property: grid-template-columns
+    order: 103
+  - id: recipe.editor.workspace.24
+    reference: primitive.composition.editor-workspace-24
+    usage: height de .preview iframe ; habillage de l’atelier indépendant des
+      réglages du produit.
+    file: src/ui-lab/editor/workspace.module.css
+    selector: .preview iframe
+    property: height
+    order: 121
+  - id: recipe.editor.appearance.contrast-fail
+    reference: primitive.composition.editor-appearance-contrast-fail
+    usage: "Habillage UI Lab du contrôle Apparence : contrast-fail ; indépendant des
+      réglages du produit."
+    file: src/ui-lab/editor/appearance.module.css
+    selector: .contrastFail::after
+    property: background
+    order: 131
+  - id: recipe.editor.color-row-columns
+    reference: primitive.composition.editor-color-row-columns
+    usage: Deux champs de couleur alignés en colonnes égales dans UI Lab.
+    file: src/ui-lab/editor/appearance.module.css
+    selector: .colorRow
+    property: grid-template-columns
+    order: 132
+  - id: recipe.editor.navigation.4
+    reference: primitive.composition.value-cbb01c396fd7
+    usage: margin du menu latéral UI Lab ; habillage de navigation hors réglages
+      produit, DS-EDIT-72.
+    file: src/ui-lab/editor/navigation.module.css
+    selector: .menu h2
+    property: margin
+    order: 136
+  - id: recipe.editor.navigation.14
+    reference: primitive.composition.editor-workspace-24
+    usage: max-height du menu latéral UI Lab ; habillage de navigation hors réglages
+      produit, DS-EDIT-72.
+    file: src/ui-lab/editor/navigation.module.css
+    selector: .groups
+    property: max-height
+    order: 146
+  - id: recipe.editor.canvas-gutter
+    reference: primitive.composition.editor-canvas-gutter
+    usage: Réserver le contenu central sans réduire la surface de l’aperçu sous les
+      panneaux flottants ; DS-UI-01.
+    file: src/ui-lab/editor/workspace.module.css
+    selector: .canvas
+    property: padding-inline
+    order: 180

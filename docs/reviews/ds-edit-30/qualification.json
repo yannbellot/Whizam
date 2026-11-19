@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "toolsInRightHeader": true,
+      "refreshVisible": true,
+      "connectionVisible": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "toolsInRightHeader": true,
+      "refreshVisible": true,
+      "connectionVisible": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "code": [
+    {
+      "file": ".storybook/manager.tsx",
+      "sha256": "a11985c34c0f64a066ee68ea72b7c9b0ce703a817e744d92f4578a6c83c99a2a"
+    },
+    {
+      "file": ".storybook/editor/HeaderTools.tsx",
+      "sha256": "811d83da927af7c10e7f18d823844e1edd7cc4df9caa81ddd474c661f58a804e"
+    },
+    {
+      "file": ".storybook/editor/Panel.tsx",
+      "sha256": "bd6349c335013370b33bcda76eb82cca42b920360acf733c671dbc6f9d5c31d6"
+    },
+    {
+      "file": ".storybook/editor/server/manifest.mjs",
+      "sha256": "e092cafd65200d286673643cf22eae6af036e9e8b8b61e3cf07d4df42619a465"
+    }
+  ]
+}

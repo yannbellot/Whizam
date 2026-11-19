@@ -1,0 +1,36 @@
+{
+  "receipt": {
+    "status": "saved",
+    "requestId": "a9e46128-86c5-4d33-87fb-8af3066c37e8",
+    "revision": "fcbd30826e7e7741cb6df5caaecec7ee45743f0d2e576756ccd1ae780a870e11"
+  },
+  "revision": "fcbd30826e7e7741cb6df5caaecec7ee45743f0d2e576756ccd1ae780a870e11",
+  "rootId": "f3dd3d2b8ebfe76fb64770fa0f5455bcbeca7d6a7eaa7b1524da750e9c26471f",
+  "generation": "53c086d7fa6247fcc772d7f613005e1042ea07d3c1f15f6796a02210ce476b17",
+  "hashes": {
+    "src/design-system/authority/primitives.yaml": "66f89ea2fea09512183948e8d851856e92b4ff9ceb7d676e9246133e37602b89",
+    "src/design-system/authority/semantic-tokens.yaml": "5287f4a6d5034a35da7d8d0ef1efc7b0ffa3e907460fd1d537e064214cfbffcb",
+    "src/design-system/Foundations.design.yaml": "66db76205741d7fa524bf3e501ee54833907ba943287cb98fdc7e22cbb7edd96",
+    "src/design-system/components/Button/Button.design.yaml": "ca654a4c310762d8aa12ce41db5e2dc26faa6abfef49cbd12031da3fa35bf3df",
+    "src/design-system/components/Field.design.yaml": "589713f4aa621692711819e135a2178afc4798324e0ed8a26b26a98e2980e713",
+    "src/design-system/components/SelectField.design.yaml": "e91a233d66c27ec09f9ba19116dff827c283fc1dd55784264704d6eb60c1dca3",
+    "src/design-system/components/Notice.design.yaml": "ec457ac1d114e076bf8f0f7c14615132398577e1bd48714a43268954ada9e626",
+    "src/design-system/components/Panel.design.yaml": "c7158ec463a2884e57f7b9acb3308e3a365e7363375d0340254b8d1f63d818b8",
+    "src/design-system/authority/semantic-catalog.yaml": "8785bfdfa8dbea2e1cc0deb00c22eabbe0faa8a9187ef3cb0100bd5bef92ce9c",
+    "src/design-system/authority/ui-composition.yaml": "403b5531436da72a93637c7f0f4f271d4011ff9aab1dfaa2ffa50f2e1e59e09e",
+    "src/styles/tokens.generated.css": "8c1f1d8bd1b64a49804144bb3e1e7a77b18b00d0328e9f7677284100c28025a2",
+    "src/design-system/tokens.generated.ts": "e4cf19fa87a80c75722f8c171b3d026c5027ef01076675f0751c07b930c735c6",
+    "src/design-system/editor/snapshot.generated.ts": "ba62c474b88996ad4948dcab4ab5c56b720eeda671aa2bdcf543637f2dd82806",
+    "public/editor-snapshot.generated.json": "93eb1cd17c6cb7ccf4208698905302a5ac9bfd6243d0674e6e05b8b09955222a",
+    "docs/design-system/semantic-catalog.md": "2f77dd473cdfc5ffb87660df6822d00575ade7cb348dc0d3c990ebdd52815b35",
+    "docs/design-system/style-inventory.md": "7606e2e6af7b9403bd7d41e18a8980dfc4c51487122548086a3fe1ec0af51b2f",
+    "docs/design-system/token-taxonomy.md": "244a8f7ecee07159eb3bc5270546d8acb3d1b15c0810e9d3e283750a859148ad"
+  },
+  "stages": [
+    "prepared",
+    "renamed",
+    "moved",
+    "after-browsers"
+  ],
+  "identical": true
+}

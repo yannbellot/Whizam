@@ -1,0 +1,97 @@
+{
+  "status": "passed-with-reservations",
+  "task": "UI-FINAL-01 E",
+  "base": "45bdf24",
+  "platform": "darwin-arm64",
+  "runtime": {
+    "version": 1,
+    "platform": "darwin-arm64",
+    "node": "24.22.0",
+    "npm": "11.19.1",
+    "runtimeArchiveSHA256": "6a9724d9b50a5f22b4816cded441b5a8d9ddae546191a5e5b7efa5a5e2ee26d5",
+    "sourceSHA256": "f31494882f4e29da24c6b43b31e0247a3ad8f5b516d0ab8fb55d38f26864064a"
+  },
+  "artifacts": {
+    "folder": ".local/ui-final-01-e/review-accepted/Loomata-dossier",
+    "app": ".local/ui-final-01-e/review-accepted/Loomata.app",
+    "signing": "ad hoc; strict verification required and passed by final builder; notarization not performed",
+    "runtimeFilesMatchSources": true,
+    "testRunnerUpdatedAfterArtifact": false
+  },
+  "checks": {
+    "native": {
+      "status": "passed",
+      "cases": [
+        "portable bundle bootstraps outside Resources with PATH containing no global Node/npm",
+        "real WKWebView workspace hydrates with embedded runtime",
+        "native export actions use the actual NSSavePanel and AX button, common core, and verified project/tool ZIPs"
+      ],
+      "driver": "actual AppKit/WKWebView, actual NSSavePanel via AX; no simulated provider or panel result",
+      "privateRun": ".local/delivery-tests/qualification-nQjNjl"
+    },
+    "folder": {
+      "status": "passed",
+      "cases": [
+        "actual relative folder launcher starts the moved folder with PATH excluding global Node/npm",
+        "UI Lab, Storybook and project preview respond from the owned folder services",
+        "embedded npm 11.19.1 executes without a global installation"
+      ],
+      "testedArtifact": ".local/ui-final-01-e/accepted/Loomata-dossier",
+      "latestArtifactEquivalence": "launcher, runtime and startup modules unchanged; final secret-name export delta unit-tested and covered by final native exports"
+    },
+    "contracts": {
+      "passed": 40,
+      "exportsBootstrapIntegrity": 6
+    },
+    "unitTests": 149,
+    "types": "passed",
+    "lint": "passed",
+    "format": "passed",
+    "agentKit": {
+      "skills": 21,
+      "roles": 4,
+      "status": "passed"
+    },
+    "archives": "real project/tool ZIP CRC and private-state exclusion checks passed",
+    "state": "no managed account, conversation or application state copied; only official runtime is shipped under .runtime.local"
+  },
+  "implementationSHA256": {
+    "application/macos/Loomata.swift": "95424fe6a29cad70ec12226b4e2de96636ff32bf612bdbf306da013cc7b01deb",
+    "application/package.json": "3d79b1223f09ede113c31d6c1c680256c1b759f6a5147fe6d3c910144bb65eee",
+    "application/scripts/bootstrap-bundle.mjs": "a57816d4d5aef086f2a625d6fcbfbd069ba1c4fd5b1f0715be8976f392cd5d6e",
+    "application/scripts/build-loomata.mjs": "4559341d1884e486fa77de8fe70bc1810c9ddf1fba26ef378457f3272fe149e0",
+    "application/scripts/core/exports.mjs": "7e5e99d0a6bc4f97ea282ac0a76bd249b7d8bfe8bc47b5ac28d80389d474c2fc",
+    "application/scripts/core/local-service.mjs": "2f8eb66a1f1e85d731004af3f6a9b0cbef6afb91a8d66d5da0e05d4a4b1ff768",
+    "application/scripts/package-deliveries.mjs": "4cd82e2be95f865a7dc02b8a8855fc163101771bb3d39f946d5adf102cfecf6f",
+    "application/scripts/portable.mjs": "a6bf06c3b88f0ddcc529295660dd70e9382a22e4b8166f65c153624632813632",
+    "application/scripts/project-files.json": "b23a88668add0186cd74129647fa83c8eb081e77b33349668001291d15fcbf1c",
+    "application/scripts/test-deliveries.mjs": "4b5ba0a11c8486a3ce50d04d0a4348aa13cd3d0eea64fdc855daaed17b87eca5",
+    "application/tests/exports.test.mjs": "64c534329887a68331fe7ba79f3865cce8f21cf15f1a225a8d4911b31bec006a",
+    "application/tests/local-service.test.mjs": "947a9e01acffd180aff8ed530fd2f097c1d11e6d5f21aca58c061cb2a5d211fa"
+  },
+  "evidenceSHA256": {
+    "build-accepted.log": "80d572f32fd544d2129bb10ffefff1cc32d70f510f72b7287587bc126610c337",
+    "native-visible.log": "956284d0ff3f4e599e0f87396c3d0f5ada044ebf756e616c659a0f8d54dc8a97",
+    "native-diagnostic.log": "dd693b1bf30b113d17b354268f6cd56ce06122c6a24c73cc3b7962677f477c37",
+    "native-accepted.log": "c83dfbcff7c93bed5515521fed02d6038a6c89a63082e0c2a5997d1e4243f846",
+    "folder-accepted.log": "ef2ac27e0965b9bd3ab49dcae0f04c6385598e300eec2a7ef1093af1fe192b07",
+    "contracts-final.log": "35b229f87f10d806f19b0203591f0c8586dbc72ac52526a2d444af3cd2a43d1d",
+    "exports-durable.log": "e72b193941d839c94847668831a2fa0631ec72e7d1febf1ed11188d3a529228c",
+    "units-qa.log": "235693ce9404f95354132db5c55531b67073a18f2c0ee64a9232aa81b01047b1",
+    "types-qa.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lint-qa.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "format-source-final.log": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+    "kit-final.log": "90c756610ad5ea97c3278dc8d1a3fd7fe4dfe2f9d0ab3bfdd3df0c195f6d93d8",
+    "build-review-accepted.log": "c4712bb6bb6f97c5ea37b20a863461c1102c7a9ba608d90ee2f3d53b81952557",
+    "native-review-accepted.log": "52e1df345cd33657bd1d2ddf241ade26258c7c07b1090f66d72151ee31fea484",
+    "exports-secret-names.log": "9d11070e88baf12b9caaebdbae5b4b1319a562e68d171717c428898f468487da"
+  },
+  "review": "sequential same agent; not independent",
+  "reservations": [
+    "F human acceptance, Finder/Dock, other machines/filesystems and notarized distribution not qualified",
+    "Update/migration and other OS/CPU not implemented",
+    "One parallel native run timed out before interactive workshop; isolated Chromium and two isolated native retests passed; visibility controlled in final driver; root cause not established",
+    "Known-path secret exclusions do not detect secrets placed in public source text",
+    "Old B window and existing recipes preserved; no push/publication"
+  ]
+}

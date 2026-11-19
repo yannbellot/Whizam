@@ -1,0 +1,36 @@
+{
+  "base": "a56f848feb74f48c6e307f07d3ec35a446e19c70",
+  "runtimeFingerprintSha256": "f187a25177163ead9ef327e80681eed181f002f2cb1ed1fd88375289487a7dbc",
+  "runtimeEntries": 265,
+  "manifestVersion": 16,
+  "protocolVersion": 4,
+  "authorityFilesUnchanged": 22,
+  "derivedFilesUnchanged": {
+    "src/styles/tokens.generated.css": "6721091cfbb6ecd371a761a7e8c00aad5792eca9f57879b31cca9c0c7a897b03",
+    "src/design-system/tokens.generated.ts": "414c79f725d2ad0d7a048991b880ecd6f3adf83a77e0cd808b2848fbc52e7fd2",
+    "src/design-system/editor/snapshot.generated.ts": "d90903f882fb7395cbceb00f72f3b7cadf0d7999334f0c10ba98261bff774af7",
+    "public/editor-snapshot.generated.json": "310283a1e4183eae489c7c20e1a800745e223cb4a2e8b4aede50f1947646e8d9",
+    "docs/design-system/semantic-catalog.md": "2f77dd473cdfc5ffb87660df6822d00575ade7cb348dc0d3c990ebdd52815b35",
+    "docs/design-system/style-inventory.md": "627787da7a75fcc914f88e54bcde2a63697c9cbef2b97964ac11db50aed8083c",
+    "docs/design-system/token-taxonomy.md": "63c26621abcb5c89291e948f42ffee8af79acc377b2564569f2c1257aa4798bf"
+  },
+  "tests": {
+    "unit": 148,
+    "designSystem": 82,
+    "server": 85,
+    "assistanceSimulated": 13,
+    "generatedDocumentation": 5,
+    "workshopCompiled": 14,
+    "workshopPersistent": 14,
+    "storybook": 14,
+    "referenceApplication": 12,
+    "realRecoveryCases": 4
+  },
+  "realLiveReaderPropagation": true,
+  "newStorybookWriter": false,
+  "humanAcceptance": false,
+  "sequentialSameAgentNonIndependent": true,
+  "testedRuntimeFingerprintBeforeCssFormattingSha256": "28e82579249e2a20250eb59a51a5664bdb56eea91781364da51e9cd9ee1f2a98",
+  "cssFormattingAfterServerCampaign": true,
+  "runtimeCommit": "e89c9b0558ba0f8ce359d6e6c8af5a400c1a2ff8"
+}

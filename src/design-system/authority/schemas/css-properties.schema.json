@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "properties"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "properties": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "types",
+          "syntax",
+          "reference",
+          "range",
+          "availability",
+          "capability",
+          "outOfRange",
+          "expressions"
+        ],
+        "properties": {
+          "types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "syntax": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "range": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["minimum", "maximum", "stage"],
+            "properties": {
+              "minimum": {
+                "type": ["number", "null"]
+              },
+              "maximum": {
+                "type": ["number", "null"]
+              },
+              "stage": {
+                "enum": ["literal", "context-dependent"]
+              }
+            }
+          },
+          "availability": {
+            "enum": ["widely", "unverified"]
+          },
+          "capability": {
+            "enum": ["current", "catalogued"]
+          },
+          "outOfRange": {
+            "enum": ["reject-literal", "property-specific"]
+          },
+          "expressions": {
+            "const": "not-implemented"
+          }
+        }
+      }
+    }
+  }
+}

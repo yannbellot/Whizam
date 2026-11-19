@@ -1,0 +1,14 @@
+{
+  "fixture": "synthetic instance with spaces; private path omitted",
+  "cases": [
+    "cold start and concurrent reuse",
+    "save and automatic Storybook propagation",
+    "documentary reader has no writer",
+    "graceful stop and stable restart with saved values",
+    "writer SIGKILL after durable replacement, sibling shutdown and recovery without generation",
+    "same instance moved with explicit repair; sources and receipts preserved"
+  ],
+  "status": "passed",
+  "environment": "macOS 26.6 arm64, Node 24.22.0, Chromium 156.0.8078.4",
+  "scope": "automated integration; does not prove human Dock acceptance"
+}

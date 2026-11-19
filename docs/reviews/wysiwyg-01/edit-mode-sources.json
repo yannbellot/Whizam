@@ -1,0 +1,14 @@
+{
+  "base": "f0514cdd0d5434ba13f1d769496b0cec5e2f707b",
+  "sourceHashes": {
+    "scripts/test-visual-inspector-ui.mjs": "03426b4cfadd93db645cf7d8708e9ae06482989ff8d91713cecc0a71e8126a94",
+    "src/design-system/editor/Preview.tsx": "83603dfb0a6bd8167b3b4827f46697a6cf10d4985c11a4bf74472fb58de09a12",
+    "src/loomata-ui/Controls.stories.tsx": "44269e4fcf4ba14310af68553885ff3cc3a6e67efb97e5ee6b0b30400a43cf2e",
+    "src/loomata-ui/Controls.tsx": "4afa34f06cdbbe1309e86754aef4f83a78082d2b07860459d6bd32c64b1e0096",
+    "src/loomata-ui/styles/editor.css": "1649a30e368fc14eb3dc6a4ac58e364c46470bdace8a169fd28a5973f11a89ae",
+    "src/ui-lab/editor/PageWorkspace.tsx": "e3ceb57c67589b4221aa756eaa207fa15140d2c50499d98ed63eaae04cc87e12",
+    "src/ui-lab/editor/VisualInspector.tsx": "2533e31a48f36ef3103546ebc878e2440a27d25514254ff56309234df1d449f1",
+    "src/ui-lab/editor/Workspace.tsx": "e75b269e15121bb47e0dd280afac3fc1ca1e42bc85c67f48383e45b44eb0b498",
+    "src/ui-lab/editor/workspace.module.css": "a561541f56f998896d74ddce82dba960b392e5df9358089a57b15fa401e072e6"
+  }
+}

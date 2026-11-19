@@ -1,0 +1,4910 @@
+{
+  "from": 3,
+  "to": 4,
+  "removedStyles": [
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border-width",
+      "state": "default",
+      "reference": "primitive.stroke.px-1",
+      "id": "semantic.layout.neutral.border-width.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "radius",
+      "state": "default",
+      "reference": "primitive.radius.rem-0-5",
+      "id": "semantic.layout.neutral.radius.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.auxiliary",
+      "role": "spacing",
+      "state": "default",
+      "reference": "primitive.space.rem-0-7",
+      "id": "semantic.layout.auxiliary.spacing.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "default",
+      "reference": "primitive.space.rem-1",
+      "id": "semantic.layout.secondary.spacing.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.primary",
+      "role": "spacing",
+      "state": "default",
+      "reference": "primitive.space.rem-1-5",
+      "id": "semantic.layout.primary.spacing.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.tertiary",
+      "role": "spacing",
+      "state": "default",
+      "reference": "primitive.space.rem-0-5",
+      "id": "semantic.layout.tertiary.spacing.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.context",
+      "role": "spacing",
+      "state": "default",
+      "reference": "primitive.space.rem-2",
+      "id": "semantic.layout.context.spacing.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-size",
+      "state": "default",
+      "reference": "primitive.type.font-size.rem-1",
+      "id": "semantic.type.hierarchy.neutral.font-size.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "font-size",
+      "state": "default",
+      "reference": "primitive.type.font-size.rem-0-875",
+      "id": "semantic.type.hierarchy.secondary.font-size.default"
+    },
+    {
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-weight",
+      "state": "default",
+      "reference": "primitive.type.font-weight.value-400",
+      "id": "semantic.type.hierarchy.neutral.font-weight.default"
+    },
+    {
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.primary",
+      "role": "font-weight",
+      "state": "default",
+      "reference": "primitive.type.font-weight.value-650",
+      "id": "semantic.type.hierarchy.primary.font-weight.default"
+    },
+    {
+      "type": "line-height",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "line-height",
+      "state": "default",
+      "reference": "primitive.type.line-height.ratio-1-5",
+      "id": "semantic.type.hierarchy.neutral.line-height.default"
+    },
+    {
+      "type": "font-family",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-family",
+      "state": "default",
+      "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+      "id": "semantic.type.hierarchy.neutral.font-family.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "content-width",
+      "state": "default",
+      "reference": "primitive.size.rem-70",
+      "id": "semantic.layout.neutral.content-width.default"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.primary",
+      "role": "border-width",
+      "state": "focus-visible",
+      "reference": "primitive.stroke.px-3",
+      "id": "semantic.layout.primary.border-width.focus-visible"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "focus-visible",
+      "reference": "primitive.space.px-3",
+      "id": "semantic.layout.secondary.spacing.focus-visible"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "border-width",
+      "state": "disabled",
+      "reference": "semantic.layout.neutral.border-width.default",
+      "id": "semantic.layout.neutral.border-width.disabled"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "radius",
+      "state": "disabled",
+      "reference": "semantic.layout.neutral.radius.default",
+      "id": "semantic.layout.neutral.radius.disabled"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.auxiliary",
+      "role": "spacing",
+      "state": "disabled",
+      "reference": "semantic.layout.auxiliary.spacing.default",
+      "id": "semantic.layout.auxiliary.spacing.disabled"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.secondary",
+      "role": "spacing",
+      "state": "disabled",
+      "reference": "semantic.layout.secondary.spacing.default",
+      "id": "semantic.layout.secondary.spacing.disabled"
+    },
+    {
+      "type": "dimension",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-size",
+      "state": "disabled",
+      "reference": "semantic.type.hierarchy.neutral.font-size.default",
+      "id": "semantic.type.hierarchy.neutral.font-size.disabled"
+    },
+    {
+      "type": "font-weight",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-weight",
+      "state": "disabled",
+      "reference": "semantic.type.hierarchy.neutral.font-weight.default",
+      "id": "semantic.type.hierarchy.neutral.font-weight.disabled"
+    },
+    {
+      "type": "line-height",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "line-height",
+      "state": "disabled",
+      "reference": "semantic.type.hierarchy.neutral.line-height.default",
+      "id": "semantic.type.hierarchy.neutral.line-height.disabled"
+    },
+    {
+      "type": "font-family",
+      "intention": "neutral-hierarchy.neutral",
+      "role": "font-family",
+      "state": "disabled",
+      "reference": "semantic.type.hierarchy.neutral.font-family.default",
+      "id": "semantic.type.hierarchy.neutral.font-family.disabled"
+    }
+  ],
+  "bindings": [
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.action.primary.background.default",
+        "id": "component.button.default.root.background.default",
+        "reference": "semantic.color.action.primary.background.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.action.primary.background.default",
+        "id": "component.button.default.root.background.default",
+        "reference": "semantic.color.action.primary.background.default",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.action.primary.text.default",
+        "id": "component.button.default.root.foreground.default",
+        "reference": "semantic.color.action.primary.text.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.action.primary.text.default",
+        "id": "component.button.default.root.foreground.default",
+        "reference": "semantic.color.action.primary.text.default",
+        "baseReference": "primitive.color.hex-ffffff"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.button.default.root.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.auxiliary.spacing.default",
+        "id": "component.button.default.root.padding-block.default",
+        "reference": "semantic.layout.auxiliary.spacing.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.padding-block.default",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.button.default.root.padding-inline.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.padding-inline.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.button.default.root.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.primary.font-weight.default",
+        "id": "component.button.default.root.font-weight.default",
+        "reference": "semantic.type.hierarchy.primary.font-weight.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.font-weight.default",
+        "reference": "primitive.type.font-weight.value-650",
+        "baseReference": "primitive.type.font-weight.value-650"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.button.default.root.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.button.default.root.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.button.default.root.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "hover",
+        "style": "semantic.color.action.primary.background.hover",
+        "id": "component.button.default.root.background.hover",
+        "reference": "semantic.color.action.primary.background.hover"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "hover",
+        "style": "semantic.color.action.primary.background.hover",
+        "id": "component.button.default.root.background.hover",
+        "reference": "semantic.color.action.primary.background.hover",
+        "baseReference": "primitive.color.hex-1e40af"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.availability-capacity.unavailable.background.disabled",
+        "id": "component.button.default.root.background.disabled",
+        "reference": "semantic.color.availability-capacity.unavailable.background.disabled"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.availability-capacity.unavailable.background.disabled",
+        "id": "component.button.default.root.background.disabled",
+        "reference": "semantic.color.availability-capacity.unavailable.background.disabled",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "loading",
+        "style": "semantic.color.action.primary.background.loading",
+        "id": "component.button.default.root.background.loading",
+        "reference": "semantic.color.action.primary.background.loading"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "loading",
+        "style": "semantic.color.action.primary.background.loading",
+        "id": "component.button.default.root.background.loading",
+        "reference": "semantic.color.action.primary.background.loading",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.button.default.root.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.button.default.root.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": "semantic.layout.primary.border-width.focus-visible",
+        "id": "component.button.default.root.ring-width.focus-visible",
+        "reference": "semantic.layout.primary.border-width.focus-visible"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.button.default.root.ring-width.focus-visible",
+        "reference": "primitive.stroke.px-3",
+        "baseReference": "primitive.stroke.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": "semantic.layout.secondary.spacing.focus-visible",
+        "id": "component.button.default.root.ring-offset.focus-visible",
+        "reference": "semantic.layout.secondary.spacing.focus-visible"
+      },
+      "after": {
+        "target": "button",
+        "variant": "default",
+        "part": "root",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.button.default.root.ring-offset.focus-visible",
+        "reference": "primitive.space.px-3",
+        "baseReference": "primitive.space.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.field.single-line.root.gap.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.root.gap.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.single-line.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.single-line.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.field.single-line.label.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.label.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.primary.font-weight.default",
+        "id": "component.field.single-line.label.font-weight.default",
+        "reference": "semantic.type.hierarchy.primary.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.label.font-weight.default",
+        "reference": "primitive.type.font-weight.value-650",
+        "baseReference": "primitive.type.font-weight.value-650"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.single-line.label.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.label.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.single-line.label.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.label.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.field.single-line.control.background.default",
+        "reference": "semantic.color.neutral.background.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.field.single-line.control.background.default",
+        "reference": "semantic.color.neutral.background.default",
+        "baseReference": "primitive.color.hex-ffffff"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.field.single-line.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.field.single-line.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.single-line.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.single-line.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.field.single-line.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.field.single-line.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.field.single-line.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.field.single-line.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.field.single-line.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.field.single-line.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.field.single-line.control.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.border-width.disabled",
+        "id": "component.field.single-line.control.border-width.disabled",
+        "reference": "semantic.layout.neutral.border-width.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.border-width.disabled",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.field.single-line.control.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.radius.disabled",
+        "id": "component.field.single-line.control.border-radius.disabled",
+        "reference": "semantic.layout.neutral.radius.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.border-radius.disabled",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.auxiliary.spacing.default",
+        "id": "component.field.single-line.control.padding-block.default",
+        "reference": "semantic.layout.auxiliary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.padding-block.default",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": "semantic.layout.auxiliary.spacing.disabled",
+        "id": "component.field.single-line.control.padding-block.disabled",
+        "reference": "semantic.layout.auxiliary.spacing.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.padding-block.disabled",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.field.single-line.control.padding-inline.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.padding-inline.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": "semantic.layout.secondary.spacing.disabled",
+        "id": "component.field.single-line.control.padding-inline.disabled",
+        "reference": "semantic.layout.secondary.spacing.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.padding-inline.disabled",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.field.single-line.control.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-size.disabled",
+        "id": "component.field.single-line.control.font-size.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-size.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.font-size.disabled",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.single-line.control.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-weight.disabled",
+        "id": "component.field.single-line.control.font-weight.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.font-weight.disabled",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.single-line.control.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.line-height.disabled",
+        "id": "component.field.single-line.control.line-height.disabled",
+        "reference": "semantic.type.hierarchy.neutral.line-height.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.line-height.disabled",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.single-line.control.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.control.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-family.disabled",
+        "id": "component.field.single-line.control.font-family.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-family.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.single-line.control.font-family.disabled",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.field.single-line.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.field.single-line.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": "semantic.layout.primary.border-width.focus-visible",
+        "id": "component.field.single-line.control.ring-width.focus-visible",
+        "reference": "semantic.layout.primary.border-width.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.field.single-line.control.ring-width.focus-visible",
+        "reference": "primitive.stroke.px-3",
+        "baseReference": "primitive.stroke.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": "semantic.layout.secondary.spacing.focus-visible",
+        "id": "component.field.single-line.control.ring-offset.focus-visible",
+        "reference": "semantic.layout.secondary.spacing.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.field.single-line.control.ring-offset.focus-visible",
+        "reference": "primitive.space.px-3",
+        "baseReference": "primitive.space.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "error",
+        "style": "semantic.color.feedback.error.border.error",
+        "id": "component.field.single-line.control.border-color.error",
+        "reference": "semantic.color.feedback.error.border.error"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "control",
+        "property": "borderColor",
+        "state": "error",
+        "style": "semantic.color.feedback.error.border.error",
+        "id": "component.field.single-line.control.border-color.error",
+        "reference": "semantic.color.feedback.error.border.error",
+        "baseReference": "primitive.color.hex-b91c1c"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.secondary.text.default",
+        "id": "component.field.single-line.hint.foreground.default",
+        "reference": "semantic.color.secondary.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.secondary.text.default",
+        "id": "component.field.single-line.hint.foreground.default",
+        "reference": "semantic.color.secondary.text.default",
+        "baseReference": "primitive.color.hex-475569"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.field.single-line.hint.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.hint.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.single-line.hint.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.hint.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.single-line.hint.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.hint.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.single-line.hint.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "hint",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.hint.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.field.single-line.error.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.field.single-line.error.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default",
+        "baseReference": "primitive.color.hex-b91c1c"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.field.single-line.error.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.error.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.single-line.error.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.error.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.single-line.error.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.error.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.single-line.error.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "single-line",
+        "part": "error",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.single-line.error.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.field.multiline.root.gap.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.root.gap.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.multiline.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.multiline.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.field.multiline.label.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.label.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.primary.font-weight.default",
+        "id": "component.field.multiline.label.font-weight.default",
+        "reference": "semantic.type.hierarchy.primary.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.label.font-weight.default",
+        "reference": "primitive.type.font-weight.value-650",
+        "baseReference": "primitive.type.font-weight.value-650"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.multiline.label.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.label.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.multiline.label.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.label.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.field.multiline.control.background.default",
+        "reference": "semantic.color.neutral.background.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.field.multiline.control.background.default",
+        "reference": "semantic.color.neutral.background.default",
+        "baseReference": "primitive.color.hex-ffffff"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.field.multiline.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.field.multiline.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.multiline.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.field.multiline.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.field.multiline.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.field.multiline.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.field.multiline.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.field.multiline.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.field.multiline.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.field.multiline.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.field.multiline.control.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.border-width.disabled",
+        "id": "component.field.multiline.control.border-width.disabled",
+        "reference": "semantic.layout.neutral.border-width.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.border-width.disabled",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.field.multiline.control.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.radius.disabled",
+        "id": "component.field.multiline.control.border-radius.disabled",
+        "reference": "semantic.layout.neutral.radius.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.border-radius.disabled",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.auxiliary.spacing.default",
+        "id": "component.field.multiline.control.padding-block.default",
+        "reference": "semantic.layout.auxiliary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.padding-block.default",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": "semantic.layout.auxiliary.spacing.disabled",
+        "id": "component.field.multiline.control.padding-block.disabled",
+        "reference": "semantic.layout.auxiliary.spacing.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.padding-block.disabled",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.field.multiline.control.padding-inline.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.padding-inline.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": "semantic.layout.secondary.spacing.disabled",
+        "id": "component.field.multiline.control.padding-inline.disabled",
+        "reference": "semantic.layout.secondary.spacing.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.padding-inline.disabled",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.field.multiline.control.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-size.disabled",
+        "id": "component.field.multiline.control.font-size.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-size.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.font-size.disabled",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.multiline.control.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-weight.disabled",
+        "id": "component.field.multiline.control.font-weight.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.font-weight.disabled",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.multiline.control.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.line-height.disabled",
+        "id": "component.field.multiline.control.line-height.disabled",
+        "reference": "semantic.type.hierarchy.neutral.line-height.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "lineHeight",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.line-height.disabled",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.multiline.control.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.control.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-family.disabled",
+        "id": "component.field.multiline.control.font-family.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-family.disabled"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": null,
+        "id": "component.field.multiline.control.font-family.disabled",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.field.multiline.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.field.multiline.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": "semantic.layout.primary.border-width.focus-visible",
+        "id": "component.field.multiline.control.ring-width.focus-visible",
+        "reference": "semantic.layout.primary.border-width.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.field.multiline.control.ring-width.focus-visible",
+        "reference": "primitive.stroke.px-3",
+        "baseReference": "primitive.stroke.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": "semantic.layout.secondary.spacing.focus-visible",
+        "id": "component.field.multiline.control.ring-offset.focus-visible",
+        "reference": "semantic.layout.secondary.spacing.focus-visible"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.field.multiline.control.ring-offset.focus-visible",
+        "reference": "primitive.space.px-3",
+        "baseReference": "primitive.space.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "error",
+        "style": "semantic.color.feedback.error.border.error",
+        "id": "component.field.multiline.control.border-color.error",
+        "reference": "semantic.color.feedback.error.border.error"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "control",
+        "property": "borderColor",
+        "state": "error",
+        "style": "semantic.color.feedback.error.border.error",
+        "id": "component.field.multiline.control.border-color.error",
+        "reference": "semantic.color.feedback.error.border.error",
+        "baseReference": "primitive.color.hex-b91c1c"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.secondary.text.default",
+        "id": "component.field.multiline.hint.foreground.default",
+        "reference": "semantic.color.secondary.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.secondary.text.default",
+        "id": "component.field.multiline.hint.foreground.default",
+        "reference": "semantic.color.secondary.text.default",
+        "baseReference": "primitive.color.hex-475569"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.field.multiline.hint.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.hint.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.multiline.hint.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.hint.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.multiline.hint.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.hint.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.multiline.hint.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "hint",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.hint.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.field.multiline.error.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.field.multiline.error.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default",
+        "baseReference": "primitive.color.hex-b91c1c"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.field.multiline.error.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.error.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.field.multiline.error.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.error.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.field.multiline.error.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.error.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.field.multiline.error.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "field",
+        "variant": "multiline",
+        "part": "error",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.field.multiline.error.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.select-field.default.root.gap.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "root",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.root.gap.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.select-field.default.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.select-field.default.label.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.select-field.default.label.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.label.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.primary.font-weight.default",
+        "id": "component.select-field.default.label.font-weight.default",
+        "reference": "semantic.type.hierarchy.primary.font-weight.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.label.font-weight.default",
+        "reference": "primitive.type.font-weight.value-650",
+        "baseReference": "primitive.type.font-weight.value-650"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.select-field.default.label.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.label.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.select-field.default.label.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "label",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.label.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.select-field.default.control.background.default",
+        "reference": "semantic.color.neutral.background.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.select-field.default.control.background.default",
+        "reference": "semantic.color.neutral.background.default",
+        "baseReference": "primitive.color.hex-ffffff"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.select-field.default.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "background",
+        "state": "disabled",
+        "style": "semantic.color.secondary.background.disabled",
+        "id": "component.select-field.default.control.background.disabled",
+        "reference": "semantic.color.secondary.background.disabled",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.select-field.default.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.select-field.default.control.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.select-field.default.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "foreground",
+        "state": "disabled",
+        "style": "semantic.color.neutral.text.disabled",
+        "id": "component.select-field.default.control.foreground.disabled",
+        "reference": "semantic.color.neutral.text.disabled",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.select-field.default.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.select-field.default.control.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.select-field.default.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderColor",
+        "state": "disabled",
+        "style": "semantic.color.neutral.border.disabled",
+        "id": "component.select-field.default.control.border-color.disabled",
+        "reference": "semantic.color.neutral.border.disabled",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.select-field.default.control.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.border-width.disabled",
+        "id": "component.select-field.default.control.border-width.disabled",
+        "reference": "semantic.layout.neutral.border-width.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderWidth",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.border-width.disabled",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.select-field.default.control.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": "semantic.layout.neutral.radius.disabled",
+        "id": "component.select-field.default.control.border-radius.disabled",
+        "reference": "semantic.layout.neutral.radius.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "borderRadius",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.border-radius.disabled",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.auxiliary.spacing.default",
+        "id": "component.select-field.default.control.padding-block.default",
+        "reference": "semantic.layout.auxiliary.spacing.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.padding-block.default",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": "semantic.layout.auxiliary.spacing.disabled",
+        "id": "component.select-field.default.control.padding-block.disabled",
+        "reference": "semantic.layout.auxiliary.spacing.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingBlock",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.padding-block.disabled",
+        "reference": "primitive.space.rem-0-7",
+        "baseReference": "primitive.space.rem-0-7"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.select-field.default.control.padding-inline.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.padding-inline.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": "semantic.layout.secondary.spacing.disabled",
+        "id": "component.select-field.default.control.padding-inline.disabled",
+        "reference": "semantic.layout.secondary.spacing.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "paddingInline",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.padding-inline.disabled",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.select-field.default.control.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-size.disabled",
+        "id": "component.select-field.default.control.font-size.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-size.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontSize",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.font-size.disabled",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.select-field.default.control.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-weight.disabled",
+        "id": "component.select-field.default.control.font-weight.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontWeight",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.font-weight.disabled",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.select-field.default.control.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.select-field.default.control.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": "semantic.type.hierarchy.neutral.font-family.disabled",
+        "id": "component.select-field.default.control.font-family.disabled",
+        "reference": "semantic.type.hierarchy.neutral.font-family.disabled"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "fontFamily",
+        "state": "disabled",
+        "style": null,
+        "id": "component.select-field.default.control.font-family.disabled",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.select-field.default.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringColor",
+        "state": "focus-visible",
+        "style": "semantic.color.action.primary.focus.focus-visible",
+        "id": "component.select-field.default.control.ring-color.focus-visible",
+        "reference": "semantic.color.action.primary.focus.focus-visible",
+        "baseReference": "primitive.color.hex-1d4ed8"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": "semantic.layout.primary.border-width.focus-visible",
+        "id": "component.select-field.default.control.ring-width.focus-visible",
+        "reference": "semantic.layout.primary.border-width.focus-visible"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringWidth",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.select-field.default.control.ring-width.focus-visible",
+        "reference": "primitive.stroke.px-3",
+        "baseReference": "primitive.stroke.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": "semantic.layout.secondary.spacing.focus-visible",
+        "id": "component.select-field.default.control.ring-offset.focus-visible",
+        "reference": "semantic.layout.secondary.spacing.focus-visible"
+      },
+      "after": {
+        "target": "select-field",
+        "variant": "default",
+        "part": "control",
+        "property": "ringOffset",
+        "state": "focus-visible",
+        "style": null,
+        "id": "component.select-field.default.control.ring-offset.focus-visible",
+        "reference": "primitive.space.px-3",
+        "baseReference": "primitive.space.px-3"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.info.root.background.default",
+        "reference": "semantic.color.secondary.background.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.info.root.background.default",
+        "reference": "semantic.color.secondary.background.default",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.notice.info.root.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.notice.info.root.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.info.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.info.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.notice.info.root.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.notice.info.root.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.info.root.padding-block.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.padding-block.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.info.root.padding-inline.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.padding-inline.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.notice.info.root.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.notice.info.root.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.notice.info.root.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.notice.info.root.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "info",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.info.root.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.success.root.background.default",
+        "reference": "semantic.color.secondary.background.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.success.root.background.default",
+        "reference": "semantic.color.secondary.background.default",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.success.text.default",
+        "id": "component.notice.success.root.foreground.default",
+        "reference": "semantic.color.feedback.success.text.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.success.text.default",
+        "id": "component.notice.success.root.foreground.default",
+        "reference": "semantic.color.feedback.success.text.default",
+        "baseReference": "primitive.color.hex-166534"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.success.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.success.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.notice.success.root.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.notice.success.root.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.success.root.padding-block.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.padding-block.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.success.root.padding-inline.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.padding-inline.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.notice.success.root.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.notice.success.root.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.notice.success.root.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.notice.success.root.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "success",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.success.root.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.error.root.background.default",
+        "reference": "semantic.color.secondary.background.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.notice.error.root.background.default",
+        "reference": "semantic.color.secondary.background.default",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.notice.error.root.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.feedback.error.text.default",
+        "id": "component.notice.error.root.foreground.default",
+        "reference": "semantic.color.feedback.error.text.default",
+        "baseReference": "primitive.color.hex-b91c1c"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.error.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.notice.error.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.notice.error.root.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.notice.error.root.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.error.root.padding-block.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.padding-block.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.notice.error.root.padding-inline.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.padding-inline.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.notice.error.root.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.notice.error.root.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.notice.error.root.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.notice.error.root.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "notice",
+        "variant": "error",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.notice.error.root.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.panel.default.root.background.default",
+        "reference": "semantic.color.neutral.background.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.neutral.background.default",
+        "id": "component.panel.default.root.background.default",
+        "reference": "semantic.color.neutral.background.default",
+        "baseReference": "primitive.color.hex-ffffff"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.panel.default.root.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.panel.default.root.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.panel.default.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.panel.default.root.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.border-width.default",
+        "id": "component.panel.default.root.border-width.default",
+        "reference": "semantic.layout.neutral.border-width.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.border-width.default",
+        "reference": "primitive.stroke.px-1",
+        "baseReference": "primitive.stroke.px-1"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": "semantic.layout.neutral.radius.default",
+        "id": "component.panel.default.root.border-radius.default",
+        "reference": "semantic.layout.neutral.radius.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "borderRadius",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.border-radius.default",
+        "reference": "primitive.radius.rem-0-5",
+        "baseReference": "primitive.radius.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.panel.default.root.padding-block.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.padding-block.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.panel.default.root.padding-inline.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.padding-inline.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.panel.default.root.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.panel.default.root.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.panel.default.root.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.panel.default.root.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "panel",
+        "variant": "default",
+        "part": "root",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.panel.default.root.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.foundations.default.document.background.default",
+        "reference": "semantic.color.secondary.background.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "background",
+        "state": "default",
+        "style": "semantic.color.secondary.background.default",
+        "id": "component.foundations.default.document.background.default",
+        "reference": "semantic.color.secondary.background.default",
+        "baseReference": "primitive.color.hex-f1f5f9"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.foundations.default.document.foreground.default",
+        "reference": "semantic.color.neutral.text.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "foreground",
+        "state": "default",
+        "style": "semantic.color.neutral.text.default",
+        "id": "component.foundations.default.document.foreground.default",
+        "reference": "semantic.color.neutral.text.default",
+        "baseReference": "primitive.color.hex-0f172a"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-size.default",
+        "id": "component.foundations.default.document.font-size.default",
+        "reference": "semantic.type.hierarchy.neutral.font-size.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.document.font-size.default",
+        "reference": "primitive.type.font-size.rem-1",
+        "baseReference": "primitive.type.font-size.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontWeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-weight.default",
+        "id": "component.foundations.default.document.font-weight.default",
+        "reference": "semantic.type.hierarchy.neutral.font-weight.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontWeight",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.document.font-weight.default",
+        "reference": "primitive.type.font-weight.value-400",
+        "baseReference": "primitive.type.font-weight.value-400"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "lineHeight",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.line-height.default",
+        "id": "component.foundations.default.document.line-height.default",
+        "reference": "semantic.type.hierarchy.neutral.line-height.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "lineHeight",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.document.line-height.default",
+        "reference": "primitive.type.line-height.ratio-1-5",
+        "baseReference": "primitive.type.line-height.ratio-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontFamily",
+        "state": "default",
+        "style": "semantic.type.hierarchy.neutral.font-family.default",
+        "id": "component.foundations.default.document.font-family.default",
+        "reference": "semantic.type.hierarchy.neutral.font-family.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "document",
+        "property": "fontFamily",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.document.font-family.default",
+        "reference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+        "baseReference": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page",
+        "property": "maxWidth",
+        "state": "default",
+        "style": "semantic.layout.neutral.content-width.default",
+        "id": "component.foundations.default.page.max-width.default",
+        "reference": "semantic.layout.neutral.content-width.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page",
+        "property": "maxWidth",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.page.max-width.default",
+        "reference": "primitive.size.rem-70",
+        "baseReference": "primitive.size.rem-70"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page",
+        "property": "pageMargin",
+        "state": "default",
+        "style": "semantic.layout.context.spacing.default",
+        "id": "component.foundations.default.page.page-margin.default",
+        "reference": "semantic.layout.context.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page",
+        "property": "pageMargin",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.page.page-margin.default",
+        "reference": "primitive.space.rem-2",
+        "baseReference": "primitive.space.rem-2"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page-mobile",
+        "property": "pageMargin",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.foundations.default.page-mobile.page-margin.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "page-mobile",
+        "property": "pageMargin",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.page-mobile.page-margin.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-small",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.foundations.default.layout-small.gap.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-small",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.layout-small.gap.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-medium",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.secondary.spacing.default",
+        "id": "component.foundations.default.layout-medium.gap.default",
+        "reference": "semantic.layout.secondary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-medium",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.layout-medium.gap.default",
+        "reference": "primitive.space.rem-1",
+        "baseReference": "primitive.space.rem-1"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-large",
+        "property": "gap",
+        "state": "default",
+        "style": "semantic.layout.primary.spacing.default",
+        "id": "component.foundations.default.layout-large.gap.default",
+        "reference": "semantic.layout.primary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "layout-large",
+        "property": "gap",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.layout-large.gap.default",
+        "reference": "primitive.space.rem-1-5",
+        "baseReference": "primitive.space.rem-1-5"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "fontSize",
+        "state": "default",
+        "style": "semantic.type.hierarchy.secondary.font-size.default",
+        "id": "component.foundations.default.table.font-size.default",
+        "reference": "semantic.type.hierarchy.secondary.font-size.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "fontSize",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.table.font-size.default",
+        "reference": "primitive.type.font-size.rem-0-875",
+        "baseReference": "primitive.type.font-size.rem-0-875"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.foundations.default.table.border-color.default",
+        "reference": "semantic.color.neutral.border.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "borderColor",
+        "state": "default",
+        "style": "semantic.color.neutral.border.default",
+        "id": "component.foundations.default.table.border-color.default",
+        "reference": "semantic.color.neutral.border.default",
+        "baseReference": "primitive.color.hex-64748b"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.foundations.default.table.padding-block.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "paddingBlock",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.table.padding-block.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    },
+    {
+      "before": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "paddingInline",
+        "state": "default",
+        "style": "semantic.layout.tertiary.spacing.default",
+        "id": "component.foundations.default.table.padding-inline.default",
+        "reference": "semantic.layout.tertiary.spacing.default"
+      },
+      "after": {
+        "target": "foundations",
+        "variant": "default",
+        "part": "table",
+        "property": "paddingInline",
+        "state": "default",
+        "style": null,
+        "id": "component.foundations.default.table.padding-inline.default",
+        "reference": "primitive.space.rem-0-5",
+        "baseReference": "primitive.space.rem-0-5"
+      }
+    }
+  ],
+  "aliases": [
+    {
+      "before": {
+        "id": "semantic.color.action.background.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.background.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.action.background.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.background.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.action.background.hover",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.background.hover"
+        }
+      },
+      "after": {
+        "id": "semantic.color.action.background.hover",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.background.hover"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.action.foreground.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.text.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.action.foreground.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.text.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.focus.ring",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.focus.focus-visible"
+        }
+      },
+      "after": {
+        "id": "semantic.color.focus.ring",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.action.primary.focus.focus-visible"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.radius.control.default",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.neutral.radius.default"
+        }
+      },
+      "after": {
+        "id": "semantic.radius.control.default",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.radius.rem-0-5"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.control.block",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.auxiliary.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.control.block",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-0-7"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.control.inline",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.secondary.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.control.inline",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-1"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.font-weight.action",
+        "type": "font-weight",
+        "value": {
+          "reference": "semantic.type.hierarchy.primary.font-weight.default"
+        }
+      },
+      "after": {
+        "id": "semantic.font-weight.action",
+        "type": "font-weight",
+        "value": {
+          "reference": "primitive.type.font-weight.value-650"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.dimension.focus.ring-width",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.primary.border-width.focus-visible"
+        }
+      },
+      "after": {
+        "id": "semantic.dimension.focus.ring-width",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.stroke.px-3"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.dimension.focus.ring-offset",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.secondary.spacing.focus-visible"
+        }
+      },
+      "after": {
+        "id": "semantic.dimension.focus.ring-offset",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.px-3"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.surface.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.background.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.surface.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.background.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.surface.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.secondary.background.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.surface.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.secondary.background.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.text.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.text.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.text.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.text.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.text.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.secondary.text.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.text.muted",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.secondary.text.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.border.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.border.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.border.default",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.neutral.border.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.feedback.error",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.feedback.error.text.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.feedback.error",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.feedback.error.text.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.feedback.success",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.feedback.success.text.default"
+        }
+      },
+      "after": {
+        "id": "semantic.color.feedback.success",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.feedback.success.text.default"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.color.action.disabled",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.availability-capacity.unavailable.background.disabled"
+        }
+      },
+      "after": {
+        "id": "semantic.color.action.disabled",
+        "type": "color",
+        "value": {
+          "reference": "semantic.color.availability-capacity.unavailable.background.disabled"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.layout.small",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.tertiary.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.layout.small",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-0-5"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.layout.medium",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.secondary.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.layout.medium",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-1"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.layout.large",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.primary.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.layout.large",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-1-5"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.space.layout.page",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.context.spacing.default"
+        }
+      },
+      "after": {
+        "id": "semantic.space.layout.page",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.space.rem-2"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.dimension.text.small",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.type.hierarchy.secondary.font-size.default"
+        }
+      },
+      "after": {
+        "id": "semantic.dimension.text.small",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.type.font-size.rem-0-875"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "semantic.dimension.layout.max",
+        "type": "dimension",
+        "value": {
+          "reference": "semantic.layout.neutral.content-width.default"
+        }
+      },
+      "after": {
+        "id": "semantic.dimension.layout.max",
+        "type": "dimension",
+        "value": {
+          "reference": "primitive.size.rem-70"
+        }
+      }
+    }
+  ]
+}

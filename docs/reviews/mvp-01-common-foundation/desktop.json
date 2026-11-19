@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "cases": [
+    "desktop 1280x800: state and contextual conversation, keyboard, scrolling",
+    "desktop 1440x900: state and contextual conversation, keyboard, scrolling",
+    "foreign origin denied at real HTTP boundary"
+  ],
+  "diagnostic": {
+    "rect": {
+      "x": 57,
+      "y": 833.6875,
+      "width": 206.796875,
+      "height": 46.375,
+      "top": 833.6875,
+      "right": 263.796875,
+      "bottom": 880.0625,
+      "left": 57
+    },
+    "visible": "visible",
+    "display": "inline-block",
+    "disabled": false
+  }
+}

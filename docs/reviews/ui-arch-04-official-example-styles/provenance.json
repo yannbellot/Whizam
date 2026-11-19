@@ -1,0 +1,57 @@
+{
+  "revision": "360e35170568dfc99a2baaa78e6b7bdd36458d91",
+  "files": {
+    "Button.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Button.css",
+      "sha256": "2aec8119e62f29675dc86d530f594e6af019543d783136c841465829f455657a"
+    },
+    "Button.tsx": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Button.tsx",
+      "sha256": "7214f9e35a01d5e57ac6d857f0c85ba28d685d9545dd6a4f62d58c0013185451"
+    },
+    "Content.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Content.css",
+      "sha256": "48a0f685881b4692925f6e30b57edb0c8b24ce1edad395dd790fabd611201898"
+    },
+    "Content.tsx": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Content.tsx",
+      "sha256": "ce6346e4465387d800cf75102405e56df5ef70e8ab14ba793e0b105a603411ca"
+    },
+    "Form.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Form.css",
+      "sha256": "92e8e4831bef2a6a7842caa864dcc58c4ac91d5b7560c0fd222e72890973da76"
+    },
+    "Form.tsx": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Form.tsx",
+      "sha256": "eae27474fdce285eea6074003813ec2266588c56029cb31050831b923adb623d"
+    },
+    "LICENSE": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/LICENSE",
+      "sha256": "7dfe6526888bac51759c99f9a51262ba2711a8c12a067f2181609dd9a4066b84"
+    },
+    "ProgressCircle.tsx": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ProgressCircle.tsx",
+      "sha256": "e180c2137b5aa7fbcd05b3fd50f08f50d1b694589c96c8cd146e03ee4be1048d"
+    },
+    "TextField.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/TextField.css",
+      "sha256": "cef323a3179d4d2afa6038c0115a78be6e8bde8e4d005ca5627263359dff218b"
+    },
+    "TextField.tsx": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/TextField.tsx",
+      "sha256": "adaf40161f25cd26b075bb8f668afbd73ae5345d6a23b4bf3d35bacc47f393fa"
+    },
+    "page.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/.storybook/preview.css",
+      "sha256": "319bbb55df5c2fc2df5fb7d3b7ab0515554a4603199acff68bdb0ebc8bc1ee61"
+    },
+    "theme.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/theme.css",
+      "sha256": "b9221d8a721028fea9aebcfd7b6f8620a7fba8d3fac19e3ef954e94a48fc511c"
+    },
+    "utilities.css": {
+      "source": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/utilities.css",
+      "sha256": "97df44ee6db140bb92546efbfb7456f245a489ff837428e049800dcab24fb799"
+    }
+  }
+}

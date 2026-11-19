@@ -1,0 +1,36 @@
+node_modules
+dist
+*.local
+build
+.react-router
+playwright-report
+test-results
+
+src/styles/tokens.generated.css
+src/design-system/tokens.generated.ts
+
+storybook-static
+
+.env
+.env.*
+!.env.example
+
+# Read-only design editor snapshots, generated before Storybook.
+src/design-system/editor/snapshot.generated.ts
+.storybook/public/editor-snapshot.generated.json
+public/editor-snapshot.generated.json
+
+# Private writer journals, locks, receipts and candidate generations.
+.design-editor.local/
+
+# Owned live stability fixtures must remain outside Vite-ignored test-results.
+/test-fixtures/
+
+src/loomata-ui/styles/*.generated.css
+
+# Project Tailwind theme is a transactional derivative.
+src/styles/project-theme.generated.css
+
+# Private deterministic generation state.
+.design-sync-manifest.local
+src/design-system/components/**/*.generated.stories.tsx

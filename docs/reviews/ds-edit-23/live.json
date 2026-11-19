@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "draftIsolated": true,
+  "realManagerSave": true,
+  "automaticUpdate": true,
+  "privatePathsDenied": true,
+  "interruptedPublicationBlocked": true,
+  "recoveryAutomatic": true,
+  "startDuringRecoveryBlocked": true,
+  "viewports": [
+    "1280x800",
+    "390x844"
+  ]
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "colorScheme": "dark",
+    "width": 1280,
+    "height": 800,
+    "fields": 9,
+    "rows": [
+      {
+        "label": "Taille",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Graisse",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Hauteur de ligne",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Arrière-plan",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Texte",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Rayon des angles",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Intérieur — axe de bloc",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Intérieur — axe en ligne",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      }
+    ],
+    "controls": [
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      }
+    ],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "colorScheme": "dark",
+    "width": 1440,
+    "height": 900,
+    "fields": 9,
+    "rows": [
+      {
+        "label": "Taille",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Graisse",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Hauteur de ligne",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Arrière-plan",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Texte",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Rayon des angles",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Intérieur — axe de bloc",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Intérieur — axe en ligne",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      }
+    ],
+    "controls": [
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      }
+    ],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "colorScheme": "light",
+    "width": 1280,
+    "height": 800,
+    "fields": 9,
+    "rows": [
+      {
+        "label": "Taille",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Graisse",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Hauteur de ligne",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Arrière-plan",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Texte",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Rayon des angles",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Intérieur — axe de bloc",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      },
+      {
+        "label": "Intérieur — axe en ligne",
+        "height": 30,
+        "labelRight": 1081,
+        "controlLeft": 1089
+      }
+    ],
+    "controls": [
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      }
+    ],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "colorScheme": "light",
+    "width": 1440,
+    "height": 900,
+    "fields": 9,
+    "rows": [
+      {
+        "label": "Taille",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Graisse",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Hauteur de ligne",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Arrière-plan",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Texte",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Rayon des angles",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Intérieur — axe de bloc",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      },
+      {
+        "label": "Intérieur — axe en ligne",
+        "height": 30,
+        "labelRight": 1241,
+        "controlLeft": 1249
+      }
+    ],
+    "controls": [
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      },
+      {
+        "height": 30,
+        "radius": "8px"
+      }
+    ],
+    "overflow": false,
+    "errors": []
+  }
+]

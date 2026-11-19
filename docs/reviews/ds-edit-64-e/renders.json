@@ -1,0 +1,148 @@
+{
+  "captures": 14,
+  "computedSnapshots": 14,
+  "comparisons": [
+    {
+      "file": "desktop-button-focus-hover.json",
+      "sha256": "92699e311496a8b8697988c2b6948d54f1ff5f9bd58341510c111847de3a5503",
+      "identical": true
+    },
+    {
+      "file": "desktop-button-focus-hover.png",
+      "sha256": "ebafb4e57a30df8247c2a92659f4655adaba6eb002c81c0f2677fbff5a6dd62f",
+      "identical": true
+    },
+    {
+      "file": "desktop-button-hover.json",
+      "sha256": "83b2dc846d433cccfba0e7a0cacace998a41db6eb5d8f69407f379f9a1da40a5",
+      "identical": true
+    },
+    {
+      "file": "desktop-button-hover.png",
+      "sha256": "62a58356e4dc122442a995fb8d842fda41b6d9ec0be24f9ed65e11aab23da424",
+      "identical": true
+    },
+    {
+      "file": "desktop-default.json",
+      "sha256": "e790d85ec9193720640be71ecca12c0283e009bd4579b2143349f33da4875e2f",
+      "identical": true
+    },
+    {
+      "file": "desktop-default.png",
+      "sha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "identical": true
+    },
+    {
+      "file": "desktop-disabled-hover.json",
+      "sha256": "e790d85ec9193720640be71ecca12c0283e009bd4579b2143349f33da4875e2f",
+      "identical": true
+    },
+    {
+      "file": "desktop-disabled-hover.png",
+      "sha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "identical": true
+    },
+    {
+      "file": "desktop-field-error-focus.json",
+      "sha256": "122d40ce039af5ca92352242dc048b3348a99000654af0527d46b3a97d15238e",
+      "identical": true
+    },
+    {
+      "file": "desktop-field-error-focus.png",
+      "sha256": "89ab4e01d76a0baaa741357c1aa6690a849a87a55deb677ee108ec15f25689c5",
+      "identical": true
+    },
+    {
+      "file": "desktop-loading-hover.json",
+      "sha256": "e790d85ec9193720640be71ecca12c0283e009bd4579b2143349f33da4875e2f",
+      "identical": true
+    },
+    {
+      "file": "desktop-loading-hover.png",
+      "sha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "identical": true
+    },
+    {
+      "file": "desktop-multiline-error-focus.json",
+      "sha256": "023811c5e940ec89069f2b9dfb96e1a7cafe89b3776005afb85414305c4ce510",
+      "identical": true
+    },
+    {
+      "file": "desktop-multiline-error-focus.png",
+      "sha256": "8c4b7921b25a5c019b1b72a2b1ec52250e3a7f2baece779ab1ea907bb9459d78",
+      "identical": true
+    },
+    {
+      "file": "mobile-button-focus-hover.json",
+      "sha256": "5d273204b3a02df29c5494eb6f57042e09f22350cde9cc013052bbf9db879629",
+      "identical": true
+    },
+    {
+      "file": "mobile-button-focus-hover.png",
+      "sha256": "d34658210a8d6d7060936c9797b6cb4251e584ded9547a7e47f14d96b3d222f3",
+      "identical": true
+    },
+    {
+      "file": "mobile-button-hover.json",
+      "sha256": "0d2eaffa6a435afdec3b62fc630f4cf85fbd44f278920d8b3a6aea77fa78645b",
+      "identical": true
+    },
+    {
+      "file": "mobile-button-hover.png",
+      "sha256": "3723b00b30cddc3c073fefe71d9c8d96e4ec3533826287dbfae40f206caf21ad",
+      "identical": true
+    },
+    {
+      "file": "mobile-default.json",
+      "sha256": "b10fd96c127874f3bab4f9e36e91c001cb5caf20f71504727cd2045cadba78d0",
+      "identical": true
+    },
+    {
+      "file": "mobile-default.png",
+      "sha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "identical": true
+    },
+    {
+      "file": "mobile-disabled-hover.json",
+      "sha256": "b10fd96c127874f3bab4f9e36e91c001cb5caf20f71504727cd2045cadba78d0",
+      "identical": true
+    },
+    {
+      "file": "mobile-disabled-hover.png",
+      "sha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "identical": true
+    },
+    {
+      "file": "mobile-field-error-focus.json",
+      "sha256": "0e08ae289a427ea45124360237a1fe19ed654dca7c1b79b872db417b9075a837",
+      "identical": true
+    },
+    {
+      "file": "mobile-field-error-focus.png",
+      "sha256": "4a8147818e6bfcff0db40250470521dca98a1d6fde971bee5f4b9982fa78b8d4",
+      "identical": true
+    },
+    {
+      "file": "mobile-loading-hover.json",
+      "sha256": "b10fd96c127874f3bab4f9e36e91c001cb5caf20f71504727cd2045cadba78d0",
+      "identical": true
+    },
+    {
+      "file": "mobile-loading-hover.png",
+      "sha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "identical": true
+    },
+    {
+      "file": "mobile-multiline-error-focus.json",
+      "sha256": "4f6da9e49efd77fb1bdcd740fe5f07733a1cc83e226877b795d941a1167563ab",
+      "identical": true
+    },
+    {
+      "file": "mobile-multiline-error-focus.png",
+      "sha256": "8bd159964750cefd251e25f87d6c4ef3a4b9f4544c17176f7802f52eae633f71",
+      "identical": true
+    }
+  ],
+  "reference": "055fbbc before extraction",
+  "candidate": "same immutable runtime sources after extraction/rename, before deliberate synthetic save"
+}

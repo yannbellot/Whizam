@@ -1,0 +1,107 @@
+{
+  "status": "pass",
+  "httpInterception": false,
+  "cases": [
+    {
+      "name": "refusal-1280",
+      "status": "pass",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "interruption": "refusal",
+      "journalBefore": {
+        "phase": "prepared",
+        "progress": 0,
+        "actualPostimages": 1,
+        "changedFiles": 8
+      },
+      "journalAfter": {
+        "phase": "committed",
+        "progress": 8,
+        "status": "saved"
+      },
+      "recoveredValue": "#234567",
+      "browserReload": true,
+      "receiptReplay": "identical",
+      "secondRecovery": "idempotent",
+      "fixtureRetained": "test-results/.fixtures/editor-recovery-refusal-1280-AR0NjJ"
+    },
+    {
+      "name": "refusal-390",
+      "status": "pass",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "interruption": "refusal",
+      "journalBefore": {
+        "phase": "prepared",
+        "progress": 0,
+        "actualPostimages": 1,
+        "changedFiles": 8
+      },
+      "journalAfter": {
+        "phase": "committed",
+        "progress": 8,
+        "status": "saved"
+      },
+      "recoveredValue": "#234567",
+      "browserReload": true,
+      "receiptReplay": "identical",
+      "secondRecovery": "idempotent",
+      "fixtureRetained": "test-results/.fixtures/editor-recovery-refusal-390-2S6rIa"
+    },
+    {
+      "name": "sigkill-1280",
+      "status": "pass",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "interruption": "sigkill",
+      "journalBefore": {
+        "phase": "prepared",
+        "progress": 0,
+        "actualPostimages": 1,
+        "changedFiles": 8
+      },
+      "journalAfter": {
+        "phase": "committed",
+        "progress": 8,
+        "status": "saved"
+      },
+      "recoveredValue": "#234567",
+      "browserReload": true,
+      "receiptReplay": "identical",
+      "secondRecovery": "idempotent",
+      "fixtureRetained": "test-results/.fixtures/editor-recovery-sigkill-1280-kDzXWM"
+    },
+    {
+      "name": "sigkill-390",
+      "status": "pass",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "interruption": "sigkill",
+      "journalBefore": {
+        "phase": "prepared",
+        "progress": 0,
+        "actualPostimages": 1,
+        "changedFiles": 8
+      },
+      "journalAfter": {
+        "phase": "committed",
+        "progress": 8,
+        "status": "saved"
+      },
+      "recoveredValue": "#234567",
+      "browserReload": true,
+      "receiptReplay": "identical",
+      "secondRecovery": "idempotent",
+      "fixtureRetained": "test-results/.fixtures/editor-recovery-sigkill-390-hqcW7J"
+    }
+  ],
+  "originalFilesUnchanged": true
+}

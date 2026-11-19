@@ -1,0 +1,41 @@
+{
+  "base": "d855b3296b491b7527edbbc6ff328eb5984186aa",
+  "files": [
+    {
+      "path": ".storybook/editor/ScopeControls.tsx",
+      "sha256": "7ded311ce56218f43ddb95cdac89b29690434ae0def13485f5399fc09d7e2a20"
+    },
+    {
+      "path": ".storybook/editor/assisted.ts",
+      "sha256": "d0e59f15ee8a3d42c2a7bfa16f7a47661ef67a50774e5ef3ef893147e0dad191"
+    },
+    {
+      "path": ".storybook/editor/panel.module.css",
+      "sha256": "cf41a77b8f9365debbefda0d972b58ef43ff89b96437139db0aa5fde0560bbcd"
+    },
+    {
+      "path": ".storybook/editor/server/assistance.mjs",
+      "sha256": "cd280c444fa97bab82f09059300c69dbf11be1ef38a0cc210355c9a9db982c04"
+    },
+    {
+      "path": ".storybook/editor/server/codex.mjs",
+      "sha256": "2fcb8c1512a0ea65205f296201ffd1db5a60c3e7090205f919dceb93c34f4637"
+    },
+    {
+      "path": "docs/design-system/editor-assistance.md",
+      "sha256": "2956a84b5bec7495a39202aebc4b7fdfc2fe45a8d1637840426c95a64886258a"
+    },
+    {
+      "path": "tests/design-assistance.test.mjs",
+      "sha256": "b9b3943da49930c25202d1a9ed6a002d244bd1a6e25e48931bb57ece61e1adf2"
+    },
+    {
+      "path": "tests/design-editor/assisted.spec.ts",
+      "sha256": "b625d56ebeebe9251aaaae6382c252e2874d56dd35da5d46c4b247447eb23f8f"
+    },
+    {
+      "path": "tests/unit/assisted-session.test.ts",
+      "sha256": "3e9ce5e875c44dfa481214ba895ef403453d350cd3c3624c5b5b386e95470966"
+    }
+  ]
+}

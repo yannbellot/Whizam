@@ -1,0 +1,18 @@
+{
+  "port": 54137,
+  "files": [
+    ".storybook/editor/HeaderTools.tsx",
+    ".storybook/editor/Panel.tsx",
+    ".storybook/editor/session.ts",
+    ".storybook/editor/rebase.ts",
+    ".storybook/editor/server/observe.mjs",
+    ".storybook/editor/server/http.mjs",
+    ".storybook/editor/server/manifest.mjs",
+    ".storybook/middleware.mjs",
+    ".storybook/vite.config.ts",
+    "src/design-system/editor/service.ts"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "existingBrowserTab": false
+}

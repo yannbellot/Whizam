@@ -1,0 +1,78 @@
+[
+  {
+    "case": "native-button-single-action",
+    "pass": true
+  },
+  {
+    "case": "select-group-keyboard-native-event",
+    "pass": true
+  },
+  {
+    "case": "fieldset-disabled-input",
+    "pass": true
+  },
+  {
+    "case": "fieldset-disabled-button",
+    "pass": true
+  },
+  {
+    "case": "official-button-computed-style",
+    "pass": true
+  },
+  {
+    "case": "official-input-computed-style",
+    "pass": true
+  },
+  {
+    "case": "native-dialog-open",
+    "pass": true
+  },
+  {
+    "case": "native-dialog-close-restores-focus",
+    "pass": true
+  },
+  {
+    "case": "chat-synthetic-send-once",
+    "pass": true
+  },
+  {
+    "case": "chat-composer-reset",
+    "pass": true
+  },
+  {
+    "case": "synthetic-approval-refused",
+    "pass": true
+  },
+  {
+    "case": "synthetic-interrupt",
+    "pass": true
+  },
+  {
+    "case": "history-readonly-composer",
+    "pass": true
+  },
+  {
+    "case": "disconnected-disabled-composer",
+    "pass": true
+  },
+  {
+    "case": "server-error-announced",
+    "pass": true
+  },
+  {
+    "case": "transport-error-announced",
+    "pass": true
+  },
+  {
+    "case": "embedded-chat-ready",
+    "pass": true
+  },
+  {
+    "case": "context-chat-disclosure",
+    "pass": true
+  },
+  {
+    "case": "synthetic-approval-accepted",
+    "pass": true
+  }
+]

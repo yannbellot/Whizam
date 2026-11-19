@@ -1,0 +1,124 @@
+{
+  "task": "UI-ARCH-04-official-ui-styles",
+  "status": "En revue — qualification technique acquise sur la recette, acceptation humaine différée",
+  "base": "c39ea457b33b86c3a598464fd3698d987f3a2955",
+  "scope": "all Loomata web container surfaces in run-Ag62zM test recipe",
+  "canonical_runtime_sources_changed": false,
+  "native_bundle_rebuilt": false,
+  "electron_started": false,
+  "publication": false,
+  "vendor": {
+    "adobe_revision": "360e35170568dfc99a2baaa78e6b7bdd36458d91",
+    "css_unchanged": 19,
+    "lucide": "0.468.0",
+    "npm_sha512_verified": true,
+    "licenses_in_patches": true
+  },
+  "sources": {
+    "tool": {
+      "files": 59,
+      "modified": 6,
+      "added": 53
+    },
+    "project": {
+      "files": 83,
+      "modified": 24,
+      "added": 59
+    }
+  },
+  "inventory": {
+    "tsx_scanned": 58,
+    "source_elements": 371,
+    "loomata_source_elements": 281,
+    "native_editor_declarations_normalized": 179,
+    "meaning": "static declarations, not exhaustive runtime states"
+  },
+  "checks": {
+    "typescript_candidate": "passed",
+    "typescript_live_recipe": "passed",
+    "targeted_eslint": "passed",
+    "final_adapter_types_and_lint": "passed",
+    "app_build": "passed",
+    "storybook_build": "passed",
+    "chat_build": "passed",
+    "server_and_snapshot_tests": {
+      "initial": {
+        "pass": 20,
+        "fail": 3,
+        "cause": "vendored dist ignored in Git snapshots"
+      },
+      "final": {
+        "pass": 23,
+        "fail": 0
+      }
+    },
+    "synthetic_interactions": {
+      "pass": 19,
+      "fail": 0
+    },
+    "computed_style_properties": {
+      "button": 16,
+      "input": 16,
+      "equal_to_official_reference": true,
+      "scope": "one measured state"
+    },
+    "closed_css_checks": 4,
+    "copy_and_revision_completeness": "passed",
+    "patch_replay": "passed, 142 after hashes match"
+  },
+  "browser": {
+    "liveInterfaceLoaded": true,
+    "officialProperties": 10,
+    "keyboardPropertySelection": true,
+    "noDraft": true,
+    "errors": 0,
+    "nativeCodexObserved": true,
+    "nativeEditingAndDiscardObserved": true,
+    "lateNativeAttachment": "window unavailable to computer-use driver"
+  },
+  "preservation": {
+    "baseline_project_files": 312,
+    "identical": 290,
+    "intentional_container_changes": 22,
+    "project_app_and_vendor_examples": "identical",
+    "dtcg_and_yaml_authorities": "identical",
+    "user_project_data_or_synthetic_content_promoted": false,
+    "untracked_preexisting_entries_preserved": 75,
+    "project_design_records": 0,
+    "chat_daemon_restarted": false,
+    "old_chat_assets_retained": true,
+    "other_apps_or_services_replaced": false
+  },
+  "endpoints": {
+    "ui_lab": "http://127.0.0.1:59550/ui-lab?scene=official-theme%2FFixture",
+    "project": "http://127.0.0.1:59550/",
+    "storybook": "http://127.0.0.1:59551/"
+  },
+  "resources": {
+    "user_test_services": "left running on same ports",
+    "synthetic_services_63303_63304": "stopped",
+    "synthetic_chat_server": "stopped",
+    "temporary_viewport": "reset",
+    "synthetic_browser_tab": "closed",
+    "live_ui_lab_tab": "retained"
+  },
+  "review": {
+    "roles": [
+      "design-reviewer",
+      "technical-reviewer",
+      "security-reviewer"
+    ],
+    "mode": "same agent, sequential, not independent",
+    "catalog_base": "c39ea45",
+    "subagents": false
+  },
+  "not_verified": [
+    "provider login/inference",
+    "full Figma loaded/import states",
+    "VoiceOver",
+    "all engines/themes/conditional states",
+    "native window reattachment after final CUA loss"
+  ],
+  "next_action": "human visual acceptance of the test recipe; canonical promotion remains separate",
+  "doc_impact": "Doc updated"
+}

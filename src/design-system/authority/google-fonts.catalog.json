@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "revision": "24ddc1f324cac5d9f5aedca126d298f56e3f1640",
+  "date": "2026-11-05",
+  "families": [
+    {
+      "id": "inter",
+      "family": "Inter",
+      "stack": "ADL Inter, sans-serif",
+      "category": "sans-serif",
+      "minWeight": 100,
+      "maxWeight": 900,
+      "files": [
+        {
+          "name": "font.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "bytes": 876576
+        },
+        {
+          "name": "OFL.txt",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/inter/OFL.txt",
+          "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+          "bytes": 4377
+        }
+      ],
+      "cssFamily": "ADL Inter"
+    },
+    {
+      "id": "roboto",
+      "family": "Roboto",
+      "stack": "ADL Roboto, sans-serif",
+      "category": "sans-serif",
+      "minWeight": 100,
+      "maxWeight": 900,
+      "files": [
+        {
+          "name": "font.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+          "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+          "bytes": 488584
+        },
+        {
+          "name": "OFL.txt",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/roboto/OFL.txt",
+          "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+          "bytes": 4394
+        }
+      ],
+      "cssFamily": "ADL Roboto"
+    },
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "stack": "ADL Montserrat, sans-serif",
+      "category": "sans-serif",
+      "minWeight": 100,
+      "maxWeight": 900,
+      "files": [
+        {
+          "name": "font.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/montserrat/Montserrat%5Bwght%5D.ttf",
+          "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+          "bytes": 744936
+        },
+        {
+          "name": "OFL.txt",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/montserrat/OFL.txt",
+          "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+          "bytes": 4400
+        }
+      ],
+      "cssFamily": "ADL Montserrat"
+    },
+    {
+      "id": "lora",
+      "family": "Lora",
+      "stack": "ADL Lora, serif",
+      "category": "serif",
+      "minWeight": 400,
+      "maxWeight": 700,
+      "files": [
+        {
+          "name": "font.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/lora/Lora%5Bwght%5D.ttf",
+          "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+          "bytes": 212196
+        },
+        {
+          "name": "OFL.txt",
+          "url": "https://raw.githubusercontent.com/google/fonts/24ddc1f324cac5d9f5aedca126d298f56e3f1640/ofl/lora/OFL.txt",
+          "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716",
+          "bytes": 4423
+        }
+      ],
+      "cssFamily": "ADL Lora"
+    }
+  ]
+}

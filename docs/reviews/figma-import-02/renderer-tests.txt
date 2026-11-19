@@ -1,0 +1,8 @@
+
+ RUN  v5.0.5 <repository>/.local/figma-import-02/qualification/application
+
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  12:39:46
+   Duration  150ms (import 50%, transform 38%, tests 10%, worker 2%)

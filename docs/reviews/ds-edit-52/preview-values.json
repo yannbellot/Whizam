@@ -1,0 +1,44 @@
+{
+  "port": 54138,
+  "oldPortPreserved": 54137,
+  "privateStateTransferred": false,
+  "sources": [
+    {
+      "file": "src/design-system/authority/primitives.yaml",
+      "sha256": "d70e5a886d8879607b1601de52fefa25caafce71eb3c06db70b0bfa63499beb2"
+    },
+    {
+      "file": "src/design-system/authority/semantic-tokens.yaml",
+      "sha256": "b7575580693692916337453020963105207c31eed51e348567e56001797108e4"
+    },
+    {
+      "file": "src/design-system/Foundations.design.yaml",
+      "sha256": "66db76205741d7fa524bf3e501ee54833907ba943287cb98fdc7e22cbb7edd96"
+    },
+    {
+      "file": "src/design-system/components/Button/Button.design.yaml",
+      "sha256": "da6d8726e757b2edfd6d7ce3dade22752c8e9cc8703e2dd3dd71c334ac3e2a2e"
+    },
+    {
+      "file": "src/design-system/components/Field.design.yaml",
+      "sha256": "589713f4aa621692711819e135a2178afc4798324e0ed8a26b26a98e2980e713"
+    },
+    {
+      "file": "src/design-system/components/SelectField.design.yaml",
+      "sha256": "e91a233d66c27ec09f9ba19116dff827c283fc1dd55784264704d6eb60c1dca3"
+    },
+    {
+      "file": "src/design-system/components/Notice.design.yaml",
+      "sha256": "ec457ac1d114e076bf8f0f7c14615132398577e1bd48714a43268954ada9e626"
+    },
+    {
+      "file": "src/design-system/components/Panel.design.yaml",
+      "sha256": "c7158ec463a2884e57f7b9acb3308e3a365e7363375d0340254b8d1f63d818b8"
+    },
+    {
+      "file": "src/design-system/authority/semantic-catalog.yaml",
+      "sha256": "8785bfdfa8dbea2e1cc0deb00c22eabbe0faa8a9187ef3cb0100bd5bef92ce9c"
+    }
+  ],
+  "hashesRecheckedAfterMigration": true
+}

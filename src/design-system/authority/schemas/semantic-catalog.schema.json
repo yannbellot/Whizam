@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/semantic-catalog.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "categories", "taxonomy", "semanticEligibility"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "definition",
+          "examples",
+          "compatibility",
+          "identifierTemplate",
+          "intentions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "maxLength": 80
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400,
+            "pattern": "^[A-Za-z][A-Za-z -]*$"
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "examples": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 8,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 400
+            }
+          },
+          "compatibility": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": {
+              "type": "string",
+              "pattern": "^(?:color:(?:surface|text|border|icon|focus)|dimension:(?:spacing|radius|border-width|font-size|content-width)|font-weight:font-weight|line-height:line-height|font-family:font-family)$"
+            },
+            "uniqueItems": true
+          },
+          "identifierTemplate": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "intentions": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "definition", "examples", "synonyms"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+                  "maxLength": 80
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 400
+                },
+                "definition": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 400
+                },
+                "examples": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 8,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  }
+                },
+                "synonyms": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "collections": {
+          "type": "object",
+          "properties": {
+            "primitive": {
+              "minItems": 1,
+              "maxItems": 120,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120,
+                    "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+                  },
+                  "definition": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  },
+                  "examples": {
+                    "minItems": 1,
+                    "maxItems": 8,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 400
+                    }
+                  }
+                },
+                "required": ["path", "definition", "examples"],
+                "additionalProperties": false
+              }
+            },
+            "semantic": {
+              "minItems": 1,
+              "maxItems": 120,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120,
+                    "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+                  },
+                  "definition": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  },
+                  "examples": {
+                    "minItems": 1,
+                    "maxItems": 8,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 400
+                    }
+                  }
+                },
+                "required": ["path", "definition", "examples"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["primitive", "semantic"],
+          "additionalProperties": false
+        },
+        "vocabulary": {
+          "minItems": 1,
+          "maxItems": 120,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "term": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              },
+              "axis": {
+                "type": "string",
+                "enum": [
+                  "concept",
+                  "priority",
+                  "heading",
+                  "density",
+                  "elevation",
+                  "intensity",
+                  "state"
+                ]
+              },
+              "definition": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              },
+              "examples": {
+                "minItems": 1,
+                "maxItems": 8,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 400
+                }
+              },
+              "scope": {
+                "minItems": 1,
+                "maxItems": 20,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+                }
+              }
+            },
+            "required": ["term", "axis", "definition", "examples", "scope"],
+            "additionalProperties": false
+          }
+        },
+        "modes": {
+          "minItems": 4,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "axis": {
+                "type": "string",
+                "enum": ["theme", "viewport", "density", "locale"]
+              },
+              "values": {
+                "minItems": 1,
+                "maxItems": 10,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+                }
+              },
+              "active": {
+                "type": "boolean",
+                "const": false
+              },
+              "fallback": {
+                "type": "null"
+              },
+              "selection": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
+            },
+            "required": ["axis", "values", "active", "fallback", "selection"],
+            "additionalProperties": false
+          }
+        },
+        "rules": {
+          "minItems": 6,
+          "maxItems": 6,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "controlled-vocabulary",
+              "separate-intent-state",
+              "explicit-hierarchy",
+              "documented-associations",
+              "separate-modes",
+              "real-usages-only"
+            ]
+          }
+        },
+        "classification": {
+          "type": "object",
+          "properties": {
+            "primitiveFamilies": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              }
+            },
+            "semanticRoles": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              }
+            },
+            "colorIntentions": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[a-z][a-z0-9-]*(?:\\.[a-z][a-z0-9-]*)*$"
+              }
+            }
+          },
+          "required": ["primitiveFamilies", "semanticRoles", "colorIntentions"],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "collections",
+        "vocabulary",
+        "modes",
+        "rules",
+        "classification"
+      ],
+      "additionalProperties": false
+    },
+    "semanticEligibility": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["intention", "role", "definition"],
+        "properties": {
+          "intention": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          }
+        }
+      }
+    }
+  }
+}

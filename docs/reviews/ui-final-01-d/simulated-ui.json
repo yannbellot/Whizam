@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "provider": "simulated transport, never a real account or inference",
+  "cases": [
+    "actual React connection states render from the explicitly simulated account transport",
+    "progressive message and real approval card; refusal writes nothing",
+    "one approved file is really saved; provider markup is rendered as text",
+    "interruption cancels pending approval; reload restores history without resending",
+    "mobile layout has one document, no horizontal overflow, and keyboard access to the composer"
+  ]
+}

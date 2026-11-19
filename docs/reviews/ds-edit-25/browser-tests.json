@@ -1,0 +1,96 @@
+[
+  {
+    "mode": "development",
+    "cases": [
+      {
+        "title": "shows contextual heading, concise contrast and colour samples in a keyboard usable menu",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "does not suggest a pending contrast or an empty context for an unprepared story",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "appearance layout keeps compact actions before conditional component references and saving at the bottom",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "shows contextual heading, concise contrast and colour samples in a keyboard usable menu",
+        "project": "mobile",
+        "status": "passed"
+      },
+      {
+        "title": "does not suggest a pending contrast or an empty context for an unprepared story",
+        "project": "mobile",
+        "status": "passed"
+      },
+      {
+        "title": "appearance layout keeps compact actions before conditional component references and saving at the bottom",
+        "project": "mobile",
+        "status": "passed"
+      }
+    ],
+    "expected": 6,
+    "unexpected": 0,
+    "skipped": 0
+  },
+  {
+    "mode": "static",
+    "cases": [
+      {
+        "title": "shows contextual heading, concise contrast and colour samples in a keyboard usable menu",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "does not suggest a pending contrast or an empty context for an unprepared story",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "appearance layout keeps compact actions before conditional component references and saving at the bottom",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "shows contextual heading, concise contrast and colour samples in a keyboard usable menu",
+        "project": "mobile",
+        "status": "passed"
+      },
+      {
+        "title": "does not suggest a pending contrast or an empty context for an unprepared story",
+        "project": "mobile",
+        "status": "passed"
+      },
+      {
+        "title": "appearance layout keeps compact actions before conditional component references and saving at the bottom",
+        "project": "mobile",
+        "status": "passed"
+      }
+    ],
+    "expected": 6,
+    "unexpected": 0,
+    "skipped": 0
+  },
+  {
+    "mode": "persistence",
+    "cases": [
+      {
+        "title": "component token identity remains stable through repeated edits, catalogue reload and restore",
+        "project": "desktop",
+        "status": "passed"
+      },
+      {
+        "title": "component token identity remains stable through repeated edits, catalogue reload and restore",
+        "project": "mobile",
+        "status": "passed"
+      }
+    ],
+    "expected": 2,
+    "unexpected": 0,
+    "skipped": 0
+  }
+]

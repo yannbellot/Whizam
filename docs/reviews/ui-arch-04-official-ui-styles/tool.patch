@@ -1,0 +1,3731 @@
+diff --git a/scripts/design-editor/manifest.mjs b/scripts/design-editor/manifest.mjs
+--- a/scripts/design-editor/manifest.mjs
++++ b/scripts/design-editor/manifest.mjs
+@@ -1,4 +1,4 @@
+-// Closed revision manifest v38; canonical DTCG tokens and CSS recipes participate in the revision.
++// Closed revision manifest v39; canonical DTCG tokens and CSS recipes participate in the revision.
+ export const tokenPath = 'src/design-system/authority/tokens.tokens.json'
+ export const compositionPath = 'src/design-system/authority/ui-composition.yaml'
+ export const catalogPath = 'src/design-system/authority/semantic-catalog.yaml'
+@@ -12,6 +12,60 @@
+   'app/loomata-imports.css',
+ ]
+ export const manifestPaths = [
++  "src/assistant/official/Checkbox.css",
++  "src/assistant/official/Checkbox.tsx",
++  "src/assistant/official/ColorSwatch.css",
++  "src/assistant/official/ColorSwatch.tsx",
++  "src/assistant/official/Dialog.css",
++  "src/assistant/official/Modal.css",
++  "src/assistant/official/SearchField.css",
++  "src/assistant/official/Tree.css",
++  "src/assistant/official/lucide/esm/Icon.js.map",
++  "src/assistant/official/lucide/esm/createLucideIcon.js.map",
++  "src/assistant/official/lucide/esm/defaultAttributes.js.map",
++  "src/assistant/official/lucide/esm/icons/check.js.map",
++  "src/assistant/official/lucide/esm/icons/chevron-down.js.map",
++  "src/assistant/official/lucide/esm/icons/chevron-right.js.map",
++  "src/assistant/official/lucide/esm/shared/src/utils.js.map",
++  "scripts/official-chat-styles.mjs",
++  "src/assistant/main.tsx",
++  "src/assistant/official/Button.css",
++  "src/assistant/official/Button.tsx",
++  "src/assistant/official/Content.css",
++  "src/assistant/official/Content.tsx",
++  "src/assistant/official/Disclosure.css",
++  "src/assistant/official/Disclosure.tsx",
++  "src/assistant/official/Form.css",
++  "src/assistant/official/Form.tsx",
++  "src/assistant/official/LICENSE",
++  "src/assistant/official/Link.css",
++  "src/assistant/official/Link.tsx",
++  "src/assistant/official/ListBox.css",
++  "src/assistant/official/ListBox.tsx",
++  "src/assistant/official/Popover.css",
++  "src/assistant/official/Popover.tsx",
++  "src/assistant/official/ProgressCircle.tsx",
++  "src/assistant/official/Select.css",
++  "src/assistant/official/Select.tsx",
++  "src/assistant/official/TextField.css",
++  "src/assistant/official/TextField.tsx",
++  "src/assistant/official/ToggleButton.css",
++  "src/assistant/official/ToggleButton.tsx",
++  "src/assistant/official/lucide/LICENSE",
++  "src/assistant/official/lucide/esm/Icon.js",
++  "src/assistant/official/lucide/esm/createLucideIcon.js",
++  "src/assistant/official/lucide/esm/defaultAttributes.js",
++  "src/assistant/official/lucide/esm/icons/check.js",
++  "src/assistant/official/lucide/esm/icons/chevron-down.js",
++  "src/assistant/official/lucide/esm/icons/chevron-right.js",
++  "src/assistant/official/lucide/esm/shared/src/utils.js",
++  "src/assistant/official/lucide/index.d.ts",
++  "src/assistant/official/lucide/index.js",
++  "src/assistant/official/lucide/provenance.json",
++  "src/assistant/official/page.css",
++  "src/assistant/official/provenance.json",
++  "src/assistant/official/theme.css",
++  "src/assistant/official/utilities.css",
+   'scripts/project-theme.mjs',
+   'src/styles/project.css',
+   'src/loomata-ui/Controls.tsx',
+diff --git a/scripts/official-chat-styles.mjs b/scripts/official-chat-styles.mjs
+new file mode 100644
+--- /dev/null
++++ b/scripts/official-chat-styles.mjs
+@@ -0,0 +1,25 @@
++// Immutable official example styles and reviewed structural chat layout.
++import {createHash} from 'node:crypto'
++const expected={
++  "src/assistant/official/Button.css": "2aec8119e62f29675dc86d530f594e6af019543d783136c841465829f455657a",
++  "src/assistant/official/Checkbox.css": "c0796c9906a727d163417047014eea196acf3ce8732340141bde9fbbdb6525a3",
++  "src/assistant/official/ColorSwatch.css": "ce615b50ceeee79637da4f21dafe7304bb33fdb9276d9b7011e1d1914b03acf1",
++  "src/assistant/official/Content.css": "48a0f685881b4692925f6e30b57edb0c8b24ce1edad395dd790fabd611201898",
++  "src/assistant/official/Dialog.css": "7677e148992c458ec3d5f6410a8f1281f210e318caf0aae82381ce3c08160330",
++  "src/assistant/official/Disclosure.css": "0887595c7fb85f691c8ae16e5f2d0cfbc9408d1e9e618a3d54f91bd0c5fbd459",
++  "src/assistant/official/Form.css": "92e8e4831bef2a6a7842caa864dcc58c4ac91d5b7560c0fd222e72890973da76",
++  "src/assistant/official/Link.css": "123c2d069c97546075539b07781c64f4e0e0cb0eb4f8e1595eef70abdc0300ae",
++  "src/assistant/official/ListBox.css": "737a40563b86a4b6b534a22e2bc9f6bc677b80065453c6146e020850833f761f",
++  "src/assistant/official/Modal.css": "a07e277a7390b7288fa1e0307f0945ded34f09d39e82a8d941e8f706b6b6a233",
++  "src/assistant/official/Popover.css": "3e7132811e37ad1dafac4532588d953a30fe7e7cc9f86c50c8a6199a9763de86",
++  "src/assistant/official/SearchField.css": "fc1883c47bb8a8ad6c4506970c6b17f14f2fba5f82645069fd9063414ce90b95",
++  "src/assistant/official/Select.css": "f34518d9400dc52f75e645c3bcf0801f1bcbfb56a0595e845f3b2d4ce85fd68a",
++  "src/assistant/official/TextField.css": "cef323a3179d4d2afa6038c0115a78be6e8bde8e4d005ca5627263359dff218b",
++  "src/assistant/official/ToggleButton.css": "d6977ffbfb3ced85f57051cb83f8512111d35c0cc86bba0a27c5bffa3230ddbf",
++  "src/assistant/official/Tree.css": "c0e9b98656a698451ed9e467f2934235a1286556f66ad3235d62ab408a69ac88",
++  "src/assistant/official/page.css": "319bbb55df5c2fc2df5fb7d3b7ab0515554a4603199acff68bdb0ebc8bc1ee61",
++  "src/assistant/official/theme.css": "b9221d8a721028fea9aebcfd7b6f8620a7fba8d3fac19e3ef954e94a48fc511c",
++  "src/assistant/official/utilities.css": "97df44ee6db140bb92546efbfb7456f245a489ff837428e049800dcab24fb799",
++  "src/assistant/Chat.module.css": "6ea3c10c2593fc669895a7657bb674ede1f046c9727aeca09b77ab68a3d7218c"
++}
++export function officialChatCSS(file,text){if(!Object.hasOwn(expected,file))return false;if(createHash('sha256').update(text).digest('hex')!==expected[file])throw new Error('Official chat style changed: '+file);return true}
+diff --git a/scripts/project-files.json b/scripts/project-files.json
+--- a/scripts/project-files.json
++++ b/scripts/project-files.json
+@@ -811,6 +811,7 @@
+     "scripts/migrate-design-system-v4.mjs",
+     "scripts/migrate-design-tokens.mjs",
+     "scripts/naming-rules.mjs",
++    "scripts/official-chat-styles.mjs",
+     "scripts/package-deliveries.mjs",
+     "scripts/portable.mjs",
+     "scripts/prepare-macos-launcher.mjs",
+@@ -884,6 +885,58 @@
+     "src/assistant/Chat.tsx",
+     "src/assistant/index.html",
+     "src/assistant/main.tsx",
++    "src/assistant/official/Button.css",
++    "src/assistant/official/Button.tsx",
++    "src/assistant/official/Checkbox.css",
++    "src/assistant/official/Checkbox.tsx",
++    "src/assistant/official/ColorSwatch.css",
++    "src/assistant/official/ColorSwatch.tsx",
++    "src/assistant/official/Content.css",
++    "src/assistant/official/Content.tsx",
++    "src/assistant/official/Dialog.css",
++    "src/assistant/official/Disclosure.css",
++    "src/assistant/official/Disclosure.tsx",
++    "src/assistant/official/Form.css",
++    "src/assistant/official/Form.tsx",
++    "src/assistant/official/LICENSE",
++    "src/assistant/official/Link.css",
++    "src/assistant/official/Link.tsx",
++    "src/assistant/official/ListBox.css",
++    "src/assistant/official/ListBox.tsx",
++    "src/assistant/official/Modal.css",
++    "src/assistant/official/Popover.css",
++    "src/assistant/official/Popover.tsx",
++    "src/assistant/official/ProgressCircle.tsx",
++    "src/assistant/official/SearchField.css",
++    "src/assistant/official/Select.css",
++    "src/assistant/official/Select.tsx",
++    "src/assistant/official/TextField.css",
++    "src/assistant/official/TextField.tsx",
++    "src/assistant/official/ToggleButton.css",
++    "src/assistant/official/ToggleButton.tsx",
++    "src/assistant/official/Tree.css",
++    "src/assistant/official/lucide/LICENSE",
++    "src/assistant/official/lucide/esm/Icon.js",
++    "src/assistant/official/lucide/esm/Icon.js.map",
++    "src/assistant/official/lucide/esm/createLucideIcon.js",
++    "src/assistant/official/lucide/esm/createLucideIcon.js.map",
++    "src/assistant/official/lucide/esm/defaultAttributes.js",
++    "src/assistant/official/lucide/esm/defaultAttributes.js.map",
++    "src/assistant/official/lucide/esm/icons/check.js",
++    "src/assistant/official/lucide/esm/icons/check.js.map",
++    "src/assistant/official/lucide/esm/icons/chevron-down.js",
++    "src/assistant/official/lucide/esm/icons/chevron-down.js.map",
++    "src/assistant/official/lucide/esm/icons/chevron-right.js",
++    "src/assistant/official/lucide/esm/icons/chevron-right.js.map",
++    "src/assistant/official/lucide/esm/shared/src/utils.js",
++    "src/assistant/official/lucide/esm/shared/src/utils.js.map",
++    "src/assistant/official/lucide/index.d.ts",
++    "src/assistant/official/lucide/index.js",
++    "src/assistant/official/lucide/provenance.json",
++    "src/assistant/official/page.css",
++    "src/assistant/official/provenance.json",
++    "src/assistant/official/theme.css",
++    "src/assistant/official/utilities.css",
+     "src/core/ImportedComponent.tsx",
+     "src/core/exploration.ts",
+     "src/core/figma-file.ts",
+diff --git a/scripts/ui-composition.mjs b/scripts/ui-composition.mjs
+--- a/scripts/ui-composition.mjs
++++ b/scripts/ui-composition.mjs
+@@ -1,3 +1,4 @@
++import { officialChatCSS } from './official-chat-styles.mjs'
+ import { readFile, readdir } from 'node:fs/promises'
+ import path from 'node:path'
+ import { parseDocument } from 'yaml'
+@@ -93,8 +94,10 @@
+       if (entry.name.includes(' 2') || entry.name === 'editor') continue
+       const file = directory + '/' + entry.name
+       if (entry.isDirectory()) await audit(file)
+-      else if (entry.isFile() && file.endsWith('.css') && !file.includes('.generated.'))
+-        assertTokenizedCSS(await readFile(path.join(root, file), 'utf8'), file)
++      else if (entry.isFile() && file.endsWith('.css') && !file.includes('.generated.')) {
++        const text = await readFile(path.join(root, file), 'utf8')
++        if (!officialChatCSS(file, text)) assertTokenizedCSS(text, file)
++      }
+     }
+   }
+   await audit('src')
+diff --git a/src/assistant/Chat.module.css b/src/assistant/Chat.module.css
+--- a/src/assistant/Chat.module.css
++++ b/src/assistant/Chat.module.css
+@@ -1,11 +1,17 @@
++.chat {
++  min-width: 0;
++  color: var(--text-color);
++}
+ .page {
+   display: grid;
+   width: 100%;
+   min-width: 0;
++  gap: var(--spacing-6);
+ }
+ .actions {
+   display: flex;
+   flex-wrap: wrap;
++  gap: var(--spacing-2);
+ }
+ .text {
+   white-space: pre-wrap;
+diff --git a/src/assistant/Chat.tsx b/src/assistant/Chat.tsx
+--- a/src/assistant/Chat.tsx
++++ b/src/assistant/Chat.tsx
+@@ -1,10 +1,24 @@
+-import { useEffect, useRef, useState } from 'react'
+-import { Button } from '../design-system/components/Button/Button'
+-import { Field } from '../design-system/components/Field'
+-import { Notice, Panel } from '../design-system/components/Notice'
++import { Fragment, useEffect, useRef, useState, type ReactNode } from 'react'
++import { Button } from './official/Button'
++import { TextArea } from './official/TextField'
++import { Form } from './official/Form'
++import { Heading } from './official/Content'
++import { Select, SelectItem } from './official/Select'
++import { Disclosure, DisclosureHeader, DisclosurePanel } from './official/Disclosure'
++import { ToggleButton } from './official/ToggleButton'
++import { Link } from './official/Link'
+ import styles from './Chat.module.css'
+-import controlStyles from '../design-system/components/controls.module.css'
+-import appStyles from '../App.module.css'
++
++function Panel({ children }: { children: ReactNode }) {
++  return <section className="react-aria-Form">{children}</section>
++}
++function Notice({ children }: { children: ReactNode; tone?: 'error' }) {
++  return (
++    <div className="react-aria-Form">
++      <div role="alert">{children}</div>
++    </div>
++  )
++}
+ 
+ type Message = { id: string; role: 'user' | 'assistant' | 'system'; text: string }
+ type Conversation = {
+@@ -165,18 +179,19 @@
+   const conversation = conversations?.find((c) => c.id === selected) ?? conversations?.at(-1)
+   const running =
+     conversation && ['running', 'sending', 'awaitingApproval'].includes(conversation.status)
+-  const ConnectionContainer = contextEntityId ? 'details' : Panel
++  const ConnectionContainer = contextEntityId ? Disclosure : Panel
++  const ConnectionContent = contextEntityId ? DisclosurePanel : Fragment
+   const ConversationContainer = contextEntityId ? 'div' : Panel
+   return (
+     <section
+       aria-label={contextEntityId ? 'Micro-chat de la sélection' : 'Agents IA'}
+-      className={embedded ? undefined : appStyles.page}
++      className={styles.chat}
+     >
+       <div className={styles.page}>
+         {contextEntityId ? (
+-          <h3>Codex · sélection</h3>
++          <Heading level={3}>Codex · sélection</Heading>
+         ) : (
+-          <h1>{embedded ? 'Agents IA' : 'Assistance Loomata'}</h1>
++          <Heading level={1}>{embedded ? 'Agents IA' : 'Assistance Loomata'}</Heading>
+         )}
+         {!contextEntityId && (
+           <p>
+@@ -185,45 +200,47 @@
+         )}
+         <ConnectionContainer>
+           {contextEntityId ? (
+-            <summary>
++            <DisclosureHeader>
+               Codex · {state?.connected ? 'Compte connecté' : 'Connexion à vérifier'}
+-            </summary>
++            </DisclosureHeader>
+           ) : (
+-            <h2>Connexion</h2>
++            <Heading level={2}>Connexion</Heading>
+           )}
+-          <p>
+-            Codex ·{' '}
+-            {state?.installing
+-              ? 'Préparation de Codex…'
+-              : state?.connected
+-                ? 'Compte connecté'
+-                : 'Compte non connecté'}
+-          </p>
+-          <div className={styles.actions}>
+-            {!state?.connected ? (
+-              <Button disabled={busy} onClick={() => void action('connect')}>
+-                Connecter Codex
++          <ConnectionContent>
++            <p>
++              Codex ·{' '}
++              {state?.installing
++                ? 'Préparation de Codex…'
++                : state?.connected
++                  ? 'Compte connecté'
++                  : 'Compte non connecté'}
++            </p>
++            <div className={styles.actions}>
++              {!state?.connected ? (
++                <Button isDisabled={busy} onPress={() => void action('connect')}>
++                  Connecter Codex
++                </Button>
++              ) : (
++                <Button isDisabled={busy || !!running} onPress={() => void action('disconnect')}>
++                  Déconnecter Codex
++                </Button>
++              )}
++              <Button isDisabled={busy} onPress={() => void action('status')}>
++                Vérifier / Réessayer
+               </Button>
+-            ) : (
+-              <Button disabled={busy || !!running} onClick={() => void action('disconnect')}>
+-                Déconnecter Codex
+-              </Button>
++            </div>
++            {state?.loginUrl && (
++              <p>
++                <Link href={state.loginUrl} target="_blank" rel="noreferrer noopener">
++                  Ouvrir la connexion officielle dans le navigateur
++                </Link>{' '}
++                <Button isDisabled={busy} onPress={() => void action('cancelLogin')}>
++                  Annuler la connexion
++                </Button>
++              </p>
+             )}
+-            <Button disabled={busy} onClick={() => void action('status')}>
+-              Vérifier / Réessayer
+-            </Button>
+-          </div>
+-          {state?.loginUrl && (
+-            <p>
+-              <a href={state.loginUrl} target="_blank" rel="noreferrer noopener">
+-                Ouvrir la connexion officielle dans le navigateur
+-              </a>{' '}
+-              <Button disabled={busy} onClick={() => void action('cancelLogin')}>
+-                Annuler la connexion
+-              </Button>
+-            </p>
+-          )}
+-          {!embedded && <p>Claude Code : indisponible dans cette première version.</p>}
++            {!embedded && <p>Claude Code : indisponible dans cette première version.</p>}
++          </ConnectionContent>
+         </ConnectionContainer>
+         {error && <Notice tone="error">{error}</Notice>}
+         {connectionError && !error && (
+@@ -240,7 +257,7 @@
+         )}
+         {state?.workspace && !contextEntityId && (
+           <Panel>
+-            <h2>État de travail</h2>
++            <Heading level={2}>État de travail</Heading>
+             {embedded && (
+               <p>
+                 {state.workspace.selected
+@@ -252,27 +269,27 @@
+               </p>
+             )}
+             {!embedded && (
+-              <label className={controlStyles.field}>
+-                Version affichée
+-                <select
+-                  className={controlStyles.input}
+-                  aria-label="Version affichée"
+-                  value={state.workspace.selected ?? ''}
+-                  disabled={busy || !!running}
+-                  onChange={(e) => {
+-                    setEntityId('')
+-                    void action('workspaceSelect', { treeId: e.target.value || null })
+-                  }}
+-                >
+-                  <option value="">Version principale</option>
+-                  {state.workspace.trees.map((tree) => (
+-                    <option key={tree.id} value={tree.id}>
+-                      {tree.kind === 'draft' ? 'Brouillon instantané' : 'Chantier'} ·{' '}
+-                      {tree.id.slice(0, 8)}
+-                    </option>
+-                  ))}
+-                </select>
+-              </label>
++              <Select
++                label="Version affichée"
++                selectedKey={state.workspace.selected ?? '$main'}
++                isDisabled={busy || !!running}
++                onSelectionChange={(key) => {
++                  setEntityId('')
++                  void action('workspaceSelect', { treeId: key === '$main' ? null : String(key) })
++                }}
++              >
++                <SelectItem id="$main">Version principale</SelectItem>
++                {state.workspace.trees.map((tree) => (
++                  <SelectItem
++                    key={tree.id}
++                    id={tree.id}
++                    textValue={`${tree.kind === 'draft' ? 'Brouillon instantané' : 'Chantier'} · ${tree.id.slice(0, 8)}`}
++                  >
++                    {tree.kind === 'draft' ? 'Brouillon instantané' : 'Chantier'} ·{' '}
++                    {tree.id.slice(0, 8)}
++                  </SelectItem>
++                ))}
++              </Select>
+             )}
+             <p role="status">
+               {state.workspace.trees.find((tree) => tree.id === state.workspace?.selected)
+@@ -296,31 +313,31 @@
+           </Panel>
+         )}
+         <ConversationContainer>
+-          {!contextEntityId && <h2>Conversations</h2>}
++          {!contextEntityId && <Heading level={2}>Conversations</Heading>}
+           {state?.workspace && !contextEntityId && (
+-            <label className={controlStyles.field}>
+-              Élément de la conversation
+-              <select
+-                className={controlStyles.input}
+-                aria-label="Élément de la conversation"
+-                value={entityId}
+-                onChange={(e) => setEntityId(e.target.value)}
+-              >
+-                <option value="">Conversation générale</option>
+-                {state.workspace.trees
+-                  .find((tree) => tree.id === state.workspace?.selected)
+-                  ?.entities.map((entity) => (
+-                    <option key={entity.id} value={entity.id}>
+-                      {entity.label} · {entity.kind}
+-                    </option>
+-                  ))}
+-              </select>
+-            </label>
++            <Select
++              label="Élément de la conversation"
++              selectedKey={entityId || '$general'}
++              onSelectionChange={(key) => setEntityId(key === '$general' ? '' : String(key))}
++            >
++              <SelectItem id="$general">Conversation générale</SelectItem>
++              {state.workspace.trees
++                .find((tree) => tree.id === state.workspace?.selected)
++                ?.entities.map((entity) => (
++                  <SelectItem
++                    key={entity.id}
++                    id={entity.id}
++                    textValue={`${entity.label} · ${entity.kind}`}
++                  >
++                    {entity.label} · {entity.kind}
++                  </SelectItem>
++                ))}
++            </Select>
+           )}
+           {(!contextEntityId || !conversation) && (
+             <Button
+-              disabled={busy || !state?.connected || !!running}
+-              onClick={() => void action('new', entityId ? { entityId } : {})}
++              isDisabled={busy || !state?.connected || !!running}
++              onPress={() => void action('new', entityId ? { entityId } : {})}
+             >
+               {contextEntityId ? 'Commencer cet échange' : 'Nouvelle conversation'}
+             </Button>
+@@ -329,12 +346,12 @@
+             <ul>
+               {conversations?.map((c) => (
+                 <li key={c.id}>
+-                  <Button
+-                    aria-pressed={conversation?.id === c.id}
+-                    onClick={() => setSelected(c.id)}
++                  <ToggleButton
++                    isSelected={conversation?.id === c.id}
++                    onChange={() => setSelected(c.id)}
+                   >
+                     {c.title}
+-                  </Button>
++                  </ToggleButton>
+                 </li>
+               ))}
+             </ul>
+@@ -374,18 +391,22 @@
+             .filter((a) => a.conversation === conversation?.id)
+             .map((a) => (
+               <Panel key={a.id}>
+-                <h3>Autoriser une modification ?</h3>
++                <Heading level={3}>Autoriser une modification ?</Heading>
+                 <p>
+                   <strong>{a.file}</strong> · {a.reason}
+                 </p>
+-                <details>
+-                  <summary>Contenu actuel</summary>
+-                  <pre className={styles.text}>{a.before ?? 'Nouveau fichier'}</pre>
+-                </details>
+-                <details open>
+-                  <summary>Contenu proposé</summary>
+-                  <pre className={styles.text}>{a.after}</pre>
+-                </details>
++                <Disclosure>
++                  <DisclosureHeader>Contenu actuel</DisclosureHeader>
++                  <DisclosurePanel>
++                    <pre className={styles.text}>{a.before ?? 'Nouveau fichier'}</pre>
++                  </DisclosurePanel>
++                </Disclosure>
++                <Disclosure defaultExpanded>
++                  <DisclosureHeader>Contenu proposé</DisclosureHeader>
++                  <DisclosurePanel>
++                    <pre className={styles.text}>{a.after}</pre>
++                  </DisclosurePanel>
++                </Disclosure>
+                 <p>
+                   {state?.workspace
+                     ? 'La modification rejoindra le brouillon sélectionné. La version principale sera conservée.'
+@@ -394,21 +415,21 @@
+                 </p>
+                 <div className={styles.actions}>
+                   <Button
+-                    disabled={busy}
+-                    onClick={() => void action('approve', { id: a.id, decision: 'deny' })}
++                    isDisabled={busy}
++                    onPress={() => void action('approve', { id: a.id, decision: 'deny' })}
+                   >
+                     Refuser la modification
+                   </Button>
+                   <Button
+-                    disabled={busy}
+-                    onClick={() => void action('approve', { id: a.id, decision: 'approve' })}
++                    isDisabled={busy}
++                    onPress={() => void action('approve', { id: a.id, decision: 'approve' })}
+                   >
+                     Autoriser cette modification
+                   </Button>
+                 </div>
+               </Panel>
+             ))}
+-          <form
++          <Form
+             onSubmit={(event) => {
+               event.preventDefault()
+               const form = event.currentTarget
+@@ -432,23 +453,22 @@
+               })()
+             }}
+           >
+-            <Field
++            <TextArea
+               name="message"
+               label="Message à Codex"
+-              multiline
+               maxLength={16000}
+-              disabled={
++              isDisabled={
+                 busy ||
+                 !state?.connected ||
+                 !!running ||
+                 (!!conversation && !conversation.canContinue)
+               }
+-              hint="Décrivez l’objectif. Les modifications de fichiers vous seront proposées avant enregistrement."
++              description="Décrivez l’objectif. Les modifications de fichiers vous seront proposées avant enregistrement."
+             />
+             <div className={styles.actions}>
+               <Button
+                 type="submit"
+-                disabled={
++                isDisabled={
+                   busy ||
+                   !state?.connected ||
+                   !!running ||
+@@ -457,11 +477,11 @@
+               >
+                 Envoyer le message
+               </Button>
+-              <Button disabled={busy || !running} onClick={() => void action('interrupt')}>
++              <Button isDisabled={busy || !running} onPress={() => void action('interrupt')}>
+                 Interrompre
+               </Button>
+             </div>
+-          </form>
++          </Form>
+         </ConversationContainer>
+       </div>
+     </section>
+diff --git a/src/assistant/main.tsx b/src/assistant/main.tsx
+--- a/src/assistant/main.tsx
++++ b/src/assistant/main.tsx
+@@ -1,6 +1,5 @@
+ import { createRoot } from 'react-dom/client'
+ import Chat from './Chat'
+-import '../styles/tokens.generated.css'
+-import '../styles/global.css'
++import './official/page.css'
+ 
+ createRoot(document.getElementById('root')!).render(<Chat />)
+diff --git a/src/assistant/official/Button.css b/src/assistant/official/Button.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Button.css
+@@ -0,0 +1,51 @@
++@import './theme.css';
++@import './utilities.css';
++
++.react-aria-Button {
++  border: none;
++  border-radius: var(--radius);
++  appearance: none;
++  font: var(--font-size) system-ui;
++  font-weight: 500;
++  margin: 0;
++  height: var(--spacing-8);
++  padding: 0 var(--spacing-3);
++  text-decoration: none;
++  display: inline-flex;
++  align-items: center;
++  justify-content: center;
++  gap: var(--spacing-1);
++  flex-shrink: 0;
++  -webkit-tap-highlight-color: transparent;
++
++  > svg {
++    width: calc(var(--spacing) * 4.5);
++    height: calc(var(--spacing) * 4.5);
++  }
++
++  &:has(> svg:only-child) {
++    width: var(--spacing-8);
++    flex-shrink: 0;
++    padding: 0;
++    border-radius: 9999px;
++  }
++
++  &[data-pressed] {
++    scale: 0.95;
++  }
++
++  .react-aria-ProgressBar {
++    @media (prefers-color-scheme: dark) {
++      --highlight-background: var(--gray-1600);
++    }
++  }
++
++  kbd {
++    font: var(--font-size-sm) system-ui;
++    background: var(--highlight-hover);
++    border: 0.5px solid var(--tint-500);
++    padding: 0 var(--spacing-1);
++    border-radius: var(--radius-sm);
++    margin-inline-start: var(--spacing-3);
++  }
++}
+diff --git a/src/assistant/official/Button.tsx b/src/assistant/official/Button.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Button.tsx
+@@ -0,0 +1,33 @@
++'use client';
++import {
++  Button as RACButton,
++  type ButtonProps as RACButtonProps
++} from 'react-aria-components/Button';
++import {composeRenderProps} from 'react-aria-components/composeRenderProps';
++import {ProgressCircle} from './ProgressCircle';
++import './Button.css';
++
++interface ButtonProps extends RACButtonProps {
++  /**
++   * The visual style of the button (Vanilla CSS implementation specific).
++   *
++   * @default 'primary'
++   */
++  variant?: 'primary' | 'secondary' | 'quiet';
++}
++
++export function Button(props: ButtonProps) {
++  return (
++    <RACButton
++      {...props}
++      className="react-aria-Button button-base"
++      data-variant={props.variant || 'primary'}>
++      {composeRenderProps(props.children, (children, {isPending}) => (
++        <>
++          {!isPending && children}
++          {isPending && <ProgressCircle aria-label="Saving..." isIndeterminate />}
++        </>
++      ))}
++    </RACButton>
++  );
++}
+diff --git a/src/assistant/official/Checkbox.css b/src/assistant/official/Checkbox.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Checkbox.css
+@@ -0,0 +1,75 @@
++@import './theme.css';
++@import './utilities.css';
++
++.react-aria-CheckboxField {
++  display: flex;
++  flex-direction: column;
++  gap: var(--spacing-1);
++
++  [slot='description'],
++  .react-aria-FieldError {
++    margin-left: calc(var(--spacing) * 6.5);
++  }
++
++  &[data-disabled] [slot='description'] {
++    color: var(--text-color-disabled);
++  }
++}
++
++.react-aria-CheckboxButton {
++  --checkmark-color: var(--highlight-foreground);
++
++  display: flex;
++  /* This is needed so the HiddenInput is positioned correctly */
++  position: relative;
++  align-items: center;
++  gap: var(--spacing-2);
++  font: var(--font-size) system-ui;
++  color: var(--text-color);
++  forced-color-adjust: none;
++  -webkit-tap-highlight-color: transparent;
++
++  .indicator {
++    width: calc(var(--spacing) * 4.5);
++    height: calc(var(--spacing) * 4.5);
++    box-sizing: border-box;
++    border-radius: var(--radius-sm);
++    transition: all 200ms;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    flex-shrink: 0;
++  }
++
++  svg {
++    width: calc(100% - var(--spacing-2));
++    height: calc(100% - var(--spacing-2));
++    fill: none;
++    stroke: var(--checkmark-color);
++    stroke-width: 3px;
++    stroke-dasharray: 22px;
++    stroke-dashoffset: 66;
++    stroke-linecap: round;
++    stroke-linejoin: round;
++    transition: all 200ms;
++  }
++
++  &[data-selected],
++  &[data-indeterminate] {
++    svg {
++      stroke-dashoffset: 44;
++    }
++  }
++
++  &[data-indeterminate] {
++    svg {
++      stroke: none;
++      fill: var(--checkmark-color);
++    }
++  }
++
++  &[data-disabled] {
++    color: var(--text-color-disabled);
++    --checkmark-color: var(--text-color-disabled);
++  }
++}
+diff --git a/src/assistant/official/Checkbox.tsx b/src/assistant/official/Checkbox.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Checkbox.tsx
+@@ -0,0 +1,44 @@
++'use client';
++import {
++  CheckboxButton,
++  CheckboxField,
++  type CheckboxFieldProps,
++  type ValidationResult
++} from 'react-aria-components/Checkbox';
++import './Checkbox.css';
++import {Description, FieldError} from './Form';
++import type {ReactNode} from 'react';
++
++interface CheckboxProps extends CheckboxFieldProps {
++  children?: ReactNode;
++  description?: string;
++  errorMessage?: string | ((validation: ValidationResult) => string);
++}
++
++export function Checkbox({children, description, errorMessage, ...props}: CheckboxProps) {
++  return (
++    <CheckboxField {...props}>
++      <CheckboxButton>
++        {({isIndeterminate}) => (
++          <>
++            <div className="indicator">
++              <svg
++                viewBox="0 0 18 18"
++                aria-hidden="true"
++                key={isIndeterminate ? 'indeterminate' : 'check'}>
++                {isIndeterminate ? (
++                  <rect x={1} y={7.5} width={16} height={3} />
++                ) : (
++                  <polyline points="2 9 7 14 16 4" />
++                )}
++              </svg>
++            </div>
++            {children}
++          </>
++        )}
++      </CheckboxButton>
++      {description && <Description>{description}</Description>}
++      <FieldError>{errorMessage}</FieldError>
++    </CheckboxField>
++  );
++}
+diff --git a/src/assistant/official/ColorSwatch.css b/src/assistant/official/ColorSwatch.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ColorSwatch.css
+@@ -0,0 +1,8 @@
++@import './theme.css';
++
++.react-aria-ColorSwatch {
++  width: var(--spacing-8);
++  height: var(--spacing-8);
++  border-radius: 9999px;
++  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
++}
+diff --git a/src/assistant/official/ColorSwatch.tsx b/src/assistant/official/ColorSwatch.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ColorSwatch.tsx
+@@ -0,0 +1,18 @@
++'use client';
++import {
++  ColorSwatch as AriaColorSwatch,
++  type ColorSwatchProps
++} from 'react-aria-components/ColorSwatch';
++import './ColorSwatch.css';
++
++export function ColorSwatch(props: ColorSwatchProps) {
++  return (
++    <AriaColorSwatch
++      {...props}
++      style={({color}) => ({
++        background: `linear-gradient(${color}, ${color}),
++          repeating-conic-gradient(#CCC 0% 25%, white 0% 50%) 50% / 16px 16px`
++      })}
++    />
++  );
++}
+diff --git a/src/assistant/official/Content.css b/src/assistant/official/Content.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Content.css
+@@ -0,0 +1,3 @@
++.react-aria-Heading {
++  margin: 0;
++}
+diff --git a/src/assistant/official/Content.tsx b/src/assistant/official/Content.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Content.tsx
+@@ -0,0 +1,11 @@
++import {Heading as AriaHeading, type HeadingProps} from 'react-aria-components/Heading';
++import {Text as AriaText, type TextProps} from 'react-aria-components/Text';
++import './Content.css';
++
++export function Heading(props: HeadingProps) {
++  return <AriaHeading {...props} />;
++}
++
++export function Text(props: TextProps) {
++  return <AriaText {...props} />;
++}
+diff --git a/src/assistant/official/Dialog.css b/src/assistant/official/Dialog.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Dialog.css
+@@ -0,0 +1,14 @@
++@import './theme.css';
++
++.react-aria-Dialog {
++  outline: none;
++  max-height: inherit;
++  box-sizing: border-box;
++  overflow: auto;
++  padding: var(--spacing-10);
++
++  .react-aria-Heading[slot='title'] {
++    margin-top: 0;
++    margin-bottom: 1em;
++  }
++}
+diff --git a/src/assistant/official/Disclosure.css b/src/assistant/official/Disclosure.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Disclosure.css
+@@ -0,0 +1,77 @@
++@import './theme.css';
++
++.react-aria-Disclosure {
++  width: calc(var(--spacing) * 50);
++
++  .react-aria-Heading {
++    margin: 0;
++  }
++
++  .disclosure-button {
++    background: none;
++    border: none;
++    box-shadow: none;
++    text-shadow: none;
++    width: 100%;
++    color: var(--text-color);
++    font: var(--font-size) system-ui;
++    font-weight: 600;
++    display: flex;
++    align-items: center;
++    text-align: start;
++    gap: var(--spacing-1);
++    padding: var(--spacing-2) var(--spacing-3);
++    border-radius: var(--radius);
++    transition:
++      background 200ms,
++      color 200ms,
++      scale 200ms;
++    outline: none;
++    -webkit-tap-highlight-color: transparent;
++
++    &[data-hovered],
++    &[data-pressed] {
++      background: var(--gray-300);
++      color: var(--text-color-hover);
++    }
++
++    &[data-pressed] {
++      scale: 0.97;
++    }
++
++    &[data-focus-visible] {
++      outline: 2px solid var(--focus-ring-color);
++    }
++
++    &[data-disabled] {
++      color: var(--text-color-disabled);
++    }
++
++    svg {
++      rotate: 0deg;
++      transition: rotate 200ms;
++      fill: none;
++      stroke: currentColor;
++      stroke-width: 3px;
++    }
++  }
++
++  &[data-expanded] .disclosure-button svg {
++    rotate: 90deg;
++  }
++}
++
++.react-aria-DisclosurePanel {
++  color: var(--text-color);
++  height: var(--disclosure-panel-height);
++  transition: height 250ms;
++  overflow: clip;
++
++  @media (prefers-reduced-motion: reduce) {
++    transition: none;
++  }
++
++  div {
++    padding: var(--spacing-2) var(--spacing-4);
++  }
++}
+diff --git a/src/assistant/official/Disclosure.tsx b/src/assistant/official/Disclosure.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Disclosure.tsx
+@@ -0,0 +1,35 @@
++'use client';
++import {Button} from 'react-aria-components/Button';
++import {
++  Disclosure as AriaDisclosure,
++  DisclosurePanel as AriaDisclosurePanel,
++  type DisclosureProps,
++  type DisclosurePanelProps,
++  type HeadingProps
++} from 'react-aria-components/Disclosure';
++import {Heading} from './Content';
++import {ChevronRight} from './lucide';
++import './Disclosure.css';
++
++export function Disclosure(props: DisclosureProps) {
++  return <AriaDisclosure {...props} />;
++}
++
++export function DisclosureHeader({children, ...props}: HeadingProps) {
++  return (
++    <Heading {...props}>
++      <Button slot="trigger" className="disclosure-button">
++        <ChevronRight size={16} />
++        <span>{children}</span>
++      </Button>
++    </Heading>
++  );
++}
++
++export function DisclosurePanel(props: DisclosurePanelProps) {
++  return (
++    <AriaDisclosurePanel {...props}>
++      <div>{props.children}</div>
++    </AriaDisclosurePanel>
++  );
++}
+diff --git a/src/assistant/official/Form.css b/src/assistant/official/Form.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Form.css
+@@ -0,0 +1,108 @@
++@import './theme.css';
++
++.react-aria-Form {
++  display: flex;
++  flex-direction: column;
++  gap: var(--spacing-6);
++
++  > .react-aria-Button {
++    align-self: start;
++  }
++}
++
++.react-aria-Form [role='alert'] {
++  border: 2px solid var(--invalid-color);
++  background: var(--overlay-background);
++  border-radius: 6px;
++  padding: 12px;
++  max-width: 250px;
++  outline: none;
++
++  &:focus {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: 2px;
++  }
++
++  h3 {
++    margin-top: 0;
++  }
++
++  p {
++    margin-bottom: 0;
++  }
++}
++
++.react-aria-Label {
++  display: block;
++  font: var(--font-size) system-ui;
++  color: var(--text-color);
++  margin-bottom: var(--spacing-2);
++  font-weight: 500;
++  cursor: default;
++}
++
++.react-aria-FieldError {
++  display: block;
++  font: var(--font-size-sm) system-ui;
++  color: var(--invalid-color);
++  margin-top: var(--spacing-1);
++  contain: inline-size;
++}
++
++.field-description {
++  display: block;
++  font: var(--font-size-sm) system-ui;
++  margin-top: var(--spacing-1);
++  contain: inline-size;
++
++  [data-invalid] > & {
++    display: none;
++  }
++}
++
++.field-Button {
++  background: var(--tint-200);
++  color: var(--tint-1400);
++  forced-color-adjust: none;
++  border-radius: var(--radius-sm);
++  border: none;
++  margin-left: calc(-1 * var(--spacing-8) + 4px);
++  height: calc(100% - 8px);
++  aspect-ratio: 1/1;
++  padding: 0;
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  transition-property: scale, background;
++  transition-duration: 200ms;
++  -webkit-tap-highlight-color: transparent;
++
++  svg {
++    width: var(--spacing-4);
++    height: var(--spacing-4);
++  }
++
++  &:where([data-hovered], [data-pressed]) {
++    background: var(--tint-300);
++    color: var(--tint-1200);
++  }
++
++  @media (forced-colors: active) {
++    background: Highlight;
++    color: HighlightText;
++  }
++
++  &[data-pressed] {
++    scale: 0.9;
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: 2px;
++  }
++
++  &[data-disabled] {
++    background: none;
++    color: var(--text-color-disabled);
++  }
++}
+diff --git a/src/assistant/official/Form.tsx b/src/assistant/official/Form.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Form.tsx
+@@ -0,0 +1,28 @@
++'use client';
++import {Form as RACForm, type FormProps} from 'react-aria-components/Form';
++import {type LabelProps, Label as RACLabel} from 'react-aria-components/Label';
++import {type FieldErrorProps, FieldError as RACFieldError} from 'react-aria-components/FieldError';
++import {type ButtonProps, Button} from 'react-aria-components/Button';
++import {type TextProps} from 'react-aria-components/Text';
++import './Form.css';
++import {Text} from './Content';
++
++export function Form(props: FormProps) {
++  return <RACForm {...props} />;
++}
++
++export function Label(props: LabelProps) {
++  return <RACLabel {...props} />;
++}
++
++export function FieldError(props: FieldErrorProps) {
++  return <RACFieldError {...props} />;
++}
++
++export function Description(props: TextProps) {
++  return <Text slot="description" className="field-description" {...props} />;
++}
++
++export function FieldButton(props: ButtonProps) {
++  return <Button {...props} className="field-Button" />;
++}
+diff --git a/src/assistant/official/LICENSE b/src/assistant/official/LICENSE
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/LICENSE
+@@ -0,0 +1,201 @@
++                                 Apache License
++                           Version 2.0, January 2004
++                        http://www.apache.org/licenses/
++
++   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
++
++   1. Definitions.
++
++      "License" shall mean the terms and conditions for use, reproduction,
++      and distribution as defined by Sections 1 through 9 of this document.
++
++      "Licensor" shall mean the copyright owner or entity authorized by
++      the copyright owner that is granting the License.
++
++      "Legal Entity" shall mean the union of the acting entity and all
++      other entities that control, are controlled by, or are under common
++      control with that entity. For the purposes of this definition,
++      "control" means (i) the power, direct or indirect, to cause the
++      direction or management of such entity, whether by contract or
++      otherwise, or (ii) ownership of fifty percent (50%) or more of the
++      outstanding shares, or (iii) beneficial ownership of such entity.
++
++      "You" (or "Your") shall mean an individual or Legal Entity
++      exercising permissions granted by this License.
++
++      "Source" form shall mean the preferred form for making modifications,
++      including but not limited to software source code, documentation
++      source, and configuration files.
++
++      "Object" form shall mean any form resulting from mechanical
++      transformation or translation of a Source form, including but
++      not limited to compiled object code, generated documentation,
++      and conversions to other media types.
++
++      "Work" shall mean the work of authorship, whether in Source or
++      Object form, made available under the License, as indicated by a
++      copyright notice that is included in or attached to the work
++      (an example is provided in the Appendix below).
++
++      "Derivative Works" shall mean any work, whether in Source or Object
++      form, that is based on (or derived from) the Work and for which the
++      editorial revisions, annotations, elaborations, or other modifications
++      represent, as a whole, an original work of authorship. For the purposes
++      of this License, Derivative Works shall not include works that remain
++      separable from, or merely link (or bind by name) to the interfaces of,
++      the Work and Derivative Works thereof.
++
++      "Contribution" shall mean any work of authorship, including
++      the original version of the Work and any modifications or additions
++      to that Work or Derivative Works thereof, that is intentionally
++      submitted to Licensor for inclusion in the Work by the copyright owner
++      or by an individual or Legal Entity authorized to submit on behalf of
++      the copyright owner. For the purposes of this definition, "submitted"
++      means any form of electronic, verbal, or written communication sent
++      to the Licensor or its representatives, including but not limited to
++      communication on electronic mailing lists, source code control systems,
++      and issue tracking systems that are managed by, or on behalf of, the
++      Licensor for the purpose of discussing and improving the Work, but
++      excluding communication that is conspicuously marked or otherwise
++      designated in writing by the copyright owner as "Not a Contribution."
++
++      "Contributor" shall mean Licensor and any individual or Legal Entity
++      on behalf of whom a Contribution has been received by Licensor and
++      subsequently incorporated within the Work.
++
++   2. Grant of Copyright License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      copyright license to reproduce, prepare Derivative Works of,
++      publicly display, publicly perform, sublicense, and distribute the
++      Work and such Derivative Works in Source or Object form.
++
++   3. Grant of Patent License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      (except as stated in this section) patent license to make, have made,
++      use, offer to sell, sell, import, and otherwise transfer the Work,
++      where such license applies only to those patent claims licensable
++      by such Contributor that are necessarily infringed by their
++      Contribution(s) alone or by combination of their Contribution(s)
++      with the Work to which such Contribution(s) was submitted. If You
++      institute patent litigation against any entity (including a
++      cross-claim or counterclaim in a lawsuit) alleging that the Work
++      or a Contribution incorporated within the Work constitutes direct
++      or contributory patent infringement, then any patent licenses
++      granted to You under this License for that Work shall terminate
++      as of the date such litigation is filed.
++
++   4. Redistribution. You may reproduce and distribute copies of the
++      Work or Derivative Works thereof in any medium, with or without
++      modifications, and in Source or Object form, provided that You
++      meet the following conditions:
++
++      (a) You must give any other recipients of the Work or
++          Derivative Works a copy of this License; and
++
++      (b) You must cause any modified files to carry prominent notices
++          stating that You changed the files; and
++
++      (c) You must retain, in the Source form of any Derivative Works
++          that You distribute, all copyright, patent, trademark, and
++          attribution notices from the Source form of the Work,
++          excluding those notices that do not pertain to any part of
++          the Derivative Works; and
++
++      (d) If the Work includes a "NOTICE" text file as part of its
++          distribution, then any Derivative Works that You distribute must
++          include a readable copy of the attribution notices contained
++          within such NOTICE file, excluding those notices that do not
++          pertain to any part of the Derivative Works, in at least one
++          of the following places: within a NOTICE text file distributed
++          as part of the Derivative Works; within the Source form or
++          documentation, if provided along with the Derivative Works; or,
++          within a display generated by the Derivative Works, if and
++          wherever such third-party notices normally appear. The contents
++          of the NOTICE file are for informational purposes only and
++          do not modify the License. You may add Your own attribution
++          notices within Derivative Works that You distribute, alongside
++          or as an addendum to the NOTICE text from the Work, provided
++          that such additional attribution notices cannot be construed
++          as modifying the License.
++
++      You may add Your own copyright statement to Your modifications and
++      may provide additional or different license terms and conditions
++      for use, reproduction, or distribution of Your modifications, or
++      for any such Derivative Works as a whole, provided Your use,
++      reproduction, and distribution of the Work otherwise complies with
++      the conditions stated in this License.
++
++   5. Submission of Contributions. Unless You explicitly state otherwise,
++      any Contribution intentionally submitted for inclusion in the Work
++      by You to the Licensor shall be under the terms and conditions of
++      this License, without any additional terms or conditions.
++      Notwithstanding the above, nothing herein shall supersede or modify
++      the terms of any separate license agreement you may have executed
++      with Licensor regarding such Contributions.
++
++   6. Trademarks. This License does not grant permission to use the trade
++      names, trademarks, service marks, or product names of the Licensor,
++      except as required for reasonable and customary use in describing the
++      origin of the Work and reproducing the content of the NOTICE file.
++
++   7. Disclaimer of Warranty. Unless required by applicable law or
++      agreed to in writing, Licensor provides the Work (and each
++      Contributor provides its Contributions) on an "AS IS" BASIS,
++      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
++      implied, including, without limitation, any warranties or conditions
++      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
++      PARTICULAR PURPOSE. You are solely responsible for determining the
++      appropriateness of using or redistributing the Work and assume any
++      risks associated with Your exercise of permissions under this License.
++
++   8. Limitation of Liability. In no event and under no legal theory,
++      whether in tort (including negligence), contract, or otherwise,
++      unless required by applicable law (such as deliberate and grossly
++      negligent acts) or agreed to in writing, shall any Contributor be
++      liable to You for damages, including any direct, indirect, special,
++      incidental, or consequential damages of any character arising as a
++      result of this License or out of the use or inability to use the
++      Work (including but not limited to damages for loss of goodwill,
++      work stoppage, computer failure or malfunction, or any and all
++      other commercial damages or losses), even if such Contributor
++      has been advised of the possibility of such damages.
++
++   9. Accepting Warranty or Additional Liability. While redistributing
++      the Work or Derivative Works thereof, You may choose to offer,
++      and charge a fee for, acceptance of support, warranty, indemnity,
++      or other liability obligations and/or rights consistent with this
++      License. However, in accepting such obligations, You may act only
++      on Your own behalf and on Your sole responsibility, not on behalf
++      of any other Contributor, and only if You agree to indemnify,
++      defend, and hold each Contributor harmless for any liability
++      incurred by, or claims asserted against, such Contributor by reason
++      of your accepting any such warranty or additional liability.
++
++   END OF TERMS AND CONDITIONS
++
++   APPENDIX: How to apply the Apache License to your work.
++
++      To apply the Apache License to your work, attach the following
++      boilerplate notice, with the fields enclosed by brackets "[]"
++      replaced with your own identifying information. (Don't include
++      the brackets!)  The text should be enclosed in the appropriate
++      comment syntax for the file format. We also recommend that a
++      file or class name and description of purpose be included on the
++      same "printed page" as the copyright notice for easier
++      identification within third-party archives.
++
++   Copyright 2019 Adobe
++
++   Licensed under the Apache License, Version 2.0 (the "License");
++   you may not use this file except in compliance with the License.
++   You may obtain a copy of the License at
++
++       http://www.apache.org/licenses/LICENSE-2.0
++
++   Unless required by applicable law or agreed to in writing, software
++   distributed under the License is distributed on an "AS IS" BASIS,
++   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++   See the License for the specific language governing permissions and
++   limitations under the License.
+diff --git a/src/assistant/official/Link.css b/src/assistant/official/Link.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Link.css
+@@ -0,0 +1,31 @@
++@import './theme.css';
++
++.react-aria-Link {
++  color: var(--link-color);
++  font-size: var(--font-size);
++  transition-property: color, text-decoration-thickness;
++  transition-duration: 200ms;
++  text-decoration: underline;
++  cursor: pointer;
++  outline: none;
++  position: relative;
++  border-radius: var(--radius-sm);
++  -webkit-tap-highlight-color: transparent;
++
++  &[data-hovered] {
++    text-decoration-thickness: 1.5px;
++  }
++
++  &[data-pressed] {
++    color: var(--link-color-pressed);
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++  }
++
++  &[data-disabled] {
++    cursor: default;
++    color: var(--text-color-disabled);
++  }
++}
+diff --git a/src/assistant/official/Link.tsx b/src/assistant/official/Link.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Link.tsx
+@@ -0,0 +1,7 @@
++'use client';
++import {Link as RACLink, type LinkProps} from 'react-aria-components/Link';
++import './Link.css';
++
++export function Link(props: LinkProps) {
++  return <RACLink {...props} />;
++}
+diff --git a/src/assistant/official/ListBox.css b/src/assistant/official/ListBox.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ListBox.css
+@@ -0,0 +1,354 @@
++@import './theme.css';
++
++.react-aria-ListBox {
++  max-height: inherit;
++  overflow: auto;
++  border: 0.5px solid var(--border-color);
++  border-radius: calc(var(--radius) + var(--spacing-1));
++  background: var(--overlay-background);
++  forced-color-adjust: none;
++  outline: none;
++  box-sizing: border-box;
++  font: var(--font-size) system-ui;
++  color: var(--text-color);
++
++  &:has(.react-aria-ListBoxSection) {
++    scroll-padding: 24px;
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: -1px;
++  }
++
++  &[data-empty] {
++    align-items: center;
++    justify-content: center;
++    font-style: italic;
++  }
++
++  &[data-drop-target] {
++    outline: 2px solid var(--highlight-background);
++    outline-offset: -1px;
++    background: var(--highlight-overlay);
++  }
++
++  .react-aria-DropIndicator[data-drop-target] {
++    z-index: 3;
++    outline: 1px solid var(--highlight-background);
++  }
++}
++
++.react-aria-ListBoxSection {
++  .react-aria-Header {
++    position: sticky;
++    top: -0.5px;
++    z-index: 2;
++    font-size: var(--font-size-sm);
++    font-weight: 600;
++    font-variation-settings: initial;
++    padding: var(--spacing-1) var(--spacing-4);
++    background: var(--gray-100);
++    border-block: 0.5px solid var(--gray-400);
++    cursor: default;
++    user-select: none;
++    box-shadow:
++      inset 0px 1px 0px white,
++      inset 0px -4px 8px var(--gray-200);
++
++    @media (prefers-color-scheme: dark) {
++      box-shadow: inset 0px 4px 8px var(--gray-200);
++    }
++  }
++
++  &:first-child .react-aria-Header {
++    margin-top: -0.5px;
++  }
++}
++
++.react-aria-ListBoxItem {
++  padding: var(--spacing-1) var(--spacing-3);
++  border-radius: var(--radius);
++  outline: none;
++  cursor: default;
++  color: var(--text-color);
++  font: var(--font-size) system-ui;
++  position: relative;
++  display: flex;
++  flex-direction: column;
++  justify-content: center;
++  min-height: var(--spacing-8);
++  box-sizing: border-box;
++  position: relative;
++  transition-property: background, color, border-radius;
++  transition-duration: 200ms;
++  -webkit-tap-highlight-color: transparent;
++
++  --border-color: var(--gray-300);
++  &:not(:last-child)::after {
++    content: '';
++    display: block;
++    position: absolute;
++  }
++
++  &[data-pressed] {
++    background: var(--highlight-hover);
++    border-radius: var(--radius);
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: -2px;
++    z-index: 2;
++  }
++
++  &[data-selected] {
++    background: var(--highlight-background);
++    color: var(--highlight-foreground);
++    --border-color: transparent;
++
++    &[data-focus-visible] {
++      outline-color: var(--highlight-foreground);
++      outline-offset: -4px;
++    }
++
++    &[data-pressed] {
++      background: var(--highlight-background-pressed);
++    }
++
++    &:has(+ [data-selected]),
++    &:has(+ .react-aria-DropIndicator + [data-selected]) {
++      --border-color: rgb(255 255 255 / 0.3);
++    }
++  }
++
++  [slot='label'] {
++    font-weight: 500;
++  }
++
++  [slot='description'] {
++    font-size: var(--font-size-sm);
++  }
++
++  &[href] {
++    text-decoration: none;
++    cursor: pointer;
++    -webkit-touch-callout: none;
++  }
++
++  &[data-disabled] {
++    color: var(--text-color-disabled);
++  }
++
++  &[data-dragging] {
++    opacity: 0.6;
++  }
++
++  &[data-drop-target] {
++    outline: 2px solid var(--highlight-background);
++    background: var(--highlight-overlay);
++  }
++}
++
++.react-aria-ListBox {
++  &[data-layout='stack'] {
++    display: flex;
++
++    &[data-orientation='vertical'] {
++      flex-direction: column;
++      width: 250px;
++      max-height: 300px;
++      min-height: 100px;
++
++      .react-aria-ListBoxItem {
++        margin-inline: var(--spacing-1);
++
++        &:where(:nth-child(1 of .react-aria-ListBoxItem)) {
++          margin-top: var(--spacing);
++        }
++
++        &:where(:nth-last-child(1 of .react-aria-ListBoxItem)) {
++          margin-bottom: var(--spacing);
++        }
++
++        [role='presentation'] > & {
++          margin: 0; /* virtualizer */
++        }
++
++        &:not(:last-child)::after {
++          bottom: 0;
++          width: calc(100% - var(--spacing-6));
++          border-bottom: 0.5px solid var(--border-color);
++        }
++
++        &[data-selected] {
++          &:has(+ [data-selected]),
++          &:has(+ .react-aria-DropIndicator + [data-selected]) {
++            border-end-start-radius: 0;
++            border-end-end-radius: 0;
++          }
++
++          + [data-selected],
++          + .react-aria-DropIndicator + [data-selected] {
++            border-start-start-radius: 0;
++            border-start-end-radius: 0;
++          }
++        }
++      }
++    }
++
++    &[data-orientation='horizontal'] {
++      flex-direction: row;
++      width: 100%;
++
++      .react-aria-ListBoxItem {
++        min-width: max-content;
++        margin-block: var(--spacing-1);
++
++        &:nth-child(1 of .react-aria-ListBoxItem) {
++          margin-inline-start: var(--spacing);
++        }
++
++        &:nth-last-child(1 of .react-aria-ListBoxItem) {
++          margin-inline-end: var(--spacing);
++        }
++
++        &:not(:last-child)::after {
++          inset-inline-end: 0;
++          height: calc(100% - var(--spacing-2));
++          border-inline-end: 0.5px solid var(--border-color);
++        }
++
++        &[data-selected] {
++          &:has(+ [data-selected]),
++          &:has(+ .react-aria-DropIndicator + [data-selected]) {
++            border-start-end-radius: 0;
++            border-end-end-radius: 0;
++          }
++
++          + [data-selected],
++          + .react-aria-DropIndicator + [data-selected] {
++            border-start-start-radius: 0;
++            border-end-start-radius: 0;
++          }
++        }
++      }
++    }
++  }
++
++  &[data-layout='grid'] {
++    display: grid;
++    gap: var(--spacing-1);
++    width: fit-content;
++    max-width: 100%;
++    padding: var(--spacing-1);
++
++    &[data-orientation='vertical'] {
++      grid-template-columns: 1fr 1fr;
++    }
++
++    &[data-orientation='horizontal'] {
++      grid-auto-flow: column;
++      grid-template-rows: auto auto;
++      grid-template-columns: none;
++      grid-auto-columns: 160px;
++    }
++  }
++}
++
++.react-aria-ListBoxLoadingIndicator {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  height: 24px;
++  width: 100%;
++}
++
++.dropdown-listbox {
++  display: block;
++  max-height: inherit;
++  overflow: auto;
++  border-radius: inherit;
++  forced-color-adjust: none;
++  outline: none;
++  box-sizing: border-box;
++  font: var(--font-size) system-ui;
++  color: var(--text-color);
++
++  &[data-empty] {
++    min-height: var(--spacing-8);
++    padding: var(--spacing-2);
++  }
++
++  .react-aria-Header {
++    padding-left: var(--spacing-7);
++  }
++}
++
++.dropdown-item {
++  padding: calc((var(--spacing-8) - 1lh) / 2) var(--spacing-3) calc((var(--spacing-8) - 1lh) / 2)
++    var(--spacing-6);
++  box-sizing: border-box;
++  border-radius: var(--radius);
++  outline: none;
++  cursor: default;
++  color: var(--text-color);
++  font: var(--font-size) system-ui;
++  font-weight: 500;
++  position: relative;
++  display: flex;
++  flex-direction: column;
++  justify-content: center;
++  min-height: var(--spacing-8);
++  margin-inline: var(--spacing-1);
++  -webkit-tap-highlight-color: transparent;
++
++  &:first-of-type {
++    margin-top: var(--spacing);
++  }
++
++  &:last-of-type {
++    margin-bottom: var(--spacing);
++  }
++
++  &[data-selected] {
++    font-weight: 500;
++    color: var(--text-color);
++
++    .lucide-check {
++      position: absolute;
++      top: 50%;
++      left: var(--spacing-1);
++      translate: 0 -50%;
++      stroke-width: 3px;
++      width: var(--spacing-4);
++      height: var(--spacing-4);
++    }
++  }
++
++  &[data-pressed] {
++    background: var(--highlight-hover);
++  }
++
++  &[data-focused] {
++    background: var(--highlight-background);
++    color: var(--highlight-foreground);
++  }
++
++  [slot='label'] {
++    font-weight: 500;
++  }
++
++  [slot='description'] {
++    font-size: var(--font-size-sm);
++  }
++
++  &[data-disabled] {
++    color: var(--text-color-disabled);
++  }
++
++  &[href] {
++    text-decoration: none;
++    cursor: pointer;
++  }
++}
+diff --git a/src/assistant/official/ListBox.tsx b/src/assistant/official/ListBox.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ListBox.tsx
+@@ -0,0 +1,66 @@
++'use client';
++import {
++  ListBox as AriaListBox,
++  ListBoxItem as AriaListBoxItem,
++  ListBoxSection as AriaListBoxSection,
++  ListBoxLoadMoreItem as AriaListBoxLoadMoreItem,
++  Header,
++  type ListBoxItemProps,
++  type ListBoxLoadMoreItemProps,
++  type ListBoxProps,
++  type ListBoxSectionProps
++} from 'react-aria-components/ListBox';
++import {composeRenderProps} from 'react-aria-components/composeRenderProps';
++import {Check} from './lucide';
++import {Text} from './Content';
++import {ProgressCircle} from './ProgressCircle';
++import './ListBox.css';
++
++export function ListBox<T>({children, ...props}: ListBoxProps<T>) {
++  return <AriaListBox {...props}>{children}</AriaListBox>;
++}
++
++export function ListBoxItem(props: ListBoxItemProps) {
++  let textValue =
++    props.textValue || (typeof props.children === 'string' ? props.children : undefined);
++  return (
++    <AriaListBoxItem {...props} textValue={textValue}>
++      {composeRenderProps(props.children, children =>
++        typeof children === 'string' ? <Text slot="label">{children}</Text> : children
++      )}
++    </AriaListBoxItem>
++  );
++}
++
++export function ListBoxSection<T>(props: ListBoxSectionProps<T>) {
++  return <AriaListBoxSection {...props} />;
++}
++
++export function ListBoxLoadMoreItem(props: ListBoxLoadMoreItemProps) {
++  return (
++    <AriaListBoxLoadMoreItem {...props}>
++      <ProgressCircle isIndeterminate aria-label="Loading more..." />
++    </AriaListBoxLoadMoreItem>
++  );
++}
++
++export function DropdownListBox<T>(props: ListBoxProps<T>) {
++  return <AriaListBox {...props} className="dropdown-listbox" />;
++}
++
++export function DropdownItem(props: ListBoxItemProps) {
++  let textValue =
++    props.textValue || (typeof props.children === 'string' ? props.children : undefined);
++  return (
++    <ListBoxItem {...props} textValue={textValue} className="dropdown-item">
++      {composeRenderProps(props.children, (children, {isSelected}) => (
++        <>
++          {isSelected && <Check />}
++          {typeof children === 'string' ? <Text slot="label">{children}</Text> : children}
++        </>
++      ))}
++    </ListBoxItem>
++  );
++}
++
++export {Text, Header};
+diff --git a/src/assistant/official/Modal.css b/src/assistant/official/Modal.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Modal.css
+@@ -0,0 +1,65 @@
++@import './theme.css';
++
++.react-aria-ModalOverlay {
++  position: absolute;
++  top: 0;
++  left: 0;
++  width: var(--page-width);
++  height: var(--page-height);
++  background: rgba(0 0 0 / 0.5);
++  overflow: clip;
++  z-index: 100;
++  font-family: system-ui;
++  font-size: var(--font-size);
++
++  &[data-entering] {
++    animation: modal-fade 200ms;
++  }
++
++  &[data-exiting] {
++    animation: modal-fade 150ms reverse ease-in;
++  }
++}
++
++.react-aria-Modal {
++  position: sticky;
++  max-height: calc(var(--visual-viewport-height) * 0.9);
++  top: calc(var(--visual-viewport-height) / 2);
++  margin-left: 50vw;
++  translate: -50% -50%;
++  box-shadow: 0 8px 32px rgba(0 0 0 / 0.2);
++  border-radius: var(--radius-xl);
++  background: var(--overlay-background);
++  color: var(--text-color);
++  outline: 1px solid var(--overlay-border);
++  width: max-content;
++  max-width: min(500px, 90vw);
++
++  &[data-entering] {
++    animation: modal-zoom 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
++  }
++
++  .react-aria-TextField {
++    margin-bottom: 8px;
++  }
++}
++
++@keyframes modal-fade {
++  from {
++    opacity: 0;
++  }
++
++  to {
++    opacity: 1;
++  }
++}
++
++@keyframes modal-zoom {
++  from {
++    transform: scale(0.8);
++  }
++
++  to {
++    transform: scale(1);
++  }
++}
+diff --git a/src/assistant/official/Popover.css b/src/assistant/official/Popover.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Popover.css
+@@ -0,0 +1,81 @@
++@import './theme.css';
++
++.react-aria-Popover {
++  --background-color: var(--overlay-background);
++
++  outline: 1px solid var(--overlay-border);
++  box-sizing: border-box;
++  filter: drop-shadow(var(--popover-shadow));
++  border-radius: var(--radius-lg);
++  background: var(--background-color);
++  color: var(--text-color);
++  transition:
++    transform 200ms,
++    opacity 200ms;
++  font: var(--font-size) system-ui;
++  padding: 8px;
++  overflow: auto;
++
++  &[data-trigger='MenuTrigger'],
++  &[data-trigger='SubmenuTrigger'] {
++    padding: 0;
++  }
++
++  .react-aria-OverlayArrow svg {
++    display: block;
++    fill: var(--background-color);
++    stroke: var(--overlay-border);
++    paint-order: stroke;
++    stroke-width: 2px;
++  }
++
++  &[data-entering],
++  &[data-exiting] {
++    transform: var(--origin);
++    opacity: 0;
++  }
++
++  &[data-placement='top'] {
++    --origin: translateY(8px);
++
++    &:has(.react-aria-OverlayArrow) {
++      margin-bottom: 6px;
++    }
++  }
++
++  &[data-placement='bottom'] {
++    --origin: translateY(-8px);
++
++    &:has(.react-aria-OverlayArrow) {
++      margin-top: 6px;
++    }
++
++    .react-aria-OverlayArrow svg {
++      transform: rotate(180deg);
++    }
++  }
++
++  &[data-placement='right'] {
++    --origin: translateX(-8px);
++
++    &:has(.react-aria-OverlayArrow) {
++      margin-left: 6px;
++    }
++
++    .react-aria-OverlayArrow svg {
++      transform: rotate(90deg);
++    }
++  }
++
++  &[data-placement='left'] {
++    --origin: translateX(8px);
++
++    &:has(.react-aria-OverlayArrow) {
++      margin-right: 6px;
++    }
++
++    .react-aria-OverlayArrow svg {
++      transform: rotate(-90deg);
++    }
++  }
++}
+diff --git a/src/assistant/official/Popover.tsx b/src/assistant/official/Popover.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Popover.tsx
+@@ -0,0 +1,32 @@
++'use client';
++import {
++  OverlayArrow,
++  Popover as AriaPopover,
++  type PopoverProps as AriaPopoverProps
++} from 'react-aria-components/Popover';
++import clsx from 'clsx';
++import './Popover.css';
++
++export interface PopoverProps extends Omit<AriaPopoverProps, 'children'> {
++  children: React.ReactNode;
++  hideArrow?: boolean;
++}
++
++export function Popover({children, hideArrow, ...props}: PopoverProps) {
++  return (
++    <AriaPopover {...props} className={clsx('react-aria-Popover', props.className)}>
++      {({trigger}) => (
++        <>
++          {!hideArrow && trigger !== 'MenuTrigger' && trigger !== 'SubmenuTrigger' && (
++            <OverlayArrow>
++              <svg width={12} height={12} viewBox="0 0 12 12">
++                <path d="M0 0 L6 6 L12 0" />
++              </svg>
++            </OverlayArrow>
++          )}
++          {children}
++        </>
++      )}
++    </AriaPopover>
++  );
++}
+diff --git a/src/assistant/official/ProgressCircle.tsx b/src/assistant/official/ProgressCircle.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ProgressCircle.tsx
+@@ -0,0 +1,64 @@
++'use client';
++import {composeRenderProps} from 'react-aria-components/composeRenderProps';
++import {ProgressBar} from 'react-aria-components/ProgressBar';
++import type {ProgressBarProps} from 'react-aria-components/ProgressBar';
++
++export interface ProgressCircleProps extends ProgressBarProps {
++  size?: number;
++}
++
++export function ProgressCircle(props: ProgressCircleProps) {
++  // SVG strokes are centered, so subtract half the stroke width from the radius to create an inner stroke.
++  let strokeWidth = 4;
++  let radius = `calc(50% - ${strokeWidth / 2}px)`;
++
++  return (
++    <ProgressBar
++      {...props}
++      style={composeRenderProps(props.style, style => ({
++        ...style,
++        width: props.size || 16,
++        height: props.size || 16
++      }))}>
++      {({percentage, isIndeterminate}) => (
++        <>
++          <svg fill="none" width="100%" height="100%" viewBox="0 0 32 32">
++            <circle
++              cx="50%"
++              cy="50%"
++              r={radius}
++              stroke="var(--highlight-pressed)"
++              strokeWidth={strokeWidth}
++            />
++            <circle
++              cx="50%"
++              cy="50%"
++              r={radius}
++              stroke="var(--highlight-background)"
++              strokeWidth={strokeWidth}
++              // Normalize the path length to 100 so we can easily set stroke-dashoffset to a percentage.
++              pathLength="100"
++              // Add extra gap between dashes so 0% works in Chrome.
++              strokeDasharray="100 200"
++              strokeDashoffset={100 - (isIndeterminate || percentage == null ? 25 : percentage)}
++              strokeLinecap="round"
++              style={{
++                rotate: '-90deg',
++                transformOrigin: 'center center'
++              }}>
++              {isIndeterminate && (
++                <animateTransform
++                  attributeName="transform"
++                  type="rotate"
++                  dur="0.75s"
++                  values="0;360"
++                  repeatCount="indefinite"
++                />
++              )}
++            </circle>
++          </svg>
++        </>
++      )}
++    </ProgressBar>
++  );
++}
+diff --git a/src/assistant/official/SearchField.css b/src/assistant/official/SearchField.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/SearchField.css
+@@ -0,0 +1,75 @@
++@import './theme.css';
++@import './TextField.css';
++
++.react-aria-SearchField {
++  display: grid;
++  grid-template-areas:
++    'label label label'
++    'icon input button'
++    'help help  help';
++  grid-template-columns: 0px 1fr auto;
++  align-items: center;
++  width: auto;
++  color: var(--text-color);
++
++  .lucide-search {
++    grid-area: icon;
++    z-index: 2;
++    margin-inline-start: var(--spacing-2);
++  }
++
++  &[data-disabled] .lucide-search {
++    color: var(--text-color-disabled);
++  }
++
++  .react-aria-Label {
++    grid-area: label;
++  }
++
++  .react-aria-Input {
++    grid-area: input;
++    width: 100%;
++    border-radius: 9999px;
++    padding: 0 var(--spacing-8);
++
++    &::-webkit-search-cancel-button,
++    &::-webkit-search-decoration {
++      -webkit-appearance: none;
++    }
++  }
++
++  .clear-button {
++    all: unset;
++    grid-area: button;
++    width: var(--spacing-4);
++    height: var(--spacing-4);
++    border-radius: 9999px;
++    margin-left: calc(-1 * var(--spacing-6));
++    text-align: center;
++    background: var(--gray-700);
++    color: var(--gray-50);
++    border: none;
++    padding: 0;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    -webkit-tap-highlight-color: transparent;
++
++    &[data-pressed] {
++      background: var(--gray-800);
++    }
++
++    &[data-disabled] {
++      background: var(--text-color-disabled);
++    }
++  }
++
++  &[data-empty] .clear-button {
++    display: none;
++  }
++
++  .react-aria-FieldError,
++  [slot='description'] {
++    grid-area: help;
++  }
++}
+diff --git a/src/assistant/official/Select.css b/src/assistant/official/Select.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Select.css
+@@ -0,0 +1,46 @@
++@import './theme.css';
++
++.react-aria-Select {
++  color: var(--text-color);
++  position: relative;
++  width: 200px;
++
++  .react-aria-Button {
++    --button-color: var(--gray);
++    padding: 0 var(--spacing-2) 0 var(--spacing-3);
++    width: 100%;
++    min-width: 0;
++
++    &[data-pressed] {
++      scale: 1;
++    }
++  }
++
++  .react-aria-SelectValue {
++    flex: 1;
++    text-align: start;
++    overflow: hidden;
++    text-overflow: ellipsis;
++    white-space: nowrap;
++
++    &[data-placeholder] {
++      color: var(--text-color-placeholder);
++      font-weight: normal;
++    }
++  }
++
++  .lucide-chevron-down {
++    margin-inline-start: var(--spacing-2);
++  }
++
++  .react-aria-SelectValue {
++    [slot='description'] {
++      display: none;
++    }
++  }
++}
++
++.select-popover[data-trigger='Select'] {
++  width: var(--trigger-width);
++  padding: 0;
++}
+diff --git a/src/assistant/official/Select.tsx b/src/assistant/official/Select.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Select.tsx
+@@ -0,0 +1,58 @@
++'use client';
++import {
++  type ListBoxItemProps,
++  Select as AriaSelect,
++  type SelectProps as AriaSelectProps,
++  SelectValue,
++  type ValidationResult,
++  type ListBoxProps
++} from 'react-aria-components/Select';
++import {Button} from './Button';
++import {DropdownItem, DropdownListBox} from './ListBox';
++import {ChevronDown} from './lucide';
++import {Popover} from './Popover';
++import {Label, FieldError, Description} from './Form';
++import './Select.css';
++
++export interface SelectProps<T, M extends 'single' | 'multiple'> extends Omit<
++  AriaSelectProps<T, M>,
++  'children'
++> {
++  label?: string;
++  description?: string;
++  errorMessage?: string | ((validation: ValidationResult) => string);
++  items?: Iterable<T>;
++  children: React.ReactNode | ((item: T) => React.ReactNode);
++}
++
++export function Select<T, M extends 'single' | 'multiple' = 'single'>({
++  label,
++  description,
++  errorMessage,
++  children,
++  items,
++  ...props
++}: SelectProps<T, M>) {
++  return (
++    <AriaSelect {...props}>
++      {label && <Label>{label}</Label>}
++      <Button>
++        <SelectValue />
++        <ChevronDown />
++      </Button>
++      {description && <Description>{description}</Description>}
++      <FieldError>{errorMessage}</FieldError>
++      <Popover hideArrow className="select-popover">
++        <SelectListBox items={items}>{children}</SelectListBox>
++      </Popover>
++    </AriaSelect>
++  );
++}
++
++export function SelectListBox<T>(props: ListBoxProps<T>) {
++  return <DropdownListBox {...props} />;
++}
++
++export function SelectItem(props: ListBoxItemProps) {
++  return <DropdownItem {...props} />;
++}
+diff --git a/src/assistant/official/TextField.css b/src/assistant/official/TextField.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/TextField.css
+@@ -0,0 +1,43 @@
++@import './theme.css';
++@import './utilities.css';
++
++.react-aria-TextField {
++  display: flex;
++  flex-direction: column;
++}
++
++.react-aria-Input,
++.react-aria-TextArea {
++  width: 100%;
++  min-height: var(--spacing-8);
++  padding: 0 var(--spacing-3);
++  box-sizing: border-box;
++  margin: 0;
++  border: none;
++  border-radius: var(--radius);
++  font: var(--font-size) system-ui;
++  color: var(--field-text-color);
++  outline: none;
++  -webkit-tap-highlight-color: transparent;
++
++  &::placeholder {
++    color: var(--text-color-placeholder);
++  }
++
++  &[data-focused] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: -1px;
++  }
++
++  &[data-disabled] {
++    color: var(--text-color-disabled);
++    &::placeholder {
++      color: var(--text-color-disabled);
++    }
++  }
++}
++
++.react-aria-TextArea {
++  min-height: 64px;
++  padding: var(--spacing-2) var(--spacing-3);
++}
+diff --git a/src/assistant/official/TextField.tsx b/src/assistant/official/TextField.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/TextField.tsx
+@@ -0,0 +1,59 @@
++'use client';
++import {
++  Input,
++  TextField as AriaTextField,
++  TextArea as AriaTextArea,
++  type TextFieldProps as AriaTextFieldProps,
++  type ValidationResult
++} from 'react-aria-components/TextField';
++import {Label, FieldError, Description} from './Form';
++import './TextField.css';
++import type React from 'react';
++
++export interface TextFieldProps<T = HTMLInputElement> extends AriaTextFieldProps {
++  label?: string;
++  description?: string;
++  errorMessage?: string | ((validation: ValidationResult) => string);
++  placeholder?: string;
++  inputRef?: React.Ref<T>;
++}
++
++export function TextField({
++  label,
++  description,
++  errorMessage,
++  placeholder,
++  inputRef,
++  ...props
++}: TextFieldProps) {
++  return (
++    <AriaTextField {...props}>
++      {label && <Label>{label}</Label>}
++      <Input ref={inputRef} className="react-aria-Input inset" placeholder={placeholder} />
++      {description && <Description>{description}</Description>}
++      <FieldError>{errorMessage}</FieldError>
++    </AriaTextField>
++  );
++}
++
++export function TextArea({
++  label,
++  description,
++  errorMessage,
++  placeholder,
++  inputRef,
++  ...props
++}: TextFieldProps<HTMLTextAreaElement>) {
++  return (
++    <AriaTextField {...props}>
++      <Label>{label}</Label>
++      <AriaTextArea
++        ref={inputRef}
++        className="react-aria-TextArea inset"
++        placeholder={placeholder}
++      />
++      {description && <Description>{description}</Description>}
++      <FieldError>{errorMessage}</FieldError>
++    </AriaTextField>
++  );
++}
+diff --git a/src/assistant/official/ToggleButton.css b/src/assistant/official/ToggleButton.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ToggleButton.css
+@@ -0,0 +1,43 @@
++@import './theme.css';
++@import './utilities.css';
++
++.react-aria-ToggleButton {
++  border: none;
++  forced-color-adjust: none;
++  border-radius: var(--radius);
++  appearance: none;
++  vertical-align: middle;
++  font: var(--font-size) system-ui;
++  font-weight: 500;
++  text-align: center;
++  margin: 0;
++  height: var(--spacing-8);
++  padding: 0 var(--spacing-3);
++  display: inline-flex;
++  align-items: center;
++  justify-content: center;
++  transition-property: background, box-shadow, text-shadow, scale;
++  transition-duration: 200ms;
++  -webkit-tap-highlight-color: transparent;
++
++  > span {
++    display: flex;
++    align-items: center;
++    justify-content: center;
++  }
++
++  > span > svg {
++    width: var(--spacing-4);
++    height: var(--spacing-4);
++  }
++
++  &:has(> span > svg:only-child) {
++    width: var(--spacing-8);
++    padding: 0;
++    border-radius: 9999px;
++  }
++
++  &[data-pressed] {
++    scale: 0.95;
++  }
++}
+diff --git a/src/assistant/official/ToggleButton.tsx b/src/assistant/official/ToggleButton.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/ToggleButton.tsx
+@@ -0,0 +1,29 @@
++'use client';
++import {composeRenderProps} from 'react-aria-components/composeRenderProps';
++import {
++  ToggleButton as RACToggleButton,
++  type ToggleButtonProps as RACToggleButtonProps
++} from 'react-aria-components/ToggleButton';
++import './ToggleButton.css';
++
++interface ToggleButtonProps extends RACToggleButtonProps {
++  /**
++   * The visual style of the button (Vanilla CSS implementation specific).
++   *
++   * @default 'primary'
++   */
++  variant?: 'primary' | 'secondary' | 'quiet';
++}
++
++export function ToggleButton(props: ToggleButtonProps) {
++  return (
++    <RACToggleButton
++      {...props}
++      className="react-aria-ToggleButton button-base"
++      data-variant={props.variant || 'primary'}>
++      {composeRenderProps(props.children, children => (
++        <span>{children}</span>
++      ))}
++    </RACToggleButton>
++  );
++}
+diff --git a/src/assistant/official/Tree.css b/src/assistant/official/Tree.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/Tree.css
+@@ -0,0 +1,219 @@
++@import './theme.css';
++
++.react-aria-Tree {
++  display: flex;
++  flex-direction: column;
++  overflow: auto;
++  padding: var(--spacing-1);
++  border: 0.5px solid var(--border-color);
++  border-radius: calc(var(--radius) + var(--spacing-1));
++  background: var(--overlay-background);
++  forced-color-adjust: none;
++  outline: none;
++  width: 250px;
++  max-height: 300px;
++  box-sizing: border-box;
++  --drag-button-width: 0px;
++  --checkbox-width: 0px;
++
++  .react-aria-TreeSection:not(:first-child) {
++    margin-top: var(--spacing-4);
++  }
++
++  .react-aria-TreeHeader {
++    font-size: var(--font-size-lg);
++    font-weight: 500;
++    padding: var(--spacing-1) var(--spacing-2);
++    color: var(--text-color);
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: -1px;
++  }
++
++  &[data-empty] {
++    align-items: center;
++    justify-content: center;
++    font-style: italic;
++    min-height: 100px;
++  }
++
++  &[data-selection-mode='multiple'] {
++    --checkbox-width: calc(var(--spacing) * 6.5);
++  }
++
++  &[data-allows-dragging] {
++    --drag-button-width: var(--spacing-6);
++  }
++
++  &[data-drop-target] {
++    outline: 2px solid var(--highlight-background);
++    outline-offset: -1px;
++    background: var(--highlight-overlay);
++  }
++
++  .react-aria-DropIndicator {
++    &[data-drop-target] {
++      outline: 1px solid var(--highlight-background);
++      margin-left: calc(
++        var(--spacing-2) + var(--checkbox-width) + var(--drag-button-width) + var(--spacing-5) +
++          (var(--tree-item-level) - 1) * var(--spacing-4)
++      );
++    }
++  }
++}
++
++.react-aria-TreeItem {
++  display: flex;
++  align-items: center;
++  gap: var(--spacing-2);
++  min-height: var(--spacing-8);
++  padding: var(--spacing-1) var(--spacing-1) var(--spacing-1) var(--spacing-2);
++  box-sizing: border-box;
++  --padding: var(--spacing-4);
++  border-radius: var(--radius);
++  outline: none;
++  cursor: default;
++  color: var(--text-color);
++  font: var(--font-size) system-ui;
++  position: relative;
++  transform: translateZ(0);
++  transition-property: background, color, border-radius;
++  transition-duration: 200ms;
++  -webkit-tap-highlight-color: transparent;
++  --chevron-width: var(--spacing-5);
++
++  &[data-has-child-items] {
++    --chevron-width: 0px;
++  }
++
++  --border-color: var(--gray-300);
++  &:not(:last-child)::after {
++    content: '';
++    display: block;
++    position: absolute;
++    bottom: 0;
++    inset-inline-start: calc(
++      var(--spacing-2) + var(--checkbox-width) + var(--drag-button-width) + var(--chevron-width) +
++        (var(--tree-item-level) - 1) * var(--padding)
++    );
++    inset-inline-end: var(--spacing-2);
++    border-bottom: 0.5px solid var(--border-color);
++  }
++
++  &[data-focus-visible] {
++    outline: 2px solid var(--focus-ring-color);
++    outline-offset: -2px;
++  }
++
++  &[data-pressed] {
++    background: var(--highlight-hover);
++  }
++
++  &[data-selected] {
++    background: var(--highlight-background);
++    color: var(--highlight-foreground);
++    --focus-ring-color: var(--highlight-foreground);
++    --border-color: transparent;
++
++    &[data-focus-visible] {
++      outline-color: var(--highlight-foreground);
++      outline-offset: -4px;
++    }
++
++    &:has(+ [data-selected]),
++    &:has(+ .react-aria-DropIndicator + [data-selected]) {
++      border-end-start-radius: 0;
++      border-end-end-radius: 0;
++      --border-color: rgb(255 255 255 / 0.3);
++    }
++
++    + [data-selected],
++    + .react-aria-DropIndicator + [data-selected] {
++      border-start-start-radius: 0;
++      border-start-end-radius: 0;
++    }
++  }
++
++  &[data-href] {
++    cursor: pointer;
++  }
++
++  &[data-disabled] {
++    color: var(--text-color-disabled);
++  }
++
++  .react-aria-Button:not([slot]) {
++    margin-left: auto;
++  }
++
++  &[data-allows-dragging] {
++    padding-left: 4px;
++  }
++
++  &[data-dragging] {
++    opacity: 0.6;
++  }
++
++  &[data-drop-target] {
++    outline: 2px solid var(--highlight-background);
++    background: var(--highlight-overlay);
++  }
++
++  .react-aria-Button[slot='chevron'] {
++    all: unset;
++    display: flex;
++    visibility: hidden;
++    align-items: center;
++    justify-content: center;
++    width: var(--spacing-4);
++    height: 100%;
++    padding-left: calc((var(--tree-item-level) - 1) * var(--padding));
++
++    svg {
++      rotate: 0deg;
++      transition: rotate 200ms;
++      fill: none;
++      stroke: currentColor;
++      stroke-width: 3px;
++    }
++  }
++
++  &[data-has-child-items] .react-aria-Button[slot='chevron'] {
++    visibility: visible;
++  }
++
++  &[data-expanded] .react-aria-Button[slot='chevron'] svg {
++    rotate: 90deg;
++  }
++
++  .react-aria-Button[slot='drag'] {
++    all: unset;
++    display: inline-flex;
++    align-items: center;
++    justify-content: center;
++    width: var(--spacing-4);
++    text-align: center;
++
++    &[data-focus-visible] {
++      border-radius: 4px;
++      outline: 2px solid var(--focus-ring-color);
++    }
++  }
++}
++
++.react-aria-TreeItem .react-aria-CheckboxButton {
++  --checkmark-color: var(--highlight-background);
++  &[data-selected] .indicator {
++    --indicator-color: var(--highlight-foreground);
++    --indicator-shadow: transparent;
++  }
++}
++
++.react-aria-TreeLoader {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  height: 28px;
++}
+diff --git a/src/assistant/official/lucide/LICENSE b/src/assistant/official/lucide/LICENSE
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/LICENSE
+@@ -0,0 +1,15 @@
++ISC License
++
++Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
++
++Permission to use, copy, modify, and/or distribute this software for any
++purpose with or without fee is hereby granted, provided that the above
++copyright notice and this permission notice appear in all copies.
++
++THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
++WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
++MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
++ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
++WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
++ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
++OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+diff --git a/src/assistant/official/lucide/esm/Icon.js b/src/assistant/official/lucide/esm/Icon.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/Icon.js
+@@ -0,0 +1,44 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++import { forwardRef, createElement } from 'react';
++import defaultAttributes from './defaultAttributes.js';
++import { mergeClasses } from './shared/src/utils.js';
++
++const Icon = forwardRef(
++  ({
++    color = "currentColor",
++    size = 24,
++    strokeWidth = 2,
++    absoluteStrokeWidth,
++    className = "",
++    children,
++    iconNode,
++    ...rest
++  }, ref) => {
++    return createElement(
++      "svg",
++      {
++        ref,
++        ...defaultAttributes,
++        width: size,
++        height: size,
++        stroke: color,
++        strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
++        className: mergeClasses("lucide", className),
++        ...rest
++      },
++      [
++        ...iconNode.map(([tag, attrs]) => createElement(tag, attrs)),
++        ...Array.isArray(children) ? children : [children]
++      ]
++    );
++  }
++);
++
++export { Icon as default };
++//# sourceMappingURL=Icon.js.map
+diff --git a/src/assistant/official/lucide/esm/Icon.js.map b/src/assistant/official/lucide/esm/Icon.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/Icon.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"Icon.js","sources":["../../src/Icon.ts"],"sourcesContent":["import { createElement, forwardRef } from 'react';\nimport defaultAttributes from './defaultAttributes';\nimport { IconNode, LucideProps } from './types';\nimport { mergeClasses } from '@lucide/shared';\n\ninterface IconComponentProps extends LucideProps {\n  iconNode: IconNode;\n}\n\n/**\n * Lucide icon component\n *\n * @component Icon\n * @param {object} props\n * @param {string} props.color - The color of the icon\n * @param {number} props.size - The size of the icon\n * @param {number} props.strokeWidth - The stroke width of the icon\n * @param {boolean} props.absoluteStrokeWidth - Whether to use absolute stroke width\n * @param {string} props.className - The class name of the icon\n * @param {IconNode} props.children - The children of the icon\n * @param {IconNode} props.iconNode - The icon node of the icon\n *\n * @returns {ForwardRefExoticComponent} LucideIcon\n */\nconst Icon = forwardRef<SVGSVGElement, IconComponentProps>(\n  (\n    {\n      color = 'currentColor',\n      size = 24,\n      strokeWidth = 2,\n      absoluteStrokeWidth,\n      className = '',\n      children,\n      iconNode,\n      ...rest\n    },\n    ref,\n  ) => {\n    return createElement(\n      'svg',\n      {\n        ref,\n        ...defaultAttributes,\n        width: size,\n        height: size,\n        stroke: color,\n        strokeWidth: absoluteStrokeWidth ? (Number(strokeWidth) * 24) / Number(size) : strokeWidth,\n        className: mergeClasses('lucide', className),\n        ...rest,\n      },\n      [\n        ...iconNode.map(([tag, attrs]) => createElement(tag, attrs)),\n        ...(Array.isArray(children) ? children : [children]),\n      ],\n    );\n  },\n);\n\nexport default Icon;\n"],"names":[],"mappings":";;;;;;;;;;;AAwBA,CAAM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,GAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CACX,CACE,CAAA;AAAA,CACE,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,GAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACR,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,GAAA,CAAA,CAAA,CAAA;AAAA,CACP,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAc,GAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CACd,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAY,GAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CACZ,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CACA,GAAG,CAAA,CAAA,CAAA,CAAA;AAAA,KAEL,GACG,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AACH,CAAA,CAAA,CAAA,CAAO,OAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACL,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACE,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACA,GAAG,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACH,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACP,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACR,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACR,WAAA,CAAa,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,EAAuB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,CAAA,CAAW,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,EAAI,CAAA,CAAA,CAAA,CAAM,GAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,CAAI,CAAA,CAAA,CAAA,CAAI,GAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAC/E,SAAA,CAAW,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAa,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAU,SAAS,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAC3C,GAAG,CAAA,CAAA,CAAA,CAAA;AAAA,CACL,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACE,GAAG,CAAS,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,GAAA,CAAI,CAAC,CAAC,CAAK,CAAA,CAAA,CAAA,CAAA,CAAK,CAAA,CAAA,CAAA,CAAA,CAAM,KAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAc,GAAK,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAK,CAAC,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAC3D,CAAI,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAI,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAW,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA;AAAA,CACpD,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CACF,CAAA;AAAA,CACF,CAAA,CAAA;AACF,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/createLucideIcon.js b/src/assistant/official/lucide/esm/createLucideIcon.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/createLucideIcon.js
+@@ -0,0 +1,26 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++import { forwardRef, createElement } from 'react';
++import { mergeClasses, toKebabCase } from './shared/src/utils.js';
++import Icon from './Icon.js';
++
++const createLucideIcon = (iconName, iconNode) => {
++  const Component = forwardRef(
++    ({ className, ...props }, ref) => createElement(Icon, {
++      ref,
++      iconNode,
++      className: mergeClasses(`lucide-${toKebabCase(iconName)}`, className),
++      ...props
++    })
++  );
++  Component.displayName = `${iconName}`;
++  return Component;
++};
++
++export { createLucideIcon as default };
++//# sourceMappingURL=createLucideIcon.js.map
+diff --git a/src/assistant/official/lucide/esm/createLucideIcon.js.map b/src/assistant/official/lucide/esm/createLucideIcon.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/createLucideIcon.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"createLucideIcon.js","sources":["../../src/createLucideIcon.ts"],"sourcesContent":["import { createElement, forwardRef } from 'react';\nimport { mergeClasses, toKebabCase } from '@lucide/shared';\nimport { IconNode, LucideProps } from './types';\nimport Icon from './Icon';\n\n/**\n * Create a Lucide icon component\n * @param {string} iconName\n * @param {array} iconNode\n * @returns {ForwardRefExoticComponent} LucideIcon\n */\nconst createLucideIcon = (iconName: string, iconNode: IconNode) => {\n  const Component = forwardRef<SVGSVGElement, LucideProps>(({ className, ...props }, ref) =>\n    createElement(Icon, {\n      ref,\n      iconNode,\n      className: mergeClasses(`lucide-${toKebabCase(iconName)}`, className),\n      ...props,\n    }),\n  );\n\n  Component.displayName = `${iconName}`;\n\n  return Component;\n};\n\nexport default createLucideIcon;\n"],"names":[],"mappings":";;;;;;;;;;;AAWM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,gBAAA,CAAmB,CAAA,CAAA,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAkB,QAAuB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AACjE,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAM,CAAY,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAuC,CAAC,CAAA,CAAE,CAAW,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAG,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,EAAS,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACjF,cAAc,IAAM,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAClB,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACA,WAAW,CAAa,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAU,YAAY,QAAQ,CAAC,IAAI,SAAS,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACpE,GAAG,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CAAA,CAAA,CAAA,CAAA,CACJ,CAAA;AAAA,CAAA,CAAA,CACH,CAAA;AAEA,CAAU,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAc,EAAG,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA,CAAA,CAAA;AAEnC,CAAO,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,SAAA,CAAA;AACT,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/defaultAttributes.js b/src/assistant/official/lucide/esm/defaultAttributes.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/defaultAttributes.js
+@@ -0,0 +1,21 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++var defaultAttributes = {
++  xmlns: "http://www.w3.org/2000/svg",
++  width: 24,
++  height: 24,
++  viewBox: "0 0 24 24",
++  fill: "none",
++  stroke: "currentColor",
++  strokeWidth: 2,
++  strokeLinecap: "round",
++  strokeLinejoin: "round"
++};
++
++export { defaultAttributes as default };
++//# sourceMappingURL=defaultAttributes.js.map
+diff --git a/src/assistant/official/lucide/esm/defaultAttributes.js.map b/src/assistant/official/lucide/esm/defaultAttributes.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/defaultAttributes.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"defaultAttributes.js","sources":["../../src/defaultAttributes.ts"],"sourcesContent":["export default {\n  xmlns: 'http://www.w3.org/2000/svg',\n  width: 24,\n  height: 24,\n  viewBox: '0 0 24 24',\n  fill: 'none',\n  stroke: 'currentColor',\n  strokeWidth: 2,\n  strokeLinecap: 'round',\n  strokeLinejoin: 'round',\n};\n"],"names":[],"mappings":";;;;;;;AAAA,CAAe,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACb,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACP,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,EAAA,CAAA,CAAA,CAAA;AAAA,CACP,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,EAAA,CAAA,CAAA,CAAA;AAAA,CACR,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAS,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACT,CAAA,CAAA,CAAA,CAAA,CAAM,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACN,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACR,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAa,EAAA,CAAA,CAAA;AAAA,CACb,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAe,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAAA,CACf,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAgB,EAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAClB,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/icons/check.js b/src/assistant/official/lucide/esm/icons/check.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/check.js
+@@ -0,0 +1,13 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++import createLucideIcon from '../createLucideIcon.js';
++
++const Check = createLucideIcon("Check", [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]]);
++
++export { Check as default };
++//# sourceMappingURL=check.js.map
+diff --git a/src/assistant/official/lucide/esm/icons/check.js.map b/src/assistant/official/lucide/esm/icons/check.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/check.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"check.js","sources":["../../../src/icons/check.ts"],"sourcesContent":["import createLucideIcon from '../createLucideIcon';\n\n/**\n * @component @name Check\n * @description Lucide SVG icon component, renders SVG Element with children.\n *\n * @preview ![img](data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzAwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmY7IGJvcmRlci1yYWRpdXM6IDJweCIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiIC8+Cjwvc3ZnPgo=) - https://lucide.dev/icons/check\n * @see https://lucide.dev/guide/packages/lucide-react - Documentation\n *\n * @param {Object} props - Lucide icons props and any valid SVG attribute\n * @returns {JSX.Element} JSX Element\n *\n */\nconst Check = createLucideIcon('Check', [['path', { d: 'M20 6 9 17l-5-5', key: '1gmf2c' }]]);\n\nexport default Check;\n"],"names":[],"mappings":";;;;;;;;;AAaA,CAAM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,GAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAiB,OAAS,CAAA,CAAA,CAAC,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,EAAE,CAAA,CAAA,CAAG,iBAAmB,CAAA,CAAA,CAAA,CAAA,CAAA,EAAK,CAAS,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAC,CAAC,CAAC,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/icons/chevron-down.js b/src/assistant/official/lucide/esm/icons/chevron-down.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/chevron-down.js
+@@ -0,0 +1,15 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++import createLucideIcon from '../createLucideIcon.js';
++
++const ChevronDown = createLucideIcon("ChevronDown", [
++  ["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]
++]);
++
++export { ChevronDown as default };
++//# sourceMappingURL=chevron-down.js.map
+diff --git a/src/assistant/official/lucide/esm/icons/chevron-down.js.map b/src/assistant/official/lucide/esm/icons/chevron-down.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/chevron-down.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"chevron-down.js","sources":["../../../src/icons/chevron-down.ts"],"sourcesContent":["import createLucideIcon from '../createLucideIcon';\n\n/**\n * @component @name ChevronDown\n * @description Lucide SVG icon component, renders SVG Element with children.\n *\n * @preview ![img](data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzAwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmY7IGJvcmRlci1yYWRpdXM6IDJweCIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJtNiA5IDYgNiA2LTYiIC8+Cjwvc3ZnPgo=) - https://lucide.dev/icons/chevron-down\n * @see https://lucide.dev/guide/packages/lucide-react - Documentation\n *\n * @param {Object} props - Lucide icons props and any valid SVG attribute\n * @returns {JSX.Element} JSX Element\n *\n */\nconst ChevronDown = createLucideIcon('ChevronDown', [\n  ['path', { d: 'm6 9 6 6 6-6', key: 'qrunsl' }],\n]);\n\nexport default ChevronDown;\n"],"names":[],"mappings":";;;;;;;;;AAaM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAc,iBAAiB,aAAe,CAAA,CAAA,CAAA;AAAA,CAAA,CAClD,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA,CAAA,CAAA,CAAE,GAAG,CAAgB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAK,UAAU,CAAA;AAC/C,CAAC,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/icons/chevron-right.js b/src/assistant/official/lucide/esm/icons/chevron-right.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/chevron-right.js
+@@ -0,0 +1,15 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++import createLucideIcon from '../createLucideIcon.js';
++
++const ChevronRight = createLucideIcon("ChevronRight", [
++  ["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]
++]);
++
++export { ChevronRight as default };
++//# sourceMappingURL=chevron-right.js.map
+diff --git a/src/assistant/official/lucide/esm/icons/chevron-right.js.map b/src/assistant/official/lucide/esm/icons/chevron-right.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/icons/chevron-right.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"chevron-right.js","sources":["../../../src/icons/chevron-right.ts"],"sourcesContent":["import createLucideIcon from '../createLucideIcon';\n\n/**\n * @component @name ChevronRight\n * @description Lucide SVG icon component, renders SVG Element with children.\n *\n * @preview ![img](data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzAwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmY7IGJvcmRlci1yYWRpdXM6IDJweCIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJtOSAxOCA2LTYtNi02IiAvPgo8L3N2Zz4K) - https://lucide.dev/icons/chevron-right\n * @see https://lucide.dev/guide/packages/lucide-react - Documentation\n *\n * @param {Object} props - Lucide icons props and any valid SVG attribute\n * @returns {JSX.Element} JSX Element\n *\n */\nconst ChevronRight = createLucideIcon('ChevronRight', [\n  ['path', { d: 'm9 18 6-6-6-6', key: 'mthhwq' }],\n]);\n\nexport default ChevronRight;\n"],"names":[],"mappings":";;;;;;;;;AAaM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAe,iBAAiB,cAAgB,CAAA,CAAA,CAAA;AAAA,CAAA,CACpD,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA,CAAA,CAAA,CAAE,GAAG,CAAiB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAK,UAAU,CAAA;AAChD,CAAC,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/esm/shared/src/utils.js b/src/assistant/official/lucide/esm/shared/src/utils.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/shared/src/utils.js
+@@ -0,0 +1,14 @@
++/**
++ * @license lucide-react v0.468.0 - ISC
++ *
++ * This source code is licensed under the ISC license.
++ * See the LICENSE file in the root directory of this source tree.
++ */
++
++const toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
++const mergeClasses = (...classes) => classes.filter((className, index, array) => {
++  return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
++}).join(" ").trim();
++
++export { mergeClasses, toKebabCase };
++//# sourceMappingURL=utils.js.map
+diff --git a/src/assistant/official/lucide/esm/shared/src/utils.js.map b/src/assistant/official/lucide/esm/shared/src/utils.js.map
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/esm/shared/src/utils.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"utils.js","sources":["../../../../../shared/src/utils.ts"],"sourcesContent":["import { CamelToPascal } from './utility-types';\n\n/**\n * Converts string to kebab case\n *\n * @param {string} string\n * @returns {string} A kebabized string\n */\nexport const toKebabCase = (string: string) =>\n  string.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();\n\n/**\n * Converts string to camel case\n *\n * @param {string} string\n * @returns {string} A camelized string\n */\nexport const toCamelCase = <T extends string>(string: T) =>\n  string.replace(/^([A-Z])|[\\s-_]+(\\w)/g, (match, p1, p2) =>\n    p2 ? p2.toUpperCase() : p1.toLowerCase(),\n  );\n\n/**\n * Converts string to pascal case\n *\n * @param {string} string\n * @returns {string} A pascalized string\n */\nexport const toPascalCase = <T extends string>(string: T): CamelToPascal<T> => {\n  const camelCase = toCamelCase(string);\n\n  return (camelCase.charAt(0).toUpperCase() + camelCase.slice(1)) as CamelToPascal<T>;\n};\n\n/**\n * Merges classes into a single string\n *\n * @param {array} classes\n * @returns {string} A string of classes\n */\nexport const mergeClasses = <ClassType = string | undefined | null>(...classes: ClassType[]) =>\n  classes\n    .filter((className, index, array) => {\n      return (\n        Boolean(className) &&\n        (className as string).trim() !== '' &&\n        array.indexOf(className) === index\n      );\n    })\n    .join(' ')\n    .trim();\n"],"names":[],"mappings":";;;;;;;AAQa,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAc,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAC1B,KAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,QAAQ,oBAAsB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAO,EAAE,WAAY,CAAA,CAAA,CAAA;AA+B/C,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,YAAA,CAAe,CAAA,CAAA,EAA2C,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACrE,KAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CACG,OAAO,CAAC,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAW,OAAO,KAAU,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AACnC,CACE,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,OAAA,CAAQ,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAS,CAAA,CAChB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAqB,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,MAAW,CACjC,CAAA,CAAA,CAAA,CAAA,CAAA,KAAA,CAAM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAQ,CAAA,CAAS,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAM,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AAEjC,CAAC,CACA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAK,CAAG,CAAA,CAAA,CAAA,CACR,CAAK,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;;"}
+\ No newline at end of file
+diff --git a/src/assistant/official/lucide/index.d.ts b/src/assistant/official/lucide/index.d.ts
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/index.d.ts
+@@ -0,0 +1,5 @@
++import type {ForwardRefExoticComponent,RefAttributes,SVGProps} from 'react';
++type Icon = ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'> & {size?: string | number;absoluteStrokeWidth?: boolean} & RefAttributes<SVGSVGElement>>;
++export const Check: Icon;
++export const ChevronDown: Icon;
++export const ChevronRight: Icon;
+diff --git a/src/assistant/official/lucide/index.js b/src/assistant/official/lucide/index.js
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/index.js
+@@ -0,0 +1,3 @@
++export {default as Check} from './esm/icons/check.js';
++export {default as ChevronDown} from './esm/icons/chevron-down.js';
++export {default as ChevronRight} from './esm/icons/chevron-right.js';
+diff --git a/src/assistant/official/lucide/provenance.json b/src/assistant/official/lucide/provenance.json
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/lucide/provenance.json
+@@ -0,0 +1,40 @@
++{
++  "package": "lucide-react",
++  "version": "0.468.0",
++  "source": "https://registry.npmjs.org/lucide-react/-/lucide-react-0.468.0.tgz",
++  "integrity": "sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA==",
++  "files": {
++    "dist/esm/icons/chevron-right.js": "4a26373403aa35ba876af5a6619764839cda9672e257efb3f0af216597fb9e11",
++    "dist/esm/createLucideIcon.js": "5f7b042b874dcd7d6ef305916a1d832558ef65579ad587bb98c691f0ab55ef97",
++    "dist/esm/Icon.js": "0f32b03eb0954f9ebdb5dc318e7b37822af2c3382ddba639ef8d21eb9b8f2671",
++    "dist/esm/shared/src/utils.js": "62f6e8581ea4233a887a1e51514c5c791d65fce8d1e350f5439e62e75898c919",
++    "dist/esm/defaultAttributes.js": "3fbda9c562e40235e174ec10aeddc4fab3a1c0d354d4724a17fa1bb3b6f67133",
++    "dist/esm/icons/chevron-down.js": "a1630e574527024f46a4c49f80e0a2d38bca3f2ce35baf7be632ed6101966cb3",
++    "dist/esm/icons/check.js": "4ed0383658264e54eed77d1efc5acc72cc1b33d0f12d7f5100c9ebdfca4b8fc2",
++    "LICENSE": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
++    "dist/esm/icons/chevron-right.js.map": "dea9b062997446caefad8fb317dfe7fc59a5aeba25d6138bb704d8361b74b217",
++    "dist/esm/createLucideIcon.js.map": "d1519aa47353e42d28fc9342889aeb23d0ab990c6b4ed1bb004ffcb4f4fd0c85",
++    "dist/esm/Icon.js.map": "ce3359e47b6f80465e2b87a0845aeeb6cd735464bb1cab961a52c8541f3990f9",
++    "dist/esm/shared/src/utils.js.map": "19cdbe990764d9b4e3b85512438380930c37ce1e03e20028d67403b0c3dab943",
++    "dist/esm/defaultAttributes.js.map": "c22cf11c4a9aa93869eea745320527f7afc17df2e7dc99d4e134f3678d33afc5",
++    "dist/esm/icons/chevron-down.js.map": "66f44f49536aafa31b42aeac47cc6dfd9c3a0e93d194bc7106f0e50cbd2e06a8",
++    "dist/esm/icons/check.js.map": "14603dc122322afa38ad0fa941016751b0f0abb494b89961d864d2d4787980a7"
++  },
++  "installedFiles": {
++    "dist/esm/icons/chevron-right.js": "esm/icons/chevron-right.js",
++    "dist/esm/createLucideIcon.js": "esm/createLucideIcon.js",
++    "dist/esm/Icon.js": "esm/Icon.js",
++    "dist/esm/shared/src/utils.js": "esm/shared/src/utils.js",
++    "dist/esm/defaultAttributes.js": "esm/defaultAttributes.js",
++    "dist/esm/icons/chevron-down.js": "esm/icons/chevron-down.js",
++    "dist/esm/icons/check.js": "esm/icons/check.js",
++    "LICENSE": "LICENSE",
++    "dist/esm/icons/chevron-right.js.map": "esm/icons/chevron-right.js.map",
++    "dist/esm/createLucideIcon.js.map": "esm/createLucideIcon.js.map",
++    "dist/esm/Icon.js.map": "esm/Icon.js.map",
++    "dist/esm/shared/src/utils.js.map": "esm/shared/src/utils.js.map",
++    "dist/esm/defaultAttributes.js.map": "esm/defaultAttributes.js.map",
++    "dist/esm/icons/chevron-down.js.map": "esm/icons/chevron-down.js.map",
++    "dist/esm/icons/check.js.map": "esm/icons/check.js.map"
++  }
++}
+diff --git a/src/assistant/official/page.css b/src/assistant/official/page.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/page.css
+@@ -0,0 +1,5 @@
++:root {
++  font-family: system-ui;
++  line-height: 1.5;
++  background: var(--background-color);
++}
+diff --git a/src/assistant/official/provenance.json b/src/assistant/official/provenance.json
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/provenance.json
+@@ -0,0 +1,161 @@
++{
++  "revision": "360e35170568dfc99a2baaa78e6b7bdd36458d91",
++  "files": {
++    "Button.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Button.tsx",
++      "sha256": "7214f9e35a01d5e57ac6d857f0c85ba28d685d9545dd6a4f62d58c0013185451"
++    },
++    "Button.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Button.css",
++      "sha256": "2aec8119e62f29675dc86d530f594e6af019543d783136c841465829f455657a"
++    },
++    "TextField.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/TextField.tsx",
++      "sha256": "adaf40161f25cd26b075bb8f668afbd73ae5345d6a23b4bf3d35bacc47f393fa"
++    },
++    "TextField.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/TextField.css",
++      "sha256": "cef323a3179d4d2afa6038c0115a78be6e8bde8e4d005ca5627263359dff218b"
++    },
++    "Form.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Form.tsx",
++      "sha256": "eae27474fdce285eea6074003813ec2266588c56029cb31050831b923adb623d"
++    },
++    "Form.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Form.css",
++      "sha256": "92e8e4831bef2a6a7842caa864dcc58c4ac91d5b7560c0fd222e72890973da76"
++    },
++    "Content.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Content.tsx",
++      "sha256": "ce6346e4465387d800cf75102405e56df5ef70e8ab14ba793e0b105a603411ca"
++    },
++    "Content.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Content.css",
++      "sha256": "48a0f685881b4692925f6e30b57edb0c8b24ce1edad395dd790fabd611201898"
++    },
++    "Select.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Select.tsx",
++      "sha256": "cfcd330df5eb53a755f9e5dc5af1570ff61965158630bf9037e06c89fc72c794"
++    },
++    "Select.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Select.css",
++      "sha256": "f34518d9400dc52f75e645c3bcf0801f1bcbfb56a0595e845f3b2d4ce85fd68a"
++    },
++    "Popover.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Popover.tsx",
++      "sha256": "1229e7e9636cc7cad8e994aa91a5a64a70a403b3fa12137d3f7a6c9afd977604"
++    },
++    "Popover.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Popover.css",
++      "sha256": "3e7132811e37ad1dafac4532588d953a30fe7e7cc9f86c50c8a6199a9763de86"
++    },
++    "ListBox.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ListBox.tsx",
++      "sha256": "118f4c2b12dfc505718d6050b144d7efbedcc6d3e7d16478ef401f9b9fe3f4f2"
++    },
++    "ListBox.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ListBox.css",
++      "sha256": "737a40563b86a4b6b534a22e2bc9f6bc677b80065453c6146e020850833f761f"
++    },
++    "Disclosure.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Disclosure.tsx",
++      "sha256": "2fee2ab85d84c5aaa43f9f7eb526d4b26ecc22727f6e3218e3782c6545cc388f"
++    },
++    "Disclosure.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Disclosure.css",
++      "sha256": "0887595c7fb85f691c8ae16e5f2d0cfbc9408d1e9e618a3d54f91bd0c5fbd459"
++    },
++    "Link.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Link.tsx",
++      "sha256": "806f8f0cfce1bbe0153cf9c05102ee04ab1377a31fe8e4e728d8e43f700641c9"
++    },
++    "Link.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Link.css",
++      "sha256": "123c2d069c97546075539b07781c64f4e0e0cb0eb4f8e1595eef70abdc0300ae"
++    },
++    "Separator.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Separator.tsx",
++      "sha256": "936a52e7b981c21075ea1e4a5b5bd858e9c494083c63a6d8c4d1f6ae8372c4dd"
++    },
++    "Separator.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Separator.css",
++      "sha256": "a88dfcf3c59ec5e293a51eff4336bf8f0ff532f854715889caf18cdb506af2d4"
++    },
++    "ProgressCircle.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ProgressCircle.tsx",
++      "sha256": "e180c2137b5aa7fbcd05b3fd50f08f50d1b694589c96c8cd146e03ee4be1048d"
++    },
++    "theme.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/theme.css",
++      "sha256": "b9221d8a721028fea9aebcfd7b6f8620a7fba8d3fac19e3ef954e94a48fc511c"
++    },
++    "utilities.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/utilities.css",
++      "sha256": "97df44ee6db140bb92546efbfb7456f245a489ff837428e049800dcab24fb799"
++    },
++    "page.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/.storybook/preview.css",
++      "sha256": "319bbb55df5c2fc2df5fb7d3b7ab0515554a4603199acff68bdb0ebc8bc1ee61"
++    },
++    "LICENSE": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/LICENSE",
++      "sha256": "7dfe6526888bac51759c99f9a51262ba2711a8c12a067f2181609dd9a4066b84"
++    },
++    "ToggleButton.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ToggleButton.tsx",
++      "sha256": "5b5b37b03af7778f5dcbc672c930114b66208573eaf582c1744654142ce1329d"
++    },
++    "ToggleButton.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ToggleButton.css",
++      "sha256": "d6977ffbfb3ced85f57051cb83f8512111d35c0cc86bba0a27c5bffa3230ddbf"
++    },
++    "Tree.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Tree.tsx",
++      "sha256": "c5ec5bbe461ee191e491b4c47a3e5c1218172c2bc19eb23000cd7c36fd79186c"
++    },
++    "Tree.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Tree.css",
++      "sha256": "c0e9b98656a698451ed9e467f2934235a1286556f66ad3235d62ab408a69ac88"
++    },
++    "SearchField.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/SearchField.tsx",
++      "sha256": "908e238b07d33707f47124a22586152b9b073fff71fe81038f91dd775559e188"
++    },
++    "SearchField.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/SearchField.css",
++      "sha256": "fc1883c47bb8a8ad6c4506970c6b17f14f2fba5f82645069fd9063414ce90b95"
++    },
++    "Modal.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Modal.tsx",
++      "sha256": "1452cc2dfd93372c54062413107137f40f68c576c0c60b948ff6c42422baca73"
++    },
++    "Modal.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Modal.css",
++      "sha256": "a07e277a7390b7288fa1e0307f0945ded34f09d39e82a8d941e8f706b6b6a233"
++    },
++    "Dialog.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Dialog.tsx",
++      "sha256": "4a7edc764b6edafed1e003a6965f58b7b8b50e965be02d8e2709ab9be65ab1af"
++    },
++    "Dialog.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Dialog.css",
++      "sha256": "7677e148992c458ec3d5f6410a8f1281f210e318caf0aae82381ce3c08160330"
++    },
++    "Checkbox.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Checkbox.tsx",
++      "sha256": "6aa7e7937a466669f3804e902e12a02603dbab968e539d9c40265d504b780842"
++    },
++    "Checkbox.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/Checkbox.css",
++      "sha256": "c0796c9906a727d163417047014eea196acf3ce8732340141bde9fbbdb6525a3"
++    },
++    "ColorSwatch.tsx": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ColorSwatch.tsx",
++      "sha256": "9ee4fd4213182781aa3f67be29ac4f28e261d38a0d307b9066fa1f4cdf242e00"
++    },
++    "ColorSwatch.css": {
++      "url": "https://raw.githubusercontent.com/adobe/react-spectrum/360e35170568dfc99a2baaa78e6b7bdd36458d91/starters/docs/src/ColorSwatch.css",
++      "sha256": "ce615b50ceeee79637da4f21dafe7304bb33fdb9276d9b7011e1d1914b03acf1"
++    }
++  }
++}
+diff --git a/src/assistant/official/theme.css b/src/assistant/official/theme.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/theme.css
+@@ -0,0 +1,223 @@
++/* colors */
++:root {
++  /* Change this variable to set the theme color for all components. */
++  /* You can use the below presets, or choose a custom color. */
++  --tint: var(--indigo);
++
++  /* theme colors */
++  /* lightness channel is only used as a multiplier for chroma (see below) */
++  --gray: oklch(0.5 0 0);
++  --red: oklch(0.6 0.181447 27.0726);
++  --orange: oklch(0.7 0.150492 54);
++  --yellow: oklch(0.8 0.128516 73.8032);
++  --turquoise: oklch(0.5 0.081146 205.114);
++  --cyan: oklch(0.4 0.142107 243.926);
++  --green: oklch(0.5 0.121276 155.372);
++  --blue: oklch(0.5 0.22049 266.315);
++  --indigo: oklch(1 0.25049 284.23);
++  --purple: oklch(0.7 0.223324 302);
++  --pink: oklch(0.6 0.177717 347.813);
++
++  /** tint color scale */
++  --tint-100: oklch(from var(--tint) var(--lightness-100) var(--chroma-100) h);
++  --tint-200: oklch(from var(--tint) var(--lightness-200) var(--chroma-200) h);
++  --tint-300: oklch(from var(--tint) var(--lightness-300) var(--chroma-300) h);
++  --tint-400: oklch(from var(--tint) var(--lightness-400) var(--chroma-400) h);
++  --tint-500: oklch(from var(--tint) var(--lightness-500) var(--chroma-500) h);
++  --tint-600: oklch(from var(--tint) var(--lightness-600) var(--chroma-600) h);
++  --tint-700: oklch(from var(--tint) var(--lightness-700) var(--chroma-700) h);
++  --tint-800: oklch(from var(--tint) var(--lightness-800) var(--chroma-800) h);
++  --tint-900: oklch(from var(--tint) var(--lightness-900) var(--chroma-900) h);
++  --tint-1000: oklch(from var(--tint) var(--lightness-1000) var(--chroma-1000) h);
++  --tint-1100: oklch(from var(--tint) var(--lightness-1100) var(--chroma-1100) h);
++  --tint-1200: oklch(from var(--tint) var(--lightness-1200) var(--chroma-1200) h);
++  --tint-1300: oklch(from var(--tint) var(--lightness-1300) var(--chroma-1300) h);
++  --tint-1400: oklch(from var(--tint) var(--lightness-1400) var(--chroma-1400) h);
++  --tint-1500: oklch(from var(--tint) var(--lightness-1500) var(--chroma-1500) h);
++  --tint-1600: oklch(from var(--tint) var(--lightness-1600) var(--chroma-1600) h);
++
++  /* gray scale */
++  --gray-100: oklch(from var(--gray) var(--lightness-100) c h);
++  --gray-200: oklch(from var(--gray) var(--lightness-200) c h);
++  --gray-300: oklch(from var(--gray) var(--lightness-300) c h);
++  --gray-400: oklch(from var(--gray) var(--lightness-400) c h);
++  --gray-500: oklch(from var(--gray) var(--lightness-500) c h);
++  --gray-600: oklch(from var(--gray) var(--lightness-600) c h);
++  --gray-700: oklch(from var(--gray) var(--lightness-700) c h);
++  --gray-800: oklch(from var(--gray) var(--lightness-800) c h);
++  --gray-900: oklch(from var(--gray) var(--lightness-900) c h);
++  --gray-1000: oklch(from var(--gray) var(--lightness-1000) c h);
++  --gray-1100: oklch(from var(--gray) var(--lightness-1100) c h);
++  --gray-1200: oklch(from var(--gray) var(--lightness-1200) c h);
++  --gray-1300: oklch(from var(--gray) var(--lightness-1300) c h);
++  --gray-1400: oklch(from var(--gray) var(--lightness-1400) c h);
++  --gray-1500: oklch(from var(--gray) var(--lightness-1500) c h);
++  --gray-1600: oklch(from var(--gray) var(--lightness-1600) c h);
++}
++
++/* light mode colors */
++:root {
++  --background-color: #f8f8f8;
++  --gray-50: #ffffff;
++
++  --lightness-100: 98.1187%;
++  --lightness-200: 95.2045%;
++  --lightness-300: 91.1434%;
++  --lightness-400: 85.1751%;
++  --lightness-500: 79.1773%;
++  --lightness-600: 72.3297%;
++  --lightness-700: 67.0121%;
++  --lightness-800: 62.3039%;
++  --lightness-900: 57.9699%;
++  --lightness-1000: 51.9076%;
++  --lightness-1100: 46.9058%;
++  --lightness-1200: 41.0821%;
++  --lightness-1300: 35.3616%;
++  --lightness-1400: 29.6725%;
++  --lightness-1500: 24.5366%;
++  --lightness-1600: 16.6959%;
++
++  /* lower chroma at low lightness levels */
++  --chroma-100: calc(l * c * 0.5);
++  --chroma-200: calc(l * c * 0.6);
++  --chroma-300: calc(l * c * 0.7);
++  --chroma-400: calc(l * c * 0.8);
++  --chroma-500: calc(l * c * 0.9);
++  --chroma-600: c;
++  --chroma-700: c;
++  --chroma-800: c;
++  --chroma-900: c;
++  --chroma-1000: c;
++  --chroma-1100: c;
++  --chroma-1200: c;
++  --chroma-1300: c;
++  --chroma-1400: c;
++  --chroma-1500: c;
++  --chroma-1600: c;
++
++  --highlight-hover: rgb(0 0 0 / 0.07);
++  --highlight-pressed: rgb(0 0 0 / 0.15);
++  --overlay-background: var(--gray-50);
++  --overlay-border: rgb(0 0 0 / 0.06);
++  --popover-shadow: 0 8px 20px rgba(0 0 0 / 0.12);
++}
++
++/* dark mode colors */
++@media (prefers-color-scheme: dark) {
++  :root {
++    --background-color: #1b1b1b;
++    --gray-50: oklch(22% 0 0);
++
++    --lightness-100: 29.6725%;
++    --lightness-200: 35.3616%;
++    --lightness-300: 41.0821%;
++    --lightness-400: 46.9058%;
++    --lightness-500: 51.9076%;
++    --lightness-600: 57.9699%;
++    --lightness-700: 56.1347%;
++    --lightness-800: 59.2866%;
++    --lightness-900: 62.3039%;
++    --lightness-1000: 67.0121%;
++    --lightness-1100: 72.3297%;
++    --lightness-1200: 79.1773%;
++    --lightness-1300: 85.1751%;
++    --lightness-1400: 91.1434%;
++    --lightness-1500: 95.2045%;
++    --lightness-1600: 100%;
++
++    --highlight-hover: rgb(255 255 255 / 0.1);
++    --highlight-pressed: rgb(255 255 255 / 0.2);
++    --overlay-background: var(--gray-100);
++    --overlay-border: rgb(255 255 255 / 0.2);
++    --popover-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
++  }
++}
++
++/* Semantic colors */
++:root {
++  --focus-ring-color: var(--tint-1000);
++  --text-color: var(--gray-1200);
++  --text-color-hover: var(--gray-1300);
++  --text-color-disabled: var(--gray-600);
++  --text-color-placeholder: var(--gray-1000);
++  --link-color: var(--tint-1200);
++  --link-color-secondary: var(--gray-1200);
++  --link-color-pressed: var(--tint-1300);
++  --border-color: var(--gray-400);
++  --border-color-hover: var(--gray-500);
++  --border-color-disabled: var(--gray-300);
++  --field-text-color: var(--gray-1400);
++  --button-background: var(--tint-100);
++  --button-background-pressed: var(--tint-200);
++  /* these colors are the same between light and dark themes
++   * to ensure contrast with the foreground color */
++  --highlight-background: oklch(from var(--tint) 55% c h);
++  --highlight-background-pressed: oklch(from var(--tint) 50% c h);
++  --highlight-background-invalid: oklch(from var(--red) var(--lightness-900) c h);
++  --highlight-foreground: white;
++  --highlight-overlay: oklch(from var(--tint-1000) l c h / 15%);
++  --invalid-color: oklch(from var(--red) var(--lightness-1000) c h);
++  --field-background: var(--gray-50);
++}
++
++/* Windows high contrast mode overrides */
++@media (forced-colors: active) {
++  :root {
++    --background-color: Canvas;
++    --focus-ring-color: Highlight;
++    --text-color: ButtonText;
++    --text-color-hover: ButtonText;
++    --text-color-disabled: GrayText;
++    --text-color-placeholder: ButtonText;
++    --link-color: LinkText;
++    --link-color-secondary: LinkText;
++    --link-color-pressed: LinkText;
++    --border-color: ButtonBorder;
++    --border-color-hover: ButtonBorder;
++    --border-color-pressed: ButtonBorder;
++    --border-color-disabled: GrayText;
++    --field-background: Field;
++    --field-text-color: FieldText;
++    --overlay-background: Canvas;
++    --overlay-border: ButtonBorder;
++    --button-background: ButtonFace;
++    --button-background-pressed: ButtonFace;
++    --highlight-background: Highlight;
++    --highlight-background-pressed: Highlight;
++    --highlight-background-invalid: LinkText;
++    --highlight-foreground: HighlightText;
++    --invalid-color: LinkText;
++  }
++}
++
++/* typography and spacing scale */
++:root {
++  --font-size: 0.875rem; /* 14px */
++  --font-size-sm: 0.75rem; /* 12px */
++  --font-size-lg: 1rem; /* 16px */
++  --radius: 8px;
++  --radius-sm: 6px;
++  --radius-lg: 10px;
++  --radius-xl: 16px;
++  --spacing: 0.25rem; /* 4px */
++  --spacing-1: var(--spacing);
++  --spacing-2: calc(2 * var(--spacing));
++  --spacing-3: calc(3 * var(--spacing));
++  --spacing-4: calc(4 * var(--spacing));
++  --spacing-5: calc(5 * var(--spacing));
++  --spacing-6: calc(6 * var(--spacing));
++  --spacing-7: calc(7 * var(--spacing));
++  --spacing-8: calc(8 * var(--spacing));
++  --spacing-9: calc(9 * var(--spacing));
++  --spacing-10: calc(10 * var(--spacing));
++}
++
++/* Scale up hit targets on high resolution mobile devices. */
++@media (min-resolution: 200dpi) {
++  :root {
++    --spacing: calc(0.25rem * 1.25);
++    --font-size: 1.0625rem; /* 17px */
++    --font-size-sm: 0.9375rem; /* 15px */
++    --font-size-lg: 1.25rem; /* 20px */
++  }
++}
+diff --git a/src/assistant/official/utilities.css b/src/assistant/official/utilities.css
+new file mode 100644
+--- /dev/null
++++ b/src/assistant/official/utilities.css
+@@ -0,0 +1,287 @@
++@layer utilities {
++  /* utility that creates a button-like element, which can be optionally selected */
++  .button-base {
++    --button-color: var(--tint);
++    --button-background: oklch(from var(--button-color) var(--lightness-100) var(--chroma-100) h);
++    --button-gradient: oklch(from var(--button-color) var(--lightness-200) var(--chroma-200) h);
++    --button-border: oklch(from var(--button-color) var(--lightness-300) var(--chroma-300) h);
++    --button-highlight: rgb(255 255 255 / 0.8);
++    --button-shadow: oklch(from var(--button-color) var(--lightness-400) var(--chroma-400) h);
++    --button-border-size: 1px;
++    --button-text: oklch(from var(--button-color) var(--lightness-1400) var(--chroma-1400) h);
++    --button-gradient-size: 8px;
++
++    background: var(--button-background);
++    color: var(--button-text);
++    box-shadow:
++      inset 0 -1px 0 var(--button-shadow),
++      /* bottom shadow */ inset 0 0 0 var(--button-border-size) var(--button-border),
++      /* border */ inset 0px calc(var(--button-border-size) + 1px) 0px var(--button-highlight),
++      /* top specular highlight */ inset 0px calc(-1 * var(--button-gradient-size))
++        var(--button-gradient-size) -2px var(--button-gradient); /* inner gradient */
++    outline: none;
++    transition-property: background, color, scale, box-shadow;
++    transition-duration: 200ms;
++    will-change: scale;
++    forced-color-adjust: none;
++    -webkit-tap-highlight-color: transparent;
++
++    @media (prefers-color-scheme: dark) {
++      --button-shadow: oklch(from var(--button-color) var(--lightness-200) var(--chroma-200) h);
++      --button-highlight: rgb(255 255 255 / 0.15);
++      box-shadow:
++        inset 0 var(--button-border-size) 0 var(--button-highlight),
++        /* top specular highlight */ inset 0 calc(-1 * var(--button-border-size)) 0
++          var(--button-shadow),
++        /* bottom shadow */ inset 0 0 0 var(--button-border-size) var(--button-border),
++        /* border */ inset 0 var(--button-gradient-size) var(--button-gradient-size) -2px
++          var(--button-gradient); /* inner gradient */
++    }
++
++    &:where([data-pressed]) {
++      --button-background: oklch(from var(--button-color) var(--lightness-200) var(--chroma-200) h);
++    }
++
++    &:where([data-focus-visible]) {
++      outline: 2px solid var(--focus-ring-color);
++      outline-offset: 2px;
++    }
++
++    &:where([data-variant='secondary']) {
++      --button-color: var(--gray);
++    }
++
++    &:where([data-variant='quiet']) {
++      --button-background: none;
++      --button-text: var(--text-color);
++      box-shadow: 0 0 0 1px transparent;
++
++      &:where([data-hovered], [data-pressed]) {
++        --button-background: var(--tint-200);
++        --button-text: var(--tint-1400);
++        box-shadow: 0 0 0 1px var(--tint-200);
++      }
++    }
++
++    &:where([data-selected]) {
++      --button-background: oklch(from var(--button-color) 55% c h);
++      --button-border: oklch(from var(--button-color) 50% c h);
++      --button-gradient: var(--button-border);
++      --button-highlight: rgb(255 255 255 / 0.2);
++      --button-shadow: oklch(from var(--button-color) 30% c h);
++      --button-text: var(--highlight-foreground);
++
++      box-shadow:
++        inset 0 -1px 0 var(--button-shadow),
++        /* bottom shadow */ inset 0 0 0 1px var(--button-border),
++        /* border */ inset 0 2px 0 var(--button-highlight),
++        /* top specular highlight */ inset 0 calc(-1 * var(--button-gradient-size))
++          var(--button-gradient-size) var(--button-gradient); /* inner gradient */
++
++      @media (prefers-color-scheme: dark) {
++        --button-highlight: rgb(255 255 255 / 0.4);
++        --button-gradient: rgb(255 255 255 / 0.2);
++        --button-shadow: var(--button-border);
++        box-shadow:
++          inset 0 1px 0 var(--button-highlight),
++          /* top specular highlight */ inset 0 var(--button-gradient-size)
++            var(--button-gradient-size) var(--button-gradient),
++          /* inner gradient */ inset 0 0 0 1px var(--button-border); /* border */
++      }
++
++      &:where([data-pressed]) {
++        --button-background: oklch(from var(--button-color) 50% c h);
++      }
++    }
++
++    &:where([data-disabled]) {
++      box-shadow: none;
++      --button-background: var(--border-color-disabled);
++      --button-text: var(--text-color-disabled);
++
++      &:where([data-variant='quiet']) {
++        --button-background: none;
++      }
++    }
++
++    @media (forced-colors: active) {
++      --button-background: ButtonFace;
++      --button-text: ButtonText;
++      --button-border: ButtonBorder;
++      box-shadow: inset 0 0 0 var(--button-border-size) var(--button-border);
++
++      &:where([data-variant='quiet']) {
++        --button-border: transparent;
++        &:where([data-hovered], [data-pressed]) {
++          --button-border: ButtonBorder;
++        }
++      }
++
++      &:where([data-selected]) {
++        --button-background: Highlight;
++        --button-text: HighlightText;
++        --button-border: Highlight;
++      }
++
++      &:where([data-disabled]) {
++        --button-background: ButtonFace;
++        --button-text: GrayText;
++        --button-border: GrayText;
++
++        &:where([data-variant='quiet']) {
++          --button-border: transparent;
++        }
++      }
++    }
++  }
++
++  /* utility that creates a small indicator, such as a checkbox, radio, switch, or slider thumb */
++  .indicator {
++    --indicator-color: var(--gray);
++    --indicator-background: oklch(
++      from var(--indicator-color) var(--lightness-100) var(--chroma-100) h
++    );
++    --indicator-border: oklch(from var(--indicator-color) var(--lightness-800) var(--chroma-800) h);
++    --indicator-drop-shadow: 0 0;
++
++    background: var(--indicator-background);
++    box-shadow:
++      inset 0 0 0 1px var(--indicator-border),
++      /* border */ inset 0 2px 0 white,
++      /* top specular highlight */ inset 0 -4px 2px
++        oklch(from var(--indicator-color) 30% c h / 0.08),
++      /* inner gradient */ var(--indicator-drop-shadow); /* optional drop shadow */
++    will-change: scale;
++
++    @media (prefers-color-scheme: dark) {
++      box-shadow:
++        inset 0 1px 0 rgb(255 255 255 / 0.4),
++        /* top specular highlight */ inset 0 4px 2px rgb(255 255 255 / 0.1),
++        /* inner shadow */ inset 0 0 0 1px var(--indicator-border),
++        /* border */ var(--indicator-drop-shadow); /* optional drop shadow */
++    }
++
++    @media (forced-colors: active) {
++      --indicator-background: ButtonFace;
++      --indicator-border: ButtonBorder;
++      box-shadow: inset 0 0 0 1px var(--indicator-border);
++    }
++
++    &[data-pressed],
++    [data-pressed] & {
++      scale: 0.9;
++    }
++
++    [data-selected] > &,
++    [data-indeterminate] > & {
++      --indicator-color: var(--highlight-background);
++      --indicator-background: var(--indicator-color);
++      --indicator-highlight: rgb(255 255 255 / 0.3);
++      --indicator-shadow: oklch(from var(--indicator-color) 45% c h);
++      --indicator-border: var(--indicator-background);
++      box-shadow:
++        inset 0 -1px 0 var(--indicator-shadow),
++        /* bottom shadow */ inset 0 0 0 1px var(--indicator-border),
++        /* border */ inset 0 2px 0 var(--indicator-highlight),
++        /* top specular highlight */ var(--indicator-drop-shadow); /* optional drop shadow */
++
++      @media (prefers-color-scheme: dark) {
++        --indicator-highlight: rgb(255 255 255 / 0.5);
++        --indicator-gradient: rgb(255 255 255 / 0.12);
++        box-shadow:
++          inset 0 1px 0 var(--indicator-highlight),
++          /* top specular highlight */ inset 0 4px 2px var(--indicator-gradient),
++          /* inner gradient */ inset 0 0 0 1px var(--indicator-border),
++          /* border */ var(--indicator-drop-shadow); /* optional drop shadow */
++      }
++
++      @media (forced-colors: active) {
++        box-shadow: none;
++      }
++    }
++
++    &[data-invalid],
++    [data-invalid] > & {
++      --indicator-color: var(--invalid-color);
++
++      @media (forced-colors: active) {
++        --indicator-border: var(--invalid-color);
++      }
++    }
++
++    &[data-focus-visible],
++    [data-focus-visible] > & {
++      outline: 2px solid var(--focus-ring-color);
++      outline-offset: 2px;
++    }
++
++    &[data-disabled],
++    [data-disabled] > & {
++      background: var(--field-background);
++      box-shadow: inset 0 0 0 1px var(--border-color-disabled);
++    }
++  }
++
++  /* utility that creates an inset effect, used for form fields, slider/progress tracks, etc. */
++  .inset {
++    --inset-background: var(--field-background);
++    --inset-border: var(--border-color);
++    --inset-border-size: 1px;
++    --inset-shadow-offset: 2px;
++    --inset-shadow-size: 4px;
++
++    background: var(--inset-background);
++    box-shadow:
++      inset 0 0 0 var(--inset-border-size) var(--inset-border),
++      /* border */ inset 0 var(--inset-shadow-offset) var(--inset-shadow-size) rgb(0 0 0 / 0.15),
++      /* inner shadow */ 0 1px 0 var(--gray-50); /* bottom specular highlight */
++    transition: box-shadow 200ms;
++    forced-color-adjust: none;
++
++    @media (prefers-color-scheme: dark) {
++      --inset-border: var(--gray-200);
++      --border-color-hover: var(--gray-300);
++      --inset-highlight: var(--gray-400);
++      --inset-shadow-size: 6px;
++      box-shadow:
++        inset 0 calc(-1 * var(--inset-border-size)) 0 var(--inset-highlight),
++        /* bottom specular highlight */ inset 0 0 0 var(--inset-border-size) var(--inset-border),
++        /* border */ inset 0 1px var(--inset-shadow-size) rgb(0 0 0); /* inner shadow */
++    }
++
++    &:where([data-hovered], [data-pressed]) {
++      --inset-border: var(--border-color-hover);
++    }
++
++    @media (forced-colors: active) {
++      --inset-border: ButtonBorder;
++      box-shadow: inset 0 0 0 var(--inset-border-size) var(--inset-border);
++    }
++
++    &:where([data-invalid]) {
++      --inset-border: var(--invalid-color);
++      --inset-highlight: var(--inset-border);
++    }
++
++    &:where([data-disabled]) {
++      box-shadow: inset 0 0 0 1px var(--border-color-disabled);
++    }
++
++    &.track {
++      --inset-shadow-offset: 1px;
++      --inset-shadow-size: 3px;
++
++      @media (prefers-color-scheme: light) {
++        --inset-background: var(--gray-300);
++        --inset-border: var(--gray-500);
++        --inset-border-size: 0.5px;
++      }
++
++      @media (forced-colors: active) {
++        --inset-background: Field;
++        --inset-border: ButtonBorder;
++        --inset-border-size: 1px;
++      }
++    }
++  }
++}

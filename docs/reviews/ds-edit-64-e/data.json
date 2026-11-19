@@ -1,0 +1,62 @@
+{
+  "stages": [
+    {
+      "stage": "initial",
+      "main": {
+        "project": "adl-b989089c6523",
+        "volume": "adl-b989089c6523_database",
+        "rows": 3,
+        "dataHash": "1580efb8823ddabd5ee63c268ff69de32cb74213f2954073bf5c37ff8c002e0c",
+        "configHash": "6d7f46ff715c62028df6ee42514e8c9916c1de67211b7450f9d8546e89ae6797",
+        "started": "2026-11-04T11:15:59.843468216Z"
+      },
+      "witness": {
+        "project": "adl-bbc7b82d3388",
+        "volume": "adl-bbc7b82d3388_database",
+        "rows": 3,
+        "dataHash": "2af16dd48f3787845883ee93ec821a2f2b55657ceb134c0747e272f608aaf592",
+        "configHash": "93312a0158b543d3718e00a407e6a16e92d58713015af01cafd491d4f9a47bbe",
+        "started": "2026-11-04T11:16:05.724888177Z"
+      }
+    },
+    {
+      "stage": "renamed",
+      "main": {
+        "project": "adl-b989089c6523",
+        "volume": "adl-b989089c6523_database",
+        "rows": 3,
+        "dataHash": "1580efb8823ddabd5ee63c268ff69de32cb74213f2954073bf5c37ff8c002e0c",
+        "configHash": "6d7f46ff715c62028df6ee42514e8c9916c1de67211b7450f9d8546e89ae6797",
+        "started": "2026-11-04T11:16:11.995542555Z"
+      },
+      "witness": {
+        "project": "adl-bbc7b82d3388",
+        "volume": "adl-bbc7b82d3388_database",
+        "rows": 3,
+        "dataHash": "2af16dd48f3787845883ee93ec821a2f2b55657ceb134c0747e272f608aaf592",
+        "configHash": "93312a0158b543d3718e00a407e6a16e92d58713015af01cafd491d4f9a47bbe",
+        "started": "2026-11-04T11:16:05.724888177Z"
+      }
+    },
+    {
+      "stage": "moved",
+      "main": {
+        "project": "adl-b989089c6523",
+        "volume": "adl-b989089c6523_database",
+        "rows": 3,
+        "dataHash": "1580efb8823ddabd5ee63c268ff69de32cb74213f2954073bf5c37ff8c002e0c",
+        "configHash": "6d7f46ff715c62028df6ee42514e8c9916c1de67211b7450f9d8546e89ae6797",
+        "started": "2026-11-04T11:16:18.191554711Z"
+      },
+      "witness": {
+        "project": "adl-bbc7b82d3388",
+        "volume": "adl-bbc7b82d3388_database",
+        "rows": 3,
+        "dataHash": "2af16dd48f3787845883ee93ec821a2f2b55657ceb134c0747e272f608aaf592",
+        "configHash": "93312a0158b543d3718e00a407e6a16e92d58713015af01cafd491d4f9a47bbe",
+        "started": "2026-11-04T11:16:05.724888177Z"
+      }
+    }
+  ],
+  "cleaned": true
+}

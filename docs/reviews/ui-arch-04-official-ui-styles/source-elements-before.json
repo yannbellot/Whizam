@@ -1,0 +1,3146 @@
+{
+  "base": "c39ea45",
+  "scope": "production TSX excluding stories, examples and vendor sources; source facts, not runtime coverage",
+  "filesScanned": 58,
+  "elements": [
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 31,
+      "owner": "project-preview-or-demo",
+      "tag": "Form",
+      "events": []
+    },
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 34,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "events": []
+    },
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 37,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "name": "name",
+      "events": []
+    },
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 46,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "name": "description",
+      "events": []
+    },
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 56,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "type": "submit",
+      "text": "Enregistrer le projet",
+      "events": []
+    },
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "line": 59,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Annuler",
+      "events": []
+    },
+    {
+      "file": "app/root.tsx",
+      "line": 85,
+      "owner": "loomata-host",
+      "tag": "h1",
+      "events": []
+    },
+    {
+      "file": "app/root.tsx",
+      "line": 87,
+      "owner": "loomata-host",
+      "tag": "a",
+      "text": "Revenir à l’accueil",
+      "events": []
+    },
+    {
+      "file": "app/routes/imported-page.tsx",
+      "line": 13,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Élément importé indisponible",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "line": 19,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "line": 20,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Modifier le projet",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "line": 26,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "line": 30,
+      "owner": "project-preview-or-demo",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "line": 35,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Tous les projets",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-edit.tsx",
+      "line": 18,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Modifier le projet",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 16,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Exemple de projet test",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 17,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Créer un projet",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 27,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Aucun projet pour le moment. Créez votre premier projet fictif.",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 32,
+      "owner": "project-preview-or-demo",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 33,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "line": 34,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 26,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Accueil",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 27,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Exemple de projet test",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 28,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "UI Lab",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 31,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Chargement…",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 52,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 53,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "line": 59,
+      "owner": "project-preview-or-demo",
+      "tag": "Link",
+      "text": "Revenir aux projets",
+      "events": []
+    },
+    {
+      "file": "app/routes/projects-new.tsx",
+      "line": 14,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Nouveau projet",
+      "events": []
+    },
+    {
+      "file": "src/App.tsx",
+      "line": 7,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Agentic Design Lab",
+      "events": []
+    },
+    {
+      "file": "src/App.tsx",
+      "line": 10,
+      "owner": "project-preview-or-demo",
+      "tag": "a",
+      "text": "Ouvrir l’exemple de projet test",
+      "events": []
+    },
+    {
+      "file": "src/App.tsx",
+      "line": 13,
+      "owner": "project-preview-or-demo",
+      "tag": "a",
+      "text": "/ui-lab",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 177,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Codex · sélection",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 179,
+      "owner": "loomata-web",
+      "tag": "h1",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 188,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Codex ·",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 192,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Connexion",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 204,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Connecter Codex",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 208,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Déconnecter Codex",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 212,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Vérifier / Réessayer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 218,
+      "owner": "loomata-web",
+      "tag": "a",
+      "text": "Ouvrir la connexion officielle dans le navigateur",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 221,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Annuler la connexion",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 228,
+      "owner": "loomata-web",
+      "tag": "Notice",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 230,
+      "owner": "loomata-web",
+      "tag": "Notice",
+      "text": "Lecture de l’assistance momentanément indisponible. Les échanges sont conservés ; aucun message n’est renvoyé automatiquement.",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 236,
+      "owner": "loomata-web",
+      "tag": "Notice",
+      "text": "L’assistance demande une vérification. Utilisez Vérifier / Réessayer ; les échanges sont conservés.",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 242,
+      "owner": "loomata-web",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 243,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "État de travail",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 255,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Version affichée",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 257,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Version affichée",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 267,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Version principale",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 269,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "·",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 299,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Conversations",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 301,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Élément de la conversation",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 303,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Élément de la conversation",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 309,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Conversation générale",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 313,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "·",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 321,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 332,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 343,
+      "owner": "loomata-web",
+      "tag": "Notice",
+      "text": "Historique consultable. Reconnectez le compte d’origine pour continuer cette conversation.",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 376,
+      "owner": "loomata-web",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 377,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Autoriser une modification ?",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 381,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 382,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Contenu actuel",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 385,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 386,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Contenu proposé",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 396,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Refuser la modification",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 402,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Autoriser cette modification",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 411,
+      "owner": "loomata-web",
+      "tag": "form",
+      "events": [
+        "onSubmit"
+      ]
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 435,
+      "owner": "loomata-web",
+      "tag": "Field",
+      "name": "message",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 449,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "type": "submit",
+      "text": "Envoyer le message",
+      "events": []
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "line": 460,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Interrompre",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/core/ImportedComponent.tsx",
+      "line": 116,
+      "owner": "project-preview-or-demo",
+      "tag": "button",
+      "type": "button",
+      "events": []
+    },
+    {
+      "file": "src/core/ImportedComponent.tsx",
+      "line": 122,
+      "owner": "project-preview-or-demo",
+      "tag": "input",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/design-system/Architecture.tsx",
+      "line": 11,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "text": "Architecture du design system",
+      "events": []
+    },
+    {
+      "file": "src/design-system/Architecture.tsx",
+      "line": 47,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Decision Tokens",
+      "events": []
+    },
+    {
+      "file": "src/design-system/Architecture.tsx",
+      "line": 54,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Grid System et responsive",
+      "events": []
+    },
+    {
+      "file": "src/design-system/Architecture.tsx",
+      "line": 59,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Component ou Pattern ?",
+      "events": []
+    },
+    {
+      "file": "src/design-system/Architecture.tsx",
+      "line": 68,
+      "owner": "project-preview-or-demo",
+      "tag": "a",
+      "text": "Télécharger le référentiel de conception",
+      "events": []
+    },
+    {
+      "file": "src/design-system/DecisionCatalog.tsx",
+      "line": 83,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/design-system/DecisionCatalog.tsx",
+      "line": 91,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 11,
+      "owner": "project-preview-or-demo",
+      "tag": "h1",
+      "text": "Composants de référence",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 13,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "text": "Action disponible",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 14,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "text": "Action désactivée",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 15,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "text": "Action occupée",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 18,
+      "owner": "project-preview-or-demo",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 22,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 28,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 34,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 40,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 49,
+      "owner": "project-preview-or-demo",
+      "tag": "SelectField",
+      "name": "choice",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 50,
+      "owner": "project-preview-or-demo",
+      "tag": "SelectField",
+      "name": "disabled-choice",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 57,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Information de référence.",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 58,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Opération réussie.",
+      "events": []
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.stories 2.tsx",
+      "line": 59,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Opération impossible.",
+      "events": []
+    },
+    {
+      "file": "src/design-system/PrimitiveCatalog.tsx",
+      "line": 34,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/design-system/PrimitiveCatalog.tsx",
+      "line": 37,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenCatalog.tsx",
+      "line": 55,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenCatalog.tsx",
+      "line": 65,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenCatalog.tsx",
+      "line": 108,
+      "owner": "project-preview-or-demo",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenCatalog.tsx",
+      "line": 109,
+      "owner": "project-preview-or-demo",
+      "tag": "summary",
+      "text": "Définition et références",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenRules.tsx",
+      "line": 9,
+      "owner": "project-preview-or-demo",
+      "tag": "h2",
+      "text": "Token rules",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenRules.tsx",
+      "line": 14,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Decision Tokens",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenRules.tsx",
+      "line": 27,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Vocabulary",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenRules.tsx",
+      "line": 51,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Modes",
+      "events": []
+    },
+    {
+      "file": "src/design-system/TokenRules.tsx",
+      "line": 63,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "Associations",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Button/Button.tsx",
+      "line": 28,
+      "owner": "project-preview-or-demo",
+      "tag": "button",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 29,
+      "owner": "project-preview-or-demo",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 38,
+      "owner": "project-preview-or-demo",
+      "tag": "textarea",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 38,
+      "owner": "project-preview-or-demo",
+      "tag": "input",
+      "type": "text",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 62,
+      "owner": "project-preview-or-demo",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 63,
+      "owner": "project-preview-or-demo",
+      "tag": "select",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field 2.tsx",
+      "line": 65,
+      "owner": "project-preview-or-demo",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.stories 2.tsx",
+      "line": 18,
+      "owner": "project-preview-or-demo",
+      "tag": "SelectField",
+      "name": "choice",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 31,
+      "owner": "project-preview-or-demo",
+      "tag": "TextField",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 44,
+      "owner": "project-preview-or-demo",
+      "tag": "Label",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 62,
+      "owner": "project-preview-or-demo",
+      "tag": "TextArea",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 62,
+      "owner": "project-preview-or-demo",
+      "tag": "Input",
+      "type": "text",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 95,
+      "owner": "project-preview-or-demo",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 98,
+      "owner": "project-preview-or-demo",
+      "tag": "select",
+      "events": []
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "line": 106,
+      "owner": "project-preview-or-demo",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 27,
+      "owner": "loomata-web",
+      "tag": "TextField",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 35,
+      "owner": "loomata-web",
+      "tag": "Label",
+      "text": "Valeur précise",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 36,
+      "owner": "loomata-web",
+      "tag": "Input",
+      "aria-label": "Valeur précise",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 57,
+      "owner": "loomata-web",
+      "tag": "DialogTrigger",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 58,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Annuler",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 59,
+      "owner": "loomata-web",
+      "tag": "ModalOverlay",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 63,
+      "owner": "loomata-web",
+      "tag": "Modal",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 64,
+      "owner": "loomata-web",
+      "tag": "Dialog",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 70,
+      "owner": "loomata-web",
+      "tag": "Heading",
+      "slot": "title",
+      "text": "Abandonner le brouillon ?",
+      "events": []
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 75,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Conserver le brouillon",
+      "events": [
+        "onPress"
+      ]
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "line": 78,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "text": "Abandonner les réglages",
+      "events": [
+        "onPress"
+      ]
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 13,
+      "owner": "project-preview-or-demo",
+      "tag": "Panel",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 14,
+      "owner": "project-preview-or-demo",
+      "tag": "h3",
+      "text": "États de formulaire",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 15,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "name": "example-name",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 21,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "name": "invalid-name",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 22,
+      "owner": "project-preview-or-demo",
+      "tag": "Field",
+      "name": "disabled-name",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 23,
+      "owner": "project-preview-or-demo",
+      "tag": "SelectField",
+      "name": "demo-choice",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 36,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "text": "Indisponible",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 37,
+      "owner": "project-preview-or-demo",
+      "tag": "Button",
+      "text": "Enregistrer",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 39,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Aucun projet pour le moment. La création sera proposée dans le parcours métier.",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 42,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Exemple de confirmation.",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "line": 43,
+      "owner": "project-preview-or-demo",
+      "tag": "Notice",
+      "text": "Exemple d’erreur : vérifiez les champs puis réessayez.",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 351,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 368,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Reprendre le réglage :",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 388,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Réessayer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 400,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 405,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Retirer cette modification du brouillon",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 424,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Garder mon réglage",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 431,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Utiliser la valeur du fichier",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 458,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Examiner",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 480,
+      "owner": "loomata-web",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 482,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 489,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 501,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Réessayer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 575,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 670,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 690,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Annuler la correction",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 695,
+      "owner": "loomata-web",
+      "tag": "fieldset",
+      "aria-label": "Réglage en brouillon",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 704,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "color",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 720,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Valeur",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 722,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "number",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 733,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Unité",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 738,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 743,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 774,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Valeur",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 776,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "number",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 801,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Convention existante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 803,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Convention existante",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 816,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Choisir une convention compatible",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 826,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "·",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 840,
+      "owner": "loomata-web",
+      "tag": "fieldset",
+      "aria-label": "Actions du réglage",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 864,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 876,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Vérifier l’enregistrement",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "line": 879,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Réessayer la même requête",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/AttributionSummary.tsx",
+      "line": 62,
+      "owner": "loomata-web",
+      "tag": "a",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 291,
+      "owner": "loomata-web",
+      "tag": "dialog",
+      "events": [
+        "onCancel"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 298,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Figma —",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 299,
+      "owner": "loomata-web",
+      "tag": "button",
+      "aria-label": "Fermer Figma",
+      "text": "Fermer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 304,
+      "owner": "loomata-web",
+      "tag": "form",
+      "events": [
+        "onSubmit"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 305,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Lien du fichier Figma",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 307,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "url",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 315,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Jeton Figma",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 317,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "password",
+      "name": "token",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 326,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 329,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Déconnecter Figma",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 356,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Pages",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 365,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Composants",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 375,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Rechercher dans le fichier",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 377,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "search",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 395,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 410,
+      "owner": "loomata-web",
+      "tag": "button",
+      "role": "treeitem",
+      "events": [
+        "onClick",
+        "onKeyDown",
+        "onContextMenu"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 468,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Afficher la suite",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 495,
+      "owner": "loomata-web",
+      "tag": "button",
+      "aria-label": "Dézoomer",
+      "text": "−",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 502,
+      "owner": "loomata-web",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 503,
+      "owner": "loomata-web",
+      "tag": "input",
+      "aria-label": "Zoom en pourcentage",
+      "type": "text",
+      "events": [
+        "onChange",
+        "onBlur",
+        "onKeyDown"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 526,
+      "owner": "loomata-web",
+      "tag": "button",
+      "aria-label": "Zoomer",
+      "text": "+",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 538,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 558,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Préparer l’import",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 569,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Préparer l’import",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 587,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Planifier l’adaptation",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 593,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Voir le composant d’origine",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 597,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Rôle fonctionnel de la proposition",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 599,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 600,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Choisir un rôle",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 601,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Action (bouton)",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 602,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Saisie (champ)",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 603,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Conteneur",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 604,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Texte",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 605,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Graphique",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 608,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "text": "Structure et variantes",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 610,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "·",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 614,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "text": "Valeurs effectives",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 630,
+      "owner": "loomata-web",
+      "tag": "dialog",
+      "aria-label": "Remplacement incompatible",
+      "events": [
+        "onCancel"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 639,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Remplacement refusé",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 644,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Choisir un autre composant",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "line": 652,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Annuler",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 132,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Figma direct",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 134,
+      "owner": "loomata-web",
+      "tag": "form",
+      "events": [
+        "onSubmit"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 157,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Lien de la sélection Figma",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 159,
+      "owner": "loomata-web",
+      "tag": "input",
+      "name": "link",
+      "type": "url",
+      "placeholder": "https://www.figma.com/design/…?node-id=…",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 173,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Jeton Figma privé",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 175,
+      "owner": "loomata-web",
+      "tag": "input",
+      "name": "token",
+      "type": "password",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 192,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 197,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Déconnecter Figma",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 209,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Référence importée",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 211,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 219,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 231,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Élément source",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 233,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Élément source",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 238,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Choisir un élément",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 240,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "· ·",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 252,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 253,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Structure et propriétés lues",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 267,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Correspondances produit (obligatoire)",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 269,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Correspondances produit (obligatoire)",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 280,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 301,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Arbitrage",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 303,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Arbitrage",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 308,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Conserver le produit",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 309,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Adopter la couleur Figma",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 310,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Combiner : couleur Figma, structure produit",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 311,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Reporter",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 314,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Raison de l’arbitrage (obligatoire)",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 316,
+      "owner": "loomata-web",
+      "tag": "textarea",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 333,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Enregistrer cet arbitrage",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 354,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "line": 355,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Historique des arbitrages",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 67,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Famille disponible",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 69,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Famille disponible",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 80,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 89,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 90,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Choisir dans Google Fonts",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 95,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Rechercher une famille",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 97,
+      "owner": "loomata-web",
+      "tag": "input",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 99,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Catégorie",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 101,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 102,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Toutes",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 103,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Sans empattement",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 104,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Avec empattement",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "line": 116,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Prévisualiser",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedOccurrenceVariants.tsx",
+      "line": 66,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Variante importée",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedOccurrenceVariants.tsx",
+      "line": 68,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedOccurrenceVariants.tsx",
+      "line": 73,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "État initial",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedOccurrenceVariants.tsx",
+      "line": 75,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 139,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 150,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "→",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 170,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "J’ai examiné les différences de structure et les adaptations locales avant application.",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 171,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "checkbox",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 184,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Ajouter au projet",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 204,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Annuler l’import",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 224,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "·",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 247,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Variante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 249,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 254,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 280,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 289,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Remplacer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 307,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Portée du remplacement",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 309,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 310,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Définition et tous ses usages connus",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 311,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Cette variante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 324,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "text": "Structure",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 326,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "·",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 332,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 345,
+      "owner": "loomata-web",
+      "tag": "label",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "line": 347,
+      "owner": "loomata-web",
+      "tag": "input",
+      "type": "number",
+      "events": [
+        "onBlur"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 177,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Style et portée",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 182,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 183,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Usages connus de la définition",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 202,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Réglage",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 204,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Réglage de l’occurrence",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 211,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "· ·",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 219,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Valeur de la définition",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 221,
+      "owner": "loomata-web",
+      "tag": "input",
+      "aria-label": "Valeur de la définition",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 228,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Modifier la définition globale",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 232,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Nom de la variante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 234,
+      "owner": "loomata-web",
+      "tag": "input",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 241,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Style de la variante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 243,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Style de la variante",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 250,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 256,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Créer une variante locale",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 260,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Variante réutilisable",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 262,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Variante réutilisable",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 268,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Base du composant",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 272,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "line": 278,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Appliquer la variante choisie",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 292,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Retour aux pages",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 336,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Pages",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 337,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Design System",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 338,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Agents IA",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 339,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Composants importés",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 342,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Actualiser les pages",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 343,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Annuler le dernier changement du brouillon",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 365,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Pages",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 368,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 381,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Éléments enregistrés",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 383,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 415,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 416,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Discuter de cet élément",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 428,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Portée du remplacement",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 430,
+      "owner": "loomata-web",
+      "tag": "select",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 434,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Définition et tous ses usages connus",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 435,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Cette occurrence",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 436,
+      "owner": "loomata-web",
+      "tag": "option",
+      "text": "Cette variante",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "line": 439,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Remplacer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 40,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Demandes planifiées",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 45,
+      "owner": "loomata-web",
+      "tag": "form",
+      "events": [
+        "onSubmit"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 51,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Demande à conserver",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 53,
+      "owner": "loomata-web",
+      "tag": "input",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 60,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Conserver pour plus tard",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 82,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Qualifier la demande",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 97,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Démarrer ce chantier isolé",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 110,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "line": 111,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Comprendre ces étapes",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "line": 27,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Propriété",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "line": 29,
+      "owner": "loomata-web",
+      "tag": "select",
+      "aria-label": "Propriété",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "line": 40,
+      "owner": "loomata-web",
+      "tag": "optgroup",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "line": 42,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "line": 51,
+      "owner": "loomata-web",
+      "tag": "option",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 76,
+      "owner": "loomata-web",
+      "tag": "TreeItem",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 93,
+      "owner": "loomata-web",
+      "tag": "TreeItemContent",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 97,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "slot": "chevron",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 124,
+      "owner": "loomata-web",
+      "tag": "SearchField",
+      "events": [
+        "onChange",
+        "onClear"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 125,
+      "owner": "loomata-web",
+      "tag": "Label",
+      "text": "Rechercher un exemple",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 126,
+      "owner": "loomata-web",
+      "tag": "Input",
+      "placeholder": "Composant, variante…",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 130,
+      "owner": "loomata-web",
+      "tag": "Button",
+      "aria-label": "Effacer la recherche",
+      "text": "Effacer la recherche",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "line": 137,
+      "owner": "loomata-web",
+      "tag": "Tree",
+      "aria-label": "Exemples du Design System",
+      "events": [
+        "onExpandedChange",
+        "onSelectionChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 63,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Modifier le style partagé",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 77,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Nouveau style sémantique",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 87,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Nouveau style de composant",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 105,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Quelle intention ce réglage doit-il exprimer, et dans quels usages ?",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 107,
+      "owner": "loomata-web",
+      "tag": "textarea",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 122,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 139,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "text": "Codex demande une précision",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 142,
+      "owner": "loomata-web",
+      "tag": "label",
+      "text": "Votre précision",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 144,
+      "owner": "loomata-web",
+      "tag": "textarea",
+      "events": [
+        "onChange"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 152,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 181,
+      "owner": "loomata-web",
+      "tag": "h4",
+      "text": "Codex propose une intention",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 188,
+      "owner": "loomata-web",
+      "tag": "button",
+      "type": "button",
+      "text": "Appliquer cette intention",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 202,
+      "owner": "loomata-web",
+      "tag": "h3",
+      "text": "Références et usages de ce réglage",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "line": 208,
+      "owner": "loomata-web",
+      "tag": "a",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 339,
+      "owner": "loomata-web",
+      "tag": "details",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 340,
+      "owner": "loomata-web",
+      "tag": "summary",
+      "text": "Compte Codex",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 341,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Gérer la connexion…",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 345,
+      "owner": "loomata-web",
+      "tag": "dialog",
+      "aria-label": "Compte Codex",
+      "events": [
+        "onClose"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 351,
+      "owner": "loomata-web",
+      "tag": "h2",
+      "text": "Compte Codex",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 352,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 357,
+      "owner": "loomata-web",
+      "tag": "a",
+      "text": "Ouvrir la connexion officielle",
+      "events": []
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 365,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Fermer",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 379,
+      "owner": "loomata-web",
+      "tag": "button",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 386,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Pages",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 387,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Figma",
+      "events": [
+        "onClick"
+      ]
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "line": 390,
+      "owner": "loomata-web",
+      "tag": "button",
+      "text": "Revenir au réglage en cours",
+      "events": [
+        "onClick"
+      ]
+    }
+  ]
+}

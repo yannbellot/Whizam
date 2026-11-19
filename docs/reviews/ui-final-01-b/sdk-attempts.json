@@ -1,0 +1,10 @@
+[
+  {
+    "sdk": "/Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk",
+    "status": "failed"
+  },
+  {
+    "sdk": "/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk",
+    "status": "passed"
+  }
+]

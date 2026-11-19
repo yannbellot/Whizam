@@ -1,0 +1,17 @@
+{
+  "port": 54137,
+  "files": [
+    ".storybook/editor/HeaderTools.tsx",
+    ".storybook/manager.tsx",
+    "app/features/projects/ProjectSummary.stories.tsx",
+    "src/design-system/MigrationFixtures.stories.tsx",
+    "src/design-system/components/Button/Button.stories.tsx",
+    "src/design-system/components/Field.stories.tsx",
+    "src/design-system/components/Notice.stories.tsx",
+    "src/design-system/components/Panel.stories.tsx",
+    "src/ui-lab/ControlStates.stories.tsx"
+  ],
+  "valueSourcesUnchanged": true,
+  "privateStateTransferred": false,
+  "draftBefore": "Génération chargée, Enregistrer disabled"
+}

@@ -1,0 +1,990 @@
+{
+  "version": "3e6ba795f862c84597c6f78a351987aa024b23a1",
+  "stages": [
+    {
+      "stage": "initial",
+      "directory": "initial/product",
+      "identity": {
+        "project": "adl-c65d30fa577b",
+        "volume": "adl-c65d30fa577b_database"
+      },
+      "rows": 3,
+      "snapshotSha256": "f36d32f821170a6b9bf85dfbbb4bf602e210f797cfe972a428a2a38a700245aa",
+      "browser": {
+        "path": "/projects/6d8a86e7-cc65-412c-8f47-0ac7bc2402ec",
+        "consoleErrors": 0
+      },
+      "privateMode": "0600",
+      "migrationSeedRepeated": true,
+      "kit": {
+        "sourceFilesUnchanged": 207,
+        "internalAdapterLinks": 40,
+        "noGitDetected": true
+      }
+    },
+    {
+      "stage": "renamed",
+      "directory": "initial/renamed product",
+      "identity": {
+        "project": "adl-c65d30fa577b",
+        "volume": "adl-c65d30fa577b_database"
+      },
+      "rows": 3,
+      "sameExactSnapshot": true,
+      "samePrivateConfig": true,
+      "browser": {
+        "path": "/projects/6d8a86e7-cc65-412c-8f47-0ac7bc2402ec",
+        "consoleErrors": 0
+      },
+      "kit": {
+        "sourceFilesUnchanged": 207,
+        "internalAdapterLinks": 40,
+        "noGitDetected": true
+      }
+    },
+    {
+      "stage": "moved",
+      "directory": "moved area/delivered product",
+      "identity": {
+        "project": "adl-c65d30fa577b",
+        "volume": "adl-c65d30fa577b_database"
+      },
+      "rows": 3,
+      "sameExactSnapshot": true,
+      "samePrivateConfig": true,
+      "browser": {
+        "path": "/projects/6d8a86e7-cc65-412c-8f47-0ac7bc2402ec",
+        "consoleErrors": 0
+      },
+      "kit": {
+        "sourceFilesUnchanged": 207,
+        "internalAdapterLinks": 40,
+        "noGitDetected": true
+      }
+    }
+  ],
+  "steps": [
+    {
+      "command": "node scripts/setup-local.mjs",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.03
+    },
+    {
+      "command": "docker ps -aq --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker compose --env-file .env.local up --build --detach --wait",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 23.3
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.13
+    },
+    {
+      "command": "node browser-proof",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.88
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.1
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-c65d30fa577b_database",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker compose --env-file .env.local images -q app",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.06
+    },
+    {
+      "command": "docker run --rm --network none --read-only --entrypoint node 0dfd12a749ed3f3e0feae4ae5f2b4daba34f9b54012c28ba9347551fa3a7db04 -e const fs=require('node:fs'),assert=require('node:assert/strict');assert.equal(process.getuid(),1000);for(const p of ['.env.local','.git','AGENTS.md','CLAUDE.md','GEMINI.md','agents','skills','.agents','.claude','storybook-static','node_modules/drizzle-kit'])assert.equal(fs.existsSync(p),false,p);console.log(JSON.stringify({uid:process.getuid(),privateConfigAbsent:true,agentKitAbsent:true,developmentToolsAbsent:true}));",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.19
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T app node scripts/database.ts migrate",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.41
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T app node scripts/database.ts seed",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.38
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 0.07
+    },
+    {
+      "command": "docker compose --env-file .env.local down",
+      "directory": "initial/product",
+      "exitCode": 0,
+      "seconds": 3.66
+    },
+    {
+      "command": "node scripts/setup-local.mjs",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "docker compose --env-file .env.local up --build --detach --wait",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 11.52
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 0.12
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-c65d30fa577b_database",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 0.12
+    },
+    {
+      "command": "node browser-proof",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 1.62
+    },
+    {
+      "command": "docker compose --env-file .env.local down",
+      "directory": "initial/renamed product",
+      "exitCode": 0,
+      "seconds": 3.41
+    },
+    {
+      "command": "node scripts/setup-local.mjs",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.05
+    },
+    {
+      "command": "docker compose --env-file .env.local up --build --detach --wait",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 11.55
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.07
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-c65d30fa577b_database",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.12
+    },
+    {
+      "command": "node browser-proof",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 1.55
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.12
+    },
+    {
+      "command": "npm run typecheck",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 2.26
+    },
+    {
+      "command": "npm run lint",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 1.12
+    },
+    {
+      "command": "npm run format:check",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.41
+    },
+    {
+      "command": "npm run build",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 1.19
+    },
+    {
+      "command": "npm run build-storybook",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 2.72
+    },
+    {
+      "command": "npm run test:storybook",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 7.6
+    },
+    {
+      "command": "npm test",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.56
+    },
+    {
+      "command": "npm ci --offline --no-audit --no-fund",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 2.92
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.11
+    },
+    {
+      "command": "node scripts/setup-local.mjs",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.05
+    },
+    {
+      "command": "docker ps -aq --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker compose --env-file .env.local up --build --detach --wait",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 12.03
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.03
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-79b668e8db16_database",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.1
+    },
+    {
+      "command": "docker compose --env-file .env.local exec -T postgres sh -c psql -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\" -At",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.08
+    },
+    {
+      "command": "docker inspect --format {{json .State}} ad3e61656756",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 20f08d97fa4b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 36745a0ba0a6",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 065fdf93de9b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b4907e886c96",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 983a6ed2e02d",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 501393072f8f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 344a4e74aed1",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 2c198e79f6da",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} e4632e9ca8f4",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 70462700ad5a",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} e31810c76b36",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cd8063d7bedc",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cc10f55ee717",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b1a91208f013",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} fcc682479b9c",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} f25b40a35179",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 01cfe10f9adf",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 727054fc1124",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 7286315f866f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} bf07cb47b099",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 733a7e6b0fc1",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 58465afffd55",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 4a8b754ac909",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b605075f22be",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cf293ad1b32b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} c0813bcc59d4",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 1ec30760d38b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 367e80fc568e",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} f997fad72734",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b05bcd35e9cf",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 918130ab8e47",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} bb4d9195b680",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 4eec06dbb5d5",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 3d94f6929d7f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 6e956614507e",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 7f589b3ff2b6",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} d5d5da8c3326",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 55683d3f1688",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} c5ee0d7b7b82",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker container ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker container inspect --format {{index .Config.Labels \"com.docker.compose.project\"}} 36344e4676ae",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker container inspect --format {{index .Config.Labels \"com.docker.compose.project\"}} 31bb078764f2",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-79b668e8db16_database",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker network ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker network inspect --format {{index .Labels \"com.docker.compose.project\"}} 19f084c28555",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker compose --env-file .env.local down --volumes --rmi local",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 1.1
+    },
+    {
+      "command": "docker ps -aq --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-79b668e8db16",
+      "directory": "independent/another product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker container ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker container inspect --format {{index .Config.Labels \"com.docker.compose.project\"}} 9d1e18ff1619",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker container inspect --format {{index .Config.Labels \"com.docker.compose.project\"}} 034857472bc2",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker volume inspect --format {{index .Labels \"com.docker.compose.project\"}} adl-c65d30fa577b_database",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker network ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker network inspect --format {{index .Labels \"com.docker.compose.project\"}} e2a1f9cedead",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker compose --env-file .env.local down --volumes --rmi local",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 1.0
+    },
+    {
+      "command": "docker ps -aq --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker volume ls -q --filter label=com.docker.compose.project=adl-c65d30fa577b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} ad3e61656756",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 20f08d97fa4b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.03
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 36745a0ba0a6",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 065fdf93de9b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b4907e886c96",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 983a6ed2e02d",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 501393072f8f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 344a4e74aed1",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 2c198e79f6da",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} e4632e9ca8f4",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 70462700ad5a",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} e31810c76b36",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cd8063d7bedc",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cc10f55ee717",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b1a91208f013",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} fcc682479b9c",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} f25b40a35179",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 01cfe10f9adf",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 727054fc1124",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 7286315f866f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} bf07cb47b099",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 733a7e6b0fc1",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 58465afffd55",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 4a8b754ac909",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b605075f22be",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} cf293ad1b32b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} c0813bcc59d4",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 1ec30760d38b",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 367e80fc568e",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} f997fad72734",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} b05bcd35e9cf",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 918130ab8e47",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} bb4d9195b680",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 4eec06dbb5d5",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 3d94f6929d7f",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 6e956614507e",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.01
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 7f589b3ff2b6",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} d5d5da8c3326",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} 55683d3f1688",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    },
+    {
+      "command": "docker inspect --format {{json .State}} c5ee0d7b7b82",
+      "directory": "moved area/delivered product",
+      "exitCode": 0,
+      "seconds": 0.02
+    }
+  ],
+  "cleanup": [
+    {
+      "project": "adl-79b668e8db16",
+      "containersVolumesRemoved": true
+    },
+    {
+      "project": "adl-c65d30fa577b",
+      "containersVolumesRemoved": true
+    }
+  ],
+  "runtime": {
+    "uid": 1000,
+    "privateConfigAbsent": true,
+    "agentKitAbsent": true,
+    "developmentToolsAbsent": true
+  },
+  "movedGates": "passed",
+  "independent": {
+    "identity": {
+      "project": "adl-79b668e8db16",
+      "volume": "adl-79b668e8db16_database"
+    },
+    "rows": 2,
+    "distinctVolume": true,
+    "kit": {
+      "sourceFilesUnchanged": 207,
+      "internalAdapterLinks": 40,
+      "noGitDetected": true
+    },
+    "fixtureAbsent": true
+  },
+  "preexistingContainerCount": 40,
+  "preexistingUnchanged": true,
+  "result": "passed"
+}

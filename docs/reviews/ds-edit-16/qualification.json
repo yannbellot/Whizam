@@ -1,0 +1,340 @@
+{
+  "task": "DS-EDIT-16",
+  "status": "En revue",
+  "qualification": "technique acquise, acceptation humaine différée",
+  "sourceCommit": "a13d301a62b219757564393996806553895f6032",
+  "runtimeCommit": "8533ef39654497ce63daa34d6c713c75551b6398",
+  "applicationTree": "a7955353d4d7eb2bddb32e1ba3023fd051bc1fd7",
+  "baseline": "b32f5dba8000058ab385c252e6535d8158cc906f",
+  "platform": "macOS arm64",
+  "node": "24.22.1",
+  "chromium": "156.0.8078.4",
+  "conservation": {
+    "modelIdentical": true,
+    "legacyIdentical": true,
+    "contractIdentical": true,
+    "presentationIdentical": true,
+    "cssIdentical": true,
+    "modelSha256": "4a9add7ccbd819b3352a6ad19223f30d0726db1e25245b08bf877a72ac46322d",
+    "cssSha256": "f4cfb475c9a3398ef86ae4794162be61d79dbcdc103a958cc7e367733e7cf4f5",
+    "primitives": 25,
+    "styles": 41,
+    "bindings": 188,
+    "aliases": 24
+  },
+  "savedRecipe": {
+    "modelsIdentical": true,
+    "artifactsIdentical": true,
+    "bindings": 188,
+    "styles": 41,
+    "aliases": 24,
+    "button": {
+      "id": "component.button.default.root.background.default",
+      "reference": "primitive.color.hex-b51a00",
+      "value": "#b51a00"
+    }
+  },
+  "preview": {
+    "candidate": "a13d301",
+    "renderedColor": "rgb(181, 26, 0)",
+    "savedButtonPngIdentical": true,
+    "savedButtonSha256": "ff0882f9de947bb3fa19053d928d8ce2807942fdd632df304090c47aa1621853",
+    "formats": [
+      {
+        "name": "desktop",
+        "categories": [
+          "Semantic tokens / color / action",
+          "Semantic tokens / color / content",
+          "Semantic tokens / color / feedback",
+          "Semantic tokens / color / focus",
+          "Semantic tokens / color / surface",
+          "Semantic tokens / shape",
+          "Semantic tokens / size / container",
+          "Semantic tokens / space",
+          "Semantic tokens / stroke",
+          "Semantic tokens / type",
+          "Component tokens / Button",
+          "Component tokens / Field",
+          "Component tokens / Foundations",
+          "Component tokens / Notice",
+          "Component tokens / Panel",
+          "Component tokens / SelectField"
+        ],
+        "selectedToken": "component.button.default.root.background.default",
+        "value": "#b51a00"
+      },
+      {
+        "name": "mobile",
+        "categories": [
+          "Semantic tokens / color / action",
+          "Semantic tokens / color / content",
+          "Semantic tokens / color / feedback",
+          "Semantic tokens / color / focus",
+          "Semantic tokens / color / surface",
+          "Semantic tokens / shape",
+          "Semantic tokens / size / container",
+          "Semantic tokens / space",
+          "Semantic tokens / stroke",
+          "Semantic tokens / type",
+          "Component tokens / Button",
+          "Component tokens / Field",
+          "Component tokens / Foundations",
+          "Component tokens / Notice",
+          "Component tokens / Panel",
+          "Component tokens / SelectField"
+        ],
+        "selectedToken": "component.button.default.root.background.default",
+        "value": "#b51a00"
+      }
+    ],
+    "rulesVisible": true,
+    "pageErrors": 0
+  },
+  "distribution": {
+    "sourceEntriesCompared": 384,
+    "sourcesIdentical": true,
+    "ownDependencies": true,
+    "offlineInstallPackages": 451,
+    "renamedAndMoved": true,
+    "contracts": 62,
+    "types": true,
+    "applicationBuild": true,
+    "storybookBuild": true,
+    "docsCurrent": true,
+    "migrationIdempotent": true
+  },
+  "tests": {
+    "contracts": 62,
+    "unit": 123,
+    "storeCasesPassed": 72,
+    "httpFinal": 7,
+    "httpSlowPublicationRegression": true,
+    "httpIncompleteUploadRefused": true,
+    "documentation": 5,
+    "assistanceSimulated": 10,
+    "applicationBrowser": 12,
+    "development": {
+      "desktopPassed": 23,
+      "mobilePassed": 23,
+      "conditionalSkipsEach": 1,
+      "finalDesktopTargeted": 3
+    },
+    "static": {
+      "desktopPassed": 21,
+      "mobilePassed": 21,
+      "conditionalSkipsEach": 3
+    },
+    "persistence": {
+      "desktop": 14,
+      "mobileTargeted": 1,
+      "compiledRereadBothWidths": true
+    }
+  },
+  "wiring": {
+    "browser": "156.0.8078.4",
+    "node": "v24.22.1",
+    "arch": "arm64",
+    "wired": 188,
+    "isolation": {
+      "before": [
+        "rgb(255, 255, 255)",
+        "rgb(255, 255, 255)",
+        "rgb(241, 245, 249)",
+        "rgb(255, 255, 255)"
+      ],
+      "local": ["rgb(18, 52, 86)", "rgb(255, 255, 255)", "rgb(35, 69, 103)", "rgb(255, 255, 255)"],
+      "shared": ["rgb(18, 52, 86)", "rgb(52, 86, 120)", "rgb(35, 69, 103)", "rgb(52, 86, 120)"],
+      "restored": ["rgb(52, 86, 120)", "rgb(52, 86, 120)", "rgb(241, 245, 249)", "rgb(52, 86, 120)"]
+    }
+  },
+  "renderComparisons": [
+    {
+      "case": "desktop-button-focus-hover",
+      "pngSha256": "ebafb4e57a30df8247c2a92659f4655adaba6eb002c81c0f2677fbff5a6dd62f",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-button-hover",
+      "pngSha256": "62a58356e4dc122442a995fb8d842fda41b6d9ec0be24f9ed65e11aab23da424",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-default",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-disabled-hover",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-field-error-focus",
+      "pngSha256": "89ab4e01d76a0baaa741357c1aa6690a849a87a55deb677ee108ec15f25689c5",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-loading-hover",
+      "pngSha256": "41fe628495adc00828e61e9d1feff8f2b49be994b602c269a294cd982f11af0e",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "desktop-multiline-error-focus",
+      "pngSha256": "8c4b7921b25a5c019b1b72a2b1ec52250e3a7f2baece779ab1ea907bb9459d78",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-button-focus-hover",
+      "pngSha256": "d34658210a8d6d7060936c9797b6cb4251e584ded9547a7e47f14d96b3d222f3",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-button-hover",
+      "pngSha256": "3723b00b30cddc3c073fefe71d9c8d96e4ec3533826287dbfae40f206caf21ad",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-default",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-disabled-hover",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-field-error-focus",
+      "pngSha256": "4a8147818e6bfcff0db40250470521dca98a1d6fde971bee5f4b9982fa78b8d4",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-loading-hover",
+      "pngSha256": "5601b50b11b76ad80aac49a4fd9d2ee739771ace22769fc767778aca360f70bd",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    },
+    {
+      "case": "mobile-multiline-error-focus",
+      "pngSha256": "8bd159964750cefd251e25f87d6c4ef3a4b9f4544c17176f7802f52eae633f71",
+      "pngAndComputedStylesAndGeometryIdentical": true
+    }
+  ],
+  "recovery": {
+    "status": "pass",
+    "httpInterception": false,
+    "cases": [
+      {
+        "name": "refusal-1280",
+        "status": "pass",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "interruption": "refusal",
+        "journalBefore": {
+          "phase": "prepared",
+          "progress": 0,
+          "actualPostimages": 1,
+          "changedFiles": 8
+        },
+        "journalAfter": {
+          "phase": "committed",
+          "progress": 8,
+          "status": "saved"
+        },
+        "recoveredValue": "#234567",
+        "browserReload": true,
+        "receiptReplay": "identical",
+        "secondRecovery": "idempotent",
+        "fixtureRetained": ".runtime.local/tmp/editor-recovery-refusal-1280-EbT3sA"
+      },
+      {
+        "name": "refusal-390",
+        "status": "pass",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "interruption": "refusal",
+        "journalBefore": {
+          "phase": "prepared",
+          "progress": 0,
+          "actualPostimages": 1,
+          "changedFiles": 8
+        },
+        "journalAfter": {
+          "phase": "committed",
+          "progress": 8,
+          "status": "saved"
+        },
+        "recoveredValue": "#234567",
+        "browserReload": true,
+        "receiptReplay": "identical",
+        "secondRecovery": "idempotent",
+        "fixtureRetained": ".runtime.local/tmp/editor-recovery-refusal-390-Hx77xV"
+      },
+      {
+        "name": "sigkill-1280",
+        "status": "pass",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "interruption": "sigkill",
+        "journalBefore": {
+          "phase": "prepared",
+          "progress": 0,
+          "actualPostimages": 1,
+          "changedFiles": 8
+        },
+        "journalAfter": {
+          "phase": "committed",
+          "progress": 8,
+          "status": "saved"
+        },
+        "recoveredValue": "#234567",
+        "browserReload": true,
+        "receiptReplay": "identical",
+        "secondRecovery": "idempotent",
+        "fixtureRetained": ".runtime.local/tmp/editor-recovery-sigkill-1280-WXTCMn"
+      },
+      {
+        "name": "sigkill-390",
+        "status": "pass",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "interruption": "sigkill",
+        "journalBefore": {
+          "phase": "prepared",
+          "progress": 0,
+          "actualPostimages": 1,
+          "changedFiles": 8
+        },
+        "journalAfter": {
+          "phase": "committed",
+          "progress": 8,
+          "status": "saved"
+        },
+        "recoveredValue": "#234567",
+        "browserReload": true,
+        "receiptReplay": "identical",
+        "secondRecovery": "idempotent",
+        "fixtureRetained": ".runtime.local/tmp/editor-recovery-sigkill-390-4nKZDw"
+      }
+    ],
+    "originalFilesUnchanged": true
+  },
+  "preexistingFilesPreserved": 61,
+  "oldRecipeSourcesPreserved": 8,
+  "reviewMode": "séquentiel, même agent, non indépendant",
+  "limits": [
+    "Recette humaine et reprise par un tiers différées",
+    "Assistants natifs et inférence fournisseur réelle non nouvellement vérifiés",
+    "Windows/Linux et installation réseau non nouvellement vérifiés",
+    "Modes supplémentaires, nouvelles familles éditables et contenu traduit non activés",
+    "Contrastes déclarés mesurés ; fonds hérités ou icônes absentes non mesurés",
+    "Aucune nouvelle campagne SQL ni publication"
+  ]
+}

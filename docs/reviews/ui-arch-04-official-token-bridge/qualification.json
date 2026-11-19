@@ -1,0 +1,61 @@
+{
+  "scope": "isolated fictional project only",
+  "status": "web-technically-qualified",
+  "fidelity": {
+    "pairs": 12,
+    "views": 24,
+    "png_byte_identical": 24,
+    "computed_properties_equal": true,
+    "engines": [
+      "Chromium",
+      "Firefox",
+      "WebKit"
+    ],
+    "schemes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      1280,
+      390
+    ]
+  },
+  "roundtrip": {
+    "status": "PASS",
+    "checks": [
+      "OKLCH shared edit saved and read in UI Lab, app and Storybook",
+      "Radius edit saved and read in app and Storybook",
+      "Initial values restored via writer; invalid OKLCH refused; clean state",
+      "Official high-density adaptation preserved"
+    ]
+  },
+  "previous_token_graph": {
+    "preserved_entries": 641,
+    "identities_types_values_references_preserved": true
+  },
+  "checks": {
+    "types": "PASS",
+    "lint_targeted": "PASS",
+    "app_build": "PASS",
+    "storybook_build": "PASS",
+    "generated_docs": "PASS",
+    "initial_unit_suite": {
+      "tests": 88,
+      "pass": 87,
+      "fail": 1,
+      "reason": "Expected group list updated for the new official theme group"
+    },
+    "targeted_retest": {
+      "tests": 9,
+      "pass": 9,
+      "fail": 0
+    },
+    "patch_dry_run": "PASS"
+  },
+  "limits": [
+    "Native macOS UI Lab remained on loading during observation; activation tooling timed out. Browser UI Lab visibly loaded via CUA. Native binary unchanged.",
+    "Editable scope: 10 shared theme parameters; computed nuances and effects retain official CSS rules.",
+    "No new claim for physical VoiceOver, other operating systems, or fixture export."
+  ],
+  "private_state_in_artifacts": false
+}

@@ -1,0 +1,13 @@
+{
+  "connected": true,
+  "kind": "proposal",
+  "proposal": {
+    "name": "semantic.color.data-value-trend.oscillation.background.default",
+    "definition": "Qualifie une série de mesures présentant une alternance récurrente de hausses et de baisses, sans tendance nette. Ne signifie ni stabilité ni incertitude et ne porte aucun jugement de résultat. Usages : surfaces de cartes présentant ces mesures et commandes de filtrage des séries oscillantes, indépendamment de leur état interactif et de leur couleur.",
+    "operation": "define-and-assign"
+  },
+  "saved": true,
+  "componentToken": "component.button.default.root.background.default",
+  "cataloguePersisted": true,
+  "newRevision": "d8422689f5526851c5c66c95112e90c2a5b38500706181a6a730eded47ca9fa2"
+}

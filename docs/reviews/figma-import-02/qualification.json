@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "task": "FIGMA-IMPORT-02",
+  "base": "2ac44e01d277cad2d9badee702163d51584481d3",
+  "branch": "codex/figma-component-import",
+  "status": "technically-qualified-human-acceptance-deferred",
+  "mode": "sequential-same-agent-not-independent",
+  "checks": [
+    {
+      "command": "npm run typecheck",
+      "status": "passed",
+      "log": ".local/figma-import-02/typecheck-runtime.log"
+    },
+    {
+      "command": "npm run lint",
+      "status": "passed",
+      "log": ".local/figma-import-02/lint-runtime.log"
+    },
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "log": ".local/figma-import-02/build-runtime.log"
+    },
+    {
+      "command": "npm run build-storybook",
+      "status": "passed",
+      "log": ".local/figma-import-02/storybook-runtime.log"
+    },
+    {
+      "command": "npm run docs:design-system:check",
+      "status": "passed",
+      "log": ".local/figma-import-02/ds-docs-runtime.log"
+    },
+    {
+      "command": "npm run test:boundaries",
+      "status": "passed",
+      "log": ".local/figma-import-02/boundaries-runtime.log"
+    },
+    {
+      "command": "npm run validate:design-system",
+      "status": "passed",
+      "log": ".local/figma-import-02/ds-validate-runtime.log"
+    }
+  ],
+  "unitAndContractTests": {
+    "readerAndCache": 12,
+    "import": 7,
+    "legacyFigma": 4,
+    "rendererAndBinding": 3,
+    "workspaceVariantsContextExports": 44
+  },
+  "focusedRetests": [
+    "closure-tests.txt",
+    "browser-import-final.json"
+  ],
+  "browser": "browser.json",
+  "macOS": "native.json",
+  "reserves": [
+    "No new request to a personal Figma file in this campaign",
+    "Complex unsupported source data requires an adaptation request",
+    "Existing external project copies and the personal open window were not migrated",
+    "Physical input and visual acceptance remain human"
+  ],
+  "runtime": {
+    "node": "24.22.0",
+    "npm": "11.8.0",
+    "selection": "existing repository-local runtime, process PATH only"
+  },
+  "runtimeContracts": {
+    "command": "node --test --test-concurrency=2 tests/figma-file.test.mjs tests/figma-file-service.test.mjs tests/figma-import.test.mjs tests/workspace-figma.test.mjs tests/workspace-store.test.mjs tests/workspace-adapters.test.mjs tests/workspace-variants.test.mjs tests/variant-recipes.test.mjs tests/exports.test.mjs tests/workspace-t1-context.test.mjs",
+    "passed": 67,
+    "failed": 0,
+    "log": "runtime-tests.txt"
+  },
+  "sourceCommit": "b0fa32aaff9bd82e48fea083e20d0f97a7b369d8"
+}

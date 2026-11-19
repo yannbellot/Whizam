@@ -1,0 +1,20 @@
+{
+  "runtimeCommit": "e89c9b0558ba0f8ce359d6e6c8af5a400c1a2ff8",
+  "sourceArchiveSha256": "d47060b465a3b6713d5e7988cb42a6192bc6e0cea0def8d86428c7c6a14041db",
+  "documentationOverlayFromWorkingTree": true,
+  "sourcePathsHaveSpaces": true,
+  "gitPresent": false,
+  "privateStatePresentBeforeGeneration": false,
+  "readerDirectoryAfterGeneration": "empty, no owner or journal",
+  "oldStorybookAdapterPresent": false,
+  "skillLinksInternal": 42,
+  "lockedInstall": "npm ci --offline --no-audit --no-fund",
+  "kitValidation": "21 skills / 4 roles",
+  "checks": [
+    "typecheck",
+    "build",
+    "build-storybook"
+  ],
+  "runtimeMatchesQualifiedFingerprint": true,
+  "publication": false
+}

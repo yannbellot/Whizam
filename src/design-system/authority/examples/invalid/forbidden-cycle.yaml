@@ -1,0 +1,13 @@
+target: semantic-tokens
+expectedCode: forbidden-cycle
+document:
+  schemaVersion: 1
+  tokens:
+    - id: semantic.color.cycle.first
+      type: color
+      value:
+        reference: semantic.color.cycle.second
+    - id: semantic.color.cycle.second
+      type: color
+      value:
+        reference: semantic.color.cycle.first

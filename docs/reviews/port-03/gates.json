@@ -1,0 +1,102 @@
+{
+  "source": {
+    "tree": "3da0c3088aed971d9b2f48a6042ab15fc9fc184d",
+    "applicationTree": "39ce6ea491dca463dfea954321e710493d1293b4",
+    "base": "710f5bba1861e0e4e5b20eaaa86f76f5ab1d6a79",
+    "version": "3e6ba795f862c84597c6f78a351987aa024b23a1"
+  },
+  "steps": [
+    {
+      "command": "npm ci --offline --no-audit --no-fund",
+      "exitCode": 0,
+      "seconds": 3.06,
+      "log": "00.log"
+    },
+    {
+      "command": "npm run validate:agent-kit",
+      "exitCode": 0,
+      "seconds": 0.13,
+      "log": "01.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "seconds": 2.77,
+      "log": "02.log"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "seconds": 1.15,
+      "log": "03.log"
+    },
+    {
+      "command": "npm run format:check",
+      "exitCode": 0,
+      "seconds": 0.57,
+      "log": "04.log"
+    },
+    {
+      "command": "npm run test:design-system",
+      "exitCode": 0,
+      "seconds": 0.15,
+      "log": "05.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "seconds": 0.75,
+      "log": "06.log"
+    },
+    {
+      "command": "npm run test:boundaries",
+      "exitCode": 0,
+      "seconds": 1.52,
+      "log": "07.log"
+    },
+    {
+      "command": "npm run test:integration",
+      "exitCode": 0,
+      "seconds": 23.32,
+      "log": "08.log"
+    },
+    {
+      "command": "npm run test:e2e:install",
+      "exitCode": 0,
+      "seconds": 0.35,
+      "log": "09.log"
+    },
+    {
+      "command": "npm run test:e2e",
+      "exitCode": 0,
+      "seconds": 9.54,
+      "log": "10.log"
+    },
+    {
+      "command": "npm run test:projects",
+      "exitCode": 0,
+      "seconds": 14.98,
+      "log": "11.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "seconds": 1.25,
+      "log": "12.log"
+    },
+    {
+      "command": "npm run build-storybook",
+      "exitCode": 0,
+      "seconds": 3.31,
+      "log": "13.log"
+    },
+    {
+      "command": "npm run test:storybook",
+      "exitCode": 0,
+      "seconds": 7.21,
+      "log": "14.log"
+    }
+  ],
+  "testedBeforeCommit": true,
+  "matchedCommittedApplicationTree": true
+}

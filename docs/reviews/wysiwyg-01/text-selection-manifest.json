@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "cases": [
+    "real closed-manifest project creation includes text-content helper and component consumers",
+    "created project generation/types/build succeeded with local dependencies",
+    "public source ZIP includes text-content helper"
+  ]
+}

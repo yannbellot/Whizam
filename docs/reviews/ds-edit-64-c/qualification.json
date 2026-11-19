@@ -1,0 +1,11 @@
+{
+  "base": "b777e19012d8a297f4662ddd1d4ce7fdbba0336a",
+  "unchangedProductAuthorities": 9,
+  "workshopBrowserTestsPassed": 6,
+  "referenceBrowserTestsPassed": 12,
+  "unitTestsPassed": 149,
+  "designSystemTestsPassed": 82,
+  "writingEnabled": false,
+  "storybookNeededForWorkshop": false,
+  "humanAcceptance": "pending"
+}

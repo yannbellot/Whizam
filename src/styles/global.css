@@ -1,0 +1,37 @@
+:root {
+  color: var(--adl-component-foundations-default-document-foreground-default);
+  background: var(--adl-component-foundations-default-document-background-default);
+  font-family: var(--adl-component-foundations-default-document-font-family-default);
+  font-size: var(--adl-component-foundations-default-document-font-size-default);
+  font-weight: var(--adl-component-foundations-default-document-font-weight-default);
+  line-height: var(--adl-component-foundations-default-document-line-height-default);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: var(--adl-component-composition-global-body-min-width-1);
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: var(--adl-component-foundations-alias-color-action-background-default);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-loomata-workshop='true'] {
+    color-scheme: dark;
+    background: var(--adl-component-composition-editor-document-background);
+    color: var(--adl-component-composition-editor-document-foreground);
+  }
+}

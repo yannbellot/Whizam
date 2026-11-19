@@ -1,0 +1,317 @@
+{
+  "scope": "all non-story application TSX; component fixtures and imported examples classified separately",
+  "files_with_controls": 29,
+  "rows": [
+    {
+      "file": "app/features/projects/ProjectForm.tsx",
+      "controls": {
+        "Button": 1,
+        "Field": 2,
+        "Notice": 1
+      },
+      "css_modules": [
+        "./projects.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "app/routes/projects-detail.tsx",
+      "controls": {
+        "Notice": 1,
+        "Panel": 1
+      },
+      "css_modules": [
+        "../features/projects/projects.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "app/routes/projects-index.tsx",
+      "controls": {
+        "Notice": 1,
+        "Panel": 1
+      },
+      "css_modules": [
+        "../features/projects/projects.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "app/routes/projects-layout.tsx",
+      "controls": {
+        "Notice": 2
+      },
+      "css_modules": [
+        "../features/projects/projects.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/assistant/Chat.tsx",
+      "controls": {
+        "select": 2,
+        "details": 2,
+        "Button": 10,
+        "Field": 1,
+        "Notice": 4,
+        "Panel": 2
+      },
+      "css_modules": [
+        "./Chat.module.css",
+        "../design-system/components/controls.module.css",
+        "../App.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/assistant/main.tsx",
+      "controls": {
+        "Chat": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/core/ImportedComponent.tsx",
+      "controls": {
+        "button": 1,
+        "input": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/design-system/MigrationFixtures.examples.tsx",
+      "controls": {
+        "Button": 3,
+        "Field": 4,
+        "Notice": 3,
+        "Panel": 1,
+        "SelectField": 2
+      },
+      "css_modules": [
+        "../../app/features/projects/projects.module.css",
+        "./foundations.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/design-system/TokenCatalog.tsx",
+      "controls": {
+        "details": 1
+      },
+      "css_modules": [
+        "./catalog-navigation.module.css",
+        "./foundations.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/design-system/components/Button/Button.examples.tsx",
+      "controls": {
+        "Button": 2,
+        "Field": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/design-system/components/Button/Button.tsx",
+      "controls": {
+        "button": 1
+      },
+      "css_modules": [],
+      "react_aria": true
+    },
+    {
+      "file": "src/design-system/components/Field.examples.tsx",
+      "controls": {
+        "SelectField": 2
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/design-system/components/Field.tsx",
+      "controls": {
+        "select": 1
+      },
+      "css_modules": [
+        "./controls.module.css"
+      ],
+      "react_aria": true
+    },
+    {
+      "file": "src/design-system/patterns/FormFeedback.examples.tsx",
+      "controls": {
+        "Button": 1,
+        "Field": 1,
+        "Notice": 2,
+        "Panel": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/loomata-ui/Controls.tsx",
+      "controls": {
+        "Button": 3
+      },
+      "css_modules": [],
+      "react_aria": true
+    },
+    {
+      "file": "src/ui-lab/ControlStates.tsx",
+      "controls": {
+        "Button": 2,
+        "Field": 3,
+        "Notice": 3,
+        "Panel": 1,
+        "SelectField": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/AppearancePanel.tsx",
+      "controls": {
+        "button": 13,
+        "input": 3,
+        "select": 3,
+        "PreciseValue": 1
+      },
+      "css_modules": [
+        "./appearance.module.css"
+      ],
+      "react_aria": true
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaExplorer.tsx",
+      "controls": {
+        "button": 17,
+        "input": 4,
+        "select": 1,
+        "dialog": 2
+      },
+      "css_modules": [
+        "./FigmaExplorer.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/FigmaImport.tsx",
+      "controls": {
+        "button": 3,
+        "input": 2,
+        "textarea": 1,
+        "select": 4,
+        "details": 2
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/FontPicker.tsx",
+      "controls": {
+        "button": 1,
+        "input": 1,
+        "select": 2,
+        "details": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedOccurrenceVariants.tsx",
+      "controls": {
+        "select": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/ImportedWorkbench.tsx",
+      "controls": {
+        "button": 5,
+        "input": 2,
+        "select": 2
+      },
+      "css_modules": [
+        "./workspace.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/PageInspector.tsx",
+      "controls": {
+        "button": 3,
+        "input": 2,
+        "select": 3,
+        "details": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/PageWorkspace.tsx",
+      "controls": {
+        "button": 11,
+        "select": 1,
+        "Chat": 2
+      },
+      "css_modules": [
+        "./workspace.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/PlannedRequests.tsx",
+      "controls": {
+        "button": 3,
+        "input": 1,
+        "details": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/PropertyPicker.tsx",
+      "controls": {
+        "select": 1
+      },
+      "css_modules": [],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/SceneNavigation.tsx",
+      "controls": {
+        "Button": 2
+      },
+      "css_modules": [],
+      "react_aria": true
+    },
+    {
+      "file": "src/ui-lab/editor/ScopeControls.tsx",
+      "controls": {
+        "button": 6,
+        "textarea": 2
+      },
+      "css_modules": [
+        "./appearance.module.css"
+      ],
+      "react_aria": false
+    },
+    {
+      "file": "src/ui-lab/editor/Workspace.tsx",
+      "controls": {
+        "button": 7,
+        "details": 1,
+        "dialog": 1
+      },
+      "css_modules": [
+        "./workspace.module.css"
+      ],
+      "react_aria": false
+    }
+  ]
+}

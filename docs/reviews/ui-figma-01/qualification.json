@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "cases": [
+    "1280x800: two real pages, shared definition changed globally, local variant scoped to one occurrence then reused and unassigned independently, visual/tree selection, suspended action, ambiguous duplicate refused, keyboard, shared micro-chat/Agents display with simulated transport, real planned request conservation/qualification/explicit isolated start, private direct-Figma form, and no horizontal overflow",
+    "1440x900: two real pages, shared definition changed globally, local variant scoped to one occurrence then reused and unassigned independently, visual/tree selection, suspended action, ambiguous duplicate refused, keyboard, shared micro-chat/Agents display with simulated transport, real planned request conservation/qualification/explicit isolated start, private direct-Figma form, and no horizontal overflow",
+    "Figma arbitration: visible required fields, whitespace refusal, missing color refusal, enabled valid choice, real local save and persistence after reload"
+  ],
+  "baseRevision": "65b39ec22cb597733e460e2718999129234a919b",
+  "sourceHashes": {
+    "src/ui-lab/editor/FigmaImport.tsx": "cf9c980c7c29d0531f1f72e3551eb9544ebce5afa62a20691c041f72cbad484a",
+    "scripts/test-exploration-ui.mjs": "996a7513efb7ff84fff6854ac894b49caf72230792732435df424fa91bf1ad0e"
+  }
+}

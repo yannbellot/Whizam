@@ -1,0 +1,37 @@
+# Inspecter et retoucher une page
+
+Le libellé d’un bouton peut être sélectionné séparément de sa surface : cliquer sur le texte pour modifier ses propriétés, puis cliquer sur la surface pour retrouver les réglages du bouton. Les textes directs de Button, Notice et Panel ont un élément interne stable, commun à Pages, à la galerie et aux exemples. Leurs styles initiaux sont hérités du composant. L’enregistrement vise la partie exacte quand son rattachement à une définition ou une occurrence est vérifiable.
+
+La sélection est prise dès l’appui dans l’aperçu, y compris sur les contrôles désactivés. Son contour continu reste visible pendant le survol d’un autre élément ; le survol utilise un contour pointillé distinct. Les contours suivent le défilement et le redimensionnement, et la sélection est réinitialisée au changement de document. Refuser l’abandon d’un lot conserve la sélection et ses retouches, avec une seule confirmation par geste. Le panneau conserve le fond de panneau Loomata, les champs de 30 px, les libellés/titres de groupe de 12 px, les sections fixes et les unités séparées.
+
+Le switch **Mode édition** est actif par défaut et commun à Design system et Pages pendant la session. En on, les outils de modification sont affichés et les gestes dans l’aperçu sélectionnent les composants/parties plutôt que d’exécuter leurs actions. En off, le panneau droit affiche uniquement ce toggle ; clics, saisies et navigation clavier sont rendus au composant. Réactiver Mode édition retrouve les outils. Les brouillons DS restent prévisualisés sans forçage de pseudo-état. Les retouches Pages sont réinitialisées après confirmation avant de passer en interactif.
+
+Le panneau affiche un seul champ par propriété applicable à l’élément sélectionné. Sur une définition, le champ affiche la valeur effective. La sauvegarde automatique met à jour le token du composant ou crée le token manquant et son raccordement au rendu. Les cartes de décisions dans Foundations ouvrent leur inspecteur sémantique.
+
+Le sélecteur **État** conserve les champs applicables à la partie sélectionnée. Chaque champ affiche la valeur effective dans l’état choisi, avec la valeur héritée par défaut lorsqu’aucun réglage propre à cet état ne s’applique. La sauvegarde automatique modifie la propriété pour l’état choisi. Sous **Contour de focus**, les champs s’appellent **Couleur**, **Épaisseur** et **Décalage**.
+
+La page et la sélection déterminent la destination. Sur la page d’un composant, la valeur s’applique à sa définition, à sa variante, à sa partie et à son état. La sélection d’un placement imbriqué enregistre sa surcharge dans la définition parente. Dans une page du site, le même champ enregistre la surcharge de l’instance exacte. Pour le même état, une valeur locale garde la priorité après modification de la définition générique ou du placement parent. L’identité du placement et le chemin d’instance doivent être enregistrés et uniques. Une sélection sans rattachement fiable permet une retouche temporaire en aperçu.
+
+Dans un brouillon qui contient d’anciens styles CSS de définition, **Migrer les réglages des composants** transfère leurs valeurs vers les tokens. Une première sauvegarde sur la définition effectue la même conversion. Si une valeur dépend d’une référence CSS que le moteur ne sait pas convertir, le panneau indique le champ concerné et le projet conserve ses sources.
+
+Dans les réglages enregistrés du panneau droit, choisir la famille de police avec le sélecteur Type. Les blocs « Attributions et contraste » et « Choisir dans Google Fonts » ont été retirés de ce panneau.
+
+Dans Pages, sélectionner une occurrence enregistrée dans l’arborescence ou un élément de la page pendant l’édition. Dans l’aperçu, les flèches haut et bas naviguent vers le parent ou le premier enfant. Échap propose la sortie. Les raccourcis d’annulation n’interceptent pas ceux des champs éditables.
+
+Les groupes de réglages s’adaptent à la cible exacte. La valeur calculée décrit le rendu. Les expressions CSS existantes restent visibles dans les champs compatibles.
+
+La projection s’actualise dès la modification du champ, sans bouton Aperçu. Les dimensions simples affichent le nombre dans le champ et l’unité dans un sélecteur séparé ; le CSS est recomposé avec cette unité. Les expressions complexes restent textuelles. Une saisie temporairement invalide conserve le dernier rendu valide. Le choix d’unité conserve le nombre, sans conversion implicite. Annuler et Rétablir agissent par geste. Tout réinitialiser retire les retouches en cours. « Retirer la déclaration en ligne » est distinct du retour à la valeur initiale. Les URL/imports CSS ne sont pas éditables. En cas de conflit avec une mutation du projet, le lot devient consultatif et les valeurs du projet sont préservées.
+
+L’Arrondi, le Contour, son Épaisseur et son Style, la Marge et l’espacement Intérieur ont une entrée commune. Le bouton à droite déplie les quatre valeurs, dans l’ordre haut, droite, bas, gauche pour les côtés et haut gauche, haut droite, bas droite, bas gauche pour les coins. « Mixte » indique des valeurs différentes. Déplier ou refermer les détails conserve les valeurs. Une saisie dans l’entrée commune change les quatre valeurs en un geste. Un champ détaillé change uniquement le côté ou le coin indiqué et accepte une unité explicite si besoin.
+
+Dans Responsive, la largeur change seulement l’aperçu. Les conditions proposées sont les règles de largeur accessibles correspondant à la cible. Une condition inactive empêche la projection ; quitter sa plage retire les retouches et conserve le lot périmé en consultation. Les feuilles inaccessibles et autres formes de conditions restent inconnues. Le sélecteur État indique quand le style s’applique. La variante enregistrée conserve son identité.
+
+Une saisie valide se sauvegarde en quittant le champ ou avec Entrée. Un curseur prévisualise la valeur pendant le geste et l’enregistre au relâchement. Une valeur invalide laisse les sources en l’état. Le bouton Annuler peut restaurer le dernier geste enregistré tant qu’il reste le dernier changement du brouillon. En cas de refus, le panneau affiche l’erreur et permet de réessayer après vérification. [Identités et persistance](../architecture/workspace-contract.md#surcharges-de-linspecteur-par-contexte).
+
+Les décisions éditables de Foundations se sauvegardent aussi à la validation du champ. Le catalogue des primitives présente les valeurs produites par les autorités. Les nouvelles primitives nécessaires sont créées dans la même transaction que le token qui les référence.
+
+Les anciennes commandes des lots sont retirées. Les exemples sans identité enregistrée offrent un aperçu temporaire. Les retouches précédemment appliquées continuent d’être lues depuis les sources du projet. Les conversations ordinaires restent accessibles depuis Chat IA.
+
+Sous conflit de famille CSS, une restauration non démontrable garde la projection marquée sale. La recharge confirmée de l’aperçu retire ces surcharges et perd son état interactif non enregistré ; les mutations concurrentes ne sont pas écrasées pour forcer un reset. Le clavier et la saisie du produit sont suspendus pendant l’inspection ; les champs de l’inspecteur conservent leurs raccourcis natifs.
+
+Le menu Design System propose une entrée par composant. Les variantes d’aperçu se choisissent dans sa page. La galerie historique reste accessible par son lien direct.

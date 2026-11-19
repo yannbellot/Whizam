@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "targetSkills": 21,
+  "targetRoles": 4,
+  "contract": "docs/agents/skill-contract.md",
+  "roles": {
+    "builder": "agents/builder.md",
+    "design-reviewer": "agents/design-reviewer.md",
+    "technical-reviewer": "agents/technical-reviewer.md",
+    "security-reviewer": "agents/security-reviewer.md"
+  },
+  "skills": [
+    {
+      "name": "initialize-project",
+      "source": "skills/initialize-project/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/work-items/init-02-dedicated-initialization-skill.md",
+      "resources": [
+        "skills/initialize-project/references/environment-setup.md",
+        "scripts/with-runtime.sh",
+        ".nvmrc",
+        "docs/product/project-start.md"
+      ]
+    },
+    {
+      "name": "analyze-brief",
+      "source": "skills/analyze-brief/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/product/brief.md"
+    },
+    {
+      "name": "brief-to-specs",
+      "source": "skills/brief-to-specs/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/product/features/projects.md"
+    },
+    {
+      "name": "plan-feature",
+      "source": "skills/plan-feature/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "design-interactions",
+      "source": "skills/design-interactions/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/design-system/principles.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "implement-feature",
+      "source": "skills/implement-feature/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "test-user-flow",
+      "source": "skills/test-user-flow/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "update-project-docs",
+      "source": "skills/update-project-docs/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "review-design",
+      "source": "skills/review-design/SKILL.md",
+      "roles": ["design-reviewer"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "technical-review",
+      "source": "skills/technical-review/SKILL.md",
+      "roles": ["technical-reviewer"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "security-review",
+      "source": "skills/security-review/SKILL.md",
+      "roles": ["security-reviewer"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "propose-architecture",
+      "source": "skills/propose-architecture/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "analyze-design-references",
+      "source": "skills/analyze-design-references/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "normalize-design-system",
+      "source": "skills/normalize-design-system/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/editor-assistance.md",
+        "docs/design-system/token-naming.md",
+        "docs/design-system/token-migration.md",
+        "docs/design-system/token-organization.md",
+        "docs/design-system/token-taxonomy.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md",
+        "docs/decisions/038-foundations-inspector-chat.md"
+      ]
+    },
+    {
+      "name": "map-figma-to-components",
+      "source": "skills/map-figma-to-components/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "data-permissions-migrations",
+      "source": "skills/data-permissions-migrations/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "prepare-release",
+      "source": "skills/prepare-release/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "deploy-docker-compose",
+      "source": "skills/deploy-docker-compose/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "diagnose-incident",
+      "source": "skills/diagnose-incident/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "backup-and-rollback",
+      "source": "skills/backup-and-rollback/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md"
+    },
+    {
+      "name": "prepare-handoff",
+      "source": "skills/prepare-handoff/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/agents/practice-history.md",
+      "resources": [
+        "docs/design-system/semantic-catalog.md",
+        "docs/design-system/style-inventory.md",
+        "docs/design-system/editor-preview.md",
+        "docs/design-system/editor-persistence.md",
+        "docs/design-system/architecture.md",
+        "docs/decisions/027-dtcg-authority-and-css-recipes.md"
+      ]
+    }
+  ]
+}

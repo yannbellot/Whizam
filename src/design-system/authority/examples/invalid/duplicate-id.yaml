@@ -1,0 +1,21 @@
+target: primitives
+expectedCode: duplicate-id
+document:
+  schemaVersion: 1
+  primitives:
+    - id: primitive.color.duplicate
+      type: color
+      value: '#000000'
+      status: reference
+      source: negative-test
+    - id: primitive.color.duplicate
+      type: color
+      value: '#ffffff'
+      status: reference
+      source: negative-test
+  sources:
+    negative-test:
+      kind: validated-laboratory-reference
+      path: examples/invalid/duplicate-id.yaml
+      decision: Exemple volontairement invalide.
+      identityClaim: none

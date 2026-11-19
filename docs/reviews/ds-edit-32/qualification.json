@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "rows": 1,
+      "ratio": 0.5,
+      "initialHeight": 33.5,
+      "grownHeight": 72.5,
+      "shrinksOnDeletion": true,
+      "nativeSizingSupported": true
+    },
+    {
+      "width": 390,
+      "rows": 1,
+      "ratio": 0.5,
+      "initialHeight": 33.5,
+      "grownHeight": 72.5,
+      "shrinksOnDeletion": true,
+      "nativeSizingSupported": true
+    }
+  ],
+  "code": [
+    {
+      "file": ".storybook/editor/ScopeControls.tsx",
+      "sha256": "74075c3f95c87a43b5affefcba8d6db858eec4e5563e2bd9f81135c445be076e"
+    },
+    {
+      "file": ".storybook/editor/panel.module.css",
+      "sha256": "24d9fa103de56915e3f9801d181a7ddb583cf55412acd717bd3cfb4047a948ea"
+    }
+  ]
+}

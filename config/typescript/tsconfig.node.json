@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "../../node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "erasableSyntaxOnly": true
+  },
+  "include": [
+    "../../vite.config.ts",
+    "../../react-router.config.ts",
+    "../../config/testing/vitest.config.ts",
+    "../../config/database/drizzle.config.ts",
+    "../../config/testing/vitest.integration.config.ts",
+    "../../scripts/**/*.ts",
+    "../../config/testing/playwright.config.ts",
+    "../../.storybook/main.ts",
+    "../../.storybook/vite.config.ts",
+    "../../config/testing/playwright.storybook.config.ts",
+    "../../config/testing/playwright.projects.config.ts"
+  ]
+}

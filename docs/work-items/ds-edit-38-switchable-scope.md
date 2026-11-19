@@ -1,0 +1,9 @@
+# DS-EDIT-38 — Choix de portée réversibles
+
+1 novembre 2026 — application, En cours, base 1de98e0. Mandat : trois choix sélectionnables et interchangeables sans perte de valeur ; message orange exact demandé lorsque partagé indisponible ; mise à jour aperçu 54137. Sources : assisted.ts, ScopeControls, CSS, tests concernés et guides. Aucun changement des autorités, comptes, données ou fichiers préexistants non suivis.
+
+Procédures applicatives implement-feature, review-design, technical-review déjà lues, version 1de98e0 ; rôle Builder puis revues séquentielles, même agent, non indépendantes. Sol Moyenne : transition locale et gardes existantes, sans changement de service. Critères : six transitions, sélection visible/accessibilité, valeur et autre geste conservés ; référence partagée d’origine retrouvée sous personnalisation ; requête IA tardive ignorée ; refus sans token, usages incomplets et incompatibilité ; comparaison et saisie invalide verrouillent. Garder description sémantique lors des transitions, sans réutiliser de proposition périmée. Le libellé orange demandé couvre les trois causes, avec cause précise au survol du bouton. Types isolés (préexistant SemanticStyles incompatible connu), qualité, unitaires et navigateur dev/statique desktop/mobile prévus. Pas de publication, modèles app non initialisés.
+
+## Bilan
+
+En revue, qualification technique acquise, acceptation humaine différée. [Preuves et revues](../reviews/ds-edit-38-switchable-scope.md) : 21 unitaires, types isolés/qualité conformes, 20 parcours dev et 18 statiques avec deux exclusions attendues ; quatre retests de survol dans chaque mode. Aperçu 54137 actualisé, snapshot 200 et panneau prêt vérifiés après redémarrage final ; autorités et configuration préservées. Doc updated. Préexistants non suivis inchangés ; pas de publication. Reprise : recette humaine des transitions.

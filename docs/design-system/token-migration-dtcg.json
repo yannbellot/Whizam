@@ -1,0 +1,2595 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "bdaf3473c09773e72feba9cd9209e657ecfd48c2",
+  "targetFormat": "DTCG 2025.10",
+  "meaning": "Correspondances de migration initiale ; recettes et sorties CSS distinctes des tokens.",
+  "entries": [
+    {
+      "id": "primitive.color.hex-ffffff",
+      "kind": "token",
+      "path": "primitive.color.hex-ffffff"
+    },
+    {
+      "id": "primitive.color.hex-f1f5f9",
+      "kind": "token",
+      "path": "primitive.color.hex-f1f5f9"
+    },
+    {
+      "id": "primitive.color.hex-0f172a",
+      "kind": "token",
+      "path": "primitive.color.hex-0f172a"
+    },
+    {
+      "id": "primitive.color.hex-475569",
+      "kind": "token",
+      "path": "primitive.color.hex-475569"
+    },
+    {
+      "id": "primitive.color.hex-64748b",
+      "kind": "token",
+      "path": "primitive.color.hex-64748b"
+    },
+    {
+      "id": "primitive.stroke.px-1",
+      "kind": "token",
+      "path": "primitive.stroke.px-1"
+    },
+    {
+      "id": "primitive.radius.rem-0-5",
+      "kind": "token",
+      "path": "primitive.radius.rem-0-5"
+    },
+    {
+      "id": "primitive.space.rem-0-7",
+      "kind": "token",
+      "path": "primitive.space.rem-0-7"
+    },
+    {
+      "id": "primitive.space.rem-1",
+      "kind": "token",
+      "path": "primitive.space.rem-1"
+    },
+    {
+      "id": "primitive.space.rem-1-5",
+      "kind": "token",
+      "path": "primitive.space.rem-1-5"
+    },
+    {
+      "id": "primitive.space.rem-0-5",
+      "kind": "token",
+      "path": "primitive.space.rem-0-5"
+    },
+    {
+      "id": "primitive.space.rem-2",
+      "kind": "token",
+      "path": "primitive.space.rem-2"
+    },
+    {
+      "id": "primitive.type.font-size.rem-1",
+      "kind": "token",
+      "path": "primitive.type.font-size.rem-1"
+    },
+    {
+      "id": "primitive.type.font-size.rem-0-875",
+      "kind": "token",
+      "path": "primitive.type.font-size.rem-0-875"
+    },
+    {
+      "id": "primitive.type.font-weight.value-400",
+      "kind": "token",
+      "path": "primitive.type.font-weight.value-400"
+    },
+    {
+      "id": "primitive.type.font-weight.value-650",
+      "kind": "token",
+      "path": "primitive.type.font-weight.value-650"
+    },
+    {
+      "id": "primitive.type.line-height.ratio-1-5",
+      "kind": "token",
+      "path": "primitive.type.line-height.ratio-1-5"
+    },
+    {
+      "id": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966",
+      "kind": "token",
+      "path": "primitive.type.font-family.stack-496e7465722c2075692d73616e732d73657269662c2073797374656d2d75692c2073616e732d7365726966"
+    },
+    {
+      "id": "primitive.size.rem-70",
+      "kind": "token",
+      "path": "primitive.size.rem-70"
+    },
+    {
+      "id": "primitive.color.hex-1d4ed8",
+      "kind": "token",
+      "path": "primitive.color.hex-1d4ed8"
+    },
+    {
+      "id": "primitive.color.hex-1e40af",
+      "kind": "token",
+      "path": "primitive.color.hex-1e40af"
+    },
+    {
+      "id": "primitive.color.hex-b91c1c",
+      "kind": "token",
+      "path": "primitive.color.hex-b91c1c"
+    },
+    {
+      "id": "primitive.color.hex-166534",
+      "kind": "token",
+      "path": "primitive.color.hex-166534"
+    },
+    {
+      "id": "primitive.stroke.px-3",
+      "kind": "token",
+      "path": "primitive.stroke.px-3"
+    },
+    {
+      "id": "primitive.space.px-3",
+      "kind": "token",
+      "path": "primitive.space.px-3"
+    },
+    {
+      "id": "semantic.color.neutral.background.default",
+      "kind": "token",
+      "path": "semantic.color.neutral.background.default"
+    },
+    {
+      "id": "semantic.color.secondary.background.default",
+      "kind": "token",
+      "path": "semantic.color.secondary.background.default"
+    },
+    {
+      "id": "semantic.color.neutral.text.default",
+      "kind": "token",
+      "path": "semantic.color.neutral.text.default"
+    },
+    {
+      "id": "semantic.color.secondary.text.default",
+      "kind": "token",
+      "path": "semantic.color.secondary.text.default"
+    },
+    {
+      "id": "semantic.color.neutral.border.default",
+      "kind": "token",
+      "path": "semantic.color.neutral.border.default"
+    },
+    {
+      "id": "semantic.color.action.primary.background.default",
+      "kind": "token",
+      "path": "semantic.color.action.primary.background.default"
+    },
+    {
+      "id": "semantic.color.action.primary.background.hover",
+      "kind": "token",
+      "path": "semantic.color.action.primary.background.hover"
+    },
+    {
+      "id": "semantic.color.action.primary.text.default",
+      "kind": "token",
+      "path": "semantic.color.action.primary.text.default"
+    },
+    {
+      "id": "semantic.color.availability-capacity.unavailable.background.disabled",
+      "kind": "token",
+      "path": "semantic.color.availability-capacity.unavailable.background.disabled"
+    },
+    {
+      "id": "semantic.color.feedback.error.text.default",
+      "kind": "token",
+      "path": "semantic.color.feedback.error.text.default"
+    },
+    {
+      "id": "semantic.color.feedback.error.border.error",
+      "kind": "token",
+      "path": "semantic.color.feedback.error.border.error"
+    },
+    {
+      "id": "semantic.color.feedback.success.text.default",
+      "kind": "token",
+      "path": "semantic.color.feedback.success.text.default"
+    },
+    {
+      "id": "semantic.color.action.primary.focus.focus-visible",
+      "kind": "token",
+      "path": "semantic.color.action.primary.focus.focus-visible"
+    },
+    {
+      "id": "semantic.color.action.primary.background.loading",
+      "kind": "token",
+      "path": "semantic.color.action.primary.background.loading"
+    },
+    {
+      "id": "semantic.color.secondary.background.disabled",
+      "kind": "token",
+      "path": "semantic.color.secondary.background.disabled"
+    },
+    {
+      "id": "semantic.color.neutral.text.disabled",
+      "kind": "token",
+      "path": "semantic.color.neutral.text.disabled"
+    },
+    {
+      "id": "semantic.color.neutral.border.disabled",
+      "kind": "token",
+      "path": "semantic.color.neutral.border.disabled"
+    },
+    {
+      "id": "semantic.color.action.background.default",
+      "kind": "token",
+      "path": "semantic.color.action.background.default"
+    },
+    {
+      "id": "semantic.color.action.background.hover",
+      "kind": "token",
+      "path": "semantic.color.action.background.hover"
+    },
+    {
+      "id": "semantic.color.action.foreground.default",
+      "kind": "token",
+      "path": "semantic.color.action.foreground.default"
+    },
+    {
+      "id": "semantic.color.focus.ring",
+      "kind": "token",
+      "path": "semantic.color.focus.ring"
+    },
+    {
+      "id": "semantic.radius.control.default",
+      "kind": "token",
+      "path": "semantic.radius.control.default"
+    },
+    {
+      "id": "semantic.space.control.block",
+      "kind": "token",
+      "path": "semantic.space.control.block"
+    },
+    {
+      "id": "semantic.space.control.inline",
+      "kind": "token",
+      "path": "semantic.space.control.inline"
+    },
+    {
+      "id": "semantic.font-weight.action",
+      "kind": "token",
+      "path": "semantic.font-weight.action"
+    },
+    {
+      "id": "semantic.dimension.focus.ring-width",
+      "kind": "token",
+      "path": "semantic.dimension.focus.ring-width"
+    },
+    {
+      "id": "semantic.dimension.focus.ring-offset",
+      "kind": "token",
+      "path": "semantic.dimension.focus.ring-offset"
+    },
+    {
+      "id": "semantic.color.surface.default",
+      "kind": "token",
+      "path": "semantic.color.surface.default"
+    },
+    {
+      "id": "semantic.color.surface.muted",
+      "kind": "token",
+      "path": "semantic.color.surface.muted"
+    },
+    {
+      "id": "semantic.color.text.default",
+      "kind": "token",
+      "path": "semantic.color.text.default"
+    },
+    {
+      "id": "semantic.color.text.muted",
+      "kind": "token",
+      "path": "semantic.color.text.muted"
+    },
+    {
+      "id": "semantic.color.border.default",
+      "kind": "token",
+      "path": "semantic.color.border.default"
+    },
+    {
+      "id": "semantic.color.feedback.error",
+      "kind": "token",
+      "path": "semantic.color.feedback.error.$root"
+    },
+    {
+      "id": "semantic.color.feedback.success",
+      "kind": "token",
+      "path": "semantic.color.feedback.success.$root"
+    },
+    {
+      "id": "semantic.color.action.disabled",
+      "kind": "token",
+      "path": "semantic.color.action.disabled"
+    },
+    {
+      "id": "semantic.space.layout.small",
+      "kind": "token",
+      "path": "semantic.space.layout.small"
+    },
+    {
+      "id": "semantic.space.layout.medium",
+      "kind": "token",
+      "path": "semantic.space.layout.medium"
+    },
+    {
+      "id": "semantic.space.layout.large",
+      "kind": "token",
+      "path": "semantic.space.layout.large"
+    },
+    {
+      "id": "semantic.space.layout.page",
+      "kind": "token",
+      "path": "semantic.space.layout.page"
+    },
+    {
+      "id": "semantic.dimension.text.small",
+      "kind": "token",
+      "path": "semantic.dimension.text.small"
+    },
+    {
+      "id": "semantic.dimension.layout.max",
+      "kind": "token",
+      "path": "semantic.dimension.layout.max"
+    },
+    {
+      "id": "component.button.default.root.background.default",
+      "kind": "token",
+      "path": "component.button.default.root.background.default"
+    },
+    {
+      "id": "component.button.default.root.foreground.default",
+      "kind": "token",
+      "path": "component.button.default.root.foreground.default"
+    },
+    {
+      "id": "component.button.default.root.border-radius.default",
+      "kind": "token",
+      "path": "component.button.default.root.border-radius.default"
+    },
+    {
+      "id": "component.button.default.root.padding-block.default",
+      "kind": "token",
+      "path": "component.button.default.root.padding-block.default"
+    },
+    {
+      "id": "component.button.default.root.padding-inline.default",
+      "kind": "token",
+      "path": "component.button.default.root.padding-inline.default"
+    },
+    {
+      "id": "component.button.default.root.font-size.default",
+      "kind": "token",
+      "path": "component.button.default.root.font-size.default"
+    },
+    {
+      "id": "component.button.default.root.font-weight.default",
+      "kind": "token",
+      "path": "component.button.default.root.font-weight.default"
+    },
+    {
+      "id": "component.button.default.root.line-height.default",
+      "kind": "token",
+      "path": "component.button.default.root.line-height.default"
+    },
+    {
+      "id": "component.button.default.root.font-family.default",
+      "kind": "token",
+      "path": "component.button.default.root.font-family.default"
+    },
+    {
+      "id": "component.button.default.root.background.hover",
+      "kind": "token",
+      "path": "component.button.default.root.background.hover"
+    },
+    {
+      "id": "component.button.default.root.background.disabled",
+      "kind": "token",
+      "path": "component.button.default.root.background.disabled"
+    },
+    {
+      "id": "component.button.default.root.background.loading",
+      "kind": "token",
+      "path": "component.button.default.root.background.loading"
+    },
+    {
+      "id": "component.button.default.root.ring-color.focus-visible",
+      "kind": "token",
+      "path": "component.button.default.root.ring-color.focus-visible"
+    },
+    {
+      "id": "component.button.default.root.ring-width.focus-visible",
+      "kind": "token",
+      "path": "component.button.default.root.ring-width.focus-visible"
+    },
+    {
+      "id": "component.button.default.root.ring-offset.focus-visible",
+      "kind": "token",
+      "path": "component.button.default.root.ring-offset.focus-visible"
+    },
+    {
+      "id": "component.field.single-line.root.gap.default",
+      "kind": "token",
+      "path": "component.field.single-line.root.gap.default"
+    },
+    {
+      "id": "component.field.single-line.label.foreground.default",
+      "kind": "token",
+      "path": "component.field.single-line.label.foreground.default"
+    },
+    {
+      "id": "component.field.single-line.label.font-size.default",
+      "kind": "token",
+      "path": "component.field.single-line.label.font-size.default"
+    },
+    {
+      "id": "component.field.single-line.label.font-weight.default",
+      "kind": "token",
+      "path": "component.field.single-line.label.font-weight.default"
+    },
+    {
+      "id": "component.field.single-line.label.line-height.default",
+      "kind": "token",
+      "path": "component.field.single-line.label.line-height.default"
+    },
+    {
+      "id": "component.field.single-line.label.font-family.default",
+      "kind": "token",
+      "path": "component.field.single-line.label.font-family.default"
+    },
+    {
+      "id": "component.field.single-line.control.background.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.background.default"
+    },
+    {
+      "id": "component.field.single-line.control.background.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.background.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.foreground.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.foreground.default"
+    },
+    {
+      "id": "component.field.single-line.control.foreground.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.foreground.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.border-color.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-color.default"
+    },
+    {
+      "id": "component.field.single-line.control.border-color.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-color.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.border-width.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-width.default"
+    },
+    {
+      "id": "component.field.single-line.control.border-width.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-width.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.border-radius.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-radius.default"
+    },
+    {
+      "id": "component.field.single-line.control.border-radius.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-radius.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.padding-block.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.padding-block.default"
+    },
+    {
+      "id": "component.field.single-line.control.padding-block.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.padding-block.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.padding-inline.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.padding-inline.default"
+    },
+    {
+      "id": "component.field.single-line.control.padding-inline.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.padding-inline.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.font-size.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-size.default"
+    },
+    {
+      "id": "component.field.single-line.control.font-size.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-size.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.font-weight.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-weight.default"
+    },
+    {
+      "id": "component.field.single-line.control.font-weight.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-weight.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.line-height.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.line-height.default"
+    },
+    {
+      "id": "component.field.single-line.control.line-height.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.line-height.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.font-family.default",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-family.default"
+    },
+    {
+      "id": "component.field.single-line.control.font-family.disabled",
+      "kind": "token",
+      "path": "component.field.single-line.control.font-family.disabled"
+    },
+    {
+      "id": "component.field.single-line.control.ring-color.focus-visible",
+      "kind": "token",
+      "path": "component.field.single-line.control.ring-color.focus-visible"
+    },
+    {
+      "id": "component.field.single-line.control.ring-width.focus-visible",
+      "kind": "token",
+      "path": "component.field.single-line.control.ring-width.focus-visible"
+    },
+    {
+      "id": "component.field.single-line.control.ring-offset.focus-visible",
+      "kind": "token",
+      "path": "component.field.single-line.control.ring-offset.focus-visible"
+    },
+    {
+      "id": "component.field.single-line.control.border-color.error",
+      "kind": "token",
+      "path": "component.field.single-line.control.border-color.error"
+    },
+    {
+      "id": "component.field.single-line.hint.foreground.default",
+      "kind": "token",
+      "path": "component.field.single-line.hint.foreground.default"
+    },
+    {
+      "id": "component.field.single-line.hint.font-size.default",
+      "kind": "token",
+      "path": "component.field.single-line.hint.font-size.default"
+    },
+    {
+      "id": "component.field.single-line.hint.font-weight.default",
+      "kind": "token",
+      "path": "component.field.single-line.hint.font-weight.default"
+    },
+    {
+      "id": "component.field.single-line.hint.line-height.default",
+      "kind": "token",
+      "path": "component.field.single-line.hint.line-height.default"
+    },
+    {
+      "id": "component.field.single-line.hint.font-family.default",
+      "kind": "token",
+      "path": "component.field.single-line.hint.font-family.default"
+    },
+    {
+      "id": "component.field.single-line.error.foreground.default",
+      "kind": "token",
+      "path": "component.field.single-line.error.foreground.default"
+    },
+    {
+      "id": "component.field.single-line.error.font-size.default",
+      "kind": "token",
+      "path": "component.field.single-line.error.font-size.default"
+    },
+    {
+      "id": "component.field.single-line.error.font-weight.default",
+      "kind": "token",
+      "path": "component.field.single-line.error.font-weight.default"
+    },
+    {
+      "id": "component.field.single-line.error.line-height.default",
+      "kind": "token",
+      "path": "component.field.single-line.error.line-height.default"
+    },
+    {
+      "id": "component.field.single-line.error.font-family.default",
+      "kind": "token",
+      "path": "component.field.single-line.error.font-family.default"
+    },
+    {
+      "id": "component.field.multiline.root.gap.default",
+      "kind": "token",
+      "path": "component.field.multiline.root.gap.default"
+    },
+    {
+      "id": "component.field.multiline.label.foreground.default",
+      "kind": "token",
+      "path": "component.field.multiline.label.foreground.default"
+    },
+    {
+      "id": "component.field.multiline.label.font-size.default",
+      "kind": "token",
+      "path": "component.field.multiline.label.font-size.default"
+    },
+    {
+      "id": "component.field.multiline.label.font-weight.default",
+      "kind": "token",
+      "path": "component.field.multiline.label.font-weight.default"
+    },
+    {
+      "id": "component.field.multiline.label.line-height.default",
+      "kind": "token",
+      "path": "component.field.multiline.label.line-height.default"
+    },
+    {
+      "id": "component.field.multiline.label.font-family.default",
+      "kind": "token",
+      "path": "component.field.multiline.label.font-family.default"
+    },
+    {
+      "id": "component.field.multiline.control.background.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.background.default"
+    },
+    {
+      "id": "component.field.multiline.control.background.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.background.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.foreground.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.foreground.default"
+    },
+    {
+      "id": "component.field.multiline.control.foreground.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.foreground.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.border-color.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-color.default"
+    },
+    {
+      "id": "component.field.multiline.control.border-color.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-color.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.border-width.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-width.default"
+    },
+    {
+      "id": "component.field.multiline.control.border-width.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-width.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.border-radius.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-radius.default"
+    },
+    {
+      "id": "component.field.multiline.control.border-radius.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-radius.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.padding-block.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.padding-block.default"
+    },
+    {
+      "id": "component.field.multiline.control.padding-block.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.padding-block.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.padding-inline.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.padding-inline.default"
+    },
+    {
+      "id": "component.field.multiline.control.padding-inline.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.padding-inline.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.font-size.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-size.default"
+    },
+    {
+      "id": "component.field.multiline.control.font-size.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-size.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.font-weight.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-weight.default"
+    },
+    {
+      "id": "component.field.multiline.control.font-weight.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-weight.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.line-height.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.line-height.default"
+    },
+    {
+      "id": "component.field.multiline.control.line-height.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.line-height.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.font-family.default",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-family.default"
+    },
+    {
+      "id": "component.field.multiline.control.font-family.disabled",
+      "kind": "token",
+      "path": "component.field.multiline.control.font-family.disabled"
+    },
+    {
+      "id": "component.field.multiline.control.ring-color.focus-visible",
+      "kind": "token",
+      "path": "component.field.multiline.control.ring-color.focus-visible"
+    },
+    {
+      "id": "component.field.multiline.control.ring-width.focus-visible",
+      "kind": "token",
+      "path": "component.field.multiline.control.ring-width.focus-visible"
+    },
+    {
+      "id": "component.field.multiline.control.ring-offset.focus-visible",
+      "kind": "token",
+      "path": "component.field.multiline.control.ring-offset.focus-visible"
+    },
+    {
+      "id": "component.field.multiline.control.border-color.error",
+      "kind": "token",
+      "path": "component.field.multiline.control.border-color.error"
+    },
+    {
+      "id": "component.field.multiline.hint.foreground.default",
+      "kind": "token",
+      "path": "component.field.multiline.hint.foreground.default"
+    },
+    {
+      "id": "component.field.multiline.hint.font-size.default",
+      "kind": "token",
+      "path": "component.field.multiline.hint.font-size.default"
+    },
+    {
+      "id": "component.field.multiline.hint.font-weight.default",
+      "kind": "token",
+      "path": "component.field.multiline.hint.font-weight.default"
+    },
+    {
+      "id": "component.field.multiline.hint.line-height.default",
+      "kind": "token",
+      "path": "component.field.multiline.hint.line-height.default"
+    },
+    {
+      "id": "component.field.multiline.hint.font-family.default",
+      "kind": "token",
+      "path": "component.field.multiline.hint.font-family.default"
+    },
+    {
+      "id": "component.field.multiline.error.foreground.default",
+      "kind": "token",
+      "path": "component.field.multiline.error.foreground.default"
+    },
+    {
+      "id": "component.field.multiline.error.font-size.default",
+      "kind": "token",
+      "path": "component.field.multiline.error.font-size.default"
+    },
+    {
+      "id": "component.field.multiline.error.font-weight.default",
+      "kind": "token",
+      "path": "component.field.multiline.error.font-weight.default"
+    },
+    {
+      "id": "component.field.multiline.error.line-height.default",
+      "kind": "token",
+      "path": "component.field.multiline.error.line-height.default"
+    },
+    {
+      "id": "component.field.multiline.error.font-family.default",
+      "kind": "token",
+      "path": "component.field.multiline.error.font-family.default"
+    },
+    {
+      "id": "component.select-field.default.root.gap.default",
+      "kind": "token",
+      "path": "component.select-field.default.root.gap.default"
+    },
+    {
+      "id": "component.select-field.default.label.foreground.default",
+      "kind": "token",
+      "path": "component.select-field.default.label.foreground.default"
+    },
+    {
+      "id": "component.select-field.default.label.font-size.default",
+      "kind": "token",
+      "path": "component.select-field.default.label.font-size.default"
+    },
+    {
+      "id": "component.select-field.default.label.font-weight.default",
+      "kind": "token",
+      "path": "component.select-field.default.label.font-weight.default"
+    },
+    {
+      "id": "component.select-field.default.label.line-height.default",
+      "kind": "token",
+      "path": "component.select-field.default.label.line-height.default"
+    },
+    {
+      "id": "component.select-field.default.label.font-family.default",
+      "kind": "token",
+      "path": "component.select-field.default.label.font-family.default"
+    },
+    {
+      "id": "component.select-field.default.control.background.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.background.default"
+    },
+    {
+      "id": "component.select-field.default.control.background.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.background.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.foreground.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.foreground.default"
+    },
+    {
+      "id": "component.select-field.default.control.foreground.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.foreground.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.border-color.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-color.default"
+    },
+    {
+      "id": "component.select-field.default.control.border-color.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-color.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.border-width.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-width.default"
+    },
+    {
+      "id": "component.select-field.default.control.border-width.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-width.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.border-radius.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-radius.default"
+    },
+    {
+      "id": "component.select-field.default.control.border-radius.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.border-radius.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.padding-block.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.padding-block.default"
+    },
+    {
+      "id": "component.select-field.default.control.padding-block.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.padding-block.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.padding-inline.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.padding-inline.default"
+    },
+    {
+      "id": "component.select-field.default.control.padding-inline.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.padding-inline.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.font-size.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-size.default"
+    },
+    {
+      "id": "component.select-field.default.control.font-size.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-size.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.font-weight.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-weight.default"
+    },
+    {
+      "id": "component.select-field.default.control.font-weight.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-weight.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.font-family.default",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-family.default"
+    },
+    {
+      "id": "component.select-field.default.control.font-family.disabled",
+      "kind": "token",
+      "path": "component.select-field.default.control.font-family.disabled"
+    },
+    {
+      "id": "component.select-field.default.control.ring-color.focus-visible",
+      "kind": "token",
+      "path": "component.select-field.default.control.ring-color.focus-visible"
+    },
+    {
+      "id": "component.select-field.default.control.ring-width.focus-visible",
+      "kind": "token",
+      "path": "component.select-field.default.control.ring-width.focus-visible"
+    },
+    {
+      "id": "component.select-field.default.control.ring-offset.focus-visible",
+      "kind": "token",
+      "path": "component.select-field.default.control.ring-offset.focus-visible"
+    },
+    {
+      "id": "component.notice.info.root.background.default",
+      "kind": "token",
+      "path": "component.notice.info.root.background.default"
+    },
+    {
+      "id": "component.notice.info.root.foreground.default",
+      "kind": "token",
+      "path": "component.notice.info.root.foreground.default"
+    },
+    {
+      "id": "component.notice.info.root.border-color.default",
+      "kind": "token",
+      "path": "component.notice.info.root.border-color.default"
+    },
+    {
+      "id": "component.notice.info.root.border-width.default",
+      "kind": "token",
+      "path": "component.notice.info.root.border-width.default"
+    },
+    {
+      "id": "component.notice.info.root.border-radius.default",
+      "kind": "token",
+      "path": "component.notice.info.root.border-radius.default"
+    },
+    {
+      "id": "component.notice.info.root.padding-block.default",
+      "kind": "token",
+      "path": "component.notice.info.root.padding-block.default"
+    },
+    {
+      "id": "component.notice.info.root.padding-inline.default",
+      "kind": "token",
+      "path": "component.notice.info.root.padding-inline.default"
+    },
+    {
+      "id": "component.notice.info.root.font-size.default",
+      "kind": "token",
+      "path": "component.notice.info.root.font-size.default"
+    },
+    {
+      "id": "component.notice.info.root.font-weight.default",
+      "kind": "token",
+      "path": "component.notice.info.root.font-weight.default"
+    },
+    {
+      "id": "component.notice.info.root.line-height.default",
+      "kind": "token",
+      "path": "component.notice.info.root.line-height.default"
+    },
+    {
+      "id": "component.notice.info.root.font-family.default",
+      "kind": "token",
+      "path": "component.notice.info.root.font-family.default"
+    },
+    {
+      "id": "component.notice.success.root.background.default",
+      "kind": "token",
+      "path": "component.notice.success.root.background.default"
+    },
+    {
+      "id": "component.notice.success.root.foreground.default",
+      "kind": "token",
+      "path": "component.notice.success.root.foreground.default"
+    },
+    {
+      "id": "component.notice.success.root.border-color.default",
+      "kind": "token",
+      "path": "component.notice.success.root.border-color.default"
+    },
+    {
+      "id": "component.notice.success.root.border-width.default",
+      "kind": "token",
+      "path": "component.notice.success.root.border-width.default"
+    },
+    {
+      "id": "component.notice.success.root.border-radius.default",
+      "kind": "token",
+      "path": "component.notice.success.root.border-radius.default"
+    },
+    {
+      "id": "component.notice.success.root.padding-block.default",
+      "kind": "token",
+      "path": "component.notice.success.root.padding-block.default"
+    },
+    {
+      "id": "component.notice.success.root.padding-inline.default",
+      "kind": "token",
+      "path": "component.notice.success.root.padding-inline.default"
+    },
+    {
+      "id": "component.notice.success.root.font-size.default",
+      "kind": "token",
+      "path": "component.notice.success.root.font-size.default"
+    },
+    {
+      "id": "component.notice.success.root.font-weight.default",
+      "kind": "token",
+      "path": "component.notice.success.root.font-weight.default"
+    },
+    {
+      "id": "component.notice.success.root.line-height.default",
+      "kind": "token",
+      "path": "component.notice.success.root.line-height.default"
+    },
+    {
+      "id": "component.notice.success.root.font-family.default",
+      "kind": "token",
+      "path": "component.notice.success.root.font-family.default"
+    },
+    {
+      "id": "component.notice.error.root.background.default",
+      "kind": "token",
+      "path": "component.notice.error.root.background.default"
+    },
+    {
+      "id": "component.notice.error.root.foreground.default",
+      "kind": "token",
+      "path": "component.notice.error.root.foreground.default"
+    },
+    {
+      "id": "component.notice.error.root.border-color.default",
+      "kind": "token",
+      "path": "component.notice.error.root.border-color.default"
+    },
+    {
+      "id": "component.notice.error.root.border-width.default",
+      "kind": "token",
+      "path": "component.notice.error.root.border-width.default"
+    },
+    {
+      "id": "component.notice.error.root.border-radius.default",
+      "kind": "token",
+      "path": "component.notice.error.root.border-radius.default"
+    },
+    {
+      "id": "component.notice.error.root.padding-block.default",
+      "kind": "token",
+      "path": "component.notice.error.root.padding-block.default"
+    },
+    {
+      "id": "component.notice.error.root.padding-inline.default",
+      "kind": "token",
+      "path": "component.notice.error.root.padding-inline.default"
+    },
+    {
+      "id": "component.notice.error.root.font-size.default",
+      "kind": "token",
+      "path": "component.notice.error.root.font-size.default"
+    },
+    {
+      "id": "component.notice.error.root.font-weight.default",
+      "kind": "token",
+      "path": "component.notice.error.root.font-weight.default"
+    },
+    {
+      "id": "component.notice.error.root.line-height.default",
+      "kind": "token",
+      "path": "component.notice.error.root.line-height.default"
+    },
+    {
+      "id": "component.notice.error.root.font-family.default",
+      "kind": "token",
+      "path": "component.notice.error.root.font-family.default"
+    },
+    {
+      "id": "component.panel.default.root.background.default",
+      "kind": "token",
+      "path": "component.panel.default.root.background.default"
+    },
+    {
+      "id": "component.panel.default.root.foreground.default",
+      "kind": "token",
+      "path": "component.panel.default.root.foreground.default"
+    },
+    {
+      "id": "component.panel.default.root.border-color.default",
+      "kind": "token",
+      "path": "component.panel.default.root.border-color.default"
+    },
+    {
+      "id": "component.panel.default.root.border-width.default",
+      "kind": "token",
+      "path": "component.panel.default.root.border-width.default"
+    },
+    {
+      "id": "component.panel.default.root.border-radius.default",
+      "kind": "token",
+      "path": "component.panel.default.root.border-radius.default"
+    },
+    {
+      "id": "component.panel.default.root.padding-block.default",
+      "kind": "token",
+      "path": "component.panel.default.root.padding-block.default"
+    },
+    {
+      "id": "component.panel.default.root.padding-inline.default",
+      "kind": "token",
+      "path": "component.panel.default.root.padding-inline.default"
+    },
+    {
+      "id": "component.panel.default.root.font-size.default",
+      "kind": "token",
+      "path": "component.panel.default.root.font-size.default"
+    },
+    {
+      "id": "component.panel.default.root.font-weight.default",
+      "kind": "token",
+      "path": "component.panel.default.root.font-weight.default"
+    },
+    {
+      "id": "component.panel.default.root.line-height.default",
+      "kind": "token",
+      "path": "component.panel.default.root.line-height.default"
+    },
+    {
+      "id": "component.panel.default.root.font-family.default",
+      "kind": "token",
+      "path": "component.panel.default.root.font-family.default"
+    },
+    {
+      "id": "component.foundations.default.document.background.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.background.default"
+    },
+    {
+      "id": "component.foundations.default.document.foreground.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.foreground.default"
+    },
+    {
+      "id": "component.foundations.default.document.font-size.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.font-size.default"
+    },
+    {
+      "id": "component.foundations.default.document.font-weight.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.font-weight.default"
+    },
+    {
+      "id": "component.foundations.default.document.line-height.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.line-height.default"
+    },
+    {
+      "id": "component.foundations.default.document.font-family.default",
+      "kind": "token",
+      "path": "component.foundations.default.document.font-family.default"
+    },
+    {
+      "id": "component.foundations.default.page.max-width.default",
+      "kind": "token",
+      "path": "component.foundations.default.page.max-width.default"
+    },
+    {
+      "id": "component.foundations.default.page.page-margin.default",
+      "kind": "token",
+      "path": "component.foundations.default.page.page-margin.default"
+    },
+    {
+      "id": "component.foundations.default.page-mobile.page-margin.default",
+      "kind": "token",
+      "path": "component.foundations.default.page-mobile.page-margin.default"
+    },
+    {
+      "id": "component.foundations.default.layout-small.gap.default",
+      "kind": "token",
+      "path": "component.foundations.default.layout-small.gap.default"
+    },
+    {
+      "id": "component.foundations.default.layout-medium.gap.default",
+      "kind": "token",
+      "path": "component.foundations.default.layout-medium.gap.default"
+    },
+    {
+      "id": "component.foundations.default.layout-large.gap.default",
+      "kind": "token",
+      "path": "component.foundations.default.layout-large.gap.default"
+    },
+    {
+      "id": "component.foundations.default.table.font-size.default",
+      "kind": "token",
+      "path": "component.foundations.default.table.font-size.default"
+    },
+    {
+      "id": "component.foundations.default.table.border-color.default",
+      "kind": "token",
+      "path": "component.foundations.default.table.border-color.default"
+    },
+    {
+      "id": "component.foundations.default.table.padding-block.default",
+      "kind": "token",
+      "path": "component.foundations.default.table.padding-block.default"
+    },
+    {
+      "id": "component.foundations.default.table.padding-inline.default",
+      "kind": "token",
+      "path": "component.foundations.default.table.padding-inline.default"
+    },
+    {
+      "id": "primitive.composition.parameter-9bb76d8cfd8354020e3c",
+      "kind": "token",
+      "path": "primitive.composition.parameter-9bb76d8cfd8354020e3c"
+    },
+    {
+      "id": "primitive.composition.value-0f308cfb7ef3",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-b4490db62d25",
+      "kind": "token",
+      "path": "primitive.composition.value-b4490db62d25"
+    },
+    {
+      "id": "primitive.composition.value-93bc5d02dc2a",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.parameter-a69226318c312be7fedd",
+      "kind": "token",
+      "path": "primitive.composition.parameter-a69226318c312be7fedd"
+    },
+    {
+      "id": "primitive.composition.value-91d06f966b2f",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-e0007a5bca8d",
+      "kind": "token",
+      "path": "primitive.composition.value-e0007a5bca8d"
+    },
+    {
+      "id": "primitive.composition.parameter-44b0f3e6aacf7ce29f2b",
+      "kind": "token",
+      "path": "primitive.composition.parameter-44b0f3e6aacf7ce29f2b"
+    },
+    {
+      "id": "primitive.composition.value-71d3b10ed342",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-9b10085a5628",
+      "kind": "token",
+      "path": "primitive.composition.value-9b10085a5628"
+    },
+    {
+      "id": "primitive.composition.parameter-9ac4e8751fdc358a6f3a",
+      "kind": "token",
+      "path": "primitive.composition.parameter-9ac4e8751fdc358a6f3a"
+    },
+    {
+      "id": "primitive.composition.parameter-cad7fe80859942c41eae",
+      "kind": "token",
+      "path": "primitive.composition.parameter-cad7fe80859942c41eae"
+    },
+    {
+      "id": "primitive.composition.parameter-eabb73b562f1e6e19da5",
+      "kind": "token",
+      "path": "primitive.composition.parameter-eabb73b562f1e6e19da5"
+    },
+    {
+      "id": "primitive.composition.value-1ff96226851b",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.parameter-d34e35a75f21e8e77a43",
+      "kind": "token",
+      "path": "primitive.composition.parameter-d34e35a75f21e8e77a43"
+    },
+    {
+      "id": "primitive.composition.value-5fb29ff18bea",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-6ddb6ba5b9ff",
+      "kind": "token",
+      "path": "primitive.composition.value-6ddb6ba5b9ff"
+    },
+    {
+      "id": "primitive.composition.value-fb391dd7c415",
+      "kind": "token",
+      "path": "primitive.composition.value-fb391dd7c415"
+    },
+    {
+      "id": "primitive.composition.parameter-198d8eaa1276add80a83",
+      "kind": "token",
+      "path": "primitive.composition.parameter-198d8eaa1276add80a83"
+    },
+    {
+      "id": "primitive.composition.parameter-f62a26f937b77c2c8bdc",
+      "kind": "token",
+      "path": "primitive.composition.parameter-f62a26f937b77c2c8bdc"
+    },
+    {
+      "id": "primitive.composition.value-c0819ab76973",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.parameter-05340de5e6ca7300b362",
+      "kind": "token",
+      "path": "primitive.composition.parameter-05340de5e6ca7300b362"
+    },
+    {
+      "id": "primitive.composition.value-67623b31560f",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.parameter-252cd0153b7582ecee27",
+      "kind": "token",
+      "path": "primitive.composition.parameter-252cd0153b7582ecee27"
+    },
+    {
+      "id": "primitive.composition.value-b6ea60f7e2b0",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-8c756dc2fd39",
+      "kind": "token",
+      "path": "primitive.composition.value-8c756dc2fd39"
+    },
+    {
+      "id": "primitive.composition.parameter-d01e8cb8634c58891151",
+      "kind": "token",
+      "path": "primitive.composition.parameter-d01e8cb8634c58891151"
+    },
+    {
+      "id": "primitive.composition.value-0857fa0bac33",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-64d095f2fecf",
+      "kind": "token",
+      "path": "primitive.composition.value-64d095f2fecf"
+    },
+    {
+      "id": "primitive.composition.parameter-4195a36ac5cdc03a2a0c",
+      "kind": "token",
+      "path": "primitive.composition.parameter-4195a36ac5cdc03a2a0c"
+    },
+    {
+      "id": "primitive.composition.value-52ab8565252e",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-78625046af02",
+      "kind": "token",
+      "path": "primitive.composition.value-78625046af02"
+    },
+    {
+      "id": "primitive.composition.value-c10b7e1d119f",
+      "kind": "token",
+      "path": "primitive.composition.value-c10b7e1d119f"
+    },
+    {
+      "id": "primitive.composition.parameter-c6f676ac85b6af568afb",
+      "kind": "token",
+      "path": "primitive.composition.parameter-c6f676ac85b6af568afb"
+    },
+    {
+      "id": "primitive.composition.value-ab14b3e03d96",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-a9f23226d971",
+      "kind": "token",
+      "path": "primitive.composition.value-a9f23226d971"
+    },
+    {
+      "id": "primitive.composition.value-cbb01c396fd7",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-d6ab3ca69906",
+      "kind": "token",
+      "path": "primitive.composition.value-d6ab3ca69906"
+    },
+    {
+      "id": "primitive.composition.value-99ee50221221",
+      "kind": "token",
+      "path": "primitive.composition.value-99ee50221221"
+    },
+    {
+      "id": "primitive.composition.parameter-48301e40b2a009a5a902",
+      "kind": "token",
+      "path": "primitive.composition.parameter-48301e40b2a009a5a902"
+    },
+    {
+      "id": "primitive.composition.parameter-57df7e17fbd3739f95d3",
+      "kind": "token",
+      "path": "primitive.composition.parameter-57df7e17fbd3739f95d3"
+    },
+    {
+      "id": "primitive.composition.value-112b25847020",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-f35c8c124685",
+      "kind": "token",
+      "path": "primitive.composition.value-f35c8c124685"
+    },
+    {
+      "id": "primitive.composition.value-e56bde070d03",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-550d1671b7f9",
+      "kind": "token",
+      "path": "primitive.composition.value-550d1671b7f9"
+    },
+    {
+      "id": "primitive.composition.value-672ca1c737d9",
+      "kind": "token",
+      "path": "primitive.composition.value-672ca1c737d9"
+    },
+    {
+      "id": "primitive.composition.value-7c1ff616cc65",
+      "kind": "token",
+      "path": "primitive.composition.value-7c1ff616cc65"
+    },
+    {
+      "id": "primitive.composition.value-088f2449c36f",
+      "kind": "token",
+      "path": "primitive.composition.value-088f2449c36f"
+    },
+    {
+      "id": "primitive.composition.value-b5e2bc59ff0f",
+      "kind": "token",
+      "path": "primitive.composition.value-b5e2bc59ff0f"
+    },
+    {
+      "id": "primitive.composition.parameter-8ccd5f7abacf65d688a4",
+      "kind": "token",
+      "path": "primitive.composition.parameter-8ccd5f7abacf65d688a4"
+    },
+    {
+      "id": "primitive.composition.parameter-7e7ff85b654e5452081a",
+      "kind": "token",
+      "path": "primitive.composition.parameter-7e7ff85b654e5452081a"
+    },
+    {
+      "id": "primitive.composition.value-0a28863d28e3",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-97686e0a3dc8",
+      "kind": "token",
+      "path": "primitive.composition.value-97686e0a3dc8"
+    },
+    {
+      "id": "primitive.composition.value-35da2da1b5fb",
+      "kind": "token",
+      "path": "primitive.composition.value-35da2da1b5fb"
+    },
+    {
+      "id": "primitive.composition.value-018fa96a4471",
+      "kind": "token",
+      "path": "primitive.composition.value-018fa96a4471"
+    },
+    {
+      "id": "primitive.composition.value-a8ef04e19604",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-93f58d120ba0",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-c5c3ce3871a4",
+      "kind": "token",
+      "path": "primitive.composition.value-c5c3ce3871a4"
+    },
+    {
+      "id": "primitive.composition.value-dbd729b0a3fb",
+      "kind": "token",
+      "path": "primitive.composition.value-dbd729b0a3fb"
+    },
+    {
+      "id": "primitive.composition.parameter-d01a6e78d1a5b7c9da18",
+      "kind": "token",
+      "path": "primitive.composition.parameter-d01a6e78d1a5b7c9da18"
+    },
+    {
+      "id": "primitive.composition.parameter-f5b9763ab0e4ff101afd",
+      "kind": "token",
+      "path": "primitive.composition.parameter-f5b9763ab0e4ff101afd"
+    },
+    {
+      "id": "primitive.composition.value-9414386e91ac",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-49ac7c7a17eb",
+      "kind": "token",
+      "path": "primitive.composition.value-49ac7c7a17eb"
+    },
+    {
+      "id": "primitive.composition.parameter-a6d218ab81bca88cf18f",
+      "kind": "token",
+      "path": "primitive.composition.parameter-a6d218ab81bca88cf18f"
+    },
+    {
+      "id": "primitive.composition.value-ebda99bde133",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.parameter-98a0822dd87fab47b9be",
+      "kind": "token",
+      "path": "primitive.composition.parameter-98a0822dd87fab47b9be"
+    },
+    {
+      "id": "primitive.composition.value-569bd25dce87",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-a8d76ffd0896",
+      "kind": "token",
+      "path": "primitive.composition.value-a8d76ffd0896"
+    },
+    {
+      "id": "primitive.composition.value-b875e5d71c07",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.value-317b32c14369",
+      "kind": "token",
+      "path": "primitive.composition.value-317b32c14369"
+    },
+    {
+      "id": "primitive.composition.value-d2cf63c704ae",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-1",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-1"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-2",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-2"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-3",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-3"
+    },
+    {
+      "id": "primitive.composition.parameter-d09c7f0473864e1a249f",
+      "kind": "token",
+      "path": "primitive.composition.parameter-d09c7f0473864e1a249f"
+    },
+    {
+      "id": "primitive.composition.parameter-e175b549e2bf1eeac5e2",
+      "kind": "token",
+      "path": "primitive.composition.parameter-e175b549e2bf1eeac5e2"
+    },
+    {
+      "id": "primitive.composition.parameter-23d1492a2d9830137c1f",
+      "kind": "token",
+      "path": "primitive.composition.parameter-23d1492a2d9830137c1f"
+    },
+    {
+      "id": "primitive.composition.parameter-5a70ab4c91a06fd12c95",
+      "kind": "token",
+      "path": "primitive.composition.parameter-5a70ab4c91a06fd12c95"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-4",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-5",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-5"
+    },
+    {
+      "id": "primitive.composition.parameter-f9de783c0371f17280c6",
+      "kind": "token",
+      "path": "primitive.composition.parameter-f9de783c0371f17280c6"
+    },
+    {
+      "id": "primitive.composition.parameter-2dae6ec63c95d27f6bb2",
+      "kind": "token",
+      "path": "primitive.composition.parameter-2dae6ec63c95d27f6bb2"
+    },
+    {
+      "id": "primitive.composition.parameter-cde071141e7c2413f95f",
+      "kind": "token",
+      "path": "primitive.composition.parameter-cde071141e7c2413f95f"
+    },
+    {
+      "id": "primitive.composition.parameter-a4ffac5aa3a5b5ab6418",
+      "kind": "token",
+      "path": "primitive.composition.parameter-a4ffac5aa3a5b5ab6418"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-6",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-10",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-10"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-11",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-11"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-12",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-12"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-13",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-13"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-15",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-15"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-16",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-16"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-17",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-17"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-20",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-20"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-21",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-21"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-22",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-22"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-23",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-23"
+    },
+    {
+      "id": "primitive.composition.parameter-24a3392e10ee7aec4817",
+      "kind": "token",
+      "path": "primitive.composition.parameter-24a3392e10ee7aec4817"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-24",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-workspace-25",
+      "kind": "token",
+      "path": "primitive.composition.editor-workspace-25"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-heading",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-heading"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-selection",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-selection"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-color-height",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-color-height"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-swatch-width",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-swatch-width"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-swatch-height",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-swatch-height"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-error",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-error"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-contrast-pass",
+      "kind": "token",
+      "path": "primitive.composition.editor-appearance-contrast-pass"
+    },
+    {
+      "id": "primitive.composition.parameter-dbde0f225cc1149de3df",
+      "kind": "token",
+      "path": "primitive.composition.parameter-dbde0f225cc1149de3df"
+    },
+    {
+      "id": "primitive.composition.parameter-8968b7e734341da14ea9",
+      "kind": "token",
+      "path": "primitive.composition.parameter-8968b7e734341da14ea9"
+    },
+    {
+      "id": "primitive.composition.editor-appearance-contrast-fail",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-color-row-columns",
+      "kind": "css-recipe"
+    },
+    {
+      "id": "primitive.composition.editor-navigation-selected",
+      "kind": "token",
+      "path": "primitive.composition.editor-navigation-selected"
+    },
+    {
+      "id": "primitive.composition.editor-preview-inset",
+      "kind": "token",
+      "path": "primitive.composition.editor-preview-inset"
+    },
+    {
+      "id": "component.composition.projects.page.margin.1",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-0f308cfb7ef3"
+    },
+    {
+      "id": "component.composition.app.page.padding.1",
+      "kind": "token",
+      "path": "component.composition.app.page.padding.1"
+    },
+    {
+      "id": "component.composition.app.page-p.max-width.2",
+      "kind": "token",
+      "path": "component.composition.app.page-p.max-width.2"
+    },
+    {
+      "id": "component.composition.catalog-navigation.scroll-table.min-width.1",
+      "kind": "token",
+      "path": "component.composition.catalog-navigation.scroll-table.min-width.1"
+    },
+    {
+      "id": "component.composition.foundations.table.border-collapse.1",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-93bc5d02dc2a"
+    },
+    {
+      "id": "component.composition.foundations.table-th-table-td.border-bottom-detail.2",
+      "kind": "token",
+      "path": "component.composition.foundations.table-th-table-td.border-bottom-detail.2"
+    },
+    {
+      "id": "component.composition.foundations.table-tr-selected-th.border-inline-start.3",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-91d06f966b2f"
+    },
+    {
+      "id": "component.composition.foundations.table-tr-selected-th.font-weight.4",
+      "kind": "token",
+      "path": "component.composition.foundations.table-tr-selected-th.font-weight.4"
+    },
+    {
+      "id": "component.composition.foundations.table-tr-selected-td.font-weight.5",
+      "kind": "token",
+      "path": "component.composition.foundations.table-tr-selected-td.font-weight.5"
+    },
+    {
+      "id": "component.composition.foundations.table-tr-selected-button.border.6",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-71d3b10ed342"
+    },
+    {
+      "id": "component.composition.global.body.min-width.1",
+      "kind": "token",
+      "path": "component.composition.global.body.min-width.1"
+    },
+    {
+      "id": "component.composition.ui-lab-page.page.width.1",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-1ff96226851b"
+    },
+    {
+      "id": "component.composition.ui-lab-page.page.margin.2",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-0f308cfb7ef3"
+    },
+    {
+      "id": "component.composition.ui-lab-page.page.padding.3",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-5fb29ff18bea"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header.max-width.4",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.header.max-width.4"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header.margin-bottom.5",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.header.margin-bottom.5"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-h1.color.6",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.header-h1.color.6"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-h1.font-size.7",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-c0819ab76973"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-h1.letter-spacing.8",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-67623b31560f"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-p-not-eyebrow.margin.9",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-b6ea60f7e2b0"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-p-not-eyebrow.color.10",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.header-p-not-eyebrow.color.10"
+    },
+    {
+      "id": "component.composition.ui-lab-page.header-p-not-eyebrow.font-size.11",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.header-p-not-eyebrow.font-size.11"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.margin.12",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-0857fa0bac33"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.color.13",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.eyebrow.color.13"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.font-size.14",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.eyebrow.font-size.14"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.font-weight.15",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.eyebrow.font-weight.15"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.letter-spacing.16",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-52ab8565252e"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section.margin-top.17",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section.margin-top.17"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section.border.18",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section.border.18"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section.border-radius.19",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section.border-radius.19"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section.background.20",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section.background.20"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section.padding.21",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section.padding.21"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section-h2.color.22",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section-h2.color.22"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section-h2.font-size.23",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section-h2.font-size.23"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section-p.margin.24",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-ab14b3e03d96"
+    },
+    {
+      "id": "component.composition.ui-lab-page.section-p.color.25",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.section-p.color.25"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics.gap.26",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics.gap.26"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics.margin.27",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-cbb01c396fd7"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-div.gap.28",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-div.gap.28"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-div.border-bottom.29",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-div.border-bottom.29"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-div.padding-bottom.30",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-div.padding-bottom.30"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-dt.color.31",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-dt.color.31"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-dd.color.32",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-dd.color.32"
+    },
+    {
+      "id": "component.composition.ui-lab-page.diagnostics-dd.font-weight.33",
+      "kind": "token",
+      "path": "component.composition.ui-lab-page.diagnostics-dd.font-weight.33"
+    },
+    {
+      "id": "component.composition.base-ui-demos.demos.gap.1",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.demos.gap.1"
+    },
+    {
+      "id": "component.composition.base-ui-demos.demos.grid-template-columns.2",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-112b25847020"
+    },
+    {
+      "id": "component.composition.base-ui-demos.demo.border.3",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.demo.border.3"
+    },
+    {
+      "id": "component.composition.base-ui-demos.demo.border-radius.4",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.demo.border-radius.4"
+    },
+    {
+      "id": "component.composition.base-ui-demos.demo.padding.5",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.demo.padding.5"
+    },
+    {
+      "id": "component.composition.base-ui-demos.label.margin.6",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-e56bde070d03"
+    },
+    {
+      "id": "component.composition.base-ui-demos.label.color.7",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.label.color.7"
+    },
+    {
+      "id": "component.composition.base-ui-demos.label.font-size.8",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.label.font-size.8"
+    },
+    {
+      "id": "component.composition.base-ui-demos.label.font-weight.9",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.label.font-weight.9"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.width.10",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch.width.10"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.height.11",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch.height.11"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.padding.12",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch.padding.12"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.border-radius.13",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch.border-radius.13"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.background.14",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch.background.14"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch.transition.15",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-0a28863d28e3"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch-data-checked.background.16",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch-data-checked.background.16"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch-focus-visible-trigger-focus-visible-close-focus-visible.outline.17",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch-focus-visible-trigger-focus-visible-close-focus-visible.outline.17"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch-focus-visible-trigger-focus-visible-close-focus-visible.outline-offset.18",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.switch-focus-visible-trigger-focus-visible-close-focus-visible.outline-offset.18"
+    },
+    {
+      "id": "component.composition.base-ui-demos.thumb.width.19",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.thumb.width.19"
+    },
+    {
+      "id": "component.composition.base-ui-demos.thumb.height.20",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.thumb.height.20"
+    },
+    {
+      "id": "component.composition.base-ui-demos.thumb.background.21",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.thumb.background.21"
+    },
+    {
+      "id": "component.composition.base-ui-demos.thumb.transition.22",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-a8ef04e19604"
+    },
+    {
+      "id": "component.composition.base-ui-demos.switch-data-checked-thumb.transform.23",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-93f58d120ba0"
+    },
+    {
+      "id": "component.composition.base-ui-demos.trigger-close.border.24",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.trigger-close.border.24"
+    },
+    {
+      "id": "component.composition.base-ui-demos.trigger-close.border-radius.25",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.trigger-close.border-radius.25"
+    },
+    {
+      "id": "component.composition.base-ui-demos.trigger-close.background.26",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.trigger-close.background.26"
+    },
+    {
+      "id": "component.composition.base-ui-demos.trigger-close.color.27",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.trigger-close.color.27"
+    },
+    {
+      "id": "component.composition.base-ui-demos.trigger-close.padding.28",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-9414386e91ac"
+    },
+    {
+      "id": "component.composition.base-ui-demos.backdrop.background.29",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.backdrop.background.29"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.width.30",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-ebda99bde133"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.transform.31",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-569bd25dce87"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.border-radius.32",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialog.border-radius.32"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.background.33",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialog.background.33"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.box-shadow.34",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialog.box-shadow.34"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialog.padding.35",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialog.padding.35"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialogtitle.font-size.36",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialogtitle.font-size.36"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialogdescription.margin.37",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-b875e5d71c07"
+    },
+    {
+      "id": "component.composition.base-ui-demos.dialogdescription.color.38",
+      "kind": "token",
+      "path": "component.composition.base-ui-demos.dialogdescription.color.38"
+    },
+    {
+      "id": "component.composition.projects.heading.margin-block.space-layout-large.default",
+      "kind": "token",
+      "path": "component.composition.projects.heading.margin-block.space-layout-large.default"
+    },
+    {
+      "id": "component.composition.projects.page-h1.margin-block.space-layout-large.default",
+      "kind": "token",
+      "path": "component.composition.projects.page-h1.margin-block.space-layout-large.default"
+    },
+    {
+      "id": "component.composition.projects.page-a-focus-visible.outline.dimension-focus-ring-width.default",
+      "kind": "token",
+      "path": "component.composition.projects.page-a-focus-visible.outline.dimension-focus-ring-width.default"
+    },
+    {
+      "id": "component.composition.projects.page-a-focus-visible.outline-offset.dimension-focus-ring-offset.default",
+      "kind": "token",
+      "path": "component.composition.projects.page-a-focus-visible.outline-offset.dimension-focus-ring-offset.default"
+    },
+    {
+      "id": "component.composition.projects.limit.font-size.dimension-text-small.default",
+      "kind": "token",
+      "path": "component.composition.projects.limit.font-size.dimension-text-small.default"
+    },
+    {
+      "id": "component.composition.projects.metadata.font-size.dimension-text-small.default",
+      "kind": "token",
+      "path": "component.composition.projects.metadata.font-size.dimension-text-small.default"
+    },
+    {
+      "id": "component.composition.projects.primarylink.padding.space-control-block.default",
+      "kind": "token",
+      "path": "component.composition.projects.primarylink.padding.space-control-block.default"
+    },
+    {
+      "id": "component.composition.projects.primarylink.padding.space-control-inline.default",
+      "kind": "token",
+      "path": "component.composition.projects.primarylink.padding.space-control-inline.default"
+    },
+    {
+      "id": "component.composition.projects.primarylink.border-radius.radius-control-default.default",
+      "kind": "token",
+      "path": "component.composition.projects.primarylink.border-radius.radius-control-default.default"
+    },
+    {
+      "id": "component.composition.projects.primarylink.font-weight.font-weight-action.default",
+      "kind": "token",
+      "path": "component.composition.projects.primarylink.font-weight.font-weight-action.default"
+    },
+    {
+      "id": "component.composition.foundations.table-heading.font-weight.default",
+      "kind": "token",
+      "path": "component.composition.foundations.table-heading.font-weight.default"
+    },
+    {
+      "id": "component.composition.ui-lab-page.eyebrow.text-transform.default",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-d2cf63c704ae"
+    },
+    {
+      "id": "component.composition.catalog.swatch.width.default",
+      "kind": "token",
+      "path": "component.composition.catalog.swatch.width.default"
+    },
+    {
+      "id": "component.composition.catalog.swatch.height.default",
+      "kind": "token",
+      "path": "component.composition.catalog.swatch.height.default"
+    },
+    {
+      "id": "component.composition.catalog.swatch.margin-right.default",
+      "kind": "token",
+      "path": "component.composition.catalog.swatch.margin-right.default"
+    },
+    {
+      "id": "component.composition.catalog.swatch.border.default",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-71d3b10ed342"
+    },
+    {
+      "id": "component.composition.editor.workspace.1",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.1"
+    },
+    {
+      "id": "component.composition.editor.workspace.2",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.2"
+    },
+    {
+      "id": "component.composition.editor.workspace.3",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.3"
+    },
+    {
+      "id": "component.composition.editor.workspace.4",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-workspace-4"
+    },
+    {
+      "id": "component.composition.editor.workspace.5",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.5"
+    },
+    {
+      "id": "component.composition.editor.workspace.6",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-workspace-6"
+    },
+    {
+      "id": "component.composition.editor.workspace.7",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.7"
+    },
+    {
+      "id": "component.composition.editor.workspace.8",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.8"
+    },
+    {
+      "id": "component.composition.editor.workspace.9",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.9"
+    },
+    {
+      "id": "component.composition.editor.workspace.10",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.10"
+    },
+    {
+      "id": "component.composition.editor.workspace.11",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.11"
+    },
+    {
+      "id": "component.composition.editor.workspace.12",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.12"
+    },
+    {
+      "id": "component.composition.editor.workspace.13",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.13"
+    },
+    {
+      "id": "component.composition.editor.workspace.14",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.14"
+    },
+    {
+      "id": "component.composition.editor.workspace.15",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.15"
+    },
+    {
+      "id": "component.composition.editor.workspace.16",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.16"
+    },
+    {
+      "id": "component.composition.editor.workspace.17",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.17"
+    },
+    {
+      "id": "component.composition.editor.workspace.18",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.18"
+    },
+    {
+      "id": "component.composition.editor.workspace.19",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.19"
+    },
+    {
+      "id": "component.composition.editor.workspace.20",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.20"
+    },
+    {
+      "id": "component.composition.editor.workspace.21",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.21"
+    },
+    {
+      "id": "component.composition.editor.workspace.22",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.22"
+    },
+    {
+      "id": "component.composition.editor.workspace.23",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.23"
+    },
+    {
+      "id": "component.composition.editor.workspace.24",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-workspace-24"
+    },
+    {
+      "id": "component.composition.editor.workspace.25",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.25"
+    },
+    {
+      "id": "component.composition.editor.workspace.26",
+      "kind": "token",
+      "path": "component.composition.editor.workspace.26"
+    },
+    {
+      "id": "component.composition.editor.appearance.heading",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.heading"
+    },
+    {
+      "id": "component.composition.editor.appearance.selection",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.selection"
+    },
+    {
+      "id": "component.composition.editor.appearance.color-height",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.color-height"
+    },
+    {
+      "id": "component.composition.editor.appearance.swatch-width",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.swatch-width"
+    },
+    {
+      "id": "component.composition.editor.appearance.swatch-height",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.swatch-height"
+    },
+    {
+      "id": "component.composition.editor.appearance.error",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.error"
+    },
+    {
+      "id": "component.composition.editor.appearance.contrast-pass",
+      "kind": "token",
+      "path": "component.composition.editor.appearance.contrast-pass"
+    },
+    {
+      "id": "component.composition.editor.appearance.contrast-fail",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-appearance-contrast-fail"
+    },
+    {
+      "id": "component.composition.editor.color-row-columns",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-color-row-columns"
+    },
+    {
+      "id": "component.composition.editor.navigation.1",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.1"
+    },
+    {
+      "id": "component.composition.editor.navigation.2",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.2"
+    },
+    {
+      "id": "component.composition.editor.navigation.3",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.3"
+    },
+    {
+      "id": "component.composition.editor.navigation.4",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.value-cbb01c396fd7"
+    },
+    {
+      "id": "component.composition.editor.navigation.5",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.5"
+    },
+    {
+      "id": "component.composition.editor.navigation.6",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.6"
+    },
+    {
+      "id": "component.composition.editor.navigation.7",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.7"
+    },
+    {
+      "id": "component.composition.editor.navigation.8",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.8"
+    },
+    {
+      "id": "component.composition.editor.navigation.9",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.9"
+    },
+    {
+      "id": "component.composition.editor.navigation.10",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.10"
+    },
+    {
+      "id": "component.composition.editor.navigation.11",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.11"
+    },
+    {
+      "id": "component.composition.editor.navigation.12",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.12"
+    },
+    {
+      "id": "component.composition.editor.navigation.13",
+      "kind": "token",
+      "path": "component.composition.editor.navigation.13"
+    },
+    {
+      "id": "component.composition.editor.navigation.14",
+      "kind": "css-recipe-output",
+      "reference": "primitive.composition.editor-workspace-24"
+    },
+    {
+      "id": "component.composition.editor.preview-inset",
+      "kind": "token",
+      "path": "component.composition.editor.preview-inset"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-ffffff",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-ffffff"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-f1f5f9",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-f1f5f9"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-0f172a",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-0f172a"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-475569",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-475569"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-64748b",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-64748b"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-1d4ed8",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-1d4ed8"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-1e40af",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-1e40af"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-b91c1c",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-b91c1c"
+    },
+    {
+      "id": "component.composition.catalog.primitive-sample.primitive.color.hex-166534",
+      "kind": "token",
+      "path": "component.composition.catalog.primitive-sample.primitive.color.hex-166534"
+    }
+  ]
+}

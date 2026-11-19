@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/primitives.schema.json",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "primitives", "sources"],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "primitives": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/primitive"
+          }
+        },
+        "sources": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "$ref": "#/$defs/authorityId"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "primitives", "sources"],
+      "properties": {
+        "schemaVersion": {
+          "const": 4
+        },
+        "primitives": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "https://agentic-design.local/schemas/editor-model.schema.json#/$defs/primitive"
+          }
+        },
+        "sources": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "$ref": "#/$defs/authorityId"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "authorityId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "reference": {
+      "type": "string",
+      "pattern": "^primitive(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$"
+    },
+    "primitive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "value", "status", "source"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/reference"
+        },
+        "type": {
+          "enum": ["color", "dimension", "font-weight"]
+        },
+        "value": {},
+        "status": {
+          "const": "reference"
+        },
+        "source": {
+          "$ref": "#/$defs/authorityId"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "color"
+              }
+            },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "dimension"
+              }
+            },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "pattern": "^-?(?:0|[0-9]+(?:\\.[0-9]+)?)(?:px|rem)$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "font-weight"
+              }
+            },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 1000
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "path", "decision", "identityClaim"],
+      "properties": {
+        "kind": {
+          "enum": ["validated-laboratory-reference", "proposed-laboratory-reference"]
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identityClaim": {
+          "const": "none"
+        }
+      }
+    }
+  }
+}

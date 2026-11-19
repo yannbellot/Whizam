@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "date": "2026-11-13",
+  "sourceBase": "31bd736",
+  "tests": {
+    "chatAndControl": 27,
+    "designSystem": 114,
+    "lint": "passed"
+  },
+  "native": {
+    "cases": [
+      "navigation in native header, hidden title, no project button row, project menus retained, concise accessible workshop",
+      "Codex account menu opens the generated URL directly without intermediate UI, duplicate click or stale project; foreign URLs rejected; browser and provider simulated",
+      "account menu follows confirmed state, login notice, cancelled disconnect preserves account, confirmed logout updates title and notice; simulated account",
+      "both native workshop sidebars measure exactly 260px",
+      "opening Loomata starts owned services and displays UI Lab for the application source kit",
+      "idempotent start reuses the same native editor document",
+      "Storybook opens inside Loomata and does not render the unsaved draft",
+      "project preview loads the real source home in the same window, without writer bootstrap",
+      "UI Lab → Storybook → preview → UI Lab retains the exact editor, reader and draft",
+      "native document reload asks before discarding the draft and preserves it on cancellation",
+      "JavaScript draft confirmation is relayed to native sheet and preserves by default",
+      "real UI Lab save propagates to already-open integrated Storybook",
+      "remote and cross-service navigation are denied before leaving the local reader",
+      "stop and close confirmations retain the workspace and draft when cancelled",
+      "native Quit menu cancellation preserves the same unsaved workspace",
+      "confirmed stop releases the views; restart creates a fresh editor with the saved value"
+    ],
+    "driver": "Native AppKit actions and real WKWebView; no physical clicks",
+    "status": "passed"
+  },
+  "realAccount": {
+    "connectedLabelObserved": true,
+    "disconnectConfirmationObserved": true,
+    "cancelPreservedAccount": true,
+    "realLogoutExecuted": false
+  },
+  "build": {
+    "nativeSHA256": "f0c43be108038914b1c20da072c7f778839ba3cd225dec91e8b8b1ed7ae5ca06",
+    "sdk": "MacOSX26.5.sdk",
+    "signature": "local ad hoc, strict verification passed",
+    "instrumented": false
+  },
+  "reviewMode": "sequential, same agent, not independent"
+}

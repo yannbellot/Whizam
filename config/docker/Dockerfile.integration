@@ -1,0 +1,12 @@
+FROM node:24.22.0-bookworm-slim
+WORKDIR /workspace
+COPY package.json package-lock.json ./
+RUN npm install --global npm@11.8.0 --no-audit --no-fund \
+    && npm ci --include=dev --no-audit --no-fund
+COPY app ./app
+COPY tests ./tests
+COPY drizzle ./drizzle
+COPY scripts/database.ts ./scripts/database.ts
+COPY config/testing/vitest.integration.config.ts ./config/testing/vitest.integration.config.ts
+ENV NODE_ENV=test
+CMD ["node", "node_modules/vitest/vitest.mjs", "run", "--config", "config/testing/vitest.integration.config.ts"]

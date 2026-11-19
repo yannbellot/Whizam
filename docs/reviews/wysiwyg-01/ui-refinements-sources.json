@@ -1,0 +1,12 @@
+{
+  "base": "1580572596d8a774885834604af513aeb4320d11",
+  "sourceHashes": {
+    "scripts/test-exploration-ui.mjs": "537e052d4f38a14f94623f019418640c9324effcccdba05ba5351137044d5fdc",
+    "scripts/test-visual-inspector-ui.mjs": "730df57de4fcfc8bf2b5f85721c32140667ef23f28c7f6fa54db56b7cf7e825e",
+    "src/ui-lab/editor/TokenInspector.tsx": "24596a46aaaf833db6d4db92efc14846b5c586eb05a54ec35a6bd9d7df4e344b",
+    "src/ui-lab/editor/VisualInspector.tsx": "eb5046521e4966560000b5e39f81188e82c2a8caf6bcab0e324606f1dbb27496",
+    "src/ui-lab/editor/Workspace.tsx": "ca45f4b70589baec4ad03d2726c07bd0465630d57beaa3d9d0be3e5d6ddc4e50",
+    "src/ui-lab/editor/scenes.tsx": "e307087abefaafa89830ba5c434a88db73f73a4a93da6eca033bb88711e3617e",
+    "src/ui-lab/editor/workspace.module.css": "21e6df2fc114bc959988edc0d2b9054b4caa5d91066269808deef5baaf681a42"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "base": "f33eff6",
+  "date": "2026-11-05",
+  "status": "technically-qualified-human-acceptance-deferred",
+  "designSystemTests": 107,
+  "serverTests": 65,
+  "fontHttpTests": 1,
+  "compiledFlows": 32,
+  "persistentFlows": 16,
+  "recoveryScenarios": 4,
+  "realImports": [
+    "Montserrat",
+    "Roboto"
+  ],
+  "portableAppAndStorybookExternalNetworkBlocked": true,
+  "independentReview": false
+}

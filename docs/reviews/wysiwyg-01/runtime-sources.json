@@ -1,0 +1,16 @@
+{
+  "base": "0e7f946f75782602f12c85bfb412295bdb80e57c",
+  "sourceHashes": {
+    "src/core/visual-intent.ts": "a2bab78bc3dd44a71b358e9844ceaa5a4f4e729302e940f79b8f8ae9685625f4",
+    "src/ui-lab/editor/VisualInspector.tsx": "58f15a0de69f053b5d3c471d82be84471067fd9b7d50f402c7a7e9beb3c0cba2",
+    "src/ui-lab/editor/PageWorkspace.tsx": "efc8cf86ab7effe1d3105ec79c570796537ab6f3e2ee07d81ac738505bd60f83",
+    "src/ui-lab/editor/visual-projection.ts": "68fd649eaad8ff486bb61c8b02a5b88f2b8e900788d6a70974bfaae8a1c071fc",
+    "src/ui-lab/editor/visual-media.ts": "83e14c8439396f1ea82df6ce0e843e93de0ce9b0f02afa1bcc836f2c04018de3",
+    "src/ui-lab/editor/visual-inspector.module.css": "e6abeef8a2c685c8110098d5549571f0060eef4f709b31136a760d5a3ff9d31c",
+    "scripts/agent-chat/visual-intents.mjs": "b4479e458cdbeaa73b16632d573c5bb062a05abb53b4bab4915f2e4ada3adacf",
+    "scripts/design-editor/read-snapshot.mjs": "0dfb183e05b2ff18ac385523a949222a0a5a33438d45c75fcbf3479e5ad0a35e",
+    "scripts/editor-application-preview.ts": "2416ba4bdb6f16af27852e04b2c2205673dbdc39a88633d002539f50d29963a4",
+    "scripts/test-visual-inspector-ui.mjs": "4f0d4af59714544bc7ce47b33b28eae8ff6f29edc2df6dbff0daf045ed29681e",
+    "tests/visual-intents.test.mjs": "8a8692660c7a8ee480dc51f51e575b40874ad366b73137cffa89ec6a98221baa"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": [
+    "closed source selection contains the shared chat, native host and contract; no Git, managed account or conversation copied",
+    "new extracted project prepares successfully with its own dependencies and validates 21 skills / 4 roles",
+    "extracted CLI starts its own chat origin and renders an empty disconnected snapshot; no parent repository or native wrapper needed"
+  ],
+  "agentKit": "PASS: 21 skills, 4 roles; references and frontmatter valid\nStructural validation only; native discovery and behavior require separate evidence",
+  "selectedFiles": 984
+}

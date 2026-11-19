@@ -1,0 +1,35 @@
+{
+  "before": {
+    "http": 503,
+    "code": "service-unavailable",
+    "cause": "workspace-git-root-mismatch"
+  },
+  "after": {
+    "http": 200,
+    "connected": false,
+    "cachedPresent": false
+  },
+  "realFigmaRead": "not executed",
+  "noToken": {
+    "http": 422,
+    "code": "figma-connection-required"
+  },
+  "rootAccepted": true,
+  "sourcesAndDataUnchanged": true,
+  "task": "UI-ARCH-04-figma-read",
+  "base": "b2b040b",
+  "change": "initialize Git metadata for run-Ag62zM fictive project; no source commit",
+  "canonicalCodeChanged": false,
+  "windowsReplaced": false,
+  "secretsPersistedByDiagnostic": false,
+  "status": "local blocker fixed; provided token rejected by Figma",
+  "realReadTest": {
+    "directFigmaHttp": 403,
+    "directFigmaReason": "Invalid token",
+    "loomataHttp": 422,
+    "loomataCode": "figma-access-denied",
+    "fileContentRead": false,
+    "tokenOrPrivateUrlInArtifact": false,
+    "accessControlChanged": false
+  }
+}

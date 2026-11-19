@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "cases": [
+    "native DS writer returned saved, canonical component source changed, requested rem size rendered after reload",
+    "initial numeric token value saved again and reloaded; CSS controls disabled during native draft and restored"
+  ],
+  "initialValue": "1",
+  "verifiedValue": "1.25"
+}

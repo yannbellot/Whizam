@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": [
+    "mobile confirmation, card and form use separated grid and no horizontal overflow",
+    "503 safe error page and explicit GET retry recover without a replayed write"
+  ],
+  "viewportCases": [],
+  "source": "loans witness",
+  "base": "44e97da88e4c97720b9177a6e0e63b7cbe0e45c0"
+}

@@ -1,0 +1,9 @@
+# WYSIWYG-01 — État et repères du panneau droit
+
+Cible application, base `3a70e30`. Retirer la section « Design system » et son bouton d’actualisation, déplacer le sélecteur d’état sous le titre, réduire les repères de côté et de coin à 10 px. Les groupes de tokens restent accessibles sous « Réglages enregistrés du design system ». La portée rejoint les commandes de transmission et le suivi des lots conserve son rôle. Périmètre : inspecteur visuel, panneau des tokens, raccordement dans le UI Lab et vérifications.
+
+Procédures applicatives de réalisation et de revue reconduites. GPT-6.1 Sol · Moyenne. Vérifier l’ordre titre/état, la sélection d’un état fourni pour la partie exacte, la disponibilité des champs associés et la mesure des repères.
+
+Les correspondances continuent d’être lues quand le contexte chargé change. Une lecture échouée ne fournit pas de révision pour une retouche partagée. Les catégories Couleurs, Bordures et Espacements présentent les tokens de l’état sélectionné. « Portée de la demande » indique la cible du futur lot et « Lots reçus » permet d’en consulter le suivi.
+
+**En revue après qualification technique, acceptation humaine différée.** Parcours ciblé dans la galerie sous Chromium 156 et WebKit 27.2. En-tête et passage à Survol vérifiés avec les champs de tokens correspondants. Les huit repères de côté et de coin mesurent 10 px. La sélection du texte interne n’expose pas le sélecteur de son parent. Les 13 cas du parcours Chromium galerie et Pages passent à 1280 et 1440 px, dont la portée et l’admission locale des lots. Parcours d’application à une source via l’assistant non rejoué. Contrôle de types et génération en copie isolée conformes. Lint sans erreur, avertissement préexistant sur un effet React. Revues design et technique séquentielles, même agent. Doc updated. [Aperçu local](http://127.0.0.1:50044/ui-lab?scene=components%2FOverview).

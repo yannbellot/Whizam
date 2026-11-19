@@ -1,0 +1,13 @@
+# 040 — Inspecteur visuel commun aux pages et scènes DS
+
+16 novembre 2026, choix technique délégué dans WYSIWYG-01. La reprise explicite autorise l’implémentation ; réglage du client non vérifiable. [Contrat](../architecture/visual-intent-contract.md), [guide](../design-system/visual-inspector.md).
+
+Un seul VisualInspector possède sélection exacte, projection, champs, historique et reçus. L’adaptateur Pages garde visual-intent v1 inchangé. L’adaptateur DS fournit une scène/génération/renderId réels, un instantané du contexte projet lorsqu’il existe et les outils canoniques DS dans sa section Design system. Sans coordination disponible, la projection reste utilisable et la transmission est indisponible, sans identifiant fabriqué.
+
+Ajouter design-visual-intent v1 comme variante fermée du protocole de demandes, distincte des pages ; union de lecture compatible avec les anciens reçus. La scène reste une observation de rendu, pas un droit ni un chemin de source. Une cible design-part porte target/variant/part/state vérifiés contre les bindings DS ; une cible session garde une demande d’identification et portée instance. Un enfant sans marqueur propre n’est pas promu au parent. Révisions projet/DS, budgets et déduplication restent contrôlés côté cœur ; historique et absence de rejeu inchangés. Conversation projet existante (entityId null), sans fausse page/occurrence. Droits et accords d’application inchangés.
+
+La projection CSS reste locale même pour une intention partagée. Les opérations canoniques de tokens restent celles de 038. Pour ne pas superposer deux historiques propriétaires : un brouillon DS doit être enregistré/abandonné avant une projection CSS ; les outils canoniques sont désactivés tant qu’une retouche CSS demeure. Ils ne disparaissent pas. Un changement du brouillon ou du rendu invalide les retouches CSS. Mode Édition et sa confirmation d’abandon conservés ; le mode interactif rend tous les gestes au produit.
+
+Le raccordement porte toutes les scènes DS en iframe, sans filtre de chemin Components : galerie, exemples, variantes, compositions et catalogues. Les cartes Foundations hors iframe gardent leur inspecteur sémantique ; les pages de composants sont couvertes par le même panneau. Aucun nouveau backend, technologie, fournisseur réel ou publication.
+
+Les cibles déclarées de scène sont complétées par les marqueurs réellement rendus lorsqu’ils correspondent à une cible du contrat DS. Cette observation ne donne aucun droit de source ; parties/variantes/états sont encore vérifiés. Le nom de scène et renderId restent des observations. Les anciens lots Pages sont lus sans changement de forme/empreinte ; le nouvel historique DS exige cette version du lecteur, sans conversion destructrice pour un ancien binaire.

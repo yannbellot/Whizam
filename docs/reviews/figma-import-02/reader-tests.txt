@@ -1,0 +1,20 @@
+✔ private file cache and credentials remain separate from product state and survive a failed refresh (693.4595ms)
+✔ render download refuses an untrusted destination, non-PNG content and redirects without forwarding credentials (1.044583ms)
+✔ file links accept an optional selected node and reject unsafe/ambiguous destinations (1.430583ms)
+✔ dependency closure includes sibling variants and their transitive dependencies once (4.029959ms)
+✔ unavailable definitions remain incomplete; repeated references terminate (1.570792ms)
+✔ deep traversal exceeds eight layers and rejects duplicate identities (4.370584ms)
+✔ fingerprints ignore variables, names and canvas placement, but detect changed dependencies (11.632541ms)
+✔ internal geometry and child ordering affect hashes, object key order does not (1.764833ms)
+✔ comparison separates unchanged, local adaptation, source update, conflict and incomplete (0.161208ms)
+✔ reader uses fixed HTTPS host, no depth truncation/redirects, bounded streams and explicit refusal (25.154667ms)
+✔ invalid document or missing version is never advertised as a complete file (1.059958ms)
+✔ variant selection names carry semantics even though cosmetic definition names do not (0.866792ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1028.433416

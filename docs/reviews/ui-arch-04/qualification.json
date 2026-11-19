@@ -1,0 +1,443 @@
+{
+  "task": "UI-ARCH-04",
+  "date": "2026-11-14",
+  "baseCommit": "0b8b4ab42a4fa2a8cb36116e1d211cdf62223c88",
+  "authorityAlignmentCommit": "a78a125",
+  "status": "technically-qualified",
+  "humanAcceptance": "deferred",
+  "implementationFiles": {
+    "application/.gitignore": "0705877b0b2077127736ad91a67dff2fea265b4a0684ace5f652b7a2ccb1aeec",
+    "application/.storybook/preview.tsx": "934b0d74c7d367c3480d9e42e7092836b8fb2a6a5fc21889805fe2febd4aefdd",
+    "application/app/root.tsx": "58ca0fe2f223de39e089d7b6dd18c947f69a2756da468b0b3570f79e59681dea",
+    "application/package.json": "29f57d0286193226f7d6c85bc1b3b5c953c36d4f8a9f10c0093374444d52ca87",
+    "application/package-lock.json": "aae2ce053b03d343f71b5fa458baf7ed8466b6f9b3f65923dc880a3737917e9d",
+    "application/vite.config.ts": "5a18ec24b801423ab0d2feac73e72fde4cf749a82bc46fa282df2e80be88087e",
+    "application/scripts/project-theme.mjs": "411880e8c801e3bb6567f5226ddc7e02694ae83cbee0317b6c8fdb27f30e5287",
+    "application/scripts/editor-artifacts.mjs": "8af619145b19c19e117ea4cc6adead0e77ddb964bc83111890f17765471afa50",
+    "application/scripts/editor-snapshot.mjs": "df3e9498f9999a5f4d5f91b80add438f2c3913ed8ad1d065eee18e7f3eb27880",
+    "application/scripts/design-editor/manifest.mjs": "f8c75772f7a10a7a256d05e2b982925e2811d581818d178acb64200868197280",
+    "application/scripts/project-files.json": "6aebeb23433031f4e21059517154b06a4047992816fd45764ace1564c5aacbf7",
+    "application/src/styles/project.css": "6ee5eef65906d693913fe0d3064e9cba6b2d42cd91e778c33a5b88626392a50c",
+    "application/src/design-system/components/Button/Button.tsx": "44ecbf0e74e1d09447cc8d2e2029754b39a44356cfb01fb558d3cfbaf45360a6",
+    "application/src/design-system/components/Button/Button.design.yaml": "e303a23e682122ad9f87c291218114292dac8b9f6bc18be03ea94e0ebf296dc2",
+    "application/src/design-system/components/Button/Button.module.css": "ac71435c0744d808668df7ce20f22fc91f09be993c6c3b2794d012046ef3521f",
+    "application/src/design-system/components/Button/Button.examples.tsx": "7f28d4ac3ad10cf4e85faed12fe132ba760d7441662fe7ec87c0fc8a03b638bb",
+    "application/src/design-system/components/Button/Button.stories.tsx": "2d2117da87306d7ddc8b7927be259fa1d90a4bc450d244507741e48cb94e4950",
+    "application/src/design-system/components/Field.tsx": "4f56e465fd36183747aada96abe68938991c078f7933b47d70bd0fbe93836c25",
+    "application/src/design-system/components/Field.design.yaml": "80265c0f1b9cd0dceca4d40faebf50631cba4f9f67704dd89827717f41889e63",
+    "application/src/design-system/components/controls.module.css": "57c86cdbcb888689d74d9268dd71ca333c5335a912be2d785ccac9dcb74c9ca3",
+    "application/scripts/test-project-ui.mjs": "c6a38f94251a2cd9e678d6a63e7c51bd9108965c1b4bf347a6649a591725af6e",
+    "application/scripts/test-project-form-ssr.mjs": "716b851473fcaa835da14ca21797df5501942e46b84d36aecbb68faedfcb1aa2",
+    "application/tests/project-theme.test.mjs": "69b031c49addac15d4c433b3089fe1cf098d16ae1e79585010e25faa237581f7",
+    "application/tests/design-editor-store.test.mjs": "11d165fcccf1e3b00aefeade4de0e9d2e5aaa6430d6b62f6205ea78d746568be"
+  },
+  "implementationSha256": "c1a3d7b0031fce70711277a20dedc3eb951ee5e1bcf65b2cd1c1065bc7bb8900",
+  "projectAuthorityUnchanged": true,
+  "projectAuthoritySha256": "da941fea0395b49791900edbd7532af6d7bfeda96aabd3c24e59a02bcca8b8d6",
+  "sourceProfileEntries": 1137,
+  "node": "24.22.0",
+  "platform": "macOS arm64",
+  "packages": {
+    "tailwindcss": "4.3.5",
+    "react-aria-components": "1.22.1",
+    "react-aria": "3.53.1"
+  },
+  "tests": {
+    "designSystemAndThemes": 117,
+    "writerHttp": {
+      "status": "passed",
+      "tests": 69,
+      "failures": 0,
+      "log": ".local/ui-arch-04/qualification-wVCMbU/final-server-tests.log"
+    },
+    "lifecycleExports": 14,
+    "storybook": {
+      "status": "passed",
+      "cases": [
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "dark",
+          "status": "passed"
+        },
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "dark",
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "dark",
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "dark",
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "scheme": "dark",
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "light",
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scheme": "dark",
+          "status": "passed"
+        }
+      ]
+    },
+    "ssr": {
+      "status": "passed",
+      "cases": [
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        },
+        {
+          "browser": "chromium",
+          "version": "156.0.8078.4",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        },
+        {
+          "browser": "firefox",
+          "version": "157.0",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        },
+        {
+          "browser": "webkit",
+          "version": "27.2",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "ssr": true,
+          "hydration": true,
+          "invalidAction": 400,
+          "noDatabase": true,
+          "status": "passed"
+        }
+      ]
+    },
+    "visual": [
+      {
+        "case": "desktop-default.png",
+        "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "identical": true
+      },
+      {
+        "case": "desktop-button-hover.png",
+        "beforeSha256": "093356b60bd9443641ebe9453ace9f0c43286ab1f7cc986bd514c1476f549550",
+        "afterSha256": "093356b60bd9443641ebe9453ace9f0c43286ab1f7cc986bd514c1476f549550",
+        "identical": true
+      },
+      {
+        "case": "desktop-button-focus-hover.png",
+        "beforeSha256": "1fb427b47b2f9fedc4ae5a7b2fa5a94556892776caf2514a8bdba9399e67d51a",
+        "afterSha256": "1fb427b47b2f9fedc4ae5a7b2fa5a94556892776caf2514a8bdba9399e67d51a",
+        "identical": true
+      },
+      {
+        "case": "desktop-disabled-hover.png",
+        "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "identical": true
+      },
+      {
+        "case": "desktop-loading-hover.png",
+        "beforeSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "afterSha256": "173d9dedd4f40f87e042df4c2702ec8384479ea2d261c091f3e4ede9bd319356",
+        "identical": true
+      },
+      {
+        "case": "desktop-field-error-focus.png",
+        "beforeSha256": "fc3e4da769a0005e091e6695f9014a2c82d1a9db3fa027345f64dbab17ef6945",
+        "afterSha256": "fc3e4da769a0005e091e6695f9014a2c82d1a9db3fa027345f64dbab17ef6945",
+        "identical": true
+      },
+      {
+        "case": "desktop-multiline-error-focus.png",
+        "beforeSha256": "c8cf82e1cb4df1b885486fa5124d77f07f64ce149b8607dcfaf2451f5a3234ec",
+        "afterSha256": "c8cf82e1cb4df1b885486fa5124d77f07f64ce149b8607dcfaf2451f5a3234ec",
+        "identical": true
+      },
+      {
+        "case": "mobile-default.png",
+        "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "identical": true
+      },
+      {
+        "case": "mobile-button-hover.png",
+        "beforeSha256": "605e4f7f6c6ea2eded5daa9137464df67af384084064a10c52cfc7eb9f377b9f",
+        "afterSha256": "605e4f7f6c6ea2eded5daa9137464df67af384084064a10c52cfc7eb9f377b9f",
+        "identical": true
+      },
+      {
+        "case": "mobile-button-focus-hover.png",
+        "beforeSha256": "8c8dbedbbcaed676892ea915e5fa5d63c9dd762d6542720bce6346fe63d137b1",
+        "afterSha256": "8c8dbedbbcaed676892ea915e5fa5d63c9dd762d6542720bce6346fe63d137b1",
+        "identical": true
+      },
+      {
+        "case": "mobile-disabled-hover.png",
+        "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "identical": true
+      },
+      {
+        "case": "mobile-loading-hover.png",
+        "beforeSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "afterSha256": "f9864cf82edcdbe61b71145dcca50c16944d482796e297adad8ffda8bfd22298",
+        "identical": true
+      },
+      {
+        "case": "mobile-field-error-focus.png",
+        "beforeSha256": "a72ebaa5506402e8f4edd46a012ef6012336ca1a24b0956308fb29570c2690b9",
+        "afterSha256": "a72ebaa5506402e8f4edd46a012ef6012336ca1a24b0956308fb29570c2690b9",
+        "identical": true
+      },
+      {
+        "case": "mobile-multiline-error-focus.png",
+        "beforeSha256": "4562fa5d3c5b54137f05cbab118267fa95e1600f3b9c6fe77504a22a772bd5a9",
+        "afterSha256": "4562fa5d3c5b54137f05cbab118267fa95e1600f3b9c6fe77504a22a772bd5a9",
+        "identical": true
+      }
+    ],
+    "autonomy": {
+      "status": "passed",
+      "cases": [
+        {
+          "name": "two-new-projects-prepared",
+          "status": "passed",
+          "idsDistinct": true
+        },
+        {
+          "name": "real-save-project-isolation",
+          "status": "passed"
+        },
+        {
+          "name": "project.export",
+          "status": "passed"
+        },
+        {
+          "name": "tool.export",
+          "status": "passed"
+        },
+        {
+          "name": "project-export-preserves-sources-and-excludes-private-state",
+          "status": "passed"
+        },
+        {
+          "name": "tool-export-can-create-and-prepare",
+          "status": "passed"
+        },
+        {
+          "name": "autonomous-A",
+          "status": "passed",
+          "parentReadDenied": true,
+          "types": true,
+          "build": true,
+          "storybook": true,
+          "runtimeStarted": true,
+          "storybookStarted": true
+        },
+        {
+          "name": "autonomous-B",
+          "status": "passed",
+          "parentReadDenied": true,
+          "types": true,
+          "build": true,
+          "storybook": true,
+          "runtimeStarted": true,
+          "storybookStarted": true
+        },
+        {
+          "name": "autonomous-exported",
+          "status": "passed",
+          "parentReadDenied": true,
+          "types": true,
+          "build": true,
+          "storybook": true,
+          "runtimeStarted": true,
+          "storybookStarted": true
+        }
+      ],
+      "parentContentReadDenied": true,
+      "parentMetadataTraversalAllowed": true
+    },
+    "closedProfileColdBoot": {
+      "status": "passed",
+      "inheritedCache": true,
+      "no504": true,
+      "chromeOverrideLeavesPreview": true,
+      "projectSourcesUnchanged": true,
+      "hash": "da941fea0395b49791900edbd7532af6d7bfeda96aabd3c24e59a02bcca8b8d6"
+    }
+  },
+  "reviews": {
+    "mode": "sequential",
+    "independence": false,
+    "roles": [
+      "design",
+      "technical-qa",
+      "security"
+    ],
+    "status": "satisfactory-with-documented-human-limits"
+  },
+  "limits": [
+    "human physical/VoiceOver acceptance not performed",
+    "browser engines on macOS only",
+    "no new native-platform distribution qualification",
+    "no business database touched",
+    "no Electron work or deployment"
+  ],
+  "publication": false,
+  "implementationCommit": "e6ab674beb8d3bbc202b24f70741fec590adc4db",
+  "npmLock": {
+    "validation": "ci --dry-run --ignore-scripts --offline",
+    "status": "passed",
+    "registryInstallationTested": false
+  }
+}

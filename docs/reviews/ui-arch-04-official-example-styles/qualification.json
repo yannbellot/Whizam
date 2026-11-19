@@ -1,0 +1,428 @@
+{
+  "status": "PASS",
+  "pairs": 12,
+  "views": 24,
+  "states": "5 states on 3 engines",
+  "results": [
+    {
+      "engine": "webkit",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.230011)",
+          "color": "oklch(0.296725 0.25049 284.230011)",
+          "boxShadow": "oklch(0.851751 0.200392 284.230011) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.230011) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.230011) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.23)",
+          "color": "oklch(0.296725 0.25049 284.23)",
+          "boxShadow": "oklch(0.851751 0.200392 284.23) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.23) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.23) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.23)",
+          "color": "oklch(0.296725 0.25049 284.23)",
+          "boxShadow": "oklch(0.851751 0.200392 284.23) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.23) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.23) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.230011)",
+          "color": "oklch(0.296725 0.25049 284.230011)",
+          "boxShadow": "oklch(0.851751 0.200392 284.230011) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.230011) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.230011) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.23)",
+          "color": "oklch(0.296725 0.25049 284.23)",
+          "boxShadow": "oklch(0.851751 0.200392 284.23) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.23) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.23) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "colorScheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.981187 0.125245 284.23)",
+          "color": "oklch(0.296725 0.25049 284.23)",
+          "boxShadow": "oklch(0.851751 0.200392 284.23) 0px -1px 0px 0px inset, oklch(0.911434 0.175343 284.23) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.8) 0px 2px 0px 0px inset, oklch(0.952045 0.150294 284.23) 0px -8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "oklch(0.296725 0 0)",
+          "boxShadow": "oklch(0.851751 0 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px"
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.230011)",
+          "color": "oklch(0.911434 0.25049 284.230011)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.230011) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.230011) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.230011) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.23)",
+          "color": "oklch(0.911434 0.25049 284.23)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.23) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.23) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.23) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.23)",
+          "color": "oklch(0.911434 0.25049 284.23)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.23) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.23) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.23) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.230011)",
+          "color": "oklch(0.911434 0.25049 284.230011)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.230011) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.230011) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.230011) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.23)",
+          "color": "oklch(0.911434 0.25049 284.23)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.23) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.23) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.23) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "colorScheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS",
+      "styles": {
+        "button": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.296725 0.125245 284.23)",
+          "color": "oklch(0.911434 0.25049 284.23)",
+          "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, oklch(0.353616 0.150294 284.23) 0px -1px 0px 0px inset, oklch(0.410821 0.175343 284.23) 0px 0px 0px 1px inset, oklch(0.353616 0.150294 284.23) 0px 8px 8px -2px inset"
+        },
+        "input": {
+          "fontFamily": "system-ui",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "borderRadius": "8px",
+          "height": "32px",
+          "padding": "0px 12px",
+          "backgroundColor": "oklch(0.22 0 0)",
+          "color": "oklch(0.911434 0 0)",
+          "boxShadow": "oklch(0.469058 0 0) 0px -1px 0px 0px inset, oklch(0.353616 0 0) 0px 0px 0px 1px inset, rgb(0, 0, 0) 0px 1px 6px 0px inset"
+        }
+      }
+    }
+  ]
+}

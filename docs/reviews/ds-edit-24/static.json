@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "sourcesUnchanged": true,
+  "mode": "static",
+  "results": [
+    {
+      "scheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "background": "rgb(255, 255, 255)",
+      "inputStyle": {
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(46, 51, 56)",
+        "scheme": "light"
+      },
+      "textContrast": 12.751974646771234,
+      "mutedContrast": 5.9146518861419635,
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "dimensions": {
+        "client": 980,
+        "scroll": 980
+      },
+      "themeReloadPreservedSavedPreview": true,
+      "swatchesExact": true,
+      "errors": [],
+      "writes": [],
+      "simulatedAnalyses": 0,
+      "screenshot": "static-light-1280.png"
+    },
+    {
+      "scheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "background": "rgb(34, 35, 37)",
+      "inputStyle": {
+        "background": "rgb(27, 28, 29)",
+        "color": "rgb(201, 204, 207)",
+        "scheme": "dark"
+      },
+      "textContrast": 9.752995714629636,
+      "mutedContrast": 5.4835086297412285,
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "dimensions": {
+        "client": 980,
+        "scroll": 980
+      },
+      "themeReloadPreservedSavedPreview": true,
+      "swatchesExact": true,
+      "errors": [],
+      "writes": [],
+      "simulatedAnalyses": 0,
+      "screenshot": "static-dark-1280.png"
+    },
+    {
+      "scheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "background": "rgb(255, 255, 255)",
+      "inputStyle": {
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(46, 51, 56)",
+        "scheme": "light"
+      },
+      "textContrast": 12.751974646771234,
+      "mutedContrast": 5.9146518861419635,
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "dimensions": {
+        "client": 390,
+        "scroll": 390
+      },
+      "themeReloadPreservedSavedPreview": true,
+      "swatchesExact": true,
+      "errors": [],
+      "writes": [],
+      "simulatedAnalyses": 0,
+      "screenshot": "static-light-390.png"
+    },
+    {
+      "scheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "background": "rgb(34, 35, 37)",
+      "inputStyle": {
+        "background": "rgb(27, 28, 29)",
+        "color": "rgb(201, 204, 207)",
+        "scheme": "dark"
+      },
+      "textContrast": 9.752995714629636,
+      "mutedContrast": 5.4835086297412285,
+      "focus": {
+        "style": "solid",
+        "width": "2px"
+      },
+      "dimensions": {
+        "client": 390,
+        "scroll": 390
+      },
+      "themeReloadPreservedSavedPreview": true,
+      "swatchesExact": true,
+      "errors": [],
+      "writes": [],
+      "simulatedAnalyses": 0,
+      "screenshot": "static-dark-390.png"
+    }
+  ]
+}

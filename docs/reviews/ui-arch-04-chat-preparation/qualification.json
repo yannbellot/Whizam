@@ -1,0 +1,36 @@
+{
+  "source_base": "13d844c",
+  "cause": "isolated tool source copy omitted generated derivatives; only the fictive project was prepared",
+  "before": "Could not resolve ../styles/tokens.generated.css from tool/src/assistant/main.tsx",
+  "generation": {
+    "command": "node tool/scripts/generate-tokens.mjs",
+    "legacy_aliases": 24,
+    "styles": 53,
+    "component_tokens": 188,
+    "tool_authority_matches_canonical": true,
+    "tool_css_sha256": "3bd1994086d1b0637ad9b4e69a3d0b63571eb57c235abf7e07c57639f5c3209c"
+  },
+  "after": {
+    "chat_build": "passed",
+    "html_bytes": 438,
+    "css_assets": 1,
+    "js_assets": 1,
+    "native_codex_loaded": true,
+    "ui_lab_return_loaded": true,
+    "codex_second_open_loaded": true,
+    "native_bundle_rebuilt": false
+  },
+  "preservation": {
+    "project_files_checked": 312,
+    "project_changed_files": [],
+    "project_records": 0,
+    "canonical_functional_code_changed": false
+  },
+  "not_executed": [
+    "provider login or inference",
+    "chat business tests",
+    "new visual fidelity campaign"
+  ],
+  "publication": false,
+  "electron_started": false
+}

@@ -1,0 +1,10 @@
+.results {
+  min-width: 0;
+}
+.scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.scroll table {
+  min-width: var(--adl-component-composition-catalog-navigation-scroll-table-min-width-1);
+}

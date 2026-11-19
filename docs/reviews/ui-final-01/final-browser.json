@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "cases": [
+    "new application build reads final DS on a real loan action; persisted object retained",
+    "inventory primary action shares final semantic style and example navigation is absent",
+    "restarted workshop rereads saved value after directory rename",
+    "restarted Storybook and compiled application use same final colour",
+    "real application and project story usable at mobile viewport",
+    "fresh GET views and restarts replayed no write; exact DB rows preserved"
+  ],
+  "chromium": "156.0.8078.4",
+  "objectCount": 4,
+  "loanCount": 3,
+  "authoritySHA256": "1cdf91861930679766504eabbfdb082ccb0f098ef75129b931c3e74a1fd65f38"
+}

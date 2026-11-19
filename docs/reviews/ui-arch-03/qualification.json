@@ -1,0 +1,66 @@
+{
+  "task": "UI-ARCH-03",
+  "base": "8f19e6a74ecdece03339aef5d643652cf6220e05",
+  "runtime": "Node 24.22.0",
+  "dependencies": {
+    "react-aria-components": "1.22.1",
+    "tailwindcss": "4.3.5",
+    "@tailwindcss/vite": "4.3.5"
+  },
+  "sourceDigest": "ca3b50941c8e99b50222dd57517b0a96b91b89847c54b1878734a5805db55727",
+  "sourceDigestPaths": [
+    "application/src/ui-lab/editor/SceneNavigation.tsx",
+    "application/src/ui-lab/editor/AppearancePanel.tsx",
+    "application/src/loomata-ui/Controls.tsx",
+    "application/src/loomata-ui/authority/tokens.tokens.json",
+    "application/src/loomata-ui/styles/index.css",
+    "application/scripts/generate-loomata-ui.mjs",
+    "application/scripts/design-editor/manifest.mjs",
+    "application/package-lock.json"
+  ],
+  "browser": {
+    "passed": true,
+    "viewports": [
+      [
+        1280,
+        800
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "realSaveReloadRestore": true,
+    "keyboard": true,
+    "productStyleIsolation": true
+  },
+  "native": {
+    "passed": true,
+    "widths": [
+      1280,
+      1440
+    ],
+    "driver": "AppKit/WKWebView DOM focus and click; no physical input or VoiceOver"
+  },
+  "projectAuthoritiesChanged": false,
+  "projectWriterOperationsChanged": false,
+  "sourceProfileCompatibilityApproved": true,
+  "humanAcceptance": "deferred",
+  "publication": false,
+  "checks": {
+    "types": "passed in isolated copy",
+    "lint": "passed in isolated copy",
+    "designSystemTests": 114,
+    "writerStoreTests": 57,
+    "toolGeneratorTests": 1,
+    "appBuild": "passed",
+    "storybookBuild": "passed",
+    "derivedDocs": "current",
+    "toolTheme": "current",
+    "closedSourceProfile": 1130
+  }
+}

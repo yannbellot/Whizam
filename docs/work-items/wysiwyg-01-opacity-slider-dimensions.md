@@ -1,0 +1,11 @@
+# WYSIWYG-01 — Dimensions du curseur d’opacité
+
+Cible application, base 7354d5b. Le porteur fixe le diamètre de la poignée à 10 px et l’épaisseur de la piste à 3 px. L’autorité des tokens de l’outil porte ces dimensions. Le travail préexistant sur la largeur à 125 px est isolé du commit et de la recette.
+
+Procédures applicatives de réalisation et revue utilisées pour la correction précédente. GPT-6.1 Sol · Moyenne pour ce changement local. Contrôles prévus sur la génération, la composition, le rendu et les interactions du curseur en navigateur. **En revue après qualification technique, acceptation humaine différée.** La copie de recette contient uniquement la variation de dimensions à partir de la base. Vérification en clair et sombre sous Chromium 156 et WebKit 27.2. Le centrage, la saisie, les extrémités au clavier, le glissement et l’annulation sont conformes. Génération, contrôle des dérivés et de la documentation, trois tests de composition et diff conformes. Revue séquentielle, même agent. Doc updated. Reprise sur la [recette locale](http://127.0.0.1:63536/ui-lab?scene=components%2FOverview).
+
+## Retrait de la commande par propriété
+
+Cible application, base c0281b6. Le mandat retire le bouton « Rétablir cette propriété » dans VisualInspector et ajuste le parcours navigateur existant. Les commandes globales Annuler, Rétablir et Tout réinitialiser restent disponibles. Vérification prévue après retouche de deux champs, sur une copie isolée du travail en cours sur la largeur. Procédures de réalisation et revue reconduites. GPT-6.1 Sol · Moyenne pour une modification locale.
+
+**En revue après qualification technique, acceptation humaine différée.** Après modification de l’arrondi et du contour, le bouton par propriété est absent sous Chromium 156 et WebKit 27.2. Annuler, Rétablir et Tout réinitialiser ont restauré les valeurs attendues. Typecheck sur copie isolée, lint ciblé sans erreur avec un avertissement React préexistant et diff conformes. Le test existant est actualisé et ses comportements touchés ont été vérifiés dans une recette ciblée. Revue séquentielle par le même agent. Doc updated. [Recette locale](http://127.0.0.1:63745/ui-lab?scene=components%2FOverview).

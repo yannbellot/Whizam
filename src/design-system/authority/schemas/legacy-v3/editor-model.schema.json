@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentic-design.local/schemas/editor-model.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "primitives", "styles", "bindings"],
+  "properties": {
+    "schemaVersion": {
+      "const": 3
+    },
+    "primitives": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4096,
+      "items": {
+        "$ref": "#/$defs/primitive"
+      }
+    },
+    "styles": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4096,
+      "items": {
+        "$ref": "#/$defs/style"
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 8192,
+      "items": {
+        "$ref": "#/$defs/binding"
+      }
+    }
+  },
+  "$defs": {
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "target", "variant", "part", "property", "state", "style", "reference"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^component(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        },
+        "target": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "maxLength": 80
+        },
+        "variant": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "maxLength": 80
+        },
+        "part": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "maxLength": 80
+        },
+        "property": {
+          "type": "string",
+          "pattern": "^[a-z][A-Za-z0-9]*$"
+        },
+        "state": {
+          "enum": ["default", "hover", "focus-visible", "disabled", "loading", "error"]
+        },
+        "style": {
+          "type": "string",
+          "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        },
+        "reference": {
+          "type": "string",
+          "pattern": "^(?:primitive|semantic)(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "status", "reason"],
+          "properties": {
+            "kind": {
+              "enum": ["designer-edit", "agent-migration"]
+            },
+            "status": {
+              "const": "proposed"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 400
+            }
+          }
+        }
+      }
+    },
+    "primitive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "value", "provenance", "family"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^primitive(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        },
+        "type": {
+          "enum": ["color", "dimension", "font-weight", "line-height", "font-family"]
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "status", "reason"],
+          "properties": {
+            "kind": {
+              "enum": ["designer-edit", "agent-migration"]
+            },
+            "status": {
+              "const": "proposed"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 400
+            }
+          }
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "origins": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "provenance"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^primitive(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+                "maxLength": 240
+              },
+              "provenance": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["kind", "status", "reason"],
+                "properties": {
+                  "kind": {
+                    "enum": ["designer-edit", "agent-migration"]
+                  },
+                  "status": {
+                    "const": "proposed"
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "intention", "role", "state", "reference"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^semantic(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        },
+        "type": {
+          "enum": ["color", "dimension", "font-weight", "line-height", "font-family"]
+        },
+        "intention": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9-]*$",
+          "maxLength": 160
+        },
+        "role": {
+          "enum": [
+            "surface",
+            "text",
+            "border",
+            "icon",
+            "focus",
+            "spacing",
+            "radius",
+            "border-width",
+            "font-size",
+            "font-weight",
+            "line-height",
+            "font-family",
+            "content-width"
+          ]
+        },
+        "state": {
+          "enum": ["default", "hover", "focus-visible", "disabled", "loading", "error"]
+        },
+        "reference": {
+          "type": "string",
+          "pattern": "^(?:primitive|semantic)(?:\\.[a-z][a-z0-9]*(?:-[a-z0-9]+)*){2,}$",
+          "maxLength": 240
+        }
+      }
+    }
+  }
+}

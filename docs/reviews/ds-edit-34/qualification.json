@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "disconnectedColor": "rgb(255, 173, 51)",
+      "connectedColor": "rgb(149, 153, 157)",
+      "placeholderSwitched": true,
+      "textPreserved": true,
+      "connectionSimulated": true
+    },
+    {
+      "width": 390,
+      "disconnectedColor": "rgb(255, 173, 51)",
+      "connectedColor": "rgb(149, 153, 157)",
+      "placeholderSwitched": true,
+      "textPreserved": true,
+      "connectionSimulated": true
+    }
+  ],
+  "code": [
+    {
+      "file": ".storybook/editor/ScopeControls.tsx",
+      "sha256": "fedcddb9d58e843df9db49887dd5d7c50271b1cc01fb589a95903ed4063ab8c3"
+    },
+    {
+      "file": ".storybook/editor/panel.module.css",
+      "sha256": "5e5a9574db3fcea00de621236941f8211555ab9f865160a41b74175a84f6d67a"
+    }
+  ]
+}

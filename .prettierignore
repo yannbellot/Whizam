@@ -1,0 +1,28 @@
+node_modules
+build
+dist
+.react-router
+*.local
+test-results
+playwright-report
+# Authoritative/generated formats are handled in their own work items.
+src/design-system/authority
+drizzle
+# Preserve ambiguous untracked copies; this does not hide them from Git.
+**/* 2.*
+**/* 2
+
+src/styles/tokens.generated.css
+src/design-system/tokens.generated.ts
+
+storybook-static
+
+# Reproducible Markdown renderings; checked by docs:design-system:check.
+docs/design-system/semantic-catalog.md
+docs/design-system/style-inventory.md
+
+# Byte-for-byte YAML projection, checked by validate:design-system.
+src/design-system/editor/naming-rules.generated.json
+
+# Deterministic stories are checked by design-system:check.
+**/*.generated.stories.tsx

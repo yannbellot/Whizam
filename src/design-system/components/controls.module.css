@@ -1,0 +1,68 @@
+.field {
+  display: grid;
+  min-width: 0;
+  gap: var(--adl-slot-root-gap-default);
+}
+
+.field label {
+  color: var(--adl-slot-label-foreground-default);
+  font-size: var(--adl-slot-label-font-size-default);
+  font-weight: var(--adl-slot-label-font-weight-default);
+  line-height: var(--adl-slot-label-line-height-default);
+  font-family: var(--adl-slot-label-font-family-default);
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  border-style: solid;
+  font: inherit;
+  background: var(--adl-slot-control-background-default);
+  color: var(--adl-slot-control-foreground-default);
+  border-color: var(--adl-slot-control-border-color-default);
+  border-width: var(--adl-slot-control-border-width-default);
+  border-radius: var(--adl-slot-control-border-radius-default);
+  padding-block: var(--adl-slot-control-padding-block-default);
+  padding-inline: var(--adl-slot-control-padding-inline-default);
+  font-size: var(--adl-slot-control-font-size-default);
+  font-weight: var(--adl-slot-control-font-weight-default);
+  font-family: var(--adl-slot-control-font-family-default);
+}
+
+.input:focus-visible {
+  outline-style: solid;
+  outline-color: var(--adl-slot-control-ring-color-focus-visible);
+  outline-width: var(--adl-slot-control-ring-width-focus-visible);
+  outline-offset: var(--adl-slot-control-ring-offset-focus-visible);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  background: var(--adl-slot-control-background-disabled);
+  color: var(--adl-slot-control-foreground-disabled);
+  border-color: var(--adl-slot-control-border-color-disabled);
+  border-width: var(--adl-slot-control-border-width-disabled);
+  border-radius: var(--adl-slot-control-border-radius-disabled);
+  padding-block: var(--adl-slot-control-padding-block-disabled);
+  padding-inline: var(--adl-slot-control-padding-inline-disabled);
+  font-size: var(--adl-slot-control-font-size-disabled);
+  font-weight: var(--adl-slot-control-font-weight-disabled);
+  font-family: var(--adl-slot-control-font-family-disabled);
+}
+
+.notice,
+.panel {
+  border-style: solid;
+  overflow-wrap: anywhere;
+  background: var(--adl-slot-root-background-default);
+  color: var(--adl-slot-root-foreground-default);
+  border-color: var(--adl-slot-root-border-color-default);
+  border-width: var(--adl-slot-root-border-width-default);
+  border-radius: var(--adl-slot-root-border-radius-default);
+  padding-block: var(--adl-slot-root-padding-block-default);
+  padding-inline: var(--adl-slot-root-padding-inline-default);
+  font-size: var(--adl-slot-root-font-size-default);
+  font-weight: var(--adl-slot-root-font-weight-default);
+  line-height: var(--adl-slot-root-line-height-default);
+  font-family: var(--adl-slot-root-font-family-default);
+}

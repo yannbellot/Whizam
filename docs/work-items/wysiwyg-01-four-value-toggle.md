@@ -1,0 +1,7 @@
+# WYSIWYG-01 — Bascule des quatre valeurs
+
+Cible application, base `d1138a8`. Reprendre les quatre traits de la capture pour les réglages par côté et utiliser un seul bouton pour afficher et masquer les quatre valeurs. Le champ commun reste disponible en haut de la ligne. Périmètre : FourValueField, styles du panneau et assertions de navigateur. Les retouches préexistantes du curseur restent isolées.
+
+Procédures applicatives de réalisation et revue reconduites. GPT-6.1 Sol · Moyenne pour cette modification localisée. Vérifier les deux pictogrammes, les états du bouton, la réouverture des quatre champs et la conservation des retouches.
+
+**En revue après qualification technique, acceptation humaine différée.** Parcours ciblé dans la galerie sous Chromium 156 et WebKit 27.2. Pour chacun des six réglages, un bouton par ligne, état pressé, quatre champs visibles à l’ouverture et champ commun accessible. Les quatre traits et les coins arrondis sont distincts sur la capture Chromium. Le test modifie l’épaisseur gauche, ferme les détails avec Espace et les rouvre avec Entrée. La valeur et son rendu sont conservés. Types et génération sur copie isolée, lint, formatage et `git diff --check` conformes. Le script de régression partagé est mis à jour. Son parcours complet de transmission Pages n’a pas été rejoué pour cette tranche. Revues design et technique séquentielles, même agent. Doc updated. Reprise sur l’[aperçu local](http://127.0.0.1:49481/ui-lab?scene=components%2FOverview).
