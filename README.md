@@ -17,8 +17,6 @@ Le kit prêt à utiliser se trouve dans **[`whizam-kit/`](whizam-kit/)**. Ce dos
 
 Le kit démarre **sans projet métier initialisé** : application vide, aucune donnée insérée par le seed et aucun contenu initial de projet dans Storybook. Les guides sont disponibles dès le démarrage de la documentation. Les références historiques conservées dans les sources ne constituent pas votre projet.
 
-Whizam est le nouveau nom de Loomata ; certains noms techniques et documents historiques conservent cette ancienne appellation.
-
 ## 1. Récupérer le kit
 
 La méthode recommandée est de cloner le dépôt avec Git : elle préserve les fichiers cachés et les liens symboliques des skills.
