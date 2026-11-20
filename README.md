@@ -42,7 +42,7 @@ Le kit fournit des instructions pour Codex, Claude Code et Gemini CLI, ainsi qu�
 
 Dans une nouvelle conversation ouverte sur le dossier du kit, vous pouvez écrire :
 
-> Lis les instructions AGENTS.md de ce dossier. J’utilise Codex. Je souhaite créer un portfolio de designer numérique nommé « Mon Portfolio ». Aide-moi à cadrer sa première version, puis propose les étapes d’initialisation et de réalisation.
+> Je souhaite créer un portfolio de designer numérique nommé « Mon Portfolio ». Aide-moi à cadrer sa première version, puis propose les étapes d’initialisation et de réalisation.
 
 Remplacez l’assistant, le nom et l’idée par les vôtres. Vous pouvez joindre votre brief et vos références visuelles. Si vous n’avez pas indiqué l’assistant utilisé, les instructions du kit prévoient de vous le demander au premier échange.
 
