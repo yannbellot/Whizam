@@ -1,0 +1,43 @@
+/* Preview-only policy: content wraps vertically; tables never widen the page. */
+table {
+  display: table !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  table-layout: fixed !important;
+}
+table tr,
+table th,
+table td {
+  height: auto !important;
+  min-height: 0 !important;
+}
+table th,
+table td {
+  min-width: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal;
+}
+table th :is(code, pre, span, a, p),
+table td :is(code, pre, span, a, p) {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+table th pre,
+table td pre {
+  white-space: pre-wrap !important;
+}
+/* Autodocs badges and controls may carry their own minimum widths. */
+table th > *,
+table td > * {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+table :is(th, td) :is(div, span, input, textarea, select, button) {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}

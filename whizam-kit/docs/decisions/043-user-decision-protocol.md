@@ -1,5 +1,8 @@
 # 043 — Protocole commun de questions et de vérifications
 
+> Révision du 20 novembre 2026 : la [décision 044](044-project-intake-and-entry-policies.md) remplace le choix d’assistant et l’ordre linguistique initial. Le texte ci-dessous reste historique.
+
+
 **Date :** 19 novembre 2026.  
 **Statut :** exécution demandée par le porteur du kit après préparation et ajustements ; livraison à soumettre à revue.
 

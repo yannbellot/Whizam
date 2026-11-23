@@ -1,6 +1,6 @@
 # Créer son premier projet
 
-Choisissez un nom et indiquez quel dossier constitue votre copie de travail. Si le projet existe déjà, utilisez plutôt [Reprendre et transmettre](reprendre-transmettre.md).
+Fournissez votre brief, demandez un guidage ou une démonstration, et indiquez quel dossier constitue votre copie de travail. Si le projet existe déjà, utilisez plutôt [Reprendre et transmettre](reprendre-transmettre.md).
 
 > Exemple fictif : « Je travaille avec Codex. Je veux initialiser un projet nommé Atelier. Prépare la proposition d’initialisation. »
 
@@ -20,3 +20,9 @@ Ces repères ne créent pas une validation obligatoire entre chaque opération d
 Une initialisation terminée ne signifie pas que l’application est réalisée. À la revue, attendez des accès vérifiés vers votre application, les composants pertinents dans Storybook et la documentation. Une page générique ou un exemple du kit ne démontre pas la réalisation de votre demande.
 
 Préparez maintenant votre intention avec [Cadrer une première version](cadrer-version.md). Le [parcours de démarrage](../product/project-start.md) précise les règles de chaque séquence.
+
+## Un cadrage conservé entre conversations
+
+L’assistant recueille seulement les informations manquantes : nom, objectif/public, première version, contenus, références visuelles, appareils, PWA, hors connexion, langues de l’application puis de la documentation/Storybook. Après un choix annonçant des éléments, répondez dans la conversation avec vos textes, fichiers, liens ou chemins. Les précisions facultatives peuvent éviter cette seconde demande.
+
+Une démonstration propose les six premiers points et les trois appareils, puis reprend aux choix PWA, hors connexion et langues après votre accord. Le développement attend votre validation de la synthèse complète. Le brief et le point de reprise conservent les réponses ; une nouvelle conversation ne recommence pas le questionnaire.

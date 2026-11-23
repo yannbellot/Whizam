@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDocumentationText } from './useDocumentationLanguage'
 import { Markdown } from '@storybook/addon-docs/blocks'
 
 // Decode only the punctuation escaped by our renderer, after Markdown parsing.
@@ -10,16 +11,17 @@ const namedCodesToUnicode = Object.fromEntries(
   ]),
 )
 function DocumentationTable(props: React.ComponentProps<'table'>) {
+  const t = useDocumentationText()
   return (
     <div
       role="region"
-      aria-label="Tableau du design system, défilement horizontal"
+      aria-label={t('Tableau du design system', 'Design system table')}
       tabIndex={0}
       style={{ maxWidth: '100%', overflowX: 'auto' }}
     >
       <table
         {...props}
-        style={{ ...props.style, minWidth: '60rem', tableLayout: 'fixed', width: '100%' }}
+        style={{ ...props.style, minWidth: 0, tableLayout: 'fixed', width: '100%' }}
       />
     </div>
   )

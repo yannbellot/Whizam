@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "documents": {
+    "docs/guide-whizam/index.md": {
+      "sourceHash": "a31b6090e8476d5ce0601eb1ace95a5e2cca9d5ec46d2e5ece3f159e5532d964"
+    },
+    "docs/guide-whizam/preparer-kit.md": {
+      "sourceHash": "aa5c99b46139bbbd85b0169d178a52299d65d7f7a3a957bd11703b6db3aa56e1"
+    },
+    "docs/guide-whizam/premier-projet.md": {
+      "sourceHash": "70f0048207cb61e5f29284b8c58f957f3784871a161a86c315354fad2cb42c7c"
+    },
+    "docs/guide-whizam/assistant.md": {
+      "sourceHash": "b130f00305468e26028d32e36040eef5bf5820713156f8c7ca5ec1d1ee805bea"
+    },
+    "docs/guide-whizam/cadrer-version.md": {
+      "sourceHash": "5eaef719bae8d01ed033d124402ef3770bdd8db23c6474db5754c5487d9ac7ca"
+    },
+    "docs/guide-whizam/demander-evolution.md": {
+      "sourceHash": "0989ee7014aadc9aa844f046e2b334b941fd01008ea26df8661d4a7fb542f6b2"
+    },
+    "docs/guide-whizam/verifier-decider.md": {
+      "sourceHash": "b11a8dcf2fac5553f1d37b5afc7e491dd60d20b355dd85fbbc277fa2bf9deb1d"
+    },
+    "docs/guide-whizam/reprendre-transmettre.md": {
+      "sourceHash": "49bed11abbfcd93bdf3252ad99f324b13ce9d061f2fb739860659ad455ad68dc"
+    },
+    "docs/guide-whizam/questions-frequentes.md": {
+      "sourceHash": "58ac49f6cb183896809bcc4efc92b42eb094390c9b00c43fecbc7461f5b8ea0a"
+    },
+    "skills/analyze-brief/SKILL.md": {
+      "sourceHash": "49d3dc5de0ae1f5c6a00ce43aa3227739303c092563951b585e288a7ded415dd"
+    },
+    "skills/analyze-design-references/SKILL.md": {
+      "sourceHash": "041f7315cf4f866f6b92db92192f275262f1d06a7ea956ff176e689ebbb1fb94"
+    },
+    "skills/backup-and-rollback/SKILL.md": {
+      "sourceHash": "f20180c76095cf1073e499a615ac65eb85f2ff301d9eea4748d0f89439b111a9"
+    },
+    "skills/brief-to-specs/SKILL.md": {
+      "sourceHash": "89d58a26b0e48712a7af56f09471490f576b505ccef7d43beb9b42650b17690b"
+    },
+    "skills/data-permissions-migrations/SKILL.md": {
+      "sourceHash": "ad146421e263af765c98cb376c12c31bf28c6fb5afe33d7c65c6bb311af26e5b"
+    },
+    "skills/deploy-docker-compose/SKILL.md": {
+      "sourceHash": "821f0c4639c310b830f53f087bb89d166d0ff094bc8a432c90a967430117ecc8"
+    },
+    "skills/design-interactions/SKILL.md": {
+      "sourceHash": "09dba55ec116096776826241e4739324fcaf239a32e5452de15f6cd20c4088fa"
+    },
+    "skills/diagnose-incident/SKILL.md": {
+      "sourceHash": "234992099252d751b5b68790c9431aea992ebeeafcf53c5e8cc27461d70dc35f"
+    },
+    "skills/implement-feature/SKILL.md": {
+      "sourceHash": "3b5de3884bc3d9c1bd4bfab34b8da8d9a7466b26c4a79c21effe8f717c5e2ef8"
+    },
+    "skills/map-figma-to-components/SKILL.md": {
+      "sourceHash": "b8cc6705bdc53f47aa43fede940385994de15dc5674f86af07a9a6481b8a9888"
+    },
+    "skills/normalize-design-system/SKILL.md": {
+      "sourceHash": "846c2b3c9961c4107818fa7dc52164cd7020b50728159fb56cfcce128d4333f1"
+    },
+    "skills/plan-feature/SKILL.md": {
+      "sourceHash": "b00f137681ab9bb7f657f791e1b7d0b40bf4c2bae54d06a59f918668cae341cf"
+    },
+    "skills/prepare-handoff/SKILL.md": {
+      "sourceHash": "22c292ed2a3a443460dc1cc716f08c3010971c2739460afed73085d8f5aed2d2"
+    },
+    "skills/prepare-release/SKILL.md": {
+      "sourceHash": "4b61de1c28a2db85c46d4b7370064b6bc323a2c99a9c335e2d20c91f095c8a4c"
+    },
+    "skills/propose-architecture/SKILL.md": {
+      "sourceHash": "ba0bc8335c6c301d5e0740c98bd4ce2810a3d7371f20e6ade2ee22a1b64056c3"
+    },
+    "skills/review-design/SKILL.md": {
+      "sourceHash": "3ceaf21fa9100d5df28a3c49096ab33e7d1cc4c219e57431b93a9627e017e2df"
+    },
+    "skills/security-review/SKILL.md": {
+      "sourceHash": "30d9cbf0beff590e842db94d0ae15fd9bb39546c74ebb6cd6fb2df5320a5c494"
+    },
+    "skills/technical-review/SKILL.md": {
+      "sourceHash": "206b91b44184e9f20544eaef9125ba063103e776cc39680fec81c3f68d012895"
+    },
+    "skills/test-user-flow/SKILL.md": {
+      "sourceHash": "32ef1f7f17ae8f502c9bc8e9d1839c637e239896cfc43079f406f4725e01eb58"
+    },
+    "skills/update-project-docs/SKILL.md": {
+      "sourceHash": "4749d8854756bf36d48efae6e80c28c91affc18d65f316aec7b5ffe111f9f49b"
+    },
+    "skills/initialize-project/SKILL.md": {
+      "sourceHash": "fbd2b9a2ed651a9fdb24c5c25a23e28f253fec66f746acf93d8511cd3bbe2a14"
+    },
+    "agents/builder.md": {
+      "sourceHash": "99889fdb76b34b76ade8f96c8b276c9bc3e7e3c060afd6a265b157423c478a80"
+    },
+    "agents/design-reviewer.md": {
+      "sourceHash": "36ab427358cb468442e421279b307f17f66ced7ed585a5e9e9df0bb214071777"
+    },
+    "agents/security-reviewer.md": {
+      "sourceHash": "b764dbe75f9d921d2f33d4dde5648cfbb7c74a45367178346b594ab65dd58c61"
+    },
+    "agents/technical-reviewer.md": {
+      "sourceHash": "e42d4286a1eede788624c50eb2b248b21b48df5f845cf27b9da11d5501386c46"
+    },
+    "skills/README.md": {
+      "sourceHash": "84788812ce8447566fe76b65457301d1c9b7cc49e847212bbcd3ae2e9a38633e"
+    },
+    "CLAUDE.md": {
+      "sourceHash": "3eab3869b49f5dd35ef8d165ebf5ca141c9a12950433afa897403ce3bf49f127"
+    },
+    "GEMINI.md": {
+      "sourceHash": "4ade50de0d4724717f577d24bf198ae21bcfebf358474ba3212b8d86ed0aaf26"
+    },
+    "ROADMAP.md": {
+      "sourceHash": "2b9340e18590fe159182aed579c3e1feb112ee069463a76918f123d9ace9b247"
+    },
+    "docs/project-state.md": {
+      "sourceHash": "24c98b80fb6d0cf6587ea8c2afe5362d191a2b7bb796e429d24aba862bae1cd8"
+    },
+    "docs/design-system/principles.md": {
+      "sourceHash": "980d1aaf49cb8c3cbc1571a2409a0881ef67c86b5c242bf38180277c32ddcef1"
+    },
+    "docs/design-system/token-naming.md": {
+      "sourceHash": "9d361061b7b0da36567828576535e5f0b8c032c4c4e455affc3623b4f3213594"
+    },
+    "docs/design-system/token-organization.md": {
+      "sourceHash": "2917eda2f65f60685e3203e08ad56cab14f05fdce5025b0617a17cbf4582ba74"
+    },
+    "docs/design-system/token-migration.md": {
+      "sourceHash": "0e47d897b35dd1c6284c9c2c10b83cb023ced8d556856ec924a63d35b702bbd5"
+    },
+    "docs/design-system/architecture.md": {
+      "sourceHash": "4f66086936c2d595d1c949c348f95aab16bd0a7f5e332c6cf44d1f31f859ade7"
+    },
+    "docs/design-system/policy.md": {
+      "sourceHash": "d52c38273f095c74ee268d7629efb7db8087bcff6361b16c3a98ffafb272dd60"
+    },
+    "docs/operations.md": {
+      "sourceHash": "583c320e34443779dfd8af42462db2b29a09269eba074583e6974f384bb678ea"
+    },
+    "docs/handoff.md": {
+      "sourceHash": "e6e969cb93abc7ebe5534d8153e69234cb47ae30b1670909d52dc170a3ef887f"
+    },
+    "docs/backup-and-restore.md": {
+      "sourceHash": "27530c5d0c8e1730aee45232095e103f653c035f625d4525bb2b9a48da2c30db"
+    },
+    "TECHNICAL-GUIDE.md": {
+      "sourceHash": "3476f024c5bf8c039bb0db2e86081f65531001d72499a6e17072d70cca2944dc"
+    },
+    "src/design-system/authority/README.md": {
+      "sourceHash": "8bc829bbd6c7c1cf79247cc532716f92862a8fda57cab4ff8474d9323a34a563"
+    },
+    "docs/distribution/README.md": {
+      "sourceHash": "68c817100414452d69b0ab33dac6269f08d5dfc5c5449c5cfeff9800541c296c"
+    },
+    "docs/conventions.md": {
+      "sourceHash": "d1306cdf5f31fb71db596d2b4079b73a945015c04c624081099083357b8d53b5"
+    },
+    "docs/agents/languages.md": {
+      "sourceHash": "c608bf2b97eff580eabb970b034d22545b8483d51fe5302b23419e265ce4c086"
+    },
+    "docs/decisions/001-self-contained-instructions.md": {
+      "sourceHash": "7a7b485bb8b1b16b04caaac8ea9c8882b0f15667b4025f96797af0047cf61c01"
+    },
+    "docs/decisions/002-dedicated-project-initialization.md": {
+      "sourceHash": "419ed38e66ba934fd40904cfbd956ccce99061c5e984f1d55cbf7c961c3c5fb6"
+    },
+    "docs/decisions/003-qualitative-model-routing.md": {
+      "sourceHash": "ba68d140a08237321708bd0a70b383d655d5be3110a85f43ce3606498bb34661"
+    },
+    "docs/decisions/004-guided-project-start.md": {
+      "sourceHash": "c910ff778a8f8c4c541e9de0a28f37f6d9e3e4f7db93f7a75e8e30e1a17d011d"
+    },
+    "docs/decisions/005-assisted-environment-installation.md": {
+      "sourceHash": "396035fde620c5affce58aa68fbcfb722da89c5f482d770a296be9f3357df420"
+    },
+    "docs/decisions/039-automated-design-system.md": {
+      "sourceHash": "f884fa494aeac9092273f315eb321d775cc979180fce8a833ad2966f69c81350"
+    },
+    "docs/decisions/041-request-validation.md": {
+      "sourceHash": "560f95eb93cde2bba33ad54a505d9a0c93b658758b711f2a85742016254b0bf4"
+    },
+    "docs/decisions/042-assistant-choice-and-claude-routing.md": {
+      "sourceHash": "79f98f6316b19498f62c7ab2c62dd10973c2217e4560901a347b6b7952b21d4d"
+    },
+    "docs/decisions/043-user-decision-protocol.md": {
+      "sourceHash": "7e9d73d41a1750d3bb8542c4de8525295a8e719aec5af77fdf558d9caced9820"
+    },
+    "docs/agents/adapters.md": {
+      "sourceHash": "0b0eb685099527fd34e76c5a6fdb20644856df0032dbd9541aa94167fb0cdf55"
+    },
+    "docs/agents/skill-contract.md": {
+      "sourceHash": "b69bb40dbd31f04e6e039a71e58a637c4e16b926d0a8520722edd70577e3a712"
+    },
+    "docs/agents/private-configuration.md": {
+      "sourceHash": "08493dc22a1f6b370f2f83fa034e3efbfc4434f2d3e30272709f59a50edd0dac"
+    },
+    "docs/product/project-start.md": {
+      "sourceHash": "47de43b23bcf95653526aff52646e9342aaab6c124a58e73c94ce35a20c46aa3"
+    },
+    "docs/product/replacing-project-example.md": {
+      "sourceHash": "7910f2b927f7f076011721003a39be8a3b595f2e04e13066598019d0943e5951"
+    },
+    "docs/documentation.md": {
+      "sourceHash": "cc96525030ac8916a8b2c40e215d18a5740dc31df6139b0ac2dce50bc7a5ba0d"
+    },
+    "docs/security.md": {
+      "sourceHash": "b9c1165a85e7cb1d1d304d2bd294e2075662eb1b4b3b7188e351c0143215a433"
+    },
+    "docs/architecture.md": {
+      "sourceHash": "b5971cfdf225708683c702967b729300b6db7cda6fd4b4b261d2c2261bf29a0d"
+    },
+    "docs/claude/chantier-model-routing.md": {
+      "sourceHash": "fcf7e42d55d464ad5fa289584295b08f22e73ef53275640ecffc22af9e11621b"
+    },
+    "docs/codex/chantier-model-routing.md": {
+      "sourceHash": "8b29d9b634aad5a5f3ffa27802409a904bb38e89748aa8c55b082fa4541d8dea"
+    },
+    "docs/agents/user-decisions.md": {
+      "sourceHash": "47871a915af0033e4819b3291ec74353fabce5e9b44a57746eebdca8a30f0b28"
+    },
+    "skills/initialize-project/references/environment-setup.md": {
+      "sourceHash": "b49b20ce388b8c15ab82da103ac8a8a13b26ab90e8cdaf8e773e2df9485e74c1"
+    },
+    "docs/compatibility.md": {
+      "sourceHash": "bce1dae5110802da2c1cfb9f31dcac8639256f8eb9b538da5b5634cf88efdbb6"
+    },
+    "AGENTS.md": {
+      "sourceHash": "93b53666f123fa9dd1e456ba5d223a27ea42b20f97645b61dde432ee843d19fe"
+    },
+    "docs/agents/project-intake.md": {
+      "sourceHash": "fcc30cd506c313dd19c4a6cdb9cd16b06b8aaa304a897a86663b1e714e835f70"
+    },
+    "docs/decisions/044-project-intake-and-entry-policies.md": {
+      "sourceHash": "35c494fe17827042bd27e62647a534036a591cf40ee677e66c0d89cfaa26298c"
+    }
+  }
+}

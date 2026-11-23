@@ -53,3 +53,9 @@ Ce skill reste disponible pour une reprise explicite. Une nouvelle conversation,
 ## Portail documentaire
 
 Maintenir les sources Markdown uniques et leur classement selon le [guide](../../docs/documentation.md). Après évolution, construire et contrôler le portail avec `docs:build` et `docs:check`. Les archives du socle restent identifiées, les fichiers privés exclus. Présenter les trois accès Application, Storybook et Documentation après vérification, sans exiger le parent ou Python hôte.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](../../docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../../docs/agents/languages.md).
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](../../docs/agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.

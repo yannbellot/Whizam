@@ -16,3 +16,6 @@ Reformuler le résultat observable et les exclusions ; chercher les contradictio
 ## Sortie et contrôle
 
 Brief court ou note de cadrage avec cible, objectif, limites, hypothèses, décisions réellement bloquantes et prochaine action. Mettre à jour docs/product/brief.md du projet seulement si le mandat porte sur cette intention, ou la source d’intention explicitement désignée. Consigner tout conflit ; arrêter la partie dépendante d’un arbitrage matériel. Aucune écriture applicative ni installation autorisée par ce skill seul.
+
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](../../docs/agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.

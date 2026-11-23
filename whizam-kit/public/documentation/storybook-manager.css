@@ -1,0 +1,10 @@
+@import './fonts.css';
+/* Manager typography only: preserve the current theme, sizes and weights. */
+html body,
+html body :where(div, span, a, button, input, textarea, select, label, h1, h2, h3, h4, p, li) {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+html body :where(code, pre, kbd, samp),
+html body :where(code, pre, kbd, samp) * {
+  font-family: 'Menlo', monospace !important;
+}

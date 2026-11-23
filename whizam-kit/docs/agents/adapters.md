@@ -15,11 +15,9 @@ Pour Mistral, l’entrée documentée est la lecture explicite d’AGENTS.md ; a
 
 Le [traitement des demandes](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution) est commun aux quatre assistants : réponse informative directe, proposition avant modification non mineure, exception mineure et reprise du périmètre validé. Codex et Claude Code appliquent leurs politiques respectives de modèle/niveau ; Gemini, Mistral et Autre conservent les règles communes sans correspondance inventée. Cette instruction ne prouve pas son respect natif par chaque fournisseur ; leurs permissions et instructions prioritaires restent applicables.
 
-## Choix au premier échange
+## Politiques par point d’entrée
 
-Pour chaque nouvelle conversation, charger la règle canonique de [choix de l’assistant](../../AGENTS.md#choisir-lassistant-au-premier-échange), commune aux quatre adaptations. Demander « Pour démarrer, peux-tu me dire quel assistant tu utilises ? » avec **Codex (OpenAI)** / **Claude Code (Anthropic)**, sauf déclaration explicite dans le premier message. Utiliser le [protocole commun](user-decisions.md), sans champ complémentaire demandé pour ce choix initial. Les déclarations libres d’un autre assistant restent recevables et les adaptations existantes sont conservées. Attendre sans traiter la demande initiale, puis la reprendre après le choix. Cette étape précède aussi une question informative ou une petite modification ; le choix ne vaut pas validation d’exécution. Le relire au nouveau chat plutôt que reprendre automatiquement l’ancien outil du suivi.
-
-Après le choix Claude Code, lire la [politique Claude](../claude/chantier-model-routing.md) ; après Codex, la [politique Codex](../codex/chantier-model-routing.md). Pour Mistral et Autre, la lecture explicite d’AGENTS reste nécessaire si elle n’est pas native. La présence d’un adaptateur n’est pas une déclaration utilisateur et ne prouve pas l’exécution de cette étape.
+Appliquer le [cadrage initial](project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](languages.md).
 
 ## Choix natifs et instructions complémentaires
 
@@ -38,3 +36,7 @@ Les essais d’inférence supplémentaires nécessitent des accès et un périm�
 ## Références de conventions
 
 Conventions documentées le 21 octobre 2026, conservées lors de l’intégration ; recontrôler les sources officielles à toute qualification native ou mise à jour : [Codex skills](https://learn.chatgpt.com/docs/build-skills), [Claude skills](https://code.claude.com/docs/en/skills), [Gemini skills](https://geminicli.com/docs/cli/using-agent-skills/), [Vibe skills](https://docs.mistral.ai/vibe/code/cli/skills), [Vibe configuration](https://docs.mistral.ai/vibe/code/cli/configuration). Le déplacement des fichiers ne vaut pas nouvelle vérification de ces conventions.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](languages.md).

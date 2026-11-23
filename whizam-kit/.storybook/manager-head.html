@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./documentation/storybook-manager.css" />
+<script>
+  // Preserve direct links to the former unfiltered foundation catalogs.
+  ;(() => {
+    const url = new URL(window.location.href)
+    const redirects = {
+      '/docs/01-foundations-primitives--docs': '/docs/01-foundations-primitives-all--docs',
+      '/docs/01-foundations-tokens--docs': '/docs/01-foundations-tokens-all--docs',
+    }
+    const current = url.searchParams.get('path')
+    const next = Object.hasOwn(redirects, current) ? redirects[current] : null
+    if (next) {
+      url.searchParams.set('path', next)
+      window.location.replace(url.href)
+    }
+  })()
+</script>

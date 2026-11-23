@@ -12,6 +12,8 @@ Vous devez pouvoir identifier le résultat prévu, les éléments provisoires, l
 
 ## Comprendre les échanges
 
+Appliquer le [cadrage initial](../agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../agents/languages.md).
+
 Les questions utilisent les contrôles natifs du client lorsqu’ils sont disponibles et autorisés. Si une question n’est pas cliquable, répondez par son libellé en texte ou demandez une liste numérotée. Le kit ne garantit pas un rendu identique dans tous les assistants.
 
 Une recommandation de modèle ou de niveau vous aide à choisir une configuration ; elle ne change pas automatiquement votre outil. Les [adaptations et leurs limites](../compatibility.md) distinguent ressources présentes et essais réalisés.

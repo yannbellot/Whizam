@@ -325,3 +325,27 @@ test('Whizam guide publishes nine canonical pages in pedagogical order and keeps
   for (const d of state.classification.filter((x) => x.kind === 'history'))
     assert.ok(!state.pages.has(d.source))
 })
+
+test('local presentation assets are published, hashed and bounded to the documentation directory', async (t) => {
+  const r = await fixture(t)
+  const catalogPath = path.join(r, 'config/documentation/catalog.json')
+  const catalog = JSON.parse(await fs.readFile(catalogPath, 'utf8'))
+  catalog.presentationAssets = ['fonts.css', 'Inter.ttf', 'OFL.txt', 'portal.css']
+  await fs.writeFile(catalogPath, JSON.stringify(catalog))
+  await fs.mkdir(path.join(r, 'public/documentation'), { recursive: true })
+  for (const name of catalog.presentationAssets)
+    await fs.writeFile(path.join(r, 'public/documentation', name), 'synthetic-' + name)
+  const before = await collect(r)
+  assert.equal(before.outputs.get('assets/typography/Inter.ttf').toString(), 'synthetic-Inter.ttf')
+  assert.match(before.outputs.get('assets/typography/portal.css').toString(), /synthetic-fonts.css/)
+  await fs.writeFile(path.join(r, 'public/documentation/portal.css'), 'updated-style')
+  assert.notEqual((await collect(r)).digest, before.digest)
+  catalog.presentationAssets = ['../private.css']
+  await fs.writeFile(catalogPath, JSON.stringify(catalog))
+  await assert.rejects(collect(r), /Invalid documentation presentation asset/)
+  catalog.presentationAssets = ['fonts.css']
+  await fs.writeFile(catalogPath, JSON.stringify(catalog))
+  await fs.rm(path.join(r, 'public/documentation/fonts.css'))
+  await fs.symlink('/etc/passwd', path.join(r, 'public/documentation/fonts.css'))
+  await assert.rejects(collect(r), /symlink/)
+})

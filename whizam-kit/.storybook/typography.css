@@ -1,0 +1,11 @@
+/* Documentation presentation; component tokens and application styles are untouched. */
+.sbdocs-wrapper,
+.sbdocs-content,
+.sbdocs :is(h1, h2, h3, h4, h5, h6, p, li, th, td, caption, label, select) {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+.sbdocs :is(code, pre, kbd, samp),
+.sbdocs :is(code, pre, kbd, samp) *,
+#storybook-root :is(code, pre, kbd, samp) {
+  font-family: 'Menlo', monospace !important;
+}

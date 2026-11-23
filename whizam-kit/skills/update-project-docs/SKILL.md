@@ -24,3 +24,7 @@ L’assistant maintient sources, contrats, exemples et descriptions dans le mand
 ## Portail documentaire
 
 Maintenir les sources Markdown uniques et leur classement selon le [guide](../../docs/documentation.md). Après évolution, construire et contrôler le portail avec `docs:build` et `docs:check`. Les historiques du socle restent hors du site et de la recherche, les fichiers privés exclus. Classer les documents courants du projet dans leur étape via le registre ; ne pas les masquer du seul fait de leur dossier work-items/reviews. Présenter les trois accès Application, Storybook et Documentation après vérification, sans exiger le parent ou Python hôte.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](../../docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../../docs/agents/languages.md).

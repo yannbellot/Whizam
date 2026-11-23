@@ -4,7 +4,7 @@ Travaillez sur une copie du kit pour conserver un modèle réutilisable. Choisis
 
 ## Avant de commencer
 
-Préparez le nom envisagé du projet et identifiez l’assistant que vous utilisez. Le kit propose un choix initial entre Codex et Claude Code ; les autres adaptateurs livrés ont leurs propres limites de compatibilité. Leur présence ne garantit pas qu’ils aient été testés dans votre environnement.
+Préparez votre intention ou votre brief si vous en avez un. Vous pouvez aussi demander une démonstration. Aucun choix d’assistant n’est demandé : chaque outil suit son point d’entrée. Les adaptateurs ont leurs propres limites de compatibilité ; leur présence ne prouve pas un essai dans votre environnement.
 
 L’assistant doit vérifier l’état du dossier et les prérequis avant toute installation. Certaines opérations sur votre poste peuvent nécessiter votre intervention ou une autorisation de l’outil. Il doit expliquer ce qui manque et son effet sur la suite.
 

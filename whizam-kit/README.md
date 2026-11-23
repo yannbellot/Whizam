@@ -27,9 +27,9 @@ Le parcours `/projects` est un exemple de gestion de fiches fictives avec stocka
 
 1. Copiez ou décompressez le dossier complet dans l’emplacement de votre choix, en conservant les fichiers cachés et les liens internes.
 2. Ouvrez ce dossier dans votre assistant de développement, ou lancez sa CLI depuis cette racine.
-3. Demandez-lui de lire les instructions du kit, puis de démarrer votre projet. Au premier échange de chaque nouvelle conversation, il vous demande quel assistant vous utilisez avant de reprendre votre demande. Si vous l’indiquez explicitement dans votre premier message, il poursuit sans redemander. Ce choix reste valable pendant la conversation et ne vaut pas validation d’exécution.
+3. Demandez-lui de lire les instructions puis de démarrer votre projet. Fournissez un brief, demandez un guidage ou une démonstration. Le questionnaire reprend seulement les informations manquantes ; les réponses sont conservées entre conversations. Aucun choix d’assistant n’est demandé.
 
-Le choix initial est formulé ainsi : « Pour démarrer, peux-tu me dire quel assistant tu utilises ? », avec **Codex (OpenAI)** et **Claude Code (Anthropic)**. Il ne demande pas de commentaire complémentaire. Une déclaration libre d’un autre outil reste possible.
+Le [cadrage initial](docs/agents/project-intake.md) précise les dix questions, les demandes complémentaires en conversation et la synthèse à valider avant développement. Les langues documentaires sont choisies en dernier.
 
 Les entrées livrées sont les suivantes :
 
@@ -53,7 +53,7 @@ Chaque assistant s’installe et s’authentifie avec votre propre accès. Les a
 
 ## Choix, vérifications et validation
 
-Lorsqu’une décision est nécessaire, l’assistant présente les options avec les contrôles natifs disponibles, accompagnées d’une **Instruction complémentaire — facultative**. Vous pouvez préciser ou corriger votre choix ; une contradiction ou condition importante est clarifiée avant exécution. Si l’interface ne permet pas les notes associées, répondez en texte avec le choix et sa précision. L’apparence dépend du client ; aucun formulaire supplémentaire n’est nécessaire.
+Lorsqu’une décision est nécessaire, l’assistant présente les options avec les contrôles natifs disponibles, avec leur saisie libre native, sans légende répétitive. Vous pouvez préciser ou corriger votre choix ; une contradiction ou condition importante est clarifiée avant exécution. Si l’interface ne permet pas les notes associées, répondez en texte avec le choix et sa précision. L’apparence dépend du client ; aucun formulaire supplémentaire n’est nécessaire.
 
 Pour les parcours concernés par une revue, trois modes sont proposés : **Manuel** (vous suivez une recette préparée), **Automatisé — E2E** (l’assistant exécute les scénarios convenus), **Combiné** (les deux). Le mode est conservé pour les retests du même périmètre. Ces choix ne remplacent pas les contrôles techniques obligatoires ni les revues design, technique et sécurité.
 
@@ -90,18 +90,18 @@ L’application, Storybook, Zensical et les contrôles fonctionnent sans compte 
 
 L’application affiche une page vide ; la démonstration `/projects` est retirée et `db:seed` n’insère aucune donnée. Les migrations et données préexistantes sont conservées. Storybook ne présente aucun contenu initial de projet. Zensical présente dès le premier démarrage les guides utiles, séparés entre Documentation designer et Documentation technique. Le Suivi de projet regroupe État courant, Roadmap et Étapes du projet. Les historiques du kit restent dans les sources, hors du portail et de sa recherche.
 
-Les politiques, instructions, composants et exemples requis par les contrats restent dans les sources internes. `.storybook/starter-stories.json` exclut explicitement les stories de référence initiales ; retirer une entrée pour la promouvoir après adaptation. Les nouvelles stories sont découvertes automatiquement. Le registre documentaire sépare guides actifs, documents du projet et historiques non publiés ; les règles de classement sont dans le [guide documentaire](docs/documentation.md). Les nouveaux documents restent détectés et visibles, avec un diagnostic de classement à compléter. Les références privées ou extérieures du socle ne sont pas chargées. Les modèles de suivi restent à initialiser.
+Les politiques, instructions, composants et exemples requis par les contrats restent dans les sources internes. `.storybook/starter-stories.json` exclut explicitement les stories de référence initiales ; la publication exige maintenant une adoption explicite dans `.storybook/project.json`, après adaptation au projet. Les stories non classées sont signalées et restent masquées. Le registre documentaire sépare guides actifs, documents du projet et historiques non publiés ; les règles de classement sont dans le [guide documentaire](docs/documentation.md). Les nouveaux documents restent détectés et visibles, avec un diagnostic de classement à compléter. Les références privées ou extérieures du socle ne sont pas chargées. Les modèles de suivi restent à initialiser.
 
 ## Consulter Storybook
 
-Storybook démarre sans contenu. Il accueillera les fondations, composants, variantes, états et patterns du projet. Il utilise les mêmes composants et tokens que l’application. Aucun réglage ne s’enregistre depuis son interface.
+Storybook affiche toute son organisation avec des rubriques vides, sans exemple par défaut. Il accueillera les fondations, composants, variantes, états et patterns du projet. Il utilise les mêmes composants et tokens que l’application. Aucun réglage ne s’enregistre depuis son interface.
 
 ```bash
 npm ci
 npm run storybook
 ```
 
-Ouvrez [Storybook local](http://127.0.0.1:6006). Les exemples rédigés et le registre des composants alimentent automatiquement ses stories. Les réglages du design system se maintiennent dans les sources avec l’assistant.
+Ouvrez [Storybook local](http://127.0.0.1:6006). Les exemples rédigés et le registre des composants alimentent ses stories ; seuls les éléments déclarés pour le projet sont publiés. Voir l’[organisation et la publication](docs/design-system/architecture.md#organisation-et-publication-storybook). Les réglages du design system se maintiennent dans les sources avec l’assistant.
 
 ## Maintenir le design system avec l’assistant
 
@@ -152,3 +152,9 @@ Ces commandes vérifient des aspects distincts du kit ; une réussite technique 
 Vous pouvez renommer ou déplacer le dossier. Conservez notamment `.agents/`, `.claude/`, `.storybook/` et les liens relatifs des skills. Pour distribuer une nouvelle copie, transmettez les sources et `.env.example`, en excluant dépendances installées, builds, caches, configurations privées, connexions IA et données personnelles. Les volumes Docker sont externes au dossier : les déplacer ou transmettre leurs données nécessite une [sauvegarde distincte](docs/backup-and-restore.md).
 
 Le kit est un point de départ à adapter et à vérifier pour votre application. Il ne constitue pas une application métier déjà réalisée ni une garantie de préparation à la production. La [notice de distribution](docs/distribution/README.md) précise la provenance, les contrôles et les limites de cette édition ; cette copie locale n’accorde pas de droits de redistribution supplémentaires.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](docs/agents/languages.md).
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](docs/agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.

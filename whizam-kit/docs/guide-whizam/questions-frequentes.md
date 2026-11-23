@@ -2,7 +2,7 @@
 
 ## L’application est vide, est-ce normal ?
 
-Oui, dans un kit neuf. L’application et Storybook attendent les contenus de votre projet. Une initialisation prépare le travail ; la première version vient après le cadrage et la réalisation. Voir [Créer son premier projet](premier-projet.md).
+Oui, dans un kit neuf. L’application attend les contenus de votre projet. Storybook affiche déjà ses rubriques Foundations, Components et Patterns, même vides, sans exemple par défaut. Seuls les éléments créés ou adoptés pour votre projet y seront présentés. Une initialisation prépare le travail ; la première version vient après le cadrage et la réalisation. Voir [Créer son premier projet](premier-projet.md).
 
 ## Où est mon projet ?
 

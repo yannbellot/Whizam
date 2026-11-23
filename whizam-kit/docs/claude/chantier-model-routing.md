@@ -1,6 +1,6 @@
 # Recommander le modèle Claude Code et l’effort par chantier
 
-**Politique qualitative — 19 novembre 2026.** [Décision 042](../decisions/042-assistant-choice-and-claude-routing.md). Appliquer d’abord le [choix de l’assistant](../../AGENTS.md#choisir-lassistant-au-premier-échange). Cette politique concerne le choix Claude Code ; les autres outils suivent leurs propres règles. Aucun compte Claude n’est requis pour exécuter l’application, Storybook ou le portail documentaire.
+Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
 
 ## Références et disponibilité
 
@@ -41,13 +41,9 @@ Exemples : une couleur locale vérifiée peut relever de moyenne ; une transform
 
 Suivre le [traitement commun](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution) et l’[affichage commun](../../AGENTS.md#affichage-et-reprise) :
 
-- Première recommandation connue pour cet assistant ou changement du couple modèle/niveau : présenter le couple et son motif, puis attendre validation avant l’exécution concernée, même mineure.
-- Couple inchangé : omettre la recommandation. Une nouvelle modification non mineure attend néanmoins la validation de sa proposition.
-- Modification mineure répondant à tous les critères, choix d’assistant déjà recueilli et couple inchangé : exécuter directement, vérifier et confirmer brièvement.
-- Information seule, après le choix d’assistant : répondre directement sans validation ; recommander seulement si une suite concrète est préparée.
-- Précision dans un périmètre validé : poursuivre sans accord répété tant que périmètre, conséquences et configuration restent stables.
+Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
 
-Format : **Pour la suite : Claude Sonnet 5.5 · Moyenne — modification visuelle localisée.** Une indication utile par proposition, sans répétition sous chaque question. Avant validation, conserver l’analyse dans la conversation sans écrire de fiche. Après autorisation d’écriture, conserver dans le suivi utile périmètre validé, assistant d’origine, dernier couple recommandé, faits justifiant le choix et inconnues. Réutiliser cette analyse si rien de matériel ne change. Un historique Codex ne vaut pas historique Claude ; une nouvelle conversation redemande le choix de l’assistant avant la reprise du suivi.
+Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
 
 ## Choisir manuellement dans Claude Code
 

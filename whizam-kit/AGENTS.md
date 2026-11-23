@@ -24,22 +24,26 @@ Lire [README.md](README.md), [ROADMAP.md](ROADMAP.md), [docs/project-state.md](d
 
 Les quatre rôles, la bibliothèque de skills, les adaptations et contrôles sont dans ce dossier. Le [catalogue](skills/catalog.json) décrit leur contenu courant, extensible selon les besoins validés. Lire le [contrat commun](docs/agents/skill-contract.md), puis le rôle et le skill utiles. Les [adaptations](docs/agents/adapters.md) et la [matrice de compatibilité](docs/compatibility.md) distinguent leur présence des essais natifs effectivement exécutés. La qualification PORT-03 est suivie dans sa fiche ; aucun fichier du parent n’est requis pour charger la bibliothèque ou exploiter le starter web.
 
-## Choisir l’assistant au premier échange
+<a id="choisir-lassistant-au-premier-échange"></a>
+<a id="source-choisir-lassistant-au-premier-echange"></a>
 
-Au premier message de chaque nouvelle conversation, avant de traiter la demande, recueillir le choix de l’assistant utilisé : **Codex (OpenAI) · Claude Code (Anthropic)**. L’« assistant » désigne ici l’outil de développement, pas un rôle Builder/reviewer ni un modèle. Lire les instructions nécessaires à ce choix et conserver la demande initiale dans la conversation. **Avant de rédiger la question comme message, appeler l’outil natif de demande utilisateur disponible et autorisé.** Les libellés ci-dessous sont les données à fournir à cet outil, pas un message à recopier :
+## Politiques par point d’entrée
 
-> Pour démarrer, peux-tu me dire quel assistant tu utilises ?
->
-> ○ Codex (OpenAI)  
-> ○ Claude Code (Anthropic)
+Ne plus demander ni mémoriser quel assistant utilise le designer. `.assistant-choice.local/choice.json` est un ancien état inactif : ne pas le lire pour aiguiller la session, ne pas le supprimer ni l’écraser.
 
-Ne pas afficher de ronds `○` ou de cases Markdown comme s’il s’agissait de boutons. Si le sélecteur natif est disponible et autorisé, son appel est requis, y compris pour la validation d’exécution d’une proposition de travail. Après l’appel, ne pas répéter la question et les options dans un message final ; attendre la réponse effective, même si l’appel est asynchrone. Si aucun outil autorisé ne convient, annoncer « Choix en texte : réponds avec le libellé souhaité », puis proposer une liste numérotée. Aucun fournisseur recommandé ou présélectionné par le kit ; aucun champ complémentaire demandé pour cette question initiale. Le client peut ajouter sa propre saisie libre. Suivre le [protocole commun de questions](docs/agents/user-decisions.md).
+Ces règles sont communes. Dans une session Codex identifiée par son contexte d’exécution, appliquer `docs/codex/chantier-model-routing.md`. Dans Claude Code, `CLAUDE.md` fait appliquer `docs/claude/chantier-model-routing.md` et exclut la branche Codex, même après lecture d’AGENTS. Gemini/Mistral conservent leurs adaptations communes sans équivalence de modèles inventée. La seule présence d’un fichier d’entrée ne détecte pas l’assistant. Si le contexte d’entrée reste indéterminé, appliquer les règles communes sans recommandation spécifique ni questionnaire sur l’assistant. Les instructions prioritaires du client prévalent.
 
-Attendre la réponse sans modifier de fichier ni lancer d’opération ; cette étape précède aussi les demandes informatives et les modifications mineures. Ne pas fournir de recommandation modèle/niveau avant ce choix. Si le premier message indique explicitement l’assistant utilisé, cette indication vaut choix : ne pas redemander. La simple mention d’un assistant comme sujet d’une question ou la présence de CLAUDE.md ne vaut pas choix.
+## Cadrage et langues
 
-Après la réponse, reprendre automatiquement la demande initiale sans exiger qu’elle soit répétée. Appliquer la politique Codex ou Claude Code correspondante ; pour Gemini, Mistral ou Autre, appliquer les règles communes sans inventer de couple modèle/niveau. Une réponse imprécise ne permet pas de supposer un choix : demander seulement la précision nécessaire. Une déclaration libre explicite d’un autre assistant suffit pour poursuivre avec les règles communes ; préserver les adaptateurs existants sans ajouter d’option au sélecteur standard.
+Q6 propose d’abord les trois plateformes ensemble. Après Non, poser successivement les trois questions natives Oui/Non du cadrage canonique : ordinateur, tablette, téléphone mobile. Un seul appareil par appel ; attendre, sauvegarder et relire chaque réponse avant la suivante. Ce parcours remplace les cases à cocher et sélecteurs cumulatifs. Réutiliser les réponses connues ; à la reprise, ne poser que la prochaine question manquante.
 
-Le choix reste valable pendant cette conversation, sauf correction explicite de l’utilisateur. Le redemander dans une nouvelle conversation même si le suivi du projet indique l’ancien outil ; une déclaration explicite dans son premier message suffit. Un changement d’assistant ne sélectionne aucun modèle et n’autorise aucune exécution. Après autorisation d’écriture seulement, le suivi peut conserver la provenance des recommandations par assistant ; ne pas utiliser une recommandation Codex comme historique Claude, ou inversement. Ne créer aucun fichier témoin pour ce choix. Les instructions prioritaires du client et ses permissions restent applicables ; cette consigne dépend de leur lecture effective, sans verrou technique ni lanceur supplémentaire.
+Démarrage d’un nouveau projet : premier message visible exactement égal à l’accueil à deux lignes défini dans le cadrage canonique, sans préambule technique. Ne pas ajouter de texte répétitif « Autres demandes ou précisions » aux questions : utiliser la saisie native sans la simuler. Toute question de premier niveau, y compris Q6 appareils, utilise les choix natifs ; Q6 suit le parcours successif ci-dessus ; un autre format peut être précisé dans la saisie native, sans question supplémentaire systématique. Les compléments de contenu restent conversationnels. Avant la question suivante, sauvegarder et relire le cadrage avec `scripts/project-intake.mjs` selon l’autorité canonique. Une demande de démarrage autorise ces seules écritures minimales dans le brief et l’état courant, avant l’accord de développement ; ne pas garder les réponses uniquement en mémoire. Ne jamais exécuter cet enregistrement dans le modèle pour le mainteneur.
+
+Branchements du cadrage : Q7 Non passe directement à Q9 sans poser Q8. Q9 et Q10 sont des choix uniques natifs (Français / English / Français et English / Autre combinaison), pas une question ouverte justifiée par l’absence de multi-sélection. La traduction de contenus existants n’est proposée que pour des langues documentaires supplémentaires autres que fr/en avec traductions réellement manquantes ; jamais pour Français, English ou les deux seuls. Préserver les réponses déjà reçues.
+
+Pour une question de cadrage en attente, suivre le protocole de décisions : garder le tour actif après l’appel asynchrone grâce à un outil d’attente interruptible, sans message final même vide. Les attentes expirées ne valent pas réponse et sont renouvelées. Si le client ne permet pas cette attente, poser la question en message final normal sans sélecteur asynchrone. Aucune branche ni opération indépendante avant la réponse explicite. Cette règle ne change pas la poursuite des mandats déjà définis.
+
+Pour un nouveau projet, suivre [Cadrage initial](docs/agents/project-intake.md), autorité unique des questions : entrée brief/guidage/démonstration, puis Q1–Q10 seulement si les réponses manquent. Les langues de l’application sont Q9 ; la documentation/Storybook est Q10, jamais une question préalable obligatoire pour une demande informative. Les collectes de contenu de second niveau se font dans un message normal ; les arbitrages à options connues restent natifs. Lire le brief et le suivi avant toute question ou reprise ; ne pas réinitialiser un projet dans une nouvelle conversation. Appliquer [Langues du projet](docs/agents/languages.md) pour les préférences et traductions. La démonstration propose Q1–Q6, trois appareils, puis reprend à Q7 après accord. Aucun développement avant validation de la synthèse complète.
 
 ## Démarrer un nouveau projet
 
@@ -57,7 +61,7 @@ Les chemins se résolvent depuis la racine réelle du kit ou le fichier qui les 
 
 ## Traitement des demandes et validation de l’exécution
 
-Après le choix de l’assistant au premier échange, analyser chaque demande avec une inspection ciblée en lecture seule. Distinguer information, modification nouvelle et continuation d’un travail déjà validé. Avant validation, présenter l’analyse dans la conversation : ne modifier ni code, ni documentation, ni configuration, ne pas installer, démarrer de service ou lancer de contrôle susceptible de modifier l’état. Une demande informative reçoit directement sa réponse, sans validation d’exécution.
+Analyser chaque demande avec une inspection ciblée en lecture seule. Distinguer information, modification nouvelle et continuation d’un travail déjà validé. Avant validation, présenter l’analyse dans la conversation : ne modifier ni code, ni documentation, ni configuration, ne pas installer, démarrer de service ou lancer de contrôle susceptible de modifier l’état. Une demande informative reçoit directement sa réponse, sans validation d’exécution.
 
 Pour une modification dépassant le seuil mineur, exposer le résultat observable prévu, le périmètre, les limites ou hypothèses utiles et les vérifications envisagées, puis demander la validation de l’exécution. Une demande initiale de réalisation ne remplace pas cette validation de la proposition concrète. Une validation explicite déjà donnée sur cette proposition suffit : ne pas la redemander. La validation couvre réalisation, vérifications, documentation et corrections nécessaires dans le périmètre annoncé ; elle ne vaut ni acceptation du résultat ni mandat de publication ou de déploiement.
 
@@ -71,7 +75,7 @@ Cette règle de traitement est commune aux assistants. Les recommandations nomm�
 
 ## Questions, vérifications et décisions utilisateur
 
-Appliquer le [protocole commun](docs/agents/user-decisions.md) dès qu’une décision utilisateur est nécessaire : contexte et périmètre, question explicite, choix natifs si disponibles et autorisés, puis **Instruction complémentaire — facultative** selon les capacités du client. L’exception est le choix initial d’assistant, sans champ complémentaire demandé. Utiliser un repli textuel sans imposer d’interface ou de réglage supplémentaire.
+Appliquer le [protocole commun](docs/agents/user-decisions.md) dès qu’une décision utilisateur est nécessaire : contexte et périmètre, question explicite, choix natifs si disponibles et autorisés, avec la saisie libre native du client, sans légende répétitive. Utiliser un repli textuel sans imposer d’interface ou de réglage supplémentaire.
 
 Pour les revues portant sur un parcours observable, proposer **Manuel · Automatisé — E2E · Combiné**, avec couverture et recommandation motivée. Conserver mode et couverture pour les retests du même périmètre. Les E2E ne remplacent ni la revue design/technique/sécurité ni les contrôles obligatoires ; une recette manuelle attend le retour de l’utilisateur. Distinguer choix du mode, validation d’exécution, résultat des vérifications et acceptation du jalon.
 
@@ -109,7 +113,7 @@ Prendre en charge les opérations techniques accessibles dans le mandat et les p
 
 ## Recommandations de modèle et de niveau
 
-Après le choix de l’assistant, charger seulement la politique correspondante. Les règles d’affichage et de validation de cette section sont communes à Codex et Claude Code. Les modèles et seuils sont propres à chaque politique ; aucune performance équivalente n’est présumée.
+Charger seulement la politique correspondant au point d’entrée actif, sans questionnaire d’assistant. Les règles d’affichage et de validation de cette section sont communes à Codex et Claude Code. Les modèles et seuils sont propres à chaque politique ; aucune performance équivalente n’est présumée.
 
 ### Codex
 
@@ -140,14 +144,15 @@ L’utilisateur choisit manuellement sa configuration. Pour un changement à ex�
 
 La ROADMAP.md et le docs/project-state.md fournis sont à initialiser au démarrage d’un projet réel, avec son brief, son périmètre et son mandat ; ne pas préremplir ses tâches avec la construction du starter. Conserver les statuts dans ROADMAP.md, le point de reprise court dans docs/project-state.md, les préparations dans docs/work-items, décisions dans docs/decisions et preuves dans docs/reviews, avec un premier contenu utile. Distinguer observations, hypothèses et propositions. Un jalon techniquement qualifié reste En revue jusqu’à l’acceptation humaine ; une revue automatisée ou un commit ne la remplace pas.
 
-Rédiger la documentation et les contenus pédagogiques en français, les identifiants techniques et messages de commit en anglais. Respecter les noms officiels des technologies. Suivre les conventions Git locales documentées, sans réécrire l’historique ni absorber des travaux préexistants. Publications, CI distante, services externes et déploiements nécessitent un mandat explicite.
+Rédiger la documentation et les contenus pédagogiques selon le [choix linguistique du projet](docs/agents/languages.md), les identifiants techniques et messages de commit en anglais. Respecter les noms officiels des technologies. Suivre les conventions Git locales documentées, sans réécrire l’historique ni absorber des travaux préexistants. Publications, CI distante, services externes et déploiements nécessitent un mandat explicite.
 
 Consigner dans le suivi utile cible, tâche/statut, version, fichiers, contrôles réellement exécutés, décisions/hypothèses, Doc updated ou No doc impact, risques et reprise. Ne pas recopier cette liste technique dans le message au designer : appliquer la règle de communication ci-dessus et lier la preuve utile. La passation doit permettre une reprise sans conversation préalable ; les limites humaines ou de compatibilité restent documentées, et leur conséquence est expliquée au designer lorsqu’elle conditionne la suite.
+
+Appliquer la [politique Git par lots](docs/conventions.md#git-batches) pour les branches, le cumul des retouches, les commits automatiques et l’intégration locale ; distinguer intégration et acceptation humaine. Cette politique de travail direct ne modifie pas le moteur workspace intégré.
 
 ## Conditions d’arrêt
 
 Conserver un point de reprise et demander seulement l’arbitrage nécessaire en cas de changement matériel de périmètre, contradiction d’autorités, technologie non approuvée, secret/accès absent, opération destructive ou difficilement réversible, travaux ambigus impossibles à isoler ou contrôle obligatoire invérifiable après diagnostic. Respecter les permissions natives des outils ; ne pas contourner un refus ni retirer une protection pour poursuivre.
-
 
 ## Politique courante du design system — DS-AUTO-01
 
@@ -156,3 +161,7 @@ Appliquer la [politique](docs/design-system/policy.md), qui remplace pour ce kit
 ## Documentation de l’application
 
 Le [portail documentaire](docs/documentation.md) fait partie du kit autonome. Maintenir les Markdown uniques avec le changement produit, distinguer guides actifs, documents du projet et historiques exclus dans le registre et vérifier `docs:build`, `docs:check` et les liens. Le conteneur ne reçoit que des entrées publiques préparées, jamais le parent ou les configurations privées. La première revue présente Application, Storybook et Documentation après vérification réelle ; la présence d’un fichier Markdown ne prouve pas que son rendu ou sa recherche fonctionne.
+
+Pour Storybook, suivre l’[organisation et la publication du projet](docs/design-system/architecture.md#organisation-et-publication-storybook) : structure permanente, registre explicite des seuls éléments créés ou adoptés pour le projet, aucun exemple par défaut. Maintenir classement, variantes/états et tokens avec chaque création, adoption ou retrait ; ne pas réactiver globalement le socle.
+
+À la reprise et après chaque demande de modification terminée, utiliser l’aide `scripts/git-batch.mjs` selon les conventions pour retrouver le lot et évaluer sa clôture ; ne pas confondre un déclencheur avec un contrôle réussi.

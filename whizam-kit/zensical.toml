@@ -4,6 +4,7 @@ site_description = "Application, conception, design system et transmission"
 docs_dir = "input"
 site_dir = "site"
 use_directory_urls = true
+extra_css = ["assets/typography/portal.css"]
 [project.theme]
 language = "fr"
 font = false

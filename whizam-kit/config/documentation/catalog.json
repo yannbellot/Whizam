@@ -2313,7 +2313,22 @@
         "label": "Questions fréquentes",
         "order": 8,
         "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/agents/languages.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "label": "Langues du projet"
+      },
+      "docs/agents/project-intake.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "label": "Cadrage initial et reprise"
+      },
+      "docs/decisions/044-project-intake-and-entry-policies.md": {
+        "kind": "history",
+        "reason": "Décision du socle, pas une décision du projet dérivé."
       }
     }
-  }
+  },
+  "presentationAssets": ["fonts.css", "Inter.ttf", "OFL.txt", "portal.css"]
 }

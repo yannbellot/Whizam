@@ -10,11 +10,11 @@ Les [conventions](../conventions.md) définissent le suivi interne. Le [périmè
 
 ## Entrée d’une mission
 
-Au premier échange, appliquer le [choix de l’assistant](../../AGENTS.md#choisir-lassistant-au-premier-échange) avant de traiter la demande, même mineure ou informative ; une déclaration explicite dans le premier message suffit. Ne pas confondre ce choix avec le modèle effectif ni le mandat d’exécution.
+Appliquer le [cadrage initial](project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](languages.md).
 
 But utilisateur, racine du projet, référence de tâche/brief/specification, périmètre/exclusions, version ou diff, outils réellement disponibles et résultat attendu. Si un élément manque, choisir une hypothèse limitée et réversible dans le mandat ; une conséquence matérielle suit les conditions d’arrêt d’AGENTS. Une analyse/préparation seule n’autorise pas l’implémentation. Le [traitement des demandes](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution) précède les écritures, y compris documentaires, et l’exécution des procédures : une proposition non encore validée reste dans la conversation. Une instruction de skill ne dispense pas de cette validation ; les opérations et corrections déjà couvertes par un périmètre validé ne la redemandent pas.
 
-Les choix, validations d’exécution, retours de recette et acceptations suivent le [protocole commun](user-decisions.md) : choix natifs autorisés et instruction complémentaire facultative, repli texte, aucune question répétée inutile. Le choix initial d’assistant est sans champ complémentaire demandé. Une note contradictoire ou conditionnelle ne vaut pas accord sans réserve.
+Les choix, validations d’exécution, retours de recette et acceptations suivent le [protocole commun](user-decisions.md) : choix natifs autorisés et instruction complémentaire facultative, repli texte, aucune question répétée inutile. Une note contradictoire ou conditionnelle ne vaut pas accord sans réserve.
 
 ## Exécution et preuves
 
@@ -35,3 +35,9 @@ Les statuts et preuves se rangent chez le propriétaire du changement. Le suivi 
 ## Validation de la bibliothèque
 
 Depuis la racine du kit, après npm ci : `npm run validate:agent-kit` ou `node scripts/validate-agent-kit.mjs`. Le contrôle vérifie la complétude déclarée par le catalogue, les sources canoniques, ressources requises déclarées, frontmatters et adaptations internes. Le nombre attendu décrit la livraison courante, sans plafond universel ; toute extension actualise le catalogue et les expositions selon la [décision 002](../decisions/002-dedicated-project-initialization.md). Pendant une construction partielle seulement, `--partial` ne qualifie pas le catalogue complet. La validation structurelle ne prouve ni efficacité ni découverte native ; suivre les [adaptations](adapters.md) et la [matrice](../compatibility.md) pour les essais effectifs.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](languages.md).
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](project-intake.md). Cette exception ne vaut aucune autre autorisation.

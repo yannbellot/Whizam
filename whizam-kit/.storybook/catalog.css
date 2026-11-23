@@ -1,0 +1,105 @@
+.whizam-catalog {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.whizam-catalog-scroll {
+  overflow-x: auto;
+}
+.whizam-catalog table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.whizam-catalog th,
+.whizam-catalog td {
+  text-align: start;
+  vertical-align: top;
+  padding: 0.75rem;
+}
+.whizam-catalog code {
+  overflow-wrap: anywhere;
+}
+.whizam-color-value {
+  display: inline;
+  max-width: 100%;
+}
+.whizam-swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid currentColor;
+}
+.whizam-catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.whizam-catalog-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.whizam-catalog table[data-kind='inventory'] {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+.whizam-catalog table[data-kind='inventory'] th,
+.whizam-catalog table[data-kind='inventory'] td {
+  white-space: normal;
+  min-width: 0;
+  height: auto;
+  padding: 0.5rem 0.375rem;
+  overflow-wrap: anywhere;
+}
+.whizam-catalog table[data-kind='inventory'] .whizam-color-value {
+  display: inline;
+  white-space: normal;
+  max-width: 100%;
+}
+.whizam-catalog table[data-kind='inventory'] th:first-child {
+  width: 22%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(2) {
+  width: 9%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(3) {
+  width: 8%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(4) {
+  width: 18%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(5) {
+  width: 11%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(6) {
+  width: 9%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(7) {
+  width: 10%;
+}
+.whizam-catalog table[data-kind='inventory'] th:nth-child(8) {
+  width: 13%;
+}
+.whizam-catalog table[data-kind='tokens'] th:first-child {
+  width: 34%;
+}
+.whizam-catalog table[data-kind='tokens'] th:nth-child(2) {
+  width: 11%;
+}
+.whizam-catalog table[data-kind='tokens'] th:nth-child(4) {
+  width: 28%;
+}
+
+.whizam-catalog table[data-kind='tokens'] th:nth-child(3) {
+  width: 12%;
+}
+.whizam-catalog table[data-kind='tokens'] th:nth-child(5) {
+  width: 15%;
+}
+
+.whizam-catalog table[data-kind='inventory'] .whizam-swatch {
+  vertical-align: middle;
+}

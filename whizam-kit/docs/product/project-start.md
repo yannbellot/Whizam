@@ -8,7 +8,7 @@ Pour une lecture destinée au designer, consulter [Créer son premier projet](..
 
 ## Mandat et progression
 
-Au premier échange, appliquer le [choix de l’assistant](../../AGENTS.md#choisir-lassistant-au-premier-échange) avant ce parcours, sauf déclaration explicite dans le premier message. Conserver la demande initiale et la reprendre après le choix, sans le confondre avec une validation d’exécution.
+Appliquer le [cadrage initial](../agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../agents/languages.md).
 
 Une demande « Initialise un nouveau projet [nom] » ouvre ce parcours. Le Builder annonce les quatre séquences et le résultat attendu, puis prépare l’environnement avec initialize-project. Le nom suffit pour analyser cette préparation et présenter une proposition ; avant toute écriture, installation ou lancement, appliquer la [validation de l’exécution](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). L’intention est recueillie lors du cadrage, en réutilisant les réponses déjà données ; aucun questionnaire produit n’est nécessaire pour lancer les vérifications techniques.
 
@@ -24,11 +24,13 @@ La restitution indique que la préparation est terminée et annonce le cadrage d
 
 ## 2. Cadrage de la première version
 
+Suivre intégralement [le questionnaire canonique](../agents/project-intake.md) : entrée brief ou démonstration, Q1–Q10, reprise et validation finale.
+
 **Résultat : périmètre observable de la première version.** Avec analyze-brief, brief-to-specs et les procédures de conception utiles, préciser objectif, public, pages/parcours, contenus disponibles, comportements et direction visuelle. Les références peuvent être fournies par le designer ; Figma n’est pas obligatoire. Poser seulement les questions qui conditionnent la suite, regroupées lorsque possible.
 
 Reformuler ce qui sera réellement visible et utilisable, ce qui est exclu, ce qui reste provisoire et les critères de réussite. Ne pas inventer une identité, des réalisations, des contenus éditoriaux ou des services pour combler un manque. Les contenus manquants sont signalés ; des données synthétiques nécessaires aux tests restent isolées. Un prototype avec simulations est nommé comme tel et ses limites sont explicites.
 
-Pour une tranche affectant les parcours, proposer le [mode de vérification](../agents/user-decisions.md#choisir-le-mode-de-vérification) avec sa couverture : Manuel, Automatisé — E2E ou Combiné. Les décisions utiles suivent les choix natifs et l’instruction complémentaire facultative du protocole ; le choix initial d’assistant garde ses deux options sans champ complémentaire demandé. Le choix du mode ne vaut pas accord d’exécution.
+Pour une tranche affectant les parcours, proposer le [mode de vérification](../agents/user-decisions.md#choisir-le-mode-de-vérification) avec sa couverture : Manuel, Automatisé — E2E ou Combiné. Les décisions utiles suivent les choix natifs et l’instruction complémentaire facultative du protocole. Le choix du mode ne vaut pas accord d’exécution.
 
 ## 3. Conception et développement
 
@@ -59,3 +61,6 @@ Projet déjà initialisé : lire le suivi, retrouver la séquence réellement at
 ## Documentation du projet
 
 La revue présente Application, Storybook et Documentation après vérification de leurs contenus. Le portail Zensical est livré dans le kit ; voir le [guide documentaire](../documentation.md). Il lit les Markdown courants et ne requiert ni parent de maintenance ni Python hôte.
+
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](../agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.

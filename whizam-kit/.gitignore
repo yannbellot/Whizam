@@ -31,6 +31,14 @@ src/loomata-ui/styles/*.generated.css
 # Project Tailwind theme is a transactional derivative.
 src/styles/project-theme.generated.css
 
+# Local assistant preference, never included in a fresh kit.
+.assistant-choice.local/
+
 # Private deterministic generation state.
 .design-sync-manifest.local
 src/design-system/components/**/*.generated.stories.tsx
+
+.documentation-language.local/
+
+# Private direct-assistant Git batch bookkeeping.
+.git-batches.local/

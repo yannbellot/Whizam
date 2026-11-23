@@ -79,7 +79,7 @@ Réutiliser cette analyse tant que résultat, périmètre, contrats et inconnues
 
 ## Choix préalable de l’assistant
 
-Appliquer le [choix au premier échange](../../AGENTS.md#choisir-lassistant-au-premier-échange) avant de traiter la demande, y compris informative ou mineure. Cette politique ne se charge pour le travail concerné qu’après le choix Codex ; Claude Code possède sa [politique propre](../claude/chantier-model-routing.md). Ne pas reprendre une recommandation Claude comme historique Codex.
+Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
 
 ## Affichage de la recommandation et validation
 

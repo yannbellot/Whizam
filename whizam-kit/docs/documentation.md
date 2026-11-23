@@ -56,3 +56,13 @@ Les liens interpages et vers les sources publiques sont préparés automatiqueme
 Tout le nécessaire est dans ce dossier : configuration `zensical.toml`, registre, scripts et tests. Copier le kit avec ses fichiers cachés utiles puis suivre son README. Le conteneur ne reçoit que les pages préparées et sa configuration dans un espace jetable en écriture, distinct des sources originales ; ni environnement privé, ni parent, ni socket Docker, ni base métier. Le serveur local n’expose que le site construit et refuse les écritures HTTP.
 
 Une installation initiale peut nécessiter Internet pour les outils et l’image. Ouvrir directement un HTML via `file://` n’est pas le parcours qualifié : utiliser le serveur local. Ni publication distante ni hébergement de production ne sont activés.
+
+## Langues
+
+Le portail prépare `/fr/` et `/en/` séparément, avec sélecteur et recherche par langue. Les anciennes URL françaises restent accessibles. Les contenus anglais absents ou périmés sont explicitement signalés ; la présence du sélecteur ne prouve pas la complétude des traductions. Voir [Langues du projet](agents/languages.md) pour les préférences, les sources de traduction et leur maintenance.
+
+## Typographie des outils documentaires
+
+Le portail et Storybook utilisent Inter pour les textes et Menlo pour le code et les identifiants. Inter est livrée localement dans `public/documentation/Inter.ttf`, avec sa licence OFL ; sa déclaration porte le nom exact `Inter`. Le fichier provient de la révision Google Fonts déjà épinglée dans le catalogue interne, avec empreinte SHA-256 vérifiée. Aucun téléchargement de police n’est nécessaire à l’ouverture, au build ou en usage hors ligne. Menlo utilise la police du poste, avec repli monospace lorsqu’elle n’est pas installée ; aucun fichier propriétaire Menlo n’est distribué.
+
+Les feuilles de présentation et les quatre ressources explicites du portail sont dans `public/documentation/` et `config/documentation/catalog.json` (`presentationAssets`). La préparation copie ces ressources sous `assets/typography/` pour chaque langue et les inclut dans son empreinte. Les chemins relatifs fonctionnent aussi dans les anciennes URLs françaises. Storybook charge ses polices dans le manager et l’iframe ; `.storybook/typography.css` définit la présentation des contenus documentaires. Les tokens, autorités, composants et styles du design system restent inchangés.

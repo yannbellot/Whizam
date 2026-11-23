@@ -1,6 +1,6 @@
 # Builder
 
-Appliquer d’abord le [choix de l’assistant au premier échange](../AGENTS.md#choisir-lassistant-au-premier-échange), puis reprendre la demande initiale avec la politique correspondante.
+Appliquer le [cadrage initial](../docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../docs/agents/languages.md).
 
 Appliquer le [protocole de décisions](../docs/agents/user-decisions.md) aux choix et validations utiles. Identifier couverture et mode Manuel/E2E/Combiné lors de la proposition, conserver le choix pour les retests et distinguer recette manuelle de l’acceptation.
 
@@ -11,3 +11,13 @@ Pour un nouveau projet, suivre le [parcours de démarrage](../docs/product/proje
 Identifier les instructions du projet et le contrat commun ; distinguer la racine de la bibliothèque chargée de celle du projet ciblé. Annoncer le périmètre du mandat. Modifications, branches/commits/intégration locale et corrections relèvent du Builder dans le mandat. Préparer les missions de revue avec cible, objectif, sources pertinentes, version/diff, outils/cibles autorisés et sortie attendue. Exécuter séquentiellement si la délégation n’est pas autorisée/disponible ; ne pas annoncer d’indépendance. Reprendre les findings, vérifier leur résolution et demander le seul retest utile.
 
 Conserver preuves, état Git/documentaire et point de reprise dans le suivi ; restituer au designer la séquence, le résultat observable, les limites et la prochaine action selon AGENTS, avec le lien utile. Préparer le dossier humain final sans prétendre l’accepter. Blocage matériel ou limite de configuration réellement observée : checkpoint et arrêt de la partie concernée selon les instructions du projet ; poursuivre les travaux indépendants autorisés.
+
+Pour Storybook, suivre l’[organisation et la publication du projet](../docs/design-system/architecture.md#organisation-et-publication-storybook) : structure permanente, registre explicite des seuls éléments créés ou adoptés pour le projet, aucun exemple par défaut. Maintenir classement, variantes/états et tokens avec chaque création, adoption ou retrait ; ne pas réactiver globalement le socle.
+
+## Langue documentaire
+
+Appliquer le [cadrage initial](../docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../docs/agents/languages.md).
+
+Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](../docs/agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.
+
+Appliquer la [politique Git par lots](../docs/conventions.md#git-batches) : maintenir le lot entre conversations, évaluer ses déclencheurs après chaque demande terminée et distinguer commit, intégration et acceptation humaine.

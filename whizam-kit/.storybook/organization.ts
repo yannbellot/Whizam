@@ -1,0 +1,82 @@
+// Shared vocabulary for publication, rendering and validation. No token values here.
+export const primitiveCategories = [
+  'color.standalone',
+  'type.font-family',
+  'type.font-size',
+  'type.font-weight',
+  'type.line-height',
+  'radius',
+  'size',
+  'space',
+  'stroke',
+] as const
+export const tokenCategories = [
+  'color.action',
+  'color.content',
+  'color.feedback',
+  'color.focus',
+  'color.surface',
+  'size.container',
+  'shape',
+  'space',
+  'type',
+] as const
+export const storyFamilies = [
+  '01 — Foundations/Examples',
+  '02 — Components/UI Components',
+  '02 — Components/Layout Components',
+  '02 — Components/Examples',
+  '03 — Patterns/Interaction Patterns',
+] as const
+const foundation = '01 — Foundations/'
+export const catalogPages = [
+  foundation + 'Architecture/Overview',
+  foundation + 'Principles',
+  ...[
+    'All',
+    'color/All',
+    'color/standalone',
+    'type/All',
+    'type/font-family',
+    'type/font-size',
+    'type/font-weight',
+    'type/line-height',
+    'radius',
+    'size',
+    'space',
+    'stroke',
+  ].map((path) => foundation + 'Primitives/' + path),
+  ...[
+    'Intentions',
+    'All',
+    'color/All',
+    'color/action',
+    'color/content',
+    'color/feedback',
+    'color/focus',
+    'color/surface',
+    'size/All',
+    'size/container',
+    'shape',
+    'space',
+    'type',
+  ].map((path) => foundation + 'Tokens/' + path),
+  foundation + 'Rules',
+  foundation + 'Examples/Accueil',
+  '02 — Components/UI Components/Accueil',
+  '02 — Components/Layout Components/Accueil',
+  '02 — Components/Style inventory',
+  '02 — Components/Examples/Accueil',
+  '03 — Patterns/Interaction Patterns/Accueil',
+]
+export const intentionDefinitions = [
+  ['action', 'Apparence associée à une action.', 'Appearance associated with an action.'],
+  ['content', 'Texte, icône ou contenu informatif.', 'Text, icons or informative content.'],
+  [
+    'feedback',
+    'Retour de succès, erreur, avertissement ou information.',
+    'Success, error, warning or information feedback.',
+  ],
+  ['focus', 'Repère de focus clavier.', 'Keyboard focus indicator.'],
+  ['surface', 'Fond ou séparation structurelle.', 'Structural background or separation.'],
+] as const

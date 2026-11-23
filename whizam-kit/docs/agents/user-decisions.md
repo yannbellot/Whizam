@@ -4,7 +4,7 @@ Autorité commune de présentation et de traitement des décisions, sous les [in
 
 ## Quand poser une question
 
-Utiliser ce protocole pour une décision effectivement nécessaire : assistant au premier échange, choix produit/visuel, mode de vérification, autorisation d’exécution, retour de recette, acceptation d’une version ou arbitrage bloquant. Une question ouverte de cadrage peut rester ouverte si des options seraient artificielles ; offrir les précisions libres adaptées. Ne pas créer de question pour une information seule, un compte rendu ou une petite correction déjà autorisée. Réutiliser les réponses et accords explicites ; ne pas reposer une décision sans changement matériel.
+Utiliser ce protocole pour une décision effectivement nécessaire : choix produit/visuel, mode de vérification, autorisation d’exécution, retour de recette, acceptation d’une version ou arbitrage bloquant. Une question ouverte de cadrage peut rester ouverte si des options seraient artificielles ; offrir les précisions libres adaptées. Ne pas créer de question pour une information seule, un compte rendu ou une petite correction déjà autorisée. Réutiliser les réponses et accords explicites ; ne pas reposer une décision sans changement matériel.
 
 Pour chaque question, indiquer contexte, objet et périmètre ; présenter des options distinctes et compréhensibles. Préférer un choix unique. Réserver la sélection multiple à des décisions réellement cumulables, jamais aux états Oui/Non ou validé/non validé. Une recommandation de mode de vérification porte sur la couverture observée ; les recommandations modèle/niveau suivent les politiques existantes et ne sont répétées que si le couple change ou est inconnu.
 
@@ -12,30 +12,21 @@ Pour chaque question, indiquer contexte, objet et périmètre ; présenter des o
 
 Vérifier l’outil réellement disponible et ses règles dans le mode courant. Dans Codex, utiliser l’outil de demande utilisateur exposé par la session, tel que `request_user_input_async` ou `request_user_input` si autorisé. Dans Claude Code, utiliser `AskUserQuestion` si disponible. Ne pas changer de mode, de fournisseur, de permissions ou de configuration personnelle pour forcer un questionnaire.
 
-Lorsqu’il est disponible, utiliser le champ natif de notes pour associer choix et instruction. Sinon, la saisie libre peut contenir à la fois le choix explicite et sa précision, par exemple « Combiné ; je vérifierai les messages moi-même ». Si le client ne permet pas ce format, demander la décision en texte avec les mêmes libellés et inviter à ajouter une précision facultative dans la réponse. Ne pas imposer une seconde question pour un commentaire facultatif, ni attendre une note quand le choix suffit. Le client décide de l’emplacement et de l’apparence des contrôles ; le kit ne garantit pas de champ sous des boutons radio.
+Conserver la saisie libre ou les notes natives lorsque le client les propose. Leur absence ne justifie ni de remplacer un choix natif par du texte, ni de poser une question supplémentaire pour un commentaire facultatif. Si une précision indispensable manque après un choix, la recueillir dans un message normal ; sinon poursuivre sans réclamer de note. Le client décide de l’emplacement et de l’apparence des contrôles ; ne pas promettre un champ sous les boutons.
 
-Après les options, sauf pour l’assistant initial, présenter la mention **Instruction complémentaire — facultative**, avec un exemple adapté. Si le client permet un libellé de note, l’utiliser ; sinon porter cette mention dans la question ou le texte adjacent. Les ronds dans les modèles ci-dessous sont des illustrations, pas des contrôles Markdown. Ne pas ajouter soi-même une option « Autre » si le client fournit déjà la saisie libre.
+Ne pas ajouter « Autres demandes ou précisions — facultatif », d’exemple de note ou de fausse étiquette de champ dans le titre, les options, ou un paragraphe répété après chaque question. Utiliser la saisie libre native telle que le client la présente, sans tenter d’en déplacer ou d’en simuler le champ. Une précision fournie librement peut remplacer le choix si elle est explicite ; sinon demander uniquement l’arbitrage nécessaire. Cette règle vaut pour toutes les questions, y compris vérification, autorisation et acceptation.
 
 ### Appeler l’outil, sans simuler ses contrôles
 
 Avant toute question à choix, vérifier les outils réellement exposés. Si un outil de demande utilisateur est disponible et autorisé pour la décision, **l’appeler** : écrire une liste dans la réponse ne satisfait pas cette règle. Dans Codex, privilégier `request_user_input_async` lorsqu’il est disponible ; ne pas appeler `request_user_input` si le mode courant l’interdit. Pour une validation de proposition de travail, utiliser une question native si les règles de cet outil l’autorisent ; ne pas la confondre avec une permission système ou d’outil, qui conserve son propre mécanisme.
 
-Exemple de données pour `request_user_input_async`, uniquement si ce schéma est bien celui exposé dans la session :
+Pour une validation, fournir par exemple le titre « Valides-tu la préparation d’Atlas et les vérifications décrites ?  » et les options « Oui, je valide » / « Non ». Les autres outils ont leur schéma propre ; ne pas leur transmettre ce JSON sans vérifier leur contrat.
 
-```json
-{
-  "questions": [
-    {
-      "title": "Pour démarrer, peux-tu me dire quel assistant tu utilises ?",
-      "options": ["Codex (OpenAI)", "Claude Code (Anthropic)"]
-    }
-  ]
-}
-```
+Une question de cadrage est une décision en attente. Un appel asynchrone accepté signifie seulement que la question est envoyée : `accepted`, identifiant, présélection, fermeture ou expiration ne sont jamais une réponse. **Après l’appel asynchrone, garder le tour actif avec le mécanisme d’attente interruptible réellement exposé par le client. Ne pas terminer le tour, même par un message final vide, tant que la réponse manque.** Ne pas ajouter de conclusion, passer à une autre question, choisir une branche, générer une démonstration, initialiser le projet ou commencer un travail indépendant pendant cette attente.
 
-Pour une validation, fournir par exemple le titre « Valides-tu la préparation d’Atlas et les vérifications décrites ? Instruction complémentaire — facultative : précise une contrainte si nécessaire. » et les options « Oui, je valide » / « Non ». Les autres outils ont leur schéma propre ; ne pas leur transmettre ce JSON sans vérifier leur contrat.
+Dans un client exposant `clock.sleep`, attendre par appels interruptibles d’au plus 60 secondes. Si l’attente est interrompue par une réponse explicite à la question, reprendre seulement la branche choisie. Si elle expire sans réponse, recommencer l’attente : sa durée n’est pas un délai de décision et ne déclenche ni hypothèse ni choix par défaut. Ne pas demander à nouveau la même question. Si un autre message arrive, le traiter sans inventer le choix manquant ; une annulation explicite arrête l’attente. Ne jamais remplacer cette attente par un `sleep` shell ou une boucle de calcul, qui ne reçoit pas les réponses du client.
 
-Après l’appel, ne pas recopier la question et les options dans un message final ou un second questionnaire. Un appel asynchrone retourne avant la réponse : il ne prouve pas que l’utilisateur a choisi. Utiliser le mécanisme d’attente autorisé par le client ou terminer le tour en laissant la question native en attente ; aucune exécution dépendante avant réception de la réponse. Les travaux indépendants déjà autorisés peuvent continuer. Une réponse ne doit pas provoquer une seconde demande identique.
+Choisir le mécanisme AVANT d’envoyer la question : utiliser un questionnaire bloquant s’il est disponible et autorisé ; sinon un questionnaire asynchrone avec attente interruptible. Si cette combinaison n’est pas disponible ou si le contrat de l’outil réserve les questions aux décisions facultatives, poser la question en message final conversationnel avec repli textuel explicite et attendre le prochain message utilisateur. Ne pas envoyer un sélecteur asynchrone dont on sait qu’on doit clore le tour immédiatement. Aucun changement de mode, timeout, compte ou permissions du client pour forcer ce mécanisme. Le kit ne contrôle pas le cycle de vie graphique du sélecteur ; si celui-ci se ferme sans réponse, garder le choix indéterminé et proposer le repli conversationnel, jamais une branche supposée. Une interruption conserve la question en attente dans le suivi sans la marquer comme répondue.
 
 Si aucun outil autorisé ne convient, annoncer explicitement « Choix en texte : réponds avec le libellé souhaité », puis afficher les options dans une liste numérotée. Ne pas utiliser les ronds `○`, cases à cocher ou faux champs de saisie dans ce repli, et ne pas le présenter comme interactif. Les illustrations ci-dessous servent uniquement à décrire les libellés et décisions ; elles ne sont jamais à recopier comme des boutons dans une réponse utilisateur.
 
@@ -43,16 +34,9 @@ Dans une validation, utiliser l’outil natif seulement si ses règles l’autor
 
 Références documentaires : [outil Codex](https://github.com/openai/codex/blob/main/codex-rs/core/src/tools/handlers/request_user_input_spec.rs), [outil Claude Code](https://code.claude.com/docs/en/tools-reference#askuserquestion-tool-behavior). Références consultées le 19 novembre 2026 ; vérifier les capacités réellement exposées, sans déduire un essai natif de leur documentation.
 
-## Assistant au premier échange
+## Cadrage initial
 
-Appliquer les conditions de reprise d’[AGENTS](../../AGENTS.md#choisir-lassistant-au-premier-échange). Conserver la demande initiale sans la traiter avant le choix, sauf assistant déjà déclaré explicitement dans le premier message. Poser :
-
-> Pour démarrer, peux-tu me dire quel assistant tu utilises ?
->
-> ○ Codex (OpenAI)  
-> ○ Claude Code (Anthropic)
-
-Aucun champ complémentaire demandé par le kit pour ce choix initial, sans supprimer une zone libre que le client ajoute lui-même. Aucune préférence fournisseur. Le choix ne prouve pas le modèle effectivement sélectionné et ne vaut pas validation d’exécution. Une réponse libre déclarant Gemini, Mistral ou un autre outil reste recevable sous les règles communes, sans correspondance de modèles inventée.
+Suivre [le questionnaire canonique](project-intake.md). Ne pas demander l’assistant. Ne pas ajouter de mention répétitive des précisions aux intitulés. Chaque collecte complémentaire se fait dans la conversation sans second sélecteur. Les capacités du client, pas les exemples Markdown, déterminent l’interface.
 
 ## Choisir le mode de vérification
 
@@ -72,8 +56,6 @@ Exemple de question, après description de la couverture :
 > ○ Automatisé — E2E  
 > ○ Combiné
 >
-> **Instruction complémentaire — facultative**  
-> Exemple : je souhaite examiner moi-même les messages d’erreur.
 
 Le choix ne remplace pas les revues design, technique ou sécurité, ni leurs contrôles techniques obligatoires. Ne pas proposer cette question pour un changement purement documentaire ou une couleur réellement locale sans enjeu de parcours. Conserver l’exception mineure d’AGENTS ; un besoin matériel de décision sur la couverture nécessite une proposition préalable.
 
@@ -88,8 +70,6 @@ Décrire le résultat prévu, son périmètre, la couverture et le mode retenu. 
 > ○ Oui, je valide  
 > ○ Non
 >
-> **Instruction complémentaire — facultative**  
-> Exemple : retire la sauvegarde du périmètre avant de commencer.
 
 L’objet de cette question est « Validation de l’exécution » ; ne pas l’intituler « Manuel », qui désigne un mode de vérification. Un accord explicite déjà formulé sur cette proposition, par exemple « Combiné, je valide l’exécution », suffit sans seconde question. L’accord couvre réalisation, vérifications, documentation et corrections nécessaires dans le périmètre annoncé, pas une publication ou l’acceptation du résultat.
 
@@ -102,8 +82,6 @@ Pour Manuel ou Combiné, fournir la version et les accès vérifiés, les action
 > ○ Je valide la recette manuelle  
 > ○ Recette manuelle non validée
 >
-> **Instruction complémentaire — facultative**  
-> Exemple : le total ne se met pas à jour quand je modifie la quantité.
 
 Une validation rapporte l’observation de l’utilisateur, pas une observation navigateur faite par l’IA. Sans retour, noter en attente. En Combiné, une recette validée n’efface pas un E2E échoué ou non exécuté. Un refus sans commentaire suffit à ne pas valider ; demander uniquement le détail nécessaire au diagnostic. Le diagnostic borné existant s’applique sans seuil de tentatives ajouté.
 
@@ -118,8 +96,6 @@ Lorsque les critères et contrôles requis permettent de présenter une version 
 > ○ J’accepte cette version  
 > ○ Des ajustements restent nécessaires
 >
-> **Instruction complémentaire — facultative**  
-> Exemple : le fonctionnement convient, mais la présentation du total reste à ajuster.
 
 Regrouper recette et acceptation seulement si leur périmètre est identique, les autres vérifications requises sont réussies et la question nomme explicitement les deux, par exemple « Après la recette, acceptes-tu cette version sur le périmètre convenu ? ». Ses options doivent couvrir les deux décisions : « Je valide la recette et j’accepte cette version » / « Des ajustements restent nécessaires ». Une simple validation de recette ne vaut pas acceptation globale. Si des contrôles obligatoires manquent, expliquer les limites et recueillir les retours sans présenter la version comme qualifiée.
 
@@ -135,8 +111,12 @@ Regrouper recette et acceptation seulement si leur périmètre est identique, le
 | Note libre seule avec décision explicite | Traiter la décision exprimée et ses limites ; aucune obligation de sélectionner à nouveau une option équivalente. |
 | Note ambiguë, silence, fermeture, expiration ou simple présélection | Pas d’accord implicite. Attendre la décision utile ; un retour automatique du client ne crée pas d’autorisation. |
 
-Conserver le mode et la couverture pour les corrections/retests de la tranche. Reposer le choix seulement en cas de changement matériel de périmètre, couverture, conséquences ou demande utilisateur. Après autorisation d’écriture, le suivi du projet conserve décision, portée, réserve éventuelle, assistant d’origine, mode, couverture, version et preuves utiles ; aucun fichier témoin supplémentaire. La roadmap et le point de reprise restent ceux du projet concerné.
+Conserver le mode et la couverture pour les corrections/retests de la tranche. Reposer le choix seulement en cas de changement matériel de périmètre, couverture, conséquences ou demande utilisateur. Après autorisation d’écriture, le suivi du projet conserve décision, portée, réserve éventuelle, assistant d’origine, mode, couverture, version et preuves utiles ; aucun fichier témoin supplémentaire pour ces décisions . La roadmap et le point de reprise restent ceux du projet concerné.
 
 ## Données confidentielles
 
 Les questions natives et leurs notes ne sont pas un canal de collecte de secrets. Pour les mots de passe, jetons et clés, suivre le [parcours de configuration privée](private-configuration.md) : saisie locale hors conversation, ou fichier privé ouvert directement si nécessaire. Demander seulement la confirmation de l’enregistrement, sans valeur.
+
+## Langue documentaire
+
+Appliquer [Langues du projet](languages.md) : recueillir en Q10 les langues documentaires manquantes, la mémoriser par projet et la reprendre sans nouveau questionnaire. Cette règle couvre aussi la documentation technique et les explications Storybook. Préserver les autorités uniques sans restaurer le choix d’assistant.
