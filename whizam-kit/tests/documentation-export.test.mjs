@@ -113,3 +113,13 @@ test('actual language control preserves deployment prefix, deep route, query and
     assert.equal(result, expected + '?q=test#section')
   }
 })
+
+test('versioned theme URL bypasses stale deployment caches', () => {
+  const html = exportHtml(
+    '<script src="./assets/typography/system-theme.js"></script>',
+    'index.html',
+    publicationUrl('https://example.org/Whizam/'),
+    'revision123',
+  )
+  assert.match(html, /system-theme\.js\?v=revision123/)
+})

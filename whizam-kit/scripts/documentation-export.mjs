@@ -1,6 +1,6 @@
 import * as fs from 'node:fs/promises'
 import path from 'node:path'
-import { randomUUID } from 'node:crypto'
+import { createHash, randomUUID } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { build } from './documentation.mjs'
 
@@ -18,7 +18,7 @@ export function publicationUrl(value) {
   return url
 }
 
-export function exportHtml(html, route, siteUrl) {
+export function exportHtml(html, route, siteUrl, themeVersion = '') {
   const base = new URL(route, siteUrl)
   const resolve = (value) => {
     if (!value || value.startsWith('#') || /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(value)) return value
@@ -30,6 +30,7 @@ export function exportHtml(html, route, siteUrl) {
     `data-whizam-language data-whizam-base="${siteUrl.pathname}"`,
   )
   html = html.replace(/content="0;url=([^"]*)"/g, (_, value) => `content="0;url=${resolve(value)}"`)
+  if (themeVersion) html = html.replace(/(src="[^"]*\/system-theme\.js)"/g, `$1?v=${themeVersion}"`)
   // Zensical's search configuration must also work on GitHub's fallback 404 URL.
   return html.replace(
     /(<script id="__config" type="application\/json">)(.*?)(<\/script>)/gs,
@@ -43,6 +44,13 @@ export function exportHtml(html, route, siteUrl) {
 }
 
 export async function exportSite(source, destination, siteUrl) {
+  const theme = await fs
+    .readFile(path.join(source, 'assets/typography/system-theme.js'))
+    .catch((error) => {
+      if (error.code === 'ENOENT') return null
+      throw error
+    })
+  const themeVersion = theme ? createHash('sha256').update(theme).digest('hex').slice(0, 16) : ''
   await fs.mkdir(destination) // Never merge with or overwrite an existing directory.
   async function walk(directory, relative = '') {
     for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
@@ -55,7 +63,10 @@ export async function exportSite(source, destination, siteUrl) {
         await walk(input, route)
       } else if (entry.isFile()) {
         if (entry.name.endsWith('.html'))
-          await fs.writeFile(output, exportHtml(await fs.readFile(input, 'utf8'), route, siteUrl))
+          await fs.writeFile(
+            output,
+            exportHtml(await fs.readFile(input, 'utf8'), route, siteUrl, themeVersion),
+          )
         else await fs.copyFile(input, output)
       } else throw new Error('Unsupported publication entry')
     }

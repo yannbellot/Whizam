@@ -5662,7 +5662,7 @@
     {
       "file": "scripts/documentation-export.mjs",
       "mode": 420,
-      "sha256": "7892420525fc88bb7ecf41c92d72cf45a12161af08c74bab08f8974639fff848"
+      "sha256": "0f5cf92775ade96200213b12e0c77afad4e3dc8ca44354a20854d46f83530504"
     },
     {
       "file": "scripts/documentation-languages.mjs",
@@ -6887,7 +6887,7 @@
     {
       "file": "tests/documentation-export.test.mjs",
       "mode": 420,
-      "sha256": "70d9a2b331200429f345a059043b8f8641e533c1522c581c4d5fe47d89d68f54"
+      "sha256": "99e2fdf7419bae221e01a6244db75c6912f21e8427fa80c1926d36ef805737cc"
     },
     {
       "file": "tests/documentation-languages.test.mjs",
