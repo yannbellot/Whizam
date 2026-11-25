@@ -47,7 +47,8 @@
     "docs:dev": "node scripts/documentation.mjs serve",
     "docs:check": "node scripts/documentation.mjs check",
     "test:documentation": "node --test tests/documentation.test.mjs tests/documentation-languages.test.mjs tests/documentation-preference.test.mjs tests/project-intake.test.mjs",
-    "docs:translations:check": "node scripts/check-documentation-translations.mjs"
+    "docs:translations:check": "node scripts/check-documentation-translations.mjs",
+    "docs:export": "node scripts/documentation-export.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

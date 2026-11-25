@@ -685,6 +685,11 @@
       "mode": 420
     },
     {
+      "file": "config/documentation/github-pages.yml",
+      "mode": 420,
+      "sha256": "70dc0fdc30f3fdaa45cec26d68c16356ce71dd68814e794c1b962c538c642641"
+    },
+    {
       "file": "config/documentation/overrides/main.html",
       "sha256": "8b3daf45481c2ba2cdc4facc6ad9947559c7140d3fa0deeb87d48006199aee84",
       "mode": 420
@@ -5236,7 +5241,7 @@
     },
     {
       "file": "package.json",
-      "sha256": "969a72d704e082d52a6a29f1010a0c7f973402fc038e9f83c135bfb6945d846c",
+      "sha256": "8c86464bc079fd1eba5e5b48d08df07d7fff7eb32c91f5af60216f16849af528",
       "mode": 420
     },
     {
@@ -5655,6 +5660,11 @@
       "mode": 420
     },
     {
+      "file": "scripts/documentation-export.mjs",
+      "mode": 420,
+      "sha256": "40593782929758b8296447f6afceb230f9744794b64880d599278171084905e9"
+    },
+    {
       "file": "scripts/documentation-languages.mjs",
       "sha256": "8117b2b65b69fd1408d150f17aeea14127ea57f22ec1bed4517dddbde0967445",
       "mode": 420
@@ -5686,7 +5696,7 @@
     },
     {
       "file": "scripts/documentation.mjs",
-      "sha256": "35dbdf7c55d8acb77fc0884313f17b2ef1f35bd742146d8c684e9633ca40e300",
+      "sha256": "ebb7ca504304b07f59e4fef34172df22eee408b929f5a84cdc10f213da502e9c",
       "mode": 420
     },
     {
@@ -6873,6 +6883,11 @@
       "file": "tests/design-token-taxonomy.test.mjs",
       "sha256": "6304ef861846bc806b5b8cd068fa9920e2da942bb60c01ff7a8d15226766bc34",
       "mode": 420
+    },
+    {
+      "file": "tests/documentation-export.test.mjs",
+      "mode": 420,
+      "sha256": "d63a7997b634b7631c96b69550f599aee98b978552267360aa3b73089f9eadb8"
     },
     {
       "file": "tests/documentation-languages.test.mjs",

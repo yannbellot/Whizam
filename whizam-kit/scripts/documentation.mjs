@@ -551,23 +551,33 @@ async function performBuild(root) {
         .join(', ') +
       ']\n'
     await fs.writeFile(path.join(attempt, `zensical-${locale}.toml`), config, { flush: true })
-    await run(
-      [
-        'run',
-        '--rm',
-        '--network',
-        'none',
-        '--mount',
-        `type=bind,source=${attempt},target=/work`,
-        '--entrypoint',
-        'sh',
-        localized.catalog.image,
-        '-c',
-        `cd /work && zensical build --clean -f /work/zensical-${locale}.toml`,
-      ],
-      root,
-    )
-    await fs.access(path.join(attempt, 'site', locale, 'index.html'))
+    // The pinned builder can exit successfully without HTML on a fresh mount.
+    // Retry only this verified empty-output case, with a strict three-run limit.
+    for (let attemptNumber = 1; ; attemptNumber++) {
+      await run(
+        [
+          'run',
+          '--rm',
+          '--network',
+          'none',
+          '--mount',
+          `type=bind,source=${attempt},target=/work`,
+          '--entrypoint',
+          'sh',
+          localized.catalog.image,
+          '-c',
+          `cd /work && zensical build --clean -f /work/zensical-${locale}.toml`,
+        ],
+        root,
+      )
+      try {
+        await fs.access(path.join(attempt, 'site', locale, 'index.html'))
+        break
+      } catch (error) {
+        if (error.code !== 'ENOENT' || attemptNumber >= 3) throw error
+        console.warn(`Documentation ${locale}: builder returned no index; retry ${attemptNumber}/2`)
+      }
+    }
     const notFound = path.join(attempt, 'site', locale, '404.html')
     await fs.writeFile(notFound, ensureNotFoundSkipTarget(await fs.readFile(notFound, 'utf8')))
   }
