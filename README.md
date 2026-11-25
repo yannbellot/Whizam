@@ -96,12 +96,17 @@ L’application, Storybook et la documentation fonctionnent sans clé de modèle
 
 ## Pour aller plus loin
 
+- **Documentation en ligne** : [Français](https://yannbellot.github.io/Whizam/fr/) · [English](https://yannbellot.github.io/Whizam/en/)
+- [Guide d’utilisation](https://yannbellot.github.io/Whizam/fr/docs/guide-whizam/)
+- [Documentation technique](https://yannbellot.github.io/Whizam/fr/TECHNICAL-GUIDE/)
 - [README détaillé du kit](whizam-kit/README.md)
-- [Guide d’utilisation](whizam-kit/docs/guide-whizam/index.md)
 - [Parcours de démarrage d’un projet](whizam-kit/docs/product/project-start.md)
 - [Préparation de l’environnement](whizam-kit/skills/initialize-project/references/environment-setup.md)
 - [Vérification et évolution](whizam-kit/README.md#vérifier-et-faire-évoluer-le-projet)
+- [Partager votre projet](https://yannbellot.github.io/Whizam/fr/docs/guide-whizam/partager-projet/)
+- [Licence et réutilisation](https://yannbellot.github.io/Whizam/fr/docs/licence-reutilisation/)
 
 Le kit est distribué sous [licence MIT](whizam-kit/docs/licence-reutilisation.md), avec les mentions des ressources tierces à conserver.
 
 Travaillez sur une copie pour chaque nouveau projet. Les configurations privées, dépendances installées, caches, builds et données locales ne font pas partie d’un kit neuf à transmettre. Le kit est un point de départ à adapter et à vérifier pour votre application.
+
