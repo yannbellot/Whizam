@@ -1,6 +1,6 @@
 # Whizam
 
-[Français](README.md) | [English](README.en.md)
+[Version Français](README.md)
 
 **A starter kit for designing and building a web application with an AI assistant.**
 
