@@ -558,6 +558,10 @@ async function performBuild(root) {
         [
           'run',
           '--rm',
+          // Keep generated files writable by the host (not root-owned on Linux CI).
+          ...(typeof process.getuid === 'function'
+            ? ['--user', `${process.getuid()}:${process.getgid()}`]
+            : []),
           '--network',
           'none',
           '--mount',
