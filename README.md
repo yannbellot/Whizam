@@ -6,6 +6,10 @@ Whizam s’adresse aux designers numériques, UX/UI et Product Designers qui sou
 
 Le kit prêt à utiliser se trouve dans **[`whizam-kit/`](whizam-kit/)**. Ce dossier est autonome : vous pouvez le copier, le déplacer ou le renommer en conservant son contenu complet.
 
+## Documentation
+
+Consultez la [documentation de Whizam](https://yannbellot.github.io/Whizam/) : guides d’utilisation, références techniques et fonctionnement du kit, en français et en anglais.
+
 ## Ce que vous trouverez dans le kit
 
 - **Une application de départ** en React, React Router et TypeScript, avec PostgreSQL et Docker Compose pour la persistance.
