@@ -1,5 +1,7 @@
 # Whizam
 
+[Français](README.md) | [English](README.en.md)
+
 **Un kit de démarrage pour concevoir et construire une application web avec un assistant IA.**
 
 Whizam s’adresse aux designers numériques, UX/UI et Product Designers qui souhaitent transformer une idée en prototype fonctionnel ou en première version de produit. Vous définissez l’intention, les choix de conception et les critères de réussite ; l’assistant vous accompagne dans le cadrage, la réalisation et les vérifications.
@@ -8,7 +10,7 @@ Le kit prêt à utiliser se trouve dans **[`whizam-kit/`](whizam-kit/)**. Ce dos
 
 ## Documentation
 
-Consultez la [documentation de Whizam](https://yannbellot.github.io/Whizam/) : guides d’utilisation, références techniques et fonctionnement du kit, en français et en anglais.
+Consultez la [documentation de Whizam](https://yannbellot.github.io/Whizam/fr/) : guides d’utilisation, références techniques et fonctionnement du kit, en français et en anglais.
 
 ## Ce que vous trouverez dans le kit
 
