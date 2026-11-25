@@ -25,6 +25,11 @@ export function exportHtml(html, route, siteUrl) {
     return value.startsWith('/') ? new URL(value.slice(1), siteUrl).href : new URL(value, base).href
   }
   html = html.replace(/\b(href|src)="([^"]*)"/g, (_, attr, value) => `${attr}="${resolve(value)}"`)
+  html = html.replaceAll(
+    'data-whizam-language',
+    `data-whizam-language data-whizam-base="${siteUrl.pathname}"`,
+  )
+  html = html.replace(/content="0;url=([^"]*)"/g, (_, value) => `content="0;url=${resolve(value)}"`)
   // Zensical's search configuration must also work on GitHub's fallback 404 URL.
   return html.replace(
     /(<script id="__config" type="application\/json">)(.*?)(<\/script>)/gs,

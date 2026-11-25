@@ -5306,7 +5306,7 @@
     },
     {
       "file": "public/documentation/system-theme.js",
-      "sha256": "e2bd8211caa4d9e9945a078101b8dc0e8590457155b4538a3e8e92becf79911a",
+      "sha256": "3fdd359a1cf478cb4777eceaa9bdbd86e1d23b6bb69960e3bcab5ec1af972dd1",
       "mode": 420
     },
     {
@@ -5662,7 +5662,7 @@
     {
       "file": "scripts/documentation-export.mjs",
       "mode": 420,
-      "sha256": "40593782929758b8296447f6afceb230f9744794b64880d599278171084905e9"
+      "sha256": "7892420525fc88bb7ecf41c92d72cf45a12161af08c74bab08f8974639fff848"
     },
     {
       "file": "scripts/documentation-languages.mjs",
@@ -6887,7 +6887,7 @@
     {
       "file": "tests/documentation-export.test.mjs",
       "mode": 420,
-      "sha256": "d63a7997b634b7631c96b69550f599aee98b978552267360aa3b73089f9eadb8"
+      "sha256": "70d9a2b331200429f345a059043b8f8641e533c1522c581c4d5fe47d89d68f54"
     },
     {
       "file": "tests/documentation-languages.test.mjs",

@@ -57,3 +57,59 @@ test('export excludes surrounding private files and refuses symlinks and overwri
     /symlink refused/,
   )
 })
+
+test('export gives the language selector its deployment prefix and fixes automatic redirects', () => {
+  const html = exportHtml(
+    '<select data-whizam-language></select><meta content="0;url=/en/">',
+    'index.html',
+    publicationUrl('https://example.org/Whizam/'),
+  )
+  assert.match(html, /data-whizam-base="\/Whizam\/"/)
+  assert.match(html, /content="0;url=https:\/\/example.org\/Whizam\/en\/"/)
+})
+test('actual language control preserves deployment prefix, deep route, query and fragment', async () => {
+  const { runInNewContext } = await import('node:vm')
+  const script = await fs.readFile(
+    new URL('../public/documentation/system-theme.js', import.meta.url),
+    'utf8',
+  )
+  for (const [base, pathname, expected] of [
+    ['/Whizam/', '/Whizam/', '/Whizam/en/'],
+    ['/Whizam/', '/Whizam/fr/docs/guide/', '/Whizam/en/docs/guide/'],
+    ['/', '/fr/docs/', '/en/docs/'],
+  ]) {
+    let change, result
+    const select = {
+      dataset: { whizamBase: base },
+      value: 'en',
+      options: [{ value: 'fr' }, { value: 'en' }],
+      addEventListener: (_, cb) => {
+        change = cb
+      },
+    }
+    const matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} })
+    const document = {
+      body: { dataset: {} },
+      documentElement: { style: {}, lang: 'fr' },
+      querySelector: (s) => (s === '[data-whizam-language]' ? select : null),
+      querySelectorAll: () => [],
+      getElementById: () => null,
+      addEventListener() {},
+    }
+    runInNewContext(script, {
+      document,
+      window: { matchMedia, addEventListener() {} },
+      matchMedia,
+      location: {
+        pathname,
+        search: '?q=test',
+        hash: '#section',
+        assign: (url) => {
+          result = url
+        },
+      },
+    })
+    change()
+    assert.equal(result, expected + '?q=test#section')
+  }
+})

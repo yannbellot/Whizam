@@ -17,10 +17,11 @@
 ;(() => {
   const select = document.querySelector('[data-whizam-language]')
   select?.addEventListener('change', () => {
-    const parts = location.pathname.split('/')
-    if ([...select.options].some((option) => option.value === parts[1])) parts[1] = select.value
-    else parts.splice(1, 0, select.value)
-    location.assign(parts.join('/') + location.search + location.hash)
+    const base = select.dataset.whizamBase || '/'
+    const parts = location.pathname.slice(base.length).split('/')
+    if ([...select.options].some((option) => option.value === parts[0])) parts[0] = select.value
+    else parts.unshift(select.value)
+    location.assign(base + parts.join('/') + location.search + location.hash)
   })
   const drawer = document.getElementById('__drawer')
   const opener = document.querySelector('.whizam-mobile-menu button')
