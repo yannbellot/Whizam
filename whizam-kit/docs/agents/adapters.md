@@ -25,7 +25,7 @@ Pour les décisions utiles après l’accueil, utiliser l’outil exposé et aut
 
 ## Première demande dans un kit extrait
 
-Pour démarrer un projet, « Initialise un nouveau projet Atlas » est routé par [AGENTS.md](../../AGENTS.md#démarrer-un-nouveau-projet) vers [initialize-project](../../skills/initialize-project/SKILL.md). Le skill, sa référence d’environnement et le [parcours autonome](../product/project-start.md) voyagent avec la source ; les deux expositions relatives restent inchangées. Le skill prépare la séquence technique ; le Builder transmet le cadrage et la réalisation aux procédures existantes. Les accès applicatif/Storybook sont présentés à la première revue, selon ce parcours ; aucun prompt à installer globalement. Si le skill n’est pas découvert nativement, l’assistant peut lire ces fichiers explicitement après chargement d’AGENTS, sans assimiler cela à une découverte native réussie. Pour Mistral, conserver l’entrée explicite de lecture d’AGENTS décrite ci-dessus. Ce nouveau parcours et ses limites sont distincts du scénario historique ci-dessous.
+Pour démarrer un projet, « Initialise un nouveau projet Atlas » est routé par [AGENTS.md](../../AGENTS.md#démarrer-un-nouveau-projet) vers [initialize-project](../../skills/initialize-project/SKILL.md). Le skill, sa référence d’environnement et le [parcours autonome](../product/project-start.md) voyagent avec la source ; les deux expositions relatives restent inchangées. Le skill prépare la séquence technique ; le Builder transmet le cadrage et la réalisation aux procédures existantes. Les accès Application, Storybook et Documentation sont présentés après vérification à la première revue, selon ce parcours ; aucun prompt à installer globalement. Si le skill n’est pas découvert nativement, l’assistant peut lire ces fichiers explicitement après chargement d’AGENTS, sans assimiler cela à une découverte native réussie. Pour Mistral, conserver l’entrée explicite de lecture d’AGENTS décrite ci-dessus. Ce nouveau parcours et ses limites sont distincts du scénario historique ci-dessous.
 
 ## Scénario commun
 
@@ -40,3 +40,7 @@ Conventions documentées le 21 octobre 2026, conservées lors de l’intégratio
 ## Langue documentaire
 
 Appliquer le [cadrage initial](project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](languages.md).
+
+## Skill de publication GitHub
+
+[publish-github-project](../../skills/publish-github-project/SKILL.md) est exposé par les mêmes liens relatifs `.agents/skills/` et `.claude/skills/`. Sans découverte native, lire sa source explicitement. Le [parcours GitHub](../github-publication.md) distingue connexion existante, connexion navigateur et formulaire local conditionnel ; l'ouverture intégrée dépend du client, avec lien navigateur local en repli. La présence du skill ne prouve ni invocation native Codex/Claude ni droits d'un compte réel.

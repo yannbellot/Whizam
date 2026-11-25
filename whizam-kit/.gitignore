@@ -42,3 +42,6 @@ src/design-system/components/**/*.generated.stories.tsx
 
 # Private direct-assistant Git batch bookkeeping.
 .git-batches.local/
+
+# Private GitHub destination authorization and send receipts.
+.github-publication.local/

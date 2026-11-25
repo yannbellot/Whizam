@@ -1,0 +1,4 @@
+{
+  "light": { "page": "#ffffff", "column": "#ffffff", "text": "#34373d", "border": "#d8dadd" },
+  "dark": { "page": "#0b0d0f", "column": "#0b0d0f", "text": "#b8bbbf", "border": "#292c30" }
+}

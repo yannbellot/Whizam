@@ -1,28 +1,25 @@
-> État initial courant : application et Storybook sans contenu de projet ; Zensical affiche la documentation existante de `docs/` dès son premier démarrage. Les démonstrations citées dans les références historiques restent hors des accès livrés ; ne pas les réactiver lors de l’initialisation. Les ressources internes requises par les contrats et les politiques sont conservées. Les nouveaux contenus du projet suivent les règles existantes.
-
 # Démarrer un projet jusqu’à sa première version
 
-Ce parcours accompagne un designer numérique depuis une copie du kit jusqu’à une première version de son projet, disponible pour revue. Il repose sur les [instructions](../../AGENTS.md) et les procédures du [catalogue](../../skills/catalog.json), sans moteur de séquences ni assistant supplémentaire. L’initialisation technique constitue sa première séquence ; elle ne constitue pas une première version de l’application.
+Ce parcours accompagne le cadrage, la préparation technique et la réalisation d’une première version disponible pour revue. Pour un nouveau produit, recueillir d’abord les informations manquantes et l’autorisation de la synthèse selon le cadrage canonique `docs/agents/project-intake.md`. La préparation technique et le développement suivent dans le périmètre autorisé.
 
-Pour une lecture destinée au designer, consulter [Créer son premier projet](../guide-whizam/premier-projet.md). Les règles du parcours ci-dessous restent applicables.
+Une demande explicitement limitée à la préparation technique peut suivre initialize-project sans inventer de périmètre métier. Cette préparation ne constitue pas une première version de l’application. Pour une présentation pas à pas destinée au designer, consulter [Démarrer avec Whizam](../guide-whizam/index.md).
 
 ## Mandat et progression
 
 Appliquer le [cadrage initial](../agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../agents/languages.md).
 
-Une demande « Initialise un nouveau projet [nom] » ouvre ce parcours. Le Builder annonce les quatre séquences et le résultat attendu, puis prépare l’environnement avec initialize-project. Le nom suffit pour analyser cette préparation et présenter une proposition ; avant toute écriture, installation ou lancement, appliquer la [validation de l’exécution](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). L’intention est recueillie lors du cadrage, en réutilisant les réponses déjà données ; aucun questionnaire produit n’est nécessaire pour lancer les vérifications techniques.
+Une demande « Initialise un nouveau projet [nom] » ouvre ce parcours. Le Builder cadre le produit, recueille l’autorisation de la synthèse, puis prépare l’environnement avec initialize-project. Le nom suffit pour analyser cette préparation et présenter une proposition ; avant toute écriture, installation ou lancement, appliquer la [validation de l’exécution](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). L’intention est recueillie lors du cadrage, en réutilisant les réponses déjà données ; une demande explicitement limitée à la préparation technique ne nécessite pas de questionnaire produit.
 
 La réalisation porte seulement sur une première version suffisamment définie et couverte par le mandat utilisateur. Un brief détaillé permet de préparer une proposition concrète ; une demande initiale de réalisation ne remplace pas sa validation. Si cette proposition a déjà été validée, ne pas demander une seconde autorisation technique. Si le besoin ou l’autorisation de réaliser manque, présenter la proposition de périmètre et recueillir la décision produit nécessaire avant le développement concerné. Une demande limitée à la préparation reste documentaire ; une demande limitée à l’initialisation technique s’arrête après cette séquence.
 
 Après validation de la proposition, enchaîner les opérations déjà autorisées lorsque leurs prérequis sont satisfaits et que la configuration recommandée reste identique. Dans Codex et Claude Code, présenter la première recommandation ou son changement avant le travail concerné et attendre validation ; ne pas répéter une recommandation inchangée. Les noms des séquences donnent des repères, sans créer d’arrêt humain obligatoire entre elles. Les hypothèses visuelles ou produit limitées et réversibles restent identifiées comme provisoires selon AGENTS ; une décision matérielle manquante bloque seulement la partie qui en dépend.
 
-## 1. Initialisation du projet
+<a id="1-initialisation-du-projet"></a>
+<a id="source-1-initialisation-du-projet"></a>
+<a id="2-cadrage-de-la-premiere-version"></a>
+<a id="source-2-cadrage-de-la-premiere-version"></a>
 
-**Résultat : projet initialisé.** initialize-project vérifie l’état existant, prépare l’environnement et le suivi, puis exécute ses contrôles. Le fonctionnement de l’exemple du starter peut servir à ces vérifications internes ; il ne représente pas le projet demandé.
-
-La restitution indique que la préparation est terminée et annonce le cadrage de la première version. Aucun lien vers la démonstration, Storybook n’est présenté comme résultat de cette séquence. Ne pas annoncer que l’application est prête. Les commandes, URL de diagnostic et résultats détaillés restent dans le suivi technique.
-
-## 2. Cadrage de la première version
+## 1. Cadrage de la première version
 
 Suivre intégralement [le questionnaire canonique](../agents/project-intake.md) : entrée brief ou démonstration, Q1–Q10, reprise et validation finale.
 
@@ -32,11 +29,17 @@ Reformuler ce qui sera réellement visible et utilisable, ce qui est exclu, ce q
 
 Pour une tranche affectant les parcours, proposer le [mode de vérification](../agents/user-decisions.md#choisir-le-mode-de-vérification) avec sa couverture : Manuel, Automatisé — E2E ou Combiné. Les décisions utiles suivent les choix natifs et l’instruction complémentaire facultative du protocole. Le choix du mode ne vaut pas accord d’exécution.
 
+## 2. Initialisation du projet
+
+**Résultat : projet initialisé.** initialize-project vérifie l’état existant, prépare l’environnement et le suivi, puis exécute ses contrôles. Le fonctionnement de l’exemple du starter peut servir à ces vérifications internes ; il ne représente pas le projet demandé.
+
+La restitution indique que la préparation est terminée et poursuit la réalisation autorisée, ou s’arrête pour une demande limitée à la préparation technique. Aucun lien vers la démonstration, Storybook n’est présenté comme résultat de cette séquence. Ne pas annoncer que l’application est prête. Les commandes, URL de diagnostic et résultats détaillés restent dans le suivi technique.
+
 ## 3. Conception et développement
 
 **Résultat : première version réalisée et vérifiée sur le périmètre convenu.** plan-feature prépare les tranches ; design-interactions, implement-feature et test-user-flow prennent le relais selon le besoin. Le Builder conserve un point de reprise par séquence dans les documents existants, sans créer de fichier témoin ou imposer une nouvelle initialisation.
 
-Dans le projet dérivé, appliquer la [procédure de remplacement de l’exemple](replacing-project-example.md) : retirer les entrées de démonstration de la navigation et des accès destinés au designer, remplacer l’accueil générique et adapter routes, stories, tests et documents concernés. Une fonction de gestion de projets ne se déduit ni du nom de la route `/projects` ni de sa présence dans le kit. Ne supprimer aucune donnée, table, migration appliquée ou volume implicitement.
+Dans le projet dérivé, suivre l’[adaptation des ressources de l’ancien exemple](replacing-project-example.md) : l’accueil est vide et les démonstrations sont déjà retirées des routes actives. Créer les parcours autorisés et adapter les ressources, stories, tests et documents réellement réutilisés. Une fonction de gestion de projets ne se déduit ni du nom de la route `/projects` ni de sa présence dans le kit. Ne supprimer aucune donnée, table, migration appliquée ou volume implicitement.
 
 Conserver les composants réutilisables utiles et préparer dans Storybook une entrée pertinente vers les composants du projet, leurs variantes et leurs états. La documentation générique peut rester disponible pour le développement ; les démonstrations métier fictives du starter ne font pas partie de la première version présentée.
 
@@ -44,7 +47,7 @@ Les serveurs et URL peuvent servir aux contrôles internes avant cette revue. Le
 
 ## 4. Revue de la première version
 
-**Résultat : première version disponible pour revue.** Présenter ensemble les deux accès vérifiés : **Application** vers le projet réalisé, et **Storybook — composants du projet** vers sa documentation pertinente. Une page générique renommée, `/projects` inchangé ou les seules stories du starter ne satisfont pas ce critère.
+**Résultat : première version disponible pour revue.** Présenter ensemble les trois accès vérifiés : **Application** vers le projet réalisé, **Storybook — composants du projet** et **Documentation** vers les références et le suivi du projet. Une page générique renommée, `/projects` inchangé ou les seules stories du starter ne satisfont pas ce critère.
 
 Vérifier les URL réellement servies et leur contenu avant de les présenter ; ne pas réutiliser un ancien port sans contrôle. Si un accès, une observation indispensable ou un contrôle requis manque, expliquer ce qui manque et comment reprendre ; ne pas annoncer cette séquence comme terminée. Un fonctionnement partiel peut être décrit avec ses limites, sans faux succès.
 

@@ -1,35 +1,8 @@
 {
   "version": 1,
   "documents": {
-    "docs/guide-whizam/index.md": {
-      "sourceHash": "a31b6090e8476d5ce0601eb1ace95a5e2cca9d5ec46d2e5ece3f159e5532d964"
-    },
-    "docs/guide-whizam/preparer-kit.md": {
-      "sourceHash": "aa5c99b46139bbbd85b0169d178a52299d65d7f7a3a957bd11703b6db3aa56e1"
-    },
-    "docs/guide-whizam/premier-projet.md": {
-      "sourceHash": "70f0048207cb61e5f29284b8c58f957f3784871a161a86c315354fad2cb42c7c"
-    },
-    "docs/guide-whizam/assistant.md": {
-      "sourceHash": "b130f00305468e26028d32e36040eef5bf5820713156f8c7ca5ec1d1ee805bea"
-    },
-    "docs/guide-whizam/cadrer-version.md": {
-      "sourceHash": "5eaef719bae8d01ed033d124402ef3770bdd8db23c6474db5754c5487d9ac7ca"
-    },
-    "docs/guide-whizam/demander-evolution.md": {
-      "sourceHash": "0989ee7014aadc9aa844f046e2b334b941fd01008ea26df8661d4a7fb542f6b2"
-    },
-    "docs/guide-whizam/verifier-decider.md": {
-      "sourceHash": "b11a8dcf2fac5553f1d37b5afc7e491dd60d20b355dd85fbbc277fa2bf9deb1d"
-    },
-    "docs/guide-whizam/reprendre-transmettre.md": {
-      "sourceHash": "49bed11abbfcd93bdf3252ad99f324b13ce9d061f2fb739860659ad455ad68dc"
-    },
-    "docs/guide-whizam/questions-frequentes.md": {
-      "sourceHash": "58ac49f6cb183896809bcc4efc92b42eb094390c9b00c43fecbc7461f5b8ea0a"
-    },
     "skills/analyze-brief/SKILL.md": {
-      "sourceHash": "49d3dc5de0ae1f5c6a00ce43aa3227739303c092563951b585e288a7ded415dd"
+      "sourceHash": "f409290658261aa511dd017e600fb0d9ff2ca5ecabb85bce9b2825f58b4940b6"
     },
     "skills/analyze-design-references/SKILL.md": {
       "sourceHash": "041f7315cf4f866f6b92db92192f275262f1d06a7ea956ff176e689ebbb1fb94"
@@ -89,10 +62,10 @@
       "sourceHash": "4749d8854756bf36d48efae6e80c28c91affc18d65f316aec7b5ffe111f9f49b"
     },
     "skills/initialize-project/SKILL.md": {
-      "sourceHash": "fbd2b9a2ed651a9fdb24c5c25a23e28f253fec66f746acf93d8511cd3bbe2a14"
+      "sourceHash": "598e6b77986c456d1ba7a6f7f3aaedd835c2fd3e4f37a147a32c16201c8d3d17"
     },
     "agents/builder.md": {
-      "sourceHash": "99889fdb76b34b76ade8f96c8b276c9bc3e7e3c060afd6a265b157423c478a80"
+      "sourceHash": "ea772eb431495218f86f02fe5c95e45267c188dd4a788e16beb20c297734e47e"
     },
     "agents/design-reviewer.md": {
       "sourceHash": "36ab427358cb468442e421279b307f17f66ced7ed585a5e9e9df0bb214071777"
@@ -128,37 +101,37 @@
       "sourceHash": "2917eda2f65f60685e3203e08ad56cab14f05fdce5025b0617a17cbf4582ba74"
     },
     "docs/design-system/token-migration.md": {
-      "sourceHash": "0e47d897b35dd1c6284c9c2c10b83cb023ced8d556856ec924a63d35b702bbd5"
+      "sourceHash": "3c009f40d883ad337c77f413ae1cb09eeeea5d4ebb389d54a20718543e9dbebd"
     },
     "docs/design-system/architecture.md": {
-      "sourceHash": "4f66086936c2d595d1c949c348f95aab16bd0a7f5e332c6cf44d1f31f859ade7"
+      "sourceHash": "dea7e804d6f4a520798489166b43452b99af47ea538dee625dd9ebb2bba027fd"
     },
     "docs/design-system/policy.md": {
-      "sourceHash": "d52c38273f095c74ee268d7629efb7db8087bcff6361b16c3a98ffafb272dd60"
+      "sourceHash": "e76a10a31b71f65eb949a7b93ae7d7549b2392a05d2521afca534058f3ed4f9d"
     },
     "docs/operations.md": {
-      "sourceHash": "583c320e34443779dfd8af42462db2b29a09269eba074583e6974f384bb678ea"
+      "sourceHash": "c5f01de8cb9dbd511f86548cb339194833e2f099ac02f715a949c609454d2292"
     },
     "docs/handoff.md": {
-      "sourceHash": "e6e969cb93abc7ebe5534d8153e69234cb47ae30b1670909d52dc170a3ef887f"
+      "sourceHash": "8d9d4efaf422552b1c79e555dfe609f43f348b6fb412bb031c4b73829173ad8c"
     },
     "docs/backup-and-restore.md": {
-      "sourceHash": "27530c5d0c8e1730aee45232095e103f653c035f625d4525bb2b9a48da2c30db"
+      "sourceHash": "050a6fc573db968ff2efffcb9a27fafe2239472e470f9e8b7498f602e87243a2"
     },
     "TECHNICAL-GUIDE.md": {
-      "sourceHash": "3476f024c5bf8c039bb0db2e86081f65531001d72499a6e17072d70cca2944dc"
+      "sourceHash": "080a4eb27f6c93a7243027c42693da65a860b0ac8fee5d2cf5d00bea751d9663"
     },
     "src/design-system/authority/README.md": {
       "sourceHash": "8bc829bbd6c7c1cf79247cc532716f92862a8fda57cab4ff8474d9323a34a563"
     },
     "docs/distribution/README.md": {
-      "sourceHash": "68c817100414452d69b0ab33dac6269f08d5dfc5c5449c5cfeff9800541c296c"
+      "sourceHash": "d1ae36f81618295ba814b1d725a3bea9a30d97ab026e13fd7b85ff670b3f850d"
     },
     "docs/conventions.md": {
-      "sourceHash": "d1306cdf5f31fb71db596d2b4079b73a945015c04c624081099083357b8d53b5"
+      "sourceHash": "b0a57e951c14c8400342efd8f58a28e9ba76d3cc6d68ebf38cd1f8e9749ff678"
     },
     "docs/agents/languages.md": {
-      "sourceHash": "c608bf2b97eff580eabb970b034d22545b8483d51fe5302b23419e265ce4c086"
+      "sourceHash": "a8d57f456e5820d96b3bd98ed1ac00188f6461cca0dfbe9bb21b598d02c9aabe"
     },
     "docs/decisions/001-self-contained-instructions.md": {
       "sourceHash": "7a7b485bb8b1b16b04caaac8ea9c8882b0f15667b4025f96797af0047cf61c01"
@@ -188,34 +161,34 @@
       "sourceHash": "7e9d73d41a1750d3bb8542c4de8525295a8e719aec5af77fdf558d9caced9820"
     },
     "docs/agents/adapters.md": {
-      "sourceHash": "0b0eb685099527fd34e76c5a6fdb20644856df0032dbd9541aa94167fb0cdf55"
+      "sourceHash": "c78444ca4b568563629bdcf1b78063b45ac3317653c5c27f5f43f5580678e986"
     },
     "docs/agents/skill-contract.md": {
-      "sourceHash": "b69bb40dbd31f04e6e039a71e58a637c4e16b926d0a8520722edd70577e3a712"
+      "sourceHash": "8713cd2430192257afb0bdc3e968788f880fda1bb49419ad3d90cefd484b3619"
     },
     "docs/agents/private-configuration.md": {
-      "sourceHash": "08493dc22a1f6b370f2f83fa034e3efbfc4434f2d3e30272709f59a50edd0dac"
+      "sourceHash": "be4c8f2dd113987a3954676d5e20f6565266ca28957d48d7c5b61f1f2f2afcc6"
     },
     "docs/product/project-start.md": {
-      "sourceHash": "47de43b23bcf95653526aff52646e9342aaab6c124a58e73c94ce35a20c46aa3"
+      "sourceHash": "f371599f8efe419988165c1b1f229cfffb34c6f0c53c5600b48c6bd05caa5ef6"
     },
     "docs/product/replacing-project-example.md": {
-      "sourceHash": "7910f2b927f7f076011721003a39be8a3b595f2e04e13066598019d0943e5951"
+      "sourceHash": "cca42bfc60e9be9f197bf79cbece9f2117bd42dcb700151771758a94be2d976b"
     },
     "docs/documentation.md": {
-      "sourceHash": "cc96525030ac8916a8b2c40e215d18a5740dc31df6139b0ac2dce50bc7a5ba0d"
+      "sourceHash": "4a71377f7b936eeebfbdf423630175fd1b4c64d69f631175b1b48e9a09072187"
     },
     "docs/security.md": {
-      "sourceHash": "b9c1165a85e7cb1d1d304d2bd294e2075662eb1b4b3b7188e351c0143215a433"
+      "sourceHash": "416f2f07f9a0746b35a1038c2444c5d06b0334535b60d1dbf813f5564d437516"
     },
     "docs/architecture.md": {
-      "sourceHash": "b5971cfdf225708683c702967b729300b6db7cda6fd4b4b261d2c2261bf29a0d"
+      "sourceHash": "67ea4702af15c40d46719151c8dd6fb4529e47f8c3d5ba58d774e6890f73e4e2"
     },
     "docs/claude/chantier-model-routing.md": {
-      "sourceHash": "fcf7e42d55d464ad5fa289584295b08f22e73ef53275640ecffc22af9e11621b"
+      "sourceHash": "6c4b7019d43716d476a7365b3eed571e97979eff039af4d4fcbeb789b8fab134"
     },
     "docs/codex/chantier-model-routing.md": {
-      "sourceHash": "8b29d9b634aad5a5f3ffa27802409a904bb38e89748aa8c55b082fa4541d8dea"
+      "sourceHash": "a194304393df0c920da260a89dcc5a57e0c9c79e18891f534cc6056213459d7a"
     },
     "docs/agents/user-decisions.md": {
       "sourceHash": "47871a915af0033e4819b3291ec74353fabce5e9b44a57746eebdca8a30f0b28"
@@ -224,16 +197,64 @@
       "sourceHash": "b49b20ce388b8c15ab82da103ac8a8a13b26ab90e8cdaf8e773e2df9485e74c1"
     },
     "docs/compatibility.md": {
-      "sourceHash": "bce1dae5110802da2c1cfb9f31dcac8639256f8eb9b538da5b5634cf88efdbb6"
+      "sourceHash": "4152a3bed7f08715e18bbafbee4e437ed08295f4a8465df7b202bdc8083e1724"
     },
     "AGENTS.md": {
-      "sourceHash": "93b53666f123fa9dd1e456ba5d223a27ea42b20f97645b61dde432ee843d19fe"
+      "sourceHash": "e9302de553e0ceed6df2beacb564721ededc7722c138ed0a02450ba98fe00f43"
     },
     "docs/agents/project-intake.md": {
-      "sourceHash": "fcc30cd506c313dd19c4a6cdb9cd16b06b8aaa304a897a86663b1e714e835f70"
+      "sourceHash": "4f8bfcfccb2f8be16c031f18407faec6f4a52e3ab22b638835257af1705c5515"
     },
     "docs/decisions/044-project-intake-and-entry-policies.md": {
       "sourceHash": "35c494fe17827042bd27e62647a534036a591cf40ee677e66c0d89cfaa26298c"
+    },
+    "docs/guide-whizam/modifier-documentation.md": {
+      "sourceHash": "921b774fbe13d26aed5f261ec4a6f56140881f0836729473db1d392c001515cd"
+    },
+    "docs/guide-whizam/modifier-agents-skills.md": {
+      "sourceHash": "8fdb0080425962f3f8887064531fb5b3d8ce5caeded222e047c02c75f6a04ac4"
+    },
+    "docs/guide-whizam/partager-projet.md": {
+      "sourceHash": "53643b1f3fd7b53d5e6f1c84e863f2f83468d702b4f8fc73c797314c6fa9e881"
+    },
+    "docs/guide-whizam/modifier-regles-design-system.md": {
+      "sourceHash": "b908804b8127cdd3a0a5652b7a37c410cecdd104ebd56fdc87027e23cf5f4b9d"
+    },
+    "docs/guide-whizam/modifier-architecture.md": {
+      "sourceHash": "d6f8a9a524e4c4e3a0d1bc5317b970e71b9db3bdf96b5397c1beee0a4e79914a"
+    },
+    "docs/guide-whizam/index.md": {
+      "sourceHash": "4970183c39ff7dee7cd7199dbe6f86d924a5282c3bd5935134a245c709bcd2ca"
+    },
+    "docs/guide-whizam/storybook-design-system.md": {
+      "sourceHash": "db91fda0ff38441f6968e2cdd89d2eecd297b58f851777b2fbf1399b1fe3d0d1"
+    },
+    "docs/guide-whizam/consulter-documentation.md": {
+      "sourceHash": "7d39d7cbea69048c0362d312c5b2d93b90bccda46d6a914c5d817129ad01e567"
+    },
+    "docs/guide-whizam/modifier-kit.md": {
+      "sourceHash": "f921368a76894fa2d4a7e38da370ed9cca73dfabc7213798ce1d43390ebda1c6"
+    },
+    "docs/product/starter-kit.md": {
+      "sourceHash": "b3d2df113b5bce60d7d96749d9894f95eaafe4ed4d7fedde70e4745944873a14"
+    },
+    "docs/github-publication.md": {
+      "sourceHash": "588410dda6bcc9ab16a8636b44529977f7ea20337df7859b0eb8d9de863ae3ae"
+    },
+    "skills/publish-github-project/SKILL.md": {
+      "sourceHash": "63eb0403a09265147465303f6ed03dd9987dfd6f61ed1b8ca89e1d1ee893fe51"
+    },
+    "docs/licence-reutilisation.md": {
+      "sourceHash": "590f9dd073435f7c5fb1f20e0a610035ba7b75382c8faa96bf2fe5a2d2132e2e"
+    },
+    "docs/design-system/guide.md": {
+      "sourceHash": "50c99221027a991ef8e05cf580cef0e9111bfdaa2c1eae4b7286684dac127541"
+    },
+    "docs/agents/guide.md": {
+      "sourceHash": "d831cc39bcb8aa897cbc6c165a65bdc51cb82cee46b09913b3e9d9e7f11b287d"
+    },
+    "docs/agents/reference.md": {
+      "sourceHash": "b65e18f935158eaa74bb9ff48436ab114ba0e2f7f1a817fd8a0aae5fd3744762"
     }
   }
 }

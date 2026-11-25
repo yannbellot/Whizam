@@ -1,31 +1,51 @@
-> Current initial state: application and Storybook have no project content; Zensical displays existing `docs/` documentation from first startup. Demonstrations cited in historical references stay outside delivered access points; do not reactivate them at initialization. Internal resources required by contracts/policies remain. New project content follows existing rules.
+# Adapt resources from the former example
 
-# Replacing the projects example
+A fresh kit no longer mounts `/projects` or UI Lab. The home page is empty and the seed inserts no data. Resources from the former record manager remain internal; their presence justifies neither reactivation nor another route-removal step. The [scope](starter-kit.md) and [active table](../../app/routes.ts) describe the starting point.
 
-The mini-manager is an explicit demonstration; the starter functions without an AI agent. Its [specification](features/projects.md) defines rules; the [shipped PORT-03 report](../reviews/port-03/README.md) identifies version, journey checks and limits.
+## Define project needs
 
-## Role in a derived project
+Start from the brief and [startup workflow](project-start.md). Define pages, interactions, data, states and first-version criteria before choosing resources to reuse. Project management belongs to the product only when included in the agreed scope.
 
-In the [startup workflow](project-start.md), `/projects` supports checks/manufacturing reference. It creates fictional database records, not applications/folders. Never present this example, UI Lab or generic welcome as the project’s first version.
+The former example includes contracts and processing in `app/features/projects/`, schema/migration elements and dedicated tests. These are references to examine, not a mandatory business architecture. Reuse useful shared components and adapt their examples before publishing in Storybook.
 
-At the first authorized implementation slice, remove navigation/delivered access entries, adapt welcome and prepare Storybook around actually used components. Keep/adapt project-management functionality only within agreed scope. Useful development reference files may remain outside delivered journeys; this does not replace actual-result content/navigation checks. Technical URLs are not blocked by this rule and no data deletion follows. Checks/reports must not require `/projects` after replacement; target project journeys/relevant storage.
+## Adapt code, data and documentation
 
-The reference starter retains its demonstration/tests; this procedure does not remove them from source kit. Complete example-code removal follows the explicit procedure below, preserving existing data.
+1. Examine actual imports and affected consumers; do not blindly delete a reference folder.
+2. Add or adapt authorized routes and processing, with HTTP/data validation, errors and negative tests. Former guards do not automatically apply to new routes.
+3. For an initialized database, preserve applied migrations and define a new migration when needed. For a new domain, design its schema before initialization. Verify the target, backup and compatibility before data operations.
+4. Maintain components, tokens, variants, states, examples and `.storybook/project.json` selection under [Storybook organization](../design-system/architecture.md#organisation-et-publication-storybook). Current generation uses neither UI Lab nor its former editing manifest.
+5. Adapt tests, stories and documentation to project flows; stop requiring `/projects` as a success scenario. Run relevant checks from the [technical guide](../../TECHNICAL-GUIDE.md), then applicable reviews.
 
-## Example elements
+## Remove an unused resource
 
-- app/routes/projects-*.tsx and /projects block in app/routes.ts: HTTP/UI coordination.
-- app/features/projects/: contract, HTTP guards, server repository, form/summary and CSS; stories use fixed data, not the repository.
-- app/server/db/schema.server.ts, seed.server.ts and drizzle/0000_initial_projects.sql: table/fixtures/migration. The .server DB client/configuration remains a foundation capability.
-- tests/unit/project-contract.test.ts, three repository cases in tests/integration/postgres.test.ts, tests/project-e2e/, scripts/test-projects.mjs and config/testing/playwright.projects.config.ts: example-specific evidence. Adapt other PostgreSQL tests if replacing the model.
-- src/App.tsx: welcome link. docs/product/brief.md, features/projects.md and project-data-contract.md: product/data sources.
+Unused files alone may be removed within the mandate after examining dependants and test implications. Distinguish code removal from data deletion: no table, applied migration, backup or volume is implicitly erased.
 
-## Change procedure
+Preserve historical evidence and versions. Former editor journals must not be converted or purged to adapt the kit. An existing copy using that editor requires a separate migration under the [policy](../design-system/policy.md), without combining old code and new authorities.
 
-1. Create a local branch; clarify new-domain brief/criteria; preserve SSR foundation, server modules and input protection. Define data before migrations.
-2. Replace relevant business routes/links/components; retain J2 components/tokens. Avoid generic components without actual need.
-3. For a new project without data, define schema/migrations before first initialization. For existing databases never modify applied migrations: generate/review new migrations, plan backup/compatibility and an authorized target. Never implicitly delete tables/volumes.
-4. Adapt fictional seed, business tests, stories/documents in the same slice. Explicitly update the closed `scripts/design-editor/manifest.mjs`: remove only deleted paths and register new DS-consuming components/stories/routes. All declared paths must exist before restarting UI Lab; do not bypass revision checks by ignoring missing files or adding global discovery. Prepare the list before the derived project’s first DS save. If receipts already exist with another list, preserve old root/tooling for diagnosis/recovery; prepare an inactive source copy without private state, with new configuration and explicit data treatment. Never convert/purge receipts or remove locks to force manifest changes. The starter retains its example manifest; replacements apply only to the derived project. Keep cross-cutting checks: types, lint, format, boundaries, authorities, relevant tests and app/Storybook builds.
-5. Run journeys against an isolated database, verify errors/restart; record removed functionality/new limits in tracking/handoff. Repeat applicable reviews. This procedure grants no push, publication or database reset.
+## Verify the presented result
 
-For complete removal, explicitly remove route block/link, then only unused example business/test/story files. Preexisting storage remains until a separate data operation is authorized. Review versioned-file deletion in Git; never use global purges.
+Present implemented flows and project components, with Application, Storybook and Documentation after verifying their availability and content. An empty page, former demonstration or passing build is not the first business version. Document limitations and leave acceptance to the designer.
+
+<a id="change-procedure"></a>
+<a id="source-change-procedure"></a>
+
+<a id="elements-de-lexemple"></a>
+<a id="source-elements-de-lexemple"></a>
+
+<a id="example-elements"></a>
+<a id="source-example-elements"></a>
+
+<a id="place-dans-un-projet-derive"></a>
+<a id="source-place-dans-un-projet-derive"></a>
+
+<a id="procedure-de-changement"></a>
+<a id="source-procedure-de-changement"></a>
+
+<a id="remplacer-lexemple-projets"></a>
+<a id="source-remplacer-lexemple-projets"></a>
+
+<a id="replacing-the-projects-example"></a>
+<a id="source-replacing-the-projects-example"></a>
+
+<a id="role-in-a-derived-project"></a>
+<a id="source-role-in-a-derived-project"></a>

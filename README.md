@@ -44,7 +44,7 @@ Dans une nouvelle conversation ouverte sur le dossier du kit, vous pouvez écrir
 
 > Je souhaite créer un portfolio de designer numérique nommé « Mon Portfolio ». Aide-moi à cadrer sa première version, puis propose les étapes d’initialisation et de réalisation.
 
-Remplacez l’assistant, le nom et l’idée par les vôtres. Vous pouvez joindre votre brief et vos références visuelles. Si vous n’avez pas indiqué l’assistant utilisé, les instructions du kit prévoient de vous le demander au premier échange.
+Adaptez le nom et l’idée à votre projet. Vous pouvez joindre votre brief et vos références visuelles.
 
 L’assistant examine les sources, précise avec vous le périmètre et vous présente les actions à valider avant l’initialisation. **Récupérer le kit ne crée pas automatiquement une application métier.** Pour reprendre un projet commencé, demandez de lire son état courant et de poursuivre sans le réinitialiser.
 
@@ -86,6 +86,8 @@ Puis lancez l’outil souhaité dans son propre terminal :
 
 Docker doit être démarré pour le portail documentaire. Ces adresses sont utilisables lorsque les services correspondants sont lancés ; vérifiez l’adresse affichée en cas de changement de port.
 
+Documentation et Design système suivent automatiquement le mode clair ou sombre de votre navigateur. Leur colonne gauche regroupe la navigation et un sélecteur de langue fixe en bas, également disponible dans le menu mobile. L’icône de lien des titres copie l’adresse de la section ; une confirmation temporaire signale la réussite.
+
 L’application, Storybook et la documentation fonctionnent sans clé de modèle IA. Votre assistant de développement nécessite son propre accès. Figma est facultatif.
 
 ## Pour aller plus loin
@@ -94,7 +96,8 @@ L’application, Storybook et la documentation fonctionnent sans clé de modèle
 - [Guide d’utilisation](whizam-kit/docs/guide-whizam/index.md)
 - [Parcours de démarrage d’un projet](whizam-kit/docs/product/project-start.md)
 - [Préparation de l’environnement](whizam-kit/skills/initialize-project/references/environment-setup.md)
-- [Vérification et transmission](whizam-kit/README.md#vérifier-et-transmettre-son-projet)
+- [Vérification et évolution](whizam-kit/README.md#vérifier-et-faire-évoluer-le-projet)
+
+Le kit est distribué sous [licence MIT](whizam-kit/docs/licence-reutilisation.md), avec les mentions des ressources tierces à conserver.
 
 Travaillez sur une copie pour chaque nouveau projet. Les configurations privées, dépendances installées, caches, builds et données locales ne font pas partie d’un kit neuf à transmettre. Le kit est un point de départ à adapter et à vérifier pour votre application.
-

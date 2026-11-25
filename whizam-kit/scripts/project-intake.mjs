@@ -11,6 +11,8 @@ const ids = new Set([
   'translation',
   'verification',
   'approval',
+  'github.repository',
+  'github.sync',
   ...Array.from({ length: 10 }, (_, i) => `q${i + 1}`),
   'q6.platforms',
   'q6.other',
@@ -101,7 +103,13 @@ export async function recordIntake(root, event) {
     (event.answers !== undefined && !Array.isArray(event.answers))
   )
     throw new Error('Invalid intake event')
-  for (const answer of event.answers ?? []) validateAnswer(answer)
+  for (const answer of event.answers ?? []) {
+    validateAnswer(answer)
+    if (answer.id === 'github.repository' && !['new', 'existing', 'none'].includes(answer.value))
+      throw new Error('Invalid GitHub repository choice')
+    if (answer.id === 'github.sync' && !['after-commit', 'on-demand'].includes(answer.value))
+      throw new Error('Invalid GitHub sync choice')
+  }
   const brief = await safe(root, 'docs/product/brief.md')
   const checkpoint = await safe(root, 'docs/project-state.md')
   const lock = path.join(path.dirname(brief), '.intake.lock')

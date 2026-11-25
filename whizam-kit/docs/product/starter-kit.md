@@ -1,48 +1,51 @@
-> État initial courant : application et Storybook sans contenu de projet ; Zensical affiche les guides actifs dès son premier démarrage, dans Documentation designer et Documentation technique ; Suivi de projet regroupe État courant, Roadmap et étapes réelles. Les historiques du kit restent hors du portail et de sa recherche. Les démonstrations citées dans les références historiques restent hors des accès livrés ; ne pas les réactiver lors de l’initialisation. Les ressources internes requises par les contrats et les politiques sont conservées. Les nouveaux contenus du projet suivent les règles existantes.
-
-> Périmètre courant DS-AUTO-01 : UI Lab est retiré. Le design system est automatisé et Storybook exclusivement documentaire, selon la [politique](../design-system/policy.md). Les mentions de l’ancien éditeur dans les sections datées sont historiques.
-
-> Périmètre courant DS-AUTO-01 : UI Lab est retiré ; le design system est automatisé selon la [politique](../design-system/policy.md). Storybook est exclusivement documentaire. Les mentions datées ci-dessous décrivent l’héritage.
-
 # Périmètre du kit réutilisable
 
-**Édition autonome — Kit Whizam :** ce dossier se consomme directement depuis Codex, sans créer de projet dans un outil externe. Whizam est le nouveau nom de Loomata ; les chemins techniques restent inchangés. Les sections historiques ci-dessous conservent la provenance du socle et ses limites. Le brief du projet dérivé détermine les fonctionnalités ; aucune roadmap historique du kit n’autorise leur réalisation. Voir la [notice de distribution](../distribution/README.md).
+Le Kit Whizam est un starter autonome destiné aux designers UX/UI et Product Designers pour créer une application web vérifiable et transmissible. Le designer définit son intention et examine le résultat ; l'assistant aide au cadrage, à la réalisation, aux contrôles et à la documentation. Le brief du projet dérivé définit ses fonctionnalités.
 
-**UI-ARCH-04 — adoption du socle des nouveaux projets :** [décision 037](../decisions/037-project-ui-foundation-adoption.md). Tailwind `project:` sans nouveau Preflight, thème dérivé du DTCG projet dans le writer transactionnel ; Button/Field sur React Aria, API et alias locaux conservés. Consommation contrôlée par utilitaires statiques liés aux bindings ; pas de référence aux valeurs outil. Création/export à qualifier séparément, projets existants et anciens journaux préservés ; Electron hors mandat. Cette adoption ne constate pas la qualification, suivie dans la fiche UI-ARCH-04.
+## Contenu livré
 
-**Articulation courante — 12 novembre 2026 :** le kit décrit ici est une ressource de [Loomata](loomata-workspace.md), dont le MVP intégré utilise Codex seul. Les adaptations multi-assistants et l’exécution du starter sans compte IA restent conservées. Le moteur de traçabilité du MVP, lui, requiert Git pour ses sources et décisions durables ; il ne se déduit pas du simple démarrage web sans Git. [Décision 033](../decisions/033-loomata-mvp-scope-and-sequence.md).
+- Socle React/React Router avec rendu serveur et navigateur, TypeScript, PostgreSQL, Drizzle et Docker Compose.
+- Design system automatisé : primitives, tokens de composant et tokens locaux de page, contrats et exemples rédigés, génération des styles et stories.
+- Storybook de consultation avec organisation permanente et sélection explicite des éléments du projet.
+- Zensical pour les guides actifs et la documentation du projet, avec recherche et contenus FR/EN entretenus.
+- Instructions, quatre rôles et bibliothèque de skills selon le [catalogue](../../skills/catalog.json), avec adaptations internes aux assistants.
+- Scripts, tests, migrations et procédures de reprise. Leur présence n'active ni publication ni déploiement.
 
-**24 octobre 2026 — périmètre et autonomie documentaire précisés.** Ce document décrit l’objet livré ; il ne constate pas son achèvement. Les [instructions](../../AGENTS.md), la [roadmap](../../ROADMAP.md) et l’[état courant](../project-state.md) distinguent les règles, le suivi et la réalisation effective.
+## État initial
 
-## Produit et utilisateurs
+L'application affiche une page vide ; `/projects` et UI Lab ne sont pas des routes actives. Le registre des définitions importées et les sélections de contenu Storybook sont vides. Le seed n'insère aucune donnée ; migrations et données préexistantes sont conservées. Les composants et anciens exemples utiles restent des ressources internes, sans définir le produit à réaliser.
 
-L’**app** est un starter destiné aux designers UX/UI et Product Designers pour produire des POC/MVP web vérifiables et transmissibles à un développeur. Le designer formule l’intention et accepte les choix matériels ; les agents assistent le cadrage, la conception, l’implémentation, les contrôles et la documentation. Les projets dérivés possèdent leurs propres fonctionnalités et références visuelles.
+Le portail propose Accueil, Guide d'utilisation, Suivi de projet et Documentation technique. Les historiques du kit sont exclus du site et de la recherche. ROADMAP.md et docs/project-state.md restent des modèles non initialisés ; aucune tâche de fabrication du kit ne doit y être reportée.
 
-Le kit se présente comme un produit autonome. Ses instructions et documents d’usage décrivent ses propres responsabilités, prérequis et procédures ; leur compréhension ne suppose aucune connaissance de l’organisation qui l’a conçu. Le nom du produit et le UI Lab ne désignent pas une dépendance de fabrication.
+## Démarrage et évolution
 
-## Éléments à livrer dans ce dossier
+Suivre le [parcours](project-start.md) et le [cadrage initial](../agents/project-intake.md) : réutiliser les informations connues, recueillir les réponses manquantes, valider le périmètre puis réaliser la première version autorisée. Une préparation technique réussie ne constitue pas un projet métier réalisé.
 
-- Starter web intégré React Router SSR/React/TypeScript, PostgreSQL/Drizzle/Compose, configuration, migrations, données fictives et commandes de développement/exécution.
-- Design system JSON DTCG à trois catégories, registre et recettes YAML, génération autonome des tokens et stories, Storybook de consultation.
-- Fonctionnalité complète de référence : [gestion de projets](features/projects.md), avec parcours, persistance, états et contrôles. Le [brief de l’exemple](brief.md) concerne cette démonstration, pas tout le kit.
-- AGENTS.md du kit, quatre rôles — Builder, Design Reviewer, Technical Reviewer / QA, Security Reviewer — et une bibliothèque extensible de skills communs selon le [catalogue](../../skills/catalog.json).
-- Adaptations documentées pour Codex, Claude Code, Gemini CLI et Mistral Vibe, avec une source par règle/rôle/skill, des chemins internes et une matrice de compatibilité fondée sur des essais identifiés.
-- Tests, scripts de contrôle, documentation de conception/exploitation/reprise, preuves utiles à la livraison et capacité CI inactive. Les activations et publications restent soumises à un mandat explicite.
+Les anciens exemples ne sont pas à réactiver pour démarrer. Leur [adaptation](replacing-project-example.md) préserve les données existantes et les migrations appliquées. Toute création ou adoption de composant comprend ses variantes, états, exemples, tokens et sélection documentaire selon la [politique](../design-system/policy.md).
 
-Les instructions et skills sont livrés dans les sources mais ne sont pas des dépendances d’exécution du site, des tests ou de Storybook : ces derniers ne nécessitent ni compte IA ni clé de modèle. Aucun assistant ou modèle unique n’est imposé aux utilisateurs du kit. Une adaptation présente n’est pas une compatibilité démontrée.
+## Autonomie et prérequis
 
-## Démarrage d’un projet dérivé
+Le dossier du kit fonctionne seul après copie, renommage ou déplacement, avec ses fichiers cachés utiles et liens relatifs. Ses instructions et références ne nécessitent aucun parent, service Whizam externe ou lanceur macOS. Node/npm et Docker suivent les [prérequis et opérations](../operations.md).
 
-Le [parcours de démarrage](project-start.md) distingue préparation technique, cadrage, conception/développement et revue de la première version. Le designer découvre à cette revue les liens vérifiés vers son application et les composants de son projet dans Storybook. Les démonstrations du kit, dont `/projects`, restent des références de fabrication ; leur retrait du parcours utilisateur dérivé suit la [procédure dédiée](replacing-project-example.md), sans suppression implicite de données. Une initialisation réussie ou un starter renommé ne constitue pas une application réalisée.
+Le site, les tests, Storybook et la génération fonctionnent sans compte IA. L'assistant utilise son propre accès ; Figma reste conditionnel. Git sert à la traçabilité, sans être requis pour le simple démarrage web. Une copie neuve n'embarque ni dépôt Git du mainteneur, ni configuration privée, dépendance installée ou volume Docker ; voir la [passation](../handoff.md).
 
-## Autonomie attendue
+## Limites de qualification
 
-Le dossier complet doit pouvoir être distribué seul, renommé et déplacé sans modifier ses fichiers internes ni dépendre du nom, du chemin, des instructions ou des ressources de son parent. Cette autonomie couvre aussi le sens des instructions : aucune règle d’usage ne suppose un environnement de fabrication particulier. Les procédures et références nécessaires à la reprise sont livrées dans le kit ; les traces historiques restent identifiées par leur version, sans devenir des consignes actuelles. Voir la [décision d’autonomie documentaire](../decisions/001-self-contained-instructions.md).
+Les plateformes, essais natifs et résultats sont identifiés dans la [compatibilité](../compatibility.md). Une adaptation livrée ne garantit ni découverte native ni comportement identique des assistants. Les preuves historiques ne qualifient pas automatiquement une nouvelle édition ou un projet dérivé.
 
-Git sert à la traçabilité du développement ; le démarrage web reste possible sans dépôt Git. Les prérequis externes sont documentés. Les volumes Docker sont externes aux sources : suivre les [opérations](../operations.md) et la [sauvegarde/restauration](../backup-and-restore.md).
+Le kit ne fournit pas une application métier achevée, une authentification multi-utilisateur ou une garantie de préparation à la production. Les formats du projet dérivé suivent son brief ; les contraintes historiques de l'ancien outil ne déterminent pas son produit. Les revues techniques et l'acceptation humaine restent distinctes.
 
-## État et limites
+<a id="autonomie-attendue"></a>
+<a id="source-autonomie-attendue"></a>
 
-Le starter web et ses données ont une qualification historique sur une version identifiée ; cela ne démontre pas encore l’extraction du kit complet. AGENTS, rôles, skills, adaptations, contrat, matrice et validateur sont intégrés par [PORT-03](../work-items/port-03-autonomous-agent-kit.md), techniquement qualifié selon son [bilan](../reviews/port-03/README.md). Les preuves distinguent autonomie des fichiers, fonctionnement web/données, comportement des assistants et acceptation humaine ; les essais natifs/humains manquants restent ouverts.
+<a id="demarrage-dun-projet-derive"></a>
+<a id="source-demarrage-dun-projet-derive"></a>
 
-Figma, comptes utilisateurs et hébergements restent conditionnels. Pas de nouveau framework d’orchestration, de catalogue UI exhaustif ni de garantie de préparation à la production. Le développeur repreneur peut adapter la stack et retirer les outils d’agents ; le site reste exécutable avec ses seuls prérequis techniques.
+<a id="elements-a-livrer-dans-ce-dossier"></a>
+<a id="source-elements-a-livrer-dans-ce-dossier"></a>
+
+<a id="etat-et-limites"></a>
+<a id="source-etat-et-limites"></a>
+
+<a id="produit-et-utilisateurs"></a>
+<a id="source-produit-et-utilisateurs"></a>

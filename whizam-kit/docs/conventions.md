@@ -1,5 +1,7 @@
 # Conventions du starter
 
+Ces conventions définissent l’organisation des sources, le suivi du projet, les pratiques de code et les lots Git locaux. Elles permettent de retrouver les décisions et de reprendre le travail depuis le dossier du projet. Les commandes s’exécutent depuis sa racine réelle.
+
 ## Initialiser le suivi du projet
 
 Les chemins de ce document partent de la racine du dossier applicatif, indépendamment de son nom. Le [README](../README.md), la [roadmap](../ROADMAP.md) et l’[état courant](project-state.md) permettent sa reprise sans dépendre du cadre de fabrication.
@@ -15,7 +17,7 @@ L’app est le kit complet, dont les [instructions](../AGENTS.md), rôles, skill
 - `src/design-system/components/` porte les composants partagés existants ; `src/ui-lab/` conserve leurs démonstrations. Les composants n’importent ni configuration privée ni pilote de base.
 - Les traitements exclusivement serveur vivent dans des modules suffixés `.server.ts`. `app/server/env.server.ts` valide les entrées de configuration avec Zod et fournit un diagnostic par noms de champs, sans reprendre leurs valeurs.
 - Les dossiers de fonctionnalités et de données ne sont ajoutés qu’avec leur première implémentation utile. Les routes ne portent pas le suffixe `.server`.
-- CSS natif, propriétés personnalisées et CSS Modules ; aucune autre bibliothèque UI ou framework CSS implicite.
+- CSS natif, propriétés personnalisées et CSS Modules, avec utilitaires Tailwind préfixés `project:` sans nouveau Preflight. React Aria et Base UI figurent dans les dépendances ; les utiliser selon les composants et contrats réellement adoptés, sans généraliser leur usage à tout le kit. Aucun ajout de bibliothèque implicite.
 
 ## Contrats et contrôles
 
@@ -79,3 +81,9 @@ Les scripts opérationnels TypeScript utilisent Node 24 natif et des imports `.t
 ## Formatage et navigateur
 
 Prettier utilise le style déclaré dans .prettierrc.json : `npm run format` corrige et `npm run format:check` vérifie. Les exclusions sont explicites dans .prettierignore ; les copies ambiguës restent hors Git et ne sont pas modifiées. Playwright utilise Chromium moderne sur deux viewports, sans serveur réutilisé ni profil personnel. Un échec de contrôle conserve son code non nul.
+
+### Envoi GitHub après un lot
+
+L'intégration locale reste distincte de l'envoi distant. Une autorisation explicite persistante sur le dépôt, la visibilité, la branche et le mode selon [Publication GitHub](github-publication.md) autorise les envois de ce périmètre sans accord répété. Une préférence de cadrage seule ne suffit pas. Après chaque commit intégré, le Builder applique le mode actif avec le skill dédié ; à la demande ou suspendu, aucun push automatique. Les reçus privés ne créent pas de nouveau commit de suivi. Aucun changement de seuil, envoi global de branches/tags ou service permanent implicite.
+
+Exception limitée pour les sources de skills : seuls les liens terminaux `.agents/skills/<nom>` et `.claude/skills/<nom>`, déclarés au catalogue avec la cible exacte `../../skills/<nom>`, sont suivis comme entrées Git sans lire leur cible. Le catalogue, le dossier canonique et son `SKILL.md` doivent être internes et sans lien intermédiaire ; les liens non déclarés, traversés, externes ou alternatifs restent refusés.

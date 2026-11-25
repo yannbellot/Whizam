@@ -1,6 +1,6 @@
 # Recommending Claude Code models and effort per work item
 
-Apply [initial scoping](../agents/project-intake.md): conditional questions, conversational follow-ups and resumption from the brief/checkpoint. Do not ask which assistant is used; use its entry-point policy. Collect missing documentation languages at Q10 according to [Project languages](../agents/languages.md).
+This policy explains how to recommend a Claude Code model and effort level for the work at hand. It applies when Claude Code is the active entry point, without an assistant-selection questionnaire. Recommendations retain their provenance: a recommendation from another assistant does not become a current Claude recommendation.
 
 ## References and availability
 
@@ -41,8 +41,6 @@ Examples: a verified local color change may use medium; data transformation requ
 
 Follow [common handling](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution) and [display rules](../../AGENTS.md#affichage-et-reprise):
 
-Apply [initial scoping](../agents/project-intake.md): conditional questions, conversational follow-ups and resumption from the brief/checkpoint. Do not ask which assistant is used; use its entry-point policy. Collect missing documentation languages at Q10 according to [Project languages](../agents/languages.md).
-
 ## Manual selection in Claude Code
 
 Users open `/model` for model then `/effort` for effort. Compatible selectors use `s` for session-only selection. Then send approval/resumption for the work. Never automatically modify user/project settings or claim validation replies changed selectors. If unavailable/organization-limited, disclose and propose accessible configuration for approval.
@@ -51,4 +49,4 @@ Documentary reading proves neither actual selection nor native behavior. Policy 
 
 ## User questions and comments
 
-Apply the [common protocol](../agents/user-decisions.md) for useful decisions/optional supplementary instructions. Initial choice offers Codex (OpenAI) / Claude Code (Anthropic), without requested supplementary field. Mode options/comments do not select client models or grant execution approval without explicit expression. Preserve established pair-display rules; this protocol triggers no repeated recommendations.
+Apply the [common protocol](../agents/user-decisions.md) for useful decisions/optional supplementary instructions.Mode options/comments do not select client models or grant execution approval without explicit expression. Preserve established pair-display rules; this protocol triggers no repeated recommendations.

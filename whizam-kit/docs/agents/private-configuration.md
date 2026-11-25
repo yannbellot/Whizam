@@ -1,5 +1,7 @@
 # Configuration privée accompagnée
 
+Lorsqu’un accès manque, l’assistant accompagne sa saisie dans un formulaire local privé plutôt que dans la conversation. Cette page décrit ce parcours, son repli fichier et ses limites. L’enregistrement d’une valeur ne teste pas la connexion et ne redémarre pas l’application.
+
 ## Parcours de l’assistant
 
 1. Identifier les champs réellement nécessaires au mandat et expliquer leur usage. Réutiliser les configurations présentes : ne pas demander un secret déjà utilisable. Vérifier seulement présence/non-vide, sans afficher de valeur ni charger `.env.local` dans le contexte. Ne jamais lire `process.env` en bloc.
@@ -27,3 +29,7 @@ En l’absence d’outil d’ouverture, fournir un lien Markdown portant le libe
 ## Vérifications
 
 Depuis le kit : `node --test tests/private-configuration.test.mjs`. Les essais utilisent un dossier temporaire et des valeurs fictives, sans fournisseur réel. Les contrôles automatiques et l’ouverture effective dans un client sont deux preuves distinctes ; seule une recette utilisateur peut accepter le confort de saisie dans sa version de Codex.
+
+## Accès GitHub conditionnel
+
+Pour la publication des sources, suivre [Publication GitHub](../github-publication.md) : connexion existante d'abord, connexion navigateur ensuite, formulaire uniquement si un jeton reste nécessaire. `node scripts/configure-secrets.mjs --github GH_TOKEN:password` conserve les mêmes protections locales et enregistre uniquement dans `.github-token.local` en mode 0600, sans toucher `.env.local`. L'aide GitHub consomme ce fichier seulement si `credential` vaut `form`, sans retour de sa valeur à l'assistant. Repli fichier : ouvrir ce fichier dédié, annoncer la saisie visible et ne pas le lire. L'enregistrement n'autorise pas la publication et ne prouve pas la connexion. Aucun secret ou fichier privé distribué.

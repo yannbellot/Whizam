@@ -1,6 +1,6 @@
 # Politique du design system automatisé
 
-DS-AUTO-01 — politique validée le 18 novembre 2026. Elle remplace pour ce kit les anciennes règles d’édition visuelle et de décisions sémantiques partagées. Les comptes rendus datés restent historiques.
+Le design system utilise trois catégories de tokens : primitives, tokens de composant et tokens locaux de page. L’assistant maintient les sources et les exemples ; les scripts génèrent et contrôlent les styles, inventaires et stories. Cette page définit les règles de modification, de publication dans Storybook et de reprise.
 
 ## Trois catégories de tokens
 

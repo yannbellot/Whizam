@@ -1,3 +1,4 @@
+import { SystemDocs } from './SystemDocs'
 import type { Preview } from '@storybook/react-vite'
 import '../src/styles/tokens.generated.css'
 import '../src/styles/global.css'
@@ -6,24 +7,16 @@ import './tables.css'
 import './typography.css'
 
 declare const __DOCUMENTATION_LANGUAGE__: string
-declare const __DOCUMENTATION_LOCALES__: string[]
 
 const preview: Preview = {
   initialGlobals: { documentationLanguage: __DOCUMENTATION_LANGUAGE__ },
   globalTypes: {
     documentationLanguage: {
       description: 'Documentation language',
-      toolbar: {
-        icon: 'globe',
-        dynamicTitle: true,
-        items: __DOCUMENTATION_LOCALES__.map((value) => ({
-          value,
-          title: value === 'fr' ? 'Français' : value === 'en' ? 'English' : value,
-        })),
-      },
     },
   },
   parameters: {
+    docs: { container: SystemDocs },
     layout: 'padded',
     options: {
       storySort: {

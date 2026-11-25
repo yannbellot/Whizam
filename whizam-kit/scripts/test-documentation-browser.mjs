@@ -22,29 +22,32 @@ try {
       if (!r.url().startsWith(base)) external.push(r.url())
     })
     await page.goto(base)
-    await page.getByRole('heading', { name: /^Bienvenue dans Whizam/ }).waitFor()
+    await page.getByRole('heading', { name: /^Concevoir et développer avec Whizam/ }).waitFor()
     const rootItems = page.locator('nav[aria-label="Navigation"] > ul > li')
     assert.deepEqual(
       await rootItems.evaluateAll((items) =>
         items.map((item) => item.querySelector(':scope > a, :scope > label')?.textContent.trim()),
       ),
-      ['Accueil', 'Guide d’utilisation', 'Documentation designer', 'Documentation technique'],
+      ['Accueil', 'Guide d’utilisation', 'Suivi de projet', 'Documentation technique'],
     )
     await page.screenshot({
       path: `.runtime.local/documentation/home-${width}.png`,
       fullPage: true,
     })
     for (const [label, heading] of [
-      ['Préparer mon premier projet', /^Préparer son kit/],
-      ['Retrouver le suivi de mon projet', /^État courant du projet/],
-      ['Consulter les questions fréquentes', /^Questions fréquentes/],
+      ['Guide d’utilisation', /^Démarrer avec Whizam/],
+      ['Suivi de projet', /^État courant du projet/],
+      ['Partager votre projet', /^Partager votre projet/],
     ]) {
       await page.locator('main').getByRole('link', { name: label, exact: true }).click()
       await page.getByRole('heading', { name: heading }).waitFor()
       await page.goto(base)
     }
-    await page.locator('main').getByRole('link', { name: 'Découvrir Whizam', exact: true }).click()
-    await page.getByRole('heading', { name: /^Découvrir Whizam/ }).waitFor()
+    await page
+      .locator('main')
+      .getByRole('link', { name: 'Guide d’utilisation', exact: true })
+      .click()
+    await page.getByRole('heading', { name: /^Démarrer avec Whizam/ }).waitFor()
     await page.screenshot({
       path: `.runtime.local/documentation/guide-${width}.png`,
       fullPage: true,
@@ -59,20 +62,18 @@ try {
       assert.equal(response.status(), 200)
       await page.locator('h1').waitFor()
     }
-    // Suivre un renvoi du guide vers le suivi, puis revenir au portail.
-    await page.goto(new URL('docs/guide-whizam/reprendre-transmettre/', base).href)
-    const stateLink = page.locator('main').getByRole('link', { name: 'État courant', exact: true })
+    // Vérifier le lien vers le suivi au clavier depuis l’accueil.
+    await page.goto(base)
+    const stateLink = page
+      .locator('main')
+      .getByRole('link', { name: 'Suivi de projet', exact: true })
     await stateLink.focus()
     await stateLink.press('Enter')
     await page.getByRole('heading', { name: /^État courant du projet/ }).waitFor()
     await page.goto(base)
     const sidebar = page.locator('nav[aria-label="Navigation"]')
     assert.equal(await sidebar.getByText('Historique du kit', { exact: true }).count(), 0)
-    await sidebar
-      .locator('label.md-nav__link')
-      .filter({ hasText: 'Documentation designer' })
-      .first()
-      .click()
+    assert.equal(await sidebar.getByText('Documentation designer', { exact: true }).count(), 0)
     await sidebar
       .locator('label.md-nav__link')
       .filter({ hasText: 'Suivi de projet' })
@@ -118,8 +119,8 @@ try {
     const search = page.getByPlaceholder('Search')
     await search.pressSequentially('primitives', { delay: 30 })
     await page.getByText('Trois catégories de tokens', { exact: true }).first().waitFor()
-    await search.fill('Découvrir Whizam')
-    await page.locator('h2.x').filter({ hasText: 'Découvrir Whizam' }).first().waitFor()
+    await search.fill('Démarrer avec Whizam')
+    await page.locator('h2.x').filter({ hasText: 'Démarrer avec Whizam' }).first().waitFor()
     await search.press('Escape')
     // Vérifier chaque route historique dans l’index de recherche, pas seulement son intitulé.
     const index = await (await page.request.get(new URL('search.json', base).href)).json()
@@ -128,6 +129,25 @@ try {
       if (info.kind !== 'history' || source === 'README.md') continue
       const route = source.replace(/\.md$/, '/')
       assert.ok(!locations.includes(route), source + ' excluded from search')
+    }
+    for (const removed of [
+      'preparer-kit',
+      'premier-projet',
+      'assistant',
+      'cadrer-version',
+      'demander-evolution',
+      'verifier-decider',
+      'reprendre-transmettre',
+      'questions-frequentes',
+    ]) {
+      const route = 'docs/guide-whizam/' + removed + '/'
+      assert.ok(!locations.includes(route), route + ' removed from search')
+      assert.equal((await page.request.get(new URL(route, base).href)).status(), 404)
+      for (const locale of ['fr', 'en'])
+        assert.equal(
+          (await page.request.get(new URL(locale + '/' + route, base).href)).status(),
+          404,
+        )
     }
     for (const source of [
       'docs/reviews/ds-edit-64-f/',

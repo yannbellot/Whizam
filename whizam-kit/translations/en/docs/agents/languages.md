@@ -1,6 +1,6 @@
 # Project languages
 
-This authority complements AGENTS and [initial scoping](project-intake.md). Q9 chooses application languages; Q10 chooses guide, design/technical documentation and Storybook explanation languages. Conversation language selects neither. Commands, identifiers and commits remain English.
+Application languages and documentation/Storybook languages are selected separately. This page explains how to save and resume those choices and maintain translations. [Initial scoping](project-intake.md) collects them at Q9 and Q10 under AGENTS instructions; conversation language does not determine either choice. Commands, identifiers and commits remain in English.
 
 ## Selection and resumption
 

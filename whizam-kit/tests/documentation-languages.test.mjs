@@ -63,6 +63,37 @@ test('source edits invalidate translations and checks even if English has not ch
   )
   await assert.rejects(check(r), /outdated/)
 })
+test('FR/EN pages omit the generic notice while reports retain their dated evidence limits', async (t) => {
+  const root = await fixture(t)
+  const report = 'docs/report.md'
+  const fr = '# Rapport\n\nVersion candidate-123, 24 novembre 2026. Données fictives seulement.'
+  const en = '# Report\n\nVersion candidate-123, 24 November 2026. Synthetic data only.'
+  const catalogPath = path.join(root, 'config/documentation/catalog.json')
+  const catalog = JSON.parse(await fs.readFile(catalogPath, 'utf8'))
+  catalog.archives[report] = 'Dated reference'
+  await fs.writeFile(catalogPath, JSON.stringify(catalog))
+  await fs.writeFile(path.join(root, report), fr)
+  await fs.writeFile(path.join(root, 'translations/en', report), en)
+  const registryPath = path.join(root, 'translations/en/registry.json')
+  const entries = JSON.parse(await fs.readFile(registryPath, 'utf8'))
+  entries.documents[report] = { sourceHash: sourceHash(fr) }
+  await fs.writeFile(registryPath, JSON.stringify(entries))
+  for (const [locale, limit] of [
+    ['fr', 'Données fictives seulement.'],
+    ['en', 'Synthetic data only.'],
+  ]) {
+    const state = await collect(root, locale)
+    assert.doesNotMatch(
+      [...state.outputs.values()].join(''),
+      /Référence fournie avec le kit|Kit reference: adapt project-specific information/,
+    )
+    const rendered = state.outputs.get(report).toString()
+    assert.ok(rendered.includes('candidate-123'))
+    assert.ok(rendered.includes(limit))
+  }
+  assert.equal(await fs.readFile(path.join(root, report), 'utf8'), fr)
+  assert.equal(await fs.readFile(path.join(root, 'translations/en', report), 'utf8'), en)
+})
 test('missing translations have explicit English pages, deletion removes output', async (t) => {
   const r = await fixture(t)
   await fs.writeFile(path.join(r, 'docs/new.md'), 'FRENCH_UNTRANSLATED_SENTINEL')
@@ -115,7 +146,7 @@ test('canonical French fragments resolve inside English headings and changed str
   await fs.writeFile(path.join(r, 'translations/en/docs/guide.md'), '# Usage')
   await assert.rejects(collect(r, 'en'), /heading structure differs/)
 })
-test('generated inventories translate presentation while retaining all token values and reject unknown taxonomy entries', async () => {
+test('generated inventories retain token values while historical taxonomy stays unpublished in both languages', async () => {
   const { translateTaxonomy } = await import('../scripts/documentation-taxonomy-translation.mjs')
   const { collect } = await import('../scripts/documentation.mjs')
   const root = fileURLToPath(new URL('..', import.meta.url))
@@ -126,14 +157,31 @@ test('generated inventories translate presentation while retaining all token val
       .toString()
       .split('\n')
       .filter((line) => line.startsWith('| component.') || line.startsWith('| primitive.'))
+  const { generatedTranslation } = await import('../scripts/documentation-languages.mjs')
+  const inventory = await fs.readFile(
+    path.join(root, 'docs/design-system/style-inventory.md'),
+    'utf8',
+  )
   assert.deepEqual(
-    table(en.outputs.get('docs/design-system/style-inventory.md')),
-    table(fr.outputs.get('docs/design-system/style-inventory.md')),
+    table(generatedTranslation('docs/design-system/style-inventory.md', inventory)),
+    table(inventory),
   )
-  assert.match(
-    en.outputs.get('docs/design-system/token-taxonomy.md').toString(),
-    /Raw colors without product intent/,
-  )
+  for (const state of [fr, en])
+    assert.equal(state.outputs.has('docs/design-system/style-inventory.md'), false)
+  const histories = [
+    'docs/design-system/token-taxonomy.md',
+    'docs/architecture-before-technical-revision-2026-11-24.md',
+    'docs/security-before-technical-revision-2026-11-24.md',
+    'docs/backup-and-restore-before-technical-revision-2026-11-24.md',
+    'docs/product/starter-kit-before-technical-revision-2026-11-24.md',
+    'docs/product/replacing-project-example-before-technical-revision-2026-11-24.md',
+  ]
+  for (const state of [fr, en]) {
+    for (const file of histories) assert.equal(state.outputs.has(file), false, file)
+  }
+  // The historical translator still preserves its documented source contract.
+  const taxonomy = await fs.readFile(path.join(root, histories[0]), 'utf8')
+  assert.match(translateTaxonomy(taxonomy), /Raw colors without product intent/)
   assert.throws(
     () => translateTaxonomy('## Primitives\n| new-kind | Nouveau | example |'),
     /Untranslated/,

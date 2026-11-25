@@ -1,8 +1,8 @@
 # Recommending Codex models and effort per work item
 
-**Qualitative policy — 25 October 2026; request handling revised 19 November 2026.** Applies to Codex exchanges and work they prepare. [Adoption decision](../decisions/003-qualitative-model-routing.md). Guides manual choice; [revision 041](../decisions/041-request-validation.md) governs prior approval under [instructions](../../AGENTS.md) without expanding permissions, publication or project acceptance. Kit instructions remain applicable. No universally high setting.
+This policy helps choose a Codex model and effort level manually for the work at hand. Recommendations use observed difficulties, affected contracts and required checks; no high setting is prescribed for every activity. The [kit instructions](../../AGENTS.md) define request approval, permissions and acceptance conditions.
 
-Codex is optional for kit users. When used, policy applies to work prepared in these exchanges. It imposes no model on Claude Code, Gemini CLI or Mistral Vibe users and no AI account for site execution. No cross-provider equivalence inferred.
+Codex remains optional. This policy does not determine models for other assistants or require an AI account to run the site. No equivalence between providers is inferred.
 
 ## Availability and verification limits
 
@@ -28,7 +28,7 @@ For each dimension, record short evidence with path/symbol/section, separating *
 | 1. Result clarity and consistency | Compare mandate, [kit scope](../product/starter-kit.md), brief/specifications. Whole kit and projects example differ; a label request authorizes no new workflow. |
 | 2. Paths and localization | [Active routes](../../app/routes.ts), then example resources: `saveProject` in [project-routes.server.ts](../../app/features/projects/project-routes.server.ts), read/validation in [project-http.server.ts](../../app/features/projects/project-http.server.ts), then [repository](../../app/features/projects/project-repository.server.ts). Establish actually changed dependents beyond file counts. |
 | 3. Sensitive boundaries | `readProjectForm` rejects unauthorized methods/origins/formats/size; `readServerHost` in [env.server.ts](../../app/server/env.server.ts) restricts noncontainer exposure; [Compose](../../compose.yaml) fixes exposure/persistent identity. Check whether changes actually affect these guarantees. |
-| 4. Contracts and evidence | [Zod](../../app/features/projects/project-contract.ts), [Drizzle schema](../../app/server/db/schema.server.ts), [SQL migration](../../drizzle/0000_initial_projects.sql) coordinate fields/constraints. [PostgreSQL tests](../../tests/integration/postgres.test.ts) require isolated databases and check repeated migration/seed; [server tests](../../tests/unit/server-environment.test.ts) cover refusals/diagnostics. For UI follow [YAML authorities](../../src/design-system/authority/README.md), [generation](../../scripts/generate-tokens.mjs), components/stories. |
+| 4. Contracts and evidence | [Zod](../../app/features/projects/project-contract.ts), [Drizzle schema](../../app/server/db/schema.server.ts), SQL migration `drizzle/0000_initial_projects.sql` coordinate fields/constraints. [PostgreSQL tests](../../tests/integration/postgres.test.ts) require isolated databases and check repeated migration/seed; [server tests](../../tests/unit/server-environment.test.ts) cover refusals/diagnostics. For UI follow [DTCG sources and YAML contracts](../../src/design-system/authority/README.md), [generation](../../scripts/generate-tokens.mjs), components/stories. |
 | 5. Contradictions and unknowns | [Documented security](../security.md) describes a local account-free demo; [compatibility](../compatibility.md) separates files from executed native trials. Authentication additions or unperformed provider trials are not presumed covered. |
 
 File count is not a difficulty score. “Security”, “migration”, “refactor”, “scale” or “governance” alone justify no increase. Actually modifying a contract and merely mentioning it are distinct observations.
@@ -115,4 +115,4 @@ These examples are documentary criteria, not native assistant trials.
 
 ## User questions and comments
 
-Apply the [common protocol](../agents/user-decisions.md) for useful decisions/optional supplementary instructions. Initial selection offers Codex (OpenAI) / Claude Code (Anthropic), no requested supplementary field. Mode options/comments neither select models nor approve execution without explicit expression. Preserve pair-display rules; the protocol triggers no repeated recommendations.
+Apply the [common protocol](../agents/user-decisions.md) for useful decisions/optional supplementary instructions. Mode options/comments neither select models nor approve execution without explicit expression. Preserve pair-display rules; the protocol triggers no repeated recommendations.

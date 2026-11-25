@@ -174,7 +174,26 @@ Ask about translating existing content only when at least one additional documen
 
 For French, English or both alone, ask no existing-content translation question and recommend no migration. Preserve existing versions; writing and reading preferences do not imply translating delivered content. Without content to translate, or with a known decision, ask no additional question.
 
-For Q9/Q10, missing native multi-selection no longer permits an open-text fallback: call native single choices and follow the waiting protocol. If the authorized schema permits at most three options, offer French / English / Several or another language, then a second native choice Both French and English / Other language combination for the last branch. Reuse known answers. Text fallback remains reserved for unavailable or prohibited native mechanisms themselves, not merely missing checkboxes. Q10 remains the last scoping question.
+For Q9/Q10, missing native multi-selection no longer permits an open-text fallback: call native single choices and follow the waiting protocol. If the authorized schema permits at most three options, offer French / English / Several or another language, then a second native choice Both French and English / Other language combination for the last branch. Reuse known answers. Text fallback remains reserved for unavailable or prohibited native mechanisms themselves, not merely missing checkboxes. The conditional GitHub choices below follow Q10 before the summary.
+
+## GitHub — conditional choices before the summary
+
+After Q10 and any follow-ups, unless already known, ask **Would you like to keep your project sources in a GitHub repository?**
+
+- Yes — create a new repository (`new`).
+- Yes — use an existing repository (`existing`).
+- No — for now (`none`).
+
+Save and reread as `github.repository`. Only after Yes, if mode is missing, ask **When should your commits be sent to GitHub?**
+
+- After each local project commit (`after-commit`).
+- Only when I ask (`on-demand`).
+
+Save and reread as `github.sync`. After No, continue to the summary without asking for mode. Native questions and waiting follow the common protocol; a preselection is not an answer. Store only these closed non-secret values here, never a token or publication authorization.
+
+Explain that commits group edits into batches: by default each eligible commit is sent after local integration into `main`, not after each edit or for work branches alone. This choice expresses intent. Complete account/organization, name/URL, visibility and branch only if needed after scoping approval, with a concrete summary before creation or first send under [GitHub publication](../github-publication.md).
+
+Reuse known answers between conversations; do not impose these questions retrospectively on existing projects. Refusal/deferral remains valid until a change is requested. Ask missing questions for demos too, without choosing GitHub by default or creating an account/repository. The summary covers Q1–Q10 and these preferences; development approval is not publication approval.
 
 ## Automatic demonstration and authorization
 
@@ -186,7 +205,7 @@ Present the brief then ask **Does this demonstration project suit you?**
 - Suggest another demonstration brief.
 
 
-Agreement stores the brief and resumes at Q7 through Q10 with the conditional branches: Q7 No skips Q8; Q9/Q10 use native choices; stock translation is restricted to the specified additional-language case. Rejection generates a different proposal taking notes into account and repeats the choice. Material changes require an updated proposal; clarify contradictory answers. Do not develop before authorization of the complete synthesis. Do not ship this demonstration as initial kit content or reactivate old examples.
+Agreement stores the brief and resumes at Q7 through Q10 and the conditional GitHub choices: Q7 No skips Q8; Q9/Q10 use native choices; stock translation is restricted to the specified additional-language case. Rejection generates a different proposal taking notes into account and repeats the choice. Material changes require an updated proposal; clarify contradictory answers. Do not develop before authorization of the complete synthesis. Do not ship this demonstration as initial kit content or reactivate old examples.
 
 After the verification-mode reply, record it under `verification` before asking for implementation authorization. A verification preference is not development approval.
 
@@ -196,7 +215,7 @@ After scoping present the observable result, inclusions/exclusions, hypotheses, 
 
 An explicit start request (“Let’s start”, new project or demonstration) authorizes minimal recording of scoping answers and welcome status, without installation or development. This narrow exception does not await implementation approval. Do not defer recording until the final synthesis. Start with `node scripts/project-intake.mjs show`. After the welcome, after each received reply (including partial answers), and before the next question, save and reread using `node scripts/project-intake.mjs record <event.json>`.
 
-The JSON event accepts optional `welcomeShown` (boolean), `answers` (list of `{ "id": "q1", "value": "…", "status": "provided", "origin": "user" }`) and `pending` (next decision or null). IDs: `entry`, `demo`, `q1`–`q10`, `q6.platforms`, `q6.computer`, `q6.tablet`, `q6.mobile`, `q6.other`, `q9.default`, `q10.default`, `translation`, `verification`, `approval`. Statuses: `provided`, `proposed`, `pending`, `deferred`, `skipped`. Origins: `user`, `brief`, `assistant`, `branch`. Proposals and skipped questions are not user answers. Prepare JSON through a file tool without interpolating user text into shell commands. Store no secrets or private attachment content.
+The JSON event accepts optional `welcomeShown` (boolean), `answers` (list of `{ "id": "q1", "value": "…", "status": "provided", "origin": "user" }`) and `pending` (next decision or null). IDs: `entry`, `demo`, `q1`–`q10`, `q6.platforms`, `q6.computer`, `q6.tablet`, `q6.mobile`, `q6.other`, `q9.default`, `q10.default`, `translation`, `verification`, `approval`, `github.repository`, `github.sync`. Statuses: `provided`, `proposed`, `pending`, `deferred`, `skipped`. Origins: `user`, `brief`, `assistant`, `branch`. Proposals and skipped questions are not user answers. Prepare JSON through a file tool without interpolating user text into shell commands. Store no secrets or private attachment content.
 
 The helper keeps canonical answers in a managed JSON block inside `docs/product/brief.md` and a resumption pointer inside `docs/project-state.md`, preserving other content and the roadmap. The managed block distinguishes current project intent from historical example prose. It rejects symlinks, concurrent writes and invalid blocks. If the second write fails, already saved brief answers remain authoritative: disclose the failure and repair the pointer before continuing, without asking again. If permissions or tooling are unavailable, report missing persistence and stay at the current step; never claim an unsaved answer was recorded. Do not execute recording in the maintenance template to save maintainer answers.
 
@@ -204,7 +223,7 @@ The brief in `docs/product/brief.md` and its “Scoping answers” block are the
 
 Read these authorities in every new conversation. Resume a pending transmission without asking its first-level question again. Reopen deferrals only on request, contradiction or material need. New conversations do not reset projects or authorization. Technical documentation preferences follow [Project languages](languages.md), including legacy migration, separately from product answers.
 
-Do not write maintainer answers into the distribution template. Initialize derived-project progress only with a mandate. Scoping answers authorize minimal recording in the project targeted by the explicit start request, not application development. Present a concrete Q1–Q10 synthesis, hypotheses, exclusions, criteria and verification before development and await authorization unless already obtained for the exact scope. Demonstration agreement also resumes at Q7 without starting development. Delivery acceptance and publication are separate.
+Do not write maintainer answers into the distribution template. Initialize derived-project progress only with a mandate. Scoping answers authorize minimal recording in the project targeted by the explicit start request, not application development. Present a concrete Q1–Q10 synthesis including GitHub preferences, hypotheses, exclusions, criteria and verification before development and await authorization unless already obtained for the exact scope. Demonstration agreement also resumes at Q7 without starting development. Delivery acceptance and publication are separate.
 
 ## Handoff to implementation procedures
 

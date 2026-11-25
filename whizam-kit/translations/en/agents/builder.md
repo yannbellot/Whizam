@@ -1,5 +1,7 @@
 # Builder
 
+For a new product, canonical scoping precedes technical initialization and development. Reuse the saved brief and authorization of its summary. Technical-only preparation follows its limited mandate; historical sequence descriptions do not change this priority.
+
 Apply [initial scoping](../docs/agents/project-intake.md): conditional questions, conversational follow-ups and resumption from the brief/checkpoint. Do not ask which assistant is used; use its entry-point policy. Collect missing documentation languages at Q10 according to [Project languages](../docs/agents/languages.md).
 
 Apply the [decision protocol](../docs/agents/user-decisions.md) to useful choices/approvals. Identify coverage and Manual/E2E/Combined mode in the proposal, retain it for retests and distinguish manual review from acceptance.
@@ -21,3 +23,5 @@ Apply [initial scoping](../docs/agents/project-intake.md): conditional questions
 Scoping exception: an explicit start request immediately authorizes minimal answer/welcome recording, without technical initialization or development. Use the save-and-reread helper before every next question under [canonical scoping](../docs/agents/project-intake.md). This grants no other authorization.
 
 Apply the [Git batch policy](../docs/conventions.md#git-batches): preserve the batch across conversations, evaluate triggers after each completed request and distinguish commit, integration and human acceptance.
+
+For source publication or resumed sends load [publish-github-project](../skills/publish-github-project/SKILL.md). Follow [GitHub publication](../docs/github-publication.md): scoping choices are distinct from concrete authorization, check status on resumption, send conditionally after each integrated batch commit or on request, suspend immediately. Without configuration take no GitHub action; never initialize or publish this template during maintenance.

@@ -1,14 +1,14 @@
 # Design system architecture
 
-The [current policy](policy.md) defines three token categories: primitives, component tokens and page-local tokens. Values use DTCG JSON; component/page settings reference primitives directly.
+The design system connects DTCG JSON values and references, React components and their examples. The [policy](policy.md) defines three token categories: primitives, component tokens and page-local tokens. Component and page settings reference primitives directly.
 
-Components are shared React code with explicit variants/states. Patterns document interaction coordination or reusable composition; they are not an additional token category. Document grids/composition rules according to real usage.
+Shared components declare their variants and states. Patterns describe interaction coordination or reusable composition without being another token category. Grids and composition rules are documented for their actual uses.
 
-The assistant maintains sources/examples based on needs. Autonomous generation produces CSS, utilities, inventories and stories without AI. Storybook presents Foundations / Components / Patterns read-only, without writer or UI Lab. See the [source contract](../../src/design-system/authority/README.md).
-
-Former semantic-decision/inspector architectures are historical. Preserve keyboard, focus, labels, feedback and scrolling; migrations preserve values/states unless visual change is explicit.
+The assistant maintains sources and examples; generation produces CSS, utilities, inventories and stories without AI. Storybook presents Foundations / Components / Patterns for consultation. Canonical sources are described in `src/design-system/authority/README.md`. Changes preserve keyboard, focus, labels, feedback and scrolling; migrations preserve values and states unless a visual change is explicit.
 
 ## Storybook organization and publication
+
+Publication has three separate steps: generate stories from contracts and examples; select project elements in `.storybook/project.json`; classify selected elements with `classification`. Classification selects no elements and changes no values. A selected token without classification remains visible in All with a diagnostic.
 
 The [classification policy](policy.md#storybook-documentation-classification) describes the permanent tree and current publication rules. `.storybook/organization.ts` defines vocabulary and checked destinations; `.storybook/project.json` declares only project elements.
 

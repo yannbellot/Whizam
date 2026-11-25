@@ -110,9 +110,19 @@ export function preserveSourceAnchors(source, translation, file) {
     .join('\n')
 }
 const labels = {
+  'Démarrer avec Whizam': 'Getting started with Whizam',
+  'Consulter la documentation': 'Reading the documentation',
+  'Storybook et le design system': 'Storybook and the design system',
+  'Partager votre projet': 'Sharing your project',
+  'Modifier le fonctionnement du kit': 'Customizing the kit',
+  'Vue d’ensemble': 'Overview',
+  'Modifier les rôles des agents et les skills': 'Changing agent roles and skills',
+  'Modifier les règles de gestion du design system': 'Changing design system management rules',
+  'Modifier la documentation': 'Changing the documentation',
+  'Modifier l’architecture technique': 'Changing the technical architecture',
+
   Accueil: 'Home',
   'Guide d’utilisation': 'User guide',
-  'Documentation designer': 'Designer documentation',
   'Documentation technique': 'Technical documentation',
   'Suivi de projet': 'Project progress',
   'État courant': 'Current state',
@@ -125,6 +135,7 @@ const labels = {
   'Livraison et transmission': 'Delivery and handoff',
   'Architecture et données': 'Architecture and data',
   'Installation et exploitation': 'Installation and operations',
+  'Licence et réutilisation': 'License and reuse',
   'Sécurité et configuration privée': 'Security and private configuration',
   'Design system — implémentation': 'Design system — implementation',
   'Assistants et automatisations': 'Assistants and automation',
@@ -158,11 +169,24 @@ Whizam helps UX/UI and Product Designers create a web application with an AI dev
 
 You provide the intent, content and design decisions. Your assistant helps clarify the need, implement agreed changes and verify the result. You review proposals and decide whether to accept a delivery.
 
+Whizam also helps with roadmap planning, version management and updates, with source storage on GitHub if you choose.
+
 ## Where should I start?
 
 - Discovering Whizam? ${link('docs/guide-whizam/index.md', 'Discover the kit')}.
-- Starting a project? ${link('docs/guide-whizam/preparer-kit.md', 'Prepare your kit')}.
+- Starting a project? ${link('docs/guide-whizam/index.md', 'Prepare your kit')}.
 - Resuming a project? ${link('docs/project-state.md', 'Check project progress')}.
+
+## Start a new project
+
+1. **Download** the Whizam kit folder to your computer.
+2. **Open** it in your AI assistant, Claude or Codex.
+3. Share a **brief**, request a **fictional demonstration project** or ask the assistant to **guide you** through scoping your project.
+4. **Choose whether to use GitHub** to store and share project sources. The assistant can help create a repository or use an existing one, then send changes after each commit or only on request.
+
+## Hand over and share
+
+**If you chose to keep your project on GitHub, you can give repository access to the team taking over.** The assistant helps prepare an up-to-date version and the information needed for handover.
 
 ## Three spaces
 
@@ -172,7 +196,7 @@ You provide the intent, content and design decisions. Your assistant helps clari
 
 A new kit has no business content in the application or Storybook. You can already explore its guides and progress templates.
 
-${link('docs/guide-whizam/index.md', 'User guide')} · ${link('docs/project-state.md', 'Designer documentation')} · ${link('TECHNICAL-GUIDE.md', 'Technical documentation')} · ${link('docs/guide-whizam/questions-frequentes.md', 'Frequently asked questions')}
+${link('docs/guide-whizam/index.md', 'User guide')} · ${link('docs/project-state.md', 'Project progress')} · ${link('TECHNICAL-GUIDE.md', 'Technical documentation')} · ${link('docs/guide-whizam/partager-projet.md', 'Sharing your project')} · ${link('docs/licence-reutilisation.md', 'License and reuse')}
 `
 export function englishSteps(stages, stageSources, documents) {
   return (

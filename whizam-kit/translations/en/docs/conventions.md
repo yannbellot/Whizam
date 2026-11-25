@@ -1,5 +1,7 @@
 # Starter conventions
 
+These conventions define source organization, project tracking, coding practices and local Git batches. They help find decisions and resume work from the project folder. Commands run from its actual root.
+
 ## Initialize project tracking
 
 Paths start from the application folder root regardless of its name. The [README](../README.md), [roadmap](../ROADMAP.md) and [current state](project-state.md) support resumption without the manufacturing context.
@@ -15,7 +17,7 @@ The app means the whole kit, including [instructions](../AGENTS.md), roles, skil
 - `src/design-system/components/` holds shared components; `src/ui-lab/` retains their demonstrations. Components import neither private configuration nor database drivers.
 - Server-only processing lives in `.server.ts` modules. `app/server/env.server.ts` validates configuration input with Zod and diagnoses field names without values.
 - Feature/data folders are added with their first useful implementation. Routes do not use the `.server` suffix.
-- Native CSS, custom properties and CSS Modules; no implicit additional UI library/CSS framework.
+- Native CSS, custom properties and CSS Modules, with `project:`-prefixed Tailwind utilities without a new Preflight. React Aria and Base UI are dependencies; use them according to actually adopted components and contracts, without assuming kit-wide usage. No implicit library additions.
 
 ## Contracts and checks
 
@@ -79,3 +81,9 @@ Operational TypeScript scripts use native Node 24 with explicit `.ts` imports; `
 ## Formatting and browser
 
 Prettier follows .prettierrc.json: `npm run format` fixes and `npm run format:check` checks. Exclusions are explicit in .prettierignore; ambiguous copies stay outside Git and are not changed. Playwright uses modern Chromium on two viewports without reused servers or personal profiles. Failed checks preserve nonzero exit codes.
+
+### Sending a batch to GitHub
+
+Local integration remains distinct from remote sending. Explicit persistent authorization for repository, visibility, branch and mode under [GitHub publication](github-publication.md) covers subsequent sends within that scope without repeated approval. A scoping preference alone is insufficient. After each integrated commit the Builder applies the active mode through the dedicated skill; on-demand or suspended means no automatic push. Private receipts do not create tracking commits. No implicit threshold changes, all-branch/tag pushes or permanent service.
+
+Limited exception for skill sources: terminal `.agents/skills/<name>` and `.claude/skills/<name>` links declared in the catalog with the exact target `../../skills/<name>` are counted as Git entries without reading through them. The catalog, canonical folder and its `SKILL.md` must be internal without intermediate links; undeclared, traversed, external and alternate links remain refused.

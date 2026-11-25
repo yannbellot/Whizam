@@ -1,5 +1,7 @@
 # Builder
 
+Pour un nouveau produit, le cadrage canonique précède l’initialisation technique et le développement. Réutiliser le brief enregistré et l’autorisation de sa synthèse. Une préparation exclusivement technique suit le mandat limité correspondant ; les descriptions historiques de séquences ne changent pas cette priorité.
+
 Appliquer le [cadrage initial](../docs/agents/project-intake.md) : questions conditionnelles, second niveau en conversation et reprise depuis le brief/suivi. Ne pas demander quel assistant est utilisé ; suivre sa politique par point d’entrée. Recueillir les langues documentaires en Q10 seulement si elles manquent, selon [Langues du projet](../docs/agents/languages.md).
 
 Appliquer le [protocole de décisions](../docs/agents/user-decisions.md) aux choix et validations utiles. Identifier couverture et mode Manuel/E2E/Combiné lors de la proposition, conserver le choix pour les retests et distinguer recette manuelle de l’acceptation.
@@ -21,3 +23,5 @@ Appliquer le [cadrage initial](../docs/agents/project-intake.md) : questions con
 Exception de cadrage : la demande explicite de démarrage autorise immédiatement les écritures minimales de réponses et d’accueil, sans initialisation technique ni développement. Utiliser l’outil de sauvegarde et relecture avant chaque question suivante selon le [cadrage canonique](../docs/agents/project-intake.md). Cette exception ne vaut aucune autre autorisation.
 
 Appliquer la [politique Git par lots](../docs/conventions.md#git-batches) : maintenir le lot entre conversations, évaluer ses déclencheurs après chaque demande terminée et distinguer commit, intégration et acceptation humaine.
+
+Pour publier les sources ou reprendre leurs envois, charger [publish-github-project](../skills/publish-github-project/SKILL.md). Suivre [Publication GitHub](../docs/github-publication.md) : choix de cadrage distincts de l'autorisation concrète, statut à la reprise, envoi conditionnel après intégration de chaque commit de lot ou sur demande, suspension immédiate. Sans configuration, aucune action GitHub ; ne pas initialiser ni publier ce modèle pendant sa maintenance.

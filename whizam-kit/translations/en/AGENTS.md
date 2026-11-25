@@ -16,7 +16,7 @@ Collaboration instructions/resources ship here. Apply user mandate and actual to
 
 ## Actual state and prior reading
 
-> Current initial state: application/Storybook contain no project content. Zensical displays active Designer/Technical guides on first startup, with [User guide](docs/guide-whizam/index.md) immediately after Home; Project progress groups Current state, Roadmap and real stages. Kit histories stay outside portal/search. Demonstrations cited historically stay outside delivered access points; do not reactivate during initialization. Required internal contract/policy resources remain. New project content follows existing rules.
+> Current initial state: application/Storybook contain no project content. Zensical displays active technical guides on first startup, with [User guide](docs/guide-whizam/index.md) immediately after Home; the top-level Project progress section groups Current state, Roadmap and real stages. Kit histories stay outside portal/search. Demonstrations cited historically stay outside delivered access points; do not reactivate during initialization. Required internal contract/policy resources remain. New project content follows existing rules.
 
 [Decision 039](docs/decisions/039-automated-design-system.md) supersedes historical design-system editing rules. UI Lab is removed; Storybook is exclusively documentary.
 
@@ -43,7 +43,7 @@ Scoping branches: Q7 No skips Q8 and goes directly to Q9. Q9/Q10 are native sing
 
 For a pending scoping question follow the decision protocol: keep the turn active after an asynchronous call using an interruptible waiting tool, without even an empty final message. Expired waits are not answers and must be renewed. Without compatible client waiting, ask a normal final question without an asynchronous selector. Select no branch and start no independent operation before an explicit answer. This does not change continuation of already defined mandates.
 
-For new projects follow [Initial scoping](docs/agents/project-intake.md): brief/guidance/demonstration entry and only missing Q1–Q10 answers. Application languages are Q9; documentation/Storybook is Q10, never a mandatory preliminary question for an informational request. Content follow-ups use normal conversation; closed follow-up decisions remain native. Read the brief/checkpoint before resumption. Demonstrations cover Q1–Q6 and three devices, then resume at Q7 after agreement. No development before approval of the complete synthesis. Follow [Project languages](docs/agents/languages.md) for preferences/translations.
+For new projects follow [Initial scoping](docs/agents/project-intake.md): brief/guidance/demonstration entry and only missing Q1–Q10 answers and conditional GitHub choices. Application languages are Q9; documentation/Storybook is Q10, never a mandatory preliminary question for an informational request. Content follow-ups use normal conversation; closed follow-up decisions remain native. Read the brief/checkpoint before resumption. Demonstrations cover Q1–Q6 and three devices, then resume at Q7 after agreement. No development before approval of the complete synthesis. Follow [Project languages](docs/agents/languages.md) for preferences/translations.
 
 ## Start a new project
 
@@ -165,3 +165,7 @@ The [portal](docs/documentation.md) is part of the autonomous kit. Maintain uniq
 For Storybook follow [project organization/publication](docs/design-system/architecture.md#organisation-et-publication-storybook): permanent structure, explicit registry of project-created/adopted elements only, no default examples. Maintain classification, variants/states/tokens with each creation/adoption/removal; never enable the whole foundation.
 
 On resumption and after each completed modification request, use `scripts/git-batch.mjs` under the conventions to recover the batch and evaluate closure; a trigger is not a successful check.
+
+## Sources on GitHub
+
+Follow the [GitHub journey](docs/github-publication.md) and load [publish-github-project](skills/publish-github-project/SKILL.md) to publish, update or suspend sends. Conditional GitHub questions follow Q10 before the summary; do not impose retrospective questions unnecessarily. Preferences authorize no remote change. Approval of the concrete summary may cover subsequent sends within the same scope. On resumption check local status; after each integrated batch commit apply the active mode without changing thresholds or adding a permanent hook. GitHub secrets use the dedicated private journey, never the application environment. These instructions do not authorize publishing the kit.

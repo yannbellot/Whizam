@@ -1,4 +1,23 @@
-# Delivered kit compatibility
+# Compatibility of the supplied kit
+
+This page distinguishes kit requirements, platforms actually tested and test limits. Start with the current summary below. The dated campaigns that follow identify their exact versions; they do not automatically qualify a new edition or derived project.
+
+## Current requirements and scope
+
+Prerequisites are declared by this edition's sources; the following campaigns describe only their tested versions. No old campaign automatically qualifies subsequent changes.
+
+| Area | Declared requirement or capability | Evidence scope |
+| --- | --- | --- |
+| Node/npm | `package.json` ranges: Node >=24.22.0 <25, npm >=11.8.0 <12 | Versions in each campaign below; no inference that every version in these ranges was tested |
+| Docker/Compose | Containerized application and Zensical; database optional for some tools | Identified macOS/arm64 and Linux/arm64 trials; other systems require verification |
+| Application | Empty home, `/health`, technical imported-definition route | `/projects` and UI Lab are absent from active routes; their trials below are historical |
+| Storybook and Documentation | Consultation, project selection, FR/EN guides | Translation coverage, build, search and flows require checks on each relevant version |
+| Assistants | Internal instructions, roles, skills and adapters | Presence and structural validation are distinct from native discovery and model scenarios |
+| Data and production | PostgreSQL/Drizzle, migrations and backup procedures | No implicit multi-user accounts or production qualification |
+
+For each new qualification, retain date, source version, OS/architecture, tools, checks actually run, synthetic resources, limitations and human acceptance. Distributed sources require no report outside the kit to be used.
+
+## Historical campaigns
 
 **24 October 2026 — PORT-03 technically qualified; human acceptance deferred.** This matrix provides versions/results/limits useful for resumption. Distinguish structure, native discovery, model behavior and human acceptance. See [adapters](agents/adapters.md), [selected heritage](agents/practice-history.md) and [current state](project-state.md).
 
@@ -60,3 +79,7 @@ This human observation accepts the nominal scenario, not complete role/skill/fou
 ## Storybook editor removal — DS-EDIT-64 F
 
 [4 November 2026 qualification](reviews/ds-edit-64-f.md): standalone UI Lab and documentary Storybook without addon/writer on macOS arm64, Node 24.22.0/npm 11.8.0, Chromium 156.0.8078.4. Journeys, real save/recovery, readers/builds requalified; manifest v16, values/derivatives preserved. No new Linux, SQL, cross-host transfer or native assistant trial; E evidence/limits retained. Human review/third-party handoff remain separate without acceptance/publication inferred from technical migration completion.
+
+## GitHub publication — qualification limits
+
+The [publish-github-project](../skills/publish-github-project/SKILL.md) skill, links and local helper are provided. Automated scenarios are synthetic (real local Git, simulated GitHub responses). These tests do not qualify a real GitHub account, native discovery of the new skill or embedded form rendering in Codex/Claude. A local browser is the documented fallback; client trials and human acceptance remain distinct. See [the procedure](github-publication.md).

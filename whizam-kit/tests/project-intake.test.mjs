@@ -115,3 +115,30 @@ test('standalone CLI saves and resumes in a fresh process without installed depe
   assert.equal(saved.pending, 'q6.tablet')
   assert.equal(saved.answers['q6.tablet'], undefined)
 })
+
+test('GitHub choices persist without changing the previous framing or implying authorization', async (t) => {
+  const root = await fixture(t)
+  await recordIntake(root, {
+    answers: [{ id: 'q10', value: 'Français', status: 'provided', origin: 'user' }],
+    pending: 'github.repository',
+  })
+  await recordIntake(root, {
+    answers: [{ id: 'github.repository', value: 'existing', status: 'provided', origin: 'user' }],
+    pending: 'github.sync',
+  })
+  await recordIntake(root, {
+    answers: [{ id: 'github.sync', value: 'on-demand', status: 'provided', origin: 'user' }],
+    pending: 'verification',
+  })
+  const saved = await readIntake(root)
+  assert.equal(saved.answers.q10.value, 'Français')
+  assert.equal(saved.answers['github.sync'].value, 'on-demand')
+  assert.equal(saved.answers.approval, undefined)
+  await assert.rejects(
+    recordIntake(root, {
+      answers: [{ id: 'github.sync', value: 'fake-token', status: 'provided', origin: 'user' }],
+    }),
+    /Invalid/,
+  )
+  assert.deepEqual(await readIntake(root), saved)
+})

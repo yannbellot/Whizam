@@ -1,17 +1,31 @@
-# Reprendre le kit
+# Reprendre et transmettre le kit
 
-Installer et lancer depuis le [README](../README.md), avec les prérequis compatibles et les seuls fichiers du kit. Le design system est automatisé selon sa [politique](design-system/policy.md). Les valeurs/références DTCG sont canoniques ; le registre et les exemples pilotent les stories générées.
+Le [guide technique](../TECHNICAL-GUIDE.md) décrit le fonctionnement courant ; les [opérations](operations.md) décrivent les lancements. Distinguer les trois situations ci-dessous pour préserver sources, configuration et données.
 
-Modifier un composant comprend ses tokens, variantes, états et exemples ; synchroniser, contrôler, tester puis examiner application et Storybook. Ce dernier est exclusivement documentaire. UI Lab et ses accès d’édition sont retirés ; aucune clé IA nécessaire aux scripts ou à la consultation. Les modèles ROADMAP et project-state restent ceux du futur projet.
+## Transmettre une copie neuve
 
-Pour transmettre un kit neuf, exclure installations, caches, builds, comptes, configurations et journaux privés, préserver les liens internes et `.env.example`. Les volumes Docker nécessitent une sauvegarde distincte. Pour déplacer la même instance, conserver identité Compose et données selon les [opérations](operations.md).
+Transmettre les seules sources du kit avec les fichiers cachés utiles, `.env.example` et les liens relatifs des skills. Exclure `.git/`, `node_modules/`, builds, caches, résultats de tests, environnements privés, comptes, connexions IA, journaux, sauvegardes et autres états `*.local`. Examiner aussi les fichiers non inventoriés ; ne pas archiver tout le dossier de travail sans sélection.
 
-Les anciens projets ne sont pas migrés implicitement. La [table de migration](design-system/simple-token-migration.json) et le [guide](design-system/token-migration.md) décrivent les sources concernées. Revenir à une ancienne version exige son code et ses sources compatibles ; ne jamais convertir un reçu ou supprimer un verrou.
+`docs/distribution/sources.json` décrit les sources livrées et leurs empreintes ou cibles de liens. Le destinataire installe ses propres dépendances et utilise ses propres accès. Le kit n'exige aucun fichier du parent. Les modèles ROADMAP et project-state restent non initialisés dans le kit neuf ; ils ne sont pas à réinitialiser lors de la reprise d'un projet existant.
 
-Les essais natifs des assistants et la reprise humaine restent distincts des builds et tests automatisés. Voir la [compatibilité](compatibility.md) et les [limites de distribution](distribution/README.md).
+## Déplacer une même instance
 
-Le [guide Reprendre et transmettre](guide-whizam/reprendre-transmettre.md) présente les gestes utiles au designer et renvoie aux procédures de cette passation.
+Conserver configuration privée, identité Compose et accès aux volumes existants sans les transmettre comme un kit neuf. Un changement de chemin ne déplace pas les données Docker. Vers un autre hôte ou moteur Docker, préparer et vérifier une [sauvegarde/restauration](backup-and-restore.md). Ne pas supprimer de volume ni régénérer une identité pour résoudre un déplacement.
 
-## Documentation du projet
+## Reprendre un projet existant
 
-La revue présente Application, Storybook et Documentation après vérification de leurs contenus. Le portail Zensical est livré dans le kit ; voir le [guide documentaire](documentation.md). Il lit les Markdown courants et ne requiert ni parent de maintenance ni Python hôte.
+Lire son brief, sa roadmap, son état courant et ses instructions. Retrouver le mandat, la version, les décisions et les contrôles manquants ; ne pas relancer l'initialisation complète dans une nouvelle conversation. Les anciens exemples et preuves du kit ne définissent pas les objectifs ou l'acceptation du projet.
+
+Modifier un composant comprend tokens, variantes, états et exemples rédigés. Synchroniser les dérivés et maintenir la sélection Storybook selon la [politique](design-system/policy.md). Les anciennes copies ne sont pas migrées implicitement ; code, sources et éventuels journaux historiques doivent rester compatibles.
+
+## Vérifier avant transmission
+
+Dans une copie propre renommée, installer indépendamment avec `npm ci`, puis exécuter les contrôles du [guide technique](../TECHNICAL-GUIDE.md) adaptés aux changements, dont traductions FR/EN, builds et liens. Vérifier l'absence de dépendance au parent, la résolution des liens internes et l'exclusion des états privés. Une installation et un build seuls ne prouvent ni parcours fonctionnel ni découverte native des assistants.
+
+La revue présente Application, Storybook et Documentation après vérification de leur disponibilité et contenu. Consigner version, contrôles réellement exécutés, limites et prochaine action. La [compatibilité](compatibility.md) distingue les preuves historiques des essais courants ; l'acceptation humaine reste explicite. La transmission locale n'autorise ni publication ni déploiement. Voir le [guide de partage](guide-whizam/partager-projet.md) pour le parcours designer.
+
+<a id="documentation-du-projet"></a>
+<a id="source-documentation-du-projet"></a>
+
+<a id="reprendre-le-kit"></a>
+<a id="source-reprendre-le-kit"></a>

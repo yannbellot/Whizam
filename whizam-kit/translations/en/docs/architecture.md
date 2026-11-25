@@ -1,71 +1,97 @@
-> Current DS-AUTO-01 architecture: standalone generation in `scripts/design-system.mjs` under the [policy](design-system/policy.md). Editor, snapshot and writer descriptions below are historical, not current runtime.
-
 # Application architecture
 
-**UI-ARCH-04 — new-project foundation adoption:** [decision 037](decisions/037-project-ui-foundation-adoption.md). Tailwind `project:` without extra Preflight, theme derived from project DTCG in the transactional writer; React Aria Button/Field with existing APIs/local aliases. Static utilities tied to bindings control consumption; no tool-value references. Creation/export qualification is separate; existing projects/old journals preserved; Electron out of scope. This adoption does not establish qualification, tracked in UI-ARCH-04.
+The kit is a React/React Router Framework Mode application written in TypeScript. Vite builds the server and browser portions; no separate backend is needed. The [scope](product/starter-kit.md) distinguishes the supplied foundation from the business project to build.
 
-**UI-ARCH-03 — bounded adoption:** [decision 036](decisions/036-first-ui-slice-adoption.md). New chrome surfaces consume tool DTCG authority/derived Tailwind styles; project values/historical rules stay unchanged. Tool checks cover classes/variables and absence of project references; no new writer capability. Project foundations/Electron out of slice.
+## Application and routes
 
-**UI-ARCH-02 target framing, 14 November 2026:** [UI boundary contract](architecture/ui-architecture-boundaries.md) for Loomata and created sites/web apps. Documentary scoping only: current DTCG/authorities preserved, React Aria/Tailwind to implement in two independent design systems, Electron separately. Directions qualify no integration; effective rules below apply until explicitly aligned before code.
+[app/routes.ts](../app/routes.ts) declares active routes:
 
-**Current design system authority — DS-ARCH-01:** DTCG JSON 2025.10 values/references; rules, presentations and CSS recipes in YAML contracts. [Design reference](design-system/architecture.md), [authority contract](../src/design-system/authority/README.md) and [decision 027](decisions/027-dtcg-authority-and-css-recipes.md) supersede historical YAML-value-source references below. The loader projects validated JSON into the common engine; the writer serializes under journal then regenerates without dual editable references. Model v4 retained, snapshot v4/manifest v27; UI Lab remains sole local editing host, Storybook reads the same fixtures/values for documentation.
+| Route | Responsibility in a fresh kit |
+| --- | --- |
+| `/` | Empty home page rendered by `src/App.tsx` |
+| `/imported/:definitionId` | Display of a definition in the initially empty `app/loomata-imports.json` registry; unavailable message if missing |
+| `/health` | Liveness `{ "status": "ok" }`, without a PostgreSQL check |
 
-**DS-EDIT-64 — current state:** standalone UI Lab workshop delivered in C/D under [decision 025](decisions/025-independent-design-editor.md), qualified in [E](reviews/ds-edit-64-e.md). Historical exclusive-Storybook hosting below is superseded: writer only in explicitly launched UI Lab development, documentary Storybook without addon/bootstrap/writer after [F](reviews/ds-edit-64-f.md). Its only consistency-service connection is a read participant. See [handoff](handoff.md).
+The former `/projects` and UI Lab routes are no longer mounted. Preserved historical components and resources are not exposed features. Every new business route follows the brief, its contracts and tests.
 
-Paths start from the application root regardless of folder name. React Router Framework Mode builds client/server through Vite; no separate backend.
+## Source responsibilities
 
 | Location | Responsibility |
 | --- | --- |
-| `app/root.tsx`, `app/routes.ts`, `app/routes/` | HTML document, loader/action coordination and SSR UI. |
-| `app/features/projects/` | Shared contract, server HTTP guards, Drizzle repository, forms/stories. |
-| `app/server/` | Private configuration/PostgreSQL access exclusively `.server`. Lazy connection; no build-time database. |
-| `src/design-system/` | Components, six historical YAML authorities, editor catalog/matrix, token resolution/validators. |
-| `src/ui-lab/` | SSR/interaction integration lab. |
-| `AGENTS.md`, `agents/`, `skills/`, `.agents/`, `.claude/`, `CLAUDE.md`, `GEMINI.md` | Shipped instructions, roles, library/adapters with internal references. |
-| `docs/agents/`, `docs/compatibility.md` | Assistant contracts, practice references, procedures/limits. |
-| `.storybook/` | Isolated rendering of shared components/tokens, documentation imported from `docs/design-system/`. |
-| `drizzle/` | Versioned SQL migrations/metadata. |
-| `scripts/`, `tests/` | Startup, migration, generation, isolated local checks. |
-| `config/testing/` | Playwright/Vitest configuration; tests/reports resolved from kit root. |
-| `config/typescript/`, `config/database/` | TypeScript projects/Drizzle configuration; npm commands/main tsconfig select paths. |
-| `compose.yaml`, `config/docker/` | Compose entry, Dockerfiles and explicit host-development override; build context at kit root. |
+| `app/root.tsx`, `app/routes/` | HTML document, server/client rendering and HTTP coordination |
+| `app/server/` | Private configuration, PostgreSQL access and server-only processing |
+| `app/features/projects/` | Internal resources from the former example; no active project-management route |
+| `src/design-system/components/` | Shared React components and authored examples |
+| `src/design-system/authority/` | JSON DTCG values/references, component registry and YAML recipes |
+| `src/styles/` | CSS, generated styles and `project:` Tailwind utilities without a new Preflight |
+| `.storybook/` | Organization, project selection and component documentation |
+| `docs/`, `translations/`, `config/documentation/` | Canonical Markdown, translations and Zensical classification |
+| `drizzle/`, `config/database/` | SQL migrations, metadata and Drizzle configuration |
+| `scripts/`, `tests/`, `config/testing/` | Generation, operations and isolated checks |
+| `agents/`, `skills/`, `.agents/`, `.claude/` | Roles, skills and exposure through internal relative links |
+| `compose.yaml`, `config/docker/` | Containerized application and PostgreSQL; explicit override for host database access |
 
-Write flow: server action → HTTP guard/validation → server repository → PostgreSQL → Router response. Components load neither secrets nor DB drivers. Browser-side server imports are rejected by build and tested. Public errors hide internal details; see [security](security.md)/[data contract](product/project-data-contract.md).
+## Server boundary and data
 
-YAML authorities are canonical; CSS properties/TypeScript catalog are generated before types/dev/build/Storybook and Git-ignored. No duplicate entry, Figma sync or design-environment dependency. UI principles have [their canonical document](design-system/principles.md).
+`.server.ts` modules own sensitive access; components import neither private configuration nor PostgreSQL drivers. Zod validates configuration. Connections are created on demand; an available database is not required to build the application.
 
-Operational paths are relative to files/root. `.env.local` stays private here. Persistent Compose identity is path-independent; volumes live in Docker. Moving/renaming an instance differs from independent installation: [procedure](../README.md). `build/`, `storybook-static/`, installations/caches are rebuildable/ignored. Non-root runtime image contains only build, production dependencies and necessary scripts/migrations.
+For business writes, define the flow route/action → HTTP and data validation → server processing/repository → PostgreSQL → response. Guards from the former example do not automatically protect a new route. See [conventions](conventions.md) and [security](security.md).
 
-[Prepared editor contracts](product/features/design-system-editor.md) add v2 schemas/pure checks in `src/design-system/editor/contract.ts`. [Component-record migration](decisions/006-component-token-migration.md) connects five components/foundations to v2 outputs while preserving 24 historical aliases. Validators stay in tooling without component server imports. [Decision 007](decisions/007-storybook-memory-preview.md) manager panel/memory projection consume validated generated snapshots without browser Node imports. Stories explicitly declare targets; iframe owns CSS layer. Writing service ships only in development Storybook tooling without extra application routes.
+Versioned migrations and existing data are preserved. The Compose bootstrap applies migrations and may invoke the configured seed; `seedDemoProjects` currently inserts nothing. Schema changes require a migration and an authorized target, never rewriting an already applied migration.
 
-## Persistent design system editing
+## Design system and documentation
 
-Pure `src/design-system/editor/operations.ts` engine is shared by projection/persistence. `.storybook/editor/server/` loads only through development middleware; no business routes/database. The generator first creates buffers in an isolated root; store publishes sources/six derivatives under journal with reader reservations/HMR barrier. The [save contract](design-system/editor-persistence.md) describes manifest, receipts, recovery/limits; static mode retains consultation/preview C.
+The [design system sources](../src/design-system/authority/README.md) feed `scripts/design-system.mjs`. The generator validates the three token categories, consumers, contracts and examples, then publishes CSS, utilities, inventories and stories. The [policy](design-system/policy.md) defines primitive stability, variants and recovery after interruption. No browser editor or writer is mounted in the application or Storybook.
 
-## Derived documentation
+A generated story is visible only after project selection. The [Storybook registry](design-system/architecture.md#organisation-et-publication-storybook) separates membership, classification and values. Zensical prepares published Markdown from its registry, with translations, search and exclusions; see the [documentation guide](documentation.md). Historical files remain in sources, outside the portal.
 
-`scripts/editor-documentation.mjs` renders validated data as escaped Markdown; `prepareEditorArtifacts` reuses token resolver/consumer snapshot. Two versioned outputs — [catalog](design-system/semantic-catalog.md)/[inventory](design-system/style-inventory.md) — complement four ignored CSS/TS/JSON derivatives. They follow the same save preparation/publication/recovery. Closed manifest v2 includes renderer/MDX entries importing these texts; no new editable source/HTTP route. Generator reads use existing coordination. `docs:design-system:check` compares without rewriting under private read reservation.
+## Execution and autonomy
 
-## Optional style assistance
+Commands start from the actual kit root. Host development, the Docker application and Storybook/Zensical servers are separate; prerequisites and shutdown are in [operations](operations.md). The application image uses the `node` user and production dependencies, with the required build, scripts and migrations.
 
-DS-EDIT-14 adds pure policy in `src/design-system/editor/style-decision.ts`, draft controller `src/design-system/editor/assisted.ts` and app-server stdio connection only in Storybook middleware. No business backend/additional dependency. The service prepares plans from validated snapshots and checks replies before projection; writer retains canonical writes only. Connection, installation isolation and limits are in the [assistance contract](design-system/editor-assistance.md). Application runtime/static builds do not start Codex.
+Builds and caches are reproducible. Local configuration and Docker volumes are not part of a fresh kit. Renaming an instance preserves its Compose identity; transferring its data needs a [backup](backup-and-restore.md). No kit link or import may require its parent.
 
-The [DS-EDIT-15 model](decisions/020-component-token-reference-model.md) retains binding as component-token authority (effective `reference`, original `style`); sources/model v3, snapshot/save protocol v2. `editor/naming.ts` computes family/usage names and participates in closed manifest v4. The [explicit migrator](design-system/token-migration.md) converts v2 sources on copies without replaying old receipts; historical schema/fixture are not active runtime contracts.
+<a id="architecture-applicative"></a>
+<a id="source-architecture-applicative"></a>
 
-## Explicit scope and transactional catalog — DS-EDIT-23
+<a id="assistance-de-styles-optionnelle"></a>
+<a id="source-assistance-de-styles-optionnelle"></a>
 
-`editor/operations.ts::projectTransaction` projects model/catalog together for session, preview channel, assistance and writer. `intentions.ts` limits additions to documented intents/eligibility without changing existing categories, taxonomy, domains or definitions; reread snapshots verify extension against compiled authority. `intent-proposal.ts` prepares only authorized structured-reply operations. The engine, not model, derives identifiers.
+<a id="atelier-ui-lab-ds-edit-64-c"></a>
+<a id="source-atelier-ui-lab-ds-edit-64-c"></a>
 
-Manifest v9 includes catalog as ninth editable source; its serialization differs from component records and publication shares token journals/receipts/recovery. Write v4; v3 requests rejected, old receipts not converted. Model v4/snapshot envelope v3 keep their shape. Intent interpretation v1 remains development-service-only under the [guide](design-system/editor-assistance.md).
+<a id="cur-commun-et-livraisons-core-01"></a>
+<a id="source-cur-commun-et-livraisons-core-01"></a>
 
-## UI Lab workshop — DS-EDIT-64 C
+<a id="derived-documentation"></a>
+<a id="source-derived-documentation"></a>
 
-`src/ui-lab/editor/` assembles shared React fixtures, scene channel and draft controllers. `/ui-lab` initializes client sessions; `/ui-lab/preview` loads only authorized scenes. UI-MAC-02 removes `/ui-lab/reference`/historical presentation; shared components/examples remain in Storybook. No Storybook runtime dependency; public snapshot reads, correlated iframe transport, no writer/account in the new host. Vite-generation changes notify without destroying sessions. Contract/limits: decision 025; C does not activate D.
+<a id="documentation-derivee"></a>
+<a id="source-documentation-derivee"></a>
 
-## Standalone connection — DS-EDIT-64 D
+<a id="edition-persistante-du-design-system"></a>
+<a id="source-edition-persistante-du-design-system"></a>
 
-scripts/editor-workshop.ts mounts the common service before Vite reader only through explicit local startup. app/server/editor-bootstrap.server.ts supplies development workshop-document-only metadata; transport.ts uses that document exclusively. The service imports natively outside the Vite configuration graph so saved derivatives do not restart it. Shutdown/resumption use existing store. Storybook defaults to no writer with explicit historical compatibility; no new backend. Compiled runtime stays consultation/draft-only.
+<a id="explicit-scope-and-transactional-catalog-ds-edit-23"></a>
+<a id="source-explicit-scope-and-transactional-catalog-ds-edit-23"></a>
 
-## Shared core and deliveries — CORE-01
+<a id="optional-style-assistance"></a>
+<a id="source-optional-style-assistance"></a>
 
-The [separation contract](architecture/shared-core.md) retains the autonomous folder and plans a macOS shell without duplicating the engine. Local port scripts/core/local-service.mjs is shared by a JSON CLI/WebKit prototype; future creation/export/connection functions remain unavailable.
+<a id="persistent-design-system-editing"></a>
+<a id="source-persistent-design-system-editing"></a>
+
+<a id="portee-explicite-et-catalogue-transactionnel-ds-edit-23"></a>
+<a id="source-portee-explicite-et-catalogue-transactionnel-ds-edit-23"></a>
+
+<a id="raccordement-autonome-ds-edit-64-d"></a>
+<a id="source-raccordement-autonome-ds-edit-64-d"></a>
+
+<a id="shared-core-and-deliveries-core-01"></a>
+<a id="source-shared-core-and-deliveries-core-01"></a>
+
+<a id="standalone-connection-ds-edit-64-d"></a>
+<a id="source-standalone-connection-ds-edit-64-d"></a>
+
+<a id="ui-lab-workshop-ds-edit-64-c"></a>
+<a id="source-ui-lab-workshop-ds-edit-64-c"></a>

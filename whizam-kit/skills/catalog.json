@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "targetSkills": 21,
+  "targetSkills": 22,
   "targetRoles": 4,
   "contract": "docs/agents/skill-contract.md",
   "roles": {
@@ -10,6 +10,13 @@
     "security-reviewer": "agents/security-reviewer.md"
   },
   "skills": [
+    {
+      "name": "publish-github-project",
+      "source": "skills/publish-github-project/SKILL.md",
+      "roles": ["builder"],
+      "practice": "docs/github-publication.md",
+      "resources": ["scripts/github-project.mjs", "scripts/configure-secrets.mjs"]
+    },
     {
       "name": "initialize-project",
       "source": "skills/initialize-project/SKILL.md",

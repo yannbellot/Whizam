@@ -8,3 +8,29 @@ html body :where(code, pre, kbd, samp),
 html body :where(code, pre, kbd, samp) * {
   font-family: 'Menlo', monospace !important;
 }
+
+.whizam-sidebar-language {
+  padding: 0 12px 16px;
+}
+.whizam-language-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.whizam-language-control select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 6px;
+  max-width: 100%;
+}
+.whizam-language-control select:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.sidebar-header a {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

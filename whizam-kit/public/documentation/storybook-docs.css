@@ -1,0 +1,57 @@
+/* Storybook 10.6 native MDX heading links; never style the presented stories. */
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled:has(> span > a[aria-label='Copy heading URL to address bar']) {
+  display: inline-block;
+  max-width: calc(100% - 32px);
+}
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled
+  > span:has(> a[aria-label='Copy heading URL to address bar']) {
+  right: auto;
+  left: 100%;
+  padding: 0;
+  margin-inline-start: 8px;
+  margin-top: -12px;
+}
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled
+  > span
+  > a[aria-label='Copy heading URL to address bar'] {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+}
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled
+  > span
+  > a[aria-label='Copy heading URL to address bar']
+  > svg {
+  display: none;
+}
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled
+  > span
+  > a[aria-label='Copy heading URL to address bar']::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: currentColor;
+  mask: url('./heading-link.svg') center / contain no-repeat;
+}
+.sbdocs-content
+  :is(h1, h2, h3, h4, h5, h6):not(.docs-story *)
+  > .sb-unstyled
+  > span
+  > a[aria-label='Copy heading URL to address bar']:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 3px;
+}

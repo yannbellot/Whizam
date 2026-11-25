@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block htmltitle %}<title>
+  {{ page.title | striptags | e if page else "" }} — {{ config.site_name | e }}</title
+>{% endblock %} {% block header %}
+<header data-md-component="header" class="whizam-header">
+  <div data-md-component="header-title" hidden><span data-md-component="header-topic"></span></div>
+  <div class="whizam-mobile-menu">
+    <button
+      type="button" data-whizam-drawer
+      tabindex="0"
+      role="button"
+      aria-label="Menu"
+      aria-controls="whizam-project-navigation"
+      aria-expanded="false"
+      >{% include ".icons/lucide/menu.svg" %} Menu</button
+    >
+  </div>
+</header>
+{% endblock %} {% block content %} {% if page and page.toc %}
+<details class="whizam-mobile-toc">
+  <summary>{{ 'Contents' if config.theme.language == 'en' else 'Sommaire' }}</summary>
+  {% include "partials/toc.html" %}
+</details>
+{% endif %} {% include "partials/content.html" %} {% endblock %}

@@ -1,23 +1,29 @@
 # Distribution autonome du kit
 
-Le Kit Whizam, anciennement Loomata, est livré dans ce dossier. Son nom visible évolue ; les chemins, commandes, formats de projet et identifiants techniques existants sont conservés. Les références historiques ci-dessous gardent leur portée datée.
+Le Kit Whizam s’utilise depuis la racine du dossier reçu, après copie, renommage ou déplacement. Cette page explique ce qui est transmis, les vérifications à effectuer et les limites de l’édition. Les chemins et identifiants techniques restent stables ; aucun parent de maintenance, service Whizam externe ou lanceur macOS n’est nécessaire.
 
-Le portail documentaire Zensical est livré dans ce dossier, avec ses scripts et sa configuration Docker. Consulter le [guide d’utilisation](../documentation.md). Aucun fichier du parent ni Python hôte requis.
+## Édition et provenance
 
-Édition DS-AUTO-01 du 18 novembre 2026 : design system automatisé à trois catégories de tokens, Storybook de consultation et retrait de UI Lab. La provenance historique reste `e81cabc78cd6c9d4263961dc03511dbec0e14ac1` ; cette référence ne représente pas les changements de cette édition locale sans dépôt Git.
+L'édition courante fournit le design system automatisé à trois catégories de tokens, Storybook de consultation et Zensical avec guides actifs FR/EN. L'application et les sélections de contenu Storybook sont initialement vides ; `/projects` et UI Lab ne sont pas montés. Le [périmètre](../product/starter-kit.md) et le [guide technique](../../TECHNICAL-GUIDE.md) décrivent l'usage courant.
 
-Le dossier contenant cette notice est l’unité distribuable complète. Toutes les commandes du README s’exécutent depuis sa racine ; aucun dossier de maintenance externe n’est nécessaire. Préserver les fichiers cachés et liens relatifs des skills.
+La provenance `e81cabc78cd6c9d4263961dc03511dbec0e14ac1` et les campagnes DS-AUTO-01/DIST-01 identifient un héritage daté. Elles ne représentent pas toutes les évolutions suivantes. `sources.json` décrit le contenu livré par empreintes, modes et cibles de liens ; il ne certifie ni fonctionnement ni acceptation. Si cette copie possède son propre dépôt Git, sa version complète peut être identifiée localement ; une distribution neuve ne transfère pas le `.git/` du mainteneur et le simple démarrage web n'exige pas Git.
 
-## Contenu et vérifications
+## Contenu transmis
 
-`sources.json` inventorie les sources livrées, avec empreintes ou cibles des liens. Installations, caches, configuration privée, journaux, données et builds sont exclus. Les dépendances s’installent depuis le verrou npm ; aucun compte, volume Docker ni réglage système n’est transféré.
+Préserver fichiers cachés utiles et liens relatifs des skills. Exclure installations, caches, builds, données, configurations privées, comptes et journaux selon la [passation](../handoff.md). Les dépendances sont installées depuis le verrou npm ; aucun volume Docker ou réglage système n'est transféré avec les sources. Le portail utilise Docker sans Python hôte ; voir le [guide documentaire](../documentation.md).
 
-Le [bilan DS-AUTO-01](ds-auto-01.md) décrit les contrôles de cette évolution et leurs limites. La [qualification initiale DIST-01](qualification.md) reste une preuve historique sur son ancien périmètre. Les rapports datés ne qualifient pas automatiquement une nouvelle édition.
+Les modèles ROADMAP et project-state restent à initialiser pour un vrai projet dérivé. Les documents historiques conservés, dont les versions antérieures des références techniques, sont classés hors du portail et de sa recherche. Ils ne sont pas des consignes actives.
 
-Le destinataire suit le README et utilise son propre assistant. Les instructions locales ne garantissent pas la découverte native par tous les outils ; voir la [compatibilité](../compatibility.md). Les projets déjà distribués ne sont pas migrés implicitement.
+## Vérifications et limites
 
-## Limites
+La [compatibilité](../compatibility.md) distingue exigences déclarées, versions testées, essais natifs et acceptation humaine. Le [bilan DS-AUTO-01](ds-auto-01.md) et la [qualification initiale DIST-01](qualification.md) restent des preuves historiques ; aucune nouvelle édition n'est qualifiée par leur seule présence.
 
-Les utilitaires et sources historiques conservés d’autres parcours ne sont pas des étapes requises pour installer ce kit. L’ancien éditeur n’est plus un parcours actif ; ses journaux et reçus ne se convertissent pas avec la migration des sources.
+Le destinataire utilise ses propres outils et accès. Les adaptations ne garantissent pas la découverte native de tous les assistants. Les projets existants ne sont pas migrés automatiquement ; l'ancien éditeur et ses journaux ne doivent pas être combinés avec les nouvelles autorités.
 
-La présence du kit ne vaut ni recette humaine, ni licence supplémentaire, ni publication, ni préparation à la production. Cette évolution ne transfère aucune donnée utilisateur et ne modifie pas les prérequis de PostgreSQL ou Docker.
+Le kit est distribué sous [licence MIT](../licence-reutilisation.md), sous réserve des licences propres aux ressources tierces. Cette licence ne constitue ni recette humaine, ni publication, ni préparation à la production. Toute distribution annoncée bilingue demande un contrôle de couverture des traductions, distinct du build. Toute nouvelle qualification identifie ses sources, contrôles réellement exécutés et limites.
+
+<a id="contenu-et-verifications"></a>
+<a id="source-contenu-et-verifications"></a>
+
+<a id="limites"></a>
+<a id="source-limites"></a>

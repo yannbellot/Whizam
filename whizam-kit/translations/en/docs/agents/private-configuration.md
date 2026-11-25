@@ -1,5 +1,7 @@
 # Assisted private configuration
 
+When access is missing, the assistant supports entering it in a private local form rather than in conversation. This page describes that workflow, its file fallback and its limits. Saving a value does not test the connection or restart the application.
+
 ## Assistant workflow
 
 1. Identify fields actually needed for the mandate and explain their purpose. Reuse existing configurations; never request usable existing secrets. Check presence/nonempty status only, without displaying values or loading `.env.local` into context. Never read all of `process.env`.
@@ -27,3 +29,7 @@ Without an opening tool, supply a Markdown link labeled “Private configuration
 ## Checks
 
 From the kit: `node --test tests/private-configuration.test.mjs`. Tests use temporary folders/fictional values without real providers. Automation and actual client opening are separate evidence; only user review can accept entry comfort in their Codex version.
+
+## Conditional GitHub access
+
+For source publication follow [GitHub publication](../github-publication.md): existing access first, browser login next, private form only if a token is still needed. `node scripts/configure-secrets.mjs --github GH_TOKEN:password` preserves the local protections and writes only `.github-token.local` in mode 0600, leaving `.env.local` untouched. The GitHub helper consumes it only with `credential: form`, without returning its value to the assistant. File fallback opens that dedicated file, explains visible entry and does not read it. Saving neither authorizes publication nor proves connection. Never distribute secrets or private files.

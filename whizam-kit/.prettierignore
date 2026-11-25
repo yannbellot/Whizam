@@ -26,3 +26,6 @@ src/design-system/editor/naming-rules.generated.json
 
 # Deterministic stories are checked by design-system:check.
 **/*.generated.stories.tsx
+
+# Jinja templates: HTML formatting corrupts template control attributes.
+config/documentation/overrides/

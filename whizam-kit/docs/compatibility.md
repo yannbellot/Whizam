@@ -1,5 +1,24 @@
 # Compatibilité du kit livré
 
+Cette page distingue les prérequis du kit, les plateformes effectivement vérifiées et les limites des essais. Commencer par la synthèse courante ci-dessous. Les campagnes datées qui suivent identifient précisément leurs versions ; elles ne qualifient pas automatiquement une nouvelle édition ou un projet dérivé.
+
+## Exigences et portée courantes
+
+Les prérequis sont déclarés par les sources de l'édition ; les campagnes suivantes décrivent seulement leurs versions testées. Aucune campagne ancienne ne qualifie automatiquement les changements ultérieurs.
+
+| Domaine | Exigence ou capacité déclarée | Portée des preuves |
+| --- | --- | --- |
+| Node/npm | Plages de `package.json` : Node >=24.22.0 <25, npm >=11.8.0 <12 | Versions de chaque campagne ci-dessous ; aucune compatibilité de toutes les versions de ces plages déduite |
+| Docker/Compose | Parcours applicatif conteneurisé et Zensical ; base optionnelle pour certains outils | Essais identifiés sur macOS/arm64 et Linux/arm64 ; autres systèmes à vérifier |
+| Application | Accueil vide, `/health`, route technique de définitions importées | `/projects` et UI Lab sont retirés des routes actives ; leurs essais ci-dessous sont historiques |
+| Storybook et Documentation | Consultation, sélection du projet, guides FR/EN | Couverture des traductions, build, recherche et parcours à vérifier sur chaque version concernée |
+| Assistants | Instructions, rôles, skills et adaptations internes | Présence et validation structurelle distinctes de la découverte native et des scénarios de modèle |
+| Données et production | PostgreSQL/Drizzle, migrations et procédures de sauvegarde | Aucun compte multi-utilisateur ni qualification de production implicite |
+
+Conserver pour chaque nouvelle qualification : date, version de source, OS/architecture, outils, contrôles réellement exécutés, ressources synthétiques, limites et acceptation humaine. Les sources distribuées ne requièrent aucun rapport extérieur au kit pour être utilisées.
+
+## Campagnes historiques
+
 **24 octobre 2026 — PORT-03 techniquement qualifié, acceptation humaine différée.** Cette matrice livre les versions, résultats et limites utiles à la reprise du kit. Distinguer structure, découverte native, comportement des modèles et acceptation humaine. Voir [adaptations](agents/adapters.md), [héritage sélectionné](agents/practice-history.md) et [état courant](project-state.md).
 
 ## Héritage web identifié
@@ -60,3 +79,7 @@ Cette observation humaine valide ce scénario nominal ; elle ne constitue pas un
 ## Retrait de l’éditeur Storybook — DS-EDIT-64 F
 
 [Qualification du 4 novembre 2026](reviews/ds-edit-64-f.md) : UI Lab autonome et Storybook documentaire sans addon/writer, sur macOS arm64, Node 24.22.0/npm 11.8.0 et Chromium 156.0.8078.4. Parcours, sauvegarde/reprise réelle, lecteurs et builds requalifiés ; manifeste v16, valeurs et dérivés conservés. Aucun nouvel essai Linux, SQL, transfert interhôtes ou assistant natif ; preuves E et leurs limites conservées. Recette humaine/reprise par un tiers restent distinctes, sans acceptation ou publication déduite de la fin de migration technique.
+
+## Publication GitHub — limites de qualification
+
+Le skill [publish-github-project](../skills/publish-github-project/SKILL.md), ses liens et son aide locale sont livrés. Les scénarios automatisés sont synthétiques (Git local réel, réponses GitHub simulées). Aucun compte GitHub réel, découverte native du nouveau skill ou affichage intégré du formulaire dans Codex/Claude n'est qualifié par ces tests. Le navigateur local reste le repli documenté ; une recette par client et une acceptation humaine sont distinctes. Voir [la procédure](github-publication.md).

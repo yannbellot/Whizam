@@ -22,7 +22,7 @@ The Builder selects skills, implements changes and completes technical checks. R
 
 Use native mode only if available/authorized; otherwise one role at a time in the thread, declaring **sequential, same agent, non-independent**. Reviewer application changes do not validate their own fixes. Subagents, models, external resources and publication retain existing authorization requirements; no implicit provider, global setting or additional permission.
 
-Active guides are available from first Zensical startup. `config/documentation/catalog.json` separates guides (`guide`), project documents (`project`) and unpublished histories (`history`). Designer documentation contains Project progress with Current state, Roadmap and real stages; Technical documentation contains specialist references. The [User guide](../guide-whizam/index.md), first section after Home and before Designer/Technical documentation, explains the learning workflow without duplicating authorities/tracking. Classify new documents/stages under the [documentation guide](../documentation.md). Do not restore an empty portal or publish kit histories. Private files and outside-kit paths remain excluded.
+Active guides are available from first Zensical startup. `config/documentation/catalog.json` separates guides (`guide`), project documents (`project`) and unpublished histories (`history`). The top-level Project progress section contains Current state, Roadmap and real stages; Technical documentation contains specialist references. The [User guide](../guide-whizam/index.md), first section after Home and before Project progress and Technical documentation, explains the learning workflow without duplicating authorities/tracking. Classify new documents/stages under the [documentation guide](../documentation.md). Do not restore an empty portal or publish kit histories. Private files and outside-kit paths remain excluded.
 
 ## Common output
 
@@ -41,3 +41,6 @@ From the kit root after npm ci: `npm run validate:agent-kit` or `node scripts/va
 Apply [initial scoping](project-intake.md): conditional questions, conversational follow-ups and resumption from the brief/checkpoint. Do not ask which assistant is used; use its entry-point policy. Collect missing documentation languages at Q10 according to [Project languages](languages.md).
 
 Scoping exception: an explicit start request immediately authorizes minimal answer/welcome recording, without technical initialization or development. Use the save-and-reread helper before every next question under [canonical scoping](project-intake.md). This grants no other authorization.
+
+
+Human publication is independent of instruction activity: `published: false` excludes a source from the portal, search and downloads while retaining its active `kind: guide` for agents. `audience` is `humans`, `agents` or `both` and describes the reader; it does not control publication. Without `published`, existing behavior is unchanged; `history` is always excluded. Preserve agent links to local sources. Human explanations describe these rules without creating a competing authority.

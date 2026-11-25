@@ -374,27 +374,51 @@
     "docs/claude/chantier-model-routing.md": "Politique interne du kit, conservée hors du portail initial du projet.",
     "docs/decisions/042-assistant-choice-and-claude-routing.md": "Politique interne du kit, conservée hors du portail initial du projet.",
     "docs/agents/user-decisions.md": "Politique interne du kit, conservée hors du portail initial du projet.",
-    "docs/decisions/043-user-decision-protocol.md": "Politique interne du kit, conservée hors du portail initial du projet."
+    "docs/decisions/043-user-decision-protocol.md": "Politique interne du kit, conservée hors du portail initial du projet.",
+    "docs/architecture-before-technical-revision-2026-11-24.md": "Version antérieure conservée hors du portail et de la recherche.",
+    "docs/security-before-technical-revision-2026-11-24.md": "Version antérieure conservée hors du portail et de la recherche.",
+    "docs/backup-and-restore-before-technical-revision-2026-11-24.md": "Version antérieure conservée hors du portail et de la recherche.",
+    "docs/product/starter-kit-before-technical-revision-2026-11-24.md": "Version antérieure conservée hors du portail et de la recherche.",
+    "docs/product/replacing-project-example-before-technical-revision-2026-11-24.md": "Version antérieure conservée hors du portail et de la recherche."
   },
   "publishDocs": true,
   "organization": {
     "version": 1,
     "stages": [],
     "documents": {
+      "skills/publish-github-project/SKILL.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
+      },
+      "docs/github-publication.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "label": "GitHub",
+        "order": 20
+      },
       "AGENTS.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "CLAUDE.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "GEMINI.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "README.md": {
         "kind": "history",
@@ -403,33 +427,42 @@
       },
       "ROADMAP.md": {
         "kind": "project",
-        "section": ["Documentation designer", "Suivi de projet"],
+        "section": ["Suivi de projet"],
         "reason": "Modèle canonique du suivi du projet utilisateur, à conserver non initialisé."
       },
       "TECHNICAL-GUIDE.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Installation et exploitation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": -100
       },
       "agents/builder.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "agents/design-reviewer.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "agents/security-reviewer.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "agents/technical-reviewer.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "config/README.md": {
         "kind": "history",
@@ -444,7 +477,9 @@
       "docs/agents/adapters.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/agents/practice-history.md": {
         "kind": "history",
@@ -459,12 +494,16 @@
       "docs/agents/skill-contract.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/agents/user-decisions.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/architecture/page-exploration.md": {
         "kind": "history",
@@ -514,27 +553,32 @@
       "docs/architecture.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Architecture et données"],
-        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité.",
+        "order": -100
       },
       "docs/backup-and-restore.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Installation et exploitation"],
-        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité.",
+        "order": -96
       },
       "docs/claude/chantier-model-routing.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 50
       },
       "docs/codex/chantier-model-routing.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 40
       },
       "docs/compatibility.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 30
       },
       "docs/conventions.md": {
         "kind": "guide",
@@ -542,29 +586,29 @@
         "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
       },
       "docs/decisions/001-self-contained-instructions.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/002-dedicated-project-initialization.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/003-qualitative-model-routing.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/004-guided-project-start.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/005-assisted-environment-installation.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/005-design-system-editor-authority.md": {
         "kind": "history",
@@ -732,9 +776,9 @@
         "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
       },
       "docs/decisions/039-automated-design-system.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/039-visual-intent-inspector.md": {
         "kind": "history",
@@ -747,24 +791,25 @@
         "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
       },
       "docs/decisions/041-request-validation.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/042-assistant-choice-and-claude-routing.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/decisions/043-user-decision-protocol.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Décision de fabrication conservée ; les autorités actives restent dans le kit."
       },
       "docs/design-system/architecture.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 10
       },
       "docs/design-system/css-value-domains.md": {
         "kind": "history",
@@ -789,42 +834,54 @@
       "docs/design-system/policy.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 20
       },
       "docs/design-system/principles.md": {
         "kind": "guide",
-        "section": ["Documentation designer", "Design system — principes et usages"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/design-system/semantic-catalog.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/design-system/style-inventory.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/design-system/token-migration.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": 30
       },
       "docs/design-system/token-naming.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/design-system/token-organization.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/design-system/token-taxonomy.md": {
-        "kind": "guide",
+        "kind": "history",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Taxonomie historique à décisions intermédiaires, remplacée par la politique à trois catégories et le classement Storybook courant."
       },
       "docs/design-system/ui-token-consumption.md": {
         "kind": "history",
@@ -836,8 +893,16 @@
         "section": ["Documentation technique", "Architecture et données"],
         "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
       },
+      "docs/licence-reutilisation.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "label": "Licence et réutilisation",
+        "order": -93,
+        "reason": "Conditions de réutilisation du kit et références de licence."
+      },
       "docs/distribution/README.md": {
         "kind": "guide",
+        "order": -94,
         "section": ["Documentation technique", "Installation et exploitation"],
         "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
       },
@@ -854,12 +919,14 @@
       "docs/documentation.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Maintenance de la documentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": -100
       },
       "docs/handoff.md": {
         "kind": "guide",
-        "section": ["Documentation designer", "Livraison et transmission"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": -95
       },
       "docs/operations/local-app.md": {
         "kind": "history",
@@ -869,7 +936,8 @@
       "docs/operations.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Installation et exploitation"],
-        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité.",
+        "order": -99
       },
       "docs/product/agent-chat.md": {
         "kind": "history",
@@ -918,22 +986,24 @@
       },
       "docs/product/project-start.md": {
         "kind": "guide",
-        "section": ["Documentation designer", "Prendre en main le projet"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet.",
+        "order": -98
       },
       "docs/product/replacing-project-example.md": {
         "kind": "guide",
-        "section": ["Documentation designer", "Prendre en main le projet"],
-        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+        "section": ["Documentation technique", "Installation et exploitation"],
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité.",
+        "order": -97
       },
       "docs/product/starter-kit.md": {
-        "kind": "history",
+        "kind": "guide",
         "section": ["Documentation technique", "Architecture et données"],
-        "reason": "Référence historique du socle, démonstration retirée ou étude remplacée ; source conservée hors du portail."
+        "reason": "Périmètre courant du kit autonome, distinct des fonctionnalités du projet dérivé."
       },
       "docs/project-state.md": {
         "kind": "project",
-        "section": ["Documentation designer", "Suivi de projet"],
+        "section": ["Suivi de projet"],
         "reason": "Modèle canonique du suivi du projet utilisateur, à conserver non initialisé."
       },
       "docs/reviews/core-01-native-e2e.md": {
@@ -1454,7 +1524,8 @@
       "docs/security.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Sécurité et configuration privée"],
-        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité."
+        "reason": "Guide actif comportant des sections héritées explicitement signalées ; consulter les règles courantes en priorité.",
+        "order": -100
       },
       "docs/work-items/agent-chat-01-personal-agent-chat.md": {
         "kind": "history",
@@ -2134,201 +2205,309 @@
       "skills/README.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/analyze-brief/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/analyze-design-references/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/backup-and-rollback/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/brief-to-specs/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/data-permissions-migrations/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/deploy-docker-compose/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/design-interactions/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/diagnose-incident/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/implement-feature/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/initialize-project/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/initialize-project/references/environment-setup.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/map-figma-to-components/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/normalize-design-system/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/plan-feature/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/prepare-handoff/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/prepare-release/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/propose-architecture/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/review-design/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/security-review/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/technical-review/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/test-user-flow/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "skills/update-project-docs/SKILL.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "src/design-system/authority/README.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Design system — implémentation"],
-        "reason": "Guide ou règle applicable au kit courant ; distinct du suivi du projet."
-      },
-      "docs/guide-whizam/index.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation"],
-        "label": "Découvrir Whizam",
-        "order": 0,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/preparer-kit.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation", "Bien démarrer"],
-        "label": "Préparer son kit",
-        "order": 1,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/premier-projet.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation", "Bien démarrer"],
-        "label": "Créer son premier projet",
-        "order": 2,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/assistant.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation"],
-        "label": "Travailler avec l’assistant",
-        "order": 3,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/cadrer-version.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation", "Concevoir et faire évoluer son projet"],
-        "label": "Cadrer une première version",
-        "order": 4,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/demander-evolution.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation", "Concevoir et faire évoluer son projet"],
-        "label": "Demander une évolution",
-        "order": 5,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/verifier-decider.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation"],
-        "label": "Vérifier et décider",
-        "order": 6,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/reprendre-transmettre.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation"],
-        "label": "Reprendre et transmettre",
-        "order": 7,
-        "reason": "Guide pédagogique courant du Kit Whizam."
-      },
-      "docs/guide-whizam/questions-frequentes.md": {
-        "kind": "guide",
-        "section": ["Guide d’utilisation"],
-        "label": "Questions fréquentes",
-        "order": 8,
-        "reason": "Guide pédagogique courant du Kit Whizam."
+        "reason": "Ressource active interne ; explication humaine publiée séparément.",
+        "published": false,
+        "audience": "agents"
       },
       "docs/agents/languages.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "label": "Langues du projet"
+        "label": "Langues du projet",
+        "order": 10
       },
       "docs/agents/project-intake.md": {
         "kind": "guide",
         "section": ["Documentation technique", "Assistants et automatisations"],
-        "label": "Cadrage initial et reprise"
+        "label": "Cadrage initial et reprise",
+        "published": false,
+        "audience": "agents",
+        "reason": "Ressource active interne ; explication humaine publiée séparément."
       },
       "docs/decisions/044-project-intake-and-entry-policies.md": {
         "kind": "history",
         "reason": "Décision du socle, pas une décision du projet dérivé."
+      },
+      "docs/guide-whizam/index.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Démarrer avec Whizam",
+        "order": 0,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/consulter-documentation.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Consulter la documentation",
+        "order": 1,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/storybook-design-system.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Storybook et le design system",
+        "order": 2,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/partager-projet.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation"],
+        "label": "Partager votre projet",
+        "order": 3,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/modifier-kit.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Modifier le fonctionnement du kit"],
+        "label": "Vue d’ensemble",
+        "order": 4,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/modifier-agents-skills.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Modifier le fonctionnement du kit"],
+        "label": "Modifier les rôles des agents et les skills",
+        "order": 5,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/modifier-regles-design-system.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Modifier le fonctionnement du kit"],
+        "label": "Modifier les règles de gestion du design system",
+        "order": 6,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/modifier-documentation.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Modifier le fonctionnement du kit"],
+        "label": "Modifier la documentation",
+        "order": 7,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/guide-whizam/modifier-architecture.md": {
+        "kind": "guide",
+        "section": ["Guide d’utilisation", "Modifier le fonctionnement du kit"],
+        "label": "Modifier l’architecture technique",
+        "order": 8,
+        "reason": "Guide pédagogique courant du Kit Whizam."
+      },
+      "docs/architecture-before-technical-revision-2026-11-24.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Copie exacte avant révision technique du 24 novembre 2026 ; preuve de contexte conservée, aucune instruction active."
+      },
+      "docs/security-before-technical-revision-2026-11-24.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Copie exacte avant révision technique du 24 novembre 2026 ; preuve de contexte conservée, aucune instruction active."
+      },
+      "docs/backup-and-restore-before-technical-revision-2026-11-24.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Copie exacte avant révision technique du 24 novembre 2026 ; preuve de contexte conservée, aucune instruction active."
+      },
+      "docs/product/starter-kit-before-technical-revision-2026-11-24.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Copie exacte avant révision technique du 24 novembre 2026 ; preuve de contexte conservée, aucune instruction active."
+      },
+      "docs/product/replacing-project-example-before-technical-revision-2026-11-24.md": {
+        "kind": "history",
+        "section": ["Documentation technique", "Architecture et données"],
+        "reason": "Copie exacte avant révision technique du 24 novembre 2026 ; preuve de contexte conservée, aucune instruction active."
+      },
+      "docs/design-system/guide.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Design system — implémentation"],
+        "order": -100,
+        "audience": "humans"
+      },
+      "docs/agents/guide.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "order": -100,
+        "audience": "humans"
+      },
+      "docs/agents/reference.md": {
+        "kind": "guide",
+        "section": ["Documentation technique", "Assistants et automatisations"],
+        "order": 5,
+        "audience": "humans"
       }
     }
   },
-  "presentationAssets": ["fonts.css", "Inter.ttf", "OFL.txt", "portal.css"]
+  "presentationAssets": [
+    "fonts.css",
+    "Inter.ttf",
+    "OFL.txt",
+    "portal.css",
+    "system-theme.js",
+    "tool-controls.css",
+    "globe.svg",
+    "search.svg",
+    "heading-link.svg",
+    "heading-copy.css",
+    "heading-copy.js",
+    "heading-check.svg"
+  ]
 }

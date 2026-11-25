@@ -1,13 +1,15 @@
 ---
 name: initialize-project
-description: "Prepare or resume technical project initialization from the starter: environment, tracking and checks, then hand over to scoping. Not for ordinary features or corrections."
+description: "Prepare or resume technical project initialization from the starter: environment, tracking and checks, then continue the authorized workflow. Not for ordinary features or corrections."
 ---
 
 > Documentation translation. The canonical skill remains `skills/initialize-project/SKILL.md`.
 
 # initialize-project
 
-Inputs: initialization request, project name, real kit root and expressed need. Apply [AGENTS.md](../../AGENTS.md), the [common contract](../../docs/agents/skill-contract.md) and [Builder](../../agents/builder.md) role. Read the [startup workflow](../../docs/product/project-start.md): this skill handles technical initialization, then the Builder hands scoping and implementation to relevant procedures within the authorized mandate. A name suffices to analyze preparation; do not invent business features. Before modifying tracking, installing or starting services, present a proposal and wait for approval under [request handling](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). Existing approval of that proposal suffices; in Codex and Claude Code, submit the initial or changed recommendation before affected execution. A startup question does not trigger execution; preparation-only requests remain documentary, with no installation or services.
+For a new product, first follow canonical scoping and reuse its answers without replacing its brief with “needs to be scoped”. This skill then prepares the environment within the authorized scope. Technical preparation alone remains available on explicit request; it triggers neither mandatory product questions nor product development.
+
+Inputs: initialization request, project name, real kit root and expressed need. Apply [AGENTS.md](../../AGENTS.md), the [common contract](../../docs/agents/skill-contract.md) and [Builder](../../agents/builder.md) role. Read the [startup workflow](../../docs/product/project-start.md): this skill handles technical initialization, then the Builder hands implementation to relevant procedures, collecting any missing scoping only for a technical-only starting request within the authorized mandate. A name suffices to analyze preparation; do not invent business features. Before modifying tracking, installing or starting services, present a proposal and wait for approval under [request handling](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). Existing approval of that proposal suffices; in Codex and Claude Code, submit the initial or changed recommendation before affected execution. A startup question does not trigger execution; preparation-only requests remain documentary, with no installation or services.
 
 ## Check state before acting
 
@@ -28,7 +30,7 @@ Continue independent scoping/documents when a prerequisite is absent. Record the
 
 ## Initialize tracking and prepare the handover
 
-Reuse already expressed needs in documents; with a name alone, write “need to be scoped” and continue technical preparation without an initial product questionnaire. Missing business intent does not prevent checks or authorize invented features, data models or visual directions. The Builder collects intent during scoping using [analyze-brief](../analyze-brief/SKILL.md).
+Reuse already expressed needs in documents; only for an explicitly technical-only request with a name alone, write “need to be scoped” without overwriting saved product answers. Missing business intent does not prevent checks or authorize invented features, data models or visual directions. Only for an explicitly technical starting request, the Builder then collects intent during scoping using [analyze-brief](../analyze-brief/SKILL.md).
 
 In this project copy, replace the [example brief](../../docs/product/brief.md) with known intent or “need to be scoped”; retain a link to the [demonstration specification](../../docs/product/features/projects.md). Never replace an existing project’s brief. Initialize [ROADMAP.md](../../ROADMAP.md), [docs/project-state.md](../../docs/project-state.md) and a short work item under the [conventions](../../docs/conventions.md): name, starting version or absence of Git, authorized scope, assumptions, initialization steps, observed results, blocks and resumption.
 

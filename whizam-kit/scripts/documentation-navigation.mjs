@@ -1,8 +1,7 @@
 // Publication et navigation sont indépendantes ; les chemins Markdown restent canoniques.
-export const designer = 'Documentation designer'
 export const technical = 'Documentation technique'
 export const userGuide = 'Guide d’utilisation'
-const follow = 'Suivi de projet'
+export const follow = 'Suivi de projet'
 const phases = [
   'Cadrage et objectifs',
   'Préparation et réalisation',
@@ -11,21 +10,13 @@ const phases = [
 ]
 const sections = {
   [userGuide]: [
-    'Découvrir Whizam',
-    'Bien démarrer',
-    'Travailler avec l’assistant',
-    'Concevoir et faire évoluer son projet',
-    'Vérifier et décider',
-    'Reprendre et transmettre',
-    'Questions fréquentes',
+    'Démarrer avec Whizam',
+    'Consulter la documentation',
+    'Storybook et le design system',
+    'Partager votre projet',
+    'Modifier le fonctionnement du kit',
   ],
-  [designer]: [
-    'Prendre en main le projet',
-    'Produit et conception',
-    'Design system — principes et usages',
-    follow,
-    'Livraison et transmission',
-  ],
+  [follow]: ['Étapes du projet', 'Documents à classer'],
   [technical]: [
     'Architecture et données',
     'Installation et exploitation',
@@ -39,6 +30,10 @@ export function documentInfo(source, catalog, text = '') {
   const explicit = catalog.organization?.documents?.[source]
   if (explicit && !['guide', 'project', 'history'].includes(explicit.kind))
     throw new Error('Invalid documentation kind: ' + source)
+  if (explicit?.published !== undefined && typeof explicit.published !== 'boolean')
+    throw new Error('Invalid publication flag: ' + source)
+  if (explicit?.audience !== undefined && !['humans', 'agents', 'both'].includes(explicit.audience))
+    throw new Error('Invalid documentation audience: ' + source)
   const project =
     /^(ROADMAP\.md|docs\/project-state\.md)$/.test(source) ||
     /^docs\/(work-items|reviews|decisions)\//.test(source)
@@ -47,18 +42,18 @@ export function documentInfo(source, catalog, text = '') {
   if (typeof info.label !== 'string' || !info.label.trim())
     throw new Error('Invalid documentation label: ' + source)
   if (source === 'docs/project-state.md') {
-    info.section ??= [designer, follow]
+    info.section ??= [follow]
     info.label = 'État courant'
     info.order = -2
   } else if (source === 'ROADMAP.md') {
-    info.section ??= [designer, follow]
+    info.section ??= [follow]
     info.label = 'Roadmap'
     info.order = -1
   } else if (!info.section) {
     info.section = project
-      ? [designer, follow, 'Documents à classer']
+      ? [follow, 'Documents à classer']
       : source.startsWith('docs/product/')
-        ? [designer, 'Produit et conception']
+        ? [technical, 'Architecture et données']
         : source.startsWith('docs/design-system/') || source.startsWith('src/design-system/')
           ? [technical, 'Design system — implémentation']
           : /^(agents\/|skills\/|docs\/(agents|codex|claude)\/)|^(AGENTS|CLAUDE|GEMINI)\.md$/.test(
@@ -71,7 +66,7 @@ export function documentInfo(source, catalog, text = '') {
     !Array.isArray(info.section) ||
     info.section.length < 1 ||
     (info.section.length === 1
-      ? info.section[0] !== userGuide
+      ? ![userGuide, follow].includes(info.section[0])
       : !sections[info.section[0]]?.includes(info.section[1])) ||
     info.section.some((s) => typeof s !== 'string' || !s.trim())
   )
@@ -80,7 +75,7 @@ export function documentInfo(source, catalog, text = '') {
   return info
 }
 export function isPublished(source, catalog, info) {
-  if (catalog.organization) return info.kind !== 'history'
+  if (catalog.organization) return info.kind !== 'history' && info.published !== false
   return (catalog.publishDocs === true && source.startsWith('docs/')) || !catalog.archives?.[source]
 }
 export function navigation(pages, documents, catalog) {
@@ -119,17 +114,17 @@ export function navigation(pages, documents, catalog) {
       const stage = stages.find((s) => s.id === info.stage)
       if (!stage) throw new Error('Unknown documentation stage: ' + source)
       if (!phases.includes(info.phase)) throw new Error('Invalid documentation phase: ' + source)
-      parts = [designer, follow, 'Étapes du projet', stage.title, info.phase]
+      parts = [follow, 'Étapes du projet', stage.title, info.phase]
     }
     add(parts, { title: info.label, target, order: info.order ?? 0 })
   }
-  add([designer, follow, 'Étapes du projet'], {
+  add([follow, 'Étapes du projet'], {
     title: 'Vue des étapes',
     target: '_portal/steps.md',
     order: -1,
   })
   const rank = (title, parents) => {
-    if (!parents.length) return [userGuide, designer, technical].indexOf(title)
+    if (!parents.length) return [userGuide, follow, technical].indexOf(title)
     if (parents.length === 1) return sections[parents[0]].indexOf(title)
     if (parents.at(-1) === 'Étapes du projet')
       return stages.find((s) => s.title === title)?.order ?? 0

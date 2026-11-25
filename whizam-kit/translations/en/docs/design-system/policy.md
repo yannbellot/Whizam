@@ -1,6 +1,6 @@
 # Automated design system policy
 
-DS-AUTO-01 — policy accepted on 18 November 2026. For this kit it replaces former visual-editing/shared semantic-decision rules. Dated reports remain historical.
+The design system uses three token categories: primitives, component tokens and page-local tokens. The assistant maintains sources and examples; scripts generate and check styles, inventories and stories. This page defines the rules for changes, Storybook publication and recovery.
 
 ## Three token categories
 

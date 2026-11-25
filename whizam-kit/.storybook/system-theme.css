@@ -1,0 +1,28 @@
+/* Documentation chrome only; story canvases keep their project styles. */
+body {
+  color-scheme: light;
+}
+.sbdocs-wrapper {
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  .sbdocs-wrapper {
+    color-scheme: dark;
+  }
+}
+.sbdocs .whizam-catalog :is(select, input, textarea) {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+}
+.sbdocs .whizam-catalog :is(select, input, textarea):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+/* Inline examples inherit the same document colors as the standalone canvas. */
+.sbdocs .docs-story {
+  color-scheme: light;
+  color: var(--adl-component-foundations-default-document-foreground-default);
+  background: var(--adl-component-foundations-default-document-background-default);
+}

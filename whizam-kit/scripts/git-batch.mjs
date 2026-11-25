@@ -28,6 +28,27 @@ const optional = (root, args) => {
     return null
   }
 }
+// Only terminal adapters declared by the local catalog are legitimate source links.
+function canonicalAdapter(root, file, full) {
+  const match = /^(?:\.agents|\.claude)\/skills\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(file)
+  if (!match || fs.readlinkSync(full) !== '../../skills/' + match[1]) return false
+  try {
+    for (const name of ['skills', 'skills/' + match[1]]) {
+      const info = fs.lstatSync(path.join(root, name))
+      if (!info.isDirectory() || info.isSymbolicLink()) return false
+    }
+    for (const name of ['skills/catalog.json', 'skills/' + match[1] + '/SKILL.md']) {
+      const info = fs.lstatSync(path.join(root, name))
+      if (!info.isFile() || info.isSymbolicLink() || info.nlink !== 1) return false
+    }
+    const catalog = JSON.parse(fs.readFileSync(path.join(root, 'skills/catalog.json'), 'utf8'))
+    return catalog.skills.some(
+      (skill) => skill.name === match[1] && skill.source === `skills/${match[1]}/SKILL.md`,
+    )
+  } catch {
+    return false
+  }
+}
 function safe(root, file) {
   if (
     typeof file !== 'string' ||
@@ -65,8 +86,12 @@ function safe(root, file) {
       })()
     ) {
       const stat = fs.lstatSync(current)
-      if (stat.isSymbolicLink() || (stat.isFile() && stat.nlink !== 1))
+      if (stat.isSymbolicLink()) {
+        if (current === path.join(root, file) && canonicalAdapter(root, file, current))
+          return current
         throw new Error('git-batch-link-refused')
+      }
+      if (stat.isFile() && stat.nlink !== 1) throw new Error('git-batch-link-refused')
     }
   }
   const full = path.join(root, file)
@@ -124,6 +149,9 @@ function differences(root, state) {
         binary ||= a === '-' || b === '-'
         if (!binary) lines += Number(a) + Number(b)
       }
+    } else if (fs.lstatSync(full, { throwIfNoEntry: false })?.isSymbolicLink()) {
+      changed = true
+      lines = 1
     } else if (fs.existsSync(full)) {
       if (!fs.statSync(full).isFile() || fs.statSync(full).size > 2 * 1024 * 1024)
         throw new Error('git-batch-source-budget')

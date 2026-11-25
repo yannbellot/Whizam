@@ -38,8 +38,9 @@ test('organisation complète sans contenu initial', async ({ page, request }, te
   await expect(english.getByText(/No project.*documented/)).toBeVisible()
   await expect(english.getByText(/Aucun.*projet.*document/)).toHaveCount(0)
   await page.screenshot({ path: testInfo.outputPath('structure.png'), fullPage: true })
-  await page.getByRole('button', { name: 'Documentation language English', exact: true }).click()
-  await page.getByText('Français', { exact: true }).click()
+  await page
+    .getByRole('combobox', { name: 'Documentation language', exact: true })
+    .selectOption('fr')
   await expect(english.getByText(/Aucun.*projet.*document/)).toBeVisible()
   expect(errors).toEqual([])
 })
@@ -55,5 +56,21 @@ test('langue initiale issue de la préférence du projet', async ({ page, reques
   const frame = page.frameLocator('#storybook-preview-iframe')
   await expect(
     frame.getByText(language === 'en' ? /No project.*documented/ : /Aucun.*projet.*document/),
+  ).toBeVisible()
+})
+
+test('language is accessible in the mobile navigation drawer', async ({ page, request }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  const index = await (await request.get('/index.json')).json()
+  const entry = (Object.values(index.entries) as { id: string; title: string }[]).find((item) =>
+    item.title.endsWith('/Primitives/All'),
+  )!
+  await page.goto(`/?path=/docs/${entry.id}&globals=documentationLanguage:fr`)
+  await page.getByRole('button', { name: 'Open navigation menu', exact: true }).click()
+  await page
+    .getByRole('combobox', { name: 'Langue de documentation', exact: true })
+    .selectOption('en')
+  await expect(
+    page.getByRole('link', { name: 'Design System — Kit Whizam', exact: true }),
   ).toBeVisible()
 })

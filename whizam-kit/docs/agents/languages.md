@@ -1,6 +1,6 @@
 # Langues du projet
 
-Cette autorité complète AGENTS et le [cadrage initial](project-intake.md). Q9 choisit les langues de l’application ; Q10 celles des guides, de la documentation design/technique et des explications Storybook. La langue de conversation ne choisit aucune des deux. Les commandes, identifiants et commits restent en anglais.
+Les langues de l’application et celles de la documentation/Storybook se choisissent séparément. Cette page explique leur enregistrement, leur reprise et la maintenance des traductions. Le [cadrage initial](project-intake.md) recueille ces choix en Q9 et Q10 sous les instructions AGENTS ; la langue de conversation ne les détermine pas. Les commandes, identifiants et commits restent en anglais.
 
 ## Choix et reprise
 

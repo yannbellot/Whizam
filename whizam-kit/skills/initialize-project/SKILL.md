@@ -1,11 +1,13 @@
 ---
 name: initialize-project
-description: 'Préparer ou reprendre l’initialisation technique d’un projet depuis le starter : environnement, suivi et contrôles, puis relais vers le cadrage. Ne pas utiliser pour une fonctionnalité ou correction courante.'
+description: 'Préparer ou reprendre l’initialisation technique d’un projet depuis le starter : environnement, suivi et contrôles, puis reprise du parcours autorisé. Ne pas utiliser pour une fonctionnalité ou correction courante.'
 ---
 
 # initialize-project
 
-Entrées : demande d’initialisation, nom du projet, racine réelle du kit et besoin déjà exprimé. Appliquer [AGENTS.md](../../AGENTS.md), le [contrat commun](../../docs/agents/skill-contract.md) et le rôle [Builder](../../agents/builder.md). Lire le [parcours de démarrage](../../docs/product/project-start.md) : ce skill réalise sa séquence d’initialisation technique, puis le Builder transmet le cadrage et la réalisation aux procédures utiles dans le mandat autorisé. Le nom suffit pour analyser la préparation ; aucune fonctionnalité métier n’est inventée. Avant de modifier le suivi, installer ou lancer les services, présenter la proposition et attendre sa validation selon le [traitement des demandes](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). Un accord déjà donné sur cette proposition suffit ; dans Codex et Claude Code, la première recommandation ou son changement est soumis avant l’exécution concernée. Une question sur le démarrage ne déclenche pas d’exécution ; une demande de préparation seule reste documentaire, sans installation ni services.
+Pour un nouveau produit, appliquer d’abord le cadrage canonique et réutiliser ses réponses sans remplacer son brief par « besoin à cadrer ». Ce skill prépare ensuite l’environnement dans le mandat validé. La préparation technique seule reste possible sur demande explicite ; elle ne lance ni questionnaire produit obligatoire ni développement métier.
+
+Entrées : demande d’initialisation, nom du projet, racine réelle du kit et besoin déjà exprimé. Appliquer [AGENTS.md](../../AGENTS.md), le [contrat commun](../../docs/agents/skill-contract.md) et le rôle [Builder](../../agents/builder.md). Lire le [parcours de démarrage](../../docs/product/project-start.md) : ce skill réalise sa séquence d’initialisation technique, puis le Builder transmet la réalisation aux procédures utiles ; les compléments de cadrage après préparation concernent seulement une entrée explicitement technique dans le mandat autorisé. Le nom suffit pour analyser la préparation ; aucune fonctionnalité métier n’est inventée. Avant de modifier le suivi, installer ou lancer les services, présenter la proposition et attendre sa validation selon le [traitement des demandes](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution). Un accord déjà donné sur cette proposition suffit ; dans Codex et Claude Code, la première recommandation ou son changement est soumis avant l’exécution concernée. Une question sur le démarrage ne déclenche pas d’exécution ; une demande de préparation seule reste documentaire, sans installation ni services.
 
 ## Vérifier l’état avant d’agir
 
@@ -26,7 +28,7 @@ Continuer le cadrage et les documents indépendants lorsqu’un prérequis manqu
 
 ## Initialiser le suivi et préparer le relais
 
-Réutiliser le besoin déjà exprimé dans les documents ; avec le nom seul, noter « besoin à cadrer » et avancer sur la préparation technique sans questionnaire produit préalable. L’absence de métier n’empêche pas ces vérifications ; elle ne permet pas d’inventer des fonctionnalités, un modèle de données ou une direction visuelle. Le Builder recueillera l’intention dans la séquence de cadrage avec [analyze-brief](../analyze-brief/SKILL.md).
+Réutiliser le besoin déjà exprimé dans les documents ; pour une demande explicitement technique avec le nom seul, noter « besoin à cadrer » sans écraser les réponses produit déjà enregistrées. L’absence de métier n’empêche pas ces vérifications ; elle ne permet pas d’inventer des fonctionnalités, un modèle de données ou une direction visuelle. Pour une entrée explicitement technique seulement, le Builder recueillera ensuite l’intention dans la séquence de cadrage avec [analyze-brief](../analyze-brief/SKILL.md).
 
 Dans cette copie de projet, remplacer le [brief d’exemple](../../docs/product/brief.md) par l’intention connue ou « besoin à cadrer » ; conserver un renvoi à la [spécification de la démonstration](../../docs/product/features/projects.md). Ne pas remplacer le brief d’un projet existant. Initialiser [ROADMAP.md](../../ROADMAP.md), [docs/project-state.md](../../docs/project-state.md) et une fiche courte selon les [conventions](../../docs/conventions.md) : nom, version de départ ou absence de Git, périmètre autorisé, hypothèses, étapes d’initialisation, résultats constatés, blocages et reprise.
 

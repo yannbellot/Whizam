@@ -125,3 +125,32 @@ test('déclarations fermées : aucun nom public ni argument secret', () => {
   ])
     assert.throws(() => parseFields(args))
 })
+
+test('GitHub fallback uses an isolated private file and keeps the application environment intact', async (t) => {
+  const f = await fixture(t, 'APP=preserved\n')
+  const fields = parseFields(['GH_TOKEN:password'])
+  const session = await startConfiguration({ root: f.root, fields, target: 'github' })
+  t.after(() => session.close())
+  const html = await (await fetch(session.url)).text()
+  assert.match(html, /\.github-token\.local/)
+  const response = await fetch(session.url, {
+    method: 'POST',
+    headers: {
+      origin: new URL(session.url).origin,
+      'content-type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams({ action: 'save', GH_TOKEN: 'synthetic-token-only' }),
+  })
+  assert.equal(response.status, 200)
+  assert.doesNotMatch(await response.text(), /synthetic-token-only/)
+  assert.equal(await readFile(f.path, 'utf8'), 'APP=preserved\n')
+  assert.equal(
+    parseEnv(await readFile(join(f.root, '.github-token.local'), 'utf8')).GH_TOKEN,
+    'synthetic-token-only',
+  )
+  assert.equal((await stat(join(f.root, '.github-token.local'))).mode & 0o777, 0o600)
+  await assert.rejects(startConfiguration({ root: f.root, fields, target: '../outside' }))
+  await assert.rejects(
+    startConfiguration({ root: f.root, fields: parseFields(['OTHER:password']), target: 'github' }),
+  )
+})

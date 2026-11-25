@@ -2,3 +2,209 @@
   --md-text-font: 'Inter';
   --md-code-font: 'Menlo';
 }
+
+/* Tool shell: same column rhythm as the design-system browser. */
+:root {
+  --whizam-border: #d8dadd;
+}
+[data-md-color-scheme='slate'] {
+  --whizam-border: #292c30;
+}
+.md-grid {
+  max-width: none;
+}
+.md-main__inner {
+  margin-top: 0;
+}
+.md-sidebar {
+  width: 300px;
+  padding-top: 20px;
+}
+.md-sidebar--primary {
+  border-right: 1px solid var(--whizam-border);
+}
+.md-sidebar--secondary {
+  width: 240px;
+}
+.md-sidebar__scrollwrap {
+  margin: 0;
+  padding: 0 12px;
+}
+.whizam-tool-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 8px 24px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.whizam-tool-heading a {
+  color: var(--md-default-fg-color);
+}
+.whizam-language-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 20px;
+}
+.whizam-language-control .md-icon {
+  width: 16px;
+}
+.whizam-language-control select {
+  font: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--whizam-border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  max-width: 100%;
+}
+.whizam-language-control select:focus-visible,
+.whizam-mobile-menu button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+.md-search {
+  width: 100%;
+}
+.md-search__button {
+  width: 100%;
+  height: 32px;
+  border: 1px solid var(--whizam-border);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 13px;
+}
+.whizam-mobile-menu,
+.whizam-close {
+  display: none;
+}
+@media (min-width: 1220px) {
+  .md-sidebar {
+    top: 0 !important;
+    height: 100vh !important;
+  }
+}
+@media (max-width: 1219px) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}
+@media (max-width: 959px) {
+  .whizam-mobile-menu {
+    display: block;
+    padding: 12px 16px;
+  }
+  .whizam-mobile-menu button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .whizam-mobile-menu svg {
+    width: 20px;
+  }
+  .whizam-close {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .md-sidebar--primary {
+    top: 0;
+    width: min(90vw, 320px);
+    height: 100vh;
+    background: var(--md-default-bg-color);
+  }
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    top: 0;
+  }
+  .md-content {
+    margin: 0;
+  }
+}
+.md-typeset details.whizam-mobile-toc {
+  display: none;
+  margin-bottom: 24px;
+}
+@media (max-width: 959px) {
+  .md-typeset details.whizam-mobile-toc {
+    display: block;
+  }
+}
+.md-nav__link {
+  color: var(--md-default-fg-color--light);
+}
+.md-search__button {
+  color: var(--md-default-fg-color--light);
+}
+.whizam-language-control .md-icon svg {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 960px) {
+  .md-sidebar--primary {
+    display: block !important;
+    position: sticky !important;
+    left: auto !important;
+    transform: none !important;
+    visibility: visible !important;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 959px) {
+  .md-sidebar--primary {
+    display: block !important;
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0;
+    margin: 0;
+    transform: translateX(-100%) !important;
+    z-index: 30;
+    transition: transform 0.15s ease;
+  }
+  body:has(#__drawer:checked) .md-sidebar--primary {
+    transform: translateX(0) !important;
+  }
+  body:has(#__drawer:checked) .md-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    z-index: 25;
+  }
+}
+.md-nav--primary .md-search {
+  display: block !important;
+  position: static !important;
+}
+.md-nav--primary .md-search__button {
+  display: flex !important;
+}
+@media (max-width: 959px) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-top: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-sidebar--primary {
+    transition: none !important;
+  }
+}
+
+.whizam-mobile-menu button,
+.whizam-close {
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  border: 0;
+}
+
+@media (min-width: 960px) {
+  .md-sidebar--secondary {
+    display: block;
+  }
+}

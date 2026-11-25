@@ -191,3 +191,60 @@ test('private state cannot be created without an ignore rule', (t) => {
   assert.throws(() => begin(), /state-must-be-ignored/)
   assert.equal(fs.existsSync(path.join(root, '.git-batches.local')), false)
 })
+
+test('declared canonical skill adapters can be counted and archived without following links', (t) => {
+  const f = fixture(t)
+  const files = [
+    'skills/catalog.json',
+    'skills/example/SKILL.md',
+    '.agents/skills/example',
+    '.claude/skills/example',
+  ]
+  f.begin(files)
+  fs.mkdirSync(path.join(f.root, 'skills/example'), { recursive: true })
+  fs.mkdirSync(path.join(f.root, '.agents/skills'), { recursive: true })
+  fs.mkdirSync(path.join(f.root, '.claude/skills'), { recursive: true })
+  f.write(
+    'skills/catalog.json',
+    JSON.stringify({ skills: [{ name: 'example', source: 'skills/example/SKILL.md' }] }),
+  )
+  f.write('skills/example/SKILL.md', '# Example\n')
+  for (const dir of ['.agents', '.claude'])
+    fs.symlinkSync('../../skills/example', path.join(f.root, dir, 'skills/example'))
+  const state = run('record', f.root, { id: 'extend-library', event: 'explicit' })
+  assert.equal(state.requestCount, 1)
+  assert.equal(state.changes.filter((c) => c.file.startsWith('.')).length, 2)
+  assert.ok(state.changes.every((c) => !c.binary))
+  f.git('add', '--', ...files)
+  f.git('commit', '-m', 'Add canonical adapters')
+  assert.equal(run('archive', f.root).archived, true)
+})
+
+test('adapter exception refuses external, undeclared, alternate and traversed links', (t) => {
+  const f = fixture(t)
+  const leaf = '.agents/skills/example'
+  f.begin([leaf])
+  fs.mkdirSync(path.join(f.root, '.agents/skills'), { recursive: true })
+  fs.mkdirSync(path.join(f.root, 'skills/example'), { recursive: true })
+  f.write('skills/catalog.json', JSON.stringify({ skills: [] }))
+  f.write('skills/example/SKILL.md', '# Example\n')
+  fs.symlinkSync('../../skills/example', path.join(f.root, leaf))
+  assert.throws(() => run('status', f.root), /link-refused/)
+  f.write(
+    'skills/catalog.json',
+    JSON.stringify({ skills: [{ name: 'example', source: 'skills/example/SKILL.md' }] }),
+  )
+  fs.unlinkSync(path.join(f.root, leaf))
+  fs.symlinkSync('/private/tmp', path.join(f.root, leaf))
+  assert.throws(() => run('status', f.root), /link-refused/)
+  fs.unlinkSync(path.join(f.root, leaf))
+  fs.symlinkSync('../../skills/example', path.join(f.root, leaf))
+  fs.renameSync(path.join(f.root, 'skills/example'), path.join(f.root, 'skills/original'))
+  fs.symlinkSync('original', path.join(f.root, 'skills/example'))
+  assert.throws(() => run('status', f.root), /link-refused/)
+  fs.unlinkSync(path.join(f.root, 'skills/example'))
+  fs.renameSync(path.join(f.root, 'skills/original'), path.join(f.root, 'skills/example'))
+  fs.renameSync(path.join(f.root, '.agents/skills'), path.join(f.root, '.agents/original'))
+  fs.symlinkSync('original', path.join(f.root, '.agents/skills'))
+  assert.throws(() => run('status', f.root), /link-refused/)
+})

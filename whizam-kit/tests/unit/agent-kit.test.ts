@@ -39,6 +39,8 @@ function fixture() {
     '.claude',
     'docs',
     'scripts/validate-agent-kit.mjs',
+    'scripts/github-project.mjs',
+    'scripts/configure-secrets.mjs',
     'scripts/with-runtime.sh',
   ]) {
     cpSync(join(root, entry), join(kit, entry), { recursive: true, verbatimSymlinks: true })
@@ -103,6 +105,8 @@ describe('portable agent kit validation', () => {
   it.each([
     'skills/initialize-project/references/environment-setup.md',
     'scripts/with-runtime.sh',
+    'scripts/github-project.mjs',
+    'scripts/configure-secrets.mjs',
     '.nvmrc',
   ])('rejects a required initialization resource missing from the delivery: %s', (resource) => {
     const { kit } = fixture()

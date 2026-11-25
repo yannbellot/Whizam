@@ -182,7 +182,26 @@ La question de traduction du stock est strictement conditionnelle : au moins une
 
 Pour Français, English ou Français et English seuls : ne poser aucune question de traduction du stock, ne recommander aucune migration et ne confondre ni nouvelle rédaction ni choix de consultation avec une traduction des contenus livrés. Préserver les versions existantes. Sans stock à traduire ou avec décision connue, aucune question supplémentaire.
 
-Pour Q9 et Q10, l’absence de sélection multiple native n’autorise plus un repli vers une simple question ouverte : appeler les choix uniques natifs et appliquer l’attente du protocole. Si le schéma autorisé limite la liste à trois options, utiliser « Français », « English », « Plusieurs langues ou autre langue », puis, pour la dernière, un second choix natif « Français et English » / « Autre combinaison de langues ». Réutiliser une réponse déjà fournie plutôt que relancer ces choix. Un repli textuel reste réservé à l’indisponibilité ou l’interdiction du mécanisme natif lui-même, jamais à la seule absence de cases à cocher. Q10 reste la dernière question de cadrage.
+Pour Q9 et Q10, l’absence de sélection multiple native n’autorise plus un repli vers une simple question ouverte : appeler les choix uniques natifs et appliquer l’attente du protocole. Si le schéma autorisé limite la liste à trois options, utiliser « Français », « English », « Plusieurs langues ou autre langue », puis, pour la dernière, un second choix natif « Français et English » / « Autre combinaison de langues ». Réutiliser une réponse déjà fournie plutôt que relancer ces choix. Un repli textuel reste réservé à l’indisponibilité ou l’interdiction du mécanisme natif lui-même, jamais à la seule absence de cases à cocher. Les choix GitHub conditionnels ci-dessous suivent Q10 avant la synthèse.
+
+## GitHub — choix conditionnels avant la synthèse
+
+Après Q10 et ses compléments éventuels, si ce choix n'est pas déjà connu, poser **Souhaitez-vous conserver les sources de votre projet dans un dépôt sur GitHub ?**
+
+- Oui — créer un nouveau dépôt (`new`).
+- Oui — utiliser un dépôt existant (`existing`).
+- Non — pour le moment (`none`).
+
+Enregistrer et relire sous `github.repository`. Après Oui seulement, si le mode manque, poser **Quand souhaitez-vous envoyer vos commits sur GitHub ?**
+
+- Après chaque commit local du projet (`after-commit`).
+- Uniquement à ma demande (`on-demand`).
+
+Enregistrer et relire sous `github.sync`. Après Non, passer à la synthèse sans poser le mode. Questions natives et attente suivent le protocole commun ; aucune présélection ne vaut réponse. Ne conserver ici que ces valeurs fermées non secrètes ; ni jeton ni autorisation de publication dans ces réponses.
+
+Expliquer que les commits regroupent les modifications selon les lots : par défaut, envoi de chaque commit éligible après intégration locale dans `main`, pas à chaque retouche ni pour les seules branches de travail. Ce choix exprime une intention. Compte/organisation, nom/lien, visibilité et branche seront complétés si nécessaires après validation du cadrage, avec récapitulatif concret avant création ou premier envoi selon [Publication GitHub](../github-publication.md).
+
+Réutiliser les réponses connues entre conversations ; ne pas imposer ces questions rétrospectivement aux projets engagés. Non/report reste acquis jusqu'à une demande de changement. Pour la démo aussi, poser les questions manquantes sans choisir GitHub par défaut ni créer de compte/dépôt. La synthèse couvre Q1–Q10 et ces préférences ; l'accord de développement ne vaut pas publication.
 
 ## Démonstration automatique et autorisation
 
@@ -194,7 +213,7 @@ Présenter le brief puis **Ce projet de démonstration vous convient-il ?**
 - Proposer un autre brief de démonstration.
 
 
-Accord : mémoriser le brief, reprendre à Q7 et recueillir les informations manquantes jusqu’à Q10 en appliquant ses branches : Q7 Non saute Q8, puis choix natifs Q9/Q10 et traduction seulement dans le cas conditionnel prévu. Refus : produire un autre brief tenant compte des précisions puis représenter le choix. Si des précisions modifient matériellement le brief, l’ajuster avant validation ; une contradiction exige clarification. Aucun développement avant validation de la synthèse complète. Ne pas livrer la démonstration comme contenu initial du kit ni réactiver les anciens exemples.
+Accord : mémoriser le brief, reprendre à Q7 et recueillir les informations manquantes jusqu’à Q10 puis aux choix GitHub conditionnels en appliquant les branches : Q7 Non saute Q8, puis choix natifs Q9/Q10 et traduction seulement dans le cas conditionnel prévu. Refus : produire un autre brief tenant compte des précisions puis représenter le choix. Si des précisions modifient matériellement le brief, l’ajuster avant validation ; une contradiction exige clarification. Aucun développement avant validation de la synthèse complète. Ne pas livrer la démonstration comme contenu initial du kit ni réactiver les anciens exemples.
 
 Après la réponse au mode de vérification, l’enregistrer sous l’identifiant `verification` avant de demander l’autorisation de réalisation. Ne pas confondre la préférence de vérification avec l’accord de développement.
 
@@ -205,7 +224,7 @@ Après cadrage, présenter résultat observable, inclusions/exclusions, hypothè
 
 Une demande explicite de démarrage (« Démarrons », nouveau projet ou démo) autorise l’enregistrement minimal du cadrage et de l’accueil, sans installation ni développement. Cette exception remplace l’attente d’une validation d’exécution pour ces seules écritures. Ne pas attendre la synthèse finale pour mémoriser les réponses. Au début, exécuter `node scripts/project-intake.mjs show`. Après l’accueil, après chaque réponse reçue (même partielle) et avant d’appeler la question suivante, enregistrer puis relire avec `node scripts/project-intake.mjs record <fichier-evenement.json>`.
 
-L’événement JSON contient `welcomeShown` (booléen facultatif), `answers` (liste facultative de `{ "id": "q1", "value": "…", "status": "provided", "origin": "user" }`) et `pending` (prochaine décision, ou null). Identifiants : `entry`, `demo`, `q1` à `q10`, `q6.platforms`, `q6.computer`, `q6.tablet`, `q6.mobile`, `q6.other`, `q9.default`, `q10.default`, `translation`, `verification`, `approval`. Statuts : `provided`, `proposed`, `pending`, `deferred`, `skipped`. Origines : `user`, `brief`, `assistant`, `branch`. Les propositions et questions sautées ne sont pas des réponses utilisateur. L’assistant prépare le JSON par un outil de fichier, sans interpoler les textes utilisateur dans une commande shell. Aucun secret ni contenu privé de pièce jointe dans cet état.
+L’événement JSON contient `welcomeShown` (booléen facultatif), `answers` (liste facultative de `{ "id": "q1", "value": "…", "status": "provided", "origin": "user" }`) et `pending` (prochaine décision, ou null). Identifiants : `entry`, `demo`, `q1` à `q10`, `q6.platforms`, `q6.computer`, `q6.tablet`, `q6.mobile`, `q6.other`, `q9.default`, `q10.default`, `translation`, `verification`, `approval`, `github.repository`, `github.sync`. Statuts : `provided`, `proposed`, `pending`, `deferred`, `skipped`. Origines : `user`, `brief`, `assistant`, `branch`. Les propositions et questions sautées ne sont pas des réponses utilisateur. L’assistant prépare le JSON par un outil de fichier, sans interpoler les textes utilisateur dans une commande shell. Aucun secret ni contenu privé de pièce jointe dans cet état.
 
 L’outil conserve l’autorité dans un bloc JSON géré de `docs/product/brief.md`, avec un pointeur de reprise dans `docs/project-state.md`, sans écraser le reste des documents ni la roadmap. Le bloc courant distingue l’intention du projet des paragraphes historiques de l’exemple. Il refuse les liens symboliques, écritures concurrentes et blocs invalides. Si la seconde écriture échoue, les réponses déjà sauvées dans le brief restent l’autorité : signaler l’échec et réparer le pointeur avant de poursuivre, sans les ressaisir. En cas de permission/outil indisponible, annoncer que la persistance n’est pas assurée et rester sur le point en cours ; ne pas annoncer un enregistrement fictif. Aucun appel d’enregistrement dans le modèle de maintenance pour y mettre les réponses du mainteneur.
 
@@ -213,7 +232,7 @@ Le brief dans `docs/product/brief.md` et son bloc « Réponses de cadrage » son
 
 Dans une nouvelle conversation, lire ces autorités avant toute question. Reprendre une transmission attendue sans reposer son premier niveau. Un report n’est rouvert que sur demande, contradiction ou décision matériellement nécessaire. Une nouvelle conversation ne réinitialise pas le projet ni son autorisation. Les préférences techniques documentaires suivent [Langues du projet](languages.md) : elles sont distinctes du brief produit, avec migration des anciennes valeurs.
 
-Ne pas écrire les réponses d’un mainteneur dans le modèle distribué. Le suivi des projets dérivés n’est initialisé qu’après mandat. Les réponses de cadrage autorisent leur enregistrement minimal dans la copie visée par la demande explicite de démarrage, pas la réalisation de l’application. Avant développement, présenter une synthèse concrète couvrant Q1–Q10, hypothèses, exclusions, critères et vérifications puis attendre son autorisation, sauf accord explicite déjà acquis sur ce même périmètre. Pour la démonstration aussi, l’accord intermédiaire reprend à Q7 sans lancer le développement. Acceptation de la livraison et publication restent distinctes.
+Ne pas écrire les réponses d’un mainteneur dans le modèle distribué. Le suivi des projets dérivés n’est initialisé qu’après mandat. Les réponses de cadrage autorisent leur enregistrement minimal dans la copie visée par la demande explicite de démarrage, pas la réalisation de l’application. Avant développement, présenter une synthèse concrète couvrant Q1–Q10, préférences GitHub, hypothèses, exclusions, critères et vérifications puis attendre son autorisation, sauf accord explicite déjà acquis sur ce même périmètre. Pour la démonstration aussi, l’accord intermédiaire reprend à Q7 sans lancer le développement. Acceptation de la livraison et publication restent distinctes.
 
 ## Transmission aux procédures de réalisation
 

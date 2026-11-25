@@ -1,6 +1,6 @@
 # Recommander le modèle Claude Code et l’effort par chantier
 
-Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
+Cette politique explique comment recommander un modèle Claude Code et son niveau d’effort à partir du travail à réaliser. Elle s’applique lorsque Claude Code est le point d’entrée actif, sans questionnaire de choix d’assistant. Une recommandation conserve sa provenance : celle d’un autre assistant ne devient pas une recommandation Claude courante.
 
 ## Références et disponibilité
 
@@ -41,10 +41,6 @@ Exemples : une couleur locale vérifiée peut relever de moyenne ; une transform
 
 Suivre le [traitement commun](../../AGENTS.md#traitement-des-demandes-et-validation-de-lexécution) et l’[affichage commun](../../AGENTS.md#affichage-et-reprise) :
 
-Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
-
-Appliquer la politique correspondant au point d’entrée actif selon AGENTS, sans question d’assistant ni lecture de son ancien choix local. Conserver la provenance des recommandations ; une ancienne recommandation d’un autre assistant ne vaut pas recommandation courante.
-
 ## Choisir manuellement dans Claude Code
 
 L’utilisateur ouvre `/model` pour choisir le modèle, puis `/effort` pour le niveau. Dans les sélecteurs compatibles, `s` limite le choix à la session. Envoyer ensuite un message de validation ou de reprise pour le travail concerné. Ne modifier automatiquement aucun réglage utilisateur ou projet ; ne pas affirmer que le sélecteur a changé sur la seule base d’une réponse de validation. Si le choix est indisponible ou limité par l’organisation, signaler la limite et proposer une configuration accessible à valider.
@@ -53,4 +49,4 @@ La lecture documentaire ne prouve ni sélection effective ni comportement natif.
 
 ## Questions et commentaires utilisateur
 
-Appliquer le [protocole commun](../agents/user-decisions.md) pour les décisions utiles et leur instruction complémentaire facultative. Le choix initial propose Codex (OpenAI) / Claude Code (Anthropic), sans champ complémentaire demandé. Une option de mode ou un commentaire ne sélectionne pas le modèle dans le client et ne vaut pas accord d’exécution sans expression explicite. Conserver les règles d’affichage du couple déjà définies ; ce protocole ne déclenche aucune recommandation répétée.
+Appliquer le [protocole commun](../agents/user-decisions.md) pour les décisions utiles et leur instruction complémentaire facultative. Une option de mode ou un commentaire ne sélectionne pas le modèle dans le client et ne vaut pas accord d’exécution sans expression explicite. Conserver les règles d’affichage du couple déjà définies ; ce protocole ne déclenche aucune recommandation répétée.

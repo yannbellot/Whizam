@@ -1,3 +1,4 @@
+import { toolIdentity } from './tool-identity.mjs'
 import { validLocale, publishedLocales } from './documentation-preference.mjs'
 import { localePresentation, translateNavigation } from './documentation-languages.mjs'
 import {
@@ -193,6 +194,7 @@ export async function collect(root, locale = 'fr') {
             !/\.(md|json|yaml|yml|toml|ts|tsx|js|mjs|css|sh|svg|png|jpg|jpeg|webp|pdf)$/.test(
               source,
             ) &&
+            source !== 'LICENSE' &&
             !['.env.example', '.gitignore', '.nvmrc', 'Dockerfile'].includes(path.basename(source))
           )
             throw new Error('Unsupported resource: ' + source)
@@ -201,7 +203,9 @@ export async function collect(root, locale = 'fr') {
             hash(source).slice(0, 12) +
             '-' +
             path.basename(source) +
-            (/\.(ts|tsx|js|mjs|sh|toml|yaml|yml|json|css)$/.test(source) ? '.txt' : '')
+            (source === 'LICENSE' || /\.(ts|tsx|js|mjs|sh|toml|yaml|yml|json|css)$/.test(source)
+              ? '.txt'
+              : '')
           outputs.set(name, await fs.readFile(full))
           replacement = path.posix.relative(path.posix.dirname(target), name)
         } catch (e) {
@@ -239,13 +243,6 @@ export async function collect(root, locale = 'fr') {
       })
       .join('\n')
 
-    if (kitReference) {
-      const notice =
-        locale === 'en'
-          ? '> Kit reference: adapt project-specific information; dated evidence retains its historical scope.\n\n'
-          : '> Référence fournie avec le kit : adapter les informations propres au projet ; les preuves datées conservent leur portée historique.\n\n'
-      rendered = notice + rendered
-    }
     outputs.set(target, Buffer.from(rendered))
   }
   // Zensical exige une entrée d’accueil même si aucun document n’est publié.
@@ -307,44 +304,82 @@ export async function collect(root, locale = 'fr') {
     const homeLink = (source, label) =>
       pages.has(source) ? `[${label}](${pages.get(source)})` : label
     const home = `<a id="documentation-du-projet"></a>
+<a id="bienvenue-dans-whizam"></a>
 
-# Bienvenue dans Whizam
+# Concevoir et développer avec Whizam
 
-Donnez forme à votre projet web, de la première idée à une version que vous pouvez parcourir et faire évoluer.
+**Whizam est un kit open source qui facilite la conception et le développement d’applications et de sites web avec l’assistance d’agents IA (Claude ou Codex).**
 
-Whizam est un kit conçu pour les designers UX/UI et Product Designers qui souhaitent créer une application web avec l’aide d’un assistant IA. Il réunit une base d’application, des composants réutilisables, des guides et des méthodes pour avancer étape par étape.
+Destiné en premier lieu aux designers, il propose un cadre de travail pour passer du vibe coding à **une méthode de développement structurée, fiable et durable**, sans connaissances préalables en programmation.
 
-Vous apportez l’intention, les contenus et les choix de conception. L’assistant vous aide à préciser le besoin, réaliser les évolutions convenues et vérifier le résultat. Vous examinez les propositions et décidez de ce qui vous convient.
+Vous pouvez l’utiliser pour réaliser un **POC** (Proof of concept) ou la **première version d’un produit** (MVP), et aller au-delà du simple prototype fonctionnel.
 
-## Par où commencer ?
+Tout au long du projet, **une documentation est enrichie et mise à jour** pour conserver les choix de conception, les informations techniques et l’historique du produit. Elle facilitera la poursuite du développement, la transmission de votre projet à une équipe technique et la **préparation de son déploiement à plus grande échelle.**
 
-**Vous découvrez Whizam ?** Le guide vous présente le kit et la manière de travailler avec votre assistant. ${homeLink('docs/guide-whizam/index.md', 'Découvrir Whizam')}.
+## Une méthode pour construire et faire évoluer votre projet
 
-**Vous démarrez un projet ?** Préparez votre copie du kit, puis définissez une première version adaptée à votre idée. ${homeLink('docs/guide-whizam/preparer-kit.md', 'Préparer mon premier projet')}.
+**Whizam a pour objectif de vous simplifier la vie de l’initialisation du projet à sa livraison.**
 
-**Vous reprenez un projet ?** Retrouvez ce qui a été réalisé, les décisions à prendre et la prochaine étape. ${homeLink('docs/project-state.md', 'Retrouver le suivi de mon projet')}.
+Pensez en designer, Whizam s’occupe du reste :
 
-## Trois espaces pour avancer
+- Prise de brief, cadrage du périmètre fonctionnel de votre produit
+- Planification de la feuille de route, gestion des versions et des mises à jour, avec conservation des sources sur GitHub si vous le souhaitez.
+- Préparation et exécution du développement, des tests et revues de la qualité technique, de la sécurité et du design
+- Actualisation de la documentation et gestion du design system
+- Passation du projet à des équipes techniques
 
-- **Application** : parcourir les pages et les interactions réalisées pour votre projet.
-- **Storybook** : consulter les composants, leurs variantes et leurs états documentés.
-- **Documentation** : apprendre à utiliser Whizam, retrouver les choix et le suivi du projet, et consulter les références techniques.
+**Vous restez maître de votre produit tout en restant concentré sur ce qui fait sa réelle valeur et la votre : le design.**
 
-Dans un kit neuf, l’application et Storybook n’ont pas encore de contenu métier. Vous pouvez déjà explorer les guides et les modèles de suivi pour préparer la suite.
+## Que contient le kit ?
 
-## Besoin d’un repère ?
+Whizam se présente sous forme de **dossier à télécharger** sur votre ordinateur, auquel **connecter votre agent IA** (Claude ou Codex). Ce dossier contient l’ensemble des outils de conception et de développement de votre projet :
 
-Le ${homeLink('docs/guide-whizam/index.md', 'Guide d’utilisation')} vous accompagne dans les gestes du quotidien.
+- **Un socle technique web et applicatif,** qui constitue l’infrastructure technique et de développement de votre produit.
+- **Des instructions pour les agents IA (rôles et skills)**, pour organiser le cadrage, la conception, la réalisation et la revue du travail.
+- **Des outils de test automatisé,** pour vérifier le code et préparer la transmission du projet.
+- **Un design system et des composants réutilisables**, pour construire une interface cohérente.
+- **Storybook**, pour consulter les composants, leurs variantes et leurs états.
+- **Des guides et des modèles de suivi**, pour documenter les contenus, les décisions et l’avancement du projet.
+
+## Comment utiliser Whizam ?
+
+### Démarrer un nouveau projet
+
+1. **Téléchargez** le dossier Whizam kit sur votre ordinateur.
+2. **Ouvrez** le dossier Whizam kit dans votre agent IA Claude ou Codex.
+3. Une fois le dossier du kit ouvert dans votre assistant, vous pouvez transmettre à Whizam vos instructions : un **brief**, une demande de **projet démo fictif** pour tester le kit ou vous laisser **guider par l’assistant** qui vous accompagnera dans la définition du périmètre de votre projet.
+
+4. **Choisissez si vous souhaitez utiliser GitHub** pour conserver et partager les sources de votre projet. L’assistant peut vous accompagner pour créer un dépôt ou utiliser un dépôt existant, puis envoyer vos modifications après chaque commit ou uniquement à votre demande.
+
+### Créer et itérer
+
+À chaque demande :
+
+- L’agent **examine les fichiers** et précise avec vous les informations nécessaires
+- Vous **propose une solution** que vous validez pour la suite.
+
+À chaque étape de votre projet, vous pouvez suivre son évolution :
+
+- L'application, pour **tester les pages** et les interactions au fur et à mesure du développement.
+- La documentation et la **feuille de route**, pour suivre l’avancement du projet et les décisions prises.
+- **Storybook**, pour examiner les composants, leurs variantes et leurs états.
+
+### Transmettre et partager
+
+Votre projet terminé, vous pourrez le **partager à une équipe technique** en vu de son **déploiement** ou de sa **distribution.**
+
+**Si vous avez choisi de conserver votre projet sur GitHub, vous pouvez donner accès à son dépôt à l’équipe qui prendra le relais.** L’assistant vous aide à préparer une version à jour et les informations nécessaires à sa reprise.
 
 <a id="documentation-designer"></a>
-
-La ${homeLink('docs/project-state.md', 'Documentation designer')} rassemble les contenus, les choix de conception et le suivi de votre projet.
-
 <a id="documentation-technique"></a>
 
-La ${homeLink('TECHNICAL-GUIDE.md', 'Documentation technique')} détaille son fonctionnement et son exploitation.
+## Consulter la documentation
 
-${homeLink('docs/guide-whizam/questions-frequentes.md', 'Consulter les questions fréquentes')}.
+- ${homeLink('docs/guide-whizam/index.md', 'Guide d’utilisation')} — Préparer le kit, travailler avec l’agent et vérifier les résultats.
+- ${homeLink('docs/project-state.md', 'Suivi de projet')} — Retrouver les contenus, les choix de conception et le suivi du projet.
+- ${homeLink('TECHNICAL-GUIDE.md', 'Documentation technique')} — Comprendre le fonctionnement technique et l’exploitation du projet.
+- ${homeLink('docs/guide-whizam/partager-projet.md', 'Partager votre projet')} — Préparer la transmission et la mise en ligne du projet.
+- ${homeLink('docs/licence-reutilisation.md', 'Licence et réutilisation')} — Comprendre la licence MIT du kit et les mentions à conserver.
 `
     // L’accueil du portail est une vue ; README reste une source unique sans copie éditable.
     if (pages.has('README.md')) throw new Error('README must be classified outside the portal home')
@@ -368,7 +403,7 @@ ${homeLink('docs/guide-whizam/questions-frequentes.md', 'Consulter les questions
   if (locale === 'en') nav = localizeNavigation(nav)
   // Only explicit, local presentation resources are published; no network at build time.
   for (const name of catalog.presentationAssets ?? []) {
-    if (typeof name !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9.-]*\.(css|ttf|txt)$/.test(name))
+    if (typeof name !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9.-]*\.(css|js|svg|ttf|txt)$/.test(name))
       throw new Error('Invalid documentation presentation asset')
     const target = 'assets/typography/' + name
     if (outputs.has(target)) throw new Error('Documentation asset collision')
@@ -382,21 +417,52 @@ ${homeLink('docs/guide-whizam/questions-frequentes.md', 'Consulter les questions
     if (!faces) throw new Error('Portal typography requires local font declarations')
     outputs.set(
       'assets/typography/portal.css',
-      Buffer.concat([faces, Buffer.from('\n'), portalStyle]),
+      Buffer.concat([
+        faces,
+        Buffer.from('\n'),
+        portalStyle,
+        Buffer.from('\n'),
+        outputs.get('assets/typography/tool-controls.css') ?? Buffer.alloc(0),
+      ]),
     )
   }
   // Include canonical sources in the digest even when an English translation is unchanged.
+  const presentationTemplates = new Map()
+  const configText = await fs.readFile(await safe(root, 'zensical.toml'), 'utf8')
+  if (configText.includes('custom_dir = "overrides"')) {
+    for (const file of ['main.html', 'partials/nav.html']) {
+      presentationTemplates.set(
+        file,
+        await fs.readFile(await safe(root, 'config/documentation/overrides/' + file), 'utf8'),
+      )
+    }
+  }
+  const identity = await toolIdentity(root)
   const originalDigest = JSON.stringify([...originals])
   const preference = await readDocumentationPreference(root)
   const digest = hash(
-    JSON.stringify(preference) +
+    identity +
+      JSON.stringify([...presentationTemplates]) +
+      JSON.stringify(preference) +
       locale +
       originalDigest +
+      hash(await fs.readFile(fileURLToPath(import.meta.url))) +
       (await fs.readFile(await safe(root, 'zensical.toml'), 'utf8')) +
       JSON.stringify(catalog) +
       JSON.stringify([...outputs].map(([f, b]) => [f, hash(b)])),
   )
-  return { outputs, classification, diagnostics, digest, catalog, pages, nav, preference }
+  return {
+    outputs,
+    classification,
+    diagnostics,
+    digest,
+    catalog,
+    pages,
+    nav,
+    preference,
+    presentationTemplates,
+    identity,
+  }
 }
 async function run(args, cwd) {
   await new Promise((resolve, reject) => {
@@ -406,6 +472,17 @@ async function run(args, cwd) {
       code === 0 ? resolve() : reject(new Error('Docker documentation failed: ' + code)),
     )
   })
+}
+// The pinned theme renders a skip link on 404 pages but omits its target.
+// Keep native anchor navigation and fail before publication if that template changes.
+export function ensureNotFoundSkipTarget(html) {
+  const target = '<h1 id="__skip" tabindex="-1">'
+  const targets = html.match(/\bid="__skip"/g) ?? []
+  if (!html.includes('href="#__skip"')) throw new Error('404 skip link missing')
+  if (targets.length === 1 && html.includes(target)) return html
+  if (targets.length || (html.match(/<h1>/g) ?? []).length !== 1)
+    throw new Error('Unexpected 404 content target; review the documentation theme')
+  return html.replace('<h1>', target)
 }
 async function performBuild(root) {
   await synchronize(root)
@@ -421,6 +498,11 @@ async function performBuild(root) {
     const p = path.join(attempt, 'input', file)
     await fs.mkdir(path.dirname(p), { recursive: true })
     await fs.writeFile(p, bytes)
+  }
+  for (const [file, content] of state.presentationTemplates) {
+    const destination = path.join(attempt, 'overrides', file)
+    await fs.mkdir(path.dirname(destination), { recursive: true })
+    await fs.writeFile(destination, content, { flush: true })
   }
   const template = await fs.readFile(await safe(root, 'zensical.toml'), 'utf8')
   // Each locale has its own index and search. Publish both only after both builds succeed.
@@ -452,6 +534,10 @@ async function performBuild(root) {
     )
     const config =
       template
+        .replace(
+          /^site_name = .*$/m,
+          'site_name = ' + JSON.stringify('Documentation — ' + state.identity),
+        )
         .replace('docs_dir = "input"', `docs_dir = "${locale}"`)
         .replace('site_dir = "site"', `site_dir = "site/${locale}"`)
         .replace('language = "fr"', `language = "${presentation?.themeLanguage ?? locale}"`)
@@ -482,6 +568,8 @@ async function performBuild(root) {
       root,
     )
     await fs.access(path.join(attempt, 'site', locale, 'index.html'))
+    const notFound = path.join(attempt, 'site', locale, '404.html')
+    await fs.writeFile(notFound, ensureNotFoundSkipTarget(await fs.readFile(notFound, 'utf8')))
   }
   // Preserve the old French URLs; language switching retains the current page path.
   await installLanguageLinks(

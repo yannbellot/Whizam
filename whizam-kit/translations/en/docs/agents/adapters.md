@@ -27,7 +27,7 @@ For useful decisions after welcome, use the tool exposed/authorized by the clien
 
 ## First request in an extracted kit
 
-“Initialize a new project Atlas” is routed by [AGENTS.md](../../AGENTS.md#démarrer-un-nouveau-projet) to [initialize-project](../../skills/initialize-project/SKILL.md). The skill, environment reference and [standalone workflow](../product/project-start.md) travel with sources; both relative exposures remain unchanged. The skill prepares technical work; the Builder hands scoping/implementation to existing procedures. Application/Storybook access points appear at first review under that workflow; no globally installed prompt. If native discovery is absent, the assistant may explicitly read files after AGENTS without treating this as successful native discovery. Preserve Mistral’s explicit AGENTS entry above. This workflow/limits are distinct from the historical scenario below.
+“Initialize a new project Atlas” is routed by [AGENTS.md](../../AGENTS.md#démarrer-un-nouveau-projet) to [initialize-project](../../skills/initialize-project/SKILL.md). The skill, environment reference and [standalone workflow](../product/project-start.md) travel with sources; both relative exposures remain unchanged. The skill prepares technical work; the Builder hands scoping/implementation to existing procedures. Application, Storybook and Documentation access points appear after verification at first review under that workflow; no globally installed prompt. If native discovery is absent, the assistant may explicitly read files after AGENTS without treating this as successful native discovery. Preserve Mistral’s explicit AGENTS entry above. This workflow/limits are distinct from the historical scenario below.
 
 ## Common scenario
 
@@ -42,3 +42,7 @@ Conventions documented on 21 October 2026 and retained during integration; reche
 ## Documentation language
 
 Apply [initial scoping](project-intake.md): conditional questions, conversational follow-ups and resumption from the brief/checkpoint. Do not ask which assistant is used; use its entry-point policy. Collect missing documentation languages at Q10 according to [Project languages](languages.md).
+
+## GitHub publication skill
+
+[publish-github-project](../../skills/publish-github-project/SKILL.md) is exposed through the same relative links in `.agents/skills/` and `.claude/skills/`. Without native discovery read its source explicitly. The [GitHub journey](../github-publication.md) distinguishes existing access, browser login and conditional local form; embedded opening depends on the client, with a local browser link as fallback. Skill presence proves neither native Codex/Claude invocation nor real account rights.

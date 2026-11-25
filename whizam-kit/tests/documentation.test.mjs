@@ -4,8 +4,25 @@ import * as fs from 'node:fs/promises'
 import path from 'node:path'
 import os from 'node:os'
 import { fileURLToPath } from 'node:url'
-import { collect, safe } from '../scripts/documentation.mjs'
+import { collect, safe, ensureNotFoundSkipTarget } from '../scripts/documentation.mjs'
 import { tomlNavigation } from '../scripts/documentation-navigation.mjs'
+test('404 skip links reach one focusable content heading without changing localized text', () => {
+  for (const label of ['Aller au contenu', 'Skip to content']) {
+    const html = `<a href="#__skip">${label}</a><main><h1>404 - Not found</h1></main>`
+    const rendered = ensureNotFoundSkipTarget(html)
+    assert.match(rendered, /<h1 id="__skip" tabindex="-1">404 - Not found<\/h1>/)
+    assert.ok(rendered.includes(`>${label}</a>`))
+    assert.equal(ensureNotFoundSkipTarget(rendered), rendered)
+  }
+})
+test('a changed 404 theme cannot publish a missing or ambiguous skip target', () => {
+  assert.throws(() => ensureNotFoundSkipTarget('<h1>404</h1>'), /skip link missing/)
+  for (const content of ['', '<h1>404</h1><h1>Other</h1>', '<div id="__skip"></div>'])
+    assert.throws(
+      () => ensureNotFoundSkipTarget(`<a href="#__skip">Skip</a>${content}`),
+      /Unexpected 404 content target/,
+    )
+})
 async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'docs-fixture-'))
   t.after(() => fs.rm(root, { recursive: true, force: true }))
@@ -110,7 +127,7 @@ test('docs publication includes existing references on first collection with a u
   assert.ok(state.pages.has('docs/guide.md'))
   assert.ok(!state.pages.has('README.md'))
   assert.match(state.outputs.get('index.md').toString(), /Documentation du kit/)
-  assert.match(state.outputs.get('docs/old.md').toString(), /Référence fournie avec le kit/)
+  assert.doesNotMatch(state.outputs.get('docs/old.md').toString(), /Référence fournie avec le kit/)
   assert.equal((await collect(r)).digest, state.digest)
 })
 
@@ -130,7 +147,7 @@ test('published historical docs never fetch parent, private or unsupported refer
   )
   const state = await collect(r)
   const rendered = state.outputs.get('docs/reviews/old.md').toString()
-  assert.match(rendered, /Référence fournie avec le kit/)
+  assert.doesNotMatch(rendered, /Référence fournie avec le kit/)
   assert.equal(state.diagnostics.length, 3)
   assert.ok(!rendered.includes(']('))
   const all = [...state.outputs.values()].join('')
@@ -190,7 +207,7 @@ test('project tracking has explicit labels and order without changing its canoni
   assert.ok(nav.indexOf('Roadmap') < nav.indexOf('Étapes du projet'))
   assert.match(
     state.outputs.get('index.md').toString(),
-    /\[Retrouver le suivi de mon projet\]\(docs\/project-state.md\)/,
+    /\[Suivi de projet\]\(docs\/project-state.md\)/,
   )
   assert.equal(
     await fs.readFile(path.join(root, 'ROADMAP.md'), 'utf8'),
@@ -279,40 +296,74 @@ test('organization does not relax private link and symlink protections for new p
   await assert.rejects(safe(root, 'docs/leak.md'), /symlink/)
 })
 
-test('Whizam guide publishes nine canonical pages in pedagogical order and keeps histories excluded', async () => {
+test('Whizam guide publishes nine replacement pages in pedagogical order and keeps histories excluded', async () => {
   const root = fileURLToPath(new URL('..', import.meta.url))
   const state = await collect(root)
   assert.deepEqual(
     state.nav.map((x) => Object.keys(x)[0]),
-    ['Accueil', 'Guide d’utilisation', 'Documentation designer', 'Documentation technique'],
+    ['Accueil', 'Guide d’utilisation', 'Suivi de projet', 'Documentation technique'],
   )
+  assert.deepEqual(
+    state.nav[2]['Suivi de projet'].map((entry) => Object.keys(entry)[0]),
+    ['État courant', 'Roadmap', 'Étapes du projet'],
+  )
+  for (const source of [
+    'docs/design-system/guide.md',
+    'docs/handoff.md',
+    'docs/product/project-start.md',
+    'docs/product/replacing-project-example.md',
+  ]) {
+    assert.ok(state.pages.has(source), source + ' remains published')
+    assert.ok(
+      JSON.stringify(state.nav[3]).includes(source),
+      source + ' moved to technical references',
+    )
+  }
   const guide = state.nav[1]['Guide d’utilisation']
   assert.deepEqual(
     guide.map((x) => Object.keys(x)[0]),
     [
-      'Découvrir Whizam',
-      'Bien démarrer',
-      'Travailler avec l’assistant',
-      'Concevoir et faire évoluer son projet',
-      'Vérifier et décider',
-      'Reprendre et transmettre',
-      'Questions fréquentes',
+      'Démarrer avec Whizam',
+      'Consulter la documentation',
+      'Storybook et le design system',
+      'Partager votre projet',
+      'Modifier le fonctionnement du kit',
     ],
   )
+  assert.deepEqual(
+    guide[4]['Modifier le fonctionnement du kit'].map((entry) => Object.keys(entry)[0]),
+    [
+      'Vue d’ensemble',
+      'Modifier les rôles des agents et les skills',
+      'Modifier les règles de gestion du design system',
+      'Modifier la documentation',
+      'Modifier l’architecture technique',
+    ],
+  )
+  for (const removed of [
+    'preparer-kit',
+    'premier-projet',
+    'assistant',
+    'cadrer-version',
+    'demander-evolution',
+    'verifier-decider',
+    'reprendre-transmettre',
+    'questions-frequentes',
+  ])
+    assert.ok(!state.pages.has('docs/guide-whizam/' + removed + '.md'))
   const sources = [...state.pages.keys()].filter((x) => x.startsWith('docs/guide-whizam/'))
   assert.equal(sources.length, 9)
   for (const source of sources) {
     assert.equal(JSON.stringify(guide).split(source).length, 2)
     assert.ok(!state.diagnostics.some((d) => d.file === source), source)
   }
-  assert.match(state.outputs.get('index.md').toString(), /\[Découvrir Whizam\]/)
   const home = state.outputs.get('index.md').toString()
-  assert.match(home, /# Bienvenue dans Whizam/)
+  assert.match(home, /# Concevoir et développer avec Whizam/)
   for (const [label, target] of [
-    ['Découvrir Whizam', 'docs/guide-whizam/index.md'],
-    ['Préparer mon premier projet', 'docs/guide-whizam/preparer-kit.md'],
-    ['Retrouver le suivi de mon projet', 'docs/project-state.md'],
-    ['Consulter les questions fréquentes', 'docs/guide-whizam/questions-frequentes.md'],
+    ['Guide d’utilisation', 'docs/guide-whizam/index.md'],
+    ['Documentation technique', 'TECHNICAL-GUIDE.md'],
+    ['Suivi de projet', 'docs/project-state.md'],
+    ['Partager votre projet', 'docs/guide-whizam/partager-projet.md'],
   ])
     assert.ok(home.includes(`[${label}](${target})`))
   for (const anchor of [
@@ -330,7 +381,16 @@ test('local presentation assets are published, hashed and bounded to the documen
   const r = await fixture(t)
   const catalogPath = path.join(r, 'config/documentation/catalog.json')
   const catalog = JSON.parse(await fs.readFile(catalogPath, 'utf8'))
-  catalog.presentationAssets = ['fonts.css', 'Inter.ttf', 'OFL.txt', 'portal.css']
+  catalog.presentationAssets = [
+    'fonts.css',
+    'Inter.ttf',
+    'OFL.txt',
+    'portal.css',
+    'system-theme.js',
+    'tool-controls.css',
+    'globe.svg',
+    'search.svg',
+  ]
   await fs.writeFile(catalogPath, JSON.stringify(catalog))
   await fs.mkdir(path.join(r, 'public/documentation'), { recursive: true })
   for (const name of catalog.presentationAssets)
@@ -338,8 +398,21 @@ test('local presentation assets are published, hashed and bounded to the documen
   const before = await collect(r)
   assert.equal(before.outputs.get('assets/typography/Inter.ttf').toString(), 'synthetic-Inter.ttf')
   assert.match(before.outputs.get('assets/typography/portal.css').toString(), /synthetic-fonts.css/)
+  assert.match(
+    before.outputs.get('assets/typography/portal.css').toString(),
+    /synthetic-tool-controls.css/,
+  )
+  assert.equal(before.outputs.get('assets/typography/globe.svg').toString(), 'synthetic-globe.svg')
   await fs.writeFile(path.join(r, 'public/documentation/portal.css'), 'updated-style')
   assert.notEqual((await collect(r)).digest, before.digest)
+  assert.equal(
+    before.outputs.get('assets/typography/system-theme.js').toString(),
+    'synthetic-system-theme.js',
+  )
+  await fs.writeFile(path.join(r, 'public/documentation/system-theme.js'), 'changed-script')
+  const scriptState = await collect(r)
+  await fs.writeFile(path.join(r, 'public/documentation/system-theme.js'), 'changed-again')
+  assert.notEqual((await collect(r)).digest, scriptState.digest)
   catalog.presentationAssets = ['../private.css']
   await fs.writeFile(catalogPath, JSON.stringify(catalog))
   await assert.rejects(collect(r), /Invalid documentation presentation asset/)
@@ -347,5 +420,75 @@ test('local presentation assets are published, hashed and bounded to the documen
   await fs.writeFile(catalogPath, JSON.stringify(catalog))
   await fs.rm(path.join(r, 'public/documentation/fonts.css'))
   await fs.symlink('/etc/passwd', path.join(r, 'public/documentation/fonts.css'))
+  await assert.rejects(collect(r), /symlink/)
+})
+
+test('root LICENSE is published byte-for-byte as text, tracked for freshness, without opening other extensionless resources', async (t) => {
+  const root = await fixture(t)
+  const license = 'MIT License\nCopyright (c) 2026 Synthetic fixture\n'
+  await fs.writeFile(path.join(root, 'LICENSE'), license)
+  await fs.writeFile(path.join(root, 'docs/guide.md'), '# Usage\n[Licence](../LICENSE)')
+  const first = await collect(root)
+  const asset = [...first.outputs.keys()].find((name) => /-LICENSE\.txt$/.test(name))
+  assert.ok(asset)
+  assert.equal(first.outputs.get(asset).toString(), license)
+  assert.match(first.outputs.get('docs/guide.md').toString(), /assets\/[^)]+-LICENSE\.txt/)
+  await fs.writeFile(path.join(root, 'LICENSE'), license + 'Synthetic update\n')
+  assert.notEqual((await collect(root)).digest, first.digest)
+  await fs.writeFile(path.join(root, 'INTERNAL'), 'Synthetic unapproved resource')
+  await fs.writeFile(path.join(root, 'docs/guide.md'), '# Usage\n[Internal](../INTERNAL)')
+  await assert.rejects(collect(root), /Unsupported resource/)
+  await fs.writeFile(path.join(root, 'docs/guide.md'), '# Usage\n[Licence](../LICENSE)')
+  await fs.rename(path.join(root, 'LICENSE'), path.join(root, 'original-license'))
+  await fs.symlink('original-license', path.join(root, 'LICENSE'))
+  await assert.rejects(collect(root), /symlink refused/)
+})
+
+test('active agent instructions can be excluded without becoming history or leaking through links', async (t) => {
+  const r = await fixture(t)
+  const catalogPath = path.join(r, 'config/documentation/catalog.json')
+  const catalog = JSON.parse(await fs.readFile(catalogPath, 'utf8'))
+  catalog.organization = {
+    documents: {
+      'README.md': { kind: 'history' },
+      'docs/old.md': { kind: 'guide', audience: 'agents', published: false },
+    },
+  }
+  await fs.writeFile(catalogPath, JSON.stringify(catalog))
+  await fs.writeFile(path.join(r, 'docs/guide.md'), '# Usage\n[Agent source](old.md)')
+  const state = await collect(r)
+  assert.equal(state.classification.find((x) => x.source === 'docs/old.md').kind, 'guide')
+  assert.equal(state.pages.has('docs/old.md'), false)
+  assert.ok(![...state.outputs.values()].join('').includes('SECRET_HISTORY_SENTINEL'))
+  assert.match(state.outputs.get('docs/guide.md').toString(), /document non publié/)
+  assert.ok(state.pages.has('docs/guide.md'), 'unclassified new guides remain published')
+  await fs.mkdir(path.join(r, 'docs/work-items'))
+  await fs.writeFile(path.join(r, 'docs/work-items/new.md'), '# New project task')
+  const next = await collect(r)
+  assert.ok(next.pages.has('docs/work-items/new.md'))
+  assert.equal(
+    next.classification.find((x) => x.source === 'docs/work-items/new.md').kind,
+    'project',
+  )
+  for (const bad of [{ published: 'false' }, { audience: 'unknown' }]) {
+    catalog.organization.documents['docs/old.md'] = { kind: 'guide', ...bad }
+    await fs.writeFile(catalogPath, JSON.stringify(catalog))
+    await assert.rejects(collect(r), /Invalid (publication flag|documentation audience)/)
+  }
+})
+
+test('presentation templates participate in freshness and reject escaping links', async (t) => {
+  const r = await fixture(t)
+  await fs.appendFile(path.join(r, 'zensical.toml'), '\ncustom_dir = "overrides"\n')
+  const directory = path.join(r, 'config/documentation/overrides')
+  await fs.mkdir(path.join(directory, 'partials'), { recursive: true })
+  await fs.writeFile(path.join(directory, 'main.html'), 'template-v1')
+  await fs.writeFile(path.join(directory, 'partials/nav.html'), 'navigation')
+  const before = await collect(r)
+  assert.equal(before.presentationTemplates.get('main.html'), 'template-v1')
+  await fs.writeFile(path.join(directory, 'main.html'), 'template-v2')
+  assert.notEqual((await collect(r)).digest, before.digest)
+  await fs.rm(path.join(directory, 'main.html'))
+  await fs.symlink('/etc/passwd', path.join(directory, 'main.html'))
   await assert.rejects(collect(r), /symlink/)
 })

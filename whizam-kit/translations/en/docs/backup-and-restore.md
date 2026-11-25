@@ -1,25 +1,46 @@
-# Backup, restoration and version rollback
+# Backup, restore and version rollback
 
-Tested scope: PostgreSQL 18.6, schema/migration 0000, candidate code 1a33aee. Fictional data and dedicated resources only. Historical P5-03 report is not included; results summarized below do not qualify a new version. This documentation authorizes no real/shared-database procedures.
+Sources and data are transferred separately. A PostgreSQL volume is not contained in the kit folder. The procedures below require an identified target and appropriate authorization; their presence alone authorizes no operation on real or shared databases.
 
 ## Prepare a backup
 
-Identify Compose project/source in private local configuration; check labels and absence of shared resources. Create ignored `.backups.local/` with 0700 permissions and a new 0600 file without overwriting. From the dedicated clone root, obtain the dump using:
+Identify the Compose instance and database from private configuration without displaying secrets. Verify labels, ownership and absence of shared resources. Create an ignored `.backups.local/` directory with mode 0700 and choose a new file; this example produces a private synthetic dump without overwriting:
 
 ```bash
 (umask 077; set -C; docker compose --env-file .env.local exec -T postgres sh -c 'pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" --format=custom --no-owner --no-acl' > .backups.local/synthetic-p5.dump)
 ```
 
-Redirect binary output directly to the fresh overwrite-protected file; never display/version it. Verify return code, size and SHA-256. Keep code SHA, PostgreSQL version and migrations separately. A local copy is not a durable backup policy: separate storage/encryption/retention must be defined before using real data.
+Redirect binary output straight to the file without displaying or versioning it. Verify exit status, size, 0600 permissions and SHA-256. Separately retain code, PostgreSQL and migration versions. Separate storage, encryption and retention must be defined for real data; a local copy alone is not a durable policy.
 
 ## Restore without replacing the source
 
-Verify a fresh destination name does not exist; otherwise stop without deleting it. In the owned test cluster only, `createdb` creates this destination; `pg_restore --exit-on-error --no-owner --no-acl` reads the dump through stdin. Use the configured synthetic user without displaying its password. Do not use `--clean`, resets or volume replacement.
+Within an authorized owned target, choose a new destination name. If it exists, stop without removing it. Create the destination with `createdb`, then use `pg_restore --exit-on-error --no-owner --no-acl`, reading the dump from standard input. Do not use `--clean`, resets or volume replacement.
 
-Compare exact content/counts, identifiers/dates; check constraints and Drizzle journal. Start a disposable instance of the **delivered compiled runtime** against the destination with DATABASE_URL supplied in the environment, checking idempotent migrations/bootstrap and readable journeys. P5 proved three restored rows, four in the source after post-snapshot addition, rejection of empty-name constraint violations and compiled application reading only the snapshot. The migrator provides no automatic downgrade.
+Compare expected content, identifiers, dates, constraints and the migration journal. Verify the compiled runtime and relevant flows against this destination with its private configuration. Neither file presence nor a successful dump command validates a restore. The migrator provides no automatic downgrade.
 
 ## Rollback and destructive operations
 
-Code rollback needs compatibility with the existing schema; the only current migration was tested with the same candidate, with no future compatibility promise. Prefer a separately verified restoration before switching. Replacing a database/volume, `down --volumes`, backup purge, data deletion or irreversible migration destroys state: identity, verified backup, impact and explicit authorization are prerequisites except for test resources created by the campaign. Ordinary shutdown uses `down` without volumes to preserve data.
+Restore code and sources compatible with the schema together. Prefer a verified separate restore before switching. Never assume an older version can read a newer schema.
 
-P5 campaigns cleaned only identified containers/volume/network; synthetic dumps remain private/ignored. The initial check wrongly used source absent from the image: that failure is retained, followed by successful distributed-runtime retest. It proves neither restoration failure nor missing source in the expected distribution.
+Database/volume replacement, `down --volumes`, backup purges, data deletion or irreversible migrations require identity, impact, a verified backup and explicit authorization. Ordinary shutdown uses `down` without volumes; see [operations](operations.md). Design system rollback follows its [policy](design-system/policy.md), without mixing the former editor and new sources.
+
+## Historical evidence scope
+
+The previous P5 summary remains in historical sources. It concerns PostgreSQL 18.6, migration 0000, candidate `1a33aee`, synthetic data and dedicated resources. It reports a verified restore with exact content and the compiled runtime; the initial incorrect trial and retest remain preserved. This result qualifies neither a derived project's schema nor a new kit edition.
+
+Checks for a new restore must identify their own version, target, expected data and limitations. This documentation revision performs no PostgreSQL backup or restore.
+
+<a id="backup-restoration-and-version-rollback"></a>
+<a id="source-backup-restoration-and-version-rollback"></a>
+
+<a id="preparer-une-sauvegarde"></a>
+<a id="source-preparer-une-sauvegarde"></a>
+
+<a id="restaurer-sans-remplacer-la-source"></a>
+<a id="source-restaurer-sans-remplacer-la-source"></a>
+
+<a id="retour-arriere-et-operations-destructives"></a>
+<a id="source-retour-arriere-et-operations-destructives"></a>
+
+<a id="sauvegarde-restauration-et-retour-de-version"></a>
+<a id="source-sauvegarde-restauration-et-retour-de-version"></a>

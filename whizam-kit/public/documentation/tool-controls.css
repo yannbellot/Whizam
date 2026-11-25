@@ -1,0 +1,335 @@
+/* Shared tool chrome. Keep dimensions identical across Zensical and Storybook. */
+:root {
+  --whizam-control-border: #d8dadd;
+  --whizam-control-bg: #fff;
+  --whizam-control-text: #34373d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --whizam-control-border: #292c30;
+    --whizam-control-bg: #0b0c0f;
+    --whizam-control-text: rgba(226, 228, 233, 0.82);
+  }
+}
+.whizam-language-control {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font:
+    400 14px/18.2px 'Inter',
+    system-ui,
+    sans-serif !important;
+  color: var(--whizam-control-text) !important;
+}
+.whizam-language-control select {
+  box-sizing: border-box !important;
+  font:
+    400 14px/normal 'Inter',
+    system-ui,
+    sans-serif !important;
+  height: 33px !important;
+  padding: 6px 8px !important;
+  margin: 0 !important;
+  color: var(--whizam-control-text) !important;
+  background: var(--whizam-control-bg) !important;
+  border: 1px solid var(--whizam-control-border) !important;
+  border-radius: 4px !important;
+}
+.whizam-language-control > span {
+  display: block !important;
+  flex: 0 0 16px;
+  width: 16px !important;
+  height: 16px !important;
+  background: currentColor;
+  mask: url('./globe.svg') center / 16px 16px no-repeat;
+}
+.whizam-language-control > span svg {
+  display: none !important;
+}
+.whizam-language-control select:focus-visible {
+  outline: 2px solid #587cff !important;
+  outline-offset: 3px !important;
+}
+/* Documentation mirrors native Storybook search; no Storybook search override. */
+.md-nav--primary .md-search {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 32px;
+}
+.md-nav--primary .md-search__button {
+  box-sizing: border-box;
+  height: 32px !important;
+  width: 100%;
+  border: 1px solid var(--whizam-control-border) !important;
+  border-radius: 5px !important;
+  background: transparent !important;
+  font:
+    400 13px/normal 'Inter',
+    system-ui,
+    sans-serif !important;
+  align-items: center !important;
+}
+.md-nav--primary .md-search__button {
+  padding: 0 44px 0 30px !important;
+  text-align: left;
+}
+.md-nav--primary .md-search__button::before {
+  width: 14px !important;
+  height: 14px !important;
+  left: 8px !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+.md-nav--primary .md-search__button::after {
+  top: 50% !important;
+  right: 8px !important;
+  transform: translateY(-50%);
+  margin: 0 !important;
+  font:
+    400 11px/14px 'Menlo',
+    monospace !important;
+}
+.sidebar-header a[href='./'],
+.whizam-tool-heading a {
+  font:
+    700 16px/22.4px 'Inter',
+    system-ui,
+    sans-serif !important;
+  overflow-wrap: anywhere;
+}
+/* One 300px desktop column and the same 12px control inset. */
+@media (min-width: 960px) {
+  .md-sidebar--primary {
+    width: 300px !important;
+    flex: 0 0 300px;
+  }
+}
+.md-sidebar--primary .md-sidebar__inner {
+  width: 100%;
+}
+.md-nav--primary {
+  margin: 0;
+}
+.whizam-sidebar-language {
+  padding: 0 0 20px !important;
+  margin-top: 14px;
+}
+
+.md-nav--primary .md-search__button::before {
+  mask-image: url('./search.svg') !important;
+}
+/* Neutralize native shell insets rather than compensating inside each control. */
+.md-sidebar--primary .md-sidebar__inner {
+  padding: 0 !important;
+}
+.whizam-tool-heading a {
+  max-width: calc(100% - 32px);
+  min-height: 44.8px;
+}
+.sidebar-header {
+  margin-top: 4px !important;
+  margin-bottom: 24px !important;
+  align-items: flex-start !important;
+}
+.sidebar-header a[href='./'] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  display: block !important;
+  min-height: 44.8px;
+}
+div:has(> .whizam-sidebar-language) {
+  padding-top: 0 !important;
+}
+
+:root {
+  --whizam-control-muted: rgba(52, 55, 61, 0.7);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --whizam-control-muted: rgba(226, 228, 233, 0.56);
+  }
+}
+.sidebar-header a[href='./'],
+.whizam-tool-heading a {
+  color: var(--whizam-control-text) !important;
+}
+.md-nav--primary .md-search__button {
+  color: var(--whizam-control-muted) !important;
+}
+.md-nav--primary .md-search__button::before {
+  background-color: var(--whizam-control-muted) !important;
+}
+.sidebar-header a[href='./']:focus-visible,
+.whizam-tool-heading a:focus-visible {
+  outline: 2px solid #587cff;
+  outline-offset: 3px;
+}
+.md-nav--primary .md-search__button {
+  box-shadow: none !important;
+  outline: none;
+}
+.md-nav--primary .md-search__button:focus-visible {
+  outline: 2px solid #587cff;
+  outline-offset: 2px;
+}
+
+/* Storybook search stays native; only the documentary trigger follows it. */
+.md-nav--primary .md-search {
+  width: 100%;
+}
+.whizam-tool-heading {
+  padding-bottom: 40px;
+}
+:root {
+  --whizam-native-search-ring: #d9e5f2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --whizam-native-search-ring: rgba(255, 255, 255, 0.1);
+  }
+}
+.md-nav--primary .md-search__button {
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 0 0 1px var(--whizam-native-search-ring) inset !important;
+}
+.md-nav--primary .md-search__button::before {
+  left: 10px !important;
+}
+.md-nav--primary .md-search__button::after {
+  right: 8px !important;
+}
+.md-nav--primary .whizam-language-control {
+  margin-top: 30px;
+}
+
+/* Search hint: native Storybook symbol/text sizes, at the documentary field's end. */
+.md-nav--primary .md-search__button::after {
+  display: none !important;
+}
+.whizam-search-shortcut {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 2px;
+  height: 16px;
+  color: #95999d;
+  background: transparent;
+  font:
+    400 11px/16px 'Menlo',
+    monospace;
+  pointer-events: none;
+}
+.whizam-search-shortcut .whizam-shortcut-mac {
+  font:
+    400 14px/16px 'Menlo',
+    monospace;
+}
+.whizam-shortcut-mac {
+  display: none;
+}
+html:is([data-platform^='Mac'], [data-platform^='iP']) .whizam-shortcut-mac {
+  display: block;
+}
+html:is([data-platform^='Mac'], [data-platform^='iP']) .whizam-shortcut-other {
+  display: none;
+}
+
+/* Global language setting: fixed column footer, separate from scrolling navigation. */
+.whizam-language-footer,
+.whizam-sidebar-language.whizam-language-footer {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin: 0 !important;
+  padding: 16px 12px !important;
+  padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
+  border-top: 0;
+  background: var(--whizam-control-bg);
+}
+.whizam-language-footer .whizam-language-control {
+  margin: 0 !important;
+}
+.md-sidebar--primary {
+  padding-bottom: 0;
+}
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  height: calc(100dvh - 20px) !important;
+  overflow: hidden;
+}
+.md-sidebar--primary .md-sidebar__inner {
+  height: 100%;
+  min-height: 0;
+}
+.md-nav--primary {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.md-nav--primary > .whizam-tool-heading,
+.md-nav--primary > .md-search {
+  flex: 0 0 auto;
+}
+.md-nav--primary > .md-nav__list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 16px 0;
+}
+.md-nav--primary > .whizam-language-footer {
+  margin-inline: -12px !important;
+}
+#storybook-sidebar-region.whizam-language-host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#storybook-sidebar-region.whizam-language-host > div:not(.whizam-language-footer) {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto !important;
+}
+@media (max-width: 959px) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    height: 100dvh !important;
+  }
+}
+
+/* Supplied permalink icon, preserving the heading's existing native anchor. */
+.md-typeset :is(h1, h2, h3, h4, h5, h6) > a.headerlink {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  margin-inline-start: 8px;
+  padding: 0;
+  font-size: 0;
+  vertical-align: middle;
+  opacity: 1;
+  visibility: visible;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset :is(h1, h2, h3, h4, h5, h6) > a.headerlink::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: currentColor;
+  mask: url('./heading-link.svg') center / contain no-repeat;
+}
+.md-typeset :is(h1, h2, h3, h4, h5, h6) > a.headerlink:is(:hover, :focus-visible) {
+  color: var(--md-accent-fg-color);
+}
+.md-typeset :is(h1, h2, h3, h4, h5, h6) > a.headerlink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* End of documentation heading-link presentation. */

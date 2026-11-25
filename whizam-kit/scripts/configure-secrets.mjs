@@ -66,9 +66,22 @@ function updateEnv(source, fields, values) {
   return lines.join('\n').replace(/\n*$/, '\n')
 }
 
-export async function startConfiguration({ root, fields, ttl = 20 * 60 * 1000 }) {
+export async function startConfiguration({
+  root,
+  fields,
+  ttl = 20 * 60 * 1000,
+  target = 'application',
+}) {
   fields = parseFields(fields.map((f) => `${f.key}:${f.type}`))
-  const path = resolve(root, '.env.local')
+  if (!['application', 'github'].includes(target)) throw new Error('Cible privée invalide.')
+  if (
+    target === 'github' &&
+    (fields.length !== 1 || fields[0].key !== 'GH_TOKEN' || fields[0].type !== 'password')
+  )
+    throw new Error('Champ GitHub invalide.')
+  const filename = target === 'github' ? '.github-token.local' : '.env.local'
+  const heading = target === 'github' ? 'Connexion à GitHub' : 'Configuration privée'
+  const path = resolve(root, filename)
   const initial = await snapshot(path)
   const token = randomBytes(32).toString('hex')
   let origin,
@@ -101,7 +114,7 @@ export async function startConfiguration({ root, fields, ttl = 20 * 60 * 1000 })
     if (req.method === 'GET') {
       return reply(
         200,
-        `<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Configuration privée</title><style>body{font:18px system-ui;max-width:640px;margin:48px auto;padding:24px;color:#172032;background:#f8fafc}label{display:block;margin:24px 0}input{display:block;box-sizing:border-box;width:100%;padding:12px;margin-top:8px;font:inherit}button{padding:12px 20px;font:inherit;margin:8px 8px 8px 0}input:focus-visible,button:focus-visible{outline:3px solid #315bcb;outline-offset:3px}</style><main><h1>Configuration privée</h1><p>Ces valeurs restent sur cet ordinateur, dans .env.local. Elles ne sont pas envoyées à l’assistant. Le mot de passe est masqué et aucune valeur existante n’est affichée.</p><p>Session valable 20 minutes. Aucun test de connexion ni envoi réel n’est effectué.</p><form method="post" autocomplete="off">${fields.map(({ key, type }) => `<label>${escapeHtml(key)}<input name="${key}" type="${type}" required maxlength="4096" autocomplete="${type === 'password' ? 'new-password' : 'off'}" spellcheck="false"></label>`).join('')}<p>Les apostrophes et retours à la ligne ne sont pas pris en charge.</p><button name="action" value="save">Enregistrer</button><button name="action" value="cancel" formnovalidate>Annuler</button></form></main></html>`,
+        `<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${heading}</title><style>body{font:18px system-ui;max-width:640px;margin:48px auto;padding:24px;color:#172032;background:#f8fafc}label{display:block;margin:24px 0}input{display:block;box-sizing:border-box;width:100%;padding:12px;margin-top:8px;font:inherit}button{padding:12px 20px;font:inherit;margin:8px 8px 8px 0}input:focus-visible,button:focus-visible{outline:3px solid #315bcb;outline-offset:3px}</style><main><h1>${heading}</h1><p>Ces valeurs restent sur cet ordinateur, dans ${filename}. Elles ne sont pas envoyées à l’assistant. Le mot de passe est masqué et aucune valeur existante n’est affichée.</p><p>Session valable 20 minutes. Aucun test de connexion ni envoi réel n’est effectué.</p><form method="post" autocomplete="off">${fields.map(({ key, type }) => `<label>${target === 'github' ? 'Jeton d’accès GitHub' : escapeHtml(key)}<input name="${key}" type="${type}" required maxlength="4096" autocomplete="${type === 'password' ? 'new-password' : 'off'}" spellcheck="false"></label>`).join('')}<p>Les apostrophes et retours à la ligne ne sont pas pris en charge.</p><button name="action" value="save">Enregistrer</button><button name="action" value="cancel" formnovalidate>Annuler</button></form></main></html>`,
       )
     }
     if (req.method !== 'POST') return reply(405, 'Méthode refusée.')
@@ -206,7 +219,13 @@ export async function startConfiguration({ root, fields, ttl = 20 * 60 * 1000 })
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-    const session = await startConfiguration({ root, fields: parseFields(process.argv.slice(2)) })
+    const args = process.argv.slice(2)
+    const github = args[0] === '--github'
+    const session = await startConfiguration({
+      root,
+      target: github ? 'github' : 'application',
+      fields: parseFields(github ? args.slice(1) : args),
+    })
     console.log(`Saisie privée locale (20 minutes) : ${session.url}`)
     for (const signal of ['SIGINT', 'SIGTERM'])
       process.once(signal, () => {

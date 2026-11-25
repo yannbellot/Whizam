@@ -4,9 +4,15 @@ site_description = "Application, conception, design system et transmission"
 docs_dir = "input"
 site_dir = "site"
 use_directory_urls = true
-extra_css = ["assets/typography/portal.css"]
+extra_javascript = ["assets/typography/system-theme.js", "assets/typography/heading-copy.js"]
+extra_css = ["assets/typography/portal.css", "assets/typography/heading-copy.css"]
 [project.theme]
 language = "fr"
 font = false
+custom_dir = "overrides"
+
+# Palette assets include both native schemes; system-theme.js selects at runtime.
+[project.theme.palette]
+scheme = "default"
 
 [project.plugins.search]
