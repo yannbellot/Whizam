@@ -2,7 +2,7 @@
 
 [English version](README.en.md)
 
-**Un kit pour concevoir et développer des applications web avec l’assistance d’agents IA.**
+**Un cadre structuré et durable pour concevoir et développer des applications web avec des agents IA.**
 
 Whizam est un kit open source destiné aux designers numériques, UX/UI et Product Designers qui souhaitent transformer une idée en prototype fonctionnel ou en première version de produit.
 
