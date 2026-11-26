@@ -2,105 +2,105 @@
 
 [English version](README.en.md)
 
-**Design, build and evolve your web applications with AI assistants.**
+**Concevez, développez et faites évoluer vos applications web avec l’assistance d’agents IA.**
 
-Whizam is an open-source kit for digital, UX/UI and Product Designers who want to turn an idea into a working prototype or a first product version.
+Whizam est un kit open source destiné aux designers numériques, UX/UI et Product Designers qui souhaitent transformer une idée en prototype fonctionnel ou en première version de produit.
 
-It combines a technical foundation, instructions for AI assistants, a design system, and tools for testing and documentation. You can work with **Claude Code or Codex**, without prior programming knowledge, by describing your intentions and requests in natural language.
+Il associe un socle technique, des instructions pour les assistants IA, un design system et des outils de vérification et de documentation. Vous pouvez travailler avec **Claude Code ou Codex**, sans connaissances préalables en programmation, en décrivant votre intention et vos demandes en langage naturel.
 
-**You remain in control of your product: its goals, content, design choices and acceptance of the result.** The assistant helps you scope, build, verify and document your project.
+**Vous gardez la maîtrise de votre produit : ses objectifs, ses contenus, ses choix de conception et la validation du résultat.** L’assistant vous accompagne pour cadrer, construire, vérifier et documenter votre projet.
 
-📖 **[Read the documentation](https://yannbellot.github.io/Whizam/en/)**
+📖 **[Consulter la documentation](https://yannbellot.github.io/Whizam/fr/)**
 
-## From idea to handover
+## De l’idée à la transmission
 
-### Start your project
+### Démarrer votre projet
 
-Bring a brief, describe an idea you want to clarify, or request a fictional demonstration project to explore the kit.
+Apportez un brief, décrivez une idée à préciser ou demandez un projet de démonstration fictif pour découvrir le kit.
 
-The assistant helps you define a first version: users, pages, features, content, visual references and success criteria. It presents the proposed scope and steps before implementation begins.
+L’assistant vous aide à définir une première version : utilisateurs, pages, fonctionnalités, contenus, références visuelles et critères de réussite. Il vous présente le périmètre et les étapes proposées avant de commencer la réalisation.
 
-### Build and iterate
+### Créer et itérer
 
-Describe the pages, interactions and adjustments you want. The assistant examines the sources, prepares changes and implements the agreed scope.
+Décrivez les pages, les interactions et les ajustements souhaités. L’assistant examine les sources, prépare les changements et réalise le travail dans le périmètre convenu.
 
-You can follow the result in three spaces:
+Vous pouvez suivre le résultat dans trois espaces :
 
-- **The application**, to explore pages and test interactions.
-- **Storybook**, to browse components, their variants and states.
-- **The documentation**, to find decisions, references and project progress.
+- **L’application**, pour parcourir les pages et tester les interactions.
+- **Storybook**, pour consulter les composants, leurs variantes et leurs états.
+- **La documentation**, pour retrouver les décisions, les références et l’avancement du projet.
 
-Technical checks accompany development. Your review determines whether the result matches your intention.
+Les vérifications techniques accompagnent le développement. Votre examen permet de juger si le résultat répond à votre intention.
 
-### Hand over and share
+### Transmettre et partager
 
-The sources and documentation stay in your project folder. They help you resume work later or prepare a handover to a technical team.
+Les sources et la documentation restent dans votre dossier de projet. Elles permettent de reprendre le travail plus tard ou de préparer sa transmission à une équipe technique.
 
-You can also use GitHub to preserve history and share the sources. Deploying your application is a separate step, to prepare according to its needs.
+Vous pouvez également utiliser GitHub pour conserver l’historique et partager les sources. Le déploiement de votre application constitue une étape distincte, à préparer selon ses besoins.
 
-## What the kit includes
+## Ce que contient le kit
 
-| Element | Purpose |
+| Élément | Usage |
 | --- | --- |
-| **Web application** | React, React Router and TypeScript foundation, with PostgreSQL and Docker Compose for persistence. |
-| **Automated design system** | Reusable components, variants and tokens maintained with the assistant. |
-| **Storybook** | Browsing the project's components and their states. |
-| **Zensical documentation** | French/English guides, project progress and technical references. |
-| **Instructions, roles and skills** | Procedures for scoping, designing, developing, verifying and handing over the work. |
-| **Technical checks** | Tools to verify sources and relevant user journeys. |
+| **Application web** | Socle React, React Router et TypeScript, avec PostgreSQL et Docker Compose pour la persistance. |
+| **Design system automatisé** | Composants réutilisables, variantes et tokens maintenus avec l’assistant. |
+| **Storybook** | Consultation des composants du projet et de leurs états. |
+| **Documentation Zensical** | Guides français/anglais, suivi du projet et références techniques. |
+| **Instructions, rôles et skills** | Procédures pour cadrer, concevoir, développer, vérifier et transmettre le travail. |
+| **Contrôles techniques** | Outils pour vérifier les sources et les parcours concernés. |
 
-The kit starts **without an initialized product project**: the application is empty, the seed inserts no data, and Storybook has no project components selected. Guides are available from the first launch of the documentation portal.
+Le kit démarre **sans projet métier initialisé** : l’application est vide, aucune donnée n’est insérée par le seed et Storybook ne contient pas de composant de projet sélectionné. Les guides sont disponibles dès le premier démarrage du portail documentaire.
 
-## 1. Get the kit
+## 1. Récupérer le kit
 
-Cloning the repository with Git is recommended: it preserves hidden files and skill symlinks.
+La méthode recommandée est de cloner le dépôt avec Git : elle préserve les fichiers cachés et les liens symboliques des skills.
 
 ```bash
 git clone https://github.com/yannbellot/Whizam.git
 cd Whizam/whizam-kit
 ```
 
-If Git is not installed, ask your assistant to help you set it up.
+Si Git n’est pas installé, demandez à votre assistant de vous aider à le préparer.
 
-The self-contained kit is in **`whizam-kit/`**. You can work in this folder or copy it elsewhere and rename it for your project.
+Le kit autonome se trouve dans **`whizam-kit/`**. Vous pouvez travailler dans ce dossier ou le copier ailleurs et le renommer pour votre projet.
 
-Keep the entire folder, including `.agents/`, `.claude/`, `.storybook/`, `.env.example` and the internal symlinks. Keep an untouched copy of the kit for future projects.
+Conservez le dossier entier, notamment `.agents/`, `.claude/`, `.storybook/`, `.env.example` et les liens symboliques internes. Gardez une copie intacte du kit pour vos prochains projets.
 
-## 2. Open the right folder
+## 2. Ouvrir le bon dossier
 
-Open **`whizam-kit/` as the workspace root** in your development assistant. If you moved or renamed your copy, open that folder instead.
+Ouvrez **`whizam-kit/` comme racine de travail** dans votre assistant de développement. Si vous avez déplacé ou renommé votre copie, ouvrez ce nouveau dossier.
 
-The instructions, dependencies and commands are in this folder. The GitHub repository root does not contain an npm project to install.
+Les instructions, les dépendances et les commandes se trouvent dans ce dossier. La racine du dépôt GitHub ne contient pas de projet npm à installer.
 
-The main workflows cover Claude Code and Codex. The kit also provides adaptations for other assistants; support and skill discovery limitations are described in [compatibility](https://yannbellot.github.io/Whizam/en/docs/compatibility/).
+Les parcours principaux concernent Claude Code et Codex. Le kit fournit également des adaptations pour d’autres assistants ; leur prise en charge et les limites de découverte des skills sont décrites dans la [compatibilité](https://yannbellot.github.io/Whizam/fr/docs/compatibility/).
 
-## 3. Start the conversation
+## 3. Commencer la conversation
 
-Choose the starting point that suits you.
+Choisissez le point de départ qui vous convient.
 
-**You have a brief:**
+**Vous avez un brief :**
 
-> I want to create a project with Whizam. Here is my brief: […]
+> Je souhaite créer un projet avec Whizam. Voici mon brief : […]
 
-**You have an idea to clarify:**
+**Vous avez une idée à préciser :**
 
-> I want to create a digital designer portfolio. Guide me through defining a first version.
+> Je souhaite créer un portfolio de designer numérique. Guide-moi pour définir une première version.
 
-**You want to explore the kit:**
+**Vous souhaitez découvrir le kit :**
 
-> Suggest a fictional demonstration project so I can discover Whizam.
+> Propose-moi un projet de démonstration fictif pour découvrir Whizam.
 
-You can attach your content, visual references and any documents relevant to your project.
+Vous pouvez joindre vos contenus, vos références visuelles et les documents utiles à votre projet.
 
-The assistant examines the files and checks the prerequisites. It clarifies the scope with you and identifies the actions to approve before implementation. Getting the kit does not automatically create a product application.
+L’assistant examine les fichiers et vérifie les prérequis. Il précise avec vous le périmètre et les actions à valider avant la réalisation. Récupérer le kit ne crée pas automatiquement une application métier.
 
-## 4. Prepare and start the environment
+## 4. Préparer et lancer l’environnement
 
-You will need **Node.js**, **npm**, **Docker running** and **Docker Compose**. Compatible versions are listed in [package.json](whizam-kit/package.json).
+Vous aurez besoin de **Node.js**, de **npm**, de **Docker démarré** et de **Docker Compose**. Les versions compatibles sont indiquées dans [package.json](whizam-kit/package.json).
 
-You can ask the assistant to check these prerequisites and prepare the environment.
+Vous pouvez demander à l’assistant de vérifier ces prérequis et de préparer l’environnement.
 
-For manual setup, run all the following commands **from `whizam-kit/`**, or from the root of your renamed copy.
+Pour un démarrage manuel, exécutez toutes les commandes suivantes **depuis `whizam-kit/`**, ou depuis la racine de votre copie renommée.
 
 ### Application
 
@@ -109,61 +109,61 @@ node scripts/setup-local.mjs
 docker compose --env-file .env.local up --build --detach --wait
 ```
 
-Setup preserves an existing private configuration and displays the application address. A fresh kit shows an empty page until your project has been built.
+La préparation conserve une configuration privée existante et affiche l’adresse de l’application. Le kit neuf montre une page vide tant que votre projet n’a pas été réalisé.
 
-To stop the application while keeping its data:
+Pour arrêter l’application en conservant ses données :
 
 ```bash
 docker compose --env-file .env.local down
 ```
 
-### Storybook and documentation
+### Storybook et documentation
 
-Install the dependencies once:
+Installez une fois les dépendances :
 
 ```bash
 npm ci
 ```
 
-Then start each tool in its own terminal:
+Puis lancez chaque outil dans son propre terminal :
 
-| Space | Command | Default local address |
+| Espace | Commande | Adresse locale par défaut |
 | --- | --- | --- |
 | Storybook | `npm run storybook` | [localhost:6006](http://127.0.0.1:6006/) |
 | Documentation | `npm run docs:dev` | [localhost:8000](http://127.0.0.1:8000/) |
 
-Docker must be running for the documentation portal. These addresses are available when the corresponding services are running; check the displayed address if the port changes.
+Docker doit être démarré pour la documentation. Ces adresses sont disponibles lorsque les services correspondants fonctionnent ; consultez l’adresse affichée si le port change.
 
-The application, Storybook and documentation work without an AI model key. Your development assistant uses its own access. Figma is optional.
+L’application, Storybook et la documentation fonctionnent sans clé de modèle IA. Votre assistant de développement utilise son propre accès. Figma est facultatif.
 
-**Do not send passwords or keys in the conversation.** If confidential access is needed, follow the private entry process proposed by the assistant.
+**Ne transmettez pas de mot de passe ou de clé dans la conversation.** Si un accès confidentiel est nécessaire, suivez le parcours de saisie privée proposé par l’assistant.
 
-## Resume and evolve your project
+## Reprendre et faire évoluer votre projet
 
-Your folder keeps the sources, decisions and progress records needed to resume work.
+Votre dossier conserve les sources, les décisions et le suivi nécessaires à la reprise.
 
-In a new conversation, you can ask:
+Dans une nouvelle conversation, vous pouvez demander :
 
-> Read my project's current state and roadmap, then tell me where we are and the next step.
+> Lis l’état courant et la feuille de route de mon projet, puis indique-moi où nous en sommes et la prochaine étape.
 
-You do not need to reinitialize the project. The assistant uses the saved information to continue the work.
+Vous n’avez pas à réinitialiser le projet. L’assistant s’appuie sur les informations enregistrées pour poursuivre le travail.
 
-Use a separate copy of the kit for each new project. Private configurations, installed dependencies, caches, builds and local data are not part of a fresh kit to hand over.
+Utilisez une copie distincte du kit pour chaque nouveau projet. Les configurations privées, dépendances installées, caches, builds et données locales ne font pas partie d’un kit neuf à transmettre.
 
-## Further reading
+## Pour aller plus loin
 
-- **Online documentation**: [English](https://yannbellot.github.io/Whizam/en/) · [Français](https://yannbellot.github.io/Whizam/fr/)
-- [User guide](https://yannbellot.github.io/Whizam/en/docs/guide-whizam/)
-- [Technical documentation](https://yannbellot.github.io/Whizam/en/TECHNICAL-GUIDE/)
-- [Detailed kit README (French)](whizam-kit/README.md)
-- [Environment setup](whizam-kit/translations/en/skills/initialize-project/references/environment-setup.md)
-- [Sharing your project](https://yannbellot.github.io/Whizam/en/docs/guide-whizam/partager-projet/)
-- [Compatibility and limitations](https://yannbellot.github.io/Whizam/en/docs/compatibility/)
-- [License and reuse](https://yannbellot.github.io/Whizam/en/docs/licence-reutilisation/)
+- **Documentation en ligne** : [Français](https://yannbellot.github.io/Whizam/fr/) · [English](https://yannbellot.github.io/Whizam/en/)
+- [Guide d’utilisation](https://yannbellot.github.io/Whizam/fr/docs/guide-whizam/)
+- [Documentation technique](https://yannbellot.github.io/Whizam/fr/TECHNICAL-GUIDE/)
+- [README détaillé du kit](whizam-kit/README.md)
+- [Préparation de l’environnement](whizam-kit/skills/initialize-project/references/environment-setup.md)
+- [Partager votre projet](https://yannbellot.github.io/Whizam/fr/docs/guide-whizam/partager-projet/)
+- [Compatibilité et limites](https://yannbellot.github.io/Whizam/fr/docs/compatibility/)
+- [Licence et réutilisation](https://yannbellot.github.io/Whizam/fr/docs/licence-reutilisation/)
 
-## License
+## Licence
 
-Whizam is distributed under the **MIT license**. Third-party resource notices and licenses remain applicable.
+Whizam est distribué sous **licence MIT**. Les mentions et licences des ressources tierces restent applicables.
 
-The kit is a starting point to adapt and verify for your application. It does not, by itself, establish production readiness.
+Le kit est un point de départ à adapter et à vérifier pour votre application. Il ne constitue pas, à lui seul, une qualification pour la production.
 
